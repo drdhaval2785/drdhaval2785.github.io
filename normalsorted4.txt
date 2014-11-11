@@ -32219,13 +32219,6 @@ aiṣṭika--paurtika
 aihalaukika
 aihika
 o
-óṁ--kāra
-óṁ--kāra---grantha
-óṁ--kāra---tīrtha
-óṁ--kāra---pīṭha
-óṁ--kāra---bhaṭṭa
-óṁ--kārā
-óṁ--kṛta
 oka
 okaḥ-sārin
 oka--ja
@@ -32249,6 +32242,13 @@ ogha--niryukti
 ogha--ratha
 ogha--vatī
 ogha--vat
+óṁ--kāra
+óṁ--kāra---grantha
+óṁ--kāra---tīrtha
+óṁ--kāra---pīṭha
+óṁ--kāra---bhaṭṭa
+óṁ--kārā
+óṁ--kṛta
 oja
 ojasī́na
 ójas
