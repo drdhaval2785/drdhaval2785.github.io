@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<!--... Defining UTF-8 as our default character set, so that devanagari is displayed properly. -->
+<meta charset="UTF-8">
+<!--... Defining CSS -->
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+<!--... including Ajax jquery. -->
+<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" ></script> -->
+<script src="ajaxcode.js" ></script>
+<!--... script.js is javascript which we use to make the frontend interective for user feedback. Whenever the user clicks the radio button specified in script.js, the data is sent to ajax.php and then output from ajax.php is shown in the frontend. This process may continue as long as you want. -->
+<script src="script.js" ></script>
+</head>
+<body>
+
+<div>
+<!--... submitting data to subanta.php. -->
+<form action="tiGanta.php" method = "get" id="frm">
+<!--... first is the input word, which the user enters. -->
+प्रकृतिः : <input type="text" name="first" id="first"><br>
+<!--... Defining lakAra of the verb. -->
+<input type="radio" name="lakAra" value="law" checked>लट्‌
+<!--
+<input type="radio" name="lakAra" value="liw">लिट्‌
+<input type="radio" name="lakAra" value="luw">लुट्‌
+<input type="radio" name="lakAra" value="lfw">लृट्‌
+<input type="radio" name="lakAra" value="sArvaDAtukalew">सार्वधातुक लेट्‌
+<input type="radio" name="lakAra" value="ArDaDAtukalew">आर्धधातुक लेट्‌
+-->
+<input type="radio" name="lakAra" value="low">लोट्‌
+<input type="radio" name="lakAra" value="laN">लङ्‌
+<input type="radio" name="lakAra" value="viDiliN">विधिलिङ्‌
+<!--
+<input type="radio" name="lakAra" value="ASIrliN">आशीर्लिङ्‌    
+<input type="radio" name="lakAra" value="luN">लुङ्‌
+<input type="radio" name="lakAra" value="lfN">लृङ्‌-->
+<br>
+<!--... Defining vAcya. -->
+<input type="radio" name="vAcya" value="kartR">कर्तृवाच्य
+<input type="radio" name="vAcya" value="karma">कर्मवाच्य
+<input type="radio" name="vAcya" value="bhAva">भाववाच्य
+<br>    
+<!--... Defining transliteration of the word. Default is kept as Devanagari. User may change it according to his wish. -->
+<input type="radio" name="tran" value="Devanagari" checked>Devanagari
+<input type="radio" name="tran" value="IAST">IAST
+<input type="radio" name="tran" value="SLP1" checked>SLP1
+<br>
+<!--... Defining sanAdi of the verb. -->
+<!--
+<input type="radio" name="sanAdi" value="san">सन्‌
+<input type="radio" name="sanAdi" value="kyac">क्यच्‌
+<input type="radio" name="sanAdi" value="kAmyac">काम्यच्‌
+<input type="radio" name="sanAdi" value="kyaz">क्यष्‌
+<input type="radio" name="sanAdi" value="kyaN">क्यङ्‌
+<input type="radio" name="sanAdi" value="kvip">क्विप्‌
+<input type="radio" name="sanAdi" value="RiN">णिङ्‌
+<input type="radio" name="sanAdi" value="Ric">णिच्‌
+<input type="radio" name="sanAdi" value="yak">यक्‌
+<input type="radio" name="sanAdi" value="Aya">आय
+<input type="radio" name="sanAdi" value="IyaN">ईयङ्‌
+<input type="radio" name="sanAdi" value="aN">अङ्‌
+-->
+<input type="hidden" name="sanAdi" value="" checked>
+<br>
+<!--... Divs to record the output from ajax.php. step1, step2, step3 etc are the levels. see ajax.php to decide where ajax will send its output. Maximum user feedback level for our coding was 6. So, kept it 6. It can be easily added if need be. -->
+<div id="response">
+    <div id="step1" class="innerStep"></div>
+    <div id="step2" class="innerStep"></div>
+    <div id="step3" class="innerStep"></div>
+    <div id="step4" class="innerStep"></div>
+    <div id="step5" class="innerStep"></div>
+    <div id="step6" class="innerStep"></div>
+</div>
+<!--... Submit button -->
+<input type="submit">
+<!--... Sending the step id to subanta.php hidden. -->
+<input type="hidden" name="step" id="step" value="0" />
+</form>
+</div>
+
+<!--... Information about the code. -->
+<p class= pa>
+    <b>Convention of entering verbs:</b> 
+    The verb should be entered with its anubandhas. e.g. zadx! for sad.<br> 
+    For verbs with upasargas preceding them, please remove Tu, Du, Ji. e.g. AkrIY for AG+qukrIY.<br> 
+    Also do satva and natva for sopasarga verbs. e.g. Asadx! for AG+zadx!, vinaSa! for vi+Rasa!. <br> 
+        <b>For SLP1, use ! for anunAsika. e.g. bADf! for बाधृँ.</b> <br>
+    </p> 
+<p class = hn>
+Developed by: Dr. Dhaval Patel & Sivakumari Katuri.
+Layout assistance by: Mr. Marcis Gasuns.<br>
+Available under <a href="http://www.gnu.org/copyleft/gpl.html" traget="_blank">GNU licence</a>. <br>
+Disclaimer: Despite our best efforts, intricacies of Sanskrit language may limit our declention machine. We owe no responsibility for wrong declention. User discretion is advised. <br>
+Correction submission: We will be greatful if you can send your corrections <a href="https://docs.google.com/document/d/1TsFAOJC7kaJUPqxKKORAKnCE6cAZuzJZXPBFf2iX7OM/edit#" traget="_blank">here</a>. <br>
+Note: The source code for this program is available on Github <a href = "https://github.com/drdhaval2785/sanskritverb" target="_blank">here.</a><br>
+For those who find github clumsy, latest code can be accessed manually <a href="http://lanover.com/lan/sanskrit/SanskritVerb"  target="_blank">here</a>.<br>
+For those who want to install the code for offline usage, instruction can be seen in readme file <a href="https://github.com/drdhaval2785/sanskrit" target="_blank">here</a>.<br>        
+Places where we take user input can be accessed <a href="http://lanover.com/lan/sanskrit/SanskritVerb/ajax%20requirement.docx"  target="_blank">here</a>. <br>
+For better rendering of output, use <a href = "http://svayambhava.org/index.php/en/" target="_blank">Siddhanta font.</a></p>
+<!--... Disclaimer for IAST -->
+For <a href = "http://en.wikipedia.org/wiki/International_Alphabet_of_Sanskrit_Transliteration">IAST scheme</a>, please use the lowercase letters.</p>
+<!--... SLP1 letter set. code works primarily on SLP1. Other transliterations are first converted to SLP1 and then processed. -->
+<p>For SLP1, use this scheme for entering words: </p>
+aAiIuUfFxXeEoOMH</br>
+kKgGN</br>
+cCjJY</br>
+wWqQR</br>
+tTdDn</br>
+pPbBm</br>
+yrlvSzsh;
+</body>
+</html>
