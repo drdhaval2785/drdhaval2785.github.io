@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html class="" lang="en">
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="Content-Language" content="en">
+<title>Backup of github issues</title>
+<link href="trial_files/github-c486157afcc5f58155a921bc675afb08733fbaa8dcf39ac2104d3.css" media="all" rel="stylesheet">
+<link href="trial_files/github2-da2e842cc3f0aaf33b727d0ef034243c12ab008fd09b24868b97.css" media="all" rel="stylesheet">
+<meta http-equiv="x-pjax-version" content="4426702614c8182f33d1780ad1169662">
+</head>
+<body class="logged_in  env-production windows vis-public">
+<h1 align='center'><a href='https://github.com/sanskrit-lexicon/CORRECTIONS/issues/5' target='_blank'>Missing data in CCS after skanDas</h1><hr/><div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/funderburkjim" class="author">funderburkjim</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-99777162" class="timestamp">
+      <time>2014-10-07 20:23:01</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Marcis submitted a correction re skanDas (slp1) in CCS. The display of the last line is<br/>§§§§§§MISSING.  An examination of the scan  versus the digitization (or using the list display)<br/>shows that there actually are many headwords missing in the digitization between skanDas and stambin.<br/><br/>From the scan I typed the headwords in the form needed for the digitization:<br/>```<br/>.{#skandhAvAra#}¦<br/>.{#skandhin#}¦<br/>.{#skaªndhya#}¦<br/>.{#skambh#}¦<br/>.{#skaªmbha#}¦<br/>.{#sku#}¦<br/>.{#skhal#}¦<br/>.{#skhala#}¦<br/>.{#skhalana#}¦<br/>.{#stan#}¦<br/>.{#staªna#}¦<br/>.{#stanataTa#}¦<br/>.{#stanaªtha#}¦<br/>.{#stanaMdhaya#}¦<br/>.{#stanapAna#}¦<br/>.{#stanapAyin#}¦<br/>.{#stanamadhya#}¦<br/>.{#stanayitnuª#}¦<br/>.{#stanAntara#}¦<br/>.{#stanita#}¦<br/>.{#stanya#}¦<br/>.{#stabaka#}¦<br/>.{#stabdha#}¦<br/>.{#stabdhI#}¦<br/>.{#stabdhIbhAva#}¦<br/>.{#stamba#}¦<br/>.{#stambamitra#}¦<br/>```<br/>If Marcis or someone will complete the above by filling  the missing defintions  I'll enter them into the<br/>digitization.  Here are the rules of the CCS digitization:<br/><br/><li>  Devanagari is coded as {#X#} where X is in HK transliteration<br/>Here is info (from ccs-meta.txt) on special characters that may be needed.<br/>If there are any others that you encounter <br/>see the Developer Documentation for CCS at Cologne website or<br/>download ccs-meta.txt in the ccsxml download.<br/>```<br/>ª  (\\u00aa) 11822 := FEMININE ORDINAL INDICATOR<br/>    ª = udatta  ªª = svarita<br/>°  (\\u00b0)  6673 := DEGREE SIGN<br/>```<br/><li> Italicized text is included in curly braces {%%}<br/><br/><li> The rest of the CCS digitization does NOT observe line breaks of the scan.<br/>     So you don't need to either although you may if you want.<br/><br/><li> Please be sure your editor is using the UTF-8 encoding.<br/>For instance you could edit it as a response in this GitHub Issue</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/gasyoun" class="author">gasyoun</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-99777162" class="timestamp">
+      <time>2014-10-08 07:24:40</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>CCS file is very dirty literary hundreds of mistakes. How about it's time to get rid of the initial markup? HK has no advantage above SLP1. For names we can have some ~ symbol so the capital letter metadata is not totally lost.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/funderburkjim" class="author">funderburkjim</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-99777162" class="timestamp">
+      <time>2014-10-09 21:15:05</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Shouldn't we correct the existing CCS digitization first?  <br/><br/>If you need an SLP1 version one option is to use ccs.xml where Sanskrit has been converted from HK to SLP1.   Another option is for me to make an SLP1 version of ccs.txt.<br/><br/>German words are not too hard to identify in CCS; they appear either in italics {%...%} or in no {}. If we had a German wordlist we could match CCS German against the list.<br/><br/>As to the Sanskrit words perhaps a variant of Dhaval's approach would catch many errors.<br/><br/>I think it makes sense to correct most of the errors before reformatting and adding markup.<br/></p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/gasyoun" class="author">gasyoun</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-99777162" class="timestamp">
+      <time>2014-10-10 01:33:03</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>1) \Shouldn't we correct the existing CCS digitization first?\ depends on what part are you speaking about. Headwords might be marked by patterns but Dhaval seems to be tired of checking those patterns in scans so it will be a list for checking that there is nobody to check for.<br/>2) SLP1 version is wanted. I opened the XML did not saw it what do you mean by ccs.xml being SLP1?<br/>3) Can you extract all the German words from {%...%} or in no {} please?<br/>4) \makes sense to correct most of the errors before reformatting and adding markup\ - you just do not know how dirty it is :) What do you mean by adding markup? If so it will take too long. As per now I can't even have an SLP1 headword list. Can I?<br/></p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/funderburkjim" class="author">funderburkjim</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-99777162" class="timestamp">
+      <time>2014-10-10 20:35:55</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Re 2) :  I downloaded ccsxml.zip from the CCS download page.  Extracting the zip leads to a folder 'xml'.<br/>This folder contains several files among which are ccshw2.txt and ccs.xml.<br/><br/>ccshw2.txt has as first few lines:<br/>```<br/>001-1:a:712<br/>001-1:a:1332<br/>001-1:aMSa:3343<br/>001-1:aMSakalpanA:4449<br/>001-1:aMSaBAj:5052<br/>001-1:aMSaBUta:5357<br/>```<br/>Each line has three fields separated by a colon ':'<br/><br/>The first field is the scan location.  The second field is the headword coded in slp1 the third field contains the range of lines in ccs.txt that correspond to the headword.<br/><br/>I tried to describe this in the developer documentation.<br/><br/>In ccs.xml text which the digitization ccs.txt codes as {#X#} with X in HK is transformed to &lt;s&gt;Y&lt;/s&gt; with Y in SLP1.  Also key1 is in slp1.  key2 is also in SLP1 for CCS (but I think this is not always the case for key2 in other dictionaries).<br/><br/>So for instance<br/>```<br/><H1><h><key1>aMSuka</key1><key2>aMSuka</key2></h><body><s>aMSuka</s>¦  <i>n.</i> Gewand. <s>aMSukAnta</s> <i>m.</i> -zipfel.</body><tail><L>8</L><pc>001-1</pc></tail></H1><br/><br/><key1>aMSuka</key1>   SLP1<br/><key2>aMSuka</key2>  SLP1<br/><s>aMSuka</s>  SLP1<br/><s>aMSukAnta</s>  SLP1<br/><br/>```<br/><br/>In CCS scans I think Sanskrit words always appear in Devanagari. So for CCS the above scheme applies to all Sanskrit words.<br/><br/>However in some dictionaries  Sanskrit words appear in IAST (of which there are several variations).   For IAST words in such dictionaries  the words do NOT appear in SLP1 in the xml file but appear in the AS encoding of IAST that Thomas invented.  <br/><br/>The exception to this last rule is MW; in the original MONIER.ALL most of the IAST was converted to HK and appears in the current mw.xml as &lt;s&gt;Y&lt;/s&gt; with Y in SLP1.  Interestingly in MW72 the IAST is retained in the mw72.txt digitization I think.<br/><br/>4)  Yes as mentioned ccshw2.txt provides SLP1 headwords.<br/><br/>4) 'adding markup will take too long' I agree.  That's why correcting first seems sensible.  <br/><br/>3) German word extraction:   If you'll provide a German word list  I'll extract the German words and work with you (since you know German) to get the German word spelling errors corrected.<br/><br/></p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/drdhaval2785" class="author">drdhaval2785</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-99777162" class="timestamp">
+      <time>2015-03-14 08:55:54</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/funderburkjim" target="_blank">@funderburkjim</a></strong> <br/>as this thread brought some suggestions regarding CCS which were left for future and we are on CCS now - has the time ripened to handle this thread as well?</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/gasyoun" class="author">gasyoun</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-99777162" class="timestamp">
+      <time>2015-03-14 09:14:52</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/drdhaval2785" target="_blank">@drdhaval2785</a></strong> going too deep in CCS would do no good. It's a middle-sized dictionary and dirty as none of the others. It's a swamp and half a year would not be enough to get out of it if all issues addressed. <br/>Even compiling a list of German words is a huge task because of<br/>1) morphological variations<br/>2) old orhtography<br/>3) print errors.<br/>Let as leave it at the headwords level because even it would take 3-5 more years with Sampada alone.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/funderburkjim" class="author">funderburkjim</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-99777162" class="timestamp">
+      <time>2015-04-17 01:24:04</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/drdhaval2785" target="_blank">@drdhaval2785</a></strong>  As <strong><a href="https://github.com/gasyoun" target="_blank">@gasyoun</a></strong> emphasized he turns up his nose at CCS.  I myself do not know enough to have a similarly low opinion of CCS.  And think CCS should be corrected sometime. So I think we should leave this issue open lest it be forgotten.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+</body></html>
