@@ -1,0 +1,105 @@
+{
+  "url": "https://api.github.com/repos/sanskrit-lexicon/CORRECTIONS/issues/44",
+  "labels_url": "https://api.github.com/repos/sanskrit-lexicon/CORRECTIONS/issues/44/labels{/name}",
+  "comments_url": "https://api.github.com/repos/sanskrit-lexicon/CORRECTIONS/issues/44/comments",
+  "events_url": "https://api.github.com/repos/sanskrit-lexicon/CORRECTIONS/issues/44/events",
+  "html_url": "https://github.com/sanskrit-lexicon/CORRECTIONS/issues/44",
+  "id": 51066172,
+  "number": 44,
+  "title": "Todo list for volunteers",
+  "user": {
+    "login": "drdhaval2785",
+    "id": 5755132,
+    "avatar_url": "https://avatars.githubusercontent.com/u/5755132?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/drdhaval2785",
+    "html_url": "https://github.com/drdhaval2785",
+    "followers_url": "https://api.github.com/users/drdhaval2785/followers",
+    "following_url": "https://api.github.com/users/drdhaval2785/following{/other_user}",
+    "gists_url": "https://api.github.com/users/drdhaval2785/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/drdhaval2785/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/drdhaval2785/subscriptions",
+    "organizations_url": "https://api.github.com/users/drdhaval2785/orgs",
+    "repos_url": "https://api.github.com/users/drdhaval2785/repos",
+    "events_url": "https://api.github.com/users/drdhaval2785/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/drdhaval2785/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "url": "https://api.github.com/repos/sanskrit-lexicon/CORRECTIONS/labels/wontfix",
+      "name": "wontfix",
+      "color": "ffffff"
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 2,
+  "created_at": "2014-12-05T05:59:09Z",
+  "updated_at": "2014-12-08T09:10:44Z",
+  "closed_at": null,
+  "body": "Hello volunteers,\r\nThanks for your interest in helping making the Cologne dictionaries clean.\r\nWe have created some list of suspicious looking entries in Cologne dictionaries [here](https://drdhaval2785.github.io/dictwiseerrors3-table.html).\r\nOut of these CAE, PW, SKD, SHS and VCP have been checked.\r\nThe remaining dictionaries remain to be checked for corrections. \r\nSomeone with some knowledge of Sanskrit will have to check it from the scan pages and submit corrections. Sample of how to submit corrections can be seen at https://github.com/sanskrit-lexicon/CORRECTIONS/issues/39.\r\nVideo tutorial of how to reach to the scanned pages and submit corrections is available [here](https://www.youtube.com/watch?v=rKZ_OsSHwsY).\r\n",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/sanskrit-lexicon/CORRECTIONS/issues/comments/65813788",
+    "html_url": "https://github.com/sanskrit-lexicon/CORRECTIONS/issues/44#issuecomment-65813788",
+    "issue_url": "https://api.github.com/repos/sanskrit-lexicon/CORRECTIONS/issues/44",
+    "id": 65813788,
+    "user": {
+      "login": "gasyoun",
+      "id": 80761,
+      "avatar_url": "https://avatars.githubusercontent.com/u/80761?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/gasyoun",
+      "html_url": "https://github.com/gasyoun",
+      "followers_url": "https://api.github.com/users/gasyoun/followers",
+      "following_url": "https://api.github.com/users/gasyoun/following{/other_user}",
+      "gists_url": "https://api.github.com/users/gasyoun/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/gasyoun/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/gasyoun/subscriptions",
+      "organizations_url": "https://api.github.com/users/gasyoun/orgs",
+      "repos_url": "https://api.github.com/users/gasyoun/repos",
+      "events_url": "https://api.github.com/users/gasyoun/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/gasyoun/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2014-12-05T16:25:40Z",
+    "updated_at": "2014-12-05T16:25:40Z",
+    "body": "1) CAE, PW and VCP is how big part from the general list?\r\n2) How many hours it took you to finish them?"
+  },
+  {
+    "url": "https://api.github.com/repos/sanskrit-lexicon/CORRECTIONS/issues/comments/65817194",
+    "html_url": "https://github.com/sanskrit-lexicon/CORRECTIONS/issues/44#issuecomment-65817194",
+    "issue_url": "https://api.github.com/repos/sanskrit-lexicon/CORRECTIONS/issues/44",
+    "id": 65817194,
+    "user": {
+      "login": "drdhaval2785",
+      "id": 5755132,
+      "avatar_url": "https://avatars.githubusercontent.com/u/5755132?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/drdhaval2785",
+      "html_url": "https://github.com/drdhaval2785",
+      "followers_url": "https://api.github.com/users/drdhaval2785/followers",
+      "following_url": "https://api.github.com/users/drdhaval2785/following{/other_user}",
+      "gists_url": "https://api.github.com/users/drdhaval2785/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/drdhaval2785/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/drdhaval2785/subscriptions",
+      "organizations_url": "https://api.github.com/users/drdhaval2785/orgs",
+      "repos_url": "https://api.github.com/users/drdhaval2785/repos",
+      "events_url": "https://api.github.com/users/drdhaval2785/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/drdhaval2785/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2014-12-05T16:46:47Z",
+    "updated_at": "2014-12-05T16:46:47Z",
+    "body": "1) Maybe 20 %\r\n2) 10 errors per hour would be the rate mostly. The earlier lists were a bit time taking. New lists are fast. Maybe 20 errors per hour"
+  }
+]

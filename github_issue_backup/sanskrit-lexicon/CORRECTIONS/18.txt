@@ -1,0 +1,101 @@
+{
+  "url": "https://api.github.com/repos/sanskrit-lexicon/CORRECTIONS/issues/18",
+  "labels_url": "https://api.github.com/repos/sanskrit-lexicon/CORRECTIONS/issues/18/labels{/name}",
+  "comments_url": "https://api.github.com/repos/sanskrit-lexicon/CORRECTIONS/issues/18/comments",
+  "events_url": "https://api.github.com/repos/sanskrit-lexicon/CORRECTIONS/issues/18/events",
+  "html_url": "https://github.com/sanskrit-lexicon/CORRECTIONS/issues/18",
+  "id": 45952366,
+  "number": 18,
+  "title": "Klassische deutsche Rechtschreibung",
+  "user": {
+    "login": "gasyoun",
+    "id": 80761,
+    "avatar_url": "https://avatars.githubusercontent.com/u/80761?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/gasyoun",
+    "html_url": "https://github.com/gasyoun",
+    "followers_url": "https://api.github.com/users/gasyoun/followers",
+    "following_url": "https://api.github.com/users/gasyoun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/gasyoun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/gasyoun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/gasyoun/subscriptions",
+    "organizations_url": "https://api.github.com/users/gasyoun/orgs",
+    "repos_url": "https://api.github.com/users/gasyoun/repos",
+    "events_url": "https://api.github.com/users/gasyoun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/gasyoun/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 2,
+  "created_at": "2014-10-16T06:18:25Z",
+  "updated_at": "2014-11-03T16:50:59Z",
+  "closed_at": null,
+  "body": "@funderburkjim \r\nPer https://github.com/sanskrit-lexicon/CORRECTIONS/issues/8#issuecomment-59296504 request.\r\n`Marcis - do you have a 'German word list' (a digital German dictionary or word list) that might be used to kick out candidates for mis-spelled German words in PW, PWG , CSS ?`\r\n\r\nNo, I do not have, but yes, let's start the trip. I found exactly what we are looking for, German from year 1901, a list of 235298 words <a href=\"http://extensions.libreoffice.org/extension-center/german-de-de-1901-old-spelling-dictionaries\">German old spelling dictionaries</a> - Klassische deutsche Rechtschreibung in .OXT format.\r\n\r\nThe encoding is broken, similar to http://stackoverflow.com/questions/1344692/i-need-help-fixing-broken-utf8-encoding. Emailed Bjoern Jacke, Franz Michael Baumann about the used encoding.\r\nReply:\r\n```\r\nim von igerman98 generierten hunspell wörterbuch ist iso8895-1 die codierung.\r\n```\r\nSo http://stackoverflow.com/questions/3990700/iso-8895-1-to-xml-acceptable-utf-8 should work.\r\nWe do not need to go http://askubuntu.com/questions/72099/how-to-install-a-libreoffice-dictionary-spelling-check-thesaurus, because https://www.sublimetext.com/forum/viewtopic.php?f=3&t=6127 did the job.\r\n\r\nThe journey starts at https://github.com/sanskrit-lexicon/CORRECTIONS/tree/master/dict-de_de-1901_oldspell_2014-02-21 - I hope I'll have an UTF-8 compitable list in a short while.",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/sanskrit-lexicon/CORRECTIONS/issues/comments/60542543",
+    "html_url": "https://github.com/sanskrit-lexicon/CORRECTIONS/issues/18#issuecomment-60542543",
+    "issue_url": "https://api.github.com/repos/sanskrit-lexicon/CORRECTIONS/issues/18",
+    "id": 60542543,
+    "user": {
+      "login": "funderburkjim",
+      "id": 6393033,
+      "avatar_url": "https://avatars.githubusercontent.com/u/6393033?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/funderburkjim",
+      "html_url": "https://github.com/funderburkjim",
+      "followers_url": "https://api.github.com/users/funderburkjim/followers",
+      "following_url": "https://api.github.com/users/funderburkjim/following{/other_user}",
+      "gists_url": "https://api.github.com/users/funderburkjim/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/funderburkjim/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/funderburkjim/subscriptions",
+      "organizations_url": "https://api.github.com/users/funderburkjim/orgs",
+      "repos_url": "https://api.github.com/users/funderburkjim/repos",
+      "events_url": "https://api.github.com/users/funderburkjim/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/funderburkjim/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2014-10-27T01:55:09Z",
+    "updated_at": "2014-10-27T01:55:09Z",
+    "body": "See https://dl.dropboxusercontent.com/u/29859999/ccs_all1.zip\r\n\r\nThere happens to be a Python module pyenchant (https://pythonhosted.org/pyenchant/) which allows easy access to xspell compatible dictionaries, such as de_DE_OLDSPELL .  Hurray!\r\n\r\nIt seems to give good results, and there is appears to be no need for concern re iso8895-1 coding.\r\n\r\nHere, in short, is how this dictionary has been used thus far:\r\n1. Start with ccs.xml\r\n2. Categorize words appearing in the body of each record into one of 4 types, based upon the markup:\r\n  a. \"D\" = Devanagari, coded as slp1\r\n  b. \"I\"  = Italicized words (which contain no digit)\r\n  c. \"O\" = Other words (which contain no digit)\r\n  d. \"N\" = Non-devanagari words which contain a digit (most are Anglicized Sanskrit coding of IAST)\r\n3. Write out file of all such words, counting the frequency (all.txt,). The format is:\r\n```\r\n  <word>:<count>:<code>:X   (<code> is D,I,O,N) (X means not-explained)\r\n```\r\n  There are  62940 lines in all.txt.\r\n4. Explain the German words using pyenchant interface to de_DE_OLDSPELL.\r\n   This applies only to codes I or O.\r\n   The result is all1.txt.\r\n    Here is a summary using prettytable module:\r\n```\r\nSummary for words of type 'D'\r\n+--------+-------+\r\n| Status |  Freq |\r\n+--------+-------+\r\n| Total  | 36999 |\r\n| X      | 36999 |\r\n+--------+-------+\r\nSummary for words of type 'I'\r\n+-------------------+------+\r\n| Status            | Freq |\r\n+-------------------+------+\r\n| Total             | 2284 |\r\n| X                 |  794 |\r\n| OK=de_DE_OLDSPELL | 1490 |\r\n+-------------------+------+\r\nSummary for words of type 'O'\r\n+-------------------+-------+\r\n| Status            |  Freq |\r\n+-------------------+-------+\r\n| Total             | 23204 |\r\n| X                 |  5648 |\r\n| OK=de_DE_OLDSPELL | 17556 |\r\n+-------------------+-------+\r\nSummary for words of type 'N'\r\n+--------+------+\r\n| Status | Freq |\r\n+--------+------+\r\n| Total  |  453 |\r\n| X      |  453 |\r\n+--------+------+\r\n\r\n```\r\n\r\nI am imagining that eventually all words will be explained or corrected by as yet unknown steps, leading to all2.txt ... alldone.txt\r\n\r\nOne can easily filter all1.txt on subcategories  (e.g. :[IO]:  for the supposed German words.)\r\n\r\nI'm sure some of those 5648 unexplained 'O' German words can be explained as some kinds of\r\ncompounds.  There may be a way, that I don't know, to do this with enchant.  Absent that, maybe Marcis can suggest some patterns of German.\r\n\r\nThe choice of de_DE_OLDSPELL was an excellent one.  For instance, the enchant logic properly\r\ninterpreted the 'suffix' information present in de_DE_OLDSPELL.dic and de_DE_OLDSPELL.aff -- not a trivial task.\r\n\r\n\r\n\r\n"
+  },
+  {
+    "url": "https://api.github.com/repos/sanskrit-lexicon/CORRECTIONS/issues/comments/60612686",
+    "html_url": "https://github.com/sanskrit-lexicon/CORRECTIONS/issues/18#issuecomment-60612686",
+    "issue_url": "https://api.github.com/repos/sanskrit-lexicon/CORRECTIONS/issues/18",
+    "id": 60612686,
+    "user": {
+      "login": "gasyoun",
+      "id": 80761,
+      "avatar_url": "https://avatars.githubusercontent.com/u/80761?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/gasyoun",
+      "html_url": "https://github.com/gasyoun",
+      "followers_url": "https://api.github.com/users/gasyoun/followers",
+      "following_url": "https://api.github.com/users/gasyoun/following{/other_user}",
+      "gists_url": "https://api.github.com/users/gasyoun/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/gasyoun/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/gasyoun/subscriptions",
+      "organizations_url": "https://api.github.com/users/gasyoun/orgs",
+      "repos_url": "https://api.github.com/users/gasyoun/repos",
+      "events_url": "https://api.github.com/users/gasyoun/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/gasyoun/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2014-10-27T15:32:50Z",
+    "updated_at": "2014-11-03T16:50:59Z",
+    "body": "Jim, it's a miracle indeed. I only wonder if we can get the contexts or make it linkable. For that I would need to know what is the header of the wrong word I have found. Otherwise I checked http://www.sanskrit-lexicon.uni-koeln.de/scans/CCSScan/2014/web/webtc2/index.php for `Wgschaffen` and of course it's wrong. Can I ask you to give me only `O` that are not `OK=de_DE_OLDSPELL`? Excel sorting skills when I'm on the way on my laptop are miserable. I see literary hundreds of mistakes, that I can fix even without looking in the book. But this dictionary is not top priority so let's get back to PWK, PWG, MW, SCH, VCP. This I'll think about how to make it with less possible blood on my spare time after we have some good news on MW verb lexnorm update.\r\n\r\n```\r\nwssenskundig\t1\tO\tX\r\nWsserkrug\t1\tO\tX\r\nwunderreich\t1\tO\tX\r\nWunderthat\t1\tO\tX\r\nWunderthäter\t1\tO\tX\r\nwunderthätig\t2\tO\tX\r\nWundmachen\t1\tO\tX\r\nwunschentsprechend\t3\tO\tX\r\nwunscherfüllend\t2\tO\tX\r\nWunschgeborene\t1\tO\tX\r\nwunschgeschirrt\t1\tO\tX\r\nwunschgewährend\t2\tO\tX\r\nWurfgeschoss\t4\tO\tX\r\nWurzelschooß\t1\tO\tX\r\nWurßcheibe\t2\tO\tX\r\n```\r\n\r\nMany are totally ok, like `Wunschgeborene` and I wonder why they are not marked as `OK`, still we have found `Wsserkrug`, so it's a good way to clean up in batch mode old German texts. And that is exactly our case."
+  }
+]

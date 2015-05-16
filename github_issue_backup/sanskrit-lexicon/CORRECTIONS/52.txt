@@ -1,0 +1,113 @@
+{
+  "url": "https://api.github.com/repos/sanskrit-lexicon/CORRECTIONS/issues/52",
+  "labels_url": "https://api.github.com/repos/sanskrit-lexicon/CORRECTIONS/issues/52/labels{/name}",
+  "comments_url": "https://api.github.com/repos/sanskrit-lexicon/CORRECTIONS/issues/52/comments",
+  "events_url": "https://api.github.com/repos/sanskrit-lexicon/CORRECTIONS/issues/52/events",
+  "html_url": "https://github.com/sanskrit-lexicon/CORRECTIONS/issues/52",
+  "id": 52332569,
+  "number": 52,
+  "title": "Not able to locate some words in SCH",
+  "user": {
+    "login": "drdhaval2785",
+    "id": 5755132,
+    "avatar_url": "https://avatars.githubusercontent.com/u/5755132?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/drdhaval2785",
+    "html_url": "https://github.com/drdhaval2785",
+    "followers_url": "https://api.github.com/users/drdhaval2785/followers",
+    "following_url": "https://api.github.com/users/drdhaval2785/following{/other_user}",
+    "gists_url": "https://api.github.com/users/drdhaval2785/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/drdhaval2785/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/drdhaval2785/subscriptions",
+    "organizations_url": "https://api.github.com/users/drdhaval2785/orgs",
+    "repos_url": "https://api.github.com/users/drdhaval2785/repos",
+    "events_url": "https://api.github.com/users/drdhaval2785/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/drdhaval2785/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "url": "https://api.github.com/repos/sanskrit-lexicon/CORRECTIONS/labels/bug",
+      "name": "bug",
+      "color": "fc2929"
+    }
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": {
+    "login": "funderburkjim",
+    "id": 6393033,
+    "avatar_url": "https://avatars.githubusercontent.com/u/6393033?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/funderburkjim",
+    "html_url": "https://github.com/funderburkjim",
+    "followers_url": "https://api.github.com/users/funderburkjim/followers",
+    "following_url": "https://api.github.com/users/funderburkjim/following{/other_user}",
+    "gists_url": "https://api.github.com/users/funderburkjim/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/funderburkjim/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/funderburkjim/subscriptions",
+    "organizations_url": "https://api.github.com/users/funderburkjim/orgs",
+    "repos_url": "https://api.github.com/users/funderburkjim/repos",
+    "events_url": "https://api.github.com/users/funderburkjim/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/funderburkjim/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2014-12-18T07:12:02Z",
+  "updated_at": "2014-12-20T04:24:39Z",
+  "closed_at": "2014-12-20T04:24:39Z",
+  "body": "https://github.com/sanskrit-lexicon/CORRECTIONS/issues/51#issuecomment-67446660 is one such case.\r\nMarcis also tried here. https://github.com/sanskrit-lexicon/CORRECTIONS/issues/51#issuecomment-67447423 and https://github.com/sanskrit-lexicon/CORRECTIONS/issues/51#issuecomment-67448031 without avail.\r\n",
+  "closed_by": {
+    "login": "drdhaval2785",
+    "id": 5755132,
+    "avatar_url": "https://avatars.githubusercontent.com/u/5755132?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/drdhaval2785",
+    "html_url": "https://github.com/drdhaval2785",
+    "followers_url": "https://api.github.com/users/drdhaval2785/followers",
+    "following_url": "https://api.github.com/users/drdhaval2785/following{/other_user}",
+    "gists_url": "https://api.github.com/users/drdhaval2785/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/drdhaval2785/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/drdhaval2785/subscriptions",
+    "organizations_url": "https://api.github.com/users/drdhaval2785/orgs",
+    "repos_url": "https://api.github.com/users/drdhaval2785/repos",
+    "events_url": "https://api.github.com/users/drdhaval2785/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/drdhaval2785/received_events",
+    "type": "User",
+    "site_admin": false
+  }
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/sanskrit-lexicon/CORRECTIONS/issues/comments/67449145",
+    "html_url": "https://github.com/sanskrit-lexicon/CORRECTIONS/issues/52#issuecomment-67449145",
+    "issue_url": "https://api.github.com/repos/sanskrit-lexicon/CORRECTIONS/issues/52",
+    "id": 67449145,
+    "user": {
+      "login": "drdhaval2785",
+      "id": 5755132,
+      "avatar_url": "https://avatars.githubusercontent.com/u/5755132?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/drdhaval2785",
+      "html_url": "https://github.com/drdhaval2785",
+      "followers_url": "https://api.github.com/users/drdhaval2785/followers",
+      "following_url": "https://api.github.com/users/drdhaval2785/following{/other_user}",
+      "gists_url": "https://api.github.com/users/drdhaval2785/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/drdhaval2785/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/drdhaval2785/subscriptions",
+      "organizations_url": "https://api.github.com/users/drdhaval2785/orgs",
+      "repos_url": "https://api.github.com/users/drdhaval2785/repos",
+      "events_url": "https://api.github.com/users/drdhaval2785/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/drdhaval2785/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2014-12-18T07:14:06Z",
+    "updated_at": "2014-12-18T07:14:06Z",
+    "body": "https://github.com/sanskrit-lexicon/CORRECTIONS/issues/51#issuecomment-67449119 is another such case."
+  }
+]

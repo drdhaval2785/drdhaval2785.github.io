@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html class='' lang='en'>
+<head prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#'>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8'>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta http-equiv='Content-Language' content='en'>
+<title>'sanskrit-lexicon/CORRECTIONS/46'</title>
+<link href='github-c486157afcc5f58155a921bc675afb08733fbaa8dcf39ac2104d3.css' media='all' rel='stylesheet'>
+<link href='github2-da2e842cc3f0aaf33b727d0ef034243c12ab008fd09b24868b97.css' media='all' rel='stylesheet'>
+<meta http-equiv='x-pjax-version' content='4426702614c8182f33d1780ad1169662'>
+</head>
+<body class='logged_in  env-production windows vis-public'>
+<h1 align='center'><a href='https://github.com/sanskrit-lexicon/CORRECTIONS/issues/46' target='_blank'>Listing methods to identify errors</h1><hr/><div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/drdhaval2785" class="author">drdhaval2785</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-99777162" class="timestamp">
+      <time>2014-12-05 16:40:33</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/funderburkjim" target="_blank">@funderburkjim</a></strong> and <strong><a href="https://github.com/gasyoun" target="_blank">@gasyoun</a></strong><br/>
+<br/>We are having three methods going around to identify data entry errors.
+<br/><code> <br/>1 Alphabetic ordering issue (Sampada working on it) <br/>2 Pattern mismatch based on CV pattern (Dhaval) <br/>3 Fuzzy (Marcis) <br/></code>
+<br/>Let's start exploring other modes of coding interventions which may give us some more resources for error tracking.
+<br/>The next idea in my mind is<br/>
+<br/><code> <br/>4 Pattern mismatch based on string length. <br/></code>
+<br/>Let me explain.
+<br/>If MW has an entry Davala, we cut it into all possible 1 letter, 2 lettter, ... 6 letter combination.
+<br/>D,a,v,a,l,a,Da,av,va,al,la.....,Davala.
+<br/>Then we compare the test dictionary against such different pattern combination.
+<br/>if The test dictionary has Dabala because of data entry error, it will be caught because Daba is not a valid pattern in Sanskrit based on our Base dictionary MW.
+<br/>In our current pattern such cases may be missed. </p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/gasyoun" class="author">gasyoun</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-99777162" class="timestamp">
+      <time>2014-12-05 17:03:04</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Dhaval, I agree that shingles will help us (see <a href="http://digfor.blogspot.ru/2013/03/fruity-shingles.html">http://digfor.blogspot.ru/2013/03/fruity-shingles.html</a>). I will redo my fuzzy comparison as soon I'll finish my SLP7 encoding. Fuzzy does not recognize capital letters, so I'm making my modification for coding / decoding. The list is ready:
+<br/><code> <br/>A ä <br/>I ï <br/>U ü <br/>F ř <br/>X ľ <br/>E ë <br/>O ö <br/>M ň <br/>H ĥ <br/>K ķ <br/>G ģ <br/>N ŋ <br/>C č <br/>J ĵ <br/>Y ñ <br/>W ṭ <br/>Q ţ <br/>R ṇ <br/>T ŧ <br/>D đ <br/>P þ <br/>B ƅ <br/>S š <br/></code>
+<br/>It's something that might be less fruitful than CVC doing, so I'll wait for now.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/funderburkjim" class="author">funderburkjim</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-99777162" class="timestamp">
+      <time>2014-12-07 21:50:05</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Regarding 4: Pattern matching on string length.
+<br/>This is the topic of N-grams.   Shingling and n-grams are similar, I think, after looking at <strong><a href="https://github.com/gasyoun" target="_blank">@gasyoun</a></strong> 's reference.   The main difference is that with n-grams you are looking at sequences of characters in a character string while with shingles you are looking at sequences of 'tokens'  (e.g. of words).
+<br/><strong><a href="https://github.com/gasyoun" target="_blank">@gasyoun</a></strong>   Your 'fuzzy' approach is still 'fuzzy' to me, although I understand the basic 'edit distance' idea of string comparison.  The approach might be more widely usable if, like the faultfinder tactic, it were developed into a program.  Perhaps you and Dhaval are already developing such a program? </p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/gasyoun" class="author">gasyoun</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-99777162" class="timestamp">
+      <time>2014-12-07 22:03:03</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/funderburkjim" target="_blank">@funderburkjim</a></strong> my fuzzy is an addon to Excel (<a href="https://www.ablebits.com/excel-suite/">https://www.ablebits.com/excel-suite/</a>) and so will remain.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/drdhaval2785" class="author">drdhaval2785</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-99777162" class="timestamp">
+      <time>2014-12-08 18:39:43</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/gasyoun" target="_blank">@gasyoun</a></strong><br/>
+<br/>Jim and I are interested in the documentation of logic and execution of your fuzzy. Spend some time and create a readme and video</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/drdhaval2785" class="author">drdhaval2785</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-99777162" class="timestamp">
+      <time>2014-12-08 18:42:06</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <pre><code>
+    <br/>5 When we extend any pattern based business to the description - the field would be different. We will have noun-endings and verb-endings too which are not there in headwords. So,, we will have to figure out a way to tackle them. 
+    <br/>```</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/drdhaval2785" class="author">drdhaval2785</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-99777162" class="timestamp">
+      <time>2014-12-08 18:43:39</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <pre><code>
+    <br/>6 listing out impossible letter combinations by Sanskrit grammar rules 
+    <br/>```</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/gasyoun" class="author">gasyoun</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-99777162" class="timestamp">
+      <time>2014-12-08 18:57:39</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Yeah, 6 is my long wanted idea of non-sandhi patterns.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/drdhaval2785" class="author">drdhaval2785</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-99777162" class="timestamp">
+      <time>2014-12-08 19:06:50</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <pre><code>
+    <br/>7 Taking English-Sanskrit dictionaries as base and clustering the Sanskrit words having same meaning. The word which is not repeated across dictionaries is suspect 
+    <br/>```</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/drdhaval2785" class="author">drdhaval2785</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-99777162" class="timestamp">
+      <time>2014-12-18 07:20:15</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <pre><code>
+    <br/>8 Search for a list of feminine words ending in 'a' 
+    <br/>``` 
+    <br/>Details at #53 .</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/drdhaval2785" class="author">drdhaval2785</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-99777162" class="timestamp">
+      <time>2015-04-13 18:58:42</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <pre><code>
+    <br/>9 Listing out words which appear only in one dictionary after filtering out common differences like M, H at the end, corresponding nasal letters etc. 
+    <br/>``` 
+    <br/>These are mostly unique words which would require closer inspection.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+</body></html>

@@ -1,0 +1,95 @@
+{
+  "url": "https://api.github.com/repos/sanskrit-lexicon/CORRECTIONS/issues/57",
+  "labels_url": "https://api.github.com/repos/sanskrit-lexicon/CORRECTIONS/issues/57/labels{/name}",
+  "comments_url": "https://api.github.com/repos/sanskrit-lexicon/CORRECTIONS/issues/57/comments",
+  "events_url": "https://api.github.com/repos/sanskrit-lexicon/CORRECTIONS/issues/57/events",
+  "html_url": "https://github.com/sanskrit-lexicon/CORRECTIONS/issues/57",
+  "id": 52582232,
+  "number": 57,
+  "title": "Record 'types' in SCH",
+  "user": {
+    "login": "funderburkjim",
+    "id": 6393033,
+    "avatar_url": "https://avatars.githubusercontent.com/u/6393033?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/funderburkjim",
+    "html_url": "https://github.com/funderburkjim",
+    "followers_url": "https://api.github.com/users/funderburkjim/followers",
+    "following_url": "https://api.github.com/users/funderburkjim/following{/other_user}",
+    "gists_url": "https://api.github.com/users/funderburkjim/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/funderburkjim/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/funderburkjim/subscriptions",
+    "organizations_url": "https://api.github.com/users/funderburkjim/orgs",
+    "repos_url": "https://api.github.com/users/funderburkjim/repos",
+    "events_url": "https://api.github.com/users/funderburkjim/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/funderburkjim/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "url": "https://api.github.com/repos/sanskrit-lexicon/CORRECTIONS/labels/question",
+      "name": "question",
+      "color": "cc317c"
+    }
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2014-12-21T01:10:40Z",
+  "updated_at": "2014-12-22T12:16:50Z",
+  "closed_at": "2014-12-22T12:16:50Z",
+  "body": "In looking at the SCH scans, there are at least 4 kinds of records:\r\n1. hw  normal\r\n2. [hw bracketed]\r\n3. *hw asterisked\r\n4. ºhw 'circled'\r\n\r\nWhat is the signficance of types 2-4?\r\n",
+  "closed_by": {
+    "login": "gasyoun",
+    "id": 80761,
+    "avatar_url": "https://avatars.githubusercontent.com/u/80761?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/gasyoun",
+    "html_url": "https://github.com/gasyoun",
+    "followers_url": "https://api.github.com/users/gasyoun/followers",
+    "following_url": "https://api.github.com/users/gasyoun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/gasyoun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/gasyoun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/gasyoun/subscriptions",
+    "organizations_url": "https://api.github.com/users/gasyoun/orgs",
+    "repos_url": "https://api.github.com/users/gasyoun/repos",
+    "events_url": "https://api.github.com/users/gasyoun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/gasyoun/received_events",
+    "type": "User",
+    "site_admin": false
+  }
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/sanskrit-lexicon/CORRECTIONS/issues/comments/67763748",
+    "html_url": "https://github.com/sanskrit-lexicon/CORRECTIONS/issues/57#issuecomment-67763748",
+    "issue_url": "https://api.github.com/repos/sanskrit-lexicon/CORRECTIONS/issues/57",
+    "id": 67763748,
+    "user": {
+      "login": "gasyoun",
+      "id": 80761,
+      "avatar_url": "https://avatars.githubusercontent.com/u/80761?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/gasyoun",
+      "html_url": "https://github.com/gasyoun",
+      "followers_url": "https://api.github.com/users/gasyoun/followers",
+      "following_url": "https://api.github.com/users/gasyoun/following{/other_user}",
+      "gists_url": "https://api.github.com/users/gasyoun/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/gasyoun/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/gasyoun/subscriptions",
+      "organizations_url": "https://api.github.com/users/gasyoun/orgs",
+      "repos_url": "https://api.github.com/users/gasyoun/repos",
+      "events_url": "https://api.github.com/users/gasyoun/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/gasyoun/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2014-12-21T08:26:14Z",
+    "updated_at": "2014-12-21T08:26:14Z",
+    "body": "Yes, exactly four kinds are there. The markup is not very strict and a comparison might show up words, that should have some markup in the SCH, but do not.\r\n\r\n2. `Meine Zusätze zu Böhtlingk (neue Belege) stehen meist in [ ].` and `die Böhtlingk'schen Nachträge restlos in meine Liste hineingearbeitet werden müßten`. In many cases SCH incorporates words from PWK Nachträge without even noting it. When he does note (adding evidence), he uses [ ].\r\n\r\n4. `Die im pw ganz fehlenden Wörter resp. Bedeutungen oder ein solches Genus habe ich wieder wie bisher mit ° bezeichnet, während * besagt, daß das Betreffende daselbst noch nicht belegt ist.` When a totally new word to PWK (new meaning or grammatical gender) is added ° is used. (quoted from http://www.sanskrit-lexicon.uni-koeln.de/scans/csldoc/_downloads/SCH-Nachtraege.htm)\r\n\r\n3. * there is still no evidence (it's hypothetical `während * besagt, daß das Betreffende daselbst noch nicht belegt ist.`)."
+  }
+]

@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html class='' lang='en'>
+<head prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#'>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8'>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta http-equiv='Content-Language' content='en'>
+<title>'sanskrit-lexicon/CORRECTIONS/56'</title>
+<link href='github-c486157afcc5f58155a921bc675afb08733fbaa8dcf39ac2104d3.css' media='all' rel='stylesheet'>
+<link href='github2-da2e842cc3f0aaf33b727d0ef034243c12ab008fd09b24868b97.css' media='all' rel='stylesheet'>
+<meta http-equiv='x-pjax-version' content='4426702614c8182f33d1780ad1169662'>
+</head>
+<body class='logged_in  env-production windows vis-public'>
+<h1 align='center'><a href='https://github.com/sanskrit-lexicon/CORRECTIONS/issues/56' target='_blank'>Suggestion for code teaching</h1><hr/><div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/drdhaval2785" class="author">drdhaval2785</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-99777162" class="timestamp">
+      <time>2014-12-20 05:22:43</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/funderburkjim" target="_blank">@funderburkjim</a></strong><br/>
+<br/>As mentioned in <a href="https://github.com/sanskrit-lexicon/CORRECTIONS/issues/51#issuecomment-67689415">https://github.com/sanskrit-lexicon/CORRECTIONS/issues/51#issuecomment-67689415</a> your interest in lukewarm in this section.
+<br/>Can this be treated as an opportunity to teach the conversion methods to me - so that you have a helping hand in coding. </p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/gasyoun" class="author">gasyoun</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-99777162" class="timestamp">
+      <time>2014-12-20 07:47:07</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I would say it's God's gift we have Dhaval. If he would want to learn Russian I would help. Here we can rely only on Jim.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/funderburkjim" class="author">funderburkjim</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-99777162" class="timestamp">
+      <time>2014-12-21 00:26:08</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Sounds like a good idea.<br/>
+<br/>I think it's best to do this on sandev, since we all have access there.
+<br/>I copied the SCH/2014 directory there just now.
+<br/>Start by reading the top-level 'readme.org' file in the SCH directory - just skim read it.<br/>
+<br/>Then look at pywork/update.sh, redo_hw.sh, and redo_xml.sh.
+<br/>There are a few differences between the operating environment on sandev and that on the Cologne server, but these differences seem minor.
+<br/>One difference is the 'default' python version.   At Cologne, the default version (python --version) is
+<br/>5.4.  However, Cologne also has a 2.6 version, accessible via 'python26'.  On sandev,  the default version is 2.6, but the 'python26' command is unknown.   There are several ways to deal with this on sandev.  One way is shown in 'update.sh' , where I put the line
+<br/><code> <br/>alias python26='python' <br/></code>
+<br/>at the top.
+<br/>Another way would have been just to change all 'python26' to 'python' in that file.
+<br/>sandev is a Linux system.  I haven't made this change in other scripts (notably, redo_hw.sh will need this change.)<br/>
+<br/>Instead of Windows batch files (x.bat), you can use shell scripts 'x.sh' and run them via
+<br/>'sh x.sh'.<br/>
+<br/>I also had to (in the SCH directory)
+<br/><code> <br/>chmod -R 0755 web <br/></code>
+<br/>so that the web displays have permission to be displayed.
+<br/>The 'redo.sh' script in web/sqlite required a minor change, and I had to install a version of 'sqlite3'.
+<br/>To deal with making 'SAl' the key1 headword instead of 'SAl(ate)', normally (i.e. for most dictionaries) hw1.py would be the program that needs modification.  However, SCH is different.  And probably a more radical approach will be required, starting with headword.py and hw0.py.  It will take some experimenting to get the right approach.
+<br/>The 'dev' documentation might be good to review (using Cologne site).
+<br/>I think you will find Python easy to get used to.  One important starting detail is that in Python scripts
+<br/>(like hw1.py), the indentation is significant.  Also, there are no ending semicolons, and no curly brackets.  I'll explain the other details of Python as questions arise. </p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/funderburkjim" class="author">funderburkjim</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-99777162" class="timestamp">
+      <time>2014-12-21 02:05:30</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Here's a good first exercise.
+<br/>Use list display for SCH on sandev to look up dOHzWulya.  You will see it is misplaced, after dohalin.
+<br/>It should be after dOHSAsana.<br/>
+<br/>To correct this on sandev,
+<br/> insert these two lines at bottom of change_line.txt in pywork for SCH.
+<br/><code> <br/>; move dOHzWulya after dOHSAsana <br/>move 15768 after 15779 <br/></code> </p>
+<pre><code class="language-Then">    <br/>1  sh update.sh 
+    <br/>2  sh redo_hw.sh 
+    <br/>3  sh redo_xml.sh 
+    <br/>Now check the list display for sch on sandev for dOHzWulya and you should see it has moved  
+    <br/>after dOHSAsana. 
+    <br/>Now, sandev back in sync with Cologne for SCH. </p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/gasyoun" class="author">gasyoun</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-99777162" class="timestamp">
+      <time>2014-12-21 08:08:47</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Thanks for the detailed review. It's good that <code>hw1.py</code>, <code>headword.py</code> and <code>hw0.py</code> names are self explaining.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/drdhaval2785" class="author">drdhaval2785</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-99777162" class="timestamp">
+      <time>2014-12-22 08:38:15</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I will get back to this after christmas.
+<br/>Right now running on tight schedule.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/drdhaval2785" class="author">drdhaval2785</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-99777162" class="timestamp">
+      <time>2014-12-24 07:08:32</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <pre><code>
+    <br/>Start by reading the top-level 'readme.org' file in the SCH directory - just skim read it. 
+    <br/>``` 
+    <br/>Thanks for the hint - skim read. 
+    <br/>Otherwise I will end up on wheelchair. 
+    <br/>Too much effort goes in this simple looking dictionary displays. whooooo. 
+    <br/>Update: Completed reading the readme.org and cursory look at the programs 
+    <br/></p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/drdhaval2785" class="author">drdhaval2785</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-99777162" class="timestamp">
+      <time>2014-12-24 10:14:16</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I tried the exercise as suggested.
+<br/>Didn't give expected output.
+<br/>The console log is like this
+<br/>```
+<br/>(uiserver):u78408529:~/dkfsermons/cologne/SCH/pywork > sh update.sh
+<br/>apply change_line.txt to sch_orig_utf8_slp1 to get sch0
+<br/>DONE: CHECK updatelinelog.txt
+<br/>Apply manualByLine01.txt to sch0 to get sch1 ...
+<br/>67 change records processed from manualByLine01.txt
+<br/>28762 records read from ../orig/sch0.txt and written to ../orig/sch1.txt
+<br/>Apply manualByLine02.txt to sch1 to get sch ...
+<br/>42 change records processed from manualByLine02.txt
+<br/>28762 records read from ../orig/sch1.txt and written to ../orig/sch.txt
+<br/>(uiserver):u78408529:~/dkfsermons/cologne/SCH/pywork > sh redo_hw.sh
+<br/>BEGIN redo_hw.sh
+<br/>hw0...
+<br/>redo_hw.sh: line 3: python26: command not found
+<br/>hw1...
+<br/>redo_hw.sh: line 5: python26: command not found
+<br/>copy hw1 to hw2
+<br/>DONE redo_hw.sh
+<br/>(uiserver):u78408529:~/dkfsermons/cologne/SCH/pywork > sh_redo_xml.sh
+<br/>-bash: sh_redo_xml.sh: command not found
+<br/>(uiserver):u78408529:~/dkfsermons/cologne/SCH/pywork > sh redo_xml.sh
+<br/>BEGIN redo_xml.sh
+<br/>construct sch.xml...
+<br/>redo_xml.sh: line 3: python26: command not found
+<br/>xmllint on sch.xml...
+<br/>sch.sqlite...
+<br/>remaking input.txt...
+<br/>X-Powered-By: PHP/4.4.9
+<br/>Content-type: text/html
+<br/>remaking sqlite table...
+<br/>Error: near line 1: no such table: sch </p>
+<pre><code class="language-28755">
+    <br/>query_dump ... 
+    <br/>X-Powered-By: PHP/4.4.9 
+    <br/>Content-type: text/html 
+    <br/>28755 records read from ../../pywork/sch.xml<br/> 
+    <br/>28656 records created in query_dump.txt<br/> 
+    <br/>END redo_xml.sh 
+    <br/>```</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/drdhaval2785" class="author">drdhaval2785</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-99777162" class="timestamp">
+      <time>2014-12-24 10:35:06</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Done.
+<br/>It worked.
+<br/>The clue was
+<br/><code> <br/>hw0... <br/>redo_hw.sh: line 3: python26: command not found <br/>hw1... <br/>redo_hw.sh: line 5: python26: command not found <br/></code>
+<br/>So I forgot to add alias sentence above these two shell scripts.
+<br/>After putting alias statement it worked fine.
+<br/><img src="https://cloud.githubusercontent.com/assets/5755132/5547772/9e03c820-8b86-11e4-9d77-e10515802f10.PNG" alt="capture" /> </p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/drdhaval2785" class="author">drdhaval2785</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-99777162" class="timestamp">
+      <time>2014-12-24 10:44:04</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/funderburkjim" target="_blank">@funderburkjim</a></strong><br/>
+<br/>Some questions regarding the files mentioned in shell script update.sh
+<br/>Q1 - what is the difference between manualByLine01.txt and manualByLine02.txt ?
+<br/>Q2 - In adding the change detail in change_line.txt
+<br/><code> <br/>; move dOHzWulya after dOHSAsana <br/>move 15768 after 15779 <br/></code>
+<br/>The line after semicolon is for explanation - right ?
+<br/>and the second line actually gets executed by some script.
+<br/>Q3 - What are the type of commands we use in this change_line.txt ? I can see 'move' which gets converted to the following in Updatelinelog.txt
+<br/><code> <br/>11 Change(move,13388,13386) <br/>line 13388 : .{#cuRwCedane#}100{#cun2t2(chedane)#}¦ S I , 245 , 8 (Ko.; {%cun2t2ita)%}; II , 198 , 5 v.u. (Ko. desgl.); 172 , 1 v.u. (Ko. {%cun2t2yama1na1ni…=…vilikhyama1na1ni)%}. -- Kaus. I , 449 , 7 v.u. (Ko.; {%cun2t2ayati%}). -- Mit {%°ava%} abpflücken , S I , 393 , 5 v.u. (Ko.). [Schµ13592]* €6 <br/>line 13386 : .{#cuw#}100{#cut2#}¦ {%(chedane)%} S I , 98 , 6 v.u. (Ko.). -- Mit {%a1%} kratzen , Saduktik. 2 , 414; 5 , 13. 27. Hars2ac. 192 , 21 {%(a1cot2ita…=…utkha1ta%} , torn out). [Schµ13590]* €4 <br/></code>
+<br/>So I guess delete would be another command.<br/>
+<br/>Where is the whole list ? </p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/drdhaval2785" class="author">drdhaval2785</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-99777162" class="timestamp">
+      <time>2014-12-24 11:26:18</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <pre><code>
+    <br/>1 sh update.sh 
+    <br/>2 sh redo_hw.sh 
+    <br/>3 sh redo_xml.sh 
+    <br/>``` 
+    <br/>As these three shell scripts seem important to effect changes in dictionary - it would be a great idea to start from the following codes for line to line commenting (to make us understand what is happening in that code.) 
+    <br/>The list is 
+    <br/>1 update_line.py 
+    <br/>2 updateByLine.py 
+    <br/>3 hw0.py 
+    <br/>4 hw1.py 
+    <br/>5 hw2.py 
+    <br/>6 make_xml.py 
+    <br/>7 redo.sh in ../web/squlite 
+    <br/>     7a make_input.php 
+    <br/>8 init_query.sh in ../web/webtc2 
+    <br/>    8a init_query.php 
+    <br/>So, I would appreciate if <strong><a href="https://github.com/funderburkjim" target="_blank">@funderburkjim</a></strong>  can comment these scripts profusely so that step by step code is understood. 
+    <br/>Dhaval</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/drdhaval2785" class="author">drdhaval2785</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-99777162" class="timestamp">
+      <time>2014-12-24 11:28:44</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>N.B. - As I am new to python - even seemingly silly thing should also be noted.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/gasyoun" class="author">gasyoun</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-99777162" class="timestamp">
+      <time>2014-12-24 20:05:12</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>\The line after semicolon is for explanation - right ?\ exactly.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/drdhaval2785" class="author">drdhaval2785</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-99777162" class="timestamp">
+      <time>2014-12-25 18:56:47</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>In the meanwhile I took a tutorial for python.
+<br/>Now let me try and figure out whether I get Jim's logic correct or not.
+<br/>I will take up update_line.py and try to add comments (how I understood it).
+<br/>Jim may like to correct me.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/drdhaval2785" class="author">drdhaval2785</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-99777162" class="timestamp">
+      <time>2014-12-25 19:49:39</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/funderburkjim" target="_blank">@funderburkjim</a></strong>
+<br/>Pasting code one by one for scrutiny and issues at <a href="https://github.com/drdhaval2785/CologneCodeLearning/issues/1">https://github.com/drdhaval2785/CologneCodeLearning/issues/1</a> </p>
+  </div>
+  </div>
+  </div>
+  <br/>
+</body></html>

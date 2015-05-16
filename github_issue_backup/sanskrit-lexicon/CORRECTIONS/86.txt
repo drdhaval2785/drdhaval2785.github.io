@@ -1,0 +1,91 @@
+{
+  "url": "https://api.github.com/repos/sanskrit-lexicon/CORRECTIONS/issues/86",
+  "labels_url": "https://api.github.com/repos/sanskrit-lexicon/CORRECTIONS/issues/86/labels{/name}",
+  "comments_url": "https://api.github.com/repos/sanskrit-lexicon/CORRECTIONS/issues/86/comments",
+  "events_url": "https://api.github.com/repos/sanskrit-lexicon/CORRECTIONS/issues/86/events",
+  "html_url": "https://github.com/sanskrit-lexicon/CORRECTIONS/issues/86",
+  "id": 58153471,
+  "number": 86,
+  "title": "PW corrections for missing data",
+  "user": {
+    "login": "funderburkjim",
+    "id": 6393033,
+    "avatar_url": "https://avatars.githubusercontent.com/u/6393033?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/funderburkjim",
+    "html_url": "https://github.com/funderburkjim",
+    "followers_url": "https://api.github.com/users/funderburkjim/followers",
+    "following_url": "https://api.github.com/users/funderburkjim/following{/other_user}",
+    "gists_url": "https://api.github.com/users/funderburkjim/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/funderburkjim/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/funderburkjim/subscriptions",
+    "organizations_url": "https://api.github.com/users/funderburkjim/orgs",
+    "repos_url": "https://api.github.com/users/funderburkjim/repos",
+    "events_url": "https://api.github.com/users/funderburkjim/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/funderburkjim/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2015-02-19T00:51:54Z",
+  "updated_at": "2015-04-16T14:01:33Z",
+  "closed_at": "2015-04-16T14:01:33Z",
+  "body": "A small number (39) cases were found in the PW(K) digitization as marking potentially missing data.\r\nThese cases are different from missing data in other dictionaries in that there didn't appear to be missing data, in general.\r\nThe working paper (used by Sampada and Jim) is [here](\r\nhttps://github.com/sanskrit-lexicon/CORRECTIONS/blob/master/dictionaries/PW/missing_0001-0099.txt)",
+  "closed_by": {
+    "login": "drdhaval2785",
+    "id": 5755132,
+    "avatar_url": "https://avatars.githubusercontent.com/u/5755132?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/drdhaval2785",
+    "html_url": "https://github.com/drdhaval2785",
+    "followers_url": "https://api.github.com/users/drdhaval2785/followers",
+    "following_url": "https://api.github.com/users/drdhaval2785/following{/other_user}",
+    "gists_url": "https://api.github.com/users/drdhaval2785/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/drdhaval2785/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/drdhaval2785/subscriptions",
+    "organizations_url": "https://api.github.com/users/drdhaval2785/orgs",
+    "repos_url": "https://api.github.com/users/drdhaval2785/repos",
+    "events_url": "https://api.github.com/users/drdhaval2785/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/drdhaval2785/received_events",
+    "type": "User",
+    "site_admin": false
+  }
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/sanskrit-lexicon/CORRECTIONS/issues/comments/93741721",
+    "html_url": "https://github.com/sanskrit-lexicon/CORRECTIONS/issues/86#issuecomment-93741721",
+    "issue_url": "https://api.github.com/repos/sanskrit-lexicon/CORRECTIONS/issues/86",
+    "id": 93741721,
+    "user": {
+      "login": "drdhaval2785",
+      "id": 5755132,
+      "avatar_url": "https://avatars.githubusercontent.com/u/5755132?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/drdhaval2785",
+      "html_url": "https://github.com/drdhaval2785",
+      "followers_url": "https://api.github.com/users/drdhaval2785/followers",
+      "following_url": "https://api.github.com/users/drdhaval2785/following{/other_user}",
+      "gists_url": "https://api.github.com/users/drdhaval2785/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/drdhaval2785/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/drdhaval2785/subscriptions",
+      "organizations_url": "https://api.github.com/users/drdhaval2785/orgs",
+      "repos_url": "https://api.github.com/users/drdhaval2785/repos",
+      "events_url": "https://api.github.com/users/drdhaval2785/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/drdhaval2785/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2015-04-16T14:01:33Z",
+    "updated_at": "2015-04-16T14:01:33Z",
+    "body": "As https://github.com/sanskrit-lexicon/CORRECTIONS/issues/91 has said that these 39 cases have been handled, I am closing this issue"
+  }
+]

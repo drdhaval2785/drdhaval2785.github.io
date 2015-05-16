@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html class='' lang='en'>
+<head prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#'>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8'>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta http-equiv='Content-Language' content='en'>
+<title>'sanskrit-lexicon/CORRECTIONS/34'</title>
+<link href='github-c486157afcc5f58155a921bc675afb08733fbaa8dcf39ac2104d3.css' media='all' rel='stylesheet'>
+<link href='github2-da2e842cc3f0aaf33b727d0ef034243c12ab008fd09b24868b97.css' media='all' rel='stylesheet'>
+<meta http-equiv='x-pjax-version' content='4426702614c8182f33d1780ad1169662'>
+</head>
+<body class='logged_in  env-production windows vis-public'>
+<h1 align='center'><a href='https://github.com/sanskrit-lexicon/CORRECTIONS/issues/34' target='_blank'>Extending faultfinder to sanskrit words in description</h1><hr/><div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/drdhaval2785" class="author">drdhaval2785</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-99777162" class="timestamp">
+      <time>2014-11-13 05:24:49</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>As suggested by <strong><a href="https://github.com/funderburkjim" target="_blank">@funderburkjim</a></strong>, it can be done later on.
+<br/>Kept it here so that it is not forgotten</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/drdhaval2785" class="author">drdhaval2785</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-99777162" class="timestamp">
+      <time>2014-11-17 04:53:00</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/funderburkjim" target="_blank">@funderburkjim</a></strong> and <strong><a href="https://github.com/gasyoun" target="_blank">@gasyoun</a></strong><br/>
+<br/>I might be asking a silly question, but our markups do allow us to segregate sanskrit and non sanskrit entities in the descriptions also - right ?
+<br/>If yes, this machine can be extended to the description correction - once headwords quality is acceptably corrected.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/gasyoun" class="author">gasyoun</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-99777162" class="timestamp">
+      <time>2014-11-17 08:54:26</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Markup does allows, yes. Exactly, can be extended. It's a matter of Jim's time and priorities.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/funderburkjim" class="author">funderburkjim</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-99777162" class="timestamp">
+      <time>2014-11-19 02:45:48</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>In all dictionaries, when there is Devanagari in the print edition, it is coded in a distinguishable way.<br/>
+<br/>In the case of VCP and SKD everything in text is  Devanagari.
+<br/>So, for these cases there are a lot of textual Sanskrit words amenable to spelling
+<br/>checks by faultfinder techniques.
+<br/>When Sanskrit words are represented in some variant of IAST in the print edition, then, if the dictionary is MW, these Sanskrit words also are identifiable as Sanskrit words, because at some time in the past I marked them with the<br/>
+<br/><code> <br/><as0> and <as1> tags. <br/></code>
+<br/>However, in the case of the other dictionaries, the IAST Sanskrit is coded only as AS  (using letter-number combinations for diacritics).  There are difficulties in knowing if a given non-Devanagari word in a non-MW dictionary is a Sanskrit word or a word in some other language (English, German).  So, this is currently a hard case to handle.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/gasyoun" class="author">gasyoun</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-99777162" class="timestamp">
+      <time>2014-11-19 08:19:10</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/funderburkjim" target="_blank">@funderburkjim</a></strong> Can we test on a simple case, like MW, please, to have the technique ready? Markup will come. Just follow the white rabbit.
+<br/>MW 1899 : XXXII
+<br/><code> <br/>As to the books used by myself, many of them, of course, are identical with those named above. Others are named in the first edition, and need not be referred to again here. I ought, however, to repeat that some of the words marked MW. in the present edition rest on the authority of the Śabdakalpadruma <br/></code></p>
+  </div>
+  </div>
+  </div>
+  <br/>
+</body></html>

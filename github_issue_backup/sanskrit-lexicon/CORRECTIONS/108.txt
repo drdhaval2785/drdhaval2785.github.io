@@ -1,0 +1,73 @@
+{
+  "url": "https://api.github.com/repos/sanskrit-lexicon/CORRECTIONS/issues/108",
+  "labels_url": "https://api.github.com/repos/sanskrit-lexicon/CORRECTIONS/issues/108/labels{/name}",
+  "comments_url": "https://api.github.com/repos/sanskrit-lexicon/CORRECTIONS/issues/108/comments",
+  "events_url": "https://api.github.com/repos/sanskrit-lexicon/CORRECTIONS/issues/108/events",
+  "html_url": "https://github.com/sanskrit-lexicon/CORRECTIONS/issues/108",
+  "id": 75051672,
+  "number": 108,
+  "title": "PD headwords with different Devanagari and IAST spellings",
+  "user": {
+    "login": "funderburkjim",
+    "id": 6393033,
+    "avatar_url": "https://avatars.githubusercontent.com/u/6393033?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/funderburkjim",
+    "html_url": "https://github.com/funderburkjim",
+    "followers_url": "https://api.github.com/users/funderburkjim/followers",
+    "following_url": "https://api.github.com/users/funderburkjim/following{/other_user}",
+    "gists_url": "https://api.github.com/users/funderburkjim/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/funderburkjim/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/funderburkjim/subscriptions",
+    "organizations_url": "https://api.github.com/users/funderburkjim/orgs",
+    "repos_url": "https://api.github.com/users/funderburkjim/repos",
+    "events_url": "https://api.github.com/users/funderburkjim/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/funderburkjim/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2015-05-11T01:48:20Z",
+  "updated_at": "2015-05-11T07:19:11Z",
+  "closed_at": null,
+  "body": "There is a certain duplication of headword spelling that is present in PD.  \r\nFor nearly every headword,  the headword is given in two forms, Devanagari and IAST.\r\n![image](https://cloud.githubusercontent.com/assets/6393033/7557131/c8fd1ae2-f759-11e4-8f3f-b207cd0ca586.png)\r\n\r\nIn the Cologne digitization, these two forms were coded in different ways.  The Devanagari was coded in\r\nHK (which we have by now changed to SLP1), and the IAST was coded with the 'Anglicized Sanskrit' method\r\nwhich represents IAST diacritics with numbers following the letter.\r\nHere is how the digitizations look for the three headwords of the above image:\r\n```\r\n<P>.{#aMhohan#}¦ (am3ho-han)\r\n<P>.{#aMhohi#}¦ (am3hohi) \r\n<P>.{#aMhi#}¦ (am3h-ri)\r\n```\r\n\r\nNow further imagine converting the IAST to SLP1 -  we expect to get THE SAME SPELLING as the coding of \r\nthe Devanagari form of the headword.\r\n\r\nThis is the case with the first one (we ignore the '-' in `am3ho-han` and use the fact that 'm3' is a\r\nrepresentation of anusvAra).   Similarly, when the IAST of the second example is converted to SLP1, we\r\nget the same spelling as the SLP1 coding of Devanagari.\r\n\r\nBut look at the third example -  Here, the SLP1 transcoding of the IAST is `aMhri`, which differs from the\r\nSLP1 coding `aMhi` of the Devanagari ---  something is wrong.  Brief examination (say of the scan) for this\r\ncase shows that the `aMhi` spelling is wrong.\r\n\r\nNow a relatively simple program was used to carry out this analysis for all headwords.\r\nThe analysis results in about 1500 (out of 107,620 headwords) cases where the Devanagari and IAST \r\nspellings are inconsistent.  \r\n\r\nI think this list deserves further examination, as it will likely uncover many spelling errors - either in the\r\nDevanagari coding or in the IAST coding.\r\n\r\nAfter the corrections under issue 106, there are 1427 cases where the Devanagari and IAST \r\nspellings are inconsistent.  A first presentation of these is in file\r\n[pd_deva_ne_iast.txt](https://gist.github.com/funderburkjim/8b4d16edde01075be131).\r\n\r\nNote1: the first 4 cases can be ignored - the difference is due to IAST ambiguity in handling the hiatus 'ai'.\r\nNote2: 4756 systematic IAST/DEVA differences ignored.  \r\n\r\nBecause 1427 is a large number of cases, we need to develop some ways to expedite the analysis of these \r\ncases.  \r\nBased on examination of 80 of the cases in connection with issue#106,  I expect most of the\r\nerrors to be in the coding of Devanagari, and most of these are due to typographical errors.  However, a \r\nsmall percentage (5% ?) will likely be due to errors in the text.  And a similarly small percentage will be errors in the printed IAST.\r\n",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/sanskrit-lexicon/CORRECTIONS/issues/comments/100793925",
+    "html_url": "https://github.com/sanskrit-lexicon/CORRECTIONS/issues/108#issuecomment-100793925",
+    "issue_url": "https://api.github.com/repos/sanskrit-lexicon/CORRECTIONS/issues/108",
+    "id": 100793925,
+    "user": {
+      "login": "gasyoun",
+      "id": 80761,
+      "avatar_url": "https://avatars.githubusercontent.com/u/80761?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/gasyoun",
+      "html_url": "https://github.com/gasyoun",
+      "followers_url": "https://api.github.com/users/gasyoun/followers",
+      "following_url": "https://api.github.com/users/gasyoun/following{/other_user}",
+      "gists_url": "https://api.github.com/users/gasyoun/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/gasyoun/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/gasyoun/subscriptions",
+      "organizations_url": "https://api.github.com/users/gasyoun/orgs",
+      "repos_url": "https://api.github.com/users/gasyoun/repos",
+      "events_url": "https://api.github.com/users/gasyoun/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/gasyoun/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2015-05-11T07:19:11Z",
+    "updated_at": "2015-05-11T07:19:11Z",
+    "body": "Excellent analysis. `1500 (out of 107,620 headwords) cases where the Devanagari and IAST \r\nspellings are inconsistent` is not a small number indeed. It took us a few months to handle a similar number in Vachaspatyam doubles. The only thing I ask for - if you make SLP1 file, make .py script that adds or replaces SLP1 to Devanagari so one can actually work with the file, otherwise it's valuable information but hard to use for those who are shy to code or use converters for such files."
+  }
+]

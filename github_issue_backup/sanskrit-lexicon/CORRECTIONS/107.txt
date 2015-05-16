@@ -1,0 +1,73 @@
+{
+  "url": "https://api.github.com/repos/sanskrit-lexicon/CORRECTIONS/issues/107",
+  "labels_url": "https://api.github.com/repos/sanskrit-lexicon/CORRECTIONS/issues/107/labels{/name}",
+  "comments_url": "https://api.github.com/repos/sanskrit-lexicon/CORRECTIONS/issues/107/comments",
+  "events_url": "https://api.github.com/repos/sanskrit-lexicon/CORRECTIONS/issues/107/events",
+  "html_url": "https://github.com/sanskrit-lexicon/CORRECTIONS/issues/107",
+  "id": 72735390,
+  "number": 107,
+  "title": "Duals and plurals",
+  "user": {
+    "login": "drdhaval2785",
+    "id": 5755132,
+    "avatar_url": "https://avatars.githubusercontent.com/u/5755132?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/drdhaval2785",
+    "html_url": "https://github.com/drdhaval2785",
+    "followers_url": "https://api.github.com/users/drdhaval2785/followers",
+    "following_url": "https://api.github.com/users/drdhaval2785/following{/other_user}",
+    "gists_url": "https://api.github.com/users/drdhaval2785/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/drdhaval2785/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/drdhaval2785/subscriptions",
+    "organizations_url": "https://api.github.com/users/drdhaval2785/orgs",
+    "repos_url": "https://api.github.com/users/drdhaval2785/repos",
+    "events_url": "https://api.github.com/users/drdhaval2785/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/drdhaval2785/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2015-05-03T02:32:40Z",
+  "updated_at": "2015-05-04T08:22:57Z",
+  "closed_at": null,
+  "body": "As an offshoot of discussion at https://github.com/sanskrit-lexicon/CORRECTIONS/issues/101#issuecomment-98370993 and @funderburkjim 's response at https://github.com/sanskrit-lexicon/CORRECTIONS/issues/101#issuecomment-98398821 a separate issue has been raised here to deal with plurals and duals in various dictionaries, because standards differ according to dictionary.",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/sanskrit-lexicon/CORRECTIONS/issues/comments/98630702",
+    "html_url": "https://github.com/sanskrit-lexicon/CORRECTIONS/issues/107#issuecomment-98630702",
+    "issue_url": "https://api.github.com/repos/sanskrit-lexicon/CORRECTIONS/issues/107",
+    "id": 98630702,
+    "user": {
+      "login": "gasyoun",
+      "id": 80761,
+      "avatar_url": "https://avatars.githubusercontent.com/u/80761?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/gasyoun",
+      "html_url": "https://github.com/gasyoun",
+      "followers_url": "https://api.github.com/users/gasyoun/followers",
+      "following_url": "https://api.github.com/users/gasyoun/following{/other_user}",
+      "gists_url": "https://api.github.com/users/gasyoun/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/gasyoun/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/gasyoun/subscriptions",
+      "organizations_url": "https://api.github.com/users/gasyoun/orgs",
+      "repos_url": "https://api.github.com/users/gasyoun/repos",
+      "events_url": "https://api.github.com/users/gasyoun/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/gasyoun/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2015-05-04T08:22:57Z",
+    "updated_at": "2015-05-04T08:22:57Z",
+    "body": "@drdhaval2785 do remember https://github.com/sanskrit-lexicon/MWS/issues/8"
+  }
+]

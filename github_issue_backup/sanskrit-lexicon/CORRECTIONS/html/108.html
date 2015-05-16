@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html class='' lang='en'>
+<head prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#'>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8'>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta http-equiv='Content-Language' content='en'>
+<title>'sanskrit-lexicon/CORRECTIONS/108'</title>
+<link href='github-c486157afcc5f58155a921bc675afb08733fbaa8dcf39ac2104d3.css' media='all' rel='stylesheet'>
+<link href='github2-da2e842cc3f0aaf33b727d0ef034243c12ab008fd09b24868b97.css' media='all' rel='stylesheet'>
+<meta http-equiv='x-pjax-version' content='4426702614c8182f33d1780ad1169662'>
+</head>
+<body class='logged_in  env-production windows vis-public'>
+<h1 align='center'><a href='https://github.com/sanskrit-lexicon/CORRECTIONS/issues/108' target='_blank'>PD headwords with different Devanagari and IAST spellings</h1><hr/><div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/funderburkjim" class="author">funderburkjim</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-99777162" class="timestamp">
+      <time>2015-05-11 01:48:20</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>There is a certain duplication of headword spelling that is present in PD.<br/>
+<br/>For nearly every headword,  the headword is given in two forms, Devanagari and IAST.
+<br/><img src="https://cloud.githubusercontent.com/assets/6393033/7557131/c8fd1ae2-f759-11e4-8f3f-b207cd0ca586.png" alt="image" />
+<br/>In the Cologne digitization, these two forms were coded in different ways.  The Devanagari was coded in
+<br/>HK (which we have by now changed to SLP1), and the IAST was coded with the 'Anglicized Sanskrit' method
+<br/>which represents IAST diacritics with numbers following the letter.
+<br/>Here is how the digitizations look for the three headwords of the above image:
+<br/><code> <br/><P>.{#aMhohan#}¦ (am3ho-han) <br/><P>.{#aMhohi#}¦ (am3hohi) <br/><P>.{#aMhi#}¦ (am3h-ri) <br/></code>
+<br/>Now further imagine converting the IAST to SLP1 -  we expect to get THE SAME SPELLING as the coding of<br/>
+<br/>the Devanagari form of the headword.
+<br/>This is the case with the first one (we ignore the '-' in <code>am3ho-han</code> and use the fact that 'm3' is a
+<br/>representation of anusvAra).   Similarly, when the IAST of the second example is converted to SLP1, we
+<br/>get the same spelling as the SLP1 coding of Devanagari.
+<br/>But look at the third example -  Here, the SLP1 transcoding of the IAST is <code>aMhri</code>, which differs from the
+<br/>SLP1 coding <code>aMhi</code> of the Devanagari ---  something is wrong.  Brief examination (say of the scan) for this
+<br/>case shows that the <code>aMhi</code> spelling is wrong.
+<br/>Now a relatively simple program was used to carry out this analysis for all headwords.
+<br/>The analysis results in about 1500 (out of 107,620 headwords) cases where the Devanagari and IAST<br/>
+<br/>spellings are inconsistent.<br/>
+<br/>I think this list deserves further examination, as it will likely uncover many spelling errors - either in the
+<br/>Devanagari coding or in the IAST coding.
+<br/>After the corrections under issue 106, there are 1427 cases where the Devanagari and IAST<br/>
+<br/>spellings are inconsistent.  A first presentation of these is in file\r\</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/gasyoun" class="author">gasyoun</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-99777162" class="timestamp">
+      <time>2015-05-11 07:19:11</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Excellent analysis. <code>1500 (out of 107,620 headwords) cases where the Devanagari and IAST <br/>spellings are inconsistent</code> is not a small number indeed. It took us a few months to handle a similar number in Vachaspatyam doubles. The only thing I ask for - if you make SLP1 file, make .py script that adds or replaces SLP1 to Devanagari so one can actually work with the file, otherwise it's valuable information but hard to use for those who are shy to code or use converters for such files.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+</body></html>

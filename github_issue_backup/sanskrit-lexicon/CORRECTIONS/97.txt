@@ -1,0 +1,73 @@
+{
+  "url": "https://api.github.com/repos/sanskrit-lexicon/CORRECTIONS/issues/97",
+  "labels_url": "https://api.github.com/repos/sanskrit-lexicon/CORRECTIONS/issues/97/labels{/name}",
+  "comments_url": "https://api.github.com/repos/sanskrit-lexicon/CORRECTIONS/issues/97/comments",
+  "events_url": "https://api.github.com/repos/sanskrit-lexicon/CORRECTIONS/issues/97/events",
+  "html_url": "https://github.com/sanskrit-lexicon/CORRECTIONS/issues/97",
+  "id": 68914025,
+  "number": 97,
+  "title": "Multiple words in headword of INM",
+  "user": {
+    "login": "drdhaval2785",
+    "id": 5755132,
+    "avatar_url": "https://avatars.githubusercontent.com/u/5755132?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/drdhaval2785",
+    "html_url": "https://github.com/drdhaval2785",
+    "followers_url": "https://api.github.com/users/drdhaval2785/followers",
+    "following_url": "https://api.github.com/users/drdhaval2785/following{/other_user}",
+    "gists_url": "https://api.github.com/users/drdhaval2785/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/drdhaval2785/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/drdhaval2785/subscriptions",
+    "organizations_url": "https://api.github.com/users/drdhaval2785/orgs",
+    "repos_url": "https://api.github.com/users/drdhaval2785/repos",
+    "events_url": "https://api.github.com/users/drdhaval2785/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/drdhaval2785/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2015-04-16T12:32:00Z",
+  "updated_at": "2015-04-16T20:34:28Z",
+  "closed_at": null,
+  "body": "As an offshoot of discussion at https://github.com/sanskrit-lexicon/CORRECTIONS/issues/95#issuecomment-93611852\r\n\r\nThe dictionary INM has peculiarity of having headword phrases or sentences even.\r\n@funderburkjim says\r\n`there are 385 cases in INM where the headword from the text is given as two or more words.`\r\n\r\nNoting it as a separate issue, so that it can be tracked later on for INM and other dictionaries also.\r\n",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/sanskrit-lexicon/CORRECTIONS/issues/comments/93833710",
+    "html_url": "https://github.com/sanskrit-lexicon/CORRECTIONS/issues/97#issuecomment-93833710",
+    "issue_url": "https://api.github.com/repos/sanskrit-lexicon/CORRECTIONS/issues/97",
+    "id": 93833710,
+    "user": {
+      "login": "gasyoun",
+      "id": 80761,
+      "avatar_url": "https://avatars.githubusercontent.com/u/80761?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/gasyoun",
+      "html_url": "https://github.com/gasyoun",
+      "followers_url": "https://api.github.com/users/gasyoun/followers",
+      "following_url": "https://api.github.com/users/gasyoun/following{/other_user}",
+      "gists_url": "https://api.github.com/users/gasyoun/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/gasyoun/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/gasyoun/subscriptions",
+      "organizations_url": "https://api.github.com/users/gasyoun/orgs",
+      "repos_url": "https://api.github.com/users/gasyoun/repos",
+      "events_url": "https://api.github.com/users/gasyoun/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/gasyoun/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2015-04-16T20:34:28Z",
+    "updated_at": "2015-04-16T20:34:28Z",
+    "body": "I guess there are plenty more in others. I myself am interested only in 1 word headwords. But even Huet has around 100 two word phrases."
+  }
+]
