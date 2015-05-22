@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html class='' lang='en'>
+<head prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#'>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8'>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta http-equiv='Content-Language' content='en'>
+<title>drdhaval2785/github_issue_backup/18</title>
+<link href='github-c486157afcc5f58155a921bc675afb08733fbaa8dcf39ac2104d3.css' media='all' rel='stylesheet'>
+<link href='github2-da2e842cc3f0aaf33b727d0ef034243c12ab008fd09b24868b97.css' media='all' rel='stylesheet'>
+<meta http-equiv='x-pjax-version' content='4426702614c8182f33d1780ad1169662'>
+</head>
+<body class='logged_in  env-production windows vis-public'>
+<h1 align='center'><a href='https://github.com/drdhaval2785/github_issue_backup/issues/18' target='_blank'>GFM trial</h1><hr/><div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/drdhaval2785" class="author">drdhaval2785</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-99777162" class="timestamp">
+      <time>2015-05-22 03:59:31</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <h1>GitHub Flavored Markdown\r\n\r\nGitHub uses \&quot;GitHub Flavored Markdown,\&quot; or GFM, across the site--in issues, comments, and pull requests. It differs from standard Markdown (SM) in a few significant ways, and adds some additional functionality.\r\n\r\nIf you're not already familiar with Markdown, take a look at Markdown Basics. If you'd like to know more about features that are available in issues, comments, and pull request descriptions, such as task lists, read Writing on GitHub.\r\n\r\n## Differences from traditional Markdown\r\n### Multiple underscores in words\r\n\r\nWhere Markdown transforms underscores (_) into italics, GFM ignores underscores in words, like this:\r\n&gt; wow_great_stuff\r\n&gt; do_this_and_do_that_and_another_thing.\r\n\r\nThis allows code and names with multiple underscores to render properly. To emphasize a portion of a word, use asterisks (<code>*</code>).\r\n\r\n### URL autolinking\r\n\r\nGFM will autolink standard URLs, so if you want to link to a URL (instead of setting link text), you can simply enter the URL and it will be turned into a link to that URL.\r\n\r\n<code>http://example.com</code>\r\n\r\nbecomes\r\n\r\nhttp://example.com\r\n\r\n### Strikethrough\r\n\r\nGFM adds syntax to create strikethrough text, which is missing from standard Markdown.\r\n\r\n<code>~~Mistaken text.~~</code>\r\n\r\nbecomes\r\n\r\n<del>Mistaken text</del>.\r\n\r\n### Fenced code blocks\r\n\r\nStandard Markdown converts text with four spaces at the beginning of each line into a code block; GFM also supports fenced blocks. Just wrap your code in triple backtics (as shown below) and you won't need to indent it by four spaces. Note that although fenced code blocks don't have to be preceded by a blank line—unlike indented code blocks—we recommend placing a blank line before them to make the raw Markdown easier to read.\r\n\r\nHere's an example:\r\n\r\n<code>\r\nfunction test() {\r\n  console.log(\"notice the blank line before this function?\");\r\n}\r\n</code>\r\n\r\nKeep in mind that, within lists, you must indent non-fenced code blocks eight spaces to render them properly.\r\n\r\n### Syntax highlighting\r\n\r\nCode blocks can be taken a step further by adding syntax highlighting. In your fenced block, add an optional language identifier and we'll run it through syntax highlighting. For example, to syntax highlight Ruby code:\r\n\r\n<code>ruby\r\nrequire 'redcarpet'\r\nmarkdown = Redcarpet.new(\"Hello World!\")\r\nputs markdown.to_html\r\n</code>\r\n\r\nWe use <a href="https://github.com/github/linguist">Linguist</a> to perform language detection and syntax highlighting. You can find out which keywords are valid by perusing <a href="https://github.com/github/linguist/blob/master/lib/linguist/languages.yml">the languages YAML file</a>.\r\n\r\n### Tables\r\n\r\nYou can create tables by assembling a list of words and dividing them with hyphens <code>-</code> (for the first row), and then separating each column with a pipe <code>|</code>:\r\n\r\nFirst Header  | Second Header\r\n------------- | -------------\r\nContent Cell  | Content Cell\r\nContent Cell  | Content Cell\r\n\r\nFor aesthetic purposes, you can also add extra pipes on the ends:\r\n\r\n| First Header  | Second Header |\r\n| ------------- | ------------- |\r\n| Content Cell  | Content Cell  |\r\n| Content Cell  | Content Cell  |\r\n\r\nNote that the dashes at the top don't need to match the length of the header text exactly:\r\n\r\n| Name | Description          |\r\n| ------------- | ----------- |\r\n| Help      | Display the help window.|\r\n| Close     | Closes a window     |\r\n\r\nYou can also include inline Markdown such as links, bold, italics, or strikethrough:\r\n\r\n| Name | Description          |\r\n| ------------- | ----------- |\r\n| Help      | <del>Display the</del> help window.|\r\n| Close     | <em>Closes</em> a window     |\r\n\r\nFinally, by including colons <code>:</code> within the header row, you can define text to be left-aligned, right-aligned, or center-aligned:\r\n\r\n| Left-Aligned  | Center Aligned  | Right Aligned |\r\n| :------------ |:---------------:| -----:|\r\n| col 3 is      | some wordy text | $1600 |\r\n| col 2 is      | centered        |   $12 |\r\n| zebra stripes | are neat        |    $1 |\r\n\r\nA colon on the <strong>left-most</strong> side indicates a left-aligned column; a colon on the <strong>right-most</strong> side indicates a right-aligned column; a colon on <strong>both sides</strong> indicates a center-aligned column.\r\n\r\n# HTML\r\n\r\nYou can use a subset of HTML within your READMEs, issues, and pull requests.\r\n\r\nA full list of our supported tags and attributes can be found in the <a href="https://github.com/github/markup">github/markup repository</a>.&quot;,</h1>
+  </div>
+  </div>
+  </div>
+  <br/>
+</body></html>
