@@ -1,0 +1,46 @@
+{
+  "url": "https://api.github.com/repos/drdhaval2785/github_issue_backup/issues/17",
+  "labels_url": "https://api.github.com/repos/drdhaval2785/github_issue_backup/issues/17/labels{/name}",
+  "comments_url": "https://api.github.com/repos/drdhaval2785/github_issue_backup/issues/17/comments",
+  "events_url": "https://api.github.com/repos/drdhaval2785/github_issue_backup/issues/17/events",
+  "html_url": "https://github.com/drdhaval2785/github_issue_backup/issues/17",
+  "id": 79270788,
+  "number": 17,
+  "title": "Markdown basics trial",
+  "user": {
+    "login": "drdhaval2785",
+    "id": 5755132,
+    "avatar_url": "https://avatars.githubusercontent.com/u/5755132?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/drdhaval2785",
+    "html_url": "https://github.com/drdhaval2785",
+    "followers_url": "https://api.github.com/users/drdhaval2785/followers",
+    "following_url": "https://api.github.com/users/drdhaval2785/following{/other_user}",
+    "gists_url": "https://api.github.com/users/drdhaval2785/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/drdhaval2785/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/drdhaval2785/subscriptions",
+    "organizations_url": "https://api.github.com/users/drdhaval2785/orgs",
+    "repos_url": "https://api.github.com/users/drdhaval2785/repos",
+    "events_url": "https://api.github.com/users/drdhaval2785/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/drdhaval2785/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2015-05-22T03:57:21Z",
+  "updated_at": "2015-05-22T03:58:27Z",
+  "closed_at": null,
+  "body": "# Markdown Basics\r\n\r\nMarkdown allows you to write using an easy-to-read, easy-to-write plain text format, which then converts to valid HTML for viewing on GitHub\r\n## Basic writing\r\n### Paragraphs\r\n\r\nParagraphs in Markdown are just one or more lines of consecutive text followed by one or more blank lines.\r\n\r\n```\r\nOn July 2, an alien mothership entered Earth's orbit and deployed several dozen saucer-shaped \"destroyer\" spacecraft, each 15 miles (24 km) wide.\r\n\r\nOn July 3, the Black Knights, a squadron of Marine Corps F/A-18 Hornets, participated in an assault on a destroyer near the city of Los Angeles.\r\n```\r\n\r\n### Headings\r\n\r\nYou can create a heading by adding one or more # symbols before your heading text. The number of # you use will determine the size of the heading.\r\n```\r\n# The largest heading (an <h1> tag)\r\n## The second largest heading (an <h2> tag)\r\n…\r\n###### The 6th largest heading (an <h6> tag)\r\n```\r\n\r\n### Blockquotes\r\n\r\nYou can indicate blockquotes with a `>`.\r\n\r\n```\r\nIn the words of Abraham Lincoln:\r\n\r\n> Pardon my french\r\n```\r\n\r\n### Styling text\r\n\r\nYou can make text **bold** or *italic*.\r\n```\r\n*This text will be italic*\r\n**This text will be bold**\r\n```\r\n\r\nBoth bold and italic can use either a `*` or an `_` around the text for styling. This allows you to combine both bold and italic if needed.\r\n```\r\n**Everyone _must_ attend the meeting at 5 o'clock today.**\r\n```\r\n\r\n## Lists\r\n### Unordered lists\r\n\r\nYou can make an [unordered list](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul) by preceding list items with either a * or a -.\r\n```\r\n* Item\r\n* Item\r\n* Item\r\n\r\n- Item\r\n- Item\r\n- Item\r\n```\r\n\r\n### Ordered lists\r\n\r\nYou can make an ordered list by preceding list items with a number.\r\n```\r\n1. Item 1\r\n2. Item 2\r\n3. Item 3\r\n```\r\n### Nested lists\r\n\r\nYou can create nested lists by indenting list items by two spaces.\r\n```\r\n1. Item 1\r\n  1. A corollary to the above item.\r\n  2. Yet another point to consider.\r\n2. Item 2\r\n  * A corollary that does not need to be ordered.\r\n    * This is indented four spaces, because it's two spaces further than the item above.\r\n    * You might want to consider making a new list.\r\n3. Item 3\r\n```\r\n\r\n## Code formatting\r\n### Inline formats\r\n\r\nUse single backticks (`) to format text in a special monospace format. Everything within the backticks appear as-is, with no other special formatting.\r\n```\r\nHere's an idea: why don't we take `SuperiorProject` and turn it into `**Reasonable**Project`.\r\n```\r\n\r\n### Multiple lines\r\n\r\nYou can use triple backticks  to format text as its own distinct block.\r\n\r\nCheck out this neat program I wrote:\r\n\r\n```\r\nx = 0\r\nx = 2 + 2\r\nwhat is x\r\n```\r\n\r\n### Links\r\n\r\nYou can create an inline link by wrapping link text in brackets ( [ ] ), and then wrapping the link in parentheses ( ( ) ).\r\n\r\nFor example, to create a hyperlink to <a href=\"www.github.com\">www.github.com</a>, with a link text that says, Visit GitHub!, you'd write this in Markdown: `[Visit GitHub!](www.github.com)`.",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+
+]

@@ -1,0 +1,46 @@
+{
+  "url": "https://api.github.com/repos/drdhaval2785/github_issue_backup/issues/5",
+  "labels_url": "https://api.github.com/repos/drdhaval2785/github_issue_backup/issues/5/labels{/name}",
+  "comments_url": "https://api.github.com/repos/drdhaval2785/github_issue_backup/issues/5/comments",
+  "events_url": "https://api.github.com/repos/drdhaval2785/github_issue_backup/issues/5/events",
+  "html_url": "https://github.com/drdhaval2785/github_issue_backup/issues/5",
+  "id": 76791660,
+  "number": 5,
+  "title": "Code fencing not working properly",
+  "user": {
+    "login": "drdhaval2785",
+    "id": 5755132,
+    "avatar_url": "https://avatars.githubusercontent.com/u/5755132?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/drdhaval2785",
+    "html_url": "https://github.com/drdhaval2785",
+    "followers_url": "https://api.github.com/users/drdhaval2785/followers",
+    "following_url": "https://api.github.com/users/drdhaval2785/following{/other_user}",
+    "gists_url": "https://api.github.com/users/drdhaval2785/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/drdhaval2785/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/drdhaval2785/subscriptions",
+    "organizations_url": "https://api.github.com/users/drdhaval2785/orgs",
+    "repos_url": "https://api.github.com/users/drdhaval2785/repos",
+    "events_url": "https://api.github.com/users/drdhaval2785/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/drdhaval2785/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2015-05-15T17:16:52Z",
+  "updated_at": "2015-05-15T17:16:52Z",
+  "closed_at": null,
+  "body": "https://github.com/sanskrit-lexicon/CORRECTIONS/issues/2#issuecomment-58293633\r\nIn this case, the rendering is not proper.\r\n\r\nGithub renders\r\n![capture](https://cloud.githubusercontent.com/assets/5755132/7657973/fe68e7d0-fb53-11e4-92a9-8e73880c9b85.PNG)\r\n\r\nWhereas our machine renders\r\n![capture](https://cloud.githubusercontent.com/assets/5755132/7658014/3c5eb5ce-fb54-11e4-9f5b-7ccd9b7b6682.PNG)\r\n\r\nThere is an issue with fenced code block and blockquotes ",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+
+]

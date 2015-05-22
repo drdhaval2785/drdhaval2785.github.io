@@ -1,0 +1,46 @@
+{
+  "url": "https://api.github.com/repos/drdhaval2785/github_issue_backup/issues/18",
+  "labels_url": "https://api.github.com/repos/drdhaval2785/github_issue_backup/issues/18/labels{/name}",
+  "comments_url": "https://api.github.com/repos/drdhaval2785/github_issue_backup/issues/18/comments",
+  "events_url": "https://api.github.com/repos/drdhaval2785/github_issue_backup/issues/18/events",
+  "html_url": "https://github.com/drdhaval2785/github_issue_backup/issues/18",
+  "id": 79271522,
+  "number": 18,
+  "title": "GFM trial",
+  "user": {
+    "login": "drdhaval2785",
+    "id": 5755132,
+    "avatar_url": "https://avatars.githubusercontent.com/u/5755132?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/drdhaval2785",
+    "html_url": "https://github.com/drdhaval2785",
+    "followers_url": "https://api.github.com/users/drdhaval2785/followers",
+    "following_url": "https://api.github.com/users/drdhaval2785/following{/other_user}",
+    "gists_url": "https://api.github.com/users/drdhaval2785/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/drdhaval2785/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/drdhaval2785/subscriptions",
+    "organizations_url": "https://api.github.com/users/drdhaval2785/orgs",
+    "repos_url": "https://api.github.com/users/drdhaval2785/repos",
+    "events_url": "https://api.github.com/users/drdhaval2785/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/drdhaval2785/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2015-05-22T03:59:31Z",
+  "updated_at": "2015-05-22T04:06:11Z",
+  "closed_at": null,
+  "body": "# GitHub Flavored Markdown\r\n\r\nGitHub uses \"GitHub Flavored Markdown,\" or GFM, across the site--in issues, comments, and pull requests. It differs from standard Markdown (SM) in a few significant ways, and adds some additional functionality.\r\n\r\nIf you're not already familiar with Markdown, take a look at Markdown Basics. If you'd like to know more about features that are available in issues, comments, and pull request descriptions, such as task lists, read Writing on GitHub.\r\n\r\n## Differences from traditional Markdown\r\n### Multiple underscores in words\r\n\r\nWhere Markdown transforms underscores (_) into italics, GFM ignores underscores in words, like this:\r\n> wow_great_stuff\r\n> do_this_and_do_that_and_another_thing.\r\n\r\nThis allows code and names with multiple underscores to render properly. To emphasize a portion of a word, use asterisks (`*`).\r\n\r\n### URL autolinking\r\n\r\nGFM will autolink standard URLs, so if you want to link to a URL (instead of setting link text), you can simply enter the URL and it will be turned into a link to that URL.\r\n\r\n`http://example.com`\r\n\r\nbecomes\r\n\r\nhttp://example.com\r\n\r\n### Strikethrough\r\n\r\nGFM adds syntax to create strikethrough text, which is missing from standard Markdown.\r\n\r\n`~~Mistaken text.~~`\r\n\r\nbecomes\r\n\r\n~~Mistaken text~~.\r\n\r\n### Fenced code blocks\r\n\r\nStandard Markdown converts text with four spaces at the beginning of each line into a code block; GFM also supports fenced blocks. Just wrap your code in triple backtics (as shown below) and you won't need to indent it by four spaces. Note that although fenced code blocks don't have to be preceded by a blank line—unlike indented code blocks—we recommend placing a blank line before them to make the raw Markdown easier to read.\r\n\r\nHere's an example:\r\n\r\n```\r\nfunction test() {\r\n  console.log(\"notice the blank line before this function?\");\r\n}\r\n```\r\n\r\nKeep in mind that, within lists, you must indent non-fenced code blocks eight spaces to render them properly.\r\n\r\n### Syntax highlighting\r\n\r\nCode blocks can be taken a step further by adding syntax highlighting. In your fenced block, add an optional language identifier and we'll run it through syntax highlighting. For example, to syntax highlight Ruby code:\r\n\r\n```ruby\r\nrequire 'redcarpet'\r\nmarkdown = Redcarpet.new(\"Hello World!\")\r\nputs markdown.to_html\r\n```\r\n\r\nWe use [Linguist](https://github.com/github/linguist) to perform language detection and syntax highlighting. You can find out which keywords are valid by perusing <a href=\"https://github.com/github/linguist/blob/master/lib/linguist/languages.yml\">the languages YAML file</a>.\r\n\r\n### Tables\r\n\r\nYou can create tables by assembling a list of words and dividing them with hyphens `-` (for the first row), and then separating each column with a pipe `|`:\r\n\r\nFirst Header  | Second Header\r\n------------- | -------------\r\nContent Cell  | Content Cell\r\nContent Cell  | Content Cell\r\n\r\nFor aesthetic purposes, you can also add extra pipes on the ends:\r\n\r\n| First Header  | Second Header |\r\n| ------------- | ------------- |\r\n| Content Cell  | Content Cell  |\r\n| Content Cell  | Content Cell  |\r\n\r\nNote that the dashes at the top don't need to match the length of the header text exactly:\r\n\r\n| Name | Description          |\r\n| ------------- | ----------- |\r\n| Help      | Display the help window.|\r\n| Close     | Closes a window     |\r\n\r\nYou can also include inline Markdown such as links, bold, italics, or strikethrough:\r\n\r\n| Name | Description          |\r\n| ------------- | ----------- |\r\n| Help      | ~~Display the~~ help window.|\r\n| Close     | _Closes_ a window     |\r\n\r\nFinally, by including colons `:` within the header row, you can define text to be left-aligned, right-aligned, or center-aligned:\r\n\r\n| Left-Aligned  | Center Aligned  | Right Aligned |\r\n| :------------ |:---------------:| -----:|\r\n| col 3 is      | some wordy text | $1600 |\r\n| col 2 is      | centered        |   $12 |\r\n| zebra stripes | are neat        |    $1 |\r\n\r\nA colon on the **left-most** side indicates a left-aligned column; a colon on the **right-most** side indicates a right-aligned column; a colon on **both sides** indicates a center-aligned column.\r\n\r\n# HTML\r\n\r\nYou can use a subset of HTML within your READMEs, issues, and pull requests.\r\n\r\nA full list of our supported tags and attributes can be found in the [github/markup repository](https://github.com/github/markup).",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+
+]

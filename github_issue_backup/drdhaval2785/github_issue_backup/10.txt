@@ -1,0 +1,73 @@
+{
+  "url": "https://api.github.com/repos/drdhaval2785/github_issue_backup/issues/10",
+  "labels_url": "https://api.github.com/repos/drdhaval2785/github_issue_backup/issues/10/labels{/name}",
+  "comments_url": "https://api.github.com/repos/drdhaval2785/github_issue_backup/issues/10/comments",
+  "events_url": "https://api.github.com/repos/drdhaval2785/github_issue_backup/issues/10/events",
+  "html_url": "https://github.com/drdhaval2785/github_issue_backup/issues/10",
+  "id": 78618321,
+  "number": 10,
+  "title": "blockquotes",
+  "user": {
+    "login": "drdhaval2785",
+    "id": 5755132,
+    "avatar_url": "https://avatars.githubusercontent.com/u/5755132?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/drdhaval2785",
+    "html_url": "https://github.com/drdhaval2785",
+    "followers_url": "https://api.github.com/users/drdhaval2785/followers",
+    "following_url": "https://api.github.com/users/drdhaval2785/following{/other_user}",
+    "gists_url": "https://api.github.com/users/drdhaval2785/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/drdhaval2785/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/drdhaval2785/subscriptions",
+    "organizations_url": "https://api.github.com/users/drdhaval2785/orgs",
+    "repos_url": "https://api.github.com/users/drdhaval2785/repos",
+    "events_url": "https://api.github.com/users/drdhaval2785/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/drdhaval2785/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2015-05-20T17:31:02Z",
+  "updated_at": "2015-05-20T17:32:22Z",
+  "closed_at": null,
+  "body": "Blockqoutes issue. The blockquote should end at the end of line character.\r\ne.g. \r\n```> Explicit is better than implicit.\\r\\n\\r\\nI find this to be a bit subjective. Should I also add a sentence that describes what PHP is? I'm not saying that the request is bad. I'm saying that I'd need a better reason than that.```\r\nshould render\r\n>Explicit is better than implicit.\r\n\r\nand \r\nthe next line outside blockquotes.\r\n",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/drdhaval2785/github_issue_backup/issues/comments/103969240",
+    "html_url": "https://github.com/drdhaval2785/github_issue_backup/issues/10#issuecomment-103969240",
+    "issue_url": "https://api.github.com/repos/drdhaval2785/github_issue_backup/issues/10",
+    "id": 103969240,
+    "user": {
+      "login": "drdhaval2785",
+      "id": 5755132,
+      "avatar_url": "https://avatars.githubusercontent.com/u/5755132?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/drdhaval2785",
+      "html_url": "https://github.com/drdhaval2785",
+      "followers_url": "https://api.github.com/users/drdhaval2785/followers",
+      "following_url": "https://api.github.com/users/drdhaval2785/following{/other_user}",
+      "gists_url": "https://api.github.com/users/drdhaval2785/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/drdhaval2785/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/drdhaval2785/subscriptions",
+      "organizations_url": "https://api.github.com/users/drdhaval2785/orgs",
+      "repos_url": "https://api.github.com/users/drdhaval2785/repos",
+      "events_url": "https://api.github.com/users/drdhaval2785/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/drdhaval2785/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2015-05-20T17:32:22Z",
+    "updated_at": "2015-05-20T17:32:22Z",
+    "body": "Whereas right now everything is inside the blockquotes."
+  }
+]
