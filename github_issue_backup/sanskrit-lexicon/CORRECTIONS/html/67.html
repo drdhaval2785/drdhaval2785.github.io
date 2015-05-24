@@ -5,496 +5,509 @@
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge'>
 <meta http-equiv='Content-Language' content='en'>
-<title>'sanskrit-lexicon/CORRECTIONS/67'</title>
+<title>sanskrit-lexicon/CORRECTIONS/67</title>
 <link href='github-c486157afcc5f58155a921bc675afb08733fbaa8dcf39ac2104d3.css' media='all' rel='stylesheet'>
 <link href='github2-da2e842cc3f0aaf33b727d0ef034243c12ab008fd09b24868b97.css' media='all' rel='stylesheet'>
 <meta http-equiv='x-pjax-version' content='4426702614c8182f33d1780ad1169662'>
 </head>
 <body class='logged_in  env-production windows vis-public'>
-<h1 align='center'><a href='https://github.com/sanskrit-lexicon/CORRECTIONS/issues/67' target='_blank'>WIL corrections from alphabetical misorderings part 5</h1><hr/><div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<h1 align='center'><a href='https://github.com/sanskrit-lexicon/CORRECTIONS/issues/67' target='_blank'>WIL corrections from alphabetical misorderings, part 5</h1><hr/><div id="#issue-53701341" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/funderburkjim" class="author">funderburkjim</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issue-53701341" class="timestamp">
       <time>2015-01-08 00:40:33</time>
     </a>
   </div>
 </div><div class="edit-comment-hide">
       <div class="comment-body markdown-body markdown-format js-comment-body">
-          <p>This issue looks for headword spelling errors drawn from a list of 289 alphabetical misorderings in the Wilson dictionary.  In contrast to the prior list of 417 misorderings, most of these probably will not need correction.  These are cases where both the misordered headwords appear in other dictionaries besides Wilson; there are 776 of these</p>
+          <p>This issue looks for headword spelling errors drawn from a list of 289 alphabetical misorderings in the Wilson dictionary.  In contrast to the prior list of 417 misorderings, most of these probably will not need correction.  These are cases where both the misordered headwords appear in other dictionaries besides Wilson; there are 776 of these  <a href="https://github.com/sanskrit-lexicon/WIL/blob/master/alphawork/chksort1a_rest.txt">less likely spelling errors</a> .  </p>
+<p>The present list of 289 is drawn from the larger list as follows.</p>
+<p>Each of the 776 misorderings involves a pair of consecutive headwords from the dictionary ordered list of Wilson headwords, and it is true that the first of this pair of headwords does not alphabetically precede the second.  Consider either one of these, and call it X.</p>
+<p>Next, consider all the headwords Y appearing in ANY dictionary  (i.e., Y is in the sanhw1.txt list),
+and choose only those Y such that three conditions hold:
+Y and X start with the same letter
+Y and X are nearly the same (specifically, the Levenshtein (or edit) distance between X and Y is 1 or 2.
+If Y is used in place of X, then the alphabetical ordering will be restored at this position in the headword list.</p>
+<p>The set of those X for which there is one or more such Y is the list of 289 headwords being considered here.  Note that furthermore, Y provides us with one or more suggestions as to the
+correction to make.  Of course, sometimes the suggestion Y will be wrong.  And, since X occurs
+in more dictionaries than just Wilson,  Y will usually be wrong.  </p>
+<p>Nonethesless, we will get some errors, and reducing from 776 to 289 is a 2/3 reduction in cases to
+examine.</p>
+<p>In the following, I will show details only for those cases where a spelling correction is found to be required.</p>
   </div>
   </div>
   </div>
   <br/>
-<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<div id="#issuecomment-69123084" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/funderburkjim" class="author">funderburkjim</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issuecomment-69123084" class="timestamp">
       <time>2015-01-08 01:32:27</time>
     </a>
   </div>
 </div><div class="edit-comment-hide">
       <div class="comment-body markdown-body markdown-format js-comment-body">
-          <p>1 aMSubARa -> aMSuvARa
-<br/>Both 'bARa' and 'vARa' are headwords in Wilson.  ''vARa\ restores alphabetical order.
-<br/>2 ahas -> aMhas
-<br/>The scan misses the anusvara.
-<br/>3 awwA -> awyA<br/>
-<br/>Here, there is a discrepancy in the printing.  Since awyA restores ordering, we assume
-<br/>that's what Wilson intended.
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5656171/86dac25e-96a6-11e4-8853-125412bc3104.png" alt="image" />
-<br/>4 atiSayana -> atiSayanaM
-<br/>  (M since this one is adverb)
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5656282/1e715d16-96a8-11e4-9478-40aa581862c2.png" alt="image" />
-<br/>5 aDideva -> aDidEva
-<br/>1 The ruling deity, the active principle in creation: also अधिदैवतं।
-<br/>2 The collective body of gods, and superhuman beings.
-<br/>E. अधि, and दैव divine being.
-<br/>6 aDoSuka -> aDoMSuka
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5656387/4c66b3b4-96a9-11e4-8aee-1eb60806715d.png" alt="image" />
-<br/>7 anirRaya -> anirReya
-<br/>Undecidable, incapable of being decided. अ
-<br/>E. neg. निर्णेय decidable.
-<br/>8 anupUrvaSas -> anupUrvvaSas
-<br/>[Since 'pUrvva' is normal spelling in WIL, and appears in Etymology, assume it was intended in<br/>
-<br/>  headword]
-<br/>ind. In regular order or succession, from the first, from above downwards.
-<br/>E. अनुपूर्व्व and शसि aff.
-<br/>9 aparAhla -> aparAhRa
-<br/>Afternoon, the last watch of the day.
-<br/>E. अपर last, and अह्ण for अहन् a day.
-<br/>10 amUdfSa -> amUdfS  [First one]
-<br/>mfn. (-दृक्) Of such form or kind.
-<br/>E. अमू for अदस् this, and क्किप् affix; also अमूदृश and अमूदृक्ष। </p>
+          <p>1 aMSubARa -&gt; aMSuvARa
+Both 'bARa' and 'vARa' are headwords in Wilson.  ''vARa&quot; restores alphabetical order.</p>
+<p>2 ahas -&gt; aMhas
+The scan misses the anusvara.</p>
+<p>3 awwA -&gt; awyA
+Here, there is a discrepancy in the printing.  Since awyA restores ordering, we assume
+that's what Wilson intended.
+<img src="https://cloud.githubusercontent.com/assets/6393033/5656171/86dac25e-96a6-11e4-8853-125412bc3104.png" alt="image" /></p>
+<p>4 atiSayana -&gt; atiSayanaM
+(M since this one is adverb)
+<img src="https://cloud.githubusercontent.com/assets/6393033/5656282/1e715d16-96a8-11e4-9478-40aa581862c2.png" alt="image" /></p>
+<p>5 aDideva -&gt; aDidEva
+1 The ruling deity, the active principle in creation: also अधिदैवतं।
+2 The collective body of gods, and superhuman beings.
+E. अधि, and दैव divine being.</p>
+<p>6 aDoSuka -&gt; aDoMSuka
+<img src="https://cloud.githubusercontent.com/assets/6393033/5656387/4c66b3b4-96a9-11e4-8aee-1eb60806715d.png" alt="image" /></p>
+<p>7 anirRaya -&gt; anirReya
+Undecidable, incapable of being decided. अ
+E. neg. निर्णेय decidable.</p>
+<p>8 anupUrvaSas -&gt; anupUrvvaSas
+[Since 'pUrvva' is normal spelling in WIL, and appears in Etymology, assume it was intended in
+headword]
+ind. In regular order or succession, from the first, from above downwards.
+E. अनुपूर्व्व and शसि aff.</p>
+<p>9 aparAhla -&gt; aparAhRa
+Afternoon, the last watch of the day.
+E. अपर last, and अह्ण for अहन् a day.</p>
+<p>10 amUdfSa -&gt; amUdfS  [First one]
+mfn. (-दृक्) Of such form or kind.
+E. अमू for अदस् this, and क्किप् affix; also अमूदृश and अमूदृक्ष।</p>
   </div>
   </div>
   </div>
   <br/>
-<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<div id="#issuecomment-69126965" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/funderburkjim" class="author">funderburkjim</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issuecomment-69126965" class="timestamp">
       <time>2015-01-08 02:23:27</time>
     </a>
   </div>
 </div><div class="edit-comment-hide">
       <div class="comment-body markdown-body markdown-format js-comment-body">
-          <p>11 ambukfta -> ambUkfta ?
-<br/>[ambUkfta would restore alphabetical order. Don't know whether the long 'U' is required by grammar
-<br/>  before 'kfta']
-<br/>mfn. (-तः-ता-तं) Sputtered, (speech, discourse.)
-<br/>E. अम्बु water, and कृत made.
-<br/>12 aSoca -> aSOca<br/>
-<br/>[2nd one]
-<br/>1 Foulness, impurity.
-<br/>2 Legal impurity, contamination, defilement contracted by the death of a relation, the commission of prohibited acts, &amp;c.
-<br/>E. अ neg. शौच purification.
-<br/>13 asfjvimokzaRa -> asfgvimokzaRa
-<br/>Print error; 'g' needed by sandhi  [Note SHS also shows asfjvi...
-<br/>Bleeding.
-<br/>E. असृज् and विमाक्षण letting. [mA -> mO]
-<br/>14 Artvijya -> Arttijya ?
-<br/>[Text actually has Arttijya, but this disagrees with the derivation from ftvij]
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5656829/cec846f4-96b0-11e4-8c2c-71c5afb1dd0e.png" alt="image" />
-<br/>15 AvAyya -> AvAryya
-<br/>[print missing 'r']
-<br/> ind. Covering, hiding, concealing.
-<br/>E. आङ् before वृ to screen, ल्यप् aff.
-<br/>16 uwa -> uWa<br/>
-<br/>[2nd one]
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5656900/e52b1c0e-96b1-11e4-8853-cb59ab0ec83b.png" alt="image" />
-<br/>17 uqupa -> uqUpa
-<br/>[2nd one]
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5656909/0cff3d00-96b2-11e4-9ee9-25b280941e99.png" alt="image" />
-<br/>18 udyota -> uddyota
-<br/>Light, lustre.
-<br/>E. उद्, द्युत to shine, aff.
-<br/>19 uddAna -> udDAna<br/>
-<br/>[2nd one]
-<br/>1 Gone up, ascended.
-<br/>2 Vomited. n. (-नं) A furnace or fire place.
-<br/>E. उद, धा to have or hold, ल्युट् aff.
-<br/>20 upakxpta -> upaklfpta ?
-<br/>For alphabetical ordering, upaklfpta.  Only BUR digitization shows this klfpta spelling.
-<br/>Don't know if it is grammatically acceptable alternative. </p>
+          <p>11 ambukfta -&gt; ambUkfta ?
+[ambUkfta would restore alphabetical order. Don't know whether the long 'U' is required by grammar
+before 'kfta']
+mfn. (-तः-ता-तं) Sputtered, (speech, discourse.)
+E. अम्बु water, and कृत made.</p>
+<p>12 aSoca -&gt; aSOca
+[2nd one]
+1 Foulness, impurity.
+2 Legal impurity, contamination, defilement contracted by the death of a relation, the commission of prohibited acts, &amp;c.
+E. अ neg. शौच purification.</p>
+<p>13 asfjvimokzaRa -&gt; asfgvimokzaRa
+Print error; 'g' needed by sandhi  [Note SHS also shows asfjvi...
+Bleeding.
+E. असृज् and विमाक्षण letting. [mA -&gt; mO]</p>
+<p>14 Artvijya -&gt; Arttijya ?
+[Text actually has Arttijya, but this disagrees with the derivation from ftvij]
+<img src="https://cloud.githubusercontent.com/assets/6393033/5656829/cec846f4-96b0-11e4-8c2c-71c5afb1dd0e.png" alt="image" /></p>
+<p>15 AvAyya -&gt; AvAryya
+[print missing 'r']
+ind. Covering, hiding, concealing.
+E. आङ् before वृ to screen, ल्यप् aff.</p>
+<p>16 uwa -&gt; uWa
+[2nd one]
+<img src="https://cloud.githubusercontent.com/assets/6393033/5656900/e52b1c0e-96b1-11e4-8853-cb59ab0ec83b.png" alt="image" /></p>
+<p>17 uqupa -&gt; uqUpa
+[2nd one]
+<img src="https://cloud.githubusercontent.com/assets/6393033/5656909/0cff3d00-96b2-11e4-9ee9-25b280941e99.png" alt="image" /></p>
+<p>18 udyota -&gt; uddyota
+Light, lustre.
+E. उद्, द्युत to shine, aff.</p>
+<p>19 uddAna -&gt; udDAna
+[2nd one]
+1 Gone up, ascended.
+2 Vomited. n. (-नं) A furnace or fire place.
+E. उद, धा to have or hold, ल्युट् aff.</p>
+<p>20 upakxpta -&gt; upaklfpta ?
+For alphabetical ordering, upaklfpta.  Only BUR digitization shows this klfpta spelling.
+Don't know if it is grammatically acceptable alternative.</p>
   </div>
   </div>
   </div>
   <br/>
-<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<div id="#issuecomment-69129739" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/funderburkjim" class="author">funderburkjim</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issuecomment-69129739" class="timestamp">
       <time>2015-01-08 03:04:56</time>
     </a>
   </div>
 </div><div class="edit-comment-hide">
       <div class="comment-body markdown-body markdown-format js-comment-body">
-          <p>21 ubja -> uvja
-<br/>[2nd one; must be 'v' for alph. order] [no other dictionary has uvja or uvj]
-<br/>6th cl. (उब्जति) To be straight: see उब्ज  [ubjati -> uvjati]
-<br/>22 kaKa -> kakva
-<br/>[2nd on p. 178]
-<br/>r. 1st cl. (कक्खति) To laugh. [kakKati -> kakvati]
-<br/>23 kaccI -> kacvI
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5657093/7caac8c8-96b6-11e4-8f1c-30e5375162d9.png" alt="image" />
-<br/>24 karttrI -> kartrI
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5657122/19db6eea-96b7-11e4-9f00-1b43fac6ddab.png" alt="image" />
-<br/>25 kavila -> kavela
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5657137/531bfdb4-96b7-11e4-9e9f-f653ac59e750.png" alt="image" />
-<br/>26 kArktika -> kArttika
-<br/>print error
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5657151/99194ede-96b7-11e4-8b72-36e778eacb0c.png" alt="image" />
-<br/>27 kiYca -> kiYja
-<br/>[2nd one]
-<br/>n. (-ञ्जं) The filament of a lotus: see किञ्जल्क।
-<br/>28 kudmala -> kuqmala
-<br/>[on p. 227,, col. 2]
-<br/>29 kudyalita -> kuqmalita
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5657205/d7534122-96b8-11e4-9023-f66257bf1827.png" alt="image" />
-<br/> 30 kudmala -> kuwmala
-<br/>[p. 227, col. 1]
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5657222/352cdbe6-96b9-11e4-9e58-726548146dba.png" alt="image" /> </p>
+          <p>21 ubja -&gt; uvja
+[2nd one; must be 'v' for alph. order] [no other dictionary has uvja or uvj]
+6th cl. (उब्जति) To be straight: see उब्ज  [ubjati -&gt; uvjati]</p>
+<p>22 kaKa -&gt; kakva
+[2nd on p. 178]
+r. 1st cl. (कक्खति) To laugh. [kakKati -&gt; kakvati]</p>
+<p>23 kaccI -&gt; kacvI
+<img src="https://cloud.githubusercontent.com/assets/6393033/5657093/7caac8c8-96b6-11e4-8f1c-30e5375162d9.png" alt="image" /></p>
+<p>24 karttrI -&gt; kartrI
+<img src="https://cloud.githubusercontent.com/assets/6393033/5657122/19db6eea-96b7-11e4-9f00-1b43fac6ddab.png" alt="image" /></p>
+<p>25 kavila -&gt; kavela
+<img src="https://cloud.githubusercontent.com/assets/6393033/5657137/531bfdb4-96b7-11e4-9e9f-f653ac59e750.png" alt="image" /></p>
+<p>26 kArktika -&gt; kArttika
+print error
+<img src="https://cloud.githubusercontent.com/assets/6393033/5657151/99194ede-96b7-11e4-8b72-36e778eacb0c.png" alt="image" /></p>
+<p>27 kiYca -&gt; kiYja
+[2nd one]
+n. (-ञ्जं) The filament of a lotus: see किञ्जल्क।</p>
+<p>28 kudmala -&gt; kuqmala
+[on p. 227,, col. 2]
+29 kudyalita -&gt; kuqmalita
+<img src="https://cloud.githubusercontent.com/assets/6393033/5657205/d7534122-96b8-11e4-9023-f66257bf1827.png" alt="image" /></p>
+<p>30 kudmala -&gt; kuwmala
+[p. 227, col. 1]
+<img src="https://cloud.githubusercontent.com/assets/6393033/5657222/352cdbe6-96b9-11e4-9e58-726548146dba.png" alt="image" /></p>
   </div>
   </div>
   </div>
   <br/>
-<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<div id="#issuecomment-69131782" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/funderburkjim" class="author">funderburkjim</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issuecomment-69131782" class="timestamp">
       <time>2015-01-08 03:38:58</time>
     </a>
   </div>
 </div><div class="edit-comment-hide">
       <div class="comment-body markdown-body markdown-format js-comment-body">
-          <p>31 kuRWa -> kuRqa
-<br/>[p. 228, col. 1]
-<br/>m. (-ण्डः) A son born in adultery, the son of a woman by another man than her husband, while the husband is alive. n. (-ण्डं)
-<br/>1 A hole in the ground for receiving and preserving consecrated fire.
-<br/>2 A pool, a well, a spring or basin of water, especially consecrated to some holy purpose or person.
-<br/>2 A measure. mf. (-ण्डः-ण्डी) A pitcher. f. (-ण्डी) A student's water-pot, made of a hollow cocoanut, &amp;c.
-<br/>E. कुडि to preserve, ड aff.
-<br/>32 kata -> keta
-<br/>[2nd one, p. 247]
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5657277/60539840-96ba-11e4-9dea-e4ca5e502b4e.png" alt="image" />
-<br/>33 kzIva -> kzIba
-<br/>[p. 264]
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5657351/ce997daa-96bb-11e4-8164-fa70017bd419.png" alt="image" />
-<br/>34 gopavaDU -> gopabaDU<br/>
-<br/>[WIL has both vaDU and baDU as wife; so assume he meant 'badU' here for alphabetical ordering]
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5657429/0f473fa8-96bd-11e4-9cd6-53a919dbbe4f.png" alt="image" />
-<br/>35 candraka -> candaka
-<br/>[1st one]
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5657476/edb34d54-96bd-11e4-9d59-5bf7de648400.png" alt="image" /> </p>
+          <p>31 kuRWa -&gt; kuRqa
+[p. 228, col. 1]
+m. (-ण्डः) A son born in adultery, the son of a woman by another man than her husband, while the husband is alive. n. (-ण्डं)
+1 A hole in the ground for receiving and preserving consecrated fire.
+2 A pool, a well, a spring or basin of water, especially consecrated to some holy purpose or person.
+2 A measure. mf. (-ण्डः-ण्डी) A pitcher. f. (-ण्डी) A student's water-pot, made of a hollow cocoanut, &amp;c.
+E. कुडि to preserve, ड aff.</p>
+<p>32 kata -&gt; keta
+[2nd one, p. 247]
+<img src="https://cloud.githubusercontent.com/assets/6393033/5657277/60539840-96ba-11e4-9dea-e4ca5e502b4e.png" alt="image" /></p>
+<p>33 kzIva -&gt; kzIba
+[p. 264]
+<img src="https://cloud.githubusercontent.com/assets/6393033/5657351/ce997daa-96bb-11e4-8164-fa70017bd419.png" alt="image" /></p>
+<p>34 gopavaDU -&gt; gopabaDU
+[WIL has both vaDU and baDU as wife; so assume he meant 'badU' here for alphabetical ordering]
+<img src="https://cloud.githubusercontent.com/assets/6393033/5657429/0f473fa8-96bd-11e4-9cd6-53a919dbbe4f.png" alt="image" /></p>
+<p>35 candraka -&gt; candaka
+[1st one]
+<img src="https://cloud.githubusercontent.com/assets/6393033/5657476/edb34d54-96bd-11e4-9d59-5bf7de648400.png" alt="image" /></p>
   </div>
   </div>
   </div>
   <br/>
-<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<div id="#issuecomment-69238682" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/funderburkjim" class="author">funderburkjim</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issuecomment-69238682" class="timestamp">
       <time>2015-01-08 19:56:18</time>
     </a>
   </div>
 </div><div class="edit-comment-hide">
       <div class="comment-body markdown-body markdown-format js-comment-body">
-          <p>36 cirAt -> cirAd ?
-<br/>'cirAd' restores alph. order, and agrees with MW.  Is either form ok for headword? Perhaps the<br/>
-<br/>choice is a convention in this case, and not a grammar rule.
-<br/>m. (-रात्) A name of GARUD'A. ind. A long time.
-<br/>E. चिर for a long time, and अद् who eats, from अद with क्विप् affix: or चिर and आजि aff.
-<br/>37 cara -> cUra
-<br/>[3rd 'cara'] [print missing 'U']
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5669380/0fe40544-9745-11e4-9280-cb00a8b477d8.png" alt="image" />
-<br/>38 cakriya -> cekriya
-<br/>print missing 'e'
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5669422/5bf8d144-9745-11e4-9740-b8ec5b5282e5.png" alt="image" />
-<br/>39 Cikkaka -> Cikvaka
-<br/>[YAT has the Cikvaka form.  Is this also confirmed by 'vun' affix?]
-<br/>[SHS is only other dictionary with Cikkaka, and the entry there appears a copy-paste of Wilson]
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5669530/2bc7a2ec-9746-11e4-8bb8-b1600160a54d.png" alt="image" />
-<br/>40 Citvara -> Cittvara
-<br/>[print fuzzy, but probably has ttv]
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5669571/7e66c96a-9746-11e4-9832-2fd8928e813e.png" alt="image" /> </p>
+          <p>36 cirAt -&gt; cirAd ?
+'cirAd' restores alph. order, and agrees with MW.  Is either form ok for headword? Perhaps the
+choice is a convention in this case, and not a grammar rule.
+m. (-रात्) A name of GARUD'A. ind. A long time.
+E. चिर for a long time, and अद् who eats, from अद with क्विप् affix: or चिर and आजि aff.</p>
+<p>37 cara -&gt; cUra
+[3rd 'cara'] [print missing 'U']
+<img src="https://cloud.githubusercontent.com/assets/6393033/5669380/0fe40544-9745-11e4-9280-cb00a8b477d8.png" alt="image" /></p>
+<p>38 cakriya -&gt; cekriya
+print missing 'e'
+<img src="https://cloud.githubusercontent.com/assets/6393033/5669422/5bf8d144-9745-11e4-9740-b8ec5b5282e5.png" alt="image" /></p>
+<p>39 Cikkaka -&gt; Cikvaka
+[YAT has the Cikvaka form.  Is this also confirmed by 'vun' affix?]
+[SHS is only other dictionary with Cikkaka, and the entry there appears a copy-paste of Wilson]
+<img src="https://cloud.githubusercontent.com/assets/6393033/5669530/2bc7a2ec-9746-11e4-8bb8-b1600160a54d.png" alt="image" /></p>
+<p>40 Citvara -&gt; Cittvara
+[print fuzzy, but probably has ttv]
+<img src="https://cloud.githubusercontent.com/assets/6393033/5669571/7e66c96a-9746-11e4-9832-2fd8928e813e.png" alt="image" /></p>
   </div>
   </div>
   </div>
   <br/>
-<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<div id="#issuecomment-69244508" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/funderburkjim" class="author">funderburkjim</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issuecomment-69244508" class="timestamp">
       <time>2015-01-08 20:34:48</time>
     </a>
   </div>
 </div><div class="edit-comment-hide">
       <div class="comment-body markdown-body markdown-format js-comment-body">
-          <p>41 jarja -> jarca
-<br/>[1st jarja]
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5669603/e3939584-9746-11e4-9cbb-373b349ab46e.png" alt="image" />
-<br/>42 QAla -> Qola
-<br/>[2nd QAla] [print missing 'o']
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5669638/267e226a-9747-11e4-8c11-ea5feac537e6.png" alt="image" />
-<br/>43 Rada -> Rida
-<br/>[2nd Rada; print missing 'i']
-<br/>(इ) णिदि r. 1st cl. (निन्दति-ते प्रणिन्दति) also (ऋ) णिदृ r. 1st cl. (नेदति-ते प्रणेदति)
-<br/>1 To abuse, to censure, to reproach, to reprove or revile, to despise or condemn, &amp;c. (The second root means also)
-<br/>2 To approach, to come near. The change of ण after a preposition is optional in the derivatives of the first of these roots.
-<br/>44 taptavAluka -> taptabAluka
-<br/>['b' since WIL has bAluka]
-<br/>A hell.
-<br/>E. तप्त, and वालुका sand. [vAlukA -> bAlukA]
-<br/>45 trigaRa -> triguRa
-<br/>[2nd trigaRa]
-<br/>1 Thrice, three times, triple.
-<br/>2 Possessing the three Gun'as or properties. n. (-णं) The aggregate of the three qualities incident to human nature.
-<br/>E. त्रि three, गुण a time or property.
-<br/>46 daBa -> dama
-<br/>r. 4th cl. (इर, उ) इरदमु (दम्यति)
-<br/>1 To tame or subject as an enemy, to quiet or pacify, to tranquillize.
-<br/>2 To be tamed or tranquillized.
-<br/>47 dala -> dalapuzpI
-<br/>[3rd dala; print obscure, confirmed via MW]
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5670028/7c835402-974a-11e4-8266-25c807928236.png" alt="image" />
-<br/>48 dfmBU -> dfnBU
-<br/>[1st one, p. 420]
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5670122/29bb90f8-974b-11e4-866a-345bdca1b486.png" alt="image" />
-<br/>49 dvipa -> dvIpa
-<br/>[2nd dvipa, p. 435]
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5670161/8dda1f5a-974b-11e4-80a9-d96a7a8fd8cc.png" alt="image" />
-<br/>[etc]
-<br/>50 Dra -> DrE
-<br/>[print missing 'E']
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5670202/de24633a-974b-11e4-98e0-2efce1f3663e.png" alt="image" /> </p>
+          <p>41 jarja -&gt; jarca
+[1st jarja]
+<img src="https://cloud.githubusercontent.com/assets/6393033/5669603/e3939584-9746-11e4-9cbb-373b349ab46e.png" alt="image" /></p>
+<p>42 QAla -&gt; Qola
+[2nd QAla] [print missing 'o']
+<img src="https://cloud.githubusercontent.com/assets/6393033/5669638/267e226a-9747-11e4-8c11-ea5feac537e6.png" alt="image" /></p>
+<p>43 Rada -&gt; Rida
+[2nd Rada; print missing 'i']</p>
+<p>(इ) णिदि r. 1st cl. (निन्दति-ते प्रणिन्दति) also (ऋ) णिदृ r. 1st cl. (नेदति-ते प्रणेदति)
+1 To abuse, to censure, to reproach, to reprove or revile, to despise or condemn, &amp;c. (The second root means also)
+2 To approach, to come near. The change of ण after a preposition is optional in the derivatives of the first of these roots.</p>
+<p>44 taptavAluka -&gt; taptabAluka
+['b' since WIL has bAluka]
+A hell.
+E. तप्त, and वालुका sand. [vAlukA -&gt; bAlukA]</p>
+<p>45 trigaRa -&gt; triguRa
+[2nd trigaRa]
+1 Thrice, three times, triple.
+2 Possessing the three Gun'as or properties. n. (-णं) The aggregate of the three qualities incident to human nature.
+E. त्रि three, गुण a time or property.</p>
+<p>46 daBa -&gt; dama
+r. 4th cl. (इर, उ) इरदमु (दम्यति)
+1 To tame or subject as an enemy, to quiet or pacify, to tranquillize.
+2 To be tamed or tranquillized.</p>
+<p>47 dala -&gt; dalapuzpI
+[3rd dala; print obscure, confirmed via MW]
+<img src="https://cloud.githubusercontent.com/assets/6393033/5670028/7c835402-974a-11e4-8266-25c807928236.png" alt="image" /></p>
+<p>48 dfmBU -&gt; dfnBU
+[1st one, p. 420]
+<img src="https://cloud.githubusercontent.com/assets/6393033/5670122/29bb90f8-974b-11e4-866a-345bdca1b486.png" alt="image" /></p>
+<p>49 dvipa -&gt; dvIpa
+[2nd dvipa, p. 435]
+<img src="https://cloud.githubusercontent.com/assets/6393033/5670161/8dda1f5a-974b-11e4-80a9-d96a7a8fd8cc.png" alt="image" />
+[etc]</p>
+<p>50 Dra -&gt; DrE
+[print missing 'E']
+<img src="https://cloud.githubusercontent.com/assets/6393033/5670202/de24633a-974b-11e4-98e0-2efce1f3663e.png" alt="image" /></p>
   </div>
   </div>
   </div>
   <br/>
-<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<div id="#issuecomment-69249457" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/funderburkjim" class="author">funderburkjim</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issuecomment-69249457" class="timestamp">
       <time>2015-01-08 21:08:34</time>
     </a>
   </div>
 </div><div class="edit-comment-hide">
       <div class="comment-body markdown-body markdown-format js-comment-body">
-          <p>51 narddawaka -> nardDawaka
-<br/>[acc. to SHS]
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5670344/0a11c9be-974d-11e4-8cfc-bb4b4e94aca3.png" alt="image" />
-<br/>52 niSreRi -> niHSreRi
-<br/>['H' missing in print]
-<br/>1 A ladder or staircase, a flight of steps.
-<br/>2 The wild date tree.
-<br/>E. निः for निर् implying certainty, and श्रणी a line; also निश्श्रेणी।
-<br/>53 niSvasita -> niHSvasita
-<br/>['H' missing in print]
-<br/>1 Sighed, sighing.
-<br/>[etc]
-<br/>E. निर्, and श्वस to breathe, क्त aff.
-<br/>54 niza -> nipa
-<br/>[1st niza, p 468]
-<br/>mn. (-पः-पं) A water jar. m. (-पः) The Kadamba tree, (Nauclea cadamba.)
-<br/>E. नि continuative particle, पा to drink, affix क।
-<br/>55 pAwya -> pAWya
-<br/>mfn. (-ट्यः-ट्या-ट्यं) To be read or studied. [w -> W also]
-<br/>E. पठ to read, ण्यत् aff.; also पठणीय, &amp;c.
-<br/>56 pARitala -> pARItala
-<br/>[2nd pARitala ]
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5670595/65dc8cbe-974f-11e4-98e4-dbb347152c9a.png" alt="image" />
-<br/>57 pariplAvya -> pAriplAvya
-<br/>['A' missing in print]
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5670621/9f1049f8-974f-11e4-8754-42b6264497fa.png" alt="image" />
-<br/>58 pururavas -> purUravas
-<br/>[2nd pururavas]
-<br/>1 The son of BUDDHA, and second king of the lunar dynasty.
-<br/>2 A demigod, of the class of Viswadévas.
-<br/>E. पुरु much, रु to sound, Un'ádi aff. असि, form irr.
-<br/>59 patra -> pEtra
-<br/>[2nd patra]
-<br/>Paternal, ancestral, relating or belonging to a parent or progenitor. n. (-त्रं)
-<br/>1 The part of the hand between the thumb and forefinger, or according to some the root of the forefinger.
-<br/>2 A year, month, day, &amp;c. of the Pitris.
-<br/>E. पितृ a parent, aff. अण्।
-<br/>60 potavaRij -> potabaRij
-<br/>[WIL has 'baRij' as hw = trader]
-<br/>(-णिक्) A voyaging merchant.
-<br/>E. पात a boat, and वणिक् a trader. [vaRik -> baRik] </p>
+          <p>51 narddawaka -&gt; nardDawaka
+[acc. to SHS]
+<img src="https://cloud.githubusercontent.com/assets/6393033/5670344/0a11c9be-974d-11e4-8cfc-bb4b4e94aca3.png" alt="image" /></p>
+<p>52 niSreRi -&gt; niHSreRi
+['H' missing in print]
+1 A ladder or staircase, a flight of steps.
+2 The wild date tree.
+E. निः for निर् implying certainty, and श्रणी a line; also निश्श्रेणी।</p>
+<p>53 niSvasita -&gt; niHSvasita
+['H' missing in print]
+1 Sighed, sighing.
+[etc]
+E. निर्, and श्वस to breathe, क्त aff.</p>
+<p>54 niza -&gt; nipa
+[1st niza, p 468]
+mn. (-पः-पं) A water jar. m. (-पः) The Kadamba tree, (Nauclea cadamba.)
+E. नि continuative particle, पा to drink, affix क।</p>
+<p>55 pAwya -&gt; pAWya
+mfn. (-ट्यः-ट्या-ट्यं) To be read or studied. [w -&gt; W also]
+E. पठ to read, ण्यत् aff.; also पठणीय, &amp;c.</p>
+<p>56 pARitala -&gt; pARItala
+[2nd pARitala ]
+<img src="https://cloud.githubusercontent.com/assets/6393033/5670595/65dc8cbe-974f-11e4-98e4-dbb347152c9a.png" alt="image" /></p>
+<p>57 pariplAvya -&gt; pAriplAvya
+['A' missing in print]
+<img src="https://cloud.githubusercontent.com/assets/6393033/5670621/9f1049f8-974f-11e4-8754-42b6264497fa.png" alt="image" /></p>
+<p>58 pururavas -&gt; purUravas
+[2nd pururavas]
+1 The son of BUDDHA, and second king of the lunar dynasty.
+2 A demigod, of the class of Viswadévas.
+E. पुरु much, रु to sound, Un'ádi aff. असि, form irr.</p>
+<p>59 patra -&gt; pEtra
+[2nd patra]
+Paternal, ancestral, relating or belonging to a parent or progenitor. n. (-त्रं)
+1 The part of the hand between the thumb and forefinger, or according to some the root of the forefinger.
+2 A year, month, day, &amp;c. of the Pitris.
+E. पितृ a parent, aff. अण्।</p>
+<p>60 potavaRij -&gt; potabaRij
+[WIL has 'baRij' as hw = trader]
+(-णिक्) A voyaging merchant.
+E. पात a boat, and वणिक् a trader. [vaRik -&gt; baRik]</p>
   </div>
   </div>
   </div>
   <br/>
-<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<div id="#issuecomment-69258109" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/funderburkjim" class="author">funderburkjim</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issuecomment-69258109" class="timestamp">
       <time>2015-01-08 22:04:16</time>
     </a>
   </div>
 </div><div class="edit-comment-hide">
       <div class="comment-body markdown-body markdown-format js-comment-body">
-          <p>61 pratihAsa -> pratIhAsa
-<br/>[2nd one - print error 'i']
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5670773/f2e8a628-9750-11e4-97b1-5a454efe93fd.png" alt="image" />
-<br/>62  prapaRa -> praparRa
-<br/>[print missing 'r']
-<br/>A fallen leaf.
-<br/>E. प्र before पर्ण leaf.
-<br/>63 prAcInAnIta -> prAcInAvIta
-<br/>[print has 'n' instead of 'v'.  But AvIta headword means 'hung']
-<br/>The sacrificial thread, worn over the right arm, and passing under the left, as at Sráddhas.
-<br/>E. प्राचीन east, and आनीत hung. [AnIta -> AvIta]
-<br/>64 Pullati -> Pulliti ?
-<br/>[Not sure whether print error, or if Pullati is an alternate form.  Maybe details of ktin suffix would say]
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5670979/b305f8e2-9752-11e4-809f-75e9e01ca916.png" alt="image" />
-<br/>65  madAdya -> madAQya
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5671063/26a05edc-9753-11e4-89db-fa21d1fbbb7d.png" alt="image" />
-<br/>66 madAmmada ->madArmmada
-<br/>[print missing 'r']
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5671144/b6bd7d2e-9753-11e4-9fc2-ee4259f56e29.png" alt="image" />
-<br/>67 vAgvanDana -> vAgbanDana
-<br/>[probably print error 'v', since vanDana not in any dictionary]
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5671622/6ab8913a-9757-11e4-9b40-b8c9dbf5ec6f.png" alt="image" />
-<br/>68 vikarmmaka -> vikarmmika
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5671652/a42960de-9757-11e4-8d7d-31938c642f9d.png" alt="image" />
-<br/>69 viSvammara -> viSvamBara
-<br/>All-sustaining. m. (-रः)
-<br/>1 VISHN'U.
-<br/>2 INDRA. f. (-रा) The earth.
-<br/>E. विश्व all (things), भृ to support or nourish, खच् aff.
-<br/>70 vizyanda -> vizpanda
-<br/>Throbbing, beating.
-<br/>E. वि before स्यन्दि to go, अच् aff. [syandi -> spandi] </p>
+          <p>61 pratihAsa -&gt; pratIhAsa
+[2nd one - print error 'i']
+<img src="https://cloud.githubusercontent.com/assets/6393033/5670773/f2e8a628-9750-11e4-97b1-5a454efe93fd.png" alt="image" /></p>
+<p>62  prapaRa -&gt; praparRa
+[print missing 'r']
+A fallen leaf.
+E. प्र before पर्ण leaf.</p>
+<p>63 prAcInAnIta -&gt; prAcInAvIta
+[print has 'n' instead of 'v'.  But AvIta headword means 'hung']
+The sacrificial thread, worn over the right arm, and passing under the left, as at Sráddhas.
+E. प्राचीन east, and आनीत hung. [AnIta -&gt; AvIta]</p>
+<p>64 Pullati -&gt; Pulliti ?
+[Not sure whether print error, or if Pullati is an alternate form.  Maybe details of ktin suffix would say]
+<img src="https://cloud.githubusercontent.com/assets/6393033/5670979/b305f8e2-9752-11e4-809f-75e9e01ca916.png" alt="image" /></p>
+<p>65  madAdya -&gt; madAQya
+<img src="https://cloud.githubusercontent.com/assets/6393033/5671063/26a05edc-9753-11e4-89db-fa21d1fbbb7d.png" alt="image" /></p>
+<p>66 madAmmada -&gt;madArmmada
+[print missing 'r']
+<img src="https://cloud.githubusercontent.com/assets/6393033/5671144/b6bd7d2e-9753-11e4-9fc2-ee4259f56e29.png" alt="image" /></p>
+<p>67 vAgvanDana -&gt; vAgbanDana
+[probably print error 'v', since vanDana not in any dictionary]
+<img src="https://cloud.githubusercontent.com/assets/6393033/5671622/6ab8913a-9757-11e4-9b40-b8c9dbf5ec6f.png" alt="image" /></p>
+<p>68 vikarmmaka -&gt; vikarmmika
+<img src="https://cloud.githubusercontent.com/assets/6393033/5671652/a42960de-9757-11e4-8d7d-31938c642f9d.png" alt="image" /></p>
+<p>69 viSvammara -&gt; viSvamBara
+All-sustaining. m. (-रः)
+1 VISHN'U.
+2 INDRA. f. (-रा) The earth.
+E. विश्व all (things), भृ to support or nourish, खच् aff.</p>
+<p>70 vizyanda -&gt; vizpanda
+Throbbing, beating.
+E. वि before स्यन्दि to go, अच् aff. [syandi -&gt; spandi]</p>
   </div>
   </div>
   </div>
   <br/>
-<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<div id="#issuecomment-69264259" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/funderburkjim" class="author">funderburkjim</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issuecomment-69264259" class="timestamp">
       <time>2015-01-08 22:46:38</time>
     </a>
   </div>
 </div><div class="edit-comment-hide">
       <div class="comment-body markdown-body markdown-format js-comment-body">
-          <p>71 vismiti -> vismfti
-<br/>Forgetting, forgetfulness.
-<br/>E. वि priv., and स्मृति recollection.
-<br/>72 vaqA -> veqA
-<br/>[2nd vaqA, print missing 'e']
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5671838/2a7fecf6-9759-11e4-8607-9f0cd78a52aa.png" alt="image" />
-<br/>73 va -> vE
-<br/>74 va -> vE
-<br/>[3rd, and 4th on p. 809. E missing]
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5671907/bef1ce36-9759-11e4-8f18-a95f5c9bff25.png" alt="image" />
-<br/>75 vEwuzya -> vEduzya
-<br/>nf. (-ष्यं-षी) Learning, sapience.
-<br/>E. विदूस् a learned man, ष्यञ् aff.
-<br/>76 SAlina -> SAlIna
-<br/>[From the next entry, SAlInatva, the author must have intended a long 'I' also in SAlIna]
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5671983/6d3ffcba-975a-11e4-842f-1adcbefda8c0.png" alt="image" />
-<br/>77 SuSira -> Suzira
-<br/>[Presumably a print error in headword, as etymology references 'suz']
-<br/>Perforated, bored, pierced, full of holes or spaces. n. (-रं)
-<br/>[etc]
-<br/>E. शुष to dry, Un'ádi aff. किरच्।
-<br/>78 saMSvat -> saMScat
-<br/>[1st one]
-<br/>n. (-श्वत्) Deceit, trick, illusion, juggling.
-<br/>E. सम् before चि to collect, Un'ádi aff. अति, and सुट् augment
-<br/>79 sarvvaMsaha -> sarbbaMsaha
-<br/>[1st one, which occurs after sarbba]
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5672364/d0bf9ac2-975d-11e4-924a-a10507ce1ce7.png" alt="image" />
-<br/>80 sudustara -> suduScara
-<br/>[1st one]
-<br/>mfn. (-रः-री-रं) Very arduous or painful, difficult to be performed or attained.
-<br/>E. सु very, दुश्त्रर arduous. [duStrara -> duScara] </p>
+          <p>71 vismiti -&gt; vismfti
+Forgetting, forgetfulness.
+E. वि priv., and स्मृति recollection.</p>
+<p>72 vaqA -&gt; veqA
+[2nd vaqA, print missing 'e']
+<img src="https://cloud.githubusercontent.com/assets/6393033/5671838/2a7fecf6-9759-11e4-8607-9f0cd78a52aa.png" alt="image" /></p>
+<p>73 va -&gt; vE
+74 va -&gt; vE
+[3rd, and 4th on p. 809. E missing]
+<img src="https://cloud.githubusercontent.com/assets/6393033/5671907/bef1ce36-9759-11e4-8f18-a95f5c9bff25.png" alt="image" /></p>
+<p>75 vEwuzya -&gt; vEduzya
+nf. (-ष्यं-षी) Learning, sapience.
+E. विदूस् a learned man, ष्यञ् aff.</p>
+<p>76 SAlina -&gt; SAlIna
+[From the next entry, SAlInatva, the author must have intended a long 'I' also in SAlIna]
+<img src="https://cloud.githubusercontent.com/assets/6393033/5671983/6d3ffcba-975a-11e4-842f-1adcbefda8c0.png" alt="image" /></p>
+<p>77 SuSira -&gt; Suzira
+[Presumably a print error in headword, as etymology references 'suz']
+Perforated, bored, pierced, full of holes or spaces. n. (-रं)
+[etc]
+E. शुष to dry, Un'ádi aff. किरच्।</p>
+<p>78 saMSvat -&gt; saMScat
+[1st one]
+n. (-श्वत्) Deceit, trick, illusion, juggling.
+E. सम् before चि to collect, Un'ádi aff. अति, and सुट् augment</p>
+<p>79 sarvvaMsaha -&gt; sarbbaMsaha
+[1st one, which occurs after sarbba]
+<img src="https://cloud.githubusercontent.com/assets/6393033/5672364/d0bf9ac2-975d-11e4-924a-a10507ce1ce7.png" alt="image" /></p>
+<p>80 sudustara -&gt; suduScara
+[1st one]
+mfn. (-रः-री-रं) Very arduous or painful, difficult to be performed or attained.
+E. सु very, दुश्त्रर arduous. [duStrara -&gt; duScara]</p>
   </div>
   </div>
   </div>
   <br/>
-<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<div id="#issuecomment-69277311" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/funderburkjim" class="author">funderburkjim</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issuecomment-69277311" class="timestamp">
       <time>2015-01-09 00:50:32</time>
     </a>
   </div>
 </div><div class="edit-comment-hide">
       <div class="comment-body markdown-body markdown-format js-comment-body">
-          <p>81 suhfdvala -> suhfdbala
-<br/>[in WIL, both 'bala' and 'vala' mean 'army'. Go with 'bala' for alph. ordering]
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5673640/250a36d2-976d-11e4-9429-3710285ebb16.png" alt="image" />
-<br/>82 sUpaGUpana -> sUpaDUpana
-<br/>Asafoetida.
-<br/>E. सूप sauce, and धूपन perfuming; also सूपधूपक।
-<br/>83 stfha -> stFha
-<br/>[2nd one]
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5673733/60b4f9dc-976e-11e4-80bc-08f021024ff8.png" alt="image" />
-<br/>84 sTalAya -> sTalIya
-<br/>[print missing 'I' line]
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5673760/b04b1f62-976e-11e4-8f28-f2377ec390f6.png" alt="image" />
-<br/>85 sTUrin -> sTurin
-<br/>[1st one] [also  sTUrin -> sTOrin in entry]
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5673786/fa8b3ed6-976e-11e4-9614-948b65ba663f.png" alt="image" /> </p>
+          <p>81 suhfdvala -&gt; suhfdbala
+[in WIL, both 'bala' and 'vala' mean 'army'. Go with 'bala' for alph. ordering]
+<img src="https://cloud.githubusercontent.com/assets/6393033/5673640/250a36d2-976d-11e4-9429-3710285ebb16.png" alt="image" /></p>
+<p>82 sUpaGUpana -&gt; sUpaDUpana
+Asafoetida.
+E. सूप sauce, and धूपन perfuming; also सूपधूपक।</p>
+<p>83 stfha -&gt; stFha
+[2nd one]
+<img src="https://cloud.githubusercontent.com/assets/6393033/5673733/60b4f9dc-976e-11e4-80bc-08f021024ff8.png" alt="image" /></p>
+<p>84 sTalAya -&gt; sTalIya
+[print missing 'I' line]
+<img src="https://cloud.githubusercontent.com/assets/6393033/5673760/b04b1f62-976e-11e4-8f28-f2377ec390f6.png" alt="image" /></p>
+<p>85 sTUrin -&gt; sTurin
+[1st one] [also  sTUrin -&gt; sTOrin in entry]
+<img src="https://cloud.githubusercontent.com/assets/6393033/5673786/fa8b3ed6-976e-11e4-9614-948b65ba663f.png" alt="image" /></p>
   </div>
   </div>
   </div>
   <br/>
-<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<div id="#issuecomment-69277339" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/funderburkjim" class="author">funderburkjim</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issuecomment-69277339" class="timestamp">
       <time>2015-01-09 00:50:49</time>
     </a>
   </div>
@@ -505,243 +518,222 @@
   </div>
   </div>
   <br/>
-<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<div id="#issuecomment-69412696" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/funderburkjim" class="author">funderburkjim</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issuecomment-69412696" class="timestamp">
       <time>2015-01-09 22:42:32</time>
     </a>
   </div>
 </div><div class="edit-comment-hide">
       <div class="comment-body markdown-body markdown-format js-comment-body">
-          <p>All the Wilson corrections (parts 1-5) now installed.  (I can still revise if Dhaval finds some that need revision.)
-<br/>A file <a href="https://github.com/sanskrit-lexicon/CORRECTIONS/blob/master/dictionaries/WIL/chksort2.txt">chksort2.txt</a> has the remaining cases (766) of alphabetical misorderings in Wilson.  75 of these contain a 'NOTE ' indicating the likely reason for the misordering.  There are probably a few spelling errors in this list, if anyone wants to check -  currently I've had my fill of Wilson for a while.  But the headword list is probably a lot cleaner. </p>
+          <p>All the Wilson corrections (parts 1-5) now installed.  (I can still revise if Dhaval finds some that need revision.)</p>
+<p>A file <a href="https://github.com/sanskrit-lexicon/CORRECTIONS/blob/master/dictionaries/WIL/chksort2.txt">chksort2.txt</a> has the remaining cases (766) of alphabetical misorderings in Wilson.  75 of these contain a 'NOTE ' indicating the likely reason for the misordering.  There are probably a few spelling errors in this list, if anyone wants to check -  currently I've had my fill of Wilson for a while.  But the headword list is probably a lot cleaner.</p>
   </div>
   </div>
   </div>
   <br/>
-<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<div id="#issuecomment-69488629" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/drdhaval2785" class="author">drdhaval2785</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issuecomment-69488629" class="timestamp">
       <time>2015-01-11 09:39:21</time>
     </a>
   </div>
 </div><div class="edit-comment-hide">
       <div class="comment-body markdown-body markdown-format js-comment-body">
-          <pre><code>
-    <br/>3 awwA -> awyA 
-    <br/>Here, there is a discrepancy in the printing. Since awyA restores ordering, we assume 
-    <br/>that's what Wilson intended. 
-    <br/>``` 
-    <br/>Yes. 
-    <br/>We treated awyA correction in some other dict also</p>
+          <pre><code>3 awwA -&gt; awyA
+Here, there is a discrepancy in the printing. Since awyA restores ordering, we assume
+that's what Wilson intended.</code></pre>
+<p>Yes.
+We treated awyA correction in some other dict also</p>
   </div>
   </div>
   </div>
   <br/>
-<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<div id="#issuecomment-69492071" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/drdhaval2785" class="author">drdhaval2785</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issuecomment-69492071" class="timestamp">
       <time>2015-01-11 12:01:55</time>
     </a>
   </div>
 </div><div class="edit-comment-hide">
       <div class="comment-body markdown-body markdown-format js-comment-body">
-          <pre><code>
-    <br/>11 ambukfta -> ambUkfta ? 
-    <br/>[ambUkfta would restore alphabetical order. Don't know whether the long 'U' is required by grammar 
-    <br/>before 'kfta'] 
-    <br/>mfn. (-तः-ता-तं) Sputtered, (speech, discourse.) 
-    <br/>E. अम्बु water, and कृत made. 
-    <br/>``` 
-    <br/>couldn't locate it in http://www.sanskrit-lexicon.uni-koeln.de/scans/WILScan/2014/web/webtc/servepdf.php?page=063.  
-    <br/></p>
+          <pre><code>11 ambukfta -&gt; ambUkfta ?
+[ambUkfta would restore alphabetical order. Don't know whether the long 'U' is required by grammar
+before 'kfta']
+mfn. (-तः-ता-तं) Sputtered, (speech, discourse.)
+E. अम्बु water, and कृत made.</code></pre>
+<p>couldn't locate it in <a href="http://www.sanskrit-lexicon.uni-koeln.de/scans/WILScan/2014/web/webtc/servepdf.php?page=063">http://www.sanskrit-lexicon.uni-koeln.de/scans/WILScan/2014/web/webtc/servepdf.php?page=063</a>. </p>
   </div>
   </div>
   </div>
   <br/>
-<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<div id="#issuecomment-69492105" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/drdhaval2785" class="author">drdhaval2785</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issuecomment-69492105" class="timestamp">
       <time>2015-01-11 12:02:57</time>
     </a>
   </div>
 </div><div class="edit-comment-hide">
       <div class="comment-body markdown-body markdown-format js-comment-body">
-          <pre><code>
-    <br/>14 Artvijya -> Arttijya ? 
-    <br/>``` 
-    <br/>Arttvijya</p>
+          <pre><code>14 Artvijya -&gt; Arttijya ?</code></pre>
+<p>Arttvijya</p>
   </div>
   </div>
   </div>
   <br/>
-<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<div id="#issuecomment-69492143" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/drdhaval2785" class="author">drdhaval2785</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issuecomment-69492143" class="timestamp">
       <time>2015-01-11 12:04:15</time>
     </a>
   </div>
 </div><div class="edit-comment-hide">
       <div class="comment-body markdown-body markdown-format js-comment-body">
-          <pre><code>
-    <br/>20 upakxpta -> upaklfpta ? 
-    <br/>``` 
-    <br/>No. Keep it as it is</p>
+          <pre><code>20 upakxpta -&gt; upaklfpta ?</code></pre>
+<p>No. Keep it as it is</p>
   </div>
   </div>
   </div>
   <br/>
-<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<div id="#issuecomment-69492296" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/drdhaval2785" class="author">drdhaval2785</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issuecomment-69492296" class="timestamp">
       <time>2015-01-11 12:09:19</time>
     </a>
   </div>
 </div><div class="edit-comment-hide">
       <div class="comment-body markdown-body markdown-format js-comment-body">
-          <pre><code>
-    <br/>27 kiYca -> kiYja 
-    <br/>[2nd one] 
-    <br/>n. (-ञ्जं) The filament of a lotus: see किञ्जल्क। 
-    <br/>``` 
-    <br/>I couldn't see either of kiYca / kiYja.  
-    <br/>Looking at the dictionary print - kiYja is the reading for second word.</p>
+          <pre><code>27 kiYca -&gt; kiYja
+[2nd one]
+n. (-ञ्जं) The filament of a lotus: see किञ्जल्क।</code></pre>
+<p>I couldn't see either of kiYca / kiYja.
+Looking at the dictionary print - kiYja is the reading for second word.</p>
   </div>
   </div>
   </div>
   <br/>
-<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<div id="#issuecomment-69493286" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/drdhaval2785" class="author">drdhaval2785</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issuecomment-69493286" class="timestamp">
       <time>2015-01-11 12:44:56</time>
     </a>
   </div>
 </div><div class="edit-comment-hide">
       <div class="comment-body markdown-body markdown-format js-comment-body">
-          <pre><code>
-    <br/>36 cirAt -> cirAd ? 
-    <br/>'cirAd' restores alph. order, and agrees with MW. Is either form ok for headword? Perhaps the 
-    <br/>choice is a convention in this case, and not a grammar rule. 
-    <br/>``` 
-    <br/>वाऽवसाने is the grammar rule allowing this </p>
+          <pre><code>36 cirAt -&gt; cirAd ?
+'cirAd' restores alph. order, and agrees with MW. Is either form ok for headword? Perhaps the
+choice is a convention in this case, and not a grammar rule.</code></pre>
+<p>वाऽवसाने is the grammar rule allowing this </p>
   </div>
   </div>
   </div>
   <br/>
-<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<div id="#issuecomment-69493376" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/drdhaval2785" class="author">drdhaval2785</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issuecomment-69493376" class="timestamp">
       <time>2015-01-11 12:48:46</time>
     </a>
   </div>
 </div><div class="edit-comment-hide">
       <div class="comment-body markdown-body markdown-format js-comment-body">
-          <pre><code>
-    <br/>39 Cikkaka -> Cikvaka 
-    <br/>``` 
-    <br/>Keep it as it is. Cikkaka.</p>
+          <pre><code>39 Cikkaka -&gt; Cikvaka</code></pre>
+<p>Keep it as it is. Cikkaka.</p>
   </div>
   </div>
   </div>
   <br/>
-<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<div id="#issuecomment-69493565" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/drdhaval2785" class="author">drdhaval2785</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issuecomment-69493565" class="timestamp">
       <time>2015-01-11 12:56:41</time>
     </a>
   </div>
 </div><div class="edit-comment-hide">
       <div class="comment-body markdown-body markdown-format js-comment-body">
-          <pre><code>
-    <br/>51 narddawaka -> nardDawaka 
-    <br/>[acc. to SHS] 
-    <br/>``` 
-    <br/>narddawaka is more favoured. 
-    <br/>See 
-    <br/>nardawaka:MW,MW72,PW,PWG 
-    <br/>nardawakaH:AP 
-    <br/>narddawaka:SHS,VCP,WIL 
-    <br/>narddawakaM:SKD 
-    <br/></p>
+          <pre><code>51 narddawaka -&gt; nardDawaka
+[acc. to SHS]</code></pre>
+<p>narddawaka is more favoured.</p>
+<p>See
+nardawaka:MW,MW72,PW,PWG
+nardawakaH:AP
+narddawaka:SHS,VCP,WIL
+narddawakaM:SKD</p>
   </div>
   </div>
   </div>
   <br/>
-<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<div id="#issuecomment-69494128" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/drdhaval2785" class="author">drdhaval2785</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issuecomment-69494128" class="timestamp">
       <time>2015-01-11 13:17:59</time>
     </a>
   </div>
 </div><div class="edit-comment-hide">
       <div class="comment-body markdown-body markdown-format js-comment-body">
-          <pre><code>
-    <br/>Pullati -> Pulliti 
-    <br/>``` 
-    <br/>Seems possible. Not sure about grammatical rules in this ktin suffixes though. 
-    <br/></p>
+          <pre><code>Pullati -&gt; Pulliti</code></pre>
+<p>Seems possible. Not sure about grammatical rules in this ktin suffixes though.</p>
   </div>
   </div>
   </div>
   <br/>
-<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<div id="#issuecomment-69494267" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/drdhaval2785" class="author">drdhaval2785</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issuecomment-69494267" class="timestamp">
       <time>2015-01-11 13:23:01</time>
     </a>
   </div>
@@ -752,51 +744,51 @@
   </div>
   </div>
   <br/>
-<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<div id="#issuecomment-69509022" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/funderburkjim" class="author">funderburkjim</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issuecomment-69509022" class="timestamp">
       <time>2015-01-11 20:08:12</time>
     </a>
   </div>
 </div><div class="edit-comment-hide">
       <div class="comment-body markdown-body markdown-format js-comment-body">
-          <p>re 11 ambukfta -> ambUkfta  Couldn't locate on page 63 of scan:
-<br/>  It's in the middle of 2nd column.
-<br/>re 14 Artvijya -> Arttijya  REVISED Changed to Arttvijya
-<br/>re 20 upakxpta -> upaklfpta ?  REVISED to NO CHANGE
-<br/>re 27 kiYca -> kiYja  \I couldn't see either...\
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5696445/e298a448-999f-11e4-8e4e-24868c681665.png" alt="image" />
-<br/>re 51 narddawaka -> nardDawaka<br/>
-<br/>   This word appears with both spellings in WIL, and slightly different entries:
-<br/> narddawaka A kind of metre, containing eight feet of various syllabic quantities. {not changed)
-<br/> nardDawaka  A stanza of four parts, having seventeen syllables in each.  [changed]
-<br/>re 39 Cikkaka -> Cikvaka
-<br/>  I'll make this a no change, per <strong><a href="https://github.com/drdhaval2785" target="_blank">@drdhaval2785</a></strong> and as this agrees with scan.
-<br/>  However, I thought the etymology  cikka + affix vun   might suggest the Cikvaka spelling. </p>
+          <p>re 11 ambukfta -&gt; ambUkfta  Couldn't locate on page 63 of scan:
+It's in the middle of 2nd column.</p>
+<p>re 14 Artvijya -&gt; Arttijya  REVISED Changed to Arttvijya</p>
+<p>re 20 upakxpta -&gt; upaklfpta ?  REVISED to NO CHANGE</p>
+<p>re 27 kiYca -&gt; kiYja  &quot;I couldn't see either...&quot;
+<img src="https://cloud.githubusercontent.com/assets/6393033/5696445/e298a448-999f-11e4-8e4e-24868c681665.png" alt="image" /></p>
+<p>re 51 narddawaka -&gt; nardDawaka<br />
+This word appears with both spellings in WIL, and slightly different entries:
+narddawaka A kind of metre, containing eight feet of various syllabic quantities. {not changed)
+nardDawaka  A stanza of four parts, having seventeen syllables in each.  [changed]</p>
+<p>re 39 Cikkaka -&gt; Cikvaka
+I'll make this a no change, per <strong><a href="https://github.com/drdhaval2785" target="_blank">@drdhaval2785</a></strong> and as this agrees with scan.
+However, I thought the etymology  cikka + affix vun   might suggest the Cikvaka spelling.</p>
   </div>
   </div>
   </div>
   <br/>
-<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<div id="#issuecomment-69863102" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/drdhaval2785" class="author">drdhaval2785</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issuecomment-69863102" class="timestamp">
       <time>2015-01-14 03:16:17</time>
     </a>
   </div>
 </div><div class="edit-comment-hide">
       <div class="comment-body markdown-body markdown-format js-comment-body">
           <p>Suffix vun gets converted to 'aka'.
-<br/>It leaves no remnant of 'v'. I will quote relevant grammar rule soon.</p>
+It leaves no remnant of 'v'. I will quote relevant grammar rule soon.</p>
   </div>
   </div>
   </div>

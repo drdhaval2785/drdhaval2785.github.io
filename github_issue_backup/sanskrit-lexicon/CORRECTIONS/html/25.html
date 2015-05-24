@@ -5,67 +5,69 @@
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge'>
 <meta http-equiv='Content-Language' content='en'>
-<title>'sanskrit-lexicon/CORRECTIONS/25'</title>
+<title>sanskrit-lexicon/CORRECTIONS/25</title>
 <link href='github-c486157afcc5f58155a921bc675afb08733fbaa8dcf39ac2104d3.css' media='all' rel='stylesheet'>
 <link href='github2-da2e842cc3f0aaf33b727d0ef034243c12ab008fd09b24868b97.css' media='all' rel='stylesheet'>
 <meta http-equiv='x-pjax-version' content='4426702614c8182f33d1780ad1169662'>
 </head>
 <body class='logged_in  env-production windows vis-public'>
-<h1 align='center'><a href='https://github.com/sanskrit-lexicon/CORRECTIONS/issues/25' target='_blank'>Documentation of Suspect false pattern generation</h1><hr/><div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<h1 align='center'><a href='https://github.com/sanskrit-lexicon/CORRECTIONS/issues/25' target='_blank'>Documentation of Suspect false pattern generation</h1><hr/><div id="#issue-46179652" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/drdhaval2785" class="author">drdhaval2785</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issue-46179652" class="timestamp">
       <time>2014-10-18 15:55:37</time>
     </a>
   </div>
 </div><div class="edit-comment-hide">
       <div class="comment-body markdown-body markdown-format js-comment-body">
-          <p>Let me document the method I have adopted to find the suspected wrong entries in #2.<br/>
-<br/>Code for checking is attached <a href="https://github.com/drdhaval2785/SanskritSpellCheck">here</a>.<br/>
-<br/><a href="https://docs.google.com/document/d/1G4HoDz9nuj2GPeHQopNVSnDEGrnXtoAuXFugj4sQHZg/edit?usp=sharing">Google doc</a> for logic behind approach and instructions for dictionary /testers.
-<br/>Video tutorial for running PHP script- <a href="http://youtu.be/qLqYUZUGM6M">http://youtu.be/qLqYUZUGM6M</a>
-<br/>Video tutorial for correction submission (based on wrong entries found from suspectfalse.html) on this corrections page - <a href="https://www.youtube.com/watch?v=rKZ_OsSHwsY">https://www.youtube.com/watch?v=rKZ_OsSHwsY</a>
-<br/>In short - the logic is as follows
-<br/>1. We check the base dictionary for different Vowel and consonant patterns like VV, VCV, VCCV, VCCCV etc. (We presume that the base dictionary has correct entries - which need not be true).
-<br/>2. We check the dictionary to be tested for different vowel and consonant patterns like 1 above.
-<br/>3. If the pattern is not found in 1, but found in 2 - we note that in suspectfalse.html.
-<br/>4. We check those entries from dictionary scans and verify.
-<br/>5. If wrong word is detected, it is intimated to the webmaster here. </p>
+          <p>Let me document the method I have adopted to find the suspected wrong entries in #2.
+Code for checking is attached <a href="https://github.com/drdhaval2785/SanskritSpellCheck">here</a>.
+<a href="https://docs.google.com/document/d/1G4HoDz9nuj2GPeHQopNVSnDEGrnXtoAuXFugj4sQHZg/edit?usp=sharing">Google doc</a> for logic behind approach and instructions for dictionary /testers.
+Video tutorial for running PHP script- <a href="http://youtu.be/qLqYUZUGM6M">http://youtu.be/qLqYUZUGM6M</a>
+Video tutorial for correction submission (based on wrong entries found from suspectfalse.html) on this corrections page - <a href="https://www.youtube.com/watch?v=rKZ_OsSHwsY">https://www.youtube.com/watch?v=rKZ_OsSHwsY</a></p>
+<p>In short - the logic is as follows</p>
+<ol>
+<li>We check the base dictionary for different Vowel and consonant patterns like VV, VCV, VCCV, VCCCV etc. (We presume that the base dictionary has correct entries - which need not be true).</li>
+<li>We check the dictionary to be tested for different vowel and consonant patterns like 1 above.</li>
+<li>If the pattern is not found in 1, but found in 2 - we note that in suspectfalse.html.</li>
+<li>We check those entries from dictionary scans and verify.</li>
+<li>If wrong word is detected, it is intimated to the webmaster here.</li>
+</ol>
   </div>
   </div>
   </div>
   <br/>
-<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<div id="#issuecomment-93747495" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/drdhaval2785" class="author">drdhaval2785</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issuecomment-93747495" class="timestamp">
       <time>2015-04-16 14:24:54</time>
     </a>
   </div>
 </div><div class="edit-comment-hide">
       <div class="comment-body markdown-body markdown-format js-comment-body">
           <p>The method has worked and is near its end of exploitation.
-<br/>So, closing this issue to remove clutter from the plate.</p>
+So, closing this issue to remove clutter from the plate.</p>
   </div>
   </div>
   </div>
   <br/>
-<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<div id="#issuecomment-93852548" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/funderburkjim" class="author">funderburkjim</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issuecomment-93852548" class="timestamp">
       <time>2015-04-16 22:21:27</time>
     </a>
   </div>
@@ -76,14 +78,14 @@
   </div>
   </div>
   <br/>
-<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<div id="#issuecomment-94080488" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/gasyoun" class="author">gasyoun</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issuecomment-94080488" class="timestamp">
       <time>2015-04-17 21:39:07</time>
     </a>
   </div>

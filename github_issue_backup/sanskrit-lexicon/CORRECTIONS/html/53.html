@@ -5,44 +5,44 @@
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge'>
 <meta http-equiv='Content-Language' content='en'>
-<title>'sanskrit-lexicon/CORRECTIONS/53'</title>
+<title>sanskrit-lexicon/CORRECTIONS/53</title>
 <link href='github-c486157afcc5f58155a921bc675afb08733fbaa8dcf39ac2104d3.css' media='all' rel='stylesheet'>
 <link href='github2-da2e842cc3f0aaf33b727d0ef034243c12ab008fd09b24868b97.css' media='all' rel='stylesheet'>
 <meta http-equiv='x-pjax-version' content='4426702614c8182f33d1780ad1169662'>
 </head>
 <body class='logged_in  env-production windows vis-public'>
-<h1 align='center'><a href='https://github.com/sanskrit-lexicon/CORRECTIONS/issues/53' target='_blank'>Feminine ending in 'a' - sure shot errors</h1><hr/><div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<h1 align='center'><a href='https://github.com/sanskrit-lexicon/CORRECTIONS/issues/53' target='_blank'>Feminine ending in 'a' - sure shot errors</h1><hr/><div id="#issue-52332890" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/drdhaval2785" class="author">drdhaval2785</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issue-52332890" class="timestamp">
       <time>2014-12-18 07:18:32</time>
     </a>
   </div>
 </div><div class="edit-comment-hide">
       <div class="comment-body markdown-body markdown-format js-comment-body">
           <p><a href="https://github.com/sanskrit-lexicon/CORRECTIONS/issues/51#issuecomment-67447969">https://github.com/sanskrit-lexicon/CORRECTIONS/issues/51#issuecomment-67447969</a> is the basis for this issue.
-<br/>It turned out that the word ended with 'a' and had 'feminine'.
-<br/>It is impossible even theoretically in Sanskrit.
-<br/>So, it would be worthwhile if <strong><a href="https://github.com/funderburkjim" target="_blank">@funderburkjim</a></strong> can provide a list of words in all dictionaries which qualify for this - with clickable links.
-<br/>We can search and check later on.
-<br/>What say <strong><a href="https://github.com/gasyoun" target="_blank">@gasyoun</a></strong> ?
-<br/>N.B. We should exclude (mfn) / (mf) etc cases. Pure feminine ending with 'a' is our goal </p>
+It turned out that the word ended with 'a' and had 'feminine'.
+It is impossible even theoretically in Sanskrit.
+So, it would be worthwhile if <strong><a href="https://github.com/funderburkjim" target="_blank">@funderburkjim</a></strong> can provide a list of words in all dictionaries which qualify for this - with clickable links.
+We can search and check later on.
+What say <strong><a href="https://github.com/gasyoun" target="_blank">@gasyoun</a></strong> ?</p>
+<p>N.B. We should exclude (mfn) / (mf) etc cases. Pure feminine ending with 'a' is our goal</p>
   </div>
   </div>
   </div>
   <br/>
-<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<div id="#issuecomment-67450286" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/gasyoun" class="author">gasyoun</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issuecomment-67450286" class="timestamp">
       <time>2014-12-18 07:30:47</time>
     </a>
   </div>
@@ -53,64 +53,83 @@
   </div>
   </div>
   <br/>
-<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<div id="#issuecomment-68321487" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/funderburkjim" class="author">funderburkjim</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issuecomment-68321487" class="timestamp">
       <time>2014-12-30 01:18:39</time>
     </a>
   </div>
 </div><div class="edit-comment-hide">
       <div class="comment-body markdown-body markdown-format js-comment-body">
-          <p>This is likely a difficult task.  The problem is, what regex to use to identify the gender in a reliable way.
-<br/>I did give it a try with SCH, apply the following regexp to sch.xml, with grep:
-<br/><code> <br/>grep 'a</key1>.<i><body> </i>f[.]' sch.xml > temp <br/>Then 'temp' files has 5 headwords: <br/><H1><h><key1>aNgakriya</key1><key2>an3gakriya4</key2></h><body>f. das Einreiben des Körpers mit Salbe usw. , Das4ak. 49 , 1. [Schµ614] €2</body><tail><L>595</L><pc>009-1</pc></tail></H1> <br/><H1><h><key1>atidUra</key1><key2>[atidu1ra]</key2></h><body>f. <i>a1</i> , Katha1s. 16 , 47. [Schµ1098] €1</body><tail><L>1076</L><pc>015-3</pc></tail></H1> <br/><H1><h><key1>atimAtra</key1><key2>[atima1tra]</key2></h><body>f. <i>a1</i> , R. ed. Bomb. 2 , 12 , 112. [Schµ1203] €1</body><tail><L>1179</L><pc>017-1</pc></tail></H1> <br/><H1><h><key1>aDoguqa</key1><key2>adhogud2a</key2></h><body>f. Argyreia speciosa , Caraka 1 , 1. [Schµ1867] €2</body><tail><L>1841</L><pc>025-2</pc></tail></H1> <br/><H1><h><key1>tulana</key1><key2>[tulana]</key2></h><body>f. <i>°a1*…=…tulana</i> 1. b) , Maha1vy. 245. [Schµ14913] €2</body><tail><L>14680</L><pc>202-3</pc></tail></H1> <br/></code>
-<br/>Here's the result of analyzing these with the scans:
-<br/>1. aNgakriya -> aNgakriyA
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5574734/f7034d34-8f95-11e4-9b78-73220c6f21a3.png" alt="image" />
-<br/>2. atidUra -> atidUrA  ?<br/>
-<br/>Not sure of interpretation, but don't think this requires change.<br/>
-<br/>Maybe this entry in Schmidt is saying:  For the entry atidUra of PWG,  Kathās. 16 , 47. 1 provides
-<br/>a usage of the feminine form ending in A.
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5574743/54acec7e-8f96-11e4-9004-fca76ec51689.png" alt="image" />
-<br/>3. atimAtra -> atimAtrA ?
-<br/>Similar to atidUra.  I think no change required.
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5574759/00589dc0-8f97-11e4-91d4-e8813b08da0f.png" alt="image" />
-<br/>4. aDoguqa -> aDoguqA<br/>
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5574752/bf64670e-8f96-11e4-9cf7-ccb4751c9681.png" alt="image" />
-<br/>5. tulana -> tulanA ?
-<br/> Similar to 2,3 above. I think no change required.
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5574768/30d9d694-8f97-11e4-8e2a-8351f99fec7c.png" alt="image" /> </p>
+          <p>This is likely a difficult task.  The problem is, what regex to use to identify the gender in a reliable way.</p>
+<p>I did give it a try with SCH, apply the following regexp to sch.xml, with grep:</p>
+<pre><code>grep 'a&lt;/key1&gt;.*&lt;body&gt; *f[.]' sch.xml &gt; temp
+Then 'temp' files has 5 headwords:
+&lt;H1&gt;&lt;h&gt;&lt;key1&gt;aNgakriya&lt;/key1&gt;&lt;key2&gt;an3gakriya4&lt;/key2&gt;&lt;/h&gt;&lt;body&gt;f. das Einreiben des Körpers mit Salbe usw. , Das4ak. 49 , 1. [Schµ614] €2&lt;/body&gt;&lt;tail&gt;&lt;L&gt;595&lt;/L&gt;&lt;pc&gt;009-1&lt;/pc&gt;&lt;/tail&gt;&lt;/H1&gt;
+&lt;H1&gt;&lt;h&gt;&lt;key1&gt;atidUra&lt;/key1&gt;&lt;key2&gt;[atidu1ra]&lt;/key2&gt;&lt;/h&gt;&lt;body&gt;f. &lt;i&gt;a1&lt;/i&gt; , Katha1s. 16 , 47. [Schµ1098] €1&lt;/body&gt;&lt;tail&gt;&lt;L&gt;1076&lt;/L&gt;&lt;pc&gt;015-3&lt;/pc&gt;&lt;/tail&gt;&lt;/H1&gt;
+&lt;H1&gt;&lt;h&gt;&lt;key1&gt;atimAtra&lt;/key1&gt;&lt;key2&gt;[atima1tra]&lt;/key2&gt;&lt;/h&gt;&lt;body&gt;f. &lt;i&gt;a1&lt;/i&gt; , R. ed. Bomb. 2 , 12 , 112. [Schµ1203] €1&lt;/body&gt;&lt;tail&gt;&lt;L&gt;1179&lt;/L&gt;&lt;pc&gt;017-1&lt;/pc&gt;&lt;/tail&gt;&lt;/H1&gt;
+&lt;H1&gt;&lt;h&gt;&lt;key1&gt;aDoguqa&lt;/key1&gt;&lt;key2&gt;adhogud2a&lt;/key2&gt;&lt;/h&gt;&lt;body&gt;f. Argyreia speciosa , Caraka 1 , 1. [Schµ1867] €2&lt;/body&gt;&lt;tail&gt;&lt;L&gt;1841&lt;/L&gt;&lt;pc&gt;025-2&lt;/pc&gt;&lt;/tail&gt;&lt;/H1&gt;
+&lt;H1&gt;&lt;h&gt;&lt;key1&gt;tulana&lt;/key1&gt;&lt;key2&gt;[tulana]&lt;/key2&gt;&lt;/h&gt;&lt;body&gt;f. &lt;i&gt;°a1*…=…tulana&lt;/i&gt; 1. b) , Maha1vy. 245. [Schµ14913] €2&lt;/body&gt;&lt;tail&gt;&lt;L&gt;14680&lt;/L&gt;&lt;pc&gt;202-3&lt;/pc&gt;&lt;/tail&gt;&lt;/H1&gt;
+</code></pre>
+<p>Here's the result of analyzing these with the scans:</p>
+<ol>
+<li>
+<p>aNgakriya -&gt; aNgakriyA
+<img src="https://cloud.githubusercontent.com/assets/6393033/5574734/f7034d34-8f95-11e4-9b78-73220c6f21a3.png" alt="image" /></p>
+</li>
+<li>
+<p>atidUra -&gt; atidUrA  ?
+Not sure of interpretation, but don't think this requires change.<br />
+Maybe this entry in Schmidt is saying:  For the entry atidUra of PWG,  Kathās. 16 , 47. 1 provides
+a usage of the feminine form ending in A.
+<img src="https://cloud.githubusercontent.com/assets/6393033/5574743/54acec7e-8f96-11e4-9004-fca76ec51689.png" alt="image" /></p>
+</li>
+<li>
+<p>atimAtra -&gt; atimAtrA ?
+Similar to atidUra.  I think no change required.
+<img src="https://cloud.githubusercontent.com/assets/6393033/5574759/00589dc0-8f97-11e4-91d4-e8813b08da0f.png" alt="image" /></p>
+</li>
+<li>
+<p>aDoguqa -&gt; aDoguqA
+<img src="https://cloud.githubusercontent.com/assets/6393033/5574752/bf64670e-8f96-11e4-9cf7-ccb4751c9681.png" alt="image" /></p>
+</li>
+<li>tulana -&gt; tulanA ?
+Similar to 2,3 above. I think no change required.
+<img src="https://cloud.githubusercontent.com/assets/6393033/5574768/30d9d694-8f97-11e4-8e2a-8351f99fec7c.png" alt="image" /></li>
+</ol>
   </div>
   </div>
   </div>
   <br/>
-<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<div id="#issuecomment-68321817" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/funderburkjim" class="author">funderburkjim</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issuecomment-68321817" class="timestamp">
       <time>2014-12-30 01:24:39</time>
     </a>
   </div>
 </div><div class="edit-comment-hide">
       <div class="comment-body markdown-body markdown-format js-comment-body">
-          <p>I made update records for the two changes above, and have put them in a utf8<br/>
-<br/><a href="https://dl.dropboxusercontent.com/u/29859999/manualByline02-additions.zip">dropbox file</a>.
-<br/>These changes have been applied.
-<br/><strong><a href="https://github.com/drdhaval2785" target="_blank">@drdhaval2785</a></strong> - here's a small sandev exercise:
-<br/>1.  Append these two changes to end of manualByLine02.txt, and redo update.sh, redo_hw.sh<br/>
-<br/>     and redo_xml.sh.
-<br/>     That will help keep sandev in sync with Cologne for sch.  Do this with an editor, and be sure
-<br/>      to observe utf8 encoding.
-<br/>2.  Do you know how I made these update records? </p>
+          <p>I made update records for the two changes above, and have put them in a utf8
+<a href="https://dl.dropboxusercontent.com/u/29859999/manualByline02-additions.zip">dropbox file</a>.</p>
+<p>These changes have been applied.</p>
+<p><strong><a href="https://github.com/drdhaval2785" target="_blank">@drdhaval2785</a></strong> - here's a small sandev exercise:</p>
+<ol>
+<li>Append these two changes to end of manualByLine02.txt, and redo update.sh, redo_hw.sh
+and redo_xml.sh.
+That will help keep sandev in sync with Cologne for sch.  Do this with an editor, and be sure
+to observe utf8 encoding.</li>
+<li>Do you know how I made these update records?</li>
+</ol>
   </div>
   </div>
   </div>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html class='' lang='en'>
+<head prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#'>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8'>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta http-equiv='Content-Language' content='en'>
+<title>sanskrit-lexicon/CORRECTIONS/114</title>
+<link href='github-c486157afcc5f58155a921bc675afb08733fbaa8dcf39ac2104d3.css' media='all' rel='stylesheet'>
+<link href='github2-da2e842cc3f0aaf33b727d0ef034243c12ab008fd09b24868b97.css' media='all' rel='stylesheet'>
+<meta http-equiv='x-pjax-version' content='4426702614c8182f33d1780ad1169662'>
+</head>
+<body class='logged_in  env-production windows vis-public'>
+<h1 align='center'><a href='https://github.com/sanskrit-lexicon/CORRECTIONS/issues/114' target='_blank'>Life after faultfinder</h1><hr/><div id="#issue-77134987" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/funderburkjim" class="author">funderburkjim</a>
+    </strong>
+    commented on 
+    <a href="#issue-77134987" class="timestamp">
+      <time>2015-05-16 21:20:18</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I think that the faultfinder analysis of headword spellings (based on MW headword spellings) has now been applied to all the dictionaries. (Please mention if some dictionary has been missed.)  </p>
+<p>Assuming this is so, we are in position to consider what's next?</p>
+<p>There are several ideas for approaching headword spelling error detection which have been suggested in recent months, and which deserve attention.</p>
+<p>However, my inclination is to spend some time developing a 'unified' framework for dictionary displays.    </p>
+<p>The current system treats each dictionary as its own little world, separate from the worlds of all the other dictionaries.   While this  separate worlds organization has served us well, it is now providing obstacles to further development.  </p>
+<p>For one example, a recent <a href="http://www.sanskrit-lexicon.uni-koeln.de/scans/MWScan/2014/web/webtcdev/indexcaller.php">development version</a> of the MW basic display permits citation requests to be made in Devanagari or IAST.  This seems to work well, and should be applied to ALL the dictionaries.  But with 36 separate dictionary display programs to modify, this change would be quite awkward.  This same set of options  (and even perhaps some other options, such as Hyderabad's WX transliteration) should be available for all the displays  -- in particular, I think the quite useful 'List display' should scrap the 'Preferences' method (with its complicated little keyboards) in favor of the same 'input' selection as the other dictionaries use.</p>
+<p>Other enhancements - such have the input citation generate server suggestions - are also applicable to most dictionaries.  We can also take into account some of the spelling differences (e.g. rxx variants) among
+dictionaries that are so confusing (if I'm looking up 'agni' in dictionary 'X' do I spell it 'agni' or 'agniH'; do I spell gaNgA or gaMgA, karman or karmman, paricCeda or pariCeda, etc.)</p>
+<p>We should be better able to deal with  'alternate headwords' (like the the <a href="https://github.com/sanskrit-lexicon/VCP/issues/5">VCP doubles</a>).</p>
+<p>With a properly organized framework, multidictionary displays could be be developed much more readily; only the experimental and quite limited <a href="http://www.sanskrit-lexicon.uni-koeln.de/scans/awork/hwnorm/hwnorm1.php">hwnorm1</a>   </p>
+<p>Also, by making a careful api, this will facilitate use be displays such as that Peter Scharf and Ralph Bunker have developed at <a href="http://sanskritlibrary.org/integratedDictionaries.html">sanskritlibrary</a>.</p>
+<p>Also, it might be useful and possible to 'internationalize' the displays (as has thus far only been partially done
+for Stchoupak dictionary.</p>
+<p>So, I'm going to take a break from dictionary spelling corrections to think about and hopefully implement some of the ideas above.  It is probably appropriate to do this work under a new repository, though I don't have a name for it at the moment.</p>
+<p>Although I anticipate changing my focus as described,  I'll still be glad to help prepare materials with others who want to focus on some of the other headword spelling correction ideas.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-102701223" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/gasyoun" class="author">gasyoun</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-102701223" class="timestamp">
+      <time>2015-05-16 21:48:20</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>To make sure all are covered I'll need to compile a list of 36 links myself. I'm thankful that you not only automated a lot, but actually did a big part of the proofreading itself. And not only that - documented. It takes twice the time to document it well. If the 'unified' framework will take less than a month, it sounds as a good idea (even hwnorm1 works really well). Other enhancements sound good, but seem to be rather complicated. And I do think that the web display is good enough for now, that the question is about the cleanness of the digital dictionaries. That 'alternate headwords' should be higher in the list. Let's forget API for now, it's a swamp :rabbit2: To 'internationalize' the displays means tuning the framework again, not a lot of lines, but I guess the whole strategy would have to be changed, all the language files should be held separately in that case. Without you the steam in the headword spelling factory will go down, but I hope that the next four months we still will get some more help from India.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-102714544" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/drdhaval2785" class="author">drdhaval2785</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-102714544" class="timestamp">
+      <time>2015-05-17 00:30:09</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I second the suggestion by Jim that we should take a break from headword
+corrrections and concentrate on displays and API. In case someone wants to
+do proof reading, ovsO issue has the raw material available. That can be
+seen and corrected. Installing from the corrected file would not take long.
+This can live in github issues till Jim finds time to install corrections.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-102749548" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/gasyoun" class="author">gasyoun</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-102749548" class="timestamp">
+      <time>2015-05-17 05:27:18</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I guess the ovsO might be updated, now that the sources have been cleaned, what do you think?</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-102749891" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/drdhaval2785" class="author">drdhaval2785</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-102749891" class="timestamp">
+      <time>2015-05-17 05:41:26</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I will do so and update the output..</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-102844567" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/gasyoun" class="author">gasyoun</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-102844567" class="timestamp">
+      <time>2015-05-17 20:03:06</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Thanks Dhaval.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+</body></html>

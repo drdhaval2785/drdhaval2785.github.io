@@ -5,115 +5,200 @@
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge'>
 <meta http-equiv='Content-Language' content='en'>
-<title>'sanskrit-lexicon/CORRECTIONS/90'</title>
+<title>sanskrit-lexicon/CORRECTIONS/90</title>
 <link href='github-c486157afcc5f58155a921bc675afb08733fbaa8dcf39ac2104d3.css' media='all' rel='stylesheet'>
 <link href='github2-da2e842cc3f0aaf33b727d0ef034243c12ab008fd09b24868b97.css' media='all' rel='stylesheet'>
 <meta http-equiv='x-pjax-version' content='4426702614c8182f33d1780ad1169662'>
 </head>
 <body class='logged_in  env-production windows vis-public'>
-<h1 align='center'><a href='https://github.com/sanskrit-lexicon/CORRECTIONS/issues/90' target='_blank'>Review of Corrections/Changes to dictionaries </h1><hr/><div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<h1 align='center'><a href='https://github.com/sanskrit-lexicon/CORRECTIONS/issues/90' target='_blank'>Review of Corrections/Changes to dictionaries </h1><hr/><div id="#issue-62224915" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/funderburkjim" class="author">funderburkjim</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issue-62224915" class="timestamp">
       <time>2015-03-16 22:29:09</time>
     </a>
   </div>
 </div><div class="edit-comment-hide">
       <div class="comment-body markdown-body markdown-format js-comment-body">
           <h1>Review of corrections to sanskrit-lexicon</h1>
-<p>This note is prepared in response to <strong><a href="https://github.com/drdhaval2785" target="_blank">@drdhaval2785</a></strong>'s request for a review of where we stand 
-<br/>in the sanskrit lexicon corrections.  It aims to cover what has been done on corrections to the Cologne Sanskrit Lexicon dictionaries over the last year or so. 
-<br/>## corrections based on faultfinder 
-<br/>Based on a review of the</p>
+<p>This note is prepared in response to <strong><a href="https://github.com/drdhaval2785" target="_blank">@drdhaval2785</a></strong>'s request for a review of where we stand
+in the sanskrit lexicon corrections.  It aims to cover what has been done on corrections to the Cologne Sanskrit Lexicon dictionaries over the last year or so.</p>
+<h2>corrections based on faultfinder</h2>
+<p>Based on a review of the <a href="https://github.com/sanskrit-lexicon/CORRECTIONS/blob/master/history.txt">history.txt</a>, the use of Dhaval's <a href="https://github.com/drdhaval2785/SanskritSpellCheck/">faultfinder</a> approach bean in October 2014.  It was initially used to find spelling errors in headwords for MW. The headword spellings in the Cologne digitization of Monier-Williams Sanskrit-English dictionary seem to be largely cleaned.  Thus, the use of faultfinder since October 2014 has taken the MW headword spellings as a reference to which headwords from other Sanskrit dictionaries may be compared. Here is the
+list of dictionaries for which faultfinder-generated potential headword spelling errors have been examined: </p>
+<pre><code> PW,  PWG,  VCP, SKD, CAE, SHS, SCH,  WIL, YAT, MD,, MW72, GST, BHS, GRA, BUR, 
+AP90, AP (not on Github, Sampada)
+also, CCS (done, not yet installed)</code></pre>
+<p>This list includes all the Sanskrit-English Dictionaries (11 + 1=AP), all the Sanskrit-German Dictionaries (4),  the Sanskrit-Sanskrit Dictionaries (2),  and one of the two Sanskrit-Friench Dictionaries.</p>
+<h2>faultfinder TODO (1)</h2>
+<p>A reasonable next step to do would be to complete the faultfinder analysis of corrections for the remaining dictionaries with Sanskrit headwords.
+The list of dictionaries with Sanskrit headwords where the faultfinder suggestions have NOT yet been
+examined is:</p>
+<pre><code>Specialized Dictionaries:
+INM, VEI, PUI, ACC, KRM, IEG, SNP, PE, PGN, MCI
+Sanskrit-Latin: BOP
+Sanskrit-French: STC
+Sanskrit-English: PD</code></pre>
+<p>It is possible that some of these (KRM) may be inappropriate for faultfinder analysis.  The longest list
+comes from PD.  </p>
+<h2>faultfinder TODO (2)</h2>
+<p>It is sometimes the case that faultfinder suggestions are 'false-positives', in the sense that examination of the case results in the conclusion that the existing digitization spelling of the headword is correct.  For some of the examined dictionaries, a list of these false positives has been preserved within a comment for an issue in the <a href="https://github.com/sanskrit-lexicon/CORRECTIONS/issues">issues list</a>.  It might be worthwhile collecting these lists into a file, so that further work will not re-examine this list.  The file could have a simple structure as a file of lines, with each line containing a headword and dictionary code.</p>
+<h2>Headword correction candidates via alphabetical ordering</h2>
+<p>The general principle of the faultfinder approach to finding possible misspelled words is that there are patterns to the spelling of Sanskrit headwords.  Using MW as the <code>reference</code>, a list of common correct spelling patterns can be found.  Then, if the spelling of a word in a <code>test</code> dictionary has a spelling pattern found in none of the headwords of the <code>reference</code>, it is reasonable to think the word might be misspelled. </p>
+<p>Experience has shown this approach to be not only productive but fairly efficient in generating lists of
+possibly misspelled words.</p>
+<p>There are some kinds of spelling errors that are missed by this approach, however.  So other approaches have been examined.</p>
+<p>One of these approaches is based on the observation that in most dictionaries the headwords appear in alphabetical order.  Thus, a headword which is OUT of alphabetcal order MAY be out of order because of a spelling error.   Examining the spelling of words out of alphabetical order has been undertaken for just a few dictionaries:</p>
+<pre><code> SKD, WIL, VCP,GRA</code></pre>
+<p>This approach was also begun for AP, but so many false positives were found that it was not completed.</p>
+<p>It might be worthwhile trying this approach on other dictionaries.</p>
+<h2>Use of <em>fuzzy</em> comparison to generate suggestions</h2>
+<p>The examination of a list of possibly misspelled headwords from a given dictionary is a conceptually simple task but it is quite labor-intensive in practice.  There is value in specialzed computer programs which can provide assistance to the person doing the examination.  One such program which I've found useful for some dictionaries makes use of the interesting notion of edit distance between two words, also called 'Levenshtein' distance. I find the computer implementation of the algorithm to be hard to understand, but the idea is easy.  For instance the distance between 'dog' and 'dot' would be 1, since replacement of 1 character (the 'g' by a 't') changes the spelling of 'dog' to 'dot'.</p>
+<p>Here's how I've this edit distance notion to generate correction suggestions for a possibly misspelled Sanskrit headword, X from dictionary D.  The <a href="https://github.com/sanskrit-lexicon/CORRECTIONS/blob/master/sanhw1/sanhw1.txt">sanhw1.txt</a> file gives a list of Sanskrit headwords, as currently spelled in the Cologne digitizations of all the dictionaries.  We suspect that  is misspelled, and that its corrected spelling might appear as a headword in some other dictionary.  So, look at all other words Y in other dictionaries (than D) from sanhw1, and keep only those Y whose spelling is almost the same as X; the result will be a list L of spelling <em>suggestions</em> for X.</p>
+<p>In practice, there are several important details that must be added to this approach.  Since there are roughly 300,000 headwords in sanhw1, it is computationally impractical to examine ALL of these headwords.  So one or more techniques must be used to prune the initial list.  The first approach I've taken is to assume that the first letter of X is correct, and thus to compute the edit distance of X from Y only for those Y which have the same first letter.</p>
+<pre><code>All the headwords are assumed to be spelled using the SLP1 transliteration.  An equally good choice would be the WX transliteration. However, transliterations like HK, ITRANS, IAST would be less good, since in these there are often multiple letters required to spell single letter of the Sanskrit alphabet.  Unicode Devanagari itself might also be a less good choice, due, for instance, to the requirement of having virAma character in conjunction consonants -  however, it might be interesting to investigate edit distance between Devanagari spellings.</code></pre>
+<p>The second pruning of L is accomplished by considering only Y whose edit distance from X is no larger than some prespecified maximum M, such as 1 or 2 or 3.  Choosing too small a value of M might yield too few (or no) suggestions in L, while too large a value of M will generate too many suggestions for L  I think I've usually used 2.</p>
+<p>A third enhancement is based on alphabetical ordering.  The headword X appears in the given dictionary D between two words X1 (the headword before X) and X2 (the headword after X).  Thus, those Y in the suggestion list L are preferred which have the further property that X1&lt;=Y&lt;=X2.  This preference is used to partition the list L into two parts (one part has the alphabetical ordering property and the other does not have this property).</p>
+<p>This describes the idea of how I've used the generation of fuzzy suggestions.  For many dictionaries, these suggestions have been found to be quite useful as an adjunct to correcting spelling errors generated by faultfinder, and have thus speeded the examination process.   The program which generates the list is a python program which has thus far not been published, I think.  If anyone wants to use it, I can make it available.</p>
+<h2>Compare headwords in 'similar' dictionaries</h2>
+<p>If we had two independently generated digitizations, D1 and D2, of the same dictionary, then a good way to search for spelling errors would be to look for differences between D1 and D2.  Resolution of these differences would likely result in an improved, unified digitization D for the dictionary.</p>
+<p>This technique has been used by Malten in recent digitizations (those of 2012-2014) in the initial digitization phase, where he has reported the use of double entry. </p>
+<p>The first use I made of this comparison approach was with two digitizations, the Tirupati edition and the Cologne edition, of the Vacaspatyam dictionary (The work is <a href="https://github.com/sanskrit-lexicon/VCP">here</a>, but it is rather hard to understand.)  This comparison is complicated by the fact that the
+two digitizations were done with different principles. However, one (of several) end results is that a comparison of headwords was possible - I don't think the specific headword comparison has been published, although it has been used informally by Sampada in examination of headword corrections in the Cologne Vacaspatyam.  It might be useful to systematically examine this headword comparison.
+Also, there is a 'line-by-line' comparison of the two digitizations, along with edit-distance, that could be
+used for non-headword spelling correction.  This is a big task, but would likely permit a unified digitization (incorporating not only better spelling , but also the existing markup of grammatical forms of the Tirupati edition.)</p>
+<p>Recently, I adapted this comparison technique to apply to the headword lists from Wilson and Yates (see the <a href="https://github.com/sanskrit-lexicon/Wil-YAT">Wil-YAT repository</a> for all the programs and data).  This comparison yielded many corrections that had fallen 'under the radar' of faultfinder.  The comparison was reasonable, since Yates explicitly based his dictionary on that of Wilson.</p>
+<p>A similar comparison between Wilson and the Shabda-Sagara dictionary would also be fruitful, I think, in finding corrections to SHS, since SHS is also overtly based on Wilson.</p>
+<p>Similar comparisons between headword lists among the Böhtlingk dictionaries (PWG, PW) and
+also Cappeller dictionaries (CAE, CCS) might prove fruitful, whenever anyone wants to try them.</p>
+<p>Another pair would be AP90 and AP, since AP is developed as a revision of AP90.</p>
+<h2>Correction of Missing data</h2>
+<p>Most of Sampada's Sanskrit Dictionary work in 2014 was aimed at filling in the 'missing' data for the
+various dictionaries.  These missing data cases were ones where Thomas's group inserted question marks (e.g. in form {?}, or some similar identifiable form) at places where  the print edition was unreadable or used  difficult to code symbols.  This work has been done for these dictionaries; that these are for the most part NOT headword corrections.</p>
+<pre><code> VCP (about 4300 cases), AE (500), AP90 (700), AP (40), BEN (230), BOR (220), MW72 (240),
+MWE (170), SKD (110), PWG (350), PW (40), 
+Total of these cases = 6900.
+During this work, it was noted that no missing data was marked in:
+BHS, CAE, CCS, GRA, MW,SCH, SNP</code></pre>
+<p>According to one study, here are the other dictionaries with missing data cases; these have not yet
+been examined:</p>
+<pre><code>ACC (22), BOP (12), BUR (16), GST (21), IEG (2), INM (102), 
+KRM (23), MCI (9), MD (1), PE (19), PGN (4), PUI (5), 
+SHS (10), STC (1), VEI (167), WIL (1), YAT (1)</code></pre>
+<h2>Miscellaneous corrections</h2>
+<ul>
+<li>Arabic text in MW (10?), MW72 (35), PWG (117).  Arabic text marked in other dictionaries (e.g. PW)
+will be addressed in future (<a href="https://github.com/sanskrit-lexicon/ArabicInSanskrit">see</a>).</li>
+<li>Russian text in PWG (50).  There is Russian text marked in other dictionaries which Marcis can
+add, when we identify it.</li>
+<li>Corrections from prior work of 2011 incorporated into current digitizations (PWG, WIL)</li>
+<li>There is a lot of Greek text in various dictionaries.  One of Peter Scharf's former students can likely
+help with this, but I have been slow in developing a way for him to participate.  </li>
+<li>Corrections from various users of the dictionaries, via the Correction Forms, which have been
+added to all the dictionaries due to an early suggestion from <strong><a href="https://github.com/gasyoun" target="_blank">@gasyoun</a></strong> .
+<strong>THANKS TO ALL!</strong></li>
+</ul>
+<h2>Final note of this comment</h2>
+<p>Here are some totals of corrections made in the last year or so:</p>
+<ul>
+<li>6900 Correction of lines with missing data </li>
+<li>3600 Corrections passed through the <a href="https://github.com/sanskrit-lexicon/CORRECTIONS/blob/master/correctionform.txt">correction form</a></li>
+<li>1200 corrections to Wilson/Yates by comparison method of above.</li>
+<li>500-1000 (est.) other corrections (not mentioned in above categories) and additions/changes</li>
+</ul>
+<p>So, 12-13k corrections and changes</p>
   </div>
   </div>
   </div>
   <br/>
-<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<div id="#issuecomment-82856177" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/gasyoun" class="author">gasyoun</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issuecomment-82856177" class="timestamp">
       <time>2015-03-18 09:48:50</time>
     </a>
   </div>
 </div><div class="edit-comment-hide">
       <div class="comment-body markdown-body markdown-format js-comment-body">
-          <p>Amazing, as usual. Never seen such a detailed documentation. My 5 cents:
-<br/>1) List of 20 sample patterns from <code>reference</code> would not hurt
-<br/>2) other approaches approaches -> other approaches
-<br/>3) Here's how I've this edit distance notion - US English? :)
-<br/>4) Editing distance in Devanagari has showed me interesting insights that IAST has not, so yes I can approve. Not sure if it can be better than SLP1.
-<br/>5) python program which has thus far not been published - link, link!
-<br/>6) PWG, PW vs CAE, CCS &amp; AP90 vs AP - can you please provide the draft comparison files or it's a task for weeks?
-<br/>7) Where can I see the \other dictionaries with missing data cases\, I'll be able to help
-<br/>8) \prior work of 2011 incorporated into current digitizations PWG\ is one of the top things I'm waiting for. Before it happens the Reverse dictionary can not be printed.
-<br/>9) \lot of Greek text\ - hardly understand why it should be more difficult or harder than the way Arabic text was entered
-<br/>12000 corrections - we can be proud of you <strong><a href="https://github.com/funderburkjim" target="_blank">@funderburkjim</a></strong> . Without your scripts people could add 500 corrections at best.</p>
+          <p>Amazing, as usual. Never seen such a detailed documentation. My 5 cents:</p>
+<p>1) List of 20 sample patterns from <code>reference</code> would not hurt</p>
+<p>2) other approaches approaches -&gt; other approaches</p>
+<p>3) Here's how I've this edit distance notion - US English? :)</p>
+<p>4) Editing distance in Devanagari has showed me interesting insights that IAST has not, so yes I can approve. Not sure if it can be better than SLP1.</p>
+<p>5) python program which has thus far not been published - link, link!</p>
+<p>6) PWG, PW vs CAE, CCS &amp; AP90 vs AP - can you please provide the draft comparison files or it's a task for weeks?</p>
+<p>7) Where can I see the &quot;other dictionaries with missing data cases&quot;, I'll be able to help</p>
+<p>8) &quot;prior work of 2011 incorporated into current digitizations PWG&quot; is one of the top things I'm waiting for. Before it happens the Reverse dictionary can not be printed.</p>
+<p>9) &quot;lot of Greek text&quot; - hardly understand why it should be more difficult or harder than the way Arabic text was entered</p>
+<p>12000 corrections - we can be proud of you <strong><a href="https://github.com/funderburkjim" target="_blank">@funderburkjim</a></strong> . Without your scripts people could add 500 corrections at best.</p>
   </div>
   </div>
   </div>
   <br/>
-<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<div id="#issuecomment-83022889" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/drdhaval2785" class="author">drdhaval2785</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issuecomment-83022889" class="timestamp">
       <time>2015-03-18 15:34:40</time>
     </a>
   </div>
 </div><div class="edit-comment-hide">
       <div class="comment-body markdown-body markdown-format js-comment-body">
-          <p>I cant say how good i feel for asking the question. I second the\nsuggestions made by Marcis.\n</p>
+          <p>I cant say how good i feel for asking the question. I second the
+suggestions made by Marcis.</p>
   </div>
   </div>
   </div>
   <br/>
-<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<div id="#issuecomment-92445061" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/drdhaval2785" class="author">drdhaval2785</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issuecomment-92445061" class="timestamp">
       <time>2015-04-13 17:54:59</time>
     </a>
   </div>
 </div><div class="edit-comment-hide">
       <div class="comment-body markdown-body markdown-format js-comment-body">
-          <p><strong><a href="https://github.com/funderburkjim" target="_blank">@funderburkjim</a></strong><br/>
-<br/><code> <br/> For many dictionaries, these suggestions have been found to be quite useful as an adjunct to correcting spelling errors generated by faultfinder, and have thus speeded the examination process. The program which generates the list is a python program which has thus far not been published, I think. If anyone wants to use it, I can make it available. <br/></code>
-<br/>Nothing can be better than this.
-<br/>Please publish the program (obviously with your important comments).
-<br/>It would be useful for the future automated generation of error lists with suggested output.
-<br/>For any such list there are two components.
-<br/>1. Finding the suspect wrong word. (these may be based on different approaches e.g. faultfinder, alphabetic misordering etc)
-<br/>2. Suggesting correct word for the suspected word. (based on the modification of fuzzy logic - the program requested to be published.)
-<br/>Therefore, it is extremely important to publish this step 2.
-<br/><strong><a href="https://github.com/gasyoun" target="_blank">@gasyoun</a></strong>  What say? </p>
+          <p><strong><a href="https://github.com/funderburkjim" target="_blank">@funderburkjim</a></strong> </p>
+<pre><code> For many dictionaries, these suggestions have been found to be quite useful as an adjunct to correcting spelling errors generated by faultfinder, and have thus speeded the examination process. The program which generates the list is a python program which has thus far not been published, I think. If anyone wants to use it, I can make it available.</code></pre>
+<p>Nothing can be better than this.
+Please publish the program (obviously with your important comments).
+It would be useful for the future automated generation of error lists with suggested output.</p>
+<p>For any such list there are two components.</p>
+<ol>
+<li>Finding the suspect wrong word. (these may be based on different approaches e.g. faultfinder, alphabetic misordering etc)</li>
+<li>Suggesting correct word for the suspected word. (based on the modification of fuzzy logic - the program requested to be published.)</li>
+</ol>
+<p>Therefore, it is extremely important to publish this step 2.</p>
+<p><strong><a href="https://github.com/gasyoun" target="_blank">@gasyoun</a></strong>  What say?</p>
   </div>
   </div>
   </div>
   <br/>
-<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<div id="#issuecomment-92445372" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/gasyoun" class="author">gasyoun</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issuecomment-92445372" class="timestamp">
       <time>2015-04-13 17:56:42</time>
     </a>
   </div>
@@ -124,35 +209,35 @@
   </div>
   </div>
   <br/>
-<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<div id="#issuecomment-92452553" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/drdhaval2785" class="author">drdhaval2785</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issuecomment-92452553" class="timestamp">
       <time>2015-04-13 18:27:54</time>
     </a>
   </div>
 </div><div class="edit-comment-hide">
       <div class="comment-body markdown-body markdown-format js-comment-body">
-          <p><strong><a href="https://github.com/funderburkjim" target="_blank">@funderburkjim</a></strong><br/>
-<br/>Would you please create the error with suggestion words file for todo faultfinder (1) dictionaries?
-<br/>Looking at the corrections you post of Github, it seems that the link to the word and the page number link are also generated computationally automatically.
-<br/>If such code / list is also provided for these todo dictionaries, it would speed up things. </p>
+          <p><strong><a href="https://github.com/funderburkjim" target="_blank">@funderburkjim</a></strong>
+Would you please create the error with suggestion words file for todo faultfinder (1) dictionaries?
+Looking at the corrections you post of Github, it seems that the link to the word and the page number link are also generated computationally automatically.</p>
+<p>If such code / list is also provided for these todo dictionaries, it would speed up things.</p>
   </div>
   </div>
   </div>
   <br/>
-<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<div id="#issuecomment-92452739" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/gasyoun" class="author">gasyoun</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issuecomment-92452739" class="timestamp">
       <time>2015-04-13 18:28:46</time>
     </a>
   </div>
@@ -163,34 +248,34 @@
   </div>
   </div>
   <br/>
-<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<div id="#issuecomment-92454208" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/drdhaval2785" class="author">drdhaval2785</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issuecomment-92454208" class="timestamp">
       <time>2015-04-13 18:33:11</time>
     </a>
   </div>
 </div><div class="edit-comment-hide">
       <div class="comment-body markdown-body markdown-format js-comment-body">
           <p>Step 1. Once this list is over, we can freeze the list of 'false-positives' i.e. todo(2).
-<br/>Step 2. The corrections with respect to other relatively clean dictionaries may also be possible (as the current approach is only with respect to MW as base), because we can always change the base dictionary and check whether there are more candidates for this method or this method has exhausted its potential.
-<br/>Step 3. When we are confident that this method has lost its efficacy, we can explore other methods mentioned in <a href="https://github.com/sanskrit-lexicon/CORRECTIONS/issues/46">https://github.com/sanskrit-lexicon/CORRECTIONS/issues/46</a> </p>
+Step 2. The corrections with respect to other relatively clean dictionaries may also be possible (as the current approach is only with respect to MW as base), because we can always change the base dictionary and check whether there are more candidates for this method or this method has exhausted its potential.
+Step 3. When we are confident that this method has lost its efficacy, we can explore other methods mentioned in <a href="https://github.com/sanskrit-lexicon/CORRECTIONS/issues/46">https://github.com/sanskrit-lexicon/CORRECTIONS/issues/46</a></p>
   </div>
   </div>
   </div>
   <br/>
-<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<div id="#issuecomment-92455027" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/gasyoun" class="author">gasyoun</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issuecomment-92455027" class="timestamp">
       <time>2015-04-13 18:36:37</time>
     </a>
   </div>
@@ -201,14 +286,14 @@
   </div>
   </div>
   <br/>
-<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<div id="#issuecomment-92456175" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/drdhaval2785" class="author">drdhaval2785</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issuecomment-92456175" class="timestamp">
       <time>2015-04-13 18:40:49</time>
     </a>
   </div>
@@ -219,52 +304,52 @@
   </div>
   </div>
   <br/>
-<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<div id="#issuecomment-92457423" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/drdhaval2785" class="author">drdhaval2785</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issuecomment-92457423" class="timestamp">
       <time>2015-04-13 18:46:35</time>
     </a>
   </div>
 </div><div class="edit-comment-hide">
       <div class="comment-body markdown-body markdown-format js-comment-body">
-          <p>We are really near completing step 1.<br/>
-<br/>Step 2 is near at hand. </p>
+          <p>We are really near completing step 1.
+Step 2 is near at hand.</p>
   </div>
   </div>
   </div>
   <br/>
-<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<div id="#issuecomment-92574754" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/funderburkjim" class="author">funderburkjim</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issuecomment-92574754" class="timestamp">
       <time>2015-04-14 03:06:47</time>
     </a>
   </div>
 </div><div class="edit-comment-hide">
       <div class="comment-body markdown-body markdown-format js-comment-body">
-          <p>Have done first of remaining dictionaries to be reviewed by faultfinder, per your request.<br/>
-<br/>Started with a 'small' one, INM, at <a href="https://github.com/sanskrit-lexicon/CORRECTIONS/issues/95">issue 95</a> </p>
+          <p>Have done first of remaining dictionaries to be reviewed by faultfinder, per your request.<br />
+Started with a 'small' one, INM, at <a href="https://github.com/sanskrit-lexicon/CORRECTIONS/issues/95">issue 95</a></p>
   </div>
   </div>
   </div>
   <br/>
-<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<div id="#issuecomment-92619976" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/gasyoun" class="author">gasyoun</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issuecomment-92619976" class="timestamp">
       <time>2015-04-14 05:58:17</time>
     </a>
   </div>

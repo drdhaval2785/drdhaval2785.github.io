@@ -5,95 +5,96 @@
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge'>
 <meta http-equiv='Content-Language' content='en'>
-<title>'sanskrit-lexicon/CORRECTIONS/42'</title>
+<title>sanskrit-lexicon/CORRECTIONS/42</title>
 <link href='github-c486157afcc5f58155a921bc675afb08733fbaa8dcf39ac2104d3.css' media='all' rel='stylesheet'>
 <link href='github2-da2e842cc3f0aaf33b727d0ef034243c12ab008fd09b24868b97.css' media='all' rel='stylesheet'>
 <meta http-equiv='x-pjax-version' content='4426702614c8182f33d1780ad1169662'>
 </head>
 <body class='logged_in  env-production windows vis-public'>
-<h1 align='center'><a href='https://github.com/sanskrit-lexicon/CORRECTIONS/issues/42' target='_blank'>faultfinder3a</h1><hr/><div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<h1 align='center'><a href='https://github.com/sanskrit-lexicon/CORRECTIONS/issues/42' target='_blank'>faultfinder3a</h1><hr/><div id="#issue-50444935" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/funderburkjim" class="author">funderburkjim</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issue-50444935" class="timestamp">
       <time>2014-11-30 02:53:04</time>
     </a>
   </div>
 </div><div class="edit-comment-hide">
       <div class="comment-body markdown-body markdown-format js-comment-body">
-          <p>This is a continuation of the discussion beginning 3 days ago in <a href="https://github.com/sanskrit-lexicon/CORRECTIONS/issues/39">https://github.com/sanskrit-lexicon/CORRECTIONS/issues/39</a>.
-<br/>There are two dropbox links:
-<br/>a. faultfinder3a at  <a href="https://dl.dropboxusercontent.com/u/29859999/AllvsMW.zip">https://dl.dropboxusercontent.com/u/29859999/AllvsMW.zip</a>
-<br/>b. sanhw1 at <a href="https://dl.dropboxusercontent.com/u/29859999/sanhw1.zip">https://dl.dropboxusercontent.com/u/29859999/sanhw1.zip</a>
-<br/><H2> refactoring faultfinder3 </H2>
-<br/>faultfinder3a.php now is a command-line program which creates a <b>text</b> file.  Then,
-<br/>faultfinder3a-html.php creates an html file based on the text file.
-<br/>Here's the invocation used:
-<br/><code> <br/>php faultfinder3a.php MW sanhw1.txt AllvsMW.txt <br/>php faultfinder3a-html.php AllvsMW.txt AllvsMW-new.html <br/></code>
-<br/>The text output AllvsMW.txt contains lines like:
-<br/><code> <br/>SIrzaCeda:VCV=aCe:WIL,YAT <br/></code>
-<br/>This shows the suspect headword and the dictionaries it is in. Also, the middle field<br/>
-<br/>shows  the pattern-abbreviation-type (VCV) = actual-pattern-in-word (aCe).
-<br/>It should now be easy to <b>filter</b> this text file in various ways to generate more manageable
-<br/>chunks; For example, I think most of the rxx words are not errors, but occur simply due to a spelling
-<br/>convention that MW does not follow (MW being the reference dictionary here);  nearly half of the 9399 lines of AllvsMW.txt are of the rxx type, so this seems a useful reduction of the problem. This is
-<br/>just one example of how the huge problem can be reduced by this refactoring.
-<br/>Another filter would be to look for words which occur ONLY in one dictionary; e.g, there are 375
-<br/>such for Wilson, 230 such for MW72, 456 for CCS, only 23 remaining in CAE, etc.<br/>
-<br/><i>We can use this issue to develop a list of useful filtered lists, and then begin working with the .html files for the various lists.</i>
-<br/>Smaller refactorings:
-<br/>a. The only data source is sanhw1.txt.  The list of reference headwords (for MW in the example) are<br/>
-<br/>obtained from sanhw1.txt, rather than from a separate MWslp.txt file.
-<br/>b. The pattern and hrefyear data have been moved to a utility file faultfinder3a_utils.php, which
-<br/>   is included in the two main php programs.  The pattern data has also been put into a structure
-<br/>   which should be easier to modify, and is easier to understand.
-<br/>c. In faultfinder3a-html.php,  the links in the output were generated via Javascript as buttons.  This
-<br/> also makes the html file size smaller, and helps localize the programmatic construction of the links.
-<br/><H2> change sort order in sanhw1 </H2>
-<br/>In response to a request elsewhere,  I have changed the sort order appearing in sanhw1.txt.
-<br/>Now,  M+Consonant sorts as if it were N+Consonant, where N is the nasal for the varga of the
-<br/>Consonant; (this does not apply to consonants yrlvSzsh; M before these consonants is unchanged
-<br/>for sorting).
-<br/>Also, by redoing sanhw1, the list is several hundred less than a week ago, due to the many CAE and other headword corrections. </p>
+          <p>This is a continuation of the discussion beginning 3 days ago in <a href="https://github.com/sanskrit-lexicon/CORRECTIONS/issues/39">https://github.com/sanskrit-lexicon/CORRECTIONS/issues/39</a>.</p>
+<p>There are two dropbox links:
+a. faultfinder3a at  <a href="https://dl.dropboxusercontent.com/u/29859999/AllvsMW.zip">https://dl.dropboxusercontent.com/u/29859999/AllvsMW.zip</a></p>
+<p>b. sanhw1 at <a href="https://dl.dropboxusercontent.com/u/29859999/sanhw1.zip">https://dl.dropboxusercontent.com/u/29859999/sanhw1.zip</a></p>
+<H2> refactoring faultfinder3 </H2>
+<p>faultfinder3a.php now is a command-line program which creates a <b>text</b> file.  Then,
+faultfinder3a-html.php creates an html file based on the text file.
+Here's the invocation used:</p>
+<pre><code>php faultfinder3a.php MW sanhw1.txt AllvsMW.txt
+php faultfinder3a-html.php AllvsMW.txt AllvsMW-new.html</code></pre>
+<p>The text output AllvsMW.txt contains lines like:</p>
+<pre><code>SIrzaCeda:VCV=aCe:WIL,YAT</code></pre>
+<p>This shows the suspect headword and the dictionaries it is in. Also, the middle field
+shows  the pattern-abbreviation-type (VCV) = actual-pattern-in-word (aCe).
+It should now be easy to <b>filter</b> this text file in various ways to generate more manageable
+chunks; For example, I think most of the rxx words are not errors, but occur simply due to a spelling
+convention that MW does not follow (MW being the reference dictionary here);  nearly half of the 9399 lines of AllvsMW.txt are of the rxx type, so this seems a useful reduction of the problem. This is
+just one example of how the huge problem can be reduced by this refactoring.</p>
+<p>Another filter would be to look for words which occur ONLY in one dictionary; e.g, there are 375
+such for Wilson, 230 such for MW72, 456 for CCS, only 23 remaining in CAE, etc.  </p>
+<p><i>We can use this issue to develop a list of useful filtered lists, and then begin working with the .html files for the various lists.</i></p>
+<p>Smaller refactorings:
+a. The only data source is sanhw1.txt.  The list of reference headwords (for MW in the example) are
+obtained from sanhw1.txt, rather than from a separate MWslp.txt file.
+b. The pattern and hrefyear data have been moved to a utility file faultfinder3a_utils.php, which
+is included in the two main php programs.  The pattern data has also been put into a structure
+which should be easier to modify, and is easier to understand.
+c. In faultfinder3a-html.php,  the links in the output were generated via Javascript as buttons.  This
+also makes the html file size smaller, and helps localize the programmatic construction of the links.</p>
+<H2> change sort order in sanhw1 </H2>
+<p>In response to a request elsewhere,  I have changed the sort order appearing in sanhw1.txt.
+Now,  M+Consonant sorts as if it were N+Consonant, where N is the nasal for the varga of the
+Consonant; (this does not apply to consonants yrlvSzsh; M before these consonants is unchanged
+for sorting).</p>
+<p>Also, by redoing sanhw1, the list is several hundred less than a week ago, due to the many CAE and other headword corrections.</p>
   </div>
   </div>
   </div>
   <br/>
-<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<div id="#issuecomment-64975406" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/drdhaval2785" class="author">drdhaval2785</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issuecomment-64975406" class="timestamp">
       <time>2014-11-30 04:32:48</time>
     </a>
   </div>
 </div><div class="edit-comment-hide">
       <div class="comment-body markdown-body markdown-format js-comment-body">
-          <p><code>I think most of the rxx words are not errors, but occur simply due to a spelling <br/>convention that MW does not follow (MW being the reference dictionary here); nearly half of the 9399 lines of AllvsMW.txt are of the rxx type, so this seems a useful reduction of the problem. This is <br/>just one example of how the huge problem can be reduced by this refactoring.</code>
-<br/>Absolutely true.
-<br/>and a worthwhile refactoring too.
-<br/><code>Another filter would be to look for words which occur ONLY in one dictionary; e.g, there are 375 <br/>such for Wilson, 230 such for MW72, 456 for CCS, only 23 remaining in CAE, etc</code>
-<br/>Yes. I informally use this to screen out no-error headwords. Logic is if a word is there in more than one dictionary, chances are less that it may be a wrong word. Makes sense.
-<br/><code>Smaller refactorings: <br/>a. The only data source is sanhw1.txt. The list of reference headwords (for MW in the example) are <br/>obtained from sanhw1.txt, rather than from a separate MWslp.txt file. <br/>b. The pattern and hrefyear data have been moved to a utility file faultfinder3a_utils.php, which <br/>is included in the two main php programs. The pattern data has also been put into a structure <br/>which should be easier to modify, and is easier to understand. <br/>c. In faultfinder3a-html.php, the links in the output were generated via Javascript as buttons. This <br/>also makes the html file size smaller, and helps localize the programmatic construction of the links.</code>
-<br/>I would not term any of theses small. They are great additions / alterations. </p>
+          <p><code>I think most of the rxx words are not errors, but occur simply due to a spelling convention that MW does not follow (MW being the reference dictionary here); nearly half of the 9399 lines of AllvsMW.txt are of the rxx type, so this seems a useful reduction of the problem. This is just one example of how the huge problem can be reduced by this refactoring.</code></p>
+<p>Absolutely true.
+and a worthwhile refactoring too.</p>
+<p><code>Another filter would be to look for words which occur ONLY in one dictionary; e.g, there are 375 such for Wilson, 230 such for MW72, 456 for CCS, only 23 remaining in CAE, etc</code></p>
+<p>Yes. I informally use this to screen out no-error headwords. Logic is if a word is there in more than one dictionary, chances are less that it may be a wrong word. Makes sense.</p>
+<p><code>Smaller refactorings: a. The only data source is sanhw1.txt. The list of reference headwords (for MW in the example) are obtained from sanhw1.txt, rather than from a separate MWslp.txt file. b. The pattern and hrefyear data have been moved to a utility file faultfinder3a_utils.php, which is included in the two main php programs. The pattern data has also been put into a structure which should be easier to modify, and is easier to understand. c. In faultfinder3a-html.php, the links in the output were generated via Javascript as buttons. This also makes the html file size smaller, and helps localize the programmatic construction of the links.</code></p>
+<p>I would not term any of theses small. They are great additions / alterations.</p>
   </div>
   </div>
   </div>
   <br/>
-<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<div id="#issuecomment-64975513" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/drdhaval2785" class="author">drdhaval2785</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issuecomment-64975513" class="timestamp">
       <time>2014-11-30 04:39:25</time>
     </a>
   </div>
@@ -104,252 +105,255 @@
   </div>
   </div>
   <br/>
-<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<div id="#issuecomment-64976242" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/drdhaval2785" class="author">drdhaval2785</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issuecomment-64976242" class="timestamp">
       <time>2014-11-30 05:26:46</time>
     </a>
   </div>
 </div><div class="edit-comment-hide">
       <div class="comment-body markdown-body markdown-format js-comment-body">
-          <p>postprocess_scraping.php is now renamed as dictwisesorter.php.
-<br/>It has been amended to work on CMD mode.
-<br/><code>php dictwisesorter.php AllvsMW-new.html dictwiseerrors1.html</code>
-<br/>input from AllvsMW-new.html
-<br/>Output into dictwiseerrors1.html.
-<br/>So now the steps are<br/>
-<br/><code> <br/>php faultfinder3a.php MW sanhw1.txt AllvsMW.txt <br/>php faultfinder3a-html.php AllvsMW.txt AllvsMW-new.html <br/>php dictwisesorter.php AllvsMW-new.html dictwiseerrors1.html <br/></code>
-<br/>This will give us the needed list to work.
-<br/>The file size has come down from 19 mb to 3 mb because of <strong><a href="https://github.com/funderburkjim" target="_blank">@funderburkjim</a></strong>'s javascript wizardry, so more amenable to opening in a browser.
-<br/>Now we need to apply our minds to filtering out the refactorings.
-<br/>Let's think it over.
-<br/>1 ignore rXX
-<br/>2 separate list of words occurring in single dictionary.
-<br/>Let's enumerate more and code for it, so that workload decreases. </p>
+          <p>postprocess_scraping.php is now renamed as dictwisesorter.php.</p>
+<p>It has been amended to work on CMD mode.
+<code>php dictwisesorter.php AllvsMW-new.html dictwiseerrors1.html</code>
+input from AllvsMW-new.html
+Output into dictwiseerrors1.html.</p>
+<p>So now the steps are </p>
+<pre><code>php faultfinder3a.php MW sanhw1.txt AllvsMW.txt
+php faultfinder3a-html.php AllvsMW.txt AllvsMW-new.html
+php dictwisesorter.php AllvsMW-new.html dictwiseerrors1.html</code></pre>
+<p>This will give us the needed list to work.
+The file size has come down from 19 mb to 3 mb because of <strong><a href="https://github.com/funderburkjim" target="_blank">@funderburkjim</a></strong>'s javascript wizardry, so more amenable to opening in a browser.
+Now we need to apply our minds to filtering out the refactorings.
+Let's think it over.</p>
+<p>1 ignore rXX
+2 separate list of words occurring in single dictionary.
+Let's enumerate more and code for it, so that workload decreases.</p>
   </div>
   </div>
   </div>
   <br/>
-<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<div id="#issuecomment-64977250" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/drdhaval2785" class="author">drdhaval2785</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issuecomment-64977250" class="timestamp">
       <time>2014-11-30 06:32:56</time>
     </a>
   </div>
 </div><div class="edit-comment-hide">
       <div class="comment-body markdown-body markdown-format js-comment-body">
           <p>3 rd addition would be to ignore 'nt' at the end.
-<br/>I saw many of them in dictionarywiseerrors.html in CAE
-<br/>e.g. aMSumant - अंशुमन्त् - CAE, PWG, PW, STC,
-<br/>akutsayant - अकुत्सयन्त् - CAE, SCH,
-<br/>akurvant - अकुर्वन्त् - CAE, CCS, PW, STC,
-<br/>akopayant - अकोपयन्त् - CAE, CCS, SCH,
-<br/>akzaRvant - अक्षण्वन्त् - CAE, CCS, PWG, PW,
-<br/>akziRvant - अक्षिण्वन्त् - CAE, SCH,
-<br/>agaRayant - अगणयन्त् - CAE, CCS, SCH, STC,
-<br/>aganDavant - अगन्धवन्त् - CAE,<br/>
-<br/>We should ignore them. They are also different convention followed by some dictionaries.
-<br/>But we should device some way to give access to the data by either 'aMSumant' / 'aMSumat' both when a user searches for this word. For a native Indian user 'nt' is too foreign. It is grammatically wrong too. But as many dictionaries have used this convention - doesn't seem great idea to change them to 't'. But access to data should be there for sure.
-<br/>N.B. - I could not see these patterns being detected in AllvsMW-new.html (generated via faultfinder3a.php). These were there in AllvsMW.html (generated via faultfinder3.php). So, <strong><a href="https://github.com/funderburkjim" target="_blank">@funderburkjim</a></strong> did you do some coding change to ignore such cases already ?
-<br/> I am not sure.</p>
+I saw many of them in dictionarywiseerrors.html in CAE
+e.g. aMSumant - अंशुमन्त् - CAE, PWG, PW, STC,
+akutsayant - अकुत्सयन्त् - CAE, SCH,
+akurvant - अकुर्वन्त् - CAE, CCS, PW, STC,
+akopayant - अकोपयन्त् - CAE, CCS, SCH,
+akzaRvant - अक्षण्वन्त् - CAE, CCS, PWG, PW,
+akziRvant - अक्षिण्वन्त् - CAE, SCH,
+agaRayant - अगणयन्त् - CAE, CCS, SCH, STC,
+aganDavant - अगन्धवन्त् - CAE, </p>
+<p>We should ignore them. They are also different convention followed by some dictionaries.
+But we should device some way to give access to the data by either 'aMSumant' / 'aMSumat' both when a user searches for this word. For a native Indian user 'nt' is too foreign. It is grammatically wrong too. But as many dictionaries have used this convention - doesn't seem great idea to change them to 't'. But access to data should be there for sure.</p>
+<p>N.B. - I could not see these patterns being detected in AllvsMW-new.html (generated via faultfinder3a.php). These were there in AllvsMW.html (generated via faultfinder3.php). So, <strong><a href="https://github.com/funderburkjim" target="_blank">@funderburkjim</a></strong> did you do some coding change to ignore such cases already ?
+I am not sure.</p>
   </div>
   </div>
   </div>
   <br/>
-<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<div id="#issuecomment-64997462" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/gasyoun" class="author">gasyoun</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issuecomment-64997462" class="timestamp">
       <time>2014-11-30 19:50:13</time>
     </a>
   </div>
 </div><div class="edit-comment-hide">
       <div class="comment-body markdown-body markdown-format js-comment-body">
           <p><strong><a href="https://github.com/funderburkjim" target="_blank">@funderburkjim</a></strong> well done, as usual. A few questions / thoughts before going to sleep, converted to .xls <a href="https://github.com/sanskrit-lexicon/CORRECTIONS/blob/master/AllvsMW.xls">https://github.com/sanskrit-lexicon/CORRECTIONS/blob/master/AllvsMW.xls</a>.
-<br/>1) \nearly half of the 9399 lines of AllvsMW.txt are of the rxx type\ there is no easy way to sort out the \rxx type\ now.
-<br/><code> <br/>sOvOryya\tsauvauryya\tVCV\tOvO\tSHS <br/></code>
-<br/>Can be found only by <code>OvO</code> and not by <code>ryy</code> or even <code>RCC</code> pattern - that would be even better. We have to develop rules and triggers. To have just <code>CCC</code> would not tell much, but <code>RCC</code> change the game. <code>ryy</code> or <code>rll</code> does not matters much, hope both of you will agree. It's only about the structure.
-<br/>2) \look for words which occur ONLY in one dictionary\ - it's something I and Dhaval have done in the past. I would only think that there should be an additional column counting the number of sources and using color formatting in .xls or .html. Sorting the number of sources is great? Guess no, alphabetical order has it's good sides. Dhaval, would it help to have the ones which have only one source with a yellow background?
-<br/>If only SKD and VCP has a word which none others have that might be fishy as well, so even if there are two (similar), that still should trigger another rule. Like only Indian dictionaries or Indian and European sources.
-<br/>3) I can read VCCCCCV pattern, but I need to know if S in SCC is a real life <code>s</code>? Or CCE - never seen and do not thing vowels should be differentiated in our case.
-<br/>4) \But as many dictionaries have used this convention - doesn't seem great idea to change them to 't'. But access to data should be there for sure.\ - it's Boethlink's approach, he is guilty for it all. It's called European linguistics. So I guess interlinking takes this task too far. Than we have interlink much more and it grows in something gigantic which I think we are not yet ready to approach even.
-<br/>5) Please make a repository or upload to an existing one the valuable sanhw1.zip file. Dropbox is for experiments. sanhw1.zip is no longer such, it's a huge step for mankind. Let it have it's legal place.</p>
+1) &quot;nearly half of the 9399 lines of AllvsMW.txt are of the rxx type&quot; there is no easy way to sort out the &quot;rxx type&quot; now.</p>
+<pre><code>sOvOryya    sauvauryya  VCV OvO SHS</code></pre>
+<p>Can be found only by <code>OvO</code> and not by <code>ryy</code> or even <code>RCC</code> pattern - that would be even better. We have to develop rules and triggers. To have just <code>CCC</code> would not tell much, but <code>RCC</code> change the game. <code>ryy</code> or <code>rll</code> does not matters much, hope both of you will agree. It's only about the structure.</p>
+<p>2) &quot;look for words which occur ONLY in one dictionary&quot; - it's something I and Dhaval have done in the past. I would only think that there should be an additional column counting the number of sources and using color formatting in .xls or .html. Sorting the number of sources is great? Guess no, alphabetical order has it's good sides. Dhaval, would it help to have the ones which have only one source with a yellow background?
+If only SKD and VCP has a word which none others have that might be fishy as well, so even if there are two (similar), that still should trigger another rule. Like only Indian dictionaries or Indian and European sources.</p>
+<p>3) I can read VCCCCCV pattern, but I need to know if S in SCC is a real life <code>s</code>? Or CCE - never seen and do not thing vowels should be differentiated in our case.</p>
+<p>4) &quot;But as many dictionaries have used this convention - doesn't seem great idea to change them to 't'. But access to data should be there for sure.&quot; - it's Boethlink's approach, he is guilty for it all. It's called European linguistics. So I guess interlinking takes this task too far. Than we have interlink much more and it grows in something gigantic which I think we are not yet ready to approach even.</p>
+<p>5) Please make a repository or upload to an existing one the valuable sanhw1.zip file. Dropbox is for experiments. sanhw1.zip is no longer such, it's a huge step for mankind. Let it have it's legal place.</p>
   </div>
   </div>
   </div>
   <br/>
-<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<div id="#issuecomment-65000589" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/funderburkjim" class="author">funderburkjim</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issuecomment-65000589" class="timestamp">
       <time>2014-11-30 21:14:32</time>
     </a>
   </div>
 </div><div class="edit-comment-hide">
       <div class="comment-body markdown-body markdown-format js-comment-body">
-          <p>re 5) 'repository for sanhw1' -  Currently, the <i>right</i> spot for sanhw1.txt seems to be in drdhaval2785/SanskritSpellCheck/ repository.<br/>
-<br/> Question:  Is there a way for me to upload just sanhw1.txt to this repository - I think I would have to clone the entire repository in GitHub client, and then worry about syncing ,etc.   To me, it seems simpler to simply a dropbox link to Dhaval, and let him worry about the syncing.
-<br/>Another possibility would be to put sanhw1  in the Corrections repository. Since i am responsible currently for maintaining Corrections,  this would be straightforward.  But then Dhaval would still need to get it over to where it is needed in SanskritSpellCheck.<br/>
-<br/>So, I'm not sure of the best way to go. </p>
+          <p>re 5) 'repository for sanhw1' -  Currently, the <i>right</i> spot for sanhw1.txt seems to be in drdhaval2785/SanskritSpellCheck/ repository. </p>
+<p>Question:  Is there a way for me to upload just sanhw1.txt to this repository - I think I would have to clone the entire repository in GitHub client, and then worry about syncing ,etc.   To me, it seems simpler to simply a dropbox link to Dhaval, and let him worry about the syncing.</p>
+<p>Another possibility would be to put sanhw1  in the Corrections repository. Since i am responsible currently for maintaining Corrections,  this would be straightforward.  But then Dhaval would still need to get it over to where it is needed in SanskritSpellCheck.  </p>
+<p>So, I'm not sure of the best way to go.</p>
   </div>
   </div>
   </div>
   <br/>
-<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<div id="#issuecomment-65000677" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/funderburkjim" class="author">funderburkjim</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issuecomment-65000677" class="timestamp">
       <time>2014-11-30 21:16:56</time>
     </a>
   </div>
 </div><div class="edit-comment-hide">
       <div class="comment-body markdown-body markdown-format js-comment-body">
-          <p>re 3)  S in SCC   :   Here, the 'S' is not a Sanskrit letter, but means 'at the start of headword'.  It is the regex '^' at the beginning of a pattern.
-<br/>Similarly, 'E'  in those pattern codes means 'at the end of headword', the regex '$' at end of a pattern. </p>
+          <p>re 3)  S in SCC   :   Here, the 'S' is not a Sanskrit letter, but means 'at the start of headword'.  It is the regex '^' at the beginning of a pattern.</p>
+<p>Similarly, 'E'  in those pattern codes means 'at the end of headword', the regex '$' at end of a pattern.</p>
   </div>
   </div>
   </div>
   <br/>
-<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<div id="#issuecomment-65001879" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/funderburkjim" class="author">funderburkjim</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issuecomment-65001879" class="timestamp">
       <time>2014-11-30 21:49:58</time>
     </a>
   </div>
 </div><div class="edit-comment-hide">
       <div class="comment-body markdown-body markdown-format js-comment-body">
-          <p>re 2) sOvOryya    sauvauryya  VCV OvO SHS.
-<br/>There are two ways two filter for the 'rxx' words in AllvsMW.txt.
-<br/><code> <br/>1.  \"=[^:]*r(.)\\1\"        This finds an rxx in the pattern value.  There are 4613 such currently. <br/>2. \"r(.)\\1\"     This finds an rxx anywhere (e.g., anywhere in a headword). There are 4666 of these. <br/></code>
-<br/>So, there are only 53 cases like sOvOryya.   I guess it would better to get rid of the 4613, so we<br/>
-<br/>explicitly keep cases like sOvOryya in the list of suspects. </p>
+          <p>re 2) sOvOryya    sauvauryya  VCV OvO SHS.</p>
+<p>There are two ways two filter for the 'rxx' words in AllvsMW.txt.</p>
+<pre><code>1.  "=[^:]*r(.)\1"        This finds an rxx in the pattern value.  There are 4613 such currently.
+2. "r(.)\1"     This finds an rxx anywhere (e.g., anywhere in a headword). There are 4666 of these.</code></pre>
+<p>So, there are only 53 cases like sOvOryya.   I guess it would better to get rid of the 4613, so we
+explicitly keep cases like sOvOryya in the list of suspects.</p>
   </div>
   </div>
   </div>
   <br/>
-<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<div id="#issuecomment-65004326" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/funderburkjim" class="author">funderburkjim</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issuecomment-65004326" class="timestamp">
       <time>2014-11-30 22:53:30</time>
     </a>
   </div>
 </div><div class="edit-comment-hide">
       <div class="comment-body markdown-body markdown-format js-comment-body">
-          <p><strong><a href="https://github.com/drdhaval2785" target="_blank">@drdhaval2785</a></strong>  re Where are the ants in AllvsMW-new.html?
-<br/>Since AllvsMW-new.html is generated from AllvsMW.txt, the question reverts to : Where are the ants in AllvsMW.txt?
-<br/>Looking at sanhw1.txt,  there are 23 words in MW that end in 'nt'  (two of these end in 'ant').<br/>
-<br/><i>Since pattern 'nt at end of word' appears in the reference dictionary (MW), no word in any other dictionary will be put in the suspect list (AllvsMW.txt) on the basis of the word ending in 'nt'.</i>
-<br/>(I see 18 words ending in 'nt' in in AllvsMW.txt, but they are present for other patterns)
-<br/>So, in conclusion I see no problem with AllvsMW.txt, unless there is some problem of the logic of faultfinder that I'm misunderstanding.<br/>
-<br/>In fact, I am puzzled that  (in AllvsMW.html from faultfinder3.php) himavant  (for example) is viewed as suspect.
-<br/>I cloned the repository and ran faultfinder3.php . I changed only one line in the program, line 228
-<br/><code> <br/>                    fputs($outfile,givelink($dictdata[$j],$worddata[$j]).\"</br>\\n\"); <br/></code>
-<br/>adding the '\n'  so the output file would have separate lines. In this rerun, only 16 lines have an 'ant ', in close agreement with AllvsMW.txt.   This run uses the new version of sanhw1 (which has 2000+ 'ant' words), and the same MWslp.txt.<br/>
-<br/>Probably there was some oddity in the run that generated the ants in AllvsMW.html, and its  not worth spending the time to try to understand that oddity by doing a git rollback. </p>
+          <p><strong><a href="https://github.com/drdhaval2785" target="_blank">@drdhaval2785</a></strong>  re Where are the ants in AllvsMW-new.html?</p>
+<p>Since AllvsMW-new.html is generated from AllvsMW.txt, the question reverts to : Where are the ants in AllvsMW.txt?</p>
+<p>Looking at sanhw1.txt,  there are 23 words in MW that end in 'nt'  (two of these end in 'ant').<br />
+<i>Since pattern 'nt at end of word' appears in the reference dictionary (MW), no word in any other dictionary will be put in the suspect list (AllvsMW.txt) on the basis of the word ending in 'nt'.</i>
+(I see 18 words ending in 'nt' in in AllvsMW.txt, but they are present for other patterns)</p>
+<p>So, in conclusion I see no problem with AllvsMW.txt, unless there is some problem of the logic of faultfinder that I'm misunderstanding.   </p>
+<p>In fact, I am puzzled that  (in AllvsMW.html from faultfinder3.php) himavant  (for example) is viewed as suspect.</p>
+<p>I cloned the repository and ran faultfinder3.php . I changed only one line in the program, line 228</p>
+<pre><code>                    fputs($outfile,givelink($dictdata[$j],$worddata[$j])."&lt;/br&gt;\n");</code></pre>
+<p>adding the '\n'  so the output file would have separate lines. In this rerun, only 16 lines have an 'ant ', in close agreement with AllvsMW.txt.   This run uses the new version of sanhw1 (which has 2000+ 'ant' words), and the same MWslp.txt.   </p>
+<p>Probably there was some oddity in the run that generated the ants in AllvsMW.html, and its  not worth spending the time to try to understand that oddity by doing a git rollback.</p>
   </div>
   </div>
   </div>
   <br/>
-<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<div id="#issuecomment-65015619" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/drdhaval2785" class="author">drdhaval2785</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issuecomment-65015619" class="timestamp">
       <time>2014-12-01 03:05:17</time>
     </a>
   </div>
 </div><div class="edit-comment-hide">
       <div class="comment-body markdown-body markdown-format js-comment-body">
-          <p><strong><a href="https://github.com/funderburkjim" target="_blank">@funderburkjim</a></strong><br/>
-<br/><code> <br/>re Where are the ants in AllvsMW-new.html? <br/></code>
-<br/>I wanted to trace the problem to silent it. It anyways is silent now. So we absolutely need not bother. </p>
+          <p><strong><a href="https://github.com/funderburkjim" target="_blank">@funderburkjim</a></strong> </p>
+<pre><code>re Where are the ants in AllvsMW-new.html?</code></pre>
+<p>I wanted to trace the problem to silent it. It anyways is silent now. So we absolutely need not bother.</p>
   </div>
   </div>
   </div>
   <br/>
-<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<div id="#issuecomment-65015875" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/drdhaval2785" class="author">drdhaval2785</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issuecomment-65015875" class="timestamp">
       <time>2014-12-01 03:09:43</time>
     </a>
   </div>
 </div><div class="edit-comment-hide">
       <div class="comment-body markdown-body markdown-format js-comment-body">
-          <p><strong><a href="https://github.com/funderburkjim" target="_blank">@funderburkjim</a></strong> and <strong><a href="https://github.com/gasyoun" target="_blank">@gasyoun</a></strong><br/>
-<br/><code> <br/>2) \"look for words which occur ONLY in one dictionary\" <br/></code>
-<br/>I guess right now we should remove these r-c-c patterns. This would substantially reduce our file size with nothing to lose. </p>
+          <p><strong><a href="https://github.com/funderburkjim" target="_blank">@funderburkjim</a></strong> and <strong><a href="https://github.com/gasyoun" target="_blank">@gasyoun</a></strong> </p>
+<pre><code>2) "look for words which occur ONLY in one dictionary"</code></pre>
+<p>I guess right now we should remove these r-c-c patterns. This would substantially reduce our file size with nothing to lose.</p>
   </div>
   </div>
   </div>
   <br/>
-<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<div id="#issuecomment-65015956" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/drdhaval2785" class="author">drdhaval2785</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issuecomment-65015956" class="timestamp">
       <time>2014-12-01 03:11:17</time>
     </a>
   </div>
 </div><div class="edit-comment-hide">
       <div class="comment-body markdown-body markdown-format js-comment-body">
-          <p><strong><a href="https://github.com/gasyoun" target="_blank">@gasyoun</a></strong><br/>
-<br/><code> <br/>3) I can read VCCCCCV pattern <br/></code>
-<br/>In most dictionaries the highest consecutive consonants can be kArtsnya. C(VCCCCCV).</p>
+          <p><strong><a href="https://github.com/gasyoun" target="_blank">@gasyoun</a></strong> </p>
+<pre><code>3) I can read VCCCCCV pattern</code></pre>
+<p>In most dictionaries the highest consecutive consonants can be kArtsnya. C(VCCCCCV).</p>
   </div>
   </div>
   </div>
   <br/>
-<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<div id="#issuecomment-65016029" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/funderburkjim" class="author">funderburkjim</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issuecomment-65016029" class="timestamp">
       <time>2014-12-01 03:12:30</time>
     </a>
   </div>
@@ -360,38 +364,35 @@
   </div>
   </div>
   <br/>
-<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<div id="#issuecomment-65018624" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/drdhaval2785" class="author">drdhaval2785</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issuecomment-65018624" class="timestamp">
       <time>2014-12-01 04:05:27</time>
     </a>
   </div>
 </div><div class="edit-comment-hide">
       <div class="comment-body markdown-body markdown-format js-comment-body">
-          <pre><code>
-    <br/>re 5) 'repository for sanhw1' - Currently, the right spot for sanhw1.txt seems to be in drdhaval2785/SanskritSpellCheck/ repository.  
-    <br/>``` 
-    <br/>Let me tell you <strong><a href="https://github.com/funderburkjim" target="_blank">@funderburkjim</a></strong> that I may not be the only one using this file. The right position is in corrections repository according to me. I will copy paste from raw data of Github. Not a problematic one. 
-    <br/>One more suggestion regarding that file. 
-    <br/>Can you add \\r\\n instead of \\n only? Notepad like windows applications run on \\r\\n as endline character. I see everything in single line. Difficult to read. 
-    <br/></p>
+          <pre><code>re 5) 'repository for sanhw1' - Currently, the right spot for sanhw1.txt seems to be in drdhaval2785/SanskritSpellCheck/ repository. </code></pre>
+<p>Let me tell you <strong><a href="https://github.com/funderburkjim" target="_blank">@funderburkjim</a></strong> that I may not be the only one using this file. The right position is in corrections repository according to me. I will copy paste from raw data of Github. Not a problematic one.
+One more suggestion regarding that file.
+Can you add \r\n instead of \n only? Notepad like windows applications run on \r\n as endline character. I see everything in single line. Difficult to read.</p>
   </div>
   </div>
   </div>
   <br/>
-<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<div id="#issuecomment-65080792" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/gasyoun" class="author">gasyoun</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issuecomment-65080792" class="timestamp">
       <time>2014-12-01 15:30:32</time>
     </a>
   </div>
@@ -402,101 +403,102 @@
   </div>
   </div>
   <br/>
-<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<div id="#issuecomment-65126574" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/funderburkjim" class="author">funderburkjim</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issuecomment-65126574" class="timestamp">
       <time>2014-12-01 20:11:03</time>
     </a>
   </div>
 </div><div class="edit-comment-hide">
       <div class="comment-body markdown-body markdown-format js-comment-body">
           <ol>
-<li>Re notepad:  I heartily agree with Gasyoun that file format should not be governed by the deficiencies of Notepad.  So, I don't think using the Windows line termination convention (<br/>) is a good idea.<br/>
-<br/>2.  I'll go along with adding sanhw1 to the Corrections repository. Will put it there the next time it is updated. 
+<li>
+<p>Re notepad:  I heartily agree with Gasyoun that file format should not be governed by the deficiencies of Notepad.  So, I don't think using the Windows line termination convention (\r\n) is a good idea.  </p>
 </li>
+<li>I'll go along with adding sanhw1 to the Corrections repository. Will put it there the next time it is updated.</li>
 </ol>
   </div>
   </div>
   </div>
   <br/>
-<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<div id="#issuecomment-65713875" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/funderburkjim" class="author">funderburkjim</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issuecomment-65713875" class="timestamp">
       <time>2014-12-04 22:16:58</time>
     </a>
   </div>
 </div><div class="edit-comment-hide">
       <div class="comment-body markdown-body markdown-format js-comment-body">
-          <p>sanhw1 added to CORRECTIONS repository. </p>
+          <p>sanhw1 added to CORRECTIONS repository.</p>
   </div>
   </div>
   </div>
   <br/>
-<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<div id="#issuecomment-65776744" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/drdhaval2785" class="author">drdhaval2785</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issuecomment-65776744" class="timestamp">
       <time>2014-12-05 11:15:38</time>
     </a>
   </div>
 </div><div class="edit-comment-hide">
       <div class="comment-body markdown-body markdown-format js-comment-body">
-          <p>Using notepad++ now. No issue of <br/> survives now. That is closed from my side.</p>
+          <p>Using notepad++ now. No issue of \r\n survives now. That is closed from my side.</p>
   </div>
   </div>
   </div>
   <br/>
-<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<div id="#issuecomment-65889689" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/drdhaval2785" class="author">drdhaval2785</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issuecomment-65889689" class="timestamp">
       <time>2014-12-06 08:17:38</time>
     </a>
   </div>
 </div><div class="edit-comment-hide">
       <div class="comment-body markdown-body markdown-format js-comment-body">
-          <p>As discussed in <a href="https://github.com/sanskrit-lexicon/CORRECTIONS/issues/42#issuecomment-64976242">https://github.com/sanskrit-lexicon/CORRECTIONS/issues/42#issuecomment-64976242</a> point 2
-<br/><code> <br/>2 separate list of words occurring in single dictionary. <br/></code>
-<br/>The faultfinder3a-html.php has been modified to give list of unique suspicious words by default.
-<br/>Now we can do<br/>
-<br/><code> <br/>php faultfinder3a-html.php AllvsMW.txt AllvsMW-norepeat.html <br/></code>
-<br/>to get <a href="http://drdhaval2785.github.io/AllvsMW-norepeat.html">this</a>.
-<br/>On that file we can do<br/>
-<br/><code> <br/>php dictwisesorter.php AllvsMW-norepeat.html dictwiseerrors2.html <br/></code>
-<br/>to get <a href="http://drdhaval2785.github.io/dictwiseerrors2.html">this</a>.
-<br/>The data has come down to 888 kb from erstwhile 19 MB.
-<br/>N.B. If you want to get the list with words repeated in dictionaries pass 1 as third argument.
-<br/><code> <br/>php faultfinder3a-html.php AllvsMW.txt AllvsMW-repeat.html 1 <br/></code></p>
+          <p>As discussed in <a href="https://github.com/sanskrit-lexicon/CORRECTIONS/issues/42#issuecomment-64976242">https://github.com/sanskrit-lexicon/CORRECTIONS/issues/42#issuecomment-64976242</a> point 2</p>
+<pre><code>2 separate list of words occurring in single dictionary.</code></pre>
+<p>The faultfinder3a-html.php has been modified to give list of unique suspicious words by default.</p>
+<p>Now we can do </p>
+<pre><code>php faultfinder3a-html.php AllvsMW.txt AllvsMW-norepeat.html</code></pre>
+<p>to get <a href="http://drdhaval2785.github.io/AllvsMW-norepeat.html">this</a>.
+On that file we can do </p>
+<pre><code>php dictwisesorter.php AllvsMW-norepeat.html dictwiseerrors2.html</code></pre>
+<p>to get <a href="http://drdhaval2785.github.io/dictwiseerrors2.html">this</a>.
+The data has come down to 888 kb from erstwhile 19 MB.</p>
+<p>N.B. If you want to get the list with words repeated in dictionaries pass 1 as third argument.</p>
+<pre><code>php faultfinder3a-html.php AllvsMW.txt AllvsMW-repeat.html 1</code></pre>
   </div>
   </div>
   </div>
   <br/>
-<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<div id="#issuecomment-65890065" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/gasyoun" class="author">gasyoun</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issuecomment-65890065" class="timestamp">
       <time>2014-12-06 08:36:01</time>
     </a>
   </div>
@@ -507,83 +509,81 @@
   </div>
   </div>
   <br/>
-<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<div id="#issuecomment-65895666" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/drdhaval2785" class="author">drdhaval2785</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issuecomment-65895666" class="timestamp">
       <time>2014-12-06 12:44:33</time>
     </a>
   </div>
 </div><div class="edit-comment-hide">
       <div class="comment-body markdown-body markdown-format js-comment-body">
-          <p>Point 1 of ignoring rCC pattern is also now default.
-<br/><code> <br/>1 ignore rXX <br/></code>
-<br/>Now it is default in faultfinder3a-html.php committed via c78e0a52134da58f42ca356af100423e7bce2e08.
-<br/>This will give you the result <a href="http://drdhaval2785.github.io/dictwiseerrors3.html">this</a>.
-<br/>Regarding <strong><a href="https://github.com/gasyoun" target="_blank">@gasyoun</a></strong> 's comment<br/>
-<br/><code>1) \"nearly half of the 9399 lines of AllvsMW.txt are of the rxx type\" there is no easy way to sort out the \"rxx type\" now.</code>
-<br/>To be precise, AllvsMW.txt has 9398 entries, and AllvsMW-norepeat.html has around 4400 entries.
-<br/>N.B. If you intend to keep the words with rCC pattern also pass 2 as third argument.
-<br/><code> <br/>php faultfinder3a-html.php AllvsMW.txt AllvsMW-repeat.html 2 <br/></code> </p>
+          <p>Point 1 of ignoring rCC pattern is also now default.</p>
+<pre><code>1 ignore rXX</code></pre>
+<p>Now it is default in faultfinder3a-html.php committed via c78e0a52134da58f42ca356af100423e7bce2e08.</p>
+<p>This will give you the result <a href="http://drdhaval2785.github.io/dictwiseerrors3.html">this</a>.</p>
+<p>Regarding <strong><a href="https://github.com/gasyoun" target="_blank">@gasyoun</a></strong> 's comment
+<code>1) "nearly half of the 9399 lines of AllvsMW.txt are of the rxx type" there is no easy way to sort out the "rxx type" now.</code>
+To be precise, AllvsMW.txt has 9398 entries, and AllvsMW-norepeat.html has around 4400 entries.</p>
+<p>N.B. If you intend to keep the words with rCC pattern also pass 2 as third argument.</p>
+<pre><code>php faultfinder3a-html.php AllvsMW.txt AllvsMW-repeat.html 2</code></pre>
   </div>
   </div>
   </div>
   <br/>
-<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<div id="#issuecomment-65895789" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/drdhaval2785" class="author">drdhaval2785</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issuecomment-65895789" class="timestamp">
       <time>2014-12-06 12:48:47</time>
     </a>
   </div>
 </div><div class="edit-comment-hide">
       <div class="comment-body markdown-body markdown-format js-comment-body">
-          <p>Just to note - I have reverted back faultfinder3a-html.php to have href links directly rather than buttons  created via javascript.<br/>
-<br/>Causes - 1. I want to open at least 5-6 tabs before I start exploring it. In the present system - button reopens the new word in the same tab. Not convenient to handle.<br/>
-<br/>Causes 2 - Now the file size is around 900 kb. So much more manageable to direct links. Browser is also happy now.
-<br/>As there are not much to add in this topic, let's close this. </p>
+          <p>Just to note - I have reverted back faultfinder3a-html.php to have href links directly rather than buttons  created via javascript.
+Causes - 1. I want to open at least 5-6 tabs before I start exploring it. In the present system - button reopens the new word in the same tab. Not convenient to handle.
+Causes 2 - Now the file size is around 900 kb. So much more manageable to direct links. Browser is also happy now.</p>
+<p>As there are not much to add in this topic, let's close this.</p>
   </div>
   </div>
   </div>
   <br/>
-<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<div id="#issuecomment-65901344" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/drdhaval2785" class="author">drdhaval2785</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issuecomment-65901344" class="timestamp">
       <time>2014-12-06 15:23:36</time>
     </a>
   </div>
 </div><div class="edit-comment-hide">
       <div class="comment-body markdown-body markdown-format js-comment-body">
-          <pre><code>
-    <br/>Well done. Was not the part of the word in discussion formatted bold before? 
-    <br/>``` 
-    <br/><strong><a href="https://github.com/gasyoun" target="_blank">@gasyoun</a></strong>  
-    <br/>No. It was not. But now it has. http://drdhaval2785.github.io/dictwiseerrors3.html</p>
+          <pre><code>Well done. Was not the part of the word in discussion formatted bold before?</code></pre>
+<p><strong><a href="https://github.com/gasyoun" target="_blank">@gasyoun</a></strong>
+No. It was not. But now it has. <a href="http://drdhaval2785.github.io/dictwiseerrors3.html">http://drdhaval2785.github.io/dictwiseerrors3.html</a></p>
   </div>
   </div>
   </div>
   <br/>
-<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<div id="#issuecomment-65907472" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/gasyoun" class="author">gasyoun</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issuecomment-65907472" class="timestamp">
       <time>2014-12-06 18:02:14</time>
     </a>
   </div>
@@ -594,14 +594,14 @@
   </div>
   </div>
   <br/>
-<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<div id="#issuecomment-65943404" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/drdhaval2785" class="author">drdhaval2785</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issuecomment-65943404" class="timestamp">
       <time>2014-12-07 16:42:44</time>
     </a>
   </div>
@@ -612,93 +612,97 @@
   </div>
   </div>
   <br/>
-<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<div id="#issuecomment-65962501" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/funderburkjim" class="author">funderburkjim</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issuecomment-65962501" class="timestamp">
       <time>2014-12-08 00:05:23</time>
     </a>
   </div>
 </div><div class="edit-comment-hide">
       <div class="comment-body markdown-body markdown-format js-comment-body">
-          <p>A <a href="https://dl.dropboxusercontent.com/u/29859999/dictwisesorter-v3.php">modification</a> of dictwisesorter was made so output has tables .<br/>
-<br/>The output is <a href="https://funderburkjim.github.io/dictwiseerrors3-table.html">here</a>
-<br/>Here is the program sequence:
-<br/><code> <br/>php faultfinder3a.php MW sanhw1.txt AllvsMW.txt <br/>php faultfinder3a-html.php AllvsMW.txt AllvsMW-norepeat.html <br/>php dictwisesorter-v3.php AllvsMW-norepeat.html dictwiseerrors3-table.html <br/></code>
-<br/>Comments:
-<br/>  Thanks for using the github.io  (github project page) .  I had not known it existed.
-<br/> Ditto for the markup
-<br/><code> <br/>[here](url) <br/></code>
-<br/> I would have factored things a bit differently, but yours works, so its mostly a difference in styles:
-<br/><code> <br/>php faultfinder3a.php MW sanhw1.txt AllvsMW.txt <br/>php dictwisesorter-vx.php AllvsMW.txt AllvsMW-norepeat.txt   <-- same format as AllvsMW.txt --> <br/>php faultfinder3a-html.php AllvsMW-norepeat.txt dictwiseerrors3-table.html   1 <br/>   add option to faultfinder3a-html to output in tabular form.  Do the IAST and pattern-highlighting here <br/></code>
-<br/>You could leave the javascript, and still get the effect you prefer:
-<br/>```
-<br/>Instead of
-<br/>window.open(href,\\dictionary\\); </p>
-<pre><code class="language-Use">    <br/>window.open(href,\\\"_blank\\\"); 
-    <br/>``` 
-    <br/> The w3schools site has excellent information on how to do things with html, css, javascript, etc. 
-    <br/>including [Html tables](http://www.w3schools.com/html/html_tables.asp). </p>
+          <p>A <a href="https://dl.dropboxusercontent.com/u/29859999/dictwisesorter-v3.php">modification</a> of dictwisesorter was made so output has tables . </p>
+<p>The output is <a href="https://funderburkjim.github.io/dictwiseerrors3-table.html">here</a></p>
+<p>Here is the program sequence:</p>
+<pre><code>php faultfinder3a.php MW sanhw1.txt AllvsMW.txt
+php faultfinder3a-html.php AllvsMW.txt AllvsMW-norepeat.html
+php dictwisesorter-v3.php AllvsMW-norepeat.html dictwiseerrors3-table.html</code></pre>
+<p>Comments:</p>
+<p>Thanks for using the github.io  (github project page) .  I had not known it existed.
+Ditto for the markup</p>
+<pre><code>[here](url)</code></pre>
+<p>I would have factored things a bit differently, but yours works, so its mostly a difference in styles:</p>
+<pre><code>php faultfinder3a.php MW sanhw1.txt AllvsMW.txt
+php dictwisesorter-vx.php AllvsMW.txt AllvsMW-norepeat.txt   &lt;-- same format as AllvsMW.txt --&gt;
+php faultfinder3a-html.php AllvsMW-norepeat.txt dictwiseerrors3-table.html   1
+   add option to faultfinder3a-html to output in tabular form.  Do the IAST and pattern-highlighting here</code></pre>
+<p>You could leave the javascript, and still get the effect you prefer:</p>
+<pre><code>Instead of
+window.open(href,\"dictionary\");
+Use
+window.open(href,\"_blank\");</code></pre>
+<p>The w3schools site has excellent information on how to do things with html, css, javascript, etc.
+including <a href="http://www.w3schools.com/html/html_tables.asp">Html tables</a>.</p>
   </div>
   </div>
   </div>
   <br/>
-<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<div id="#issuecomment-65971141" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/drdhaval2785" class="author">drdhaval2785</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issuecomment-65971141" class="timestamp">
       <time>2014-12-08 03:09:14</time>
     </a>
   </div>
 </div><div class="edit-comment-hide">
       <div class="comment-body markdown-body markdown-format js-comment-body">
-          <p><strong><a href="https://github.com/funderburkjim" target="_blank">@funderburkjim</a></strong><br/>
-<br/>great as usual.
-<br/>I am planning to learn these languages, but my official duties don't leave much room for it.
-<br/>In my spare time, yes.</p>
+          <p><strong><a href="https://github.com/funderburkjim" target="_blank">@funderburkjim</a></strong>
+great as usual.
+I am planning to learn these languages, but my official duties don't leave much room for it.
+In my spare time, yes.</p>
   </div>
   </div>
   </div>
   <br/>
-<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<div id="#issuecomment-66040765" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/drdhaval2785" class="author">drdhaval2785</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issuecomment-66040765" class="timestamp">
       <time>2014-12-08 09:09:46</time>
     </a>
   </div>
 </div><div class="edit-comment-hide">
       <div class="comment-body markdown-body markdown-format js-comment-body">
           <p>Now the location for the suspect list is <a href="https://drdhaval2785.github.io/dictwiseerrors3-table.html">this</a>.
-<br/>So, you can remove your list <strong><a href="https://github.com/funderburkjim" target="_blank">@funderburkjim</a></strong> to keep your github.io clutter free.
-<br/>Same with dropbox file of dictwisesorter-v3.php.
-<br/>This is also in spellcheck repository now.
-<br/>N.B. - The list has reached the perfection required for a 'wrong entry' file.<br/>
-<br/>So no further enhancements please <strong><a href="https://github.com/gasyoun" target="_blank">@gasyoun</a></strong> .</p>
+So, you can remove your list <strong><a href="https://github.com/funderburkjim" target="_blank">@funderburkjim</a></strong> to keep your github.io clutter free.
+Same with dropbox file of dictwisesorter-v3.php.
+This is also in spellcheck repository now.</p>
+<p>N.B. - The list has reached the perfection required for a 'wrong entry' file.
+So no further enhancements please <strong><a href="https://github.com/gasyoun" target="_blank">@gasyoun</a></strong> .</p>
   </div>
   </div>
   </div>
   <br/>
-<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<div id="#issuecomment-66042537" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/gasyoun" class="author">gasyoun</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issuecomment-66042537" class="timestamp">
       <time>2014-12-08 09:27:22</time>
     </a>
   </div>

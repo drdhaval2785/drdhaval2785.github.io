@@ -5,490 +5,504 @@
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge'>
 <meta http-equiv='Content-Language' content='en'>
-<title>'sanskrit-lexicon/CORRECTIONS/63'</title>
+<title>sanskrit-lexicon/CORRECTIONS/63</title>
 <link href='github-c486157afcc5f58155a921bc675afb08733fbaa8dcf39ac2104d3.css' media='all' rel='stylesheet'>
 <link href='github2-da2e842cc3f0aaf33b727d0ef034243c12ab008fd09b24868b97.css' media='all' rel='stylesheet'>
 <meta http-equiv='x-pjax-version' content='4426702614c8182f33d1780ad1169662'>
 </head>
 <body class='logged_in  env-production windows vis-public'>
-<h1 align='center'><a href='https://github.com/sanskrit-lexicon/CORRECTIONS/issues/63' target='_blank'>WIL corrections from alphabetical misorderings part 1</h1><hr/><div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<h1 align='center'><a href='https://github.com/sanskrit-lexicon/CORRECTIONS/issues/63' target='_blank'>WIL corrections from alphabetical misorderings, part 1</h1><hr/><div id="#issue-53321678" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/funderburkjim" class="author">funderburkjim</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issue-53321678" class="timestamp">
       <time>2015-01-04 01:47:39</time>
     </a>
   </div>
 </div><div class="edit-comment-hide">
       <div class="comment-body markdown-body markdown-format js-comment-body">
-          <p>This issue looks for headword spelling errors drawn from a list of alphabetical misorderings in the Wilson dictionary.<br/>
-<br/>This part 1 deals with cases 1-100 from a list of 417 cases.
-<br/>Here is how the 417 cases were selected.
-<br/>Start with the list of Wilson headwords (wilhw2.txt), available as part of the
-<br/> xml downloads in the</p>
+          <p>This issue looks for headword spelling errors drawn from a list of alphabetical misorderings in the Wilson dictionary.  </p>
+<p>This part 1 deals with cases 1-100 from a list of 417 cases.</p>
+<p>Here is how the 417 cases were selected.</p>
+<p>Start with the list of Wilson headwords (wilhw2.txt), available as part of the
+xml downloads in the <a href="http://www.sanskrit-lexicon.uni-koeln.de/scans/WILScan/2014/web/webtc/download.html">Wilson downloads</a></p>
+<p>Program <a href="https://github.com/sanskrit-lexicon/WIL/blob/master/alphawork/hw2_chksort1.py">hw2_chksort1.py</a> constructs a list of all alphabetical misorderings
+in file <a href="https://github.com/sanskrit-lexicon/WIL/blob/master/alphawork/chksort1.txt">chksort1.txt</a> .A record in this file comes from the situation where the headword in a line of wilhw2 does not alphabetically precede the headword in the next line of wilhw2.   chksort1.txt has 1189 lines of misorderings.</p>
+<p>From prior work, it is known that there are some genuine misorderings in Wilson dictionary which are not due to spelling errors.  SInce the 1189 cases of chksort1 was deemed to be too large to handle all at once, some method for filtering cases was sought.</p>
+<p>The idea chosen was to look for cases where one of the two headwords involved in a misordering occurs ONLY in the Wilson dictionary, and not as a headword in any of the other dictionaries of the
+Cologne Sanskrit Lexicon.  This piece of information is implicitly available in the
+<a href="https://github.com/sanskrit-lexicon/CORRECTIONS/blob/master/sanhw1/sanhw1.txt">sanhw1.txt</a> file which represents headwords in all the dictionaries.</p>
+<p>The program <a href="https://github.com/sanskrit-lexicon/WIL/blob/master/alphawork/chksort1a.py">chksort1a.py</a> carries out this filtering.
+The program partitions chksort1.txt into two parts:
+413 <a href="https://github.com/sanskrit-lexicon/WIL/blob/master/alphawork/chksort1a.txt">more likely spelling errors</a>
+and 776 <a href="https://github.com/sanskrit-lexicon/WIL/blob/master/alphawork/chksort1a_rest.txt">less likely spelling errors</a> .
+The list of 417 headword correction <a href="https://github.com/sanskrit-lexicon/WIL/blob/master/alphawork/chksort1a_singletons.txt">candidates</a>  consists of the headwords involved in the list of more likely spelling errors.</p>
+<p>Finally, an <a href="https://github.com/sanskrit-lexicon/WIL/blob/master/alphawork/alpha1_ff.html">html</a>
+page with links to Wilson for the 417 candidates was made to facilitate examination of the cases.</p>
+<p><a href="https://funderburkjim.github.io/wil_alpha1_ff.html">Here</a> is the web page of links for anyone who may want to help.</p>
   </div>
   </div>
   </div>
   <br/>
-<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<div id="#issuecomment-68618057" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/funderburkjim" class="author">funderburkjim</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issuecomment-68618057" class="timestamp">
       <time>2015-01-04 02:22:37</time>
     </a>
   </div>
 </div><div class="edit-comment-hide">
       <div class="comment-body markdown-body markdown-format js-comment-body">
-          <p>1 akzadyatika -> akzadyUtika<br/>
-<br/>'U' missing in scan
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5604473/65457c00-938c-11e4-9f3b-8f71b7391503.png" alt="image" />
-<br/>2 aRqI -> aRvI<br/>
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5604480/abfb421a-938c-11e4-9c27-8b3c04f158c9.png" alt="image" />
-<br/>3 ataRva -> ataeva<br/>
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5604483/daba5226-938c-11e4-8f72-46d2a95f5e21.png" alt="image" />
-<br/>4 atftpi -> atfpti
-<br/>(-ptiH) Insatiableness, voraciousness.
-<br/>E. a neg. tfpti satisfaction.
-<br/>5 anirmmala -> anirmmala NO CHANGE
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5604489/517fbf22-938d-11e4-9f63-0dcd79d05d92.png" alt="image" />
-<br/>6 anizyanna -> anizpanna<br/>
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5604496/99b267f4-938d-11e4-8ade-d2197af9dfcc.png" alt="image" />
-<br/>7 anAti -> anIti<br/>
-<br/>'I' missing in print
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5604502/c8de7694-938d-11e4-875c-f7a420fabd15.png" alt="image" />
-<br/>8 anuvaNga -> anuzaNga<br/>
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5604508/1990b2dc-938e-11e4-92b1-b3129af4031a.png" alt="image" />
-<br/>9 anakakAla -> anekakAla<br/>
-<br/>print missing 'e'
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5604509/5104e31e-938e-11e4-984d-f9b4151cef41.png" alt="image" />
-<br/>10 antavAsam -> antarvAsas
-<br/>print missing 'r'; m/s confusion
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5604513/a304d656-938e-11e4-80b7-7ba3f0021688.png" alt="image" /> </p>
+          <p>1 akzadyatika -&gt; akzadyUtika
+'U' missing in scan
+<img src="https://cloud.githubusercontent.com/assets/6393033/5604473/65457c00-938c-11e4-9f3b-8f71b7391503.png" alt="image" /></p>
+<p>2 aRqI -&gt; aRvI
+<img src="https://cloud.githubusercontent.com/assets/6393033/5604480/abfb421a-938c-11e4-9c27-8b3c04f158c9.png" alt="image" /></p>
+<p>3 ataRva -&gt; ataeva
+<img src="https://cloud.githubusercontent.com/assets/6393033/5604483/daba5226-938c-11e4-8f72-46d2a95f5e21.png" alt="image" /></p>
+<p>4 atftpi -&gt; atfpti
+(-ptiH) Insatiableness, voraciousness.
+E. a neg. tfpti satisfaction.</p>
+<p>5 anirmmala -&gt; anirmmala NO CHANGE
+<img src="https://cloud.githubusercontent.com/assets/6393033/5604489/517fbf22-938d-11e4-9f63-0dcd79d05d92.png" alt="image" /></p>
+<p>6 anizyanna -&gt; anizpanna
+<img src="https://cloud.githubusercontent.com/assets/6393033/5604496/99b267f4-938d-11e4-8ade-d2197af9dfcc.png" alt="image" /></p>
+<p>7 anAti -&gt; anIti
+'I' missing in print
+<img src="https://cloud.githubusercontent.com/assets/6393033/5604502/c8de7694-938d-11e4-875c-f7a420fabd15.png" alt="image" /></p>
+<p>8 anuvaNga -&gt; anuzaNga
+<img src="https://cloud.githubusercontent.com/assets/6393033/5604508/1990b2dc-938e-11e4-92b1-b3129af4031a.png" alt="image" /></p>
+<p>9 anakakAla -&gt; anekakAla
+print missing 'e'
+<img src="https://cloud.githubusercontent.com/assets/6393033/5604509/5104e31e-938e-11e4-984d-f9b4151cef41.png" alt="image" /></p>
+<p>10 antavAsam -&gt; antarvAsas
+print missing 'r'; m/s confusion
+<img src="https://cloud.githubusercontent.com/assets/6393033/5604513/a304d656-938e-11e4-80b7-7ba3f0021688.png" alt="image" /></p>
   </div>
   </div>
   </div>
   <br/>
-<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<div id="#issuecomment-68618746" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/funderburkjim" class="author">funderburkjim</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issuecomment-68618746" class="timestamp">
       <time>2015-01-04 02:55:09</time>
     </a>
   </div>
 </div><div class="edit-comment-hide">
       <div class="comment-body markdown-body markdown-format js-comment-body">
-          <p>11 aparahata -> apahata<br/>
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5604522/e4e43a94-938e-11e4-835d-f398625d01d4.png" alt="image" />
-<br/>12 apahnfta -> apahnuta<br/>
-<br/>print error 'f' instead of 'u'
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5604534/c5b3b338-938f-11e4-9b50-13687ad30ab1.png" alt="image" />
-<br/>12a apahnonf -> apahnotf
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5604537/f456ce1e-938f-11e4-8b47-965a8f4b2a3c.png" alt="image" />
-<br/>13 arpAhita -> apohita<br/>
-<br/>'r' instead of 'o' in print.
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5604543/057651c8-9391-11e4-92d0-cfa69e234667.png" alt="image" />
-<br/>14 abDAgni -> abDyagni<br/>
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5604544/4e491494-9391-11e4-8089-dd5992c7df65.png" alt="image" />
-<br/>15 aByudBfta -> aByudDfta<br/>
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5604551/8e70b450-9391-11e4-8039-5599191d919e.png" alt="image" />
-<br/>16 ambaruh -> amburuh  ? (or amburuha?) [EDIT: amburuh confirmed by Dhaval]
-<br/>'u' missing in print
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5604561/08326914-9392-11e4-80c0-67c369e1621c.png" alt="image" />
-<br/>17 amlavetas -> amlavetasa
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5604570/8fd059f8-9392-11e4-8b36-a3585951e36a.png" alt="image" />
-<br/>18 araRyavawaka -> araRyacawaka<br/>
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5604574/cc478aaa-9392-11e4-9083-6dcaa37941c4.png" alt="image" />
-<br/>19 arDArha -> arGArha<br/>
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5604582/036a9568-9393-11e4-8ef1-8c3388c51c55.png" alt="image" />
-<br/>20 arjunatasa -> arjunatas
-<br/>print missing virAma
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5604583/2ca3fe06-9393-11e4-94d1-7146f4bf1952.png" alt="image" /> </p>
+          <p>11 aparahata -&gt; apahata
+<img src="https://cloud.githubusercontent.com/assets/6393033/5604522/e4e43a94-938e-11e4-835d-f398625d01d4.png" alt="image" /></p>
+<p>12 apahnfta -&gt; apahnuta
+print error 'f' instead of 'u'
+<img src="https://cloud.githubusercontent.com/assets/6393033/5604534/c5b3b338-938f-11e4-9b50-13687ad30ab1.png" alt="image" /></p>
+<p>12a apahnonf -&gt; apahnotf
+<img src="https://cloud.githubusercontent.com/assets/6393033/5604537/f456ce1e-938f-11e4-8b47-965a8f4b2a3c.png" alt="image" /></p>
+<p>13 arpAhita -&gt; apohita
+'r' instead of 'o' in print.
+<img src="https://cloud.githubusercontent.com/assets/6393033/5604543/057651c8-9391-11e4-92d0-cfa69e234667.png" alt="image" /></p>
+<p>14 abDAgni -&gt; abDyagni
+<img src="https://cloud.githubusercontent.com/assets/6393033/5604544/4e491494-9391-11e4-8089-dd5992c7df65.png" alt="image" /></p>
+<p>15 aByudBfta -&gt; aByudDfta
+<img src="https://cloud.githubusercontent.com/assets/6393033/5604551/8e70b450-9391-11e4-8039-5599191d919e.png" alt="image" /></p>
+<p>16 ambaruh -&gt; amburuh  ? (or amburuha?) [EDIT: amburuh confirmed by Dhaval]
+'u' missing in print
+<img src="https://cloud.githubusercontent.com/assets/6393033/5604561/08326914-9392-11e4-80c0-67c369e1621c.png" alt="image" /></p>
+<p>17 amlavetas -&gt; amlavetasa
+<img src="https://cloud.githubusercontent.com/assets/6393033/5604570/8fd059f8-9392-11e4-8b36-a3585951e36a.png" alt="image" /></p>
+<p>18 araRyavawaka -&gt; araRyacawaka
+<img src="https://cloud.githubusercontent.com/assets/6393033/5604574/cc478aaa-9392-11e4-9083-6dcaa37941c4.png" alt="image" /></p>
+<p>19 arDArha -&gt; arGArha
+<img src="https://cloud.githubusercontent.com/assets/6393033/5604582/036a9568-9393-11e4-8ef1-8c3388c51c55.png" alt="image" /></p>
+<p>20 arjunatasa -&gt; arjunatas
+print missing virAma
+<img src="https://cloud.githubusercontent.com/assets/6393033/5604583/2ca3fe06-9393-11e4-94d1-7146f4bf1952.png" alt="image" /></p>
   </div>
   </div>
   </div>
   <br/>
-<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<div id="#issuecomment-68619406" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/funderburkjim" class="author">funderburkjim</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issuecomment-68619406" class="timestamp">
       <time>2015-01-04 03:25:43</time>
     </a>
   </div>
 </div><div class="edit-comment-hide">
       <div class="comment-body markdown-body markdown-format js-comment-body">
-          <p>21 adDArdDa -> ardDArdDa<br/>
-<br/>print missing first 'r'
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5604590/de114d24-9393-11e4-9965-4d639d64060a.png" alt="image" />
-<br/>22 arbvAc -> arvvAc<br/>
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5604593/2f1d1dec-9394-11e4-9fd7-a3906f129c43.png" alt="image" />
-<br/>23 alpapraBARa -> alpapramARa<br/>
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5604600/e3b563a4-9394-11e4-94aa-d35bcb5359ad.png" alt="image" />
-<br/>24 alpavadin -> alpavAdin<br/>
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5604601/092b0328-9395-11e4-9a7e-e2dd750efbd5.png" alt="image" />
-<br/>25 avaCinna -> avacCinna<br/>
-<br/>25a avaCAta -> avacCAta
-<br/>26 avaCedana -> avacCedana<br/>
-<br/>cC required in derivates, tho WIL has 'C' only in these cases.
-<br/>See <a href="https://github.com/sanskrit-lexicon/CORRECTIONS/issues/58">discussion</a> re vicCa/viCa .<br/>
-<br/>27 avasvARa -> avazvARa<br/>
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5604616/91addae4-9396-11e4-8046-1461a90075f0.png" alt="image" />
-<br/>28 avalAt -> avastAt<br/>
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5604621/c8c34b2c-9396-11e4-937f-b52f1e7964b0.png" alt="image" />
-<br/>29 avipaw -> avipad
-<br/> w/d confusion
-<br/>f. (-पत्) Prosperity, ease.
-<br/>E. अ neg. विपद् misfortune.
-<br/>30 avyAyAtman -> avyayAtman<br/>
-<br/>print extra first 'A'
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5604631/734158a0-9397-11e4-96c6-ccbd3b69a516.png" alt="image" /> </p>
+          <p>21 adDArdDa -&gt; ardDArdDa
+print missing first 'r'
+<img src="https://cloud.githubusercontent.com/assets/6393033/5604590/de114d24-9393-11e4-9965-4d639d64060a.png" alt="image" /></p>
+<p>22 arbvAc -&gt; arvvAc
+<img src="https://cloud.githubusercontent.com/assets/6393033/5604593/2f1d1dec-9394-11e4-9fd7-a3906f129c43.png" alt="image" /></p>
+<p>23 alpapraBARa -&gt; alpapramARa
+<img src="https://cloud.githubusercontent.com/assets/6393033/5604600/e3b563a4-9394-11e4-94aa-d35bcb5359ad.png" alt="image" /></p>
+<p>24 alpavadin -&gt; alpavAdin
+<img src="https://cloud.githubusercontent.com/assets/6393033/5604601/092b0328-9395-11e4-9a7e-e2dd750efbd5.png" alt="image" /></p>
+<p>25 avaCinna -&gt; avacCinna
+25a avaCAta -&gt; avacCAta
+26 avaCedana -&gt; avacCedana
+cC required in derivates, tho WIL has 'C' only in these cases.
+See <a href="https://github.com/sanskrit-lexicon/CORRECTIONS/issues/58">discussion</a> re vicCa/viCa . </p>
+<p>27 avasvARa -&gt; avazvARa
+<img src="https://cloud.githubusercontent.com/assets/6393033/5604616/91addae4-9396-11e4-8046-1461a90075f0.png" alt="image" /></p>
+<p>28 avalAt -&gt; avastAt
+<img src="https://cloud.githubusercontent.com/assets/6393033/5604621/c8c34b2c-9396-11e4-937f-b52f1e7964b0.png" alt="image" /></p>
+<p>29 avipaw -&gt; avipad
+w/d confusion
+f. (-पत्) Prosperity, ease.
+E. अ neg. विपद् misfortune.</p>
+<p>30 avyAyAtman -&gt; avyayAtman
+print extra first 'A'
+<img src="https://cloud.githubusercontent.com/assets/6393033/5604631/734158a0-9397-11e4-96c6-ccbd3b69a516.png" alt="image" /></p>
   </div>
   </div>
   </div>
   <br/>
-<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<div id="#issuecomment-68646104" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/funderburkjim" class="author">funderburkjim</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issuecomment-68646104" class="timestamp">
       <time>2015-01-04 19:48:24</time>
     </a>
   </div>
 </div><div class="edit-comment-hide">
       <div class="comment-body markdown-body markdown-format js-comment-body">
-          <p>31 aSvamenanfpanandana -> aSvasenanfpanandana<br/>
-<br/>m/s confusion
-<br/>A king and saint; also SANATKUMÁRA.
-<br/>E. अश्वसेन a proper name, नृप a king, and नन्दन a son: the son of the king ASWASÉNA.
-<br/>32 akkiDenu -> asiDenu<br/>
-<br/>print error
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5607202/e53ad846-941e-11e4-89a1-18375c6fd619.png" alt="image" />
-<br/>33 amOndaryya -> asOndaryya<br/>
-<br/>m/s confusion
-<br/>n. (-र्य्यं) Ugliness.
-<br/>E. अ neg. सौन्दर्य्य beauty.
-<br/>34 asomyasvara -> asOmyasvara<br/>
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5607210/464fe48c-941f-11e4-8f5f-f72941115a01.png" alt="image" />
-<br/>35 astraRWaka -> astrakaRWaka<br/>
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5607213/7360f4e8-941f-11e4-98de-de5519f0ffab.png" alt="image" />
-<br/>36 asTala -> asTUla<br/>
-<br/>print missing 'U'
-<br/>Small, delicate.
-<br/>E. अ neg. स्थूल gross.
-<br/>37 ahabanIya -> ahavanIya<br/>
-<br/>b/v confusion
-<br/>1 Not to be offered, not fit or proper to be sacrificed.
-<br/>E. अ neg. हबनीय to be offered. [NOTE ERROR HERE ALSO]
-<br/>38 adInabAdin -> ahInavAdin<br/>
-<br/>b/v confusion.  also 'd'->'h' (print error)
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5607235/6c2c0a68-9420-11e4-97f8-e913d6693072.png" alt="image" />
-<br/>39 ahobata -> ahobata NO CHANGE
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5607237/a7b83ef8-9420-11e4-8f93-29cdf6820a86.png" alt="image" />
-<br/>40 Akfzwabat -> Akfzwavat<br/>
-<br/>b/v confusion
-<br/>1 Pulling, dragging, pulling up or out.
-<br/>2 Pulling to, attracting.
-<br/>3 Charming, fascinating.
-<br/>E. आकृष्ट and मतुप् aff. </p>
+          <p>31 aSvamenanfpanandana -&gt; aSvasenanfpanandana
+m/s confusion
+A king and saint; also SANATKUMÁRA.
+E. अश्वसेन a proper name, नृप a king, and नन्दन a son: the son of the king ASWASÉNA.</p>
+<p>32 akkiDenu -&gt; asiDenu
+print error
+<img src="https://cloud.githubusercontent.com/assets/6393033/5607202/e53ad846-941e-11e4-89a1-18375c6fd619.png" alt="image" /></p>
+<p>33 amOndaryya -&gt; asOndaryya
+m/s confusion
+n. (-र्य्यं) Ugliness.
+E. अ neg. सौन्दर्य्य beauty.</p>
+<p>34 asomyasvara -&gt; asOmyasvara
+<img src="https://cloud.githubusercontent.com/assets/6393033/5607210/464fe48c-941f-11e4-8f5f-f72941115a01.png" alt="image" /></p>
+<p>35 astraRWaka -&gt; astrakaRWaka
+<img src="https://cloud.githubusercontent.com/assets/6393033/5607213/7360f4e8-941f-11e4-98de-de5519f0ffab.png" alt="image" /></p>
+<p>36 asTala -&gt; asTUla
+print missing 'U'
+Small, delicate.
+E. अ neg. स्थूल gross.</p>
+<p>37 ahabanIya -&gt; ahavanIya
+b/v confusion
+1 Not to be offered, not fit or proper to be sacrificed.
+E. अ neg. हबनीय to be offered. [NOTE ERROR HERE ALSO]</p>
+<p>38 adInabAdin -&gt; ahInavAdin
+b/v confusion.  also 'd'-&gt;'h' (print error)
+<img src="https://cloud.githubusercontent.com/assets/6393033/5607235/6c2c0a68-9420-11e4-97f8-e913d6693072.png" alt="image" /></p>
+<p>39 ahobata -&gt; ahobata NO CHANGE
+<img src="https://cloud.githubusercontent.com/assets/6393033/5607237/a7b83ef8-9420-11e4-8f93-29cdf6820a86.png" alt="image" /></p>
+<p>40 Akfzwabat -&gt; Akfzwavat
+b/v confusion
+1 Pulling, dragging, pulling up or out.
+2 Pulling to, attracting.
+3 Charming, fascinating.
+E. आकृष्ट and मतुप् aff.</p>
   </div>
   </div>
   </div>
   <br/>
-<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<div id="#issuecomment-68647083" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/funderburkjim" class="author">funderburkjim</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issuecomment-68647083" class="timestamp">
       <time>2015-01-04 20:15:47</time>
     </a>
   </div>
 </div><div class="edit-comment-hide">
       <div class="comment-body markdown-body markdown-format js-comment-body">
-          <p>41 AneSvaryya -> AnESvaryya<br/>
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5607242/e7fb4136-9420-11e4-86c5-3a149d534c4c.png" alt="image" />
-<br/>42 Aplabana -> Aplavana<br/>
-<br/>b/v confusion
-<br/>1 Sprinkling with water.
-<br/>2 Bathing. आङ् before प्लु to swim, affix ल्युट्।
-<br/>43 Avattana -> Avarttana<br/>
-<br/>print missing 'r'
-<br/>1 Turning, turning round.
-<br/>2 Churning.
-<br/>3 Stirring any thing in fusion.
-<br/>4 Melting metals together, alligation.
-<br/>5 The time when shadows are cast in an opposite direction.
-<br/>6 Repeating, doing over again.
-<br/>7 Study, practising. f. (-नी) A crucible.
-<br/>E. आवर्त्त, ल्युट् affix; and ङीप् for the fem.
-<br/>44 ASaMSita -> ASaMsita<br/>
-<br/>print error 'Sita'
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5607250/57fcd562-9421-11e4-9646-e9a549e7667e.png" alt="image" />
-<br/>45 AsANganI -> AsaNganI<br/>
-<br/>print error
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5607256/b3c75d36-9421-11e4-9e81-ec2facaa144c.png" alt="image" />
-<br/>46 IrzyAMvaSa -> IrzyAvaSa<br/>
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5607260/e92916c2-9421-11e4-9e18-f39af315531e.png" alt="image" />
-<br/>47 ugnacaya -> ugracaya<br/>
-<br/>n/r confusion
-<br/>Desire.
-<br/>E. उग्र fierce, चय a heap.
-<br/>48 uccestara -> uccEstara<br/>
-<br/>print unclear at 'E'
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5607269/5092667e-9422-11e4-928f-bb0f9cc5fde4.png" alt="image" />
-<br/>49 ucCaqA -> ucCUqA<br/>
-<br/>YAT has ucCuqA.  AP,AP90,MW72,SHS have ucCUqA
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5607308/0f526ef0-9424-11e4-8092-842a3dd96183.png" alt="image" />
-<br/>50 uttarasAjYata -> uttarasaMjYita<br/>
-<br/>print missing 'I'
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5607319/58f88a26-9424-11e4-8bf2-029c199710fb.png" alt="image" /> </p>
+          <p>41 AneSvaryya -&gt; AnESvaryya
+<img src="https://cloud.githubusercontent.com/assets/6393033/5607242/e7fb4136-9420-11e4-86c5-3a149d534c4c.png" alt="image" /></p>
+<p>42 Aplabana -&gt; Aplavana
+b/v confusion
+1 Sprinkling with water.
+2 Bathing. आङ् before प्लु to swim, affix ल्युट्।</p>
+<p>43 Avattana -&gt; Avarttana
+print missing 'r'
+1 Turning, turning round.
+2 Churning.
+3 Stirring any thing in fusion.
+4 Melting metals together, alligation.
+5 The time when shadows are cast in an opposite direction.
+6 Repeating, doing over again.
+7 Study, practising. f. (-नी) A crucible.
+E. आवर्त्त, ल्युट् affix; and ङीप् for the fem.</p>
+<p>44 ASaMSita -&gt; ASaMsita
+print error 'Sita'
+<img src="https://cloud.githubusercontent.com/assets/6393033/5607250/57fcd562-9421-11e4-9646-e9a549e7667e.png" alt="image" /></p>
+<p>45 AsANganI -&gt; AsaNganI
+print error
+<img src="https://cloud.githubusercontent.com/assets/6393033/5607256/b3c75d36-9421-11e4-9e81-ec2facaa144c.png" alt="image" /></p>
+<p>46 IrzyAMvaSa -&gt; IrzyAvaSa
+<img src="https://cloud.githubusercontent.com/assets/6393033/5607260/e92916c2-9421-11e4-9e18-f39af315531e.png" alt="image" /></p>
+<p>47 ugnacaya -&gt; ugracaya
+n/r confusion
+Desire.
+E. उग्र fierce, चय a heap.</p>
+<p>48 uccestara -&gt; uccEstara
+print unclear at 'E'
+<img src="https://cloud.githubusercontent.com/assets/6393033/5607269/5092667e-9422-11e4-928f-bb0f9cc5fde4.png" alt="image" /></p>
+<p>49 ucCaqA -&gt; ucCUqA<br />
+YAT has ucCuqA.  AP,AP90,MW72,SHS have ucCUqA
+<img src="https://cloud.githubusercontent.com/assets/6393033/5607308/0f526ef0-9424-11e4-8092-842a3dd96183.png" alt="image" /></p>
+<p>50 uttarasAjYata -&gt; uttarasaMjYita
+print missing 'I'
+<img src="https://cloud.githubusercontent.com/assets/6393033/5607319/58f88a26-9424-11e4-8bf2-029c199710fb.png" alt="image" /></p>
   </div>
   </div>
   </div>
   <br/>
-<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<div id="#issuecomment-68650461" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/funderburkjim" class="author">funderburkjim</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issuecomment-68650461" class="timestamp">
       <time>2015-01-04 21:42:56</time>
     </a>
   </div>
 </div><div class="edit-comment-hide">
       <div class="comment-body markdown-body markdown-format js-comment-body">
-          <p>51 udamBUmi -> udagBUmi<br/>
-<br/>51a udamBUma -> udagBUma
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5607530/77432410-942d-11e4-9087-db8c107cde59.png" alt="image" />
-<br/>52 udruta -> uddruta<br/>
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5607555/bf072670-942d-11e4-8bd8-d4c14a2273c9.png" alt="image" />
-<br/>53 udbadDasaMskAra -> udbudDasaMskAra<br/>
-<br/>print missing 'u'
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5607566/19e2a51a-942e-11e4-9f28-d39e780cef4a.png" alt="image" />
-<br/>54 upaKatva -> upasvatva<br/>
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5607573/5e2f2b08-942e-11e4-8de9-a668c5c5ab32.png" alt="image" />
-<br/>55 upahvaya -> upahUya ? [EDIT: confirmed by Dhaval]
-<br/>By comparision to MW. Print hard to read.
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5607589/16267d92-942f-11e4-9a1c-4c0187159902.png" alt="image" />
-<br/>56 uptivida -> uptivid<br/>
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5607596/4f87327a-942f-11e4-8ab9-2c14add331f4.png" alt="image" />
-<br/>57 uzmaKeda -> uzmasveda<br/>
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5607606/ae315c74-942f-11e4-9bde-5792721dbc13.png" alt="image" />
-<br/>58 UrjjaKat -> Urjjasvat<br/>
-<br/>59 UrjaKala -> Urjasvala<br/>
-<br/>No good reason for doubling 'j' in 58, but not in 59
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5607629/78c9160c-9430-11e4-9121-f88326b8e257.png" alt="image" />
-<br/>60 UrvvayaNga -> UrvvyaNga<br/>
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5607634/bb110ff6-9430-11e4-8b5c-7b3019a4c992.png" alt="image" /> </p>
+          <p>51 udamBUmi -&gt; udagBUmi
+51a udamBUma -&gt; udagBUma
+<img src="https://cloud.githubusercontent.com/assets/6393033/5607530/77432410-942d-11e4-9087-db8c107cde59.png" alt="image" /></p>
+<p>52 udruta -&gt; uddruta
+<img src="https://cloud.githubusercontent.com/assets/6393033/5607555/bf072670-942d-11e4-8bd8-d4c14a2273c9.png" alt="image" /></p>
+<p>53 udbadDasaMskAra -&gt; udbudDasaMskAra
+print missing 'u'
+<img src="https://cloud.githubusercontent.com/assets/6393033/5607566/19e2a51a-942e-11e4-9f28-d39e780cef4a.png" alt="image" /></p>
+<p>54 upaKatva -&gt; upasvatva
+<img src="https://cloud.githubusercontent.com/assets/6393033/5607573/5e2f2b08-942e-11e4-8de9-a668c5c5ab32.png" alt="image" /></p>
+<p>55 upahvaya -&gt; upahUya ? [EDIT: confirmed by Dhaval]
+By comparision to MW. Print hard to read.
+<img src="https://cloud.githubusercontent.com/assets/6393033/5607589/16267d92-942f-11e4-9a1c-4c0187159902.png" alt="image" /></p>
+<p>56 uptivida -&gt; uptivid
+<img src="https://cloud.githubusercontent.com/assets/6393033/5607596/4f87327a-942f-11e4-8ab9-2c14add331f4.png" alt="image" /></p>
+<p>57 uzmaKeda -&gt; uzmasveda
+<img src="https://cloud.githubusercontent.com/assets/6393033/5607606/ae315c74-942f-11e4-9bde-5792721dbc13.png" alt="image" /></p>
+<p>58 UrjjaKat -&gt; Urjjasvat
+59 UrjaKala -&gt; Urjasvala
+No good reason for doubling 'j' in 58, but not in 59
+<img src="https://cloud.githubusercontent.com/assets/6393033/5607629/78c9160c-9430-11e4-9121-f88326b8e257.png" alt="image" /></p>
+<p>60 UrvvayaNga -&gt; UrvvyaNga
+<img src="https://cloud.githubusercontent.com/assets/6393033/5607634/bb110ff6-9430-11e4-8b5c-7b3019a4c992.png" alt="image" /></p>
   </div>
   </div>
   </div>
   <br/>
-<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<div id="#issuecomment-68654791" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/funderburkjim" class="author">funderburkjim</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issuecomment-68654791" class="timestamp">
       <time>2015-01-04 23:31:13</time>
     </a>
   </div>
 </div><div class="edit-comment-hide">
       <div class="comment-body markdown-body markdown-format js-comment-body">
-          <p>61 fkzaMhitA -> fksaMhitA<br/>
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5607638/0ededd0c-9431-11e4-9ebd-af2a84fc9f0c.png" alt="image" />
-<br/>62 ekatAma -> ekatama<br/>
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5607652/6acbfaa0-9431-11e4-812a-8bdb40aed61f.png" alt="image" />
-<br/>63 ekaGeRI -> ekaveRI<br/>
-<br/>1 A single braid of hair.
-<br/>2 A woman whose hair is tied in one braid.
-<br/>E. एक and वेणी a tress.
-<br/>64 eu -> eqa
-<br/>print error
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5607913/2313c52a-943c-11e4-8d75-4f256f281147.png" alt="image" />
-<br/>65 enaKin -> enasvin<br/>
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5607921/529850ae-943c-11e4-88a6-ebe57aec3e98.png" alt="image" />
-<br/>66 kaRawIna -> kaRAwIna<br/>
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5607931/a7d5a832-943c-11e4-9126-ed776e162b45.png" alt="image" />
-<br/>67 kaRqoGa -> kaRqvoGa<br/>
-<br/>kaRqoGa agrees with scan.<br/>
-<br/>But 'kaRqvoGa' in YAT,BUR,SKD,VCP<br/>
-<br/>and 'vo' agrees with etymology (sandhi of 'u' and o')
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5607985/f0f75586-943e-11e4-9a04-d110565da088.png" alt="image" />
-<br/>68 katotAri -> kapotAri<br/>
-<br/>print error
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5607989/3c693f20-943f-11e4-8e3d-4768052430a9.png" alt="image" />
-<br/>69 kamlala -> kambala<br/>
-<br/>print error
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5607991/8c63d652-943f-11e4-80b7-c5a60733862c.png" alt="image" />
-<br/>70 karkkaSadala -> karkaSadala<br/>
-<br/>Related words are spelled 'karka...' in WIL
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5607994/db8f10e8-943f-11e4-8b79-7cca85a81c38.png" alt="image" /> </p>
+          <p>61 fkzaMhitA -&gt; fksaMhitA
+<img src="https://cloud.githubusercontent.com/assets/6393033/5607638/0ededd0c-9431-11e4-9ebd-af2a84fc9f0c.png" alt="image" /></p>
+<p>62 ekatAma -&gt; ekatama
+<img src="https://cloud.githubusercontent.com/assets/6393033/5607652/6acbfaa0-9431-11e4-812a-8bdb40aed61f.png" alt="image" /></p>
+<p>63 ekaGeRI -&gt; ekaveRI
+1 A single braid of hair.
+2 A woman whose hair is tied in one braid.
+E. एक and वेणी a tress.</p>
+<p>64 eu -&gt; eqa
+print error
+<img src="https://cloud.githubusercontent.com/assets/6393033/5607913/2313c52a-943c-11e4-8d75-4f256f281147.png" alt="image" /></p>
+<p>65 enaKin -&gt; enasvin
+<img src="https://cloud.githubusercontent.com/assets/6393033/5607921/529850ae-943c-11e4-88a6-ebe57aec3e98.png" alt="image" /></p>
+<p>66 kaRawIna -&gt; kaRAwIna
+<img src="https://cloud.githubusercontent.com/assets/6393033/5607931/a7d5a832-943c-11e4-9126-ed776e162b45.png" alt="image" /></p>
+<p>67 kaRqoGa -&gt; kaRqvoGa<br />
+kaRqoGa agrees with scan.
+But 'kaRqvoGa' in YAT,BUR,SKD,VCP
+and 'vo' agrees with etymology (sandhi of 'u' and o')
+<img src="https://cloud.githubusercontent.com/assets/6393033/5607985/f0f75586-943e-11e4-9a04-d110565da088.png" alt="image" /></p>
+<p>68 katotAri -&gt; kapotAri
+print error
+<img src="https://cloud.githubusercontent.com/assets/6393033/5607989/3c693f20-943f-11e4-8e3d-4768052430a9.png" alt="image" /></p>
+<p>69 kamlala -&gt; kambala
+print error
+<img src="https://cloud.githubusercontent.com/assets/6393033/5607991/8c63d652-943f-11e4-80b7-c5a60733862c.png" alt="image" /></p>
+<p>70 karkkaSadala -&gt; karkaSadala
+Related words are spelled 'karka...' in WIL
+<img src="https://cloud.githubusercontent.com/assets/6393033/5607994/db8f10e8-943f-11e4-8b79-7cca85a81c38.png" alt="image" /></p>
   </div>
   </div>
   </div>
   <br/>
-<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<div id="#issuecomment-68655467" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/funderburkjim" class="author">funderburkjim</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issuecomment-68655467" class="timestamp">
       <time>2015-01-04 23:50:22</time>
     </a>
   </div>
 </div><div class="edit-comment-hide">
       <div class="comment-body markdown-body markdown-format js-comment-body">
-          <p>71 karkketara -> karkketara NO CHANGE
-<br/>WIL is irregular in doubling consonants after 'r'.
-<br/>72 karDa -> karGa<br/>
-<br/>D/G confusion
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5607998/69470378-9440-11e4-8f32-064641a1edc0.png" alt="image" />
-<br/>73 karRawa -> karRAwa<br/>
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5608000/8c9dde0a-9440-11e4-9e87-67ebd66b54ea.png" alt="image" />
-<br/>74 karmmasaviva -> karmmasaciva<br/>
-<br/>A minister, a subordinate one employed upon active duties, as a judge, a deputy, &amp;c.
-<br/>E. कर्म्म, and सचिव an adviser, a friend.<br/>
-<br/>75 karmmanusAratas -> karmmAnusAratas<br/>
-<br/>print missing 'A'
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5608007/f32e582a-9440-11e4-98ae-173340315727.png" alt="image" />
-<br/>76 kalaNkara -> kalaNkakara<br/>
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5608018/5ebeb56c-9441-11e4-91e9-cbbad3ab47c4.png" alt="image" />
-<br/>77 kalaKara -> kalasvara<br/>
-<br/>K/sv confusion
-<br/>A low musical sound.
-<br/>E. कल, and स्वर a note.
-<br/>78 kalAyasvaYja -> kalAyaKaYja<br/>
-<br/>sv/K confusion
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5608045/01660e3c-9442-11e4-962e-c5ba8276b430.png" alt="image" />
-<br/>79 kaliki -> kalki<br/>
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5608049/51c38c42-9442-11e4-99f9-e6a07669eb88.png" alt="image" />
-<br/>80 kakvaca -> kavaca<br/>
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5608052/852deb4a-9442-11e4-8cb3-672bb8cf0c43.png" alt="image" /> </p>
+          <p>71 karkketara -&gt; karkketara NO CHANGE
+WIL is irregular in doubling consonants after 'r'.</p>
+<p>72 karDa -&gt; karGa
+D/G confusion
+<img src="https://cloud.githubusercontent.com/assets/6393033/5607998/69470378-9440-11e4-8f32-064641a1edc0.png" alt="image" /></p>
+<p>73 karRawa -&gt; karRAwa
+<img src="https://cloud.githubusercontent.com/assets/6393033/5608000/8c9dde0a-9440-11e4-9e87-67ebd66b54ea.png" alt="image" /></p>
+<p>74 karmmasaviva -&gt; karmmasaciva
+A minister, a subordinate one employed upon active duties, as a judge, a deputy, &amp;c.
+E. कर्म्म, and सचिव an adviser, a friend. </p>
+<p>75 karmmanusAratas -&gt; karmmAnusAratas
+print missing 'A'
+<img src="https://cloud.githubusercontent.com/assets/6393033/5608007/f32e582a-9440-11e4-98ae-173340315727.png" alt="image" /></p>
+<p>76 kalaNkara -&gt; kalaNkakara
+<img src="https://cloud.githubusercontent.com/assets/6393033/5608018/5ebeb56c-9441-11e4-91e9-cbbad3ab47c4.png" alt="image" /></p>
+<p>77 kalaKara -&gt; kalasvara
+K/sv confusion
+A low musical sound.
+E. कल, and स्वर a note.</p>
+<p>78 kalAyasvaYja -&gt; kalAyaKaYja
+sv/K confusion
+<img src="https://cloud.githubusercontent.com/assets/6393033/5608045/01660e3c-9442-11e4-962e-c5ba8276b430.png" alt="image" /></p>
+<p>79 kaliki -&gt; kalki
+<img src="https://cloud.githubusercontent.com/assets/6393033/5608049/51c38c42-9442-11e4-99f9-e6a07669eb88.png" alt="image" /></p>
+<p>80 kakvaca -&gt; kavaca
+<img src="https://cloud.githubusercontent.com/assets/6393033/5608052/852deb4a-9442-11e4-8cb3-672bb8cf0c43.png" alt="image" /></p>
   </div>
   </div>
   </div>
   <br/>
-<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<div id="#issuecomment-68656473" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/funderburkjim" class="author">funderburkjim</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issuecomment-68656473" class="timestamp">
       <time>2015-01-05 00:18:58</time>
     </a>
   </div>
 </div><div class="edit-comment-hide">
       <div class="comment-body markdown-body markdown-format js-comment-body">
-          <p>81 kABAyus -> kAmAyus<br/>
-<br/>print error
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5608059/cc50bb92-9442-11e4-8bcc-2193ad32d510.png" alt="image" />
-<br/>82 kAyyakAla -> kAryyakAla<br/>
-<br/>83 kAyyacintA -> kAryyacintA<br/>
-<br/>Print missing 'r'
-<br/>84 kAryyABAjana -> kAryyaBAjana<br/>
-<br/>print error has 'A'
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5608082/df5092ce-9444-11e4-8899-c328623418b8.png" alt="image" />
-<br/>85 kAyyAdDAra -> kAryyodDAra<br/>
-<br/>print missing 'r','o'
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5608083/f947d2d2-9444-11e4-906d-de3384307f0c.png" alt="image" />
-<br/>86 kAzwatantu -> kAzWatantu<br/>
-<br/>'w' print error
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5608087/26eb5e66-9445-11e4-9725-5e2f8cb8e54c.png" alt="image" />
-<br/>87 kimpUruzeSvara -> kimpuruzeSvara<br/>
-<br/>'U' print error
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5608098/7fdd6c1c-9445-11e4-9077-ce65422164e9.png" alt="image" />
-<br/>88 kimbat -> kimvat<br/>
-<br/>b/v confusion
-<br/>Poor, mean, insignificant.
-<br/>E. किं a little, मतुप् possessive aff.
-<br/>89 kuWannaka -> kuwannaka<br/>
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5608106/e9177150-9445-11e4-8b5d-eb4e7fc3d742.png" alt="image" />
-<br/>90a kudmala -> kuqmala
-<br/>90 kudyalita -> kuqmalita<br/>
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5608127/81923654-9446-11e4-9613-866ffb158157.png" alt="image" /> </p>
+          <p>81 kABAyus -&gt; kAmAyus
+print error
+<img src="https://cloud.githubusercontent.com/assets/6393033/5608059/cc50bb92-9442-11e4-8bcc-2193ad32d510.png" alt="image" /></p>
+<p>82 kAyyakAla -&gt; kAryyakAla
+83 kAyyacintA -&gt; kAryyacintA
+Print missing 'r'</p>
+<p>84 kAryyABAjana -&gt; kAryyaBAjana
+print error has 'A'
+<img src="https://cloud.githubusercontent.com/assets/6393033/5608082/df5092ce-9444-11e4-8899-c328623418b8.png" alt="image" /></p>
+<p>85 kAyyAdDAra -&gt; kAryyodDAra
+print missing 'r','o'
+<img src="https://cloud.githubusercontent.com/assets/6393033/5608083/f947d2d2-9444-11e4-906d-de3384307f0c.png" alt="image" /></p>
+<p>86 kAzwatantu -&gt; kAzWatantu
+'w' print error
+<img src="https://cloud.githubusercontent.com/assets/6393033/5608087/26eb5e66-9445-11e4-9725-5e2f8cb8e54c.png" alt="image" /></p>
+<p>87 kimpUruzeSvara -&gt; kimpuruzeSvara
+'U' print error
+<img src="https://cloud.githubusercontent.com/assets/6393033/5608098/7fdd6c1c-9445-11e4-9077-ce65422164e9.png" alt="image" /></p>
+<p>88 kimbat -&gt; kimvat
+b/v confusion
+Poor, mean, insignificant.
+E. किं a little, मतुप् possessive aff.</p>
+<p>89 kuWannaka -&gt; kuwannaka
+<img src="https://cloud.githubusercontent.com/assets/6393033/5608106/e9177150-9445-11e4-8b5d-eb4e7fc3d742.png" alt="image" /></p>
+<p>90a kudmala -&gt; kuqmala
+90 kudyalita -&gt; kuqmalita
+<img src="https://cloud.githubusercontent.com/assets/6393033/5608127/81923654-9446-11e4-9613-866ffb158157.png" alt="image" /></p>
   </div>
   </div>
   </div>
   <br/>
-<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<div id="#issuecomment-68657493" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/funderburkjim" class="author">funderburkjim</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issuecomment-68657493" class="timestamp">
       <time>2015-01-05 00:46:01</time>
     </a>
   </div>
 </div><div class="edit-comment-hide">
       <div class="comment-body markdown-body markdown-format js-comment-body">
-          <p>91 kusumalavaka -> kusumastavaka<br/>
-<br/>Some dictionaries have stavaka, some stabaka<br/>
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5608139/1f49a666-9447-11e4-843e-9ce4386c2381.png" alt="image" />
-<br/>92 kfzRacivftA -> kfzRatrivftA<br/>
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5608159/23f4bd30-9448-11e4-815d-47df274b7273.png" alt="image" />
-<br/>93 kokamada -> kokanada<br/>
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5608164/5cf0b526-9448-11e4-8bff-10dc6b0bdc30.png" alt="image" />
-<br/>94 kozazwadDi -> kozazvfdDi<br/>
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5608170/887a32bc-9448-11e4-928f-8889c2cd0505.png" alt="image" />
-<br/>95 kEkza -> kOkza<br/>
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5608172/bdada91e-9448-11e4-996e-004d6c764040.png" alt="image" />
-<br/>96 kANkiRa -> kONkiRa<br/>
-<br/>print missing 'O'
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5608181/13258470-9449-11e4-9f3e-d88c0cfa89e1.png" alt="image" />
-<br/>97 kOYja -> kOYca<br/>
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5608189/4aeccdfa-9449-11e4-80ad-aa57fb74ad97.png" alt="image" />
-<br/>98 kOYcAyanI -> kOYjAyanI<br/>
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5608195/9882d9a6-9449-11e4-8381-24d126fc0382.png" alt="image" />
-<br/>98a kASika -> kOSika
-<br/>print missing 'o'
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5608209/040953da-944a-11e4-9fcd-150514a47ca2.png" alt="image" />
-<br/>99 kOsumma -> kOsumBa<br/>
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5608211/1a739fc2-944a-11e4-8de9-490d108005f4.png" alt="image" />
-<br/>100 kAsftika -> kOsftika<br/>
-<br/>print missing 'O'
-<br/><img src="https://cloud.githubusercontent.com/assets/6393033/5608218/4dc6476c-944a-11e4-84a5-0fef690a3e4e.png" alt="image" /> </p>
+          <p>91 kusumalavaka -&gt; kusumastavaka
+Some dictionaries have stavaka, some stabaka
+<img src="https://cloud.githubusercontent.com/assets/6393033/5608139/1f49a666-9447-11e4-843e-9ce4386c2381.png" alt="image" /></p>
+<p>92 kfzRacivftA -&gt; kfzRatrivftA
+<img src="https://cloud.githubusercontent.com/assets/6393033/5608159/23f4bd30-9448-11e4-815d-47df274b7273.png" alt="image" /></p>
+<p>93 kokamada -&gt; kokanada
+<img src="https://cloud.githubusercontent.com/assets/6393033/5608164/5cf0b526-9448-11e4-8bff-10dc6b0bdc30.png" alt="image" /></p>
+<p>94 kozazwadDi -&gt; kozazvfdDi
+<img src="https://cloud.githubusercontent.com/assets/6393033/5608170/887a32bc-9448-11e4-928f-8889c2cd0505.png" alt="image" /></p>
+<p>95 kEkza -&gt; kOkza
+<img src="https://cloud.githubusercontent.com/assets/6393033/5608172/bdada91e-9448-11e4-996e-004d6c764040.png" alt="image" /></p>
+<p>96 kANkiRa -&gt; kONkiRa
+print missing 'O'
+<img src="https://cloud.githubusercontent.com/assets/6393033/5608181/13258470-9449-11e4-9f3e-d88c0cfa89e1.png" alt="image" /></p>
+<p>97 kOYja -&gt; kOYca
+<img src="https://cloud.githubusercontent.com/assets/6393033/5608189/4aeccdfa-9449-11e4-80ad-aa57fb74ad97.png" alt="image" /></p>
+<p>98 kOYcAyanI -&gt; kOYjAyanI
+<img src="https://cloud.githubusercontent.com/assets/6393033/5608195/9882d9a6-9449-11e4-8381-24d126fc0382.png" alt="image" /></p>
+<p>98a kASika -&gt; kOSika
+print missing 'o'
+<img src="https://cloud.githubusercontent.com/assets/6393033/5608209/040953da-944a-11e4-9fcd-150514a47ca2.png" alt="image" /></p>
+<p>99 kOsumma -&gt; kOsumBa
+<img src="https://cloud.githubusercontent.com/assets/6393033/5608211/1a739fc2-944a-11e4-8de9-490d108005f4.png" alt="image" /></p>
+<p>100 kAsftika -&gt; kOsftika
+print missing 'O'
+<img src="https://cloud.githubusercontent.com/assets/6393033/5608218/4dc6476c-944a-11e4-84a5-0fef690a3e4e.png" alt="image" /></p>
   </div>
   </div>
   </div>
   <br/>
-<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<div id="#issuecomment-68657531" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/funderburkjim" class="author">funderburkjim</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issuecomment-68657531" class="timestamp">
       <time>2015-01-05 00:46:46</time>
     </a>
   </div>
@@ -499,150 +513,137 @@
   </div>
   </div>
   <br/>
-<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<div id="#issuecomment-68666859" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/drdhaval2785" class="author">drdhaval2785</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issuecomment-68666859" class="timestamp">
       <time>2015-01-05 04:19:01</time>
     </a>
   </div>
 </div><div class="edit-comment-hide">
       <div class="comment-body markdown-body markdown-format js-comment-body">
-          <pre><code>
-    <br/>16 ambaruh -> amburuh ? (or amburuha?) 
-    <br/>``` 
-    <br/>amburuh</p>
+          <pre><code>16 ambaruh -&gt; amburuh ? (or amburuha?)</code></pre>
+<p>amburuh</p>
   </div>
   </div>
   </div>
   <br/>
-<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<div id="#issuecomment-68667353" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/drdhaval2785" class="author">drdhaval2785</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issuecomment-68667353" class="timestamp">
       <time>2015-01-05 04:29:22</time>
     </a>
   </div>
 </div><div class="edit-comment-hide">
       <div class="comment-body markdown-body markdown-format js-comment-body">
-          <pre><code>
-    <br/>55 upahvaya -> upahUya ? 
-    <br/>By comparision to MW. Print hard to read. 
-    <br/>``` 
-    <br/>upahUya</p>
+          <pre><code>55 upahvaya -&gt; upahUya ?
+By comparision to MW. Print hard to read.</code></pre>
+<p>upahUya</p>
   </div>
   </div>
   </div>
   <br/>
-<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<div id="#issuecomment-68667389" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/drdhaval2785" class="author">drdhaval2785</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issuecomment-68667389" class="timestamp">
       <time>2015-01-05 04:30:19</time>
     </a>
   </div>
 </div><div class="edit-comment-hide">
       <div class="comment-body markdown-body markdown-format js-comment-body">
-          <pre><code>
-    <br/>58 UrjjaKat -> Urjjasvat 
-    <br/>59 UrjaKala -> Urjasvala 
-    <br/>No good reason for doubling 'j' in 58, but not in 59 
-    <br/>``` 
-    <br/>I agree. But it is optional. So can't blame either</p>
+          <pre><code>58 UrjjaKat -&gt; Urjjasvat
+59 UrjaKala -&gt; Urjasvala
+No good reason for doubling 'j' in 58, but not in 59</code></pre>
+<p>I agree. But it is optional. So can't blame either</p>
   </div>
   </div>
   </div>
   <br/>
-<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<div id="#issuecomment-68667625" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/drdhaval2785" class="author">drdhaval2785</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issuecomment-68667625" class="timestamp">
       <time>2015-01-05 04:36:26</time>
     </a>
   </div>
 </div><div class="edit-comment-hide">
       <div class="comment-body markdown-body markdown-format js-comment-body">
-          <pre><code>
-    <br/>87 kimpUruzeSvara -> kimpuruzeSvara  
-    <br/>``` 
-    <br/>Both U and u are valid options. See entry of kimpuruza below. 
-    <br/>But in this case, alphabetical ordering mandates 'u'. 
-    <br/>So suggestion is correct. 
-    <br/><image src="https://cloud.githubusercontent.com/assets/5755132/5609266/773dac70-94c2-11e4-95e0-16dce15cc155.PNG"></image> 
-    <br/></p>
+          <pre><code>87 kimpUruzeSvara -&gt; kimpuruzeSvara </code></pre>
+<p>Both U and u are valid options. See entry of kimpuruza below.
+But in this case, alphabetical ordering mandates 'u'.
+So suggestion is correct.</p>
+<p><img src="https://cloud.githubusercontent.com/assets/5755132/5609266/773dac70-94c2-11e4-95e0-16dce15cc155.PNG" alt="capture" /></p>
   </div>
   </div>
   </div>
   <br/>
-<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<div id="#issuecomment-68667751" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/drdhaval2785" class="author">drdhaval2785</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issuecomment-68667751" class="timestamp">
       <time>2015-01-05 04:39:11</time>
     </a>
   </div>
 </div><div class="edit-comment-hide">
       <div class="comment-body markdown-body markdown-format js-comment-body">
-          <pre><code>
-    <br/>90a kudmala -> kuqmala 
-    <br/>90 kudyalita -> kuqmalita  
-    <br/>``` 
-    <br/>Both kudmala and kuqmala are valid words. 
-    <br/>So, be careful about the L number you change. Read from the explanation and do the change.</p>
+          <pre><code>90a kudmala -&gt; kuqmala
+90 kudyalita -&gt; kuqmalita </code></pre>
+<p>Both kudmala and kuqmala are valid words.
+So, be careful about the L number you change. Read from the explanation and do the change.</p>
   </div>
   </div>
   </div>
   <br/>
-<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<div id="#issuecomment-68667792" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/drdhaval2785" class="author">drdhaval2785</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issuecomment-68667792" class="timestamp">
       <time>2015-01-05 04:40:19</time>
     </a>
   </div>
 </div><div class="edit-comment-hide">
       <div class="comment-body markdown-body markdown-format js-comment-body">
-          <pre><code>
-    <br/>91 kusumalavaka -> kusumastavaka 
-    <br/>Some dictionaries have stavaka, some stabaka  
-    <br/>``` 
-    <br/>Let's treat both stavaka and stabaka as valid forms. So change is correct</p>
+          <pre><code>91 kusumalavaka -&gt; kusumastavaka
+Some dictionaries have stavaka, some stabaka </code></pre>
+<p>Let's treat both stavaka and stabaka as valid forms. So change is correct</p>
   </div>
   </div>
   </div>
   <br/>
-<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<div id="#issuecomment-68667871" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/drdhaval2785" class="author">drdhaval2785</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issuecomment-68667871" class="timestamp">
       <time>2015-01-05 04:41:55</time>
     </a>
   </div>
@@ -653,33 +654,33 @@
   </div>
   </div>
   <br/>
-<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<div id="#issuecomment-75090808" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/drdhaval2785" class="author">drdhaval2785</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issuecomment-75090808" class="timestamp">
       <time>2015-02-19 16:58:31</time>
     </a>
   </div>
 </div><div class="edit-comment-hide">
       <div class="comment-body markdown-body markdown-format js-comment-body">
-          <p><strong><a href="https://github.com/funderburkjim" target="_blank">@funderburkjim</a></strong><br/>
-<br/>If the suggestions are incorporated, is it good time to close all three issues of WIL?</p>
+          <p><strong><a href="https://github.com/funderburkjim" target="_blank">@funderburkjim</a></strong>
+If the suggestions are incorporated, is it good time to close all three issues of WIL?</p>
   </div>
   </div>
   </div>
   <br/>
-<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<div id="#issuecomment-75154120" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/funderburkjim" class="author">funderburkjim</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issuecomment-75154120" class="timestamp">
       <time>2015-02-19 22:39:43</time>
     </a>
   </div>

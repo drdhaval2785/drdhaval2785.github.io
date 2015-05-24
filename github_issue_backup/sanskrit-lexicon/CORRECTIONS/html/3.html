@@ -5,92 +5,94 @@
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge'>
 <meta http-equiv='Content-Language' content='en'>
-<title>'sanskrit-lexicon/CORRECTIONS/3'</title>
+<title>sanskrit-lexicon/CORRECTIONS/3</title>
 <link href='github-c486157afcc5f58155a921bc675afb08733fbaa8dcf39ac2104d3.css' media='all' rel='stylesheet'>
 <link href='github2-da2e842cc3f0aaf33b727d0ef034243c12ab008fd09b24868b97.css' media='all' rel='stylesheet'>
 <meta http-equiv='x-pjax-version' content='4426702614c8182f33d1780ad1169662'>
 </head>
 <body class='logged_in  env-production windows vis-public'>
-<h1 align='center'><a href='https://github.com/sanskrit-lexicon/CORRECTIONS/issues/3' target='_blank'>Extra space in Devanagari rendering</h1><hr/><div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<h1 align='center'><a href='https://github.com/sanskrit-lexicon/CORRECTIONS/issues/3' target='_blank'>Extra space in Devanagari rendering</h1><hr/><div id="#issue-44912159" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/drdhaval2785" class="author">drdhaval2785</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issue-44912159" class="timestamp">
       <time>2014-10-05 11:47:15</time>
     </a>
   </div>
 </div><div class="edit-comment-hide">
       <div class="comment-body markdown-body markdown-format js-comment-body">
           <p>At some places there are extra spaces in Devanagari rendering
-<br/>e.g. उभयतःप्र उग instead of उभयतःप्रउग.
-<br/>This is mostly seen in cases of hiatus</p>
+e.g. उभयतःप्र उग instead of उभयतःप्रउग.
+This is mostly seen in cases of hiatus</p>
   </div>
   </div>
   </div>
   <br/>
-<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<div id="#issuecomment-63256618" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/drdhaval2785" class="author">drdhaval2785</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issuecomment-63256618" class="timestamp">
       <time>2014-11-17 03:46:18</time>
     </a>
   </div>
 </div><div class="edit-comment-hide">
       <div class="comment-body markdown-body markdown-format js-comment-body">
-          <p><strong><a href="https://github.com/funderburkjim" target="_blank">@funderburkjim</a></strong><br/>
-<br/>As you are now well versed in Hiatus - time to handle this.<br/>
-<br/>A small tweak in transcoder can do this for sure. </p>
+          <p><strong><a href="https://github.com/funderburkjim" target="_blank">@funderburkjim</a></strong>
+As you are now well versed in Hiatus - time to handle this.
+A small tweak in transcoder can do this for sure.</p>
   </div>
   </div>
   </div>
   <br/>
-<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<div id="#issuecomment-64056814" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/funderburkjim" class="author">funderburkjim</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issuecomment-64056814" class="timestamp">
       <time>2014-11-21 23:56:44</time>
     </a>
   </div>
 </div><div class="edit-comment-hide">
       <div class="comment-body markdown-body markdown-format js-comment-body">
-          <p>I investigated this for the MW (2014) displays, and found the following code as the culprit (in web/webtc/disp.php):
-<br/><code> <br/>//   Rarely, two vowels occur consecutively (e.g. afRin). <br/>//   These don't print properly in devanagari. <br/>$key = preg_replace('/([aAiIuIfFxXeEoO])([aAiIuIfFxXeEoO])/',\"\\\\1 \\\\2\",$key); <br/></code>
-<br/>So, apparently several years ago it appeared that there was a problem with rendering consecutive vowels in Devanagari, so an extra space was introduced here.
-<br/>I commented out the $key = ... line, and the space goes away.
-<br/>This should fix this issue for MW.
-<br/>I had already done the change for MW72, SCH, SHS, PD, AP, AP90,<br/>
-<br/>I've done the same just now for VCP, SKD, PWG, PW, STC.
-<br/>If you notice the problem elsewhere, let me know.</p>
+          <p>I investigated this for the MW (2014) displays, and found the following code as the culprit (in web/webtc/disp.php):</p>
+<pre><code>//   Rarely, two vowels occur consecutively (e.g. afRin).
+//   These don't print properly in devanagari.
+$key = preg_replace('/([aAiIuIfFxXeEoO])([aAiIuIfFxXeEoO])/',"\\1 \\2",$key); </code></pre>
+<p>So, apparently several years ago it appeared that there was a problem with rendering consecutive vowels in Devanagari, so an extra space was introduced here.</p>
+<p>I commented out the $key = ... line, and the space goes away.</p>
+<p>This should fix this issue for MW.</p>
+<p>I had already done the change for MW72, SCH, SHS, PD, AP, AP90, </p>
+<p>I've done the same just now for VCP, SKD, PWG, PW, STC.</p>
+<p>If you notice the problem elsewhere, let me know.</p>
   </div>
   </div>
   </div>
   <br/>
-<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<div id="#issuecomment-64070191" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/drdhaval2785" class="author">drdhaval2785</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issuecomment-64070191" class="timestamp">
       <time>2014-11-22 05:39:10</time>
     </a>
   </div>
 </div><div class="edit-comment-hide">
       <div class="comment-body markdown-body markdown-format js-comment-body">
           <p>Seems fine now.
-<br/><img src="https://cloud.githubusercontent.com/assets/5755132/5153054/f8d87628-7237-11e4-917e-98673c7cc29f.PNG" alt="capture" /> </p>
+<img src="https://cloud.githubusercontent.com/assets/5755132/5153054/f8d87628-7237-11e4-917e-98673c7cc29f.PNG" alt="capture" /></p>
   </div>
   </div>
   </div>

@@ -5,136 +5,136 @@
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge'>
 <meta http-equiv='Content-Language' content='en'>
-<title>'sanskrit-lexicon/CORRECTIONS/33'</title>
+<title>sanskrit-lexicon/CORRECTIONS/33</title>
 <link href='github-c486157afcc5f58155a921bc675afb08733fbaa8dcf39ac2104d3.css' media='all' rel='stylesheet'>
 <link href='github2-da2e842cc3f0aaf33b727d0ef034243c12ab008fd09b24868b97.css' media='all' rel='stylesheet'>
 <meta http-equiv='x-pjax-version' content='4426702614c8182f33d1780ad1169662'>
 </head>
 <body class='logged_in  env-production windows vis-public'>
-<h1 align='center'><a href='https://github.com/sanskrit-lexicon/CORRECTIONS/issues/33' target='_blank'>anusvAra and its conversion - Sanskrit grammar</h1><hr/><div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<h1 align='center'><a href='https://github.com/sanskrit-lexicon/CORRECTIONS/issues/33' target='_blank'>anusvAra and its conversion - Sanskrit grammar</h1><hr/><div id="#issue-48596096" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/drdhaval2785" class="author">drdhaval2785</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issue-48596096" class="timestamp">
       <time>2014-11-13 04:10:19</time>
     </a>
   </div>
 </div><div class="edit-comment-hide">
       <div class="comment-body markdown-body markdown-format js-comment-body">
-          <p>This is forked from discussion at <a href="https://github.com/sanskrit-lexicon/CORRECTIONS/issues/21#issuecomment-62783257">https://github.com/sanskrit-lexicon/CORRECTIONS/issues/21#issuecomment-62783257</a>.
-<br/><strong><a href="https://github.com/funderburkjim" target="_blank">@funderburkjim</a></strong><br/>
-<br/>Let me clarify the position of Sanskrit grammar on the anusvAra issue.
-<br/>A. There are two sUtras which mandate anusvAra in first place.
-<br/>   मोऽनुस्वारः and नश्चापदान्तस्य झलि.
-<br/>Let me explain them from coding perspective for a dictionary.
-<br/> A1. मोऽनुस्वारः -> When 'm' is at the end of the first member of a samAsa (compound) and is followed by any of consonant (kKgGNcCjJYwWqQRtTdDnpPbBmyrlvSzsh), it gets converted to anusvAra 'M'.
-<br/> A2. नश्चापदान्तस्य झलि -> When 'n' is not at the end of a member of compound, and is followed by any of these 'kKgGcCjJwWqQtTdDpPbBSzsh', it gets converted to anusvAra 'M'.
-<br/>for our example 'idam+kArya' -> 'idaM+kArya'.
-<br/>B. After conversion to 'M' from either 'm' or 'n', we check whether they are at the end of a pada or not (for dictionary purposes, we check whether they are at the end of first member of a samAsa (compound) or not ).
-<br/>e.g. 'idaM+kAraya' - here M is at the end of the first member of samAsa.
-<br/>  B1. If yes - अनुस्वारस्य ययि परसवर्णः and वा पदान्तस्य will apply. (optional forms)
-<br/>  B2. If no - अनुस्वारस्य ययि परसवर्णः will apply (mandatory).
-<br/>Let me copy paste the edited version of relavent code from my subanta derivation machine, so that you can get what is happening in these two sUtras.
-<br/><code>/<i> anusvArasya yayi parasavarNaH (8.4.58) </i>/ <br/>$mm = array(\"My\",\"Mv\",\"Mr\",\"Ml\",\"MY\",\"Mm\",\"MN\",\"MR\",\"Mn\",\"MJ\",\"MB\",\"MG\",\"MQ\",\"MD\",\"Mj\",\"Mb\",\"Mg\",\"Mq\",\"Md\",\"MK\",\"MP\",\"MC\",\"MW\",\"MT\",\"Mc\",\"Mw\",\"Mt\",\"Mk\",\"Mp\"); // anusvAra+yay.</code>
-<br/><code>$pa = array(\"!yy\",\"!vv\",\"!rr\",\"!ll\",\"YY\",\"mm\",\"NN\",\"RR\",\"nn\",\"YJ\",\"mB\",\"NG\",\"RQ\",\"nD\",\"Yj\",\"mb\",\"Ng\",\"Rq\",\"nd\",\"NK\",\"mP\",\"YC\",\"RW\",\"nT\",\"Yc\",\"Rw\",\"nt\",\"Nk\",\"mp\"); // its replacement.</code>
-<br/><code>if (in_array($text,$mm)  // also check whether it is not at end of a samAsa</code>
-<br/><code>{ <br/>$text = str_replace($mm,$pa,$text); <br/>echo \"<p class = sa >By anusvArasya yayi parasavarNaH (8.4.58) :</p>\"; <br/>echo \"<p class = sa >अनुस्वारस्य ययि परसवर्णः (८.४.५८) :</p>\"; <br/>}</code>
-<br/><code>/<i> anusvArasya yayi parasavarNaH (8.4.58) and vA padAntasya (8.4.59) </i>/</code>
-<br/><code>elseif (in_array($text,$mm) // also check whether it is at the end of first member of samAsa</code>
-<br/><code>{ <br/>$input1 = str_replace($mm,$pa,$input); // optional. The other form is $input.</code>
-<br/><code>echo \"<p class = sa >By anusvArasya yayi parasavarNaH (8.4.58) and vA padAntasya (8.4.59) :</p> <br/>echo \"<p class = sa >अनुस्वारस्य ययि परसवर्णः (८.४.५८) तथा वा पदान्तस्य (८.४.५९) :</p> <br/>}</code>
-<br/>If it is at the end of first member of a samAsa e.g. idaM+kArya it gets two optional forms 'idaMkArya' and 'idaNkArya'.
-<br/>If it is not at the end of first member of a samAsa - it gets only mandatory form with conversion. e.g. idam+tana -> Here tana is a suffix and the word is not a samAsa. Therefore it is mandatorily to be converted to 'idantana'.
-<br/>So,
-<br/>take home message is -
-<br/><strong>If we don't want to enter into whether it is a samAsa or not - we can safely take the converted form
-<br/>'idaNkArya' and 'idantana'.</strong>
-<br/>This way we won't be wrong any how.
-<br/>N.B. Even if the MW shows 'idaMkArya' -> it would be sorted at the place of 'idaNkArya' only. I will share such screenshot later. </p>
+          <p>This is forked from discussion at <a href="https://github.com/sanskrit-lexicon/CORRECTIONS/issues/21#issuecomment-62783257">https://github.com/sanskrit-lexicon/CORRECTIONS/issues/21#issuecomment-62783257</a>.</p>
+<p><strong><a href="https://github.com/funderburkjim" target="_blank">@funderburkjim</a></strong> </p>
+<p>Let me clarify the position of Sanskrit grammar on the anusvAra issue.</p>
+<p>A. There are two sUtras which mandate anusvAra in first place.
+मोऽनुस्वारः and नश्चापदान्तस्य झलि.
+Let me explain them from coding perspective for a dictionary.
+A1. मोऽनुस्वारः -&gt; When 'm' is at the end of the first member of a samAsa (compound) and is followed by any of consonant (kKgGNcCjJYwWqQRtTdDnpPbBmyrlvSzsh), it gets converted to anusvAra 'M'.
+A2. नश्चापदान्तस्य झलि -&gt; When 'n' is not at the end of a member of compound, and is followed by any of these 'kKgGcCjJwWqQtTdDpPbBSzsh', it gets converted to anusvAra 'M'.
+for our example 'idam+kArya' -&gt; 'idaM+kArya'.</p>
+<p>B. After conversion to 'M' from either 'm' or 'n', we check whether they are at the end of a pada or not (for dictionary purposes, we check whether they are at the end of first member of a samAsa (compound) or not ).
+e.g. 'idaM+kAraya' - here M is at the end of the first member of samAsa.</p>
+<p>B1. If yes - अनुस्वारस्य ययि परसवर्णः and वा पदान्तस्य will apply. (optional forms)
+B2. If no - अनुस्वारस्य ययि परसवर्णः will apply (mandatory).</p>
+<p>Let me copy paste the edited version of relavent code from my subanta derivation machine, so that you can get what is happening in these two sUtras.</p>
+<p><code>/* anusvArasya yayi parasavarNaH (8.4.58) */ $mm = array("My","Mv","Mr","Ml","MY","Mm","MN","MR","Mn","MJ","MB","MG","MQ","MD","Mj","Mb","Mg","Mq","Md","MK","MP","MC","MW","MT","Mc","Mw","Mt","Mk","Mp"); // anusvAra+yay.</code>
+<code>$pa = array("!yy","!vv","!rr","!ll","YY","mm","NN","RR","nn","YJ","mB","NG","RQ","nD","Yj","mb","Ng","Rq","nd","NK","mP","YC","RW","nT","Yc","Rw","nt","Nk","mp"); // its replacement.</code></p>
+<p><code>if (in_array($text,$mm)  // also check whether it is not at end of a samAsa</code>
+<code>{ $text = str_replace($mm,$pa,$text); echo "&lt;p class = sa &gt;By anusvArasya yayi parasavarNaH (8.4.58) :&lt;/p&gt;"; echo "&lt;p class = sa &gt;अनुस्वारस्य ययि परसवर्णः (८.४.५८) :&lt;/p&gt;"; }</code></p>
+<p><code>/* anusvArasya yayi parasavarNaH (8.4.58) and vA padAntasya (8.4.59) */</code>
+<code>elseif (in_array($text,$mm) // also check whether it is at the end of first member of samAsa</code>
+<code>{ $input1 = str_replace($mm,$pa,$input); // optional. The other form is $input.</code>
+<code>echo "&lt;p class = sa &gt;By anusvArasya yayi parasavarNaH (8.4.58) and vA padAntasya (8.4.59) :&lt;/p&gt; echo "&lt;p class = sa &gt;अनुस्वारस्य ययि परसवर्णः (८.४.५८) तथा वा पदान्तस्य (८.४.५९) :&lt;/p&gt; }</code></p>
+<p>If it is at the end of first member of a samAsa e.g. idaM+kArya it gets two optional forms 'idaMkArya' and 'idaNkArya'.
+If it is not at the end of first member of a samAsa - it gets only mandatory form with conversion. e.g. idam+tana -&gt; Here tana is a suffix and the word is not a samAsa. Therefore it is mandatorily to be converted to 'idantana'.</p>
+<p>So,
+take home message is -
+<strong>If we don't want to enter into whether it is a samAsa or not - we can safely take the converted form
+'idaNkArya' and 'idantana'.</strong>
+This way we won't be wrong any how.</p>
+<p>N.B. Even if the MW shows 'idaMkArya' -&gt; it would be sorted at the place of 'idaNkArya' only. I will share such screenshot later.</p>
   </div>
   </div>
   </div>
   <br/>
-<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<div id="#issuecomment-62891234" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/drdhaval2785" class="author">drdhaval2785</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issuecomment-62891234" class="timestamp">
       <time>2014-11-13 13:40:42</time>
     </a>
   </div>
 </div><div class="edit-comment-hide">
       <div class="comment-body markdown-body markdown-format js-comment-body">
-          <p>From discussion <a href="https://github.com/sanskrit-lexicon/CORRECTIONS/issues/21#issuecomment-62862379">here</a> it transpires -
-<br/>For dictionary entries ending with 'm' -> no change to be done</p>
+          <p>From discussion <a href="https://github.com/sanskrit-lexicon/CORRECTIONS/issues/21#issuecomment-62862379">here</a> it transpires -</p>
+<p>For dictionary entries ending with 'm' -&gt; no change to be done</p>
   </div>
   </div>
   </div>
   <br/>
-<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<div id="#issuecomment-63001455" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/funderburkjim" class="author">funderburkjim</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issuecomment-63001455" class="timestamp">
       <time>2014-11-14 02:23:57</time>
     </a>
   </div>
 </div><div class="edit-comment-hide">
       <div class="comment-body markdown-body markdown-format js-comment-body">
-          <p><strong><a href="https://github.com/drdhaval2785" target="_blank">@drdhaval2785</a></strong>  My conclusion from your careful explanation is that the changes<br/>
-<br/> resulting in idaNkArya, idantana should stand.
-<br/>To decide   idantA, and idantftIya, it seems required to know whether 'tA' and 'tftIya' are suffixes or
-<br/>samAsas.  I think tA is suffix, so idantA is right.  What about tftIya here - suffix or samAsa component?
-<br/>Regarding 'may not understand the nuances of pada / bha ' - true, but it's fun to listen to the discussion.</p>
+          <p><strong><a href="https://github.com/drdhaval2785" target="_blank">@drdhaval2785</a></strong>  My conclusion from your careful explanation is that the changes<br />
+resulting in idaNkArya, idantana should stand.</p>
+<p>To decide   idantA, and idantftIya, it seems required to know whether 'tA' and 'tftIya' are suffixes or
+samAsas.  I think tA is suffix, so idantA is right.  What about tftIya here - suffix or samAsa component?</p>
+<p>Regarding 'may not understand the nuances of pada / bha ' - true, but it's fun to listen to the discussion.</p>
   </div>
   </div>
   </div>
   <br/>
-<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<div id="#issuecomment-63259617" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/drdhaval2785" class="author">drdhaval2785</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issuecomment-63259617" class="timestamp">
       <time>2014-11-17 04:51:33</time>
     </a>
   </div>
 </div><div class="edit-comment-hide">
       <div class="comment-body markdown-body markdown-format js-comment-body">
-          <p><strong><a href="https://github.com/funderburkjim" target="_blank">@funderburkjim</a></strong><br/>
-<br/>idantana, idantA should stand. (pratyaya)
-<br/>idaNkArya / idaMkArya both are valid. (samAsa)
-<br/>idantftIya / idaMtftIya both are valid. (samAsa). </p>
+          <p><strong><a href="https://github.com/funderburkjim" target="_blank">@funderburkjim</a></strong>
+idantana, idantA should stand. (pratyaya)
+idaNkArya / idaMkArya both are valid. (samAsa)
+idantftIya / idaMtftIya both are valid. (samAsa).</p>
   </div>
   </div>
   </div>
   <br/>
-<div class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+<div id="#issuecomment-63582958" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
   <div class="timeline-comment-header ">
   <div class="timeline-comment-header-text">
     <strong>
       <a href="https://github.com/funderburkjim" class="author">funderburkjim</a>
     </strong>
     commented on 
-    <a href="#issuecomment-99777162" class="timestamp">
+    <a href="#issuecomment-63582958" class="timestamp">
       <time>2014-11-19 02:31:26</time>
     </a>
   </div>
 </div><div class="edit-comment-hide">
       <div class="comment-body markdown-body markdown-format js-comment-body">
-          <p>MW now has idantana, idantA, idantftIya and idaNkAryA.
-<br/>I think this issue can be closed.</p>
+          <p>MW now has idantana, idantA, idantftIya and idaNkAryA.</p>
+<p>I think this issue can be closed.</p>
   </div>
   </div>
   </div>
