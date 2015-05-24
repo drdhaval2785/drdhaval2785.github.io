@@ -29,16 +29,34 @@
   "labels": [
 
   ],
-  "state": "open",
+  "state": "closed",
   "locked": false,
   "assignee": null,
   "milestone": null,
   "comments": 1,
   "created_at": "2015-05-08T11:09:45Z",
-  "updated_at": "2015-05-08T11:23:34Z",
-  "closed_at": null,
+  "updated_at": "2015-05-24T06:27:10Z",
+  "closed_at": "2015-05-24T06:27:10Z",
   "body": "There are many github flavured markups in the issues which are scraped AS IS in the .txt file\r\ne.g. \r\n``` would be fetched as is. Whereas we will have to do some coding to make it give proper display in outside github environment.\r\n\r\nIdeal would be to convert all github flavoured markup to corresponding HTML markup or stylesheet in some cases to give the user that well known github feel",
-  "closed_by": null
+  "closed_by": {
+    "login": "drdhaval2785",
+    "id": 5755132,
+    "avatar_url": "https://avatars.githubusercontent.com/u/5755132?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/drdhaval2785",
+    "html_url": "https://github.com/drdhaval2785",
+    "followers_url": "https://api.github.com/users/drdhaval2785/followers",
+    "following_url": "https://api.github.com/users/drdhaval2785/following{/other_user}",
+    "gists_url": "https://api.github.com/users/drdhaval2785/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/drdhaval2785/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/drdhaval2785/subscriptions",
+    "organizations_url": "https://api.github.com/users/drdhaval2785/orgs",
+    "repos_url": "https://api.github.com/users/drdhaval2785/repos",
+    "events_url": "https://api.github.com/users/drdhaval2785/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/drdhaval2785/received_events",
+    "type": "User",
+    "site_admin": false
+  }
 }
 BODY STARTS FROM HERE
 [

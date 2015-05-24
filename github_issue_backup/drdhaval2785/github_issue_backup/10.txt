@@ -1,12 +1,12 @@
 {
-  "url": "https://api.github.com/repos/drdhaval2785/github_issue_backup/issues/1",
-  "labels_url": "https://api.github.com/repos/drdhaval2785/github_issue_backup/issues/1/labels{/name}",
-  "comments_url": "https://api.github.com/repos/drdhaval2785/github_issue_backup/issues/1/comments",
-  "events_url": "https://api.github.com/repos/drdhaval2785/github_issue_backup/issues/1/events",
-  "html_url": "https://github.com/drdhaval2785/github_issue_backup/issues/1",
-  "id": 74325506,
-  "number": 1,
-  "title": "github like environment",
+  "url": "https://api.github.com/repos/drdhaval2785/github_issue_backup/issues/10",
+  "labels_url": "https://api.github.com/repos/drdhaval2785/github_issue_backup/issues/10/labels{/name}",
+  "comments_url": "https://api.github.com/repos/drdhaval2785/github_issue_backup/issues/10/comments",
+  "events_url": "https://api.github.com/repos/drdhaval2785/github_issue_backup/issues/10/events",
+  "html_url": "https://github.com/drdhaval2785/github_issue_backup/issues/10",
+  "id": 78618321,
+  "number": 10,
+  "title": "blockquotes",
   "user": {
     "login": "drdhaval2785",
     "id": 5755132,
@@ -33,14 +33,11 @@
   "locked": false,
   "assignee": null,
   "milestone": null,
-  "comments": 0,
-  "created_at": "2015-05-08T11:06:05Z",
-  "updated_at": "2015-05-08T11:06:05Z",
+  "comments": 1,
+  "created_at": "2015-05-20T17:31:02Z",
+  "updated_at": "2015-05-20T17:32:22Z",
   "closed_at": null,
-  "body": "From txt files craped via the shell script, the php file presentable.php creates some presentable HTML files.\r\nwhat remains is to provide appropriate layout and CSS file to these HTML files so that the display of scraped data is as near to github display as possible.",
+  "body": "Blockqoutes issue. The blockquote should end at the end of line character.\r\ne.g. \r\n```> Explicit is better than implicit.\\r\\n\\r\\nI find this to be a bit subjective. Should I also add a sentence that describes what PHP is? I'm not saying that the request is bad. I'm saying that I'd need a better reason than that.```\r\nshould render\r\n>Explicit is better than implicit.\r\n\r\nand \r\nthe next line outside blockquotes.\r\n",
   "closed_by": null
 }
 BODY STARTS FROM HERE
-[
-
-]
