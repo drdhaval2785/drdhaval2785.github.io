@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html class='' lang='en'>
+<head prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#'>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8'>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta http-equiv='Content-Language' content='en'>
+<title>syntaxhighlighter/syntaxhighlighter/82</title>
+<link href='github-c486157afcc5f58155a921bc675afb08733fbaa8dcf39ac2104d3.css' media='all' rel='stylesheet'>
+<link href='github2-da2e842cc3f0aaf33b727d0ef034243c12ab008fd09b24868b97.css' media='all' rel='stylesheet'>
+<meta http-equiv='x-pjax-version' content='4426702614c8182f33d1780ad1169662'>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shAutoloader.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAppleScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAS3.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushBash.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushColdFusion.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCpp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCSharp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCss.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDelphi.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDiff.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushErlang.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushGroovy.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJava.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJavaFX.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/syntaxhighlighter/scripts/shBrushJScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPerl.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPhp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPlain.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPowerShell.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPython.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushRuby.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSass.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushScala.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSql.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushVb.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushXml.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shLegacy.js'></script>
+	<link type='text/css' rel='stylesheet' href='syntaxhighlighter/styles/shCoreDefault.css'/>
+	<script type='text/javascript'>SyntaxHighlighter.all();</script>
+</head>
+<body class='logged_in  env-production windows vis-public'>
+<h1 align='center'><a href='https://github.com/syntaxhighlighter/syntaxhighlighter/pull/82' target='_blank'>Expanded features relating to finding elements for highlighting.</h1><hr/><div id="#issue-2932135" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/outis" class="author">outis</a>
+    </strong>
+    commented on 
+    <a href="#issue-2932135" class="timestamp">
+      <time>2012-01-23 09:12:29</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I've got two new features, if you're interested. </p>
+<p>The first allows SyntaxHighlighter to find multiple element types. Instead of a single tag name, the <code>tagName</code> configuration option can be an array of tag names, in which case <code>findElements</code> gets all the named elements. I left the config option singular so as not to affect sites that customize it. The default <code>tagName</code> option is updated to include <code>&lt;code&gt;</code> elements so developers can write more semantic documents yet still get highlighting in JS enabled browsers, all without impacting existing sites that use SyntaxHighlighter.</p>
+<p>The second expands <code>findElements</code> to accept DOM nodes, tag names or an array of both as its <code>element</code> parameter. This way, a developer can specify multiple elements to highlight in a single call to <code>highlight</code>.</p>
+<pre><code>var someElt = document.getElementById('Foo');
+SyntaxHighlighter.highlight({}, ['pre', 'code', someElt]);</code></pre>
+<p>Do these updates interest you? Do they need any other work before they can be merged into the main repo?</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-21301303" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/antoniovazquezblanco" class="author">antoniovazquezblanco</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-21301303" class="timestamp">
+      <time>2013-07-20 22:08:11</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>It would be nice to see this working. Why is it stuck?</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+</body></html>

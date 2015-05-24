@@ -1,0 +1,73 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/120",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/120/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/120/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/120/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/120",
+  "id": 4690275,
+  "number": 120,
+  "title": "xsd/xml end tag rewrite",
+  "user": {
+    "login": "stfarm",
+    "id": 1764569,
+    "avatar_url": "https://avatars.githubusercontent.com/u/1764569?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/stfarm",
+    "html_url": "https://github.com/stfarm",
+    "followers_url": "https://api.github.com/users/stfarm/followers",
+    "following_url": "https://api.github.com/users/stfarm/following{/other_user}",
+    "gists_url": "https://api.github.com/users/stfarm/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/stfarm/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/stfarm/subscriptions",
+    "organizations_url": "https://api.github.com/users/stfarm/orgs",
+    "repos_url": "https://api.github.com/users/stfarm/repos",
+    "events_url": "https://api.github.com/users/stfarm/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/stfarm/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2012-05-22T13:21:02Z",
+  "updated_at": "2013-01-28T23:48:33Z",
+  "closed_at": null,
+  "body": "It seem that my xml/xsd code is rewritten:\n\nThis: (I removed the open < and close > tag because it did not show up with it.)\nxs:element name=\"defaultStatus\" default=\"J\" label=\"false\"/\n\nbecomes:\n<xs:element name=\"defaultStatus\" default=\"J\" label=\"false\">\n           </xs:element>\n\nI dont want this to happen, actually ALL the brushes rewrite the code. I wonder why.\nhttp://lodestarasp.blogspot.com/\n\nThank you for your help.\nSteve\n",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/comments/12812466",
+    "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/120#issuecomment-12812466",
+    "issue_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/120",
+    "id": 12812466,
+    "user": {
+      "login": "Ear3nd1l",
+      "id": 3219876,
+      "avatar_url": "https://avatars.githubusercontent.com/u/3219876?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Ear3nd1l",
+      "html_url": "https://github.com/Ear3nd1l",
+      "followers_url": "https://api.github.com/users/Ear3nd1l/followers",
+      "following_url": "https://api.github.com/users/Ear3nd1l/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Ear3nd1l/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Ear3nd1l/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Ear3nd1l/subscriptions",
+      "organizations_url": "https://api.github.com/users/Ear3nd1l/orgs",
+      "repos_url": "https://api.github.com/users/Ear3nd1l/repos",
+      "events_url": "https://api.github.com/users/Ear3nd1l/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Ear3nd1l/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2013-01-28T23:48:33Z",
+    "updated_at": "2013-01-28T23:48:33Z",
+    "body": "I'm having the same problem.  Has a solution ever been found?"
+  }
+]

@@ -1,0 +1,52 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/196",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/196/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/196/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/196/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/pull/196",
+  "id": 12374315,
+  "number": 196,
+  "title": "Add \"strip-links\" parameter, addressing Issue 188",
+  "user": {
+    "login": "abbeycode",
+    "id": 1349578,
+    "avatar_url": "https://avatars.githubusercontent.com/u/1349578?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/abbeycode",
+    "html_url": "https://github.com/abbeycode",
+    "followers_url": "https://api.github.com/users/abbeycode/followers",
+    "following_url": "https://api.github.com/users/abbeycode/following{/other_user}",
+    "gists_url": "https://api.github.com/users/abbeycode/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/abbeycode/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/abbeycode/subscriptions",
+    "organizations_url": "https://api.github.com/users/abbeycode/orgs",
+    "repos_url": "https://api.github.com/users/abbeycode/repos",
+    "events_url": "https://api.github.com/users/abbeycode/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/abbeycode/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2013-03-24T14:10:49Z",
+  "updated_at": "2013-03-24T14:10:49Z",
+  "closed_at": null,
+  "pull_request": {
+    "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/pulls/196",
+    "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/pull/196",
+    "diff_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/pull/196.diff",
+    "patch_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/pull/196.patch"
+  },
+  "body": "On Tumblr (and likely other CMS's), URLs, even in `<pre/>` blocks, get turned into links, as shown below:\r\n\r\n![with mainline code](https://f.cloud.github.com/assets/1349578/295419/a44b1c78-948a-11e2-96bf-c3acfbb44fa2.png)\r\n\r\nBut, if you set my new `strip-links` parameter to `true`, it looks like this:\r\n\r\n![with strip-links = true](https://f.cloud.github.com/assets/1349578/295422/58dcac38-948b-11e2-9f95-0ffda442857f.png)\r\n\r\nThe default value is `false`, so the change is opt-in only. This addresses [Issue 188](https://github.com/alexgorbatchev/SyntaxHighlighter/issues/188).",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+
+]

@@ -1,0 +1,46 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/355",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/355/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/355/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/355/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/355",
+  "id": 59429983,
+  "number": 355,
+  "title": "syntaxhighlighter omits some HTML content in pre tags.",
+  "user": {
+    "login": "everthis",
+    "id": 3142886,
+    "avatar_url": "https://avatars.githubusercontent.com/u/3142886?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/everthis",
+    "html_url": "https://github.com/everthis",
+    "followers_url": "https://api.github.com/users/everthis/followers",
+    "following_url": "https://api.github.com/users/everthis/following{/other_user}",
+    "gists_url": "https://api.github.com/users/everthis/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/everthis/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/everthis/subscriptions",
+    "organizations_url": "https://api.github.com/users/everthis/orgs",
+    "repos_url": "https://api.github.com/users/everthis/repos",
+    "events_url": "https://api.github.com/users/everthis/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/everthis/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2015-03-02T01:53:14Z",
+  "updated_at": "2015-03-02T01:53:14Z",
+  "closed_at": null,
+  "body": "the rendered webpage is\r\n\r\n![syntax](https://cloud.githubusercontent.com/assets/3142886/6434345/ad8f1dba-c0c1-11e4-887d-2bc5f49a9631.jpg)\r\n\r\nwhile the code is\r\n\r\n   \t<!--[if lt IE 7 ]> <html class=\"ie6\"> <![endif]-->\r\n\t<!--[if IE 7 ]>    <html class=\"ie7\"> <![endif]-->\r\n\t<!--[if IE 8 ]>    <html class=\"ie8\"> <![endif]-->\r\n\t<!--[if IE 9 ]>    <html class=\"ie9\"> <![endif]-->\r\n\t<!--[if (gt IE 9)|!(IE)]><!--> <html class=\"\"> <!--<![endif]-->\r\n\r\nThe code \r\n\r\n       <html class=\"\">\r\nis omitted.\r\n",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+
+]

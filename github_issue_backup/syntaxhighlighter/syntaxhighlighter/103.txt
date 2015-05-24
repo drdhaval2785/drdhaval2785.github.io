@@ -1,0 +1,46 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/103",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/103/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/103/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/103/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/103",
+  "id": 3807795,
+  "number": 103,
+  "title": "wrong plain highliting symbols creating",
+  "user": {
+    "login": "passika",
+    "id": 907357,
+    "avatar_url": "https://avatars.githubusercontent.com/u/907357?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/passika",
+    "html_url": "https://github.com/passika",
+    "followers_url": "https://api.github.com/users/passika/followers",
+    "following_url": "https://api.github.com/users/passika/following{/other_user}",
+    "gists_url": "https://api.github.com/users/passika/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/passika/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/passika/subscriptions",
+    "organizations_url": "https://api.github.com/users/passika/orgs",
+    "repos_url": "https://api.github.com/users/passika/repos",
+    "events_url": "https://api.github.com/users/passika/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/passika/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2012-03-26T12:38:16Z",
+  "updated_at": "2012-03-26T12:38:16Z",
+  "closed_at": null,
+  "body": "When i put \r\n\r\n\r\n<VirtualHost *:80>\r\n    DocumentRoot \"C:\\xampp\\htdocs\"\r\n    ServerName localhost\r\n</VirtualHost>\r\n\r\nin plain highliting i got\r\n\r\nNameVirtualHost *:80\r\n \r\n<virtualhost *:80=\"\">\r\n    DocumentRoot \"C:\\xampp\\htdocs\"\r\n    ServerName localhost\r\n</virtualhost>\r\n\r\nas result \r\n\r\n=\"\" ---> error",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+
+]

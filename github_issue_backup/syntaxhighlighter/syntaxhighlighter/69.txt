@@ -1,0 +1,46 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/69",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/69/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/69/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/69/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/69",
+  "id": 2580874,
+  "number": 69,
+  "title": "bug in my brush for smarty",
+  "user": {
+    "login": "gtraxx",
+    "id": 356674,
+    "avatar_url": "https://avatars.githubusercontent.com/u/356674?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/gtraxx",
+    "html_url": "https://github.com/gtraxx",
+    "followers_url": "https://api.github.com/users/gtraxx/followers",
+    "following_url": "https://api.github.com/users/gtraxx/following{/other_user}",
+    "gists_url": "https://api.github.com/users/gtraxx/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/gtraxx/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/gtraxx/subscriptions",
+    "organizations_url": "https://api.github.com/users/gtraxx/orgs",
+    "repos_url": "https://api.github.com/users/gtraxx/repos",
+    "events_url": "https://api.github.com/users/gtraxx/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/gtraxx/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2011-12-16T15:40:56Z",
+  "updated_at": "2011-12-18T16:10:27Z",
+  "closed_at": null,
+  "body": "Hello, I wrote a brush for the color code Smarty3, but I encountered some problems.\r\nHe ignores my variable \"plugins\" and do not colorize them.\r\nAnd I also have a problem with a regex for the color of all that is between #mytest#.\r\n```javascript\r\n\r\n       ;(function()\r\n        {\r\n\t// CommonJS\r\n\ttypeof(require) != 'undefined' ? SyntaxHighlighter = require('shCore').SyntaxHighlighter : null;\r\n\r\n\tfunction Brush(){\r\n\t\tvar plugins\t= 'capitalize cat count_characters count_paragraphs count_sentences count_words'+\r\n\t\t \t'date_format default escape from_charset indent lower nl2br regex_replace replace'+\r\n\t\t    'spacify string_format strip strip_tags to_charset truncate unescape upper wordwrap';\r\n\t\t\r\n\t\tvar keywords = 'if else elseif foreach';\r\n\t\t\r\n\t\tthis.regexList = [\r\n  \t\t\t{ regex: SyntaxHighlighter.regexLib.singleLineCComments,\tcss: 'comments' },\t\t\t// one line comments\r\n  \t\t\t{ regex: SyntaxHighlighter.regexLib.multiLineCComments,\t\tcss: 'comments' },\t\t\t// multiline comments\r\n  \t\t\t{ regex: SyntaxHighlighter.regexLib.doubleQuotedString,\t\tcss: 'string' },\t\t\t// double quoted strings\r\n  \t\t\t{ regex: SyntaxHighlighter.regexLib.singleQuotedString,\t\tcss: 'string' },\t\t\t// single quoted strings\r\n  \t\t\t{ regex: new RegExp('(\\\\$)\\\\w+', 'g'),\t\t\t\t\tcss: 'variable' },          // variables\r\n  \t\t\t{ regex: /\\s*#.*/gm,\t\t\t\t\t\t\t\t\t\tcss: 'variable' },\r\n  \t\t\t{ regex: new RegExp(this.getKeywords(plugins), 'gmi'),\t\tcss: 'functions' },\t\t\t// common functions\r\n  \t\t\t{ regex: new RegExp(this.getKeywords(keywords), 'gmi'),\t\tcss: 'keyword' }\t\t\t// keyword\r\n  \t\t\t];\r\n\t\tthis.forHtmlScript(SyntaxHighlighter.regexLib.scriptScriptTags);\r\n\t};\r\n\t\r\n\tBrush.prototype\t= new SyntaxHighlighter.Highlighter();\r\n\tBrush.aliases\t= ['smarty','smarty3'];\r\n\r\n\tSyntaxHighlighter.brushes.Smarty3 = Brush;\r\n\r\n\t// CommonJS\r\n\ttypeof(exports) != 'undefined' ? exports.Brush = Brush : null;\r\n        })();\r\n\r\n```\r\nBest regards",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+
+]

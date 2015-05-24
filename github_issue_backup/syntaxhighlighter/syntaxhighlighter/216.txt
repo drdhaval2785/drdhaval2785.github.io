@@ -1,0 +1,97 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/216",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/216/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/216/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/216/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/pull/216",
+  "id": 14771241,
+  "number": 216,
+  "title": "Fixed theme bug. ",
+  "user": {
+    "login": "s4wny",
+    "id": 1197315,
+    "avatar_url": "https://avatars.githubusercontent.com/u/1197315?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/s4wny",
+    "html_url": "https://github.com/s4wny",
+    "followers_url": "https://api.github.com/users/s4wny/followers",
+    "following_url": "https://api.github.com/users/s4wny/following{/other_user}",
+    "gists_url": "https://api.github.com/users/s4wny/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/s4wny/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/s4wny/subscriptions",
+    "organizations_url": "https://api.github.com/users/s4wny/orgs",
+    "repos_url": "https://api.github.com/users/s4wny/repos",
+    "events_url": "https://api.github.com/users/s4wny/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/s4wny/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2013-05-26T14:57:05Z",
+  "updated_at": "2013-05-30T19:38:42Z",
+  "closed_at": "2013-05-30T19:38:40Z",
+  "pull_request": {
+    "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/pulls/216",
+    "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/pull/216",
+    "diff_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/pull/216.diff",
+    "patch_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/pull/216.patch"
+  },
+  "body": "When double clicking the background always was white with black text regardless what the $background and $code_plain was set to.",
+  "closed_by": {
+    "login": "alexgorbatchev",
+    "id": 65633,
+    "avatar_url": "https://avatars.githubusercontent.com/u/65633?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/alexgorbatchev",
+    "html_url": "https://github.com/alexgorbatchev",
+    "followers_url": "https://api.github.com/users/alexgorbatchev/followers",
+    "following_url": "https://api.github.com/users/alexgorbatchev/following{/other_user}",
+    "gists_url": "https://api.github.com/users/alexgorbatchev/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/alexgorbatchev/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/alexgorbatchev/subscriptions",
+    "organizations_url": "https://api.github.com/users/alexgorbatchev/orgs",
+    "repos_url": "https://api.github.com/users/alexgorbatchev/repos",
+    "events_url": "https://api.github.com/users/alexgorbatchev/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/alexgorbatchev/received_events",
+    "type": "User",
+    "site_admin": false
+  }
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/comments/18703004",
+    "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/pull/216#issuecomment-18703004",
+    "issue_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/216",
+    "id": 18703004,
+    "user": {
+      "login": "alexgorbatchev",
+      "id": 65633,
+      "avatar_url": "https://avatars.githubusercontent.com/u/65633?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgorbatchev",
+      "html_url": "https://github.com/alexgorbatchev",
+      "followers_url": "https://api.github.com/users/alexgorbatchev/followers",
+      "following_url": "https://api.github.com/users/alexgorbatchev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgorbatchev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgorbatchev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgorbatchev/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgorbatchev/orgs",
+      "repos_url": "https://api.github.com/users/alexgorbatchev/repos",
+      "events_url": "https://api.github.com/users/alexgorbatchev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgorbatchev/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2013-05-30T19:38:42Z",
+    "updated_at": "2013-05-30T19:38:42Z",
+    "body": "Good call! Thank you for contributing this."
+  }
+]

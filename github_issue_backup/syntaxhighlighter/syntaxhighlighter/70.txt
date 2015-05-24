@@ -1,0 +1,46 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/70",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/70/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/70/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/70/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/70",
+  "id": 2616138,
+  "number": 70,
+  "title": "Line brakes",
+  "user": {
+    "login": "divideddarko",
+    "id": 182575,
+    "avatar_url": "https://avatars.githubusercontent.com/u/182575?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/divideddarko",
+    "html_url": "https://github.com/divideddarko",
+    "followers_url": "https://api.github.com/users/divideddarko/followers",
+    "following_url": "https://api.github.com/users/divideddarko/following{/other_user}",
+    "gists_url": "https://api.github.com/users/divideddarko/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/divideddarko/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/divideddarko/subscriptions",
+    "organizations_url": "https://api.github.com/users/divideddarko/orgs",
+    "repos_url": "https://api.github.com/users/divideddarko/repos",
+    "events_url": "https://api.github.com/users/divideddarko/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/divideddarko/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2011-12-20T18:21:23Z",
+  "updated_at": "2011-12-20T18:21:23Z",
+  "closed_at": null,
+  "body": "Hey \r\n\r\nI currently run a blog that I built myself but have an issue with syntaxhighlighter. \r\n\r\nI can relate it down to this line of code \r\n\r\n $article = strtr($article, array(\"\\r\\n\" => '<br />', \"\\r\" => '<br />', \"\\n\" => '<br />'));\r\n\r\nI use this so that each enter is returned as a new line in the article rather than writing <p> for each new line. \r\nThis unfortunately breaks the code of SH, it displays everything on the one line and where a line break should be it places <br> instead. \r\n\r\nI was wondering if anyone else had this problem / a fix \r\n\r\nThanks for your help. ",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+
+]

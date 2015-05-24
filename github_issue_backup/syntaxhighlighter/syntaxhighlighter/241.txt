@@ -1,0 +1,46 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/241",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/241/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/241/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/241/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/241",
+  "id": 16533438,
+  "number": 241,
+  "title": "Firefox min-height on div.syntaxhighlighter",
+  "user": {
+    "login": "ghost",
+    "id": 10137,
+    "avatar_url": "https://avatars.githubusercontent.com/u/10137?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ghost",
+    "html_url": "https://github.com/ghost",
+    "followers_url": "https://api.github.com/users/ghost/followers",
+    "following_url": "https://api.github.com/users/ghost/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ghost/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ghost/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ghost/subscriptions",
+    "organizations_url": "https://api.github.com/users/ghost/orgs",
+    "repos_url": "https://api.github.com/users/ghost/repos",
+    "events_url": "https://api.github.com/users/ghost/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ghost/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2013-07-09T16:11:48Z",
+  "updated_at": "2013-07-09T16:11:48Z",
+  "closed_at": null,
+  "body": "If you give a min-height to the div.syntaxhighlighter in Firefox (try 20px first) it seems to adjust the line-height or something. Works fine in Chrome, but even if the min-height is set to less than the actual height in Firefox, the height will grow.",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+
+]

@@ -1,0 +1,101 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/188",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/188/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/188/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/188/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/188",
+  "id": 11291931,
+  "number": 188,
+  "title": "Tumblr blogs turn links in <pre/> blocks into <a/> tags",
+  "user": {
+    "login": "abbeycode",
+    "id": 1349578,
+    "avatar_url": "https://avatars.githubusercontent.com/u/1349578?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/abbeycode",
+    "html_url": "https://github.com/abbeycode",
+    "followers_url": "https://api.github.com/users/abbeycode/followers",
+    "following_url": "https://api.github.com/users/abbeycode/following{/other_user}",
+    "gists_url": "https://api.github.com/users/abbeycode/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/abbeycode/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/abbeycode/subscriptions",
+    "organizations_url": "https://api.github.com/users/abbeycode/orgs",
+    "repos_url": "https://api.github.com/users/abbeycode/repos",
+    "events_url": "https://api.github.com/users/abbeycode/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/abbeycode/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 2,
+  "created_at": "2013-02-22T16:18:47Z",
+  "updated_at": "2013-04-22T16:43:22Z",
+  "closed_at": null,
+  "body": "I have a code block (below) on a Tumblr blog, which is having its URL turned into a link, even though I define auto-links to false in its `<pre>` tag, and also in a `<script>` block.\r\n\r\nCode block:\r\n\r\n    <pre class=\"brush: applescript; wrap-lines: true; auto-links: false\">\r\n        set variable to \"URL: http://example.com\"\r\n    </pre>\r\n\r\nI end up with the following text in the rendered page:\r\n\r\n    set variable to \"URL: <a href=\"http://example.com\">http://example.com</a>\"\r\n\r\nAfter doing some testing, I saw that this appears to be Tumblr processing the link ahead of time, using its own \"auto-links\", but the Syntax Highlighter code doesn't know it's not part of the original source. There should be a way to convert tags whose `href` equals the link text back into straight text, turning `<a href=\"http://example.com\">http://example.com</a>` back into `http://example.com`.",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/comments/16771884",
+    "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/188#issuecomment-16771884",
+    "issue_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/188",
+    "id": 16771884,
+    "user": {
+      "login": "Viper007Bond",
+      "id": 406254,
+      "avatar_url": "https://avatars.githubusercontent.com/u/406254?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Viper007Bond",
+      "html_url": "https://github.com/Viper007Bond",
+      "followers_url": "https://api.github.com/users/Viper007Bond/followers",
+      "following_url": "https://api.github.com/users/Viper007Bond/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Viper007Bond/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Viper007Bond/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Viper007Bond/subscriptions",
+      "organizations_url": "https://api.github.com/users/Viper007Bond/orgs",
+      "repos_url": "https://api.github.com/users/Viper007Bond/repos",
+      "events_url": "https://api.github.com/users/Viper007Bond/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Viper007Bond/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2013-04-22T09:05:46Z",
+    "updated_at": "2013-04-22T09:06:17Z",
+    "body": "How would you then go about actually displaying `<a href=\"http://example.com\">http://example.com</a>` then when SH would convert it back to `http://example.com` ?  I guess it just wouldn't be possible with that flag set."
+  },
+  {
+    "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/comments/16800346",
+    "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/188#issuecomment-16800346",
+    "issue_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/188",
+    "id": 16800346,
+    "user": {
+      "login": "abbeycode",
+      "id": 1349578,
+      "avatar_url": "https://avatars.githubusercontent.com/u/1349578?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/abbeycode",
+      "html_url": "https://github.com/abbeycode",
+      "followers_url": "https://api.github.com/users/abbeycode/followers",
+      "following_url": "https://api.github.com/users/abbeycode/following{/other_user}",
+      "gists_url": "https://api.github.com/users/abbeycode/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/abbeycode/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/abbeycode/subscriptions",
+      "organizations_url": "https://api.github.com/users/abbeycode/orgs",
+      "repos_url": "https://api.github.com/users/abbeycode/repos",
+      "events_url": "https://api.github.com/users/abbeycode/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/abbeycode/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2013-04-22T16:43:22Z",
+    "updated_at": "2013-04-22T16:43:22Z",
+    "body": "Right, if you're showing HTML code that includes links, you would clear that flag. Like the other [configuration parameters](http://alexgorbatchev.com/SyntaxHighlighter/manual/configuration/) SH uses, you can override it for one block, in its `<class>` tag. I also didn't think it would be very common for the link text and URL to match identically. If they don't, the link still passes through as is, even with my flag set (displaying `<a href=\"http://example.com\">Example</a> `). It doesn't strip _all_ links, just those that appear to be auto generated."
+  }
+]

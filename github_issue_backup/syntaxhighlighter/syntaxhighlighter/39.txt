@@ -1,0 +1,97 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/39",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/39/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/39/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/39/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/pull/39",
+  "id": 1745903,
+  "number": 39,
+  "title": "Call toString() on arguments to RegExp.exec() to avoid error in older IE's",
+  "user": {
+    "login": "rwstauner",
+    "id": 142719,
+    "avatar_url": "https://avatars.githubusercontent.com/u/142719?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/rwstauner",
+    "html_url": "https://github.com/rwstauner",
+    "followers_url": "https://api.github.com/users/rwstauner/followers",
+    "following_url": "https://api.github.com/users/rwstauner/following{/other_user}",
+    "gists_url": "https://api.github.com/users/rwstauner/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/rwstauner/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/rwstauner/subscriptions",
+    "organizations_url": "https://api.github.com/users/rwstauner/orgs",
+    "repos_url": "https://api.github.com/users/rwstauner/repos",
+    "events_url": "https://api.github.com/users/rwstauner/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/rwstauner/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2011-09-26T20:26:34Z",
+  "updated_at": "2011-10-04T20:09:24Z",
+  "closed_at": "2011-10-04T20:08:26Z",
+  "pull_request": {
+    "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/pulls/39",
+    "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/pull/39",
+    "diff_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/pull/39.diff",
+    "patch_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/pull/39.patch"
+  },
+  "body": "I found IE 7 and 8 to throw errors... finally traced it back to jQuery calling RegExp.exec on a number.\r\n\r\nThese older IE's threw a \"no method\" error when trying to call slice() on a \"number\" object.\r\nputting a `toString()` on there solves the issue, and stringifying arguments to RegExp.exec seems reasonable to me.\r\n\r\nI added tests for XRegExp... not many, but enough to verify the issue.\r\n\r\nIt looks to me like that particular code block is already an edge case,\r\nso I expect this minor workaround should be seldom used and not problematic,\r\nbut I haven't looked at the rest of the code and you certainly know it better than I do.\r\n\r\nAlternatively the argument could be checked before calling `toString()` on everything...\r\nnot sure if `if(typeof str !== \"string\")str = str.toString()` performs better or makes more sense.\r\n\r\nWhat do you think?\r\nLet me know if you think there's something else I need to test.\r\n\r\nThanks!",
+  "closed_by": {
+    "login": "alexgorbatchev",
+    "id": 65633,
+    "avatar_url": "https://avatars.githubusercontent.com/u/65633?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/alexgorbatchev",
+    "html_url": "https://github.com/alexgorbatchev",
+    "followers_url": "https://api.github.com/users/alexgorbatchev/followers",
+    "following_url": "https://api.github.com/users/alexgorbatchev/following{/other_user}",
+    "gists_url": "https://api.github.com/users/alexgorbatchev/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/alexgorbatchev/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/alexgorbatchev/subscriptions",
+    "organizations_url": "https://api.github.com/users/alexgorbatchev/orgs",
+    "repos_url": "https://api.github.com/users/alexgorbatchev/repos",
+    "events_url": "https://api.github.com/users/alexgorbatchev/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/alexgorbatchev/received_events",
+    "type": "User",
+    "site_admin": false
+  }
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/comments/2290736",
+    "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/pull/39#issuecomment-2290736",
+    "issue_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/39",
+    "id": 2290736,
+    "user": {
+      "login": "alexgorbatchev",
+      "id": 65633,
+      "avatar_url": "https://avatars.githubusercontent.com/u/65633?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgorbatchev",
+      "html_url": "https://github.com/alexgorbatchev",
+      "followers_url": "https://api.github.com/users/alexgorbatchev/followers",
+      "following_url": "https://api.github.com/users/alexgorbatchev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgorbatchev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgorbatchev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgorbatchev/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgorbatchev/orgs",
+      "repos_url": "https://api.github.com/users/alexgorbatchev/repos",
+      "events_url": "https://api.github.com/users/alexgorbatchev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgorbatchev/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2011-10-04T20:09:24Z",
+    "updated_at": "2011-10-04T20:09:24Z",
+    "body": "Merged, thank you very much!"
+  }
+]

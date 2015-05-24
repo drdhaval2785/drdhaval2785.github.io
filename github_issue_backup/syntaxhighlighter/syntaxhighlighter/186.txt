@@ -1,0 +1,73 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/186",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/186/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/186/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/186/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/186",
+  "id": 11163527,
+  "number": 186,
+  "title": "Javascript for loop rendering issue",
+  "user": {
+    "login": "ghost",
+    "id": 10137,
+    "avatar_url": "https://avatars.githubusercontent.com/u/10137?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ghost",
+    "html_url": "https://github.com/ghost",
+    "followers_url": "https://api.github.com/users/ghost/followers",
+    "following_url": "https://api.github.com/users/ghost/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ghost/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ghost/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ghost/subscriptions",
+    "organizations_url": "https://api.github.com/users/ghost/orgs",
+    "repos_url": "https://api.github.com/users/ghost/repos",
+    "events_url": "https://api.github.com/users/ghost/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ghost/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2013-02-19T17:44:37Z",
+  "updated_at": "2013-07-02T23:15:24Z",
+  "closed_at": null,
+  "body": "I am trying to use this plugin within Drupal 7 content type. So far I am loving it but when I do a snippet of js code regarding for loop it breaks the syntax.\r\n\r\nI took a screen shot of my editor with the code and how it displays it.\r\n\r\nAny idea of what it is doing that? \r\n\r\nThanks\r\n![Screen Shot 2013-02-19 at 9 40 20 AM](https://f.cloud.github.com/assets/118630/172442/ecd0ebbe-7abb-11e2-8ec2-3cc27dcf6bfc.png)\r\n![Screen Shot 2013-02-19 at 9 40 37 AM](https://f.cloud.github.com/assets/118630/172443/f004cb48-7abb-11e2-8ca5-eaa01359ce74.png)\r\n\r\n",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/comments/20385656",
+    "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/186#issuecomment-20385656",
+    "issue_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/186",
+    "id": 20385656,
+    "user": {
+      "login": "st-pasha",
+      "id": 4231472,
+      "avatar_url": "https://avatars.githubusercontent.com/u/4231472?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/st-pasha",
+      "html_url": "https://github.com/st-pasha",
+      "followers_url": "https://api.github.com/users/st-pasha/followers",
+      "following_url": "https://api.github.com/users/st-pasha/following{/other_user}",
+      "gists_url": "https://api.github.com/users/st-pasha/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/st-pasha/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/st-pasha/subscriptions",
+      "organizations_url": "https://api.github.com/users/st-pasha/orgs",
+      "repos_url": "https://api.github.com/users/st-pasha/repos",
+      "events_url": "https://api.github.com/users/st-pasha/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/st-pasha/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2013-07-02T23:14:49Z",
+    "updated_at": "2013-07-02T23:15:24Z",
+    "body": "You can fix this \"error\" by replacing all \"<\" with \"&amp;lt;\", \">\" with \"&amp;gt;\" and \"&amp;\" with \"&amp;amp;\" within the code inside &lt;pre&gt;. "
+  }
+]

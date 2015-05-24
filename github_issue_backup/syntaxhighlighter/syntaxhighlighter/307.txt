@@ -1,0 +1,86 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/307",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/307/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/307/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/307/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/pull/307",
+  "id": 31912179,
+  "number": 307,
+  "title": "Allow for asterisks after start of block comment",
+  "user": {
+    "login": "wulf2468",
+    "id": 7006958,
+    "avatar_url": "https://avatars.githubusercontent.com/u/7006958?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/wulf2468",
+    "html_url": "https://github.com/wulf2468",
+    "followers_url": "https://api.github.com/users/wulf2468/followers",
+    "following_url": "https://api.github.com/users/wulf2468/following{/other_user}",
+    "gists_url": "https://api.github.com/users/wulf2468/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/wulf2468/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/wulf2468/subscriptions",
+    "organizations_url": "https://api.github.com/users/wulf2468/orgs",
+    "repos_url": "https://api.github.com/users/wulf2468/repos",
+    "events_url": "https://api.github.com/users/wulf2468/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/wulf2468/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": {
+    "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/milestones/2",
+    "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/milestones/4.0",
+    "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/milestones/2/labels",
+    "id": 511169,
+    "number": 2,
+    "title": "4.0",
+    "description": "Major rewrite. Bringing up to date with modern stack.",
+    "creator": {
+      "login": "alexgorbatchev",
+      "id": 65633,
+      "avatar_url": "https://avatars.githubusercontent.com/u/65633?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgorbatchev",
+      "html_url": "https://github.com/alexgorbatchev",
+      "followers_url": "https://api.github.com/users/alexgorbatchev/followers",
+      "following_url": "https://api.github.com/users/alexgorbatchev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgorbatchev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgorbatchev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgorbatchev/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgorbatchev/orgs",
+      "repos_url": "https://api.github.com/users/alexgorbatchev/repos",
+      "events_url": "https://api.github.com/users/alexgorbatchev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgorbatchev/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "open_issues": 16,
+    "closed_issues": 3,
+    "state": "open",
+    "created_at": "2013-12-11T21:16:38Z",
+    "updated_at": "2015-01-26T19:28:50Z",
+    "due_on": null,
+    "closed_at": null
+  },
+  "comments": 0,
+  "created_at": "2014-04-21T18:09:40Z",
+  "updated_at": "2014-10-06T23:08:11Z",
+  "closed_at": null,
+  "pull_request": {
+    "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/pulls/307",
+    "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/pull/307",
+    "diff_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/pull/307.diff",
+    "patch_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/pull/307.patch"
+  },
+  "body": "Multi-line sql comments with more than one asterisk were not being properly formatted as the regex says there cannot be an asterisk following the start of block comment /*\r\n\r\nThe following would be formatted like normal sql statements and not as a comment:\r\n/********\r\nselect 'example'\r\n*/",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+
+]

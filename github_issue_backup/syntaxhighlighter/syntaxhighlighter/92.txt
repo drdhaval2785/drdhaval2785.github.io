@@ -1,0 +1,46 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/92",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/92/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/92/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/92/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/92",
+  "id": 3285359,
+  "number": 92,
+  "title": "Perl's __END__ and __DATA__ markers interpreted incorrectly",
+  "user": {
+    "login": "rafl",
+    "id": 25669,
+    "avatar_url": "https://avatars.githubusercontent.com/u/25669?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/rafl",
+    "html_url": "https://github.com/rafl",
+    "followers_url": "https://api.github.com/users/rafl/followers",
+    "following_url": "https://api.github.com/users/rafl/following{/other_user}",
+    "gists_url": "https://api.github.com/users/rafl/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/rafl/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/rafl/subscriptions",
+    "organizations_url": "https://api.github.com/users/rafl/orgs",
+    "repos_url": "https://api.github.com/users/rafl/repos",
+    "events_url": "https://api.github.com/users/rafl/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/rafl/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2012-02-19T15:47:08Z",
+  "updated_at": "2012-02-19T15:47:08Z",
+  "closed_at": null,
+  "body": "Perl has two special markers, `__END__` and `__DATA__`, which signify the logical end of the program to the parser.\r\n\r\nSyntaxHighlighter is aware of these two tokens, but handles them incorrectly, as demonstrated by https://metacpan.org/module/List::Gather#SYNOPSIS\r\n\r\n`__END__` and `__DATA__` do /not/ end the program and cause the remainder of the input to be treated as non-code if they appear within a quoting construct.\r\n\r\nNot being terribly sure how SyntaxHighlighter actually understands the Perl code it's dealing with and whether or not it's aware of it currently being in the context of a quoting construct when scanning for `__END__` and `__DATA__`, I believe it might be helpful to point out that, while those two tokens end the program in pretty much any position other than within quoting constructs, it's incredibly uncommon for them to be used in other ways than as single tokens on an otherwise empty line of input, only possibly prefixed with whitespace.",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+
+]

@@ -1,0 +1,91 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/324",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/324/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/324/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/324/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/324",
+  "id": 37180898,
+  "number": 324,
+  "title": "False patterns for Java comments in shBrushJava.js",
+  "user": {
+    "login": "MIvanchev",
+    "id": 2251168,
+    "avatar_url": "https://avatars.githubusercontent.com/u/2251168?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/MIvanchev",
+    "html_url": "https://github.com/MIvanchev",
+    "followers_url": "https://api.github.com/users/MIvanchev/followers",
+    "following_url": "https://api.github.com/users/MIvanchev/following{/other_user}",
+    "gists_url": "https://api.github.com/users/MIvanchev/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/MIvanchev/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/MIvanchev/subscriptions",
+    "organizations_url": "https://api.github.com/users/MIvanchev/orgs",
+    "repos_url": "https://api.github.com/users/MIvanchev/repos",
+    "events_url": "https://api.github.com/users/MIvanchev/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/MIvanchev/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2014-07-04T17:44:24Z",
+  "updated_at": "2014-07-05T22:06:41Z",
+  "closed_at": "2014-07-05T22:06:41Z",
+  "body": "The current regular expressions in shBrushJava.js for comments and doc comments are wrong as the following example will demonstrate. Pull request to follow :)\r\n\r\n```html\r\n<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"utf-8\">\r\n    <title></title>\r\n    <script type=\"text/javascript\" src=\"scripts/shCore.js\"></script>\r\n    <script type=\"text/javascript\" src=\"scripts/shBrushJava.js\"></script>\r\n    <link type=\"text/css\" rel=\"stylesheet\" href=\"styles/shCoreDefault.css\">\r\n    <script type=\"text/javascript\">SyntaxHighlighter.all();</script>\r\n</head>\r\n\r\n<body>\r\n    <pre class=\"brush: java;\">\r\n    /*\r\n     * A regular comment at the beginning of the file.\r\n     */\r\n    package a.b.c.d;\r\n\r\n    import boo.foo.bar.Stuff;\r\n    import foo.bar.Docs;\r\n\r\n    /**\r\n     * @author E.T.\r\n     */\r\n    public class CompletelyUselessBean {\r\n\r\n      public void setFoo(boolean foo) {\r\n      }\r\n\r\n      public boolean getFoo() {\r\n        return true;\r\n      }\r\n\r\n      /* And now the main method.... */\r\n      public static void main(String[] args) {\r\n        System.out.println(\"Foobar\");\r\n      }\r\n    }\r\n    </pre>\r\n</html>\r\n```",
+  "closed_by": {
+    "login": "MIvanchev",
+    "id": 2251168,
+    "avatar_url": "https://avatars.githubusercontent.com/u/2251168?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/MIvanchev",
+    "html_url": "https://github.com/MIvanchev",
+    "followers_url": "https://api.github.com/users/MIvanchev/followers",
+    "following_url": "https://api.github.com/users/MIvanchev/following{/other_user}",
+    "gists_url": "https://api.github.com/users/MIvanchev/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/MIvanchev/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/MIvanchev/subscriptions",
+    "organizations_url": "https://api.github.com/users/MIvanchev/orgs",
+    "repos_url": "https://api.github.com/users/MIvanchev/repos",
+    "events_url": "https://api.github.com/users/MIvanchev/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/MIvanchev/received_events",
+    "type": "User",
+    "site_admin": false
+  }
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/comments/48097629",
+    "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/324#issuecomment-48097629",
+    "issue_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/324",
+    "id": 48097629,
+    "user": {
+      "login": "MIvanchev",
+      "id": 2251168,
+      "avatar_url": "https://avatars.githubusercontent.com/u/2251168?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/MIvanchev",
+      "html_url": "https://github.com/MIvanchev",
+      "followers_url": "https://api.github.com/users/MIvanchev/followers",
+      "following_url": "https://api.github.com/users/MIvanchev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/MIvanchev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/MIvanchev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/MIvanchev/subscriptions",
+      "organizations_url": "https://api.github.com/users/MIvanchev/orgs",
+      "repos_url": "https://api.github.com/users/MIvanchev/repos",
+      "events_url": "https://api.github.com/users/MIvanchev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/MIvanchev/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2014-07-05T22:06:34Z",
+    "updated_at": "2014-07-05T22:06:34Z",
+    "body": "I was looking at the code for 3.0.83...."
+  }
+]

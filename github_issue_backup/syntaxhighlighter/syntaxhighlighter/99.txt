@@ -1,0 +1,73 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/99",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/99/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/99/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/99/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/99",
+  "id": 3590751,
+  "number": 99,
+  "title": "How to disable href rendering to a link in shBrushXml.js",
+  "user": {
+    "login": "thudoan",
+    "id": 1275635,
+    "avatar_url": "https://avatars.githubusercontent.com/u/1275635?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/thudoan",
+    "html_url": "https://github.com/thudoan",
+    "followers_url": "https://api.github.com/users/thudoan/followers",
+    "following_url": "https://api.github.com/users/thudoan/following{/other_user}",
+    "gists_url": "https://api.github.com/users/thudoan/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/thudoan/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/thudoan/subscriptions",
+    "organizations_url": "https://api.github.com/users/thudoan/orgs",
+    "repos_url": "https://api.github.com/users/thudoan/repos",
+    "events_url": "https://api.github.com/users/thudoan/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/thudoan/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2012-03-09T22:21:43Z",
+  "updated_at": "2012-03-09T22:27:10Z",
+  "closed_at": null,
+  "body": "I am using the shBrushzXml.js, I have added the following in my .html:\r\n\r\n<pre class=\"brush: xml; programlisting\">     &lt;extensions&gt;\r\n          &lt;extension name='Region Extension'\r\n              namespace='http://docs.rackspacecloud.com/servers/api/ext/region/v1.0'\r\n              alias='RAX-RGN'\r\n              updated='2011-10-20T00:00:00'&gt;\r\n              &lt;description&gt;\r\n                  Adds an attribute to the server that is used to\r\n                  provide a hint as to the geographical region of server.\r\n              &lt;/description&gt;\r\n              &lt;link rel='describedby'\r\n              type='application/pdf'\r\n              href='http://docs.rackspacecloud.com/servers/api/ext/rax-rgn.pdf'/&gt;\r\n              &lt;link rel='describedby'\r\n              type='application/xml'\r\n              href='http://docs.rackspacecloud.com/servers/api/ext/rax-rgn/api.xsd'/&gt;\r\n          &lt;/extension&gt;\r\n      &lt;/extensions&gt;\r\n</pre>\r\n\r\nThe problem is all the href gets rendered into anchors in the source.  So for example:\r\n\r\n href='http://docs.rackspacecloud.com/servers/api/ext/rax-rgn/api.xsd'/&gt;\r\n\r\nbecomes:\r\n\r\n<a href=\"http://docs.rackspacecloud.com/servers/api/ext/ax-rgn/api.xsd\"> http://docs.rackspacecloud.com/servers/api/ext/ax-rgn/api.xsd </a>\r\n\r\nIs there an easy way to disable this.  I don't want the original text to be translated into a clickable url.",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/comments/4426005",
+    "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/99#issuecomment-4426005",
+    "issue_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/99",
+    "id": 4426005,
+    "user": {
+      "login": "thudoan",
+      "id": 1275635,
+      "avatar_url": "https://avatars.githubusercontent.com/u/1275635?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/thudoan",
+      "html_url": "https://github.com/thudoan",
+      "followers_url": "https://api.github.com/users/thudoan/followers",
+      "following_url": "https://api.github.com/users/thudoan/following{/other_user}",
+      "gists_url": "https://api.github.com/users/thudoan/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/thudoan/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/thudoan/subscriptions",
+      "organizations_url": "https://api.github.com/users/thudoan/orgs",
+      "repos_url": "https://api.github.com/users/thudoan/repos",
+      "events_url": "https://api.github.com/users/thudoan/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/thudoan/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2012-03-09T22:27:10Z",
+    "updated_at": "2012-03-09T22:27:10Z",
+    "body": "Whoops, it looks like my text was rendered into links.  So let me explain.  I don't want the original href's text to be translated into clickable links.  All href references in the original text is not surrounded by <a>, but after using shBrushXml.js, all my href references are surrounded by html anchor (<a>) tags.  I would like a way for the regular expression to highlight the value, but not make it a html <a> link."
+  }
+]

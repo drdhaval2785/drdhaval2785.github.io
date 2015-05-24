@@ -1,0 +1,91 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/73",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/73/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/73/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/73/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/73",
+  "id": 2653038,
+  "number": 73,
+  "title": "Coffeescript equivalent?",
+  "user": {
+    "login": "mrjcleaver",
+    "id": 59202,
+    "avatar_url": "https://avatars.githubusercontent.com/u/59202?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/mrjcleaver",
+    "html_url": "https://github.com/mrjcleaver",
+    "followers_url": "https://api.github.com/users/mrjcleaver/followers",
+    "following_url": "https://api.github.com/users/mrjcleaver/following{/other_user}",
+    "gists_url": "https://api.github.com/users/mrjcleaver/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/mrjcleaver/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/mrjcleaver/subscriptions",
+    "organizations_url": "https://api.github.com/users/mrjcleaver/orgs",
+    "repos_url": "https://api.github.com/users/mrjcleaver/repos",
+    "events_url": "https://api.github.com/users/mrjcleaver/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/mrjcleaver/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2011-12-24T16:14:35Z",
+  "updated_at": "2012-03-15T17:05:38Z",
+  "closed_at": "2012-03-15T17:05:38Z",
+  "body": "Hi - have you considered providing a coffeescript markup equivalent for the javascript currently being viewed?\r\n\r\nCoffeescript can be a lot cleaner to read so would help some people comprehend snippets in pages.\r\n\r\nThanks, Martin.",
+  "closed_by": {
+    "login": "alexgorbatchev",
+    "id": 65633,
+    "avatar_url": "https://avatars.githubusercontent.com/u/65633?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/alexgorbatchev",
+    "html_url": "https://github.com/alexgorbatchev",
+    "followers_url": "https://api.github.com/users/alexgorbatchev/followers",
+    "following_url": "https://api.github.com/users/alexgorbatchev/following{/other_user}",
+    "gists_url": "https://api.github.com/users/alexgorbatchev/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/alexgorbatchev/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/alexgorbatchev/subscriptions",
+    "organizations_url": "https://api.github.com/users/alexgorbatchev/orgs",
+    "repos_url": "https://api.github.com/users/alexgorbatchev/repos",
+    "events_url": "https://api.github.com/users/alexgorbatchev/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/alexgorbatchev/received_events",
+    "type": "User",
+    "site_admin": false
+  }
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/comments/4524077",
+    "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/73#issuecomment-4524077",
+    "issue_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/73",
+    "id": 4524077,
+    "user": {
+      "login": "alexgorbatchev",
+      "id": 65633,
+      "avatar_url": "https://avatars.githubusercontent.com/u/65633?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgorbatchev",
+      "html_url": "https://github.com/alexgorbatchev",
+      "followers_url": "https://api.github.com/users/alexgorbatchev/followers",
+      "following_url": "https://api.github.com/users/alexgorbatchev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgorbatchev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgorbatchev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgorbatchev/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgorbatchev/orgs",
+      "repos_url": "https://api.github.com/users/alexgorbatchev/repos",
+      "events_url": "https://api.github.com/users/alexgorbatchev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgorbatchev/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2012-03-15T17:05:37Z",
+    "updated_at": "2012-03-15T17:05:37Z",
+    "body": "I don't think it would be intuitive to do so. Coffeescript is a lot cleaner only when you know its syntax."
+  }
+]

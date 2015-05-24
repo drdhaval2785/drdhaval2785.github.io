@@ -1,0 +1,46 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/89",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/89/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/89/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/89/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/89",
+  "id": 3139776,
+  "number": 89,
+  "title": "Syntax highlighting malfunction when arriving to a page through the search engine",
+  "user": {
+    "login": "matsandreassen",
+    "id": 1419430,
+    "avatar_url": "https://avatars.githubusercontent.com/u/1419430?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/matsandreassen",
+    "html_url": "https://github.com/matsandreassen",
+    "followers_url": "https://api.github.com/users/matsandreassen/followers",
+    "following_url": "https://api.github.com/users/matsandreassen/following{/other_user}",
+    "gists_url": "https://api.github.com/users/matsandreassen/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/matsandreassen/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/matsandreassen/subscriptions",
+    "organizations_url": "https://api.github.com/users/matsandreassen/orgs",
+    "repos_url": "https://api.github.com/users/matsandreassen/repos",
+    "events_url": "https://api.github.com/users/matsandreassen/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/matsandreassen/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2012-02-08T12:08:42Z",
+  "updated_at": "2012-02-08T12:09:43Z",
+  "closed_at": null,
+  "body": "How to reproduce: \r\n\r\n1. Create page with XML code block @@ xml ... @@. Write any search term on the page.\r\n2. Arrive to the page through the search engine using the term used in step 1.\r\n\r\nYour XML code block should include a namespace definition including the search term.\r\n\r\nYou'll notice that the xml markup is broken. What seems to happen is that screwturn adds some html markup to highlight the search term. This markup is included as part of your XML code block.",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+
+]

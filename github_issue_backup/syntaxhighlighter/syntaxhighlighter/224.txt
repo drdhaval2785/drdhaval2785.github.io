@@ -1,0 +1,46 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/224",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/224/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/224/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/224/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/224",
+  "id": 15018979,
+  "number": 224,
+  "title": "Valid single quotes in SQL block not highlighted correctly Edit",
+  "user": {
+    "login": "jthomerson",
+    "id": 171934,
+    "avatar_url": "https://avatars.githubusercontent.com/u/171934?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jthomerson",
+    "html_url": "https://github.com/jthomerson",
+    "followers_url": "https://api.github.com/users/jthomerson/followers",
+    "following_url": "https://api.github.com/users/jthomerson/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jthomerson/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jthomerson/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jthomerson/subscriptions",
+    "organizations_url": "https://api.github.com/users/jthomerson/orgs",
+    "repos_url": "https://api.github.com/users/jthomerson/repos",
+    "events_url": "https://api.github.com/users/jthomerson/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jthomerson/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2013-05-31T23:25:09Z",
+  "updated_at": "2013-05-31T23:25:09Z",
+  "closed_at": null,
+  "body": "[reposting here - was originally at Viper007Bond/syntaxhighlighter#16]\r\n\r\nIn a block of SQL code there appears to be an error in how single quotes are parsed.  In the following block of code, everything from `DEFAULT ''`  down to `'%'` is appearing as if it was a very long string literal.\r\n\r\nThis can be seen live at http://jeremythomerson.com/2013/05/30/urlencoder-function-for-mysql/\r\n\r\nHere is the entire block of SQL that is causing the problem:\r\n\r\n```\r\nDELIMITER ;\r\n\r\nDROP FUNCTION IF EXISTS urlencode;\r\n\r\nDELIMITER |\r\n\r\nCREATE FUNCTION URLENCODE(str VARCHAR(4096) CHARSET utf8) RETURNS VARCHAR(4096) CHARSET utf8\r\nDETERMINISTIC\r\nCONTAINS SQL\r\nBEGIN\r\n   -- the individual character we are converting in our loop\r\n   -- NOTE: must be VARCHAR even though it won't vary in length\r\n   -- CHAR(1), when used with SUBSTRING, made spaces '' instead of ' '\r\n   DECLARE sub VARCHAR(1) CHARSET utf8;\r\n   -- the ordinal value of the character (i.e. ñ becomes 50097)\r\n   DECLARE val BIGINT DEFAULT 0;\r\n   -- the substring index we use in our loop (one-based)\r\n   DECLARE ind INT DEFAULT 1;\r\n   -- the integer value of the individual octet of a character being encoded\r\n   -- (which is potentially multi-byte and must be encoded one byte at a time)\r\n   DECLARE oct INT DEFAULT 0;\r\n   -- the encoded return string that we build up during execution\r\n   DECLARE ret VARCHAR(4096) DEFAULT '';\r\n   -- our loop index for looping through each octet while encoding\r\n   DECLARE octind INT DEFAULT 0;\r\n\r\n   IF ISNULL(str) THEN\r\n      RETURN NULL;\r\n   ELSE\r\n      SET ret = '';\r\n      -- loop through the input string one character at a time - regardless\r\n      -- of how many bytes a character consists of\r\n      WHILE ind &lt;= CHAR_LENGTH(str) DO\r\n         SET sub = MID(str, ind, 1);\r\n         SET val = ORD(sub);\r\n         -- these values are ones that should not be converted\r\n         -- see http://tools.ietf.org/html/rfc3986\r\n         IF NOT (val BETWEEN 48 AND 57 OR     -- 48-57  = 0-9\r\n                 val BETWEEN 65 AND 90 OR     -- 65-90  = A-Z\r\n                 val BETWEEN 97 AND 122 OR    -- 97-122 = a-z\r\n                 -- 45 = hyphen, 46 = period, 95 = underscore, 126 = tilde\r\n                 val IN (45, 46, 95, 126)) THEN\r\n            -- This is not an &quot;unreserved&quot; char and must be encoded:\r\n            -- loop through each octet of the potentially multi-octet character\r\n            -- and convert each into its hexadecimal value\r\n            -- we start with the high octect because that is the order that ORD\r\n            -- returns them in - they need to be encoded with the most significant\r\n            -- byte first\r\n            SET octind = OCTET_LENGTH(sub);\r\n            WHILE octind &gt; 0 DO\r\n               -- get the actual value of this octet by shifting it to the right\r\n               -- so that it is at the lowest byte position - in other words, make\r\n               -- the octet/byte we are working on the entire number (or in even\r\n               -- other words, oct will no be between zero and 255 inclusive)\r\n               SET oct = (val &gt;&gt; (8 * (octind - 1)));\r\n               -- we append this to our return string with a percent sign, and then\r\n               -- a left-zero-padded (to two characters) string of the hexadecimal\r\n               -- value of this octet)\r\n               SET ret = CONCAT(ret, '%', LPAD(HEX(oct), 2, 0));\r\n               -- now we need to reset val to essentially zero out the octet that we\r\n               -- just encoded so that our number decreases and we are only left with\r\n               -- the lower octets as part of our integer\r\n               SET val = (val &amp; (POWER(256, (octind - 1)) - 1));\r\n               SET octind = (octind - 1);\r\n            END WHILE;\r\n         ELSE\r\n            -- this character was not one that needed to be encoded and can simply be\r\n            -- added to our return string as-is\r\n            SET ret = CONCAT(ret, sub);\r\n         END IF;\r\n         SET ind = (ind + 1);\r\n      END WHILE;\r\n   END IF;\r\n   RETURN ret;\r\nEND;\r\n \r\n|\r\n\r\nDELIMITER ;\r\n```",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+
+]

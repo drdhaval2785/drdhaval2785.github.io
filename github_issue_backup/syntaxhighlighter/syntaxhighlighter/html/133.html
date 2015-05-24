@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html class='' lang='en'>
+<head prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#'>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8'>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta http-equiv='Content-Language' content='en'>
+<title>syntaxhighlighter/syntaxhighlighter/133</title>
+<link href='github-c486157afcc5f58155a921bc675afb08733fbaa8dcf39ac2104d3.css' media='all' rel='stylesheet'>
+<link href='github2-da2e842cc3f0aaf33b727d0ef034243c12ab008fd09b24868b97.css' media='all' rel='stylesheet'>
+<meta http-equiv='x-pjax-version' content='4426702614c8182f33d1780ad1169662'>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shAutoloader.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAppleScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAS3.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushBash.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushColdFusion.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCpp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCSharp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCss.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDelphi.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDiff.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushErlang.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushGroovy.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJava.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJavaFX.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/syntaxhighlighter/scripts/shBrushJScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPerl.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPhp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPlain.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPowerShell.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPython.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushRuby.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSass.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushScala.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSql.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushVb.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushXml.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shLegacy.js'></script>
+	<link type='text/css' rel='stylesheet' href='syntaxhighlighter/styles/shCoreDefault.css'/>
+	<script type='text/javascript'>SyntaxHighlighter.all();</script>
+</head>
+<body class='logged_in  env-production windows vis-public'>
+<h1 align='center'><a href='https://github.com/syntaxhighlighter/syntaxhighlighter/issues/133' target='_blank'>Wish: Add defered loading of brushes to the autoloader</h1><hr/><div id="#issue-5275980" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/siebenschlaefer" class="author">siebenschlaefer</a>
+    </strong>
+    commented on 
+    <a href="#issue-5275980" class="timestamp">
+      <time>2012-06-26 15:20:14</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>SyntaxHighlighter.all(params) executes .highlight(params) on window.load:</p>
+<pre class="brush: javascript">    all: function(params)
+    {
+        attachEvent(
+            window,
+            'load',
+            function() { sh.highlight(params); }
+        );
+    }</code></pre>
+<p>Could there be a similar function for the autoloader? Something like:</p>
+<pre class="brush: javascript">    autoload: function(brushes)
+    {
+        attachEvent(
+            window,
+            'load',
+            function() { sh.autoloader(brushes); }
+        );
+    }</code></pre>
+<p>Disclaimer: I don't know much about JS, so maybe I missed this functionality in the existing codebase.
+The snippet above needs attachEvent which is not available outside of shCore.js.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-6597235" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/siebenschlaefer" class="author">siebenschlaefer</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-6597235" class="timestamp">
+      <time>2012-06-27 08:09:15</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Actually, this works for me:</p>
+<pre class="brush: javascript">   SyntaxHighlighter.autoload = function(brushes)
+    {
+        function handler(e)
+        {
+            e = e || window.event;
+
+            if (!e.target)
+            {
+                e.target = e.srcElement;
+                e.preventDefault = function()
+                {
+                    this.returnValue = false;
+                };
+            }
+            SyntaxHighlighter.autoloader.apply(this, brushes);
+            SyntaxHighlighter.all();
+        };
+
+        if (window.attachEvent)
+        {
+            window.attachEvent('on' + 'load', handler);
+        }
+        else
+        {
+            window.addEventListener('load', handler, false);
+        }
+    }
+
+    function addPath(path, array)
+    {
+      var result = [];
+      for (var i = 0; i &lt; array.length; ++i)
+      {
+        var elem = array[i].slice();
+        elem[elem.length - 1] = path + elem[elem.length - 1];
+        result.push(elem);
+      }
+      return result;
+    }
+
+    SyntaxHighlighter.autoload(
+        addPath('/static/syntaxhighlighter/scripts/', [
+        ['applescript', 'shBrushAppleScript.js'],
+        ['actionscript3', 'as3', 'shBrushAS3.js'],
+        ['bash', 'shell', 'shBrushBash.js'],
+        ['coldfusion', 'cf', 'shBrushColdFusion.js'],
+        ['cpp', 'c', 'shBrushCpp.js'],
+        ['c#', 'c-sharp', 'csharp', 'shBrushCSharp.js'],
+        ['css', 'shBrushCss.js'],
+        ['delphi', 'pascal', 'shBrushDelphi.js'],
+        ['diff', 'patch', 'pas', 'shBrushDiff.js'],
+        ['erl', 'erlang', 'shBrushErlang.js'],
+        ['groovy', 'shBrushGroovy.js'],
+        ['java', 'shBrushJava.js'],
+        ['jfx', 'javafx', 'shBrushJavaFX.js'],
+        ['js', 'jscript', 'javascript', 'shBrushJScript.js'],
+        ['perl', 'pl', 'shBrushPerl.js'],
+        ['php', 'shBrushPhp.js'],
+        ['text', 'plain', 'shBrushPlain.js'],
+        ['py', 'python', 'shBrushPython.js'],
+        ['ruby', 'rails', 'ror', 'rb', 'shBrushRuby.js'],
+        ['sass', 'scss', 'shBrushSass.js'],
+        ['scala', 'shBrushScala.js'],
+        ['sql', 'shBrushSql.js'],
+        ['vb', 'vbnet', 'shBrushVb.js'],
+        ['xml', 'xhtml', 'xslt', 'html', 'shBrushXml.js']
+        ]));</code></pre>
+<p>But couldn't a method like <code>SyntaxHighlighter.autoload(brushes)</code> from above become part of the library?</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+</body></html>

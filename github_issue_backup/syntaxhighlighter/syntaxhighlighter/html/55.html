@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html class='' lang='en'>
+<head prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#'>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8'>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta http-equiv='Content-Language' content='en'>
+<title>syntaxhighlighter/syntaxhighlighter/55</title>
+<link href='github-c486157afcc5f58155a921bc675afb08733fbaa8dcf39ac2104d3.css' media='all' rel='stylesheet'>
+<link href='github2-da2e842cc3f0aaf33b727d0ef034243c12ab008fd09b24868b97.css' media='all' rel='stylesheet'>
+<meta http-equiv='x-pjax-version' content='4426702614c8182f33d1780ad1169662'>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shAutoloader.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAppleScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAS3.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushBash.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushColdFusion.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCpp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCSharp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCss.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDelphi.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDiff.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushErlang.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushGroovy.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJava.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJavaFX.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/syntaxhighlighter/scripts/shBrushJScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPerl.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPhp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPlain.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPowerShell.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPython.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushRuby.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSass.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushScala.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSql.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushVb.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushXml.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shLegacy.js'></script>
+	<link type='text/css' rel='stylesheet' href='syntaxhighlighter/styles/shCoreDefault.css'/>
+	<script type='text/javascript'>SyntaxHighlighter.all();</script>
+</head>
+<body class='logged_in  env-production windows vis-public'>
+<h1 align='center'><a href='https://github.com/syntaxhighlighter/syntaxhighlighter/issues/55' target='_blank'>[Javascript Brush] Specifying strings with single quotes in functions.</h1><hr/><div id="#issue-2141451" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/joesavage" class="author">joesavage</a>
+    </strong>
+    commented on 
+    <a href="#issue-2141451" class="timestamp">
+      <time>2011-11-04 07:41:44</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Hi,</p>
+<p>I was recently writing a tutorial on my website, only to find when publishing it that the syntax highlighting had really screwed up (for some reason unknown to me).
+As can be demonstrated, here: <a href="http://www.dev-hq.net/7-Javascript/54-If-and-Else-statements">http://www.dev-hq.net/7-Javascript/54-If-and-Else-statements</a>
+Using strings that are created using single quotes (apostrophes) inside a function, seems to really mess up the JScript SyntaxHighlighting. Like so:</p>
+<pre class="brush: js;">
+var name = prompt('What is your name?');
+if(name=='Joe') //If the user's name is 'Joe'
+{
+    alert('Wow, cool – my name is Joe too!');
+}
+else if(name=='Fred') //If the user's name is 'Fred'
+{
+    alert('Fred is a pretty generic name...');
+}
+else if(name=='John') //If the user's name is 'John'
+{
+    alert('Alright, John?');
+}
+else if(name=='George') //If the user's name is 'George'
+{
+    alert('George is a pretty decent name.');
+}
+else
+{
+    alert('I have no opinion on your name.');
+}
+</pre>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-2677751" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/williamrose" class="author">williamrose</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-2677751" class="timestamp">
+      <time>2011-11-09 05:44:33</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I get a similar issue with the SQL brush, and I think it might be due to unbalanced apostrophes in comments.</p>
+<p>For instance, in the following snippet, disobeying the comment and deleting the final <code>&amp;#039;</code> means the keywords in the string literals are highlighted incorrectly.</p>
+<pre class="brush: html">  &lt;pre class="brush: sql"&gt;
+  -- Don&amp;#039;t be deleting that final &amp;#039;
+  SELECT &amp;#039;Hello, &amp;#039; AS line1
+       , &amp;#039;I am going to delete&amp;#039; AS line2
+       , &amp;#039;your data now.&amp;#039; AS line3
+  FROM dual
+  &lt;/pre&gt;</code></pre>
+<p>If I change all the <code>user's</code> to <code>users</code> in your comments above the syntax highlighting works for me, suggesting this may be the same issue in the JScript brush.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-2709990" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/joesavage" class="author">joesavage</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-2709990" class="timestamp">
+      <time>2011-11-11 16:31:24</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I can indeed that making this change fixes the problem.
+Very odd, hopefully it'll be fixed in the future sometime.</p>
+<p>Thanks, williamrose! :)</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-3254333" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/jmrware" class="author">jmrware</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-3254333" class="timestamp">
+      <time>2011-12-22 20:23:45</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>This erroneous behavior is due to the parser bug I identified in <a href="https://github.com/alexgorbatchev/SyntaxHighlighter/issues/72">Issue 72</a></p>
+<p>I wrote an article about this bug (and provided one possible fix) here:</p>
+<p><a href="http://jmrware.com/articles/2011/sh-bug/SyntaxHighlighterBug.html">Fixing the SyntaxHighlighter 3.0.83 Parser Bug</a></p>
+  </div>
+  </div>
+  </div>
+  <br/>
+</body></html>

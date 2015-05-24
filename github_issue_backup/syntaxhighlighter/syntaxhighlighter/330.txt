@@ -1,0 +1,46 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/330",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/330/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/330/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/330/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/330",
+  "id": 38098798,
+  "number": 330,
+  "title": "]]> in a newline produce a square in the previous source code (brush:vb)",
+  "user": {
+    "login": "paologuccini",
+    "id": 8192970,
+    "avatar_url": "https://avatars.githubusercontent.com/u/8192970?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/paologuccini",
+    "html_url": "https://github.com/paologuccini",
+    "followers_url": "https://api.github.com/users/paologuccini/followers",
+    "following_url": "https://api.github.com/users/paologuccini/following{/other_user}",
+    "gists_url": "https://api.github.com/users/paologuccini/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/paologuccini/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/paologuccini/subscriptions",
+    "organizations_url": "https://api.github.com/users/paologuccini/orgs",
+    "repos_url": "https://api.github.com/users/paologuccini/repos",
+    "events_url": "https://api.github.com/users/paologuccini/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/paologuccini/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2014-07-17T16:16:41Z",
+  "updated_at": "2014-07-17T16:16:41Z",
+  "closed_at": null,
+  "body": "I suppose have found a minor bug.\r\n\r\nIn following example in witch ]]> in on a new line, the previous one (End Sub) will be displayed with an ending undesired char (a square � : the newline):\r\n\r\n<script type=\"syntaxhighlighter\" class=\"brush: vb\"><![CDATA[\r\n                    Public Sub Fogli_OrdinaAlfabeticamenteZA()\r\n                    End Sub\r\n ]]></script>\r\n\r\nUsing just a line like:\r\nEnd Sub]]></script>\r\n(no newline between the source code and ]]>) the the square � have no place.\r\n\r\nPS: syntaxhighlighter it's really nice!",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+
+]

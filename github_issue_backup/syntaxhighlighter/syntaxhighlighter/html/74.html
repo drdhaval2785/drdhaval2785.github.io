@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html class='' lang='en'>
+<head prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#'>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8'>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta http-equiv='Content-Language' content='en'>
+<title>syntaxhighlighter/syntaxhighlighter/74</title>
+<link href='github-c486157afcc5f58155a921bc675afb08733fbaa8dcf39ac2104d3.css' media='all' rel='stylesheet'>
+<link href='github2-da2e842cc3f0aaf33b727d0ef034243c12ab008fd09b24868b97.css' media='all' rel='stylesheet'>
+<meta http-equiv='x-pjax-version' content='4426702614c8182f33d1780ad1169662'>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shAutoloader.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAppleScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAS3.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushBash.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushColdFusion.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCpp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCSharp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCss.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDelphi.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDiff.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushErlang.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushGroovy.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJava.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJavaFX.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/syntaxhighlighter/scripts/shBrushJScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPerl.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPhp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPlain.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPowerShell.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPython.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushRuby.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSass.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushScala.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSql.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushVb.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushXml.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shLegacy.js'></script>
+	<link type='text/css' rel='stylesheet' href='syntaxhighlighter/styles/shCoreDefault.css'/>
+	<script type='text/javascript'>SyntaxHighlighter.all();</script>
+</head>
+<body class='logged_in  env-production windows vis-public'>
+<h1 align='center'><a href='https://github.com/syntaxhighlighter/syntaxhighlighter/issues/74' target='_blank'>PHPDoc Comments</h1><hr/><div id="#issue-2682501" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/jasondavis" class="author">jasondavis</a>
+    </strong>
+    commented on 
+    <a href="#issue-2682501" class="timestamp">
+      <time>2011-12-29 20:34:15</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Would it be possible for someone to add the PHPDoc comment to the PHP brush.  so something like</p>
+<pre><code>/**
+* <strong><a href="https://github.com/author" target="_blank">@author</a></strong> Kenneth Davis
+* <strong><a href="https://github.com/copyright" target="_blank">@copyright</a></strong> 2011
+*/</code></pre>
+<p>Would wrap the <code><strong><a href="https://github.com/author" target="_blank">@author</a></strong></code> and <code><strong><a href="https://github.com/copyright" target="_blank">@copyright</a></strong></code> inside of a <code>.phpdoc</code> css class.  </p>
+<p><code><strong><a href="https://github.com/author" target="_blank">@author</a></strong></code> and <code><strong><a href="https://github.com/copyright" target="_blank">@copyright</a></strong></code> could be pretty much any word with the <code><strong><a href="https://github.com/" target="_blank">@</a></strong></code> in front of it inside a comment</p>
+<p>Update... I have almost got it done but I ran into a problem. I add something like this to my PHP brush file...</p>
+<pre><code> // PHPDoc Comment Variables 
+{ regex: /<strong><a href="https://github.com/" target="_blank">@</a></strong>[a-z]+/g,      css: 'php-phpdoc phpdoc' },</code></pre>
+<p>But then on the shCore.js file on line 1318 is a function the says...
+/**</p>
+<ul>
+<li>Checks to see if any of the matches are inside of other matches. </li>
+<li>This process would get rid of highligted strings inside comments, </li>
+<li>keywords inside strings and so on.
+*/
+removeNestedMatches: function(matches)</li>
+</ul>
+<p>this seem to strip out my matched PHPDoc match, would love a fix for this if possible</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+</body></html>

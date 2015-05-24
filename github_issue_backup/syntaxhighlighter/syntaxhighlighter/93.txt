@@ -1,0 +1,73 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/93",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/93/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/93/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/93/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/93",
+  "id": 3333395,
+  "number": 93,
+  "title": "C# Generec Type ?",
+  "user": {
+    "login": "my407sw",
+    "id": 1461434,
+    "avatar_url": "https://avatars.githubusercontent.com/u/1461434?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/my407sw",
+    "html_url": "https://github.com/my407sw",
+    "followers_url": "https://api.github.com/users/my407sw/followers",
+    "following_url": "https://api.github.com/users/my407sw/following{/other_user}",
+    "gists_url": "https://api.github.com/users/my407sw/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/my407sw/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/my407sw/subscriptions",
+    "organizations_url": "https://api.github.com/users/my407sw/orgs",
+    "repos_url": "https://api.github.com/users/my407sw/repos",
+    "events_url": "https://api.github.com/users/my407sw/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/my407sw/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2012-02-22T14:36:16Z",
+  "updated_at": "2012-04-06T11:19:56Z",
+  "closed_at": null,
+  "body": "When I use SyntaxHighlighter 3.0.83 or 2.0.278 , I put the code like this in <pre>  tag\r\n\r\nList<Card> pcards = game.CurrentPlayer.Hand.Cards;\r\n\r\nWhen the page load finish, the last of page will show\r\n</Card>\r\n\r\nSo, is it bug ? Any way to solve it ?",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/comments/4993858",
+    "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/93#issuecomment-4993858",
+    "issue_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/93",
+    "id": 4993858,
+    "user": {
+      "login": "jeme",
+      "id": 1609615,
+      "avatar_url": "https://avatars.githubusercontent.com/u/1609615?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jeme",
+      "html_url": "https://github.com/jeme",
+      "followers_url": "https://api.github.com/users/jeme/followers",
+      "following_url": "https://api.github.com/users/jeme/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jeme/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jeme/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jeme/subscriptions",
+      "organizations_url": "https://api.github.com/users/jeme/orgs",
+      "repos_url": "https://api.github.com/users/jeme/repos",
+      "events_url": "https://api.github.com/users/jeme/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jeme/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2012-04-06T11:19:56Z",
+    "updated_at": "2012-04-09T09:32:59Z",
+    "body": "While i don't get your example, maybe the \"code formatter\" on git hub striped something out?... \r\n\r\nAnyways, as a \"workaround\" you can use html codes like so:\r\n\r\nList&amp;lt;string&amp;gt; myList = new List&amp;lt;string&amp;gt;();\r\n\r\nI know it is not pretty, but it works for me at least.\r\n\r\n(This is actually a requirement to using the \"pre\" block if that is the one you use (as I recall)... This should obviously be handled else where in a system. Either by server side rendering, or better, pre-save of the content."
+  }
+]

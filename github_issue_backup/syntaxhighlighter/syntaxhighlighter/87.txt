@@ -1,0 +1,70 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/87",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/87/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/87/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/87/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/pull/87",
+  "id": 3004875,
+  "number": 87,
+  "title": "Add 'auto' and 'decltype' keywords.",
+  "user": {
+    "login": "ChrisJefferson",
+    "id": 811527,
+    "avatar_url": "https://avatars.githubusercontent.com/u/811527?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ChrisJefferson",
+    "html_url": "https://github.com/ChrisJefferson",
+    "followers_url": "https://api.github.com/users/ChrisJefferson/followers",
+    "following_url": "https://api.github.com/users/ChrisJefferson/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ChrisJefferson/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ChrisJefferson/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ChrisJefferson/subscriptions",
+    "organizations_url": "https://api.github.com/users/ChrisJefferson/orgs",
+    "repos_url": "https://api.github.com/users/ChrisJefferson/repos",
+    "events_url": "https://api.github.com/users/ChrisJefferson/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ChrisJefferson/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2012-01-28T12:37:17Z",
+  "updated_at": "2012-03-18T19:40:32Z",
+  "closed_at": "2012-03-18T19:40:32Z",
+  "pull_request": {
+    "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/pulls/87",
+    "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/pull/87",
+    "diff_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/pull/87.diff",
+    "patch_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/pull/87.patch"
+  },
+  "body": "auto has always been a keyword (which no-one really used), but is more used in C++11. decltype is new to C++11.\r\n\r\n",
+  "closed_by": {
+    "login": "alexgorbatchev",
+    "id": 65633,
+    "avatar_url": "https://avatars.githubusercontent.com/u/65633?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/alexgorbatchev",
+    "html_url": "https://github.com/alexgorbatchev",
+    "followers_url": "https://api.github.com/users/alexgorbatchev/followers",
+    "following_url": "https://api.github.com/users/alexgorbatchev/following{/other_user}",
+    "gists_url": "https://api.github.com/users/alexgorbatchev/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/alexgorbatchev/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/alexgorbatchev/subscriptions",
+    "organizations_url": "https://api.github.com/users/alexgorbatchev/orgs",
+    "repos_url": "https://api.github.com/users/alexgorbatchev/repos",
+    "events_url": "https://api.github.com/users/alexgorbatchev/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/alexgorbatchev/received_events",
+    "type": "User",
+    "site_admin": false
+  }
+}
+BODY STARTS FROM HERE
+[
+
+]

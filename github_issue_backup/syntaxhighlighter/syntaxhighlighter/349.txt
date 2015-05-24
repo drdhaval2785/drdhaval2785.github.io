@@ -1,0 +1,46 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/349",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/349/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/349/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/349/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/349",
+  "id": 55213322,
+  "number": 349,
+  "title": "Example on webpage is seemingly incorrect",
+  "user": {
+    "login": "garypaduana",
+    "id": 4510602,
+    "avatar_url": "https://avatars.githubusercontent.com/u/4510602?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/garypaduana",
+    "html_url": "https://github.com/garypaduana",
+    "followers_url": "https://api.github.com/users/garypaduana/followers",
+    "following_url": "https://api.github.com/users/garypaduana/following{/other_user}",
+    "gists_url": "https://api.github.com/users/garypaduana/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/garypaduana/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/garypaduana/subscriptions",
+    "organizations_url": "https://api.github.com/users/garypaduana/orgs",
+    "repos_url": "https://api.github.com/users/garypaduana/repos",
+    "events_url": "https://api.github.com/users/garypaduana/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/garypaduana/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2015-01-22T21:45:02Z",
+  "updated_at": "2015-01-22T21:45:02Z",
+  "closed_at": null,
+  "body": "The example on the main page is inconsistent between the source and the rendered version.  Where did `if(counter <= 10)...` come from along with the function comments?  Also, I don't think the intent is to have `<pre ...</pre>` show up in the rendered results. \r\n![syntaxhighlighter](https://cloud.githubusercontent.com/assets/4510602/5865121/36ff9c0e-a255-11e4-802e-3a3b0bd34015.PNG)",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+
+]

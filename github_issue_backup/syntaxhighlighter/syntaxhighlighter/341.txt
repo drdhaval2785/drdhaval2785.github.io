@@ -1,0 +1,46 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/341",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/341/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/341/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/341/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/341",
+  "id": 42044263,
+  "number": 341,
+  "title": "String.prototype.replace error",
+  "user": {
+    "login": "gtimur7",
+    "id": 1584543,
+    "avatar_url": "https://avatars.githubusercontent.com/u/1584543?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/gtimur7",
+    "html_url": "https://github.com/gtimur7",
+    "followers_url": "https://api.github.com/users/gtimur7/followers",
+    "following_url": "https://api.github.com/users/gtimur7/following{/other_user}",
+    "gists_url": "https://api.github.com/users/gtimur7/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/gtimur7/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/gtimur7/subscriptions",
+    "organizations_url": "https://api.github.com/users/gtimur7/orgs",
+    "repos_url": "https://api.github.com/users/gtimur7/repos",
+    "events_url": "https://api.github.com/users/gtimur7/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/gtimur7/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2014-09-05T13:05:38Z",
+  "updated_at": "2014-09-05T13:05:38Z",
+  "closed_at": null,
+  "body": "i use this plugin in sharepoint 2010.\r\nand somteimes system buttons doesn't work, because they use **replace** method and \"**e**\" parameter is null (SharePoint do this).\r\nso i added\r\n```javascript\r\nif (e == null) e=\"\" \r\n```\r\nin your String.prototype.replace method",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+
+]

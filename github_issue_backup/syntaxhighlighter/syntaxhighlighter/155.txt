@@ -1,0 +1,52 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/155",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/155/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/155/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/155/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/pull/155",
+  "id": 7472376,
+  "number": 155,
+  "title": "Modified keywords, strings, and value in Python brush",
+  "user": {
+    "login": "kazutoshi",
+    "id": 1484687,
+    "avatar_url": "https://avatars.githubusercontent.com/u/1484687?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kazutoshi",
+    "html_url": "https://github.com/kazutoshi",
+    "followers_url": "https://api.github.com/users/kazutoshi/followers",
+    "following_url": "https://api.github.com/users/kazutoshi/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kazutoshi/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kazutoshi/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kazutoshi/subscriptions",
+    "organizations_url": "https://api.github.com/users/kazutoshi/orgs",
+    "repos_url": "https://api.github.com/users/kazutoshi/repos",
+    "events_url": "https://api.github.com/users/kazutoshi/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kazutoshi/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2012-10-10T05:43:47Z",
+  "updated_at": "2012-10-10T06:19:54Z",
+  "closed_at": null,
+  "pull_request": {
+    "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/pulls/155",
+    "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/pull/155",
+    "diff_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/pull/155.diff",
+    "patch_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/pull/155.patch"
+  },
+  "body": "* Remove operators from keyword.\r\n* Add 'as' and 'with' to keyword.\r\n* Append 'r' and 'u' prefix to strings.\r\n* Fix decorator pattern (supports dotted name).\r\n* Fix value for representation floating number by exponent.",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+
+]

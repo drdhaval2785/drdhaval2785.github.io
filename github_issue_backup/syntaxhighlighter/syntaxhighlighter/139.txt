@@ -1,0 +1,97 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/139",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/139/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/139/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/139/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/pull/139",
+  "id": 6058854,
+  "number": 139,
+  "title": "shAutoloader.js duplicate loading and html-script support.",
+  "user": {
+    "login": "jcloutz",
+    "id": 711186,
+    "avatar_url": "https://avatars.githubusercontent.com/u/711186?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jcloutz",
+    "html_url": "https://github.com/jcloutz",
+    "followers_url": "https://api.github.com/users/jcloutz/followers",
+    "following_url": "https://api.github.com/users/jcloutz/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jcloutz/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jcloutz/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jcloutz/subscriptions",
+    "organizations_url": "https://api.github.com/users/jcloutz/orgs",
+    "repos_url": "https://api.github.com/users/jcloutz/repos",
+    "events_url": "https://api.github.com/users/jcloutz/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jcloutz/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2012-08-06T18:37:29Z",
+  "updated_at": "2013-04-19T23:19:42Z",
+  "closed_at": "2013-04-19T23:19:36Z",
+  "pull_request": {
+    "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/pulls/139",
+    "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/pull/139",
+    "diff_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/pull/139.diff",
+    "patch_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/pull/139.patch"
+  },
+  "body": "I made a few changes to the autoloader to address some issues that I was having. Firstly it would load duplicate brushes if called more than once. Secondly, it did not support the html-script parameter and caused an error unless you manually load the xml brush prior to the brush you want to use in the mixed code example. It will now properly load the xml brush automatically if needed, unless it has already been loaded.\n\nChanges\n+ prevent the loading of duplicate brush files.\n+ add support for the html-script parameter. ",
+  "closed_by": {
+    "login": "alexgorbatchev",
+    "id": 65633,
+    "avatar_url": "https://avatars.githubusercontent.com/u/65633?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/alexgorbatchev",
+    "html_url": "https://github.com/alexgorbatchev",
+    "followers_url": "https://api.github.com/users/alexgorbatchev/followers",
+    "following_url": "https://api.github.com/users/alexgorbatchev/following{/other_user}",
+    "gists_url": "https://api.github.com/users/alexgorbatchev/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/alexgorbatchev/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/alexgorbatchev/subscriptions",
+    "organizations_url": "https://api.github.com/users/alexgorbatchev/orgs",
+    "repos_url": "https://api.github.com/users/alexgorbatchev/repos",
+    "events_url": "https://api.github.com/users/alexgorbatchev/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/alexgorbatchev/received_events",
+    "type": "User",
+    "site_admin": false
+  }
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/comments/16694571",
+    "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/pull/139#issuecomment-16694571",
+    "issue_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/139",
+    "id": 16694571,
+    "user": {
+      "login": "alexgorbatchev",
+      "id": 65633,
+      "avatar_url": "https://avatars.githubusercontent.com/u/65633?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgorbatchev",
+      "html_url": "https://github.com/alexgorbatchev",
+      "followers_url": "https://api.github.com/users/alexgorbatchev/followers",
+      "following_url": "https://api.github.com/users/alexgorbatchev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgorbatchev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgorbatchev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgorbatchev/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgorbatchev/orgs",
+      "repos_url": "https://api.github.com/users/alexgorbatchev/repos",
+      "events_url": "https://api.github.com/users/alexgorbatchev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgorbatchev/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2013-04-19T23:19:42Z",
+    "updated_at": "2013-04-19T23:19:42Z",
+    "body": "Thank you for your work!"
+  }
+]

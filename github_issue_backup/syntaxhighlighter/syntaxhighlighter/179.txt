@@ -1,0 +1,101 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/179",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/179/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/179/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/179/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/179",
+  "id": 10686222,
+  "number": 179,
+  "title": "first angle bracket of <t> element gets escaped in XML ",
+  "user": {
+    "login": "tklevenz",
+    "id": 3456728,
+    "avatar_url": "https://avatars.githubusercontent.com/u/3456728?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tklevenz",
+    "html_url": "https://github.com/tklevenz",
+    "followers_url": "https://api.github.com/users/tklevenz/followers",
+    "following_url": "https://api.github.com/users/tklevenz/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tklevenz/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tklevenz/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tklevenz/subscriptions",
+    "organizations_url": "https://api.github.com/users/tklevenz/orgs",
+    "repos_url": "https://api.github.com/users/tklevenz/repos",
+    "events_url": "https://api.github.com/users/tklevenz/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tklevenz/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 2,
+  "created_at": "2013-02-06T10:09:47Z",
+  "updated_at": "2013-02-19T16:31:52Z",
+  "closed_at": null,
+  "body": "Hi,\r\n\r\nfor some reason when you have a **t**-element in XML it doesn't display correctly.\r\n\r\n```\r\n<t>test</t>\r\n```\r\nis displayed as:\r\n```\r\n&lt;t>test&lt;/t>\r\n```\r\n\r\nYou can see it [here](http://www.data2type.de/xml-xslt-xslfo/spreadsheetml/spreadsheetml/#c1712).\r\nThe site is currently using Syntaxhighlighter v2 but I've tryed it with both v2 and v3 and it looks the same.\r\n\r\nThanks,\r\nTobias",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/comments/13680412",
+    "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/179#issuecomment-13680412",
+    "issue_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/179",
+    "id": 13680412,
+    "user": {
+      "login": "jeffreytang",
+      "id": 3138310,
+      "avatar_url": "https://avatars.githubusercontent.com/u/3138310?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jeffreytang",
+      "html_url": "https://github.com/jeffreytang",
+      "followers_url": "https://api.github.com/users/jeffreytang/followers",
+      "following_url": "https://api.github.com/users/jeffreytang/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jeffreytang/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jeffreytang/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jeffreytang/subscriptions",
+      "organizations_url": "https://api.github.com/users/jeffreytang/orgs",
+      "repos_url": "https://api.github.com/users/jeffreytang/repos",
+      "events_url": "https://api.github.com/users/jeffreytang/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jeffreytang/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2013-02-17T04:02:08Z",
+    "updated_at": "2013-02-17T04:02:55Z",
+    "body": "Confirmed, the problem can be reproduced is this example \r\nhttp://jsfiddle.net/gazebotang/AJrS3/3/\r\n\r\nwhen the element is t or l, it will not display correctly.\r\nThe reason is because the \"t\" or \"l\" inside \"&lt;\" is mistakenly parsed as the element keyword.\r\n\r\nIt's a bug in line 30 of shBrushXml.js\r\n\r\n    tag[0].indexOf(tag.name)\r\n\r\nwhen tag.name = \"t\", indexOf return the index of \"t\" inside \"&lt;\", instead of the index of the real element \"t\".\r\n\r\n"
+  },
+  {
+    "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/comments/13782035",
+    "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/179#issuecomment-13782035",
+    "issue_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/179",
+    "id": 13782035,
+    "user": {
+      "login": "tklevenz",
+      "id": 3456728,
+      "avatar_url": "https://avatars.githubusercontent.com/u/3456728?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/tklevenz",
+      "html_url": "https://github.com/tklevenz",
+      "followers_url": "https://api.github.com/users/tklevenz/followers",
+      "following_url": "https://api.github.com/users/tklevenz/following{/other_user}",
+      "gists_url": "https://api.github.com/users/tklevenz/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/tklevenz/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/tklevenz/subscriptions",
+      "organizations_url": "https://api.github.com/users/tklevenz/orgs",
+      "repos_url": "https://api.github.com/users/tklevenz/repos",
+      "events_url": "https://api.github.com/users/tklevenz/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/tklevenz/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2013-02-19T16:31:52Z",
+    "updated_at": "2013-02-19T16:31:52Z",
+    "body": "Looks good, thanks!"
+  }
+]

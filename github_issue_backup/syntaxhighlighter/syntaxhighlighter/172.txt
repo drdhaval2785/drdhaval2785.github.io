@@ -1,0 +1,73 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/172",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/172/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/172/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/172/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/172",
+  "id": 9407724,
+  "number": 172,
+  "title": "Inconsistent highlighting for \"print\" in Python.",
+  "user": {
+    "login": "thastings",
+    "id": 3082731,
+    "avatar_url": "https://avatars.githubusercontent.com/u/3082731?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/thastings",
+    "html_url": "https://github.com/thastings",
+    "followers_url": "https://api.github.com/users/thastings/followers",
+    "following_url": "https://api.github.com/users/thastings/following{/other_user}",
+    "gists_url": "https://api.github.com/users/thastings/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/thastings/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/thastings/subscriptions",
+    "organizations_url": "https://api.github.com/users/thastings/orgs",
+    "repos_url": "https://api.github.com/users/thastings/repos",
+    "events_url": "https://api.github.com/users/thastings/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/thastings/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2012-12-19T17:16:55Z",
+  "updated_at": "2013-01-07T02:40:38Z",
+  "closed_at": null,
+  "body": "'print`is sometimes highlighted in dark blue and sometimes in pink.\r\n\r\nSee http://python-code.com/?page_id=84\r\n\r\nRegards,\r\n\r\nTed\r\n",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/comments/11939215",
+    "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/172#issuecomment-11939215",
+    "issue_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/172",
+    "id": 11939215,
+    "user": {
+      "login": "jeffreytang",
+      "id": 3138310,
+      "avatar_url": "https://avatars.githubusercontent.com/u/3138310?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jeffreytang",
+      "html_url": "https://github.com/jeffreytang",
+      "followers_url": "https://api.github.com/users/jeffreytang/followers",
+      "following_url": "https://api.github.com/users/jeffreytang/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jeffreytang/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jeffreytang/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jeffreytang/subscriptions",
+      "organizations_url": "https://api.github.com/users/jeffreytang/orgs",
+      "repos_url": "https://api.github.com/users/jeffreytang/repos",
+      "events_url": "https://api.github.com/users/jeffreytang/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jeffreytang/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2013-01-07T02:40:38Z",
+    "updated_at": "2013-01-07T02:40:38Z",
+    "body": "This is confirmed. It happens to Chrome (version 23.0.1271.97). IE and Firefox are fine. The root cause is that file shBrushPython.js added \"print\" to both keywords (blue coloar) and funcs (pink color)\r\n\r\n"
+  }
+]

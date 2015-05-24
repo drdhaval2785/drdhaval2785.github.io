@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html class='' lang='en'>
+<head prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#'>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8'>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta http-equiv='Content-Language' content='en'>
+<title>syntaxhighlighter/syntaxhighlighter/245</title>
+<link href='github-c486157afcc5f58155a921bc675afb08733fbaa8dcf39ac2104d3.css' media='all' rel='stylesheet'>
+<link href='github2-da2e842cc3f0aaf33b727d0ef034243c12ab008fd09b24868b97.css' media='all' rel='stylesheet'>
+<meta http-equiv='x-pjax-version' content='4426702614c8182f33d1780ad1169662'>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shAutoloader.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAppleScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAS3.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushBash.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushColdFusion.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCpp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCSharp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCss.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDelphi.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDiff.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushErlang.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushGroovy.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJava.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJavaFX.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/syntaxhighlighter/scripts/shBrushJScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPerl.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPhp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPlain.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPowerShell.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPython.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushRuby.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSass.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushScala.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSql.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushVb.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushXml.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shLegacy.js'></script>
+	<link type='text/css' rel='stylesheet' href='syntaxhighlighter/styles/shCoreDefault.css'/>
+	<script type='text/javascript'>SyntaxHighlighter.all();</script>
+</head>
+<body class='logged_in  env-production windows vis-public'>
+<h1 align='center'><a href='https://github.com/syntaxhighlighter/syntaxhighlighter/pull/245' target='_blank'>Updates for bower-specific folder changes and windows builds (covers things in issue 240)</h1><hr/><div id="#issue-17343949" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/mctrusty" class="author">mctrusty</a>
+    </strong>
+    commented on 
+    <a href="#issue-17343949" class="timestamp">
+      <time>2013-07-29 15:11:12</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>These updates should cover problems brought up in <a href="https://github.com/alexgorbatchev/SyntaxHighlighter/issues/240">issue 240</a></p>
+<p>I made some updates to build.coffee to point to bower-specific changes (<a href="https://github.com/bower/bower/pull/435">components -&gt; bower_components</a>). </p>
+<p>Also made changes to get the build to run under Windows:</p>
+<ol>
+<li>Added <code>\r</code> to the <code>variable.about.replace</code> regex to handle windows-specific line endings. That character wasn't getting picked up and it would cause the validation step to hang on windows builds.</li>
+<li>Put conditional in build.coffee to check for windows/non-windows to set the beginning of <code>dir</code> accordingly. I placed the variable <code>isWin</code> in the same location as the other variables to follow that file style and then used it in mkdir to initialize the <code>dir</code> variable. It covers <a href="https://github.com/alexgorbatchev/SyntaxHighlighter/issues/240#issuecomment-20236213">the case apollolux brought up on issue 240</a>. </li>
+</ol>
+<p>I also changed the javascript references in  tests to point to the new locations so that they would run. I wasn't sure if you were going to phase out qunit testing (and some of those files) -- that's what it looked like from previous changes -- but xregexp (for now, though I believe that changes in 3+) has a reference to qunit so I used it to make those work for the time being.</p>
+<p>Last, I added a README.md in the build folder with updated build instructions.</p>
+<p>Build now seems to be working for me on Bodhi 2.3 with node 0.8.25 (using node-sass 0.3.0) and node 0.10.12 (node-sass 0.5.0) as well as on Windows7 under node 0.10. </p>
+<p>Notes:</p>
+<ul>
+<li>I was originally going to add <code>node-sass</code> to the <code>devDependencies</code> but then found that the build wouldn't work under node 0.8. If I added <code>node-sass 0.3.x</code> instead, the build wouldn't work under node 0.10. So I left it out and just added that information to the build folder's README.md because I wasn't sure if you wanted to maintain support for node 0.8. </li>
+<li>bower won't install anything on node versions pre-0.8. It will give a <code>TypeError: Object #&lt;Object&gt; has no method 'tmpDir'</code> because the <code>os</code> module <a href="http://blog.nodejs.org/2012/06/15/version-0-7-11-unstable/">doesn't include <code>tmpDir</code> until 0.7.11</a></li>
+<li>There are libraries available (like <a href="https://npmjs.org/package/mkdirp">mkdirp</a>) that might be of use in handling the <code>mkdir</code> functionality in build.coffee. I didn't really want to start adding dependencies and making those changes without some discussion.</li>
+</ul>
+  </div>
+  </div>
+  </div>
+  <br/>
+</body></html>

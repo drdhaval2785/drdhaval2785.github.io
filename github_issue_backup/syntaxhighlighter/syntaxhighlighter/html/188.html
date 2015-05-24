@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html class='' lang='en'>
+<head prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#'>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8'>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta http-equiv='Content-Language' content='en'>
+<title>syntaxhighlighter/syntaxhighlighter/188</title>
+<link href='github-c486157afcc5f58155a921bc675afb08733fbaa8dcf39ac2104d3.css' media='all' rel='stylesheet'>
+<link href='github2-da2e842cc3f0aaf33b727d0ef034243c12ab008fd09b24868b97.css' media='all' rel='stylesheet'>
+<meta http-equiv='x-pjax-version' content='4426702614c8182f33d1780ad1169662'>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shAutoloader.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAppleScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAS3.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushBash.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushColdFusion.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCpp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCSharp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCss.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDelphi.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDiff.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushErlang.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushGroovy.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJava.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJavaFX.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/syntaxhighlighter/scripts/shBrushJScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPerl.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPhp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPlain.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPowerShell.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPython.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushRuby.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSass.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushScala.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSql.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushVb.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushXml.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shLegacy.js'></script>
+	<link type='text/css' rel='stylesheet' href='syntaxhighlighter/styles/shCoreDefault.css'/>
+	<script type='text/javascript'>SyntaxHighlighter.all();</script>
+</head>
+<body class='logged_in  env-production windows vis-public'>
+<h1 align='center'><a href='https://github.com/syntaxhighlighter/syntaxhighlighter/issues/188' target='_blank'>Tumblr blogs turn links in <pre/> blocks into <a/> tags</h1><hr/><div id="#issue-11291931" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/abbeycode" class="author">abbeycode</a>
+    </strong>
+    commented on 
+    <a href="#issue-11291931" class="timestamp">
+      <time>2013-02-22 16:18:47</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I have a code block (below) on a Tumblr blog, which is having its URL turned into a link, even though I define auto-links to false in its <code>&lt;pre&gt;</code> tag, and also in a <code>&lt;script&gt;</code> block.</p>
+<p>Code block:</p>
+<pre><code>&lt;pre class="brush: applescript; wrap-lines: true; auto-links: false"&gt;
+    set variable to "URL: http://example.com"
+&lt;/pre&gt;</code></pre>
+<p>I end up with the following text in the rendered page:</p>
+<pre><code>set variable to "URL: &lt;a href="http://example.com"&gt;http://example.com&lt;/a&gt;"</code></pre>
+<p>After doing some testing, I saw that this appears to be Tumblr processing the link ahead of time, using its own &quot;auto-links&quot;, but the Syntax Highlighter code doesn't know it's not part of the original source. There should be a way to convert tags whose <code>href</code> equals the link text back into straight text, turning <code>&lt;a href="http://example.com"&gt;http://example.com&lt;/a&gt;</code> back into <code>http://example.com</code>.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-16771884" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/Viper007Bond" class="author">Viper007Bond</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-16771884" class="timestamp">
+      <time>2013-04-22 09:05:46</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>How would you then go about actually displaying <code>&lt;a href="http://example.com"&gt;http://example.com&lt;/a&gt;</code> then when SH would convert it back to <code>http://example.com</code> ?  I guess it just wouldn't be possible with that flag set.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-16800346" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/abbeycode" class="author">abbeycode</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-16800346" class="timestamp">
+      <time>2013-04-22 16:43:22</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Right, if you're showing HTML code that includes links, you would clear that flag. Like the other <a href="http://alexgorbatchev.com/SyntaxHighlighter/manual/configuration/">configuration parameters</a> SH uses, you can override it for one block, in its <code>&lt;class&gt;</code> tag. I also didn't think it would be very common for the link text and URL to match identically. If they don't, the link still passes through as is, even with my flag set (displaying <code>&lt;a href="http://example.com"&gt;Example&lt;/a&gt;</code>). It doesn't strip <em>all</em> links, just those that appear to be auto generated.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+</body></html>

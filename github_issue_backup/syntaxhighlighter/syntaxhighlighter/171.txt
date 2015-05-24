@@ -1,0 +1,91 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/171",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/171/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/171/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/171/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/171",
+  "id": 9244488,
+  "number": 171,
+  "title": "Â's Are Copied To Clipboard Instead of Tabs or Spaces",
+  "user": {
+    "login": "AKTed",
+    "id": 3031910,
+    "avatar_url": "https://avatars.githubusercontent.com/u/3031910?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/AKTed",
+    "html_url": "https://github.com/AKTed",
+    "followers_url": "https://api.github.com/users/AKTed/followers",
+    "following_url": "https://api.github.com/users/AKTed/following{/other_user}",
+    "gists_url": "https://api.github.com/users/AKTed/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/AKTed/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/AKTed/subscriptions",
+    "organizations_url": "https://api.github.com/users/AKTed/orgs",
+    "repos_url": "https://api.github.com/users/AKTed/repos",
+    "events_url": "https://api.github.com/users/AKTed/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/AKTed/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2012-12-13T07:42:12Z",
+  "updated_at": "2013-04-19T23:35:01Z",
+  "closed_at": "2013-04-19T23:35:01Z",
+  "body": "This seems to be a Chrome problem as IE9 doesn't show this behavior (haven't tried in any other browser). I copy something in Chrome (even from http://alexgorbatchev.com/SyntaxHighlighter/whatsnew.html) and paste it into Dreamweaver - or paste into Notepad, clear the clipboard, copy from Notepad, then paste into Dreamweaver - and those 'Â's appear where you'd expect spaces or tabs to be. You don't see that character in Dreamweaver or Notepad, but when the file's source is viewed it stands out clear as day.\r\n\r\nEdit: I just noticed it doesn't copy that character when you copy/paste only a portion of the code, but when you double-click to select all of the code it does.\r\n\r\nEdit 2: I see in the <a href=\"http://wordpress.org/support/topic/plugin-crayon-syntax-highlighter-problem-with-copied-code-from-chrome?replies=18\">WordPress.org support forums</a> that a syntax highlighter plugin \r\nhad the same problem and the author was able to fix it.",
+  "closed_by": {
+    "login": "alexgorbatchev",
+    "id": 65633,
+    "avatar_url": "https://avatars.githubusercontent.com/u/65633?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/alexgorbatchev",
+    "html_url": "https://github.com/alexgorbatchev",
+    "followers_url": "https://api.github.com/users/alexgorbatchev/followers",
+    "following_url": "https://api.github.com/users/alexgorbatchev/following{/other_user}",
+    "gists_url": "https://api.github.com/users/alexgorbatchev/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/alexgorbatchev/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/alexgorbatchev/subscriptions",
+    "organizations_url": "https://api.github.com/users/alexgorbatchev/orgs",
+    "repos_url": "https://api.github.com/users/alexgorbatchev/repos",
+    "events_url": "https://api.github.com/users/alexgorbatchev/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/alexgorbatchev/received_events",
+    "type": "User",
+    "site_admin": false
+  }
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/comments/16694915",
+    "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/171#issuecomment-16694915",
+    "issue_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/171",
+    "id": 16694915,
+    "user": {
+      "login": "alexgorbatchev",
+      "id": 65633,
+      "avatar_url": "https://avatars.githubusercontent.com/u/65633?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgorbatchev",
+      "html_url": "https://github.com/alexgorbatchev",
+      "followers_url": "https://api.github.com/users/alexgorbatchev/followers",
+      "following_url": "https://api.github.com/users/alexgorbatchev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgorbatchev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgorbatchev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgorbatchev/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgorbatchev/orgs",
+      "repos_url": "https://api.github.com/users/alexgorbatchev/repos",
+      "events_url": "https://api.github.com/users/alexgorbatchev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgorbatchev/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2013-04-19T23:35:00Z",
+    "updated_at": "2013-04-19T23:35:00Z",
+    "body": "duplicate https://github.com/alexgorbatchev/SyntaxHighlighter/issues/149"
+  }
+]

@@ -1,0 +1,79 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/124",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/124/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/124/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/124/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/pull/124",
+  "id": 4983862,
+  "number": 124,
+  "title": "Lasso Syntax Coloring Added",
+  "user": {
+    "login": "stevepiercy",
+    "id": 102112,
+    "avatar_url": "https://avatars.githubusercontent.com/u/102112?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/stevepiercy",
+    "html_url": "https://github.com/stevepiercy",
+    "followers_url": "https://api.github.com/users/stevepiercy/followers",
+    "following_url": "https://api.github.com/users/stevepiercy/following{/other_user}",
+    "gists_url": "https://api.github.com/users/stevepiercy/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/stevepiercy/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/stevepiercy/subscriptions",
+    "organizations_url": "https://api.github.com/users/stevepiercy/orgs",
+    "repos_url": "https://api.github.com/users/stevepiercy/repos",
+    "events_url": "https://api.github.com/users/stevepiercy/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/stevepiercy/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2012-06-09T10:37:07Z",
+  "updated_at": "2014-07-04T16:21:00Z",
+  "closed_at": null,
+  "pull_request": {
+    "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/pulls/124",
+    "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/pull/124",
+    "diff_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/pull/124.diff",
+    "patch_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/pull/124.patch"
+  },
+  "body": "Please add Lasso syntax coloring to your repo. Thank you!",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/comments/48059286",
+    "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/pull/124#issuecomment-48059286",
+    "issue_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/124",
+    "id": 48059286,
+    "user": {
+      "login": "stevepiercy",
+      "id": 102112,
+      "avatar_url": "https://avatars.githubusercontent.com/u/102112?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/stevepiercy",
+      "html_url": "https://github.com/stevepiercy",
+      "followers_url": "https://api.github.com/users/stevepiercy/followers",
+      "following_url": "https://api.github.com/users/stevepiercy/following{/other_user}",
+      "gists_url": "https://api.github.com/users/stevepiercy/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/stevepiercy/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/stevepiercy/subscriptions",
+      "organizations_url": "https://api.github.com/users/stevepiercy/orgs",
+      "repos_url": "https://api.github.com/users/stevepiercy/repos",
+      "events_url": "https://api.github.com/users/stevepiercy/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/stevepiercy/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2014-07-04T16:21:00Z",
+    "updated_at": "2014-07-04T16:21:00Z",
+    "body": "@alexgorbatchev I can resubmit this PR if it would help get this merged into the codebase. Please advise. Thank you!"
+  }
+]

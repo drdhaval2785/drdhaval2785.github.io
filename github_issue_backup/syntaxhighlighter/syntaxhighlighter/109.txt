@@ -1,0 +1,73 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/109",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/109/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/109/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/109/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/109",
+  "id": 4142066,
+  "number": 109,
+  "title": "XML Brush capitalizes all Strings all of a sudden",
+  "user": {
+    "login": "itsraghz",
+    "id": 1222999,
+    "avatar_url": "https://avatars.githubusercontent.com/u/1222999?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/itsraghz",
+    "html_url": "https://github.com/itsraghz",
+    "followers_url": "https://api.github.com/users/itsraghz/followers",
+    "following_url": "https://api.github.com/users/itsraghz/following{/other_user}",
+    "gists_url": "https://api.github.com/users/itsraghz/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/itsraghz/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/itsraghz/subscriptions",
+    "organizations_url": "https://api.github.com/users/itsraghz/orgs",
+    "repos_url": "https://api.github.com/users/itsraghz/repos",
+    "events_url": "https://api.github.com/users/itsraghz/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/itsraghz/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2012-04-16T20:36:34Z",
+  "updated_at": "2012-04-16T21:38:22Z",
+  "closed_at": null,
+  "body": "Hi,\r\n\r\n I am using the XML Brush (shBrushXml.js) and it was displaying the elements correctly. Suddenly I see that the elements are all displayed in the capital letters instead. \r\n\r\n I have tested in few different browsers by thinking that it could be a browser issue. However, the result is consistent across all browsers (IE, Chrome).\r\n\r\n Any Idea as to why this change happened? I don't think I have done any changes in the configuration / settings.\r\n\r\n Any help could be highly appreciated.\r\n\r\nThanks in advance.\r\n\r\nCheers,\r\nRaghavan alias Saravanan M",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/comments/5163196",
+    "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/109#issuecomment-5163196",
+    "issue_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/109",
+    "id": 5163196,
+    "user": {
+      "login": "itsraghz",
+      "id": 1222999,
+      "avatar_url": "https://avatars.githubusercontent.com/u/1222999?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/itsraghz",
+      "html_url": "https://github.com/itsraghz",
+      "followers_url": "https://api.github.com/users/itsraghz/followers",
+      "following_url": "https://api.github.com/users/itsraghz/following{/other_user}",
+      "gists_url": "https://api.github.com/users/itsraghz/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/itsraghz/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/itsraghz/subscriptions",
+      "organizations_url": "https://api.github.com/users/itsraghz/orgs",
+      "repos_url": "https://api.github.com/users/itsraghz/repos",
+      "events_url": "https://api.github.com/users/itsraghz/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/itsraghz/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2012-04-16T21:38:22Z",
+    "updated_at": "2012-04-16T21:38:40Z",
+    "body": "Dear Friends,\r\n\r\n I think I have identified the problem. It is because of I had used &lt;pre&gt; tag and the XML elements were used without HTML escape characters. After reading through the installation manual, I have escaped those characters. Now it works fine. :)\r\n\r\n However, I am wondering how come it was working fine till now for a few days? :( Mystery!"
+  }
+]

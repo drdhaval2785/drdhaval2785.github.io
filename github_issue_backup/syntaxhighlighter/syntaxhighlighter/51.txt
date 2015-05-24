@@ -1,0 +1,46 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/51",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/51/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/51/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/51/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/51",
+  "id": 2044556,
+  "number": 51,
+  "title": "C++ expressions bug",
+  "user": {
+    "login": "f0t0n",
+    "id": 957767,
+    "avatar_url": "https://avatars.githubusercontent.com/u/957767?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/f0t0n",
+    "html_url": "https://github.com/f0t0n",
+    "followers_url": "https://api.github.com/users/f0t0n/followers",
+    "following_url": "https://api.github.com/users/f0t0n/following{/other_user}",
+    "gists_url": "https://api.github.com/users/f0t0n/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/f0t0n/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/f0t0n/subscriptions",
+    "organizations_url": "https://api.github.com/users/f0t0n/orgs",
+    "repos_url": "https://api.github.com/users/f0t0n/repos",
+    "events_url": "https://api.github.com/users/f0t0n/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/f0t0n/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2011-10-25T12:46:39Z",
+  "updated_at": "2011-10-25T12:46:39Z",
+  "closed_at": null,
+  "body": "I got wrong output when put the code like next:\r\n\r\n<pre class=\"class : cpp\">\r\nvoid foo(char *bar)\r\n{\r\n    cout<<bar;\r\n}\r\n</pre>\r\n\r\nScreenshot: http://goo.gl/uEHZL",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+
+]

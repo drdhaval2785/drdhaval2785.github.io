@@ -1,0 +1,73 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/168",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/168/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/168/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/168/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/168",
+  "id": 9077863,
+  "number": 168,
+  "title": "How to highlight the pre element that in a iframe?",
+  "user": {
+    "login": "chjlcn",
+    "id": 2985904,
+    "avatar_url": "https://avatars.githubusercontent.com/u/2985904?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chjlcn",
+    "html_url": "https://github.com/chjlcn",
+    "followers_url": "https://api.github.com/users/chjlcn/followers",
+    "following_url": "https://api.github.com/users/chjlcn/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chjlcn/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chjlcn/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chjlcn/subscriptions",
+    "organizations_url": "https://api.github.com/users/chjlcn/orgs",
+    "repos_url": "https://api.github.com/users/chjlcn/repos",
+    "events_url": "https://api.github.com/users/chjlcn/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chjlcn/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2012-12-07T03:17:07Z",
+  "updated_at": "2013-07-08T19:12:44Z",
+  "closed_at": null,
+  "body": "How to highlight the pre element that in a iframe?\n",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/comments/20628892",
+    "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/168#issuecomment-20628892",
+    "issue_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/168",
+    "id": 20628892,
+    "user": {
+      "login": "Viper007Bond",
+      "id": 406254,
+      "avatar_url": "https://avatars.githubusercontent.com/u/406254?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Viper007Bond",
+      "html_url": "https://github.com/Viper007Bond",
+      "followers_url": "https://api.github.com/users/Viper007Bond/followers",
+      "following_url": "https://api.github.com/users/Viper007Bond/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Viper007Bond/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Viper007Bond/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Viper007Bond/subscriptions",
+      "organizations_url": "https://api.github.com/users/Viper007Bond/orgs",
+      "repos_url": "https://api.github.com/users/Viper007Bond/repos",
+      "events_url": "https://api.github.com/users/Viper007Bond/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Viper007Bond/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2013-07-08T19:12:44Z",
+    "updated_at": "2013-07-08T19:12:44Z",
+    "body": "JavaScript can't interact with iframe content for security reasons."
+  }
+]

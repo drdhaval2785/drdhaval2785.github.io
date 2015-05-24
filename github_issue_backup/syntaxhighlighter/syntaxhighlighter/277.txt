@@ -1,0 +1,46 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/277",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/277/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/277/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/277/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/277",
+  "id": 23893838,
+  "number": 277,
+  "title": "Extra blank lines inserted ",
+  "user": {
+    "login": "DavidRueter",
+    "id": 5694184,
+    "avatar_url": "https://avatars.githubusercontent.com/u/5694184?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/DavidRueter",
+    "html_url": "https://github.com/DavidRueter",
+    "followers_url": "https://api.github.com/users/DavidRueter/followers",
+    "following_url": "https://api.github.com/users/DavidRueter/following{/other_user}",
+    "gists_url": "https://api.github.com/users/DavidRueter/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/DavidRueter/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/DavidRueter/subscriptions",
+    "organizations_url": "https://api.github.com/users/DavidRueter/orgs",
+    "repos_url": "https://api.github.com/users/DavidRueter/repos",
+    "events_url": "https://api.github.com/users/DavidRueter/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/DavidRueter/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2013-12-06T23:55:36Z",
+  "updated_at": "2013-12-07T00:19:54Z",
+  "closed_at": null,
+  "body": "Extraneous blank lines are added to the start of the source.  Longer source means more blank lines:  as many as 51 blank lines or more in my testing.\r\n\r\n200 characters of source result in about one blank line, whereas 28,000 characters of source result in 51 blank lines (when Bootstrap is not loaded at all), 20 blank lines (when Bootstrap is loaded) and 12 blank lines (when Bootstrap and Flat-UI-Pro is loaded).\r\n\r\nProblem exists with 3.0.83 both from http://alexgorbatchev.com/pub/sh/current/ and built from source.  Problem exists on on IE11.0.9600.16428 and FF 25.01.\r\n\r\nProblem may exist on other browsers and other versions of SyntaxHighlighter:  my testing was limited to this one version and these two browsers.\r\n\r\nAdding a global vertical-align: top; to the page corrects the problem--both when Bootstrap is loaded and when it is not.  Of course this this may break other things.  Also, with Boostrap loaded this does cause the first line to be shifted up about 4 pixels into the green bar at the top of the page).\r\n\r\nFor example, adding this to the <head> does eliminate the extraneous lines:  \r\n&lt;style>\r\n\\* { vertical-align: top; }\r\n\r\n&lt;/style>\r\n\r\nMay be related to #167 and #267 \r\n",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+
+]

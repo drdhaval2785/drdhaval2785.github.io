@@ -1,0 +1,46 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/134",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/134/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/134/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/134/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/134",
+  "id": 5426634,
+  "number": 134,
+  "title": "White space instead of \\r in method shCore.getHtml",
+  "user": {
+    "login": "vaimr",
+    "id": 1921837,
+    "avatar_url": "https://avatars.githubusercontent.com/u/1921837?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/vaimr",
+    "html_url": "https://github.com/vaimr",
+    "followers_url": "https://api.github.com/users/vaimr/followers",
+    "following_url": "https://api.github.com/users/vaimr/following{/other_user}",
+    "gists_url": "https://api.github.com/users/vaimr/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/vaimr/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/vaimr/subscriptions",
+    "organizations_url": "https://api.github.com/users/vaimr/orgs",
+    "repos_url": "https://api.github.com/users/vaimr/repos",
+    "events_url": "https://api.github.com/users/vaimr/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/vaimr/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2012-07-04T11:51:48Z",
+  "updated_at": "2012-07-04T11:51:48Z",
+  "closed_at": null,
+  "body": "Hi!\n\nI use Soap messages with XmlDsig and the signature is invalidated. This is because whitespace instead of \\r. This is code:\n\t/**\n\t * Generates HTML markup for the whole syntax highlighter.\n\t * @param {String} code Source code.\n\t * @return {String} Returns HTML markup.\n\t */\n\tgetHtml: function(code)\n\t{\n...\n\t\tcode = trimFirstAndLastLines(code)\n\t\t\t.replace(/\\r/g, ' ') // IE lets these buggers through\n\t\t\t;\n....\n\nI write line replace(/\\r/g, '') // without whitespace.",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+
+]

@@ -1,0 +1,91 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/250",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/250/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/250/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/250/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/250",
+  "id": 17879396,
+  "number": 250,
+  "title": "Line numbers look wrong on iPhone",
+  "user": {
+    "login": "robhobbes",
+    "id": 2302263,
+    "avatar_url": "https://avatars.githubusercontent.com/u/2302263?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/robhobbes",
+    "html_url": "https://github.com/robhobbes",
+    "followers_url": "https://api.github.com/users/robhobbes/followers",
+    "following_url": "https://api.github.com/users/robhobbes/following{/other_user}",
+    "gists_url": "https://api.github.com/users/robhobbes/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/robhobbes/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/robhobbes/subscriptions",
+    "organizations_url": "https://api.github.com/users/robhobbes/orgs",
+    "repos_url": "https://api.github.com/users/robhobbes/repos",
+    "events_url": "https://api.github.com/users/robhobbes/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/robhobbes/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2013-08-09T18:51:55Z",
+  "updated_at": "2013-12-11T21:39:33Z",
+  "closed_at": "2013-12-11T21:39:33Z",
+  "body": "For some reason the lines numbers don't line up on the iPhone (chrome and safari) and possibly other mobile platforms. It looks like some sort of styling issues.\r\n\r\n![screen shot 2013-08-09 at 12 50 33 pm](https://f.cloud.github.com/assets/2302263/940117/9095e472-0124-11e3-802d-510d0cfcde78.png)\r\n\r\nThis screen shot was taken using the iOS simulator on a mac on the projects website, but I have seen the same issue on my own iPhone, so it isn't just a simulator issue or an issue local to my own site.",
+  "closed_by": {
+    "login": "alexgorbatchev",
+    "id": 65633,
+    "avatar_url": "https://avatars.githubusercontent.com/u/65633?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/alexgorbatchev",
+    "html_url": "https://github.com/alexgorbatchev",
+    "followers_url": "https://api.github.com/users/alexgorbatchev/followers",
+    "following_url": "https://api.github.com/users/alexgorbatchev/following{/other_user}",
+    "gists_url": "https://api.github.com/users/alexgorbatchev/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/alexgorbatchev/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/alexgorbatchev/subscriptions",
+    "organizations_url": "https://api.github.com/users/alexgorbatchev/orgs",
+    "repos_url": "https://api.github.com/users/alexgorbatchev/repos",
+    "events_url": "https://api.github.com/users/alexgorbatchev/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/alexgorbatchev/received_events",
+    "type": "User",
+    "site_admin": false
+  }
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/comments/30366795",
+    "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/250#issuecomment-30366795",
+    "issue_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/250",
+    "id": 30366795,
+    "user": {
+      "login": "alexgorbatchev",
+      "id": 65633,
+      "avatar_url": "https://avatars.githubusercontent.com/u/65633?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgorbatchev",
+      "html_url": "https://github.com/alexgorbatchev",
+      "followers_url": "https://api.github.com/users/alexgorbatchev/followers",
+      "following_url": "https://api.github.com/users/alexgorbatchev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgorbatchev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgorbatchev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgorbatchev/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgorbatchev/orgs",
+      "repos_url": "https://api.github.com/users/alexgorbatchev/repos",
+      "events_url": "https://api.github.com/users/alexgorbatchev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgorbatchev/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2013-12-11T21:39:33Z",
+    "updated_at": "2013-12-11T21:39:33Z",
+    "body": "Same as #270 "
+  }
+]

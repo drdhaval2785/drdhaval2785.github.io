@@ -1,0 +1,73 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/170",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/170/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/170/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/170/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/170",
+  "id": 9166105,
+  "number": 170,
+  "title": "When the code line more than 50,My SyntaxHighlighter cannot work.",
+  "user": {
+    "login": "xishuixixia",
+    "id": 1912789,
+    "avatar_url": "https://avatars.githubusercontent.com/u/1912789?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/xishuixixia",
+    "html_url": "https://github.com/xishuixixia",
+    "followers_url": "https://api.github.com/users/xishuixixia/followers",
+    "following_url": "https://api.github.com/users/xishuixixia/following{/other_user}",
+    "gists_url": "https://api.github.com/users/xishuixixia/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/xishuixixia/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/xishuixixia/subscriptions",
+    "organizations_url": "https://api.github.com/users/xishuixixia/orgs",
+    "repos_url": "https://api.github.com/users/xishuixixia/repos",
+    "events_url": "https://api.github.com/users/xishuixixia/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/xishuixixia/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2012-12-11T01:32:57Z",
+  "updated_at": "2013-02-17T05:05:47Z",
+  "closed_at": null,
+  "body": "![AyBMq](https://f.cloud.github.com/assets/1912789/4936/8dac8302-4332-11e2-8a63-957a3dfc0185.png)\nWhen using SyntaxHighlighter 3.0.83,I find somes bugs.As the image says,after line 177,we can not find the line num.For convenience，here is the problem:http://shellblog.sinaapp.com/?p=307",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/comments/13680945",
+    "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/170#issuecomment-13680945",
+    "issue_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/170",
+    "id": 13680945,
+    "user": {
+      "login": "jeffreytang",
+      "id": 3138310,
+      "avatar_url": "https://avatars.githubusercontent.com/u/3138310?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jeffreytang",
+      "html_url": "https://github.com/jeffreytang",
+      "followers_url": "https://api.github.com/users/jeffreytang/followers",
+      "following_url": "https://api.github.com/users/jeffreytang/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jeffreytang/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jeffreytang/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jeffreytang/subscriptions",
+      "organizations_url": "https://api.github.com/users/jeffreytang/orgs",
+      "repos_url": "https://api.github.com/users/jeffreytang/repos",
+      "events_url": "https://api.github.com/users/jeffreytang/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jeffreytang/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2013-02-17T05:05:47Z",
+    "updated_at": "2013-02-17T05:05:47Z",
+    "body": "Try this latest one, seems working fine\r\n\r\nhttp://jsfiddle.net/gazebotang/xLyGw/2/\r\n"
+  }
+]

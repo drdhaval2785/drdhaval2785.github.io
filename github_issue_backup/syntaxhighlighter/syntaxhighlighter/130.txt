@@ -1,0 +1,73 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/130",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/130/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/130/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/130/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/130",
+  "id": 5165140,
+  "number": 130,
+  "title": "Quotation in comment",
+  "user": {
+    "login": "qgy18",
+    "id": 285369,
+    "avatar_url": "https://avatars.githubusercontent.com/u/285369?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/qgy18",
+    "html_url": "https://github.com/qgy18",
+    "followers_url": "https://api.github.com/users/qgy18/followers",
+    "following_url": "https://api.github.com/users/qgy18/following{/other_user}",
+    "gists_url": "https://api.github.com/users/qgy18/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/qgy18/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/qgy18/subscriptions",
+    "organizations_url": "https://api.github.com/users/qgy18/orgs",
+    "repos_url": "https://api.github.com/users/qgy18/repos",
+    "events_url": "https://api.github.com/users/qgy18/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/qgy18/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2012-06-20T08:41:13Z",
+  "updated_at": "2012-10-23T20:06:00Z",
+  "closed_at": null,
+  "body": "I found that if some quotations is in comment, the highlight will be broken.\n\nThere is a demo.\n\nhttp://qgy18.imququ.com/file/shl.html",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/comments/9716118",
+    "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/130#issuecomment-9716118",
+    "issue_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/130",
+    "id": 9716118,
+    "user": {
+      "login": "jmrware",
+      "id": 171988,
+      "avatar_url": "https://avatars.githubusercontent.com/u/171988?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jmrware",
+      "html_url": "https://github.com/jmrware",
+      "followers_url": "https://api.github.com/users/jmrware/followers",
+      "following_url": "https://api.github.com/users/jmrware/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jmrware/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jmrware/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jmrware/subscriptions",
+      "organizations_url": "https://api.github.com/users/jmrware/orgs",
+      "repos_url": "https://api.github.com/users/jmrware/repos",
+      "events_url": "https://api.github.com/users/jmrware/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jmrware/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2012-10-23T20:06:00Z",
+    "updated_at": "2012-10-23T20:06:00Z",
+    "body": "This behavior is likely due to the bug (issue 72) I reported here: [Major bug in parser design - and a fix.](https://github.com/alexgorbatchev/SyntaxHighlighter/issues/72).\r\n\r\nI wrote an article describing the bug here: [Fixing the SyntaxHighlighter 3.0.83 Parser Bug](http://jmrware.com/articles/2011/sh-bug/SyntaxHighlighterBug.html)\r\n\r\nAlex is aware of this problem but the fix has not yet arrived..."
+  }
+]

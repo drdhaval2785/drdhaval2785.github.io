@@ -1,0 +1,46 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/342",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/342/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/342/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/342/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/342",
+  "id": 42434487,
+  "number": 342,
+  "title": "Code in view source mode invisible for Chrome on Mac",
+  "user": {
+    "login": "theresam",
+    "id": 940124,
+    "avatar_url": "https://avatars.githubusercontent.com/u/940124?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/theresam",
+    "html_url": "https://github.com/theresam",
+    "followers_url": "https://api.github.com/users/theresam/followers",
+    "following_url": "https://api.github.com/users/theresam/following{/other_user}",
+    "gists_url": "https://api.github.com/users/theresam/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/theresam/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/theresam/subscriptions",
+    "organizations_url": "https://api.github.com/users/theresam/orgs",
+    "repos_url": "https://api.github.com/users/theresam/repos",
+    "events_url": "https://api.github.com/users/theresam/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/theresam/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2014-09-10T16:51:37Z",
+  "updated_at": "2014-09-10T16:51:37Z",
+  "closed_at": null,
+  "body": "Inside the syntax highlighter block is a \"view source\" icon. Clicking on this icon will trigger a new window with the code inside of it. This functionality works in Chrome (PC), FireFox (PC/Mac), Safari (Mac), and IE 11-9.  For some reason when using Chrome on a Mac, the code inside of the new window is invisible until you highlight it or inspect it with dev tools. I went to the SyntaxHighlighter demo page and noticed the exact same thing happening.\r\n\r\nHere is a video of it happening on our site. http://screencast.com/t/dSiFIBdUdPLo\r\nHere is a video of it happening on your demo site. http://screencast.com/t/uN591CjXYrv\r\n\r\nThere were a couple computers where this bug didn't happen, but the majority of the computers tested were able to duplicate the bug. Computers have been rebooted and had the cache cleared. The following is a list of computers with their OS versions and Chrome versions. I haven't seen a correlation yet and I'm not sure if this is a SyntaxHighlighter bug or a Chrome bug.\r\n\r\nNo bug\r\nOSX 10.9.4     Chrome Dev 39.0.2145.4\r\nOSX 10.9.4     Chrome 37.0.2062.94\r\n\r\nHas bug\r\nOSX 10.9.2     Chrome 37.0.2062.120\r\nOSX 10.9.4     Chrome 37.0.2062.120\r\nOSX 10.9.4     Chrome 37.0.2062.120\r\nOSX 10.9.3     Chrome 37.0.2062.94\r\nOSX 10.9.4     Chrome 37.0.2062.94\r\n",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+
+]

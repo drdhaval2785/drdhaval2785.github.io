@@ -1,0 +1,46 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/185",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/185/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/185/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/185/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/185",
+  "id": 11161494,
+  "number": 185,
+  "title": "CSS and preprocessors need some kind of inheritance structure",
+  "user": {
+    "login": "deiga",
+    "id": 27202,
+    "avatar_url": "https://avatars.githubusercontent.com/u/27202?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/deiga",
+    "html_url": "https://github.com/deiga",
+    "followers_url": "https://api.github.com/users/deiga/followers",
+    "following_url": "https://api.github.com/users/deiga/following{/other_user}",
+    "gists_url": "https://api.github.com/users/deiga/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/deiga/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/deiga/subscriptions",
+    "organizations_url": "https://api.github.com/users/deiga/orgs",
+    "repos_url": "https://api.github.com/users/deiga/repos",
+    "events_url": "https://api.github.com/users/deiga/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/deiga/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2013-02-19T16:59:07Z",
+  "updated_at": "2013-02-19T16:59:07Z",
+  "closed_at": null,
+  "body": "Now there are 3 languages that share most definitions: CSS, LESS and SASS\r\n\r\nIt would be highly beneficial to add some kind of inheritance to keep keywords etc better in check.\r\n\r\nhttps://github.com/matheeeny/Syntaxtic/issues/26",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+
+]

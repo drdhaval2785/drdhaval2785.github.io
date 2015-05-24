@@ -1,0 +1,52 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/112",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/112/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/112/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/112/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/pull/112",
+  "id": 4241269,
+  "number": 112,
+  "title": "a = '\"' was starting a multiline string, but it should not have",
+  "user": {
+    "login": "bildja",
+    "id": 818546,
+    "avatar_url": "https://avatars.githubusercontent.com/u/818546?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/bildja",
+    "html_url": "https://github.com/bildja",
+    "followers_url": "https://api.github.com/users/bildja/followers",
+    "following_url": "https://api.github.com/users/bildja/following{/other_user}",
+    "gists_url": "https://api.github.com/users/bildja/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/bildja/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/bildja/subscriptions",
+    "organizations_url": "https://api.github.com/users/bildja/orgs",
+    "repos_url": "https://api.github.com/users/bildja/repos",
+    "events_url": "https://api.github.com/users/bildja/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/bildja/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2012-04-23T14:28:16Z",
+  "updated_at": "2012-04-23T14:28:16Z",
+  "closed_at": null,
+  "pull_request": {
+    "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/pulls/112",
+    "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/pull/112",
+    "diff_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/pull/112.diff",
+    "patch_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/pull/112.patch"
+  },
+  "body": "a = '\"'\r\n#bla-bla-bla another code\r\n# and everything was highlighted",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+
+]

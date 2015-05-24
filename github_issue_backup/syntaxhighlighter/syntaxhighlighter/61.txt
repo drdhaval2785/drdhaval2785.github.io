@@ -1,0 +1,97 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/61",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/61/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/61/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/61/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/pull/61",
+  "id": 2304659,
+  "number": 61,
+  "title": "One fix and one enhancement",
+  "user": {
+    "login": "jedahu",
+    "id": 100619,
+    "avatar_url": "https://avatars.githubusercontent.com/u/100619?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jedahu",
+    "html_url": "https://github.com/jedahu",
+    "followers_url": "https://api.github.com/users/jedahu/followers",
+    "following_url": "https://api.github.com/users/jedahu/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jedahu/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jedahu/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jedahu/subscriptions",
+    "organizations_url": "https://api.github.com/users/jedahu/orgs",
+    "repos_url": "https://api.github.com/users/jedahu/repos",
+    "events_url": "https://api.github.com/users/jedahu/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jedahu/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2011-11-21T13:44:10Z",
+  "updated_at": "2011-12-16T21:56:10Z",
+  "closed_at": "2011-12-16T21:56:10Z",
+  "pull_request": {
+    "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/pulls/61",
+    "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/pull/61",
+    "diff_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/pull/61.diff",
+    "patch_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/pull/61.patch"
+  },
+  "body": "Sometimes I need my code to remain indented, so I've added an 'unindent' option which defaults to true.\r\n\r\nThe fix is so that the uncompressed sources run successfully.\r\n\r\nCheers,\r\n\r\nJeremy",
+  "closed_by": {
+    "login": "alexgorbatchev",
+    "id": 65633,
+    "avatar_url": "https://avatars.githubusercontent.com/u/65633?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/alexgorbatchev",
+    "html_url": "https://github.com/alexgorbatchev",
+    "followers_url": "https://api.github.com/users/alexgorbatchev/followers",
+    "following_url": "https://api.github.com/users/alexgorbatchev/following{/other_user}",
+    "gists_url": "https://api.github.com/users/alexgorbatchev/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/alexgorbatchev/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/alexgorbatchev/subscriptions",
+    "organizations_url": "https://api.github.com/users/alexgorbatchev/orgs",
+    "repos_url": "https://api.github.com/users/alexgorbatchev/repos",
+    "events_url": "https://api.github.com/users/alexgorbatchev/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/alexgorbatchev/received_events",
+    "type": "User",
+    "site_admin": false
+  }
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/comments/2842991",
+    "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/pull/61#issuecomment-2842991",
+    "issue_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/61",
+    "id": 2842991,
+    "user": {
+      "login": "jedahu",
+      "id": 100619,
+      "avatar_url": "https://avatars.githubusercontent.com/u/100619?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jedahu",
+      "html_url": "https://github.com/jedahu",
+      "followers_url": "https://api.github.com/users/jedahu/followers",
+      "following_url": "https://api.github.com/users/jedahu/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jedahu/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jedahu/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jedahu/subscriptions",
+      "organizations_url": "https://api.github.com/users/jedahu/orgs",
+      "repos_url": "https://api.github.com/users/jedahu/repos",
+      "events_url": "https://api.github.com/users/jedahu/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jedahu/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2011-11-23T00:05:11Z",
+    "updated_at": "2011-11-23T00:05:11Z",
+    "body": "The findBrush alert is popping up when showAlert is undefined. I've changed the test from `showAlert != false`, to `showAlert`, which is falsey whether showAlert is false, null, or undefined."
+  }
+]

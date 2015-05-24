@@ -1,0 +1,91 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/21",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/21/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/21/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/21/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/21",
+  "id": 1514340,
+  "number": 21,
+  "title": "hyperlinks should include hash",
+  "user": {
+    "login": "travi",
+    "id": 126441,
+    "avatar_url": "https://avatars.githubusercontent.com/u/126441?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/travi",
+    "html_url": "https://github.com/travi",
+    "followers_url": "https://api.github.com/users/travi/followers",
+    "following_url": "https://api.github.com/users/travi/following{/other_user}",
+    "gists_url": "https://api.github.com/users/travi/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/travi/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/travi/subscriptions",
+    "organizations_url": "https://api.github.com/users/travi/orgs",
+    "repos_url": "https://api.github.com/users/travi/repos",
+    "events_url": "https://api.github.com/users/travi/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/travi/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2011-08-29T21:23:19Z",
+  "updated_at": "2011-10-04T20:08:25Z",
+  "closed_at": "2011-10-04T20:08:25Z",
+  "body": "I really like the fact that the highlighter turns urls that are in the highlighted code into hyperlinks. However, the majority of the urls that I include in code examples are to specific locations in the page. Currently the hash is not included in the hyperlink and therefore the links don't take users to where I intend.",
+  "closed_by": {
+    "login": "alexgorbatchev",
+    "id": 65633,
+    "avatar_url": "https://avatars.githubusercontent.com/u/65633?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/alexgorbatchev",
+    "html_url": "https://github.com/alexgorbatchev",
+    "followers_url": "https://api.github.com/users/alexgorbatchev/followers",
+    "following_url": "https://api.github.com/users/alexgorbatchev/following{/other_user}",
+    "gists_url": "https://api.github.com/users/alexgorbatchev/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/alexgorbatchev/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/alexgorbatchev/subscriptions",
+    "organizations_url": "https://api.github.com/users/alexgorbatchev/orgs",
+    "repos_url": "https://api.github.com/users/alexgorbatchev/repos",
+    "events_url": "https://api.github.com/users/alexgorbatchev/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/alexgorbatchev/received_events",
+    "type": "User",
+    "site_admin": false
+  }
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/comments/2183732",
+    "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/21#issuecomment-2183732",
+    "issue_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/21",
+    "id": 2183732,
+    "user": {
+      "login": "rwstauner",
+      "id": 142719,
+      "avatar_url": "https://avatars.githubusercontent.com/u/142719?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rwstauner",
+      "html_url": "https://github.com/rwstauner",
+      "followers_url": "https://api.github.com/users/rwstauner/followers",
+      "following_url": "https://api.github.com/users/rwstauner/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rwstauner/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rwstauner/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rwstauner/subscriptions",
+      "organizations_url": "https://api.github.com/users/rwstauner/orgs",
+      "repos_url": "https://api.github.com/users/rwstauner/repos",
+      "events_url": "https://api.github.com/users/rwstauner/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rwstauner/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2011-09-23T23:06:17Z",
+    "updated_at": "2011-09-23T23:06:17Z",
+    "body": "Adding the pound-sign into the character class seems to fix the issue,\r\nbut I don't know if there might be any adverse side effects."
+  }
+]

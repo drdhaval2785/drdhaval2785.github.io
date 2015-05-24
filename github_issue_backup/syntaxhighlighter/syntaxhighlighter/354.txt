@@ -1,0 +1,46 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/354",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/354/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/354/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/354/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/354",
+  "id": 59160930,
+  "number": 354,
+  "title": "Is it a bug?",
+  "user": {
+    "login": "JohnsonYip",
+    "id": 11134868,
+    "avatar_url": "https://avatars.githubusercontent.com/u/11134868?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/JohnsonYip",
+    "html_url": "https://github.com/JohnsonYip",
+    "followers_url": "https://api.github.com/users/JohnsonYip/followers",
+    "following_url": "https://api.github.com/users/JohnsonYip/following{/other_user}",
+    "gists_url": "https://api.github.com/users/JohnsonYip/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/JohnsonYip/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/JohnsonYip/subscriptions",
+    "organizations_url": "https://api.github.com/users/JohnsonYip/orgs",
+    "repos_url": "https://api.github.com/users/JohnsonYip/repos",
+    "events_url": "https://api.github.com/users/JohnsonYip/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/JohnsonYip/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2015-02-26T23:13:41Z",
+  "updated_at": "2015-02-26T23:13:41Z",
+  "closed_at": null,
+  "body": "Function trimFirstAndLastLines() in SyntaxHighlighter 3.0.9 does not work for last lines.\r\nI changed the regexp to /^\\s*\\n+|\\n*\\s*$/g and it worked.\r\nI moved the function call in getHtml() to a place under processSmartTabs() and it worked.\r\n// Forgive my terrible English...\r\nIt seems that [ ] does not match Tabs.\r\nthx",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+
+]

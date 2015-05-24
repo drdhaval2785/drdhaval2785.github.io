@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html class='' lang='en'>
+<head prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#'>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8'>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta http-equiv='Content-Language' content='en'>
+<title>syntaxhighlighter/syntaxhighlighter/327</title>
+<link href='github-c486157afcc5f58155a921bc675afb08733fbaa8dcf39ac2104d3.css' media='all' rel='stylesheet'>
+<link href='github2-da2e842cc3f0aaf33b727d0ef034243c12ab008fd09b24868b97.css' media='all' rel='stylesheet'>
+<meta http-equiv='x-pjax-version' content='4426702614c8182f33d1780ad1169662'>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shAutoloader.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAppleScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAS3.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushBash.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushColdFusion.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCpp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCSharp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCss.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDelphi.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDiff.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushErlang.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushGroovy.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJava.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJavaFX.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/syntaxhighlighter/scripts/shBrushJScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPerl.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPhp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPlain.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPowerShell.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPython.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushRuby.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSass.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushScala.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSql.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushVb.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushXml.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shLegacy.js'></script>
+	<link type='text/css' rel='stylesheet' href='syntaxhighlighter/styles/shCoreDefault.css'/>
+	<script type='text/javascript'>SyntaxHighlighter.all();</script>
+</head>
+<body class='logged_in  env-production windows vis-public'>
+<h1 align='center'><a href='https://github.com/syntaxhighlighter/syntaxhighlighter/issues/327' target='_blank'>Problem with displaying <></h1><hr/><div id="#issue-37480466" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/JonasJelonek" class="author">JonasJelonek</a>
+    </strong>
+    commented on 
+    <a href="#issue-37480466" class="timestamp">
+      <time>2014-07-09 15:54:24</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Unfortunately the Syntax Highlighter recognizes code parts like 'new List<int>' in C# as HTML Tags and it adds at the end of the code '</int>' How can I solve this?</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-48738308" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/GKFX" class="author">GKFX</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-48738308" class="timestamp">
+      <time>2014-07-11 14:39:05</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Escape them? <code>&lt;</code> &rarr; <code>&amp;gt;</code>, <code>&gt;</code> &rarr; <code>&amp;lt;</code>. I'm not quite sure what you mean. Can you show a demo?</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-48739655" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/JonasJelonek" class="author">JonasJelonek</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-48739655" class="timestamp">
+      <time>2014-07-11 14:49:35</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Look at the code on <a href="http://opensource.jonasjelonek.com/csharp/capturescreen.html">http://opensource.jonasjelonek.com/csharp/capturescreen.html</a> in the last line, there you can see what I mean.</p>
+<blockquote>
+<p>On 11 Jul 2014, at 04:39 pm, &quot;George Bateman&quot; <a href="mailto:notifications<strong><a href="https://github.com/github" target="_blank">@github</a></strong>.com">notifications<strong><a href="https://github.com/github" target="_blank">@github</a></strong>.com</a> wrote:</p>
+<p>Escape them? &lt; → &gt;, &gt; → &lt;. I'm not quite sure what you mean. Can you show a demo?</p>
+<p>—
+Reply to this email directly or view it on GitHub.</p>
+</blockquote>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-48739856" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/JonasJelonek" class="author">JonasJelonek</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-48739856" class="timestamp">
+      <time>2014-07-11 14:51:00</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Look at <a href="http://opensource.jonasjelonek.com/csharp/capturescreen.html">http://opensource.jonasjelonek.com/csharp/capturescreen.html</a> in the last line, there you can see what I mean.</p>
+<blockquote>
+<p>On 11 Jul 2014, at 04:39 pm, &quot;George Bateman&quot; <a href="mailto:notifications<strong><a href="https://github.com/github" target="_blank">@github</a></strong>.com">notifications<strong><a href="https://github.com/github" target="_blank">@github</a></strong>.com</a> wrote:</p>
+<p>Escape them? &lt; → &gt;, &gt; → &lt;. I'm not quite sure what you mean. Can you show a demo?</p>
+<p>—
+Reply to this email directly or view it on GitHub.</p>
+</blockquote>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-48744462" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/GKFX" class="author">GKFX</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-48744462" class="timestamp">
+      <time>2014-07-11 15:26:10</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Oh, I understand. <code>&lt;/bitmap&gt;&lt;/bitmap&gt;&lt;/int&gt;&lt;/int&gt;</code> appears. You said that '' appears (empty quotes) which is not quite the same thing... (I suppose you were read as HTML by GitHub).</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-48745193" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/JonasJelonek" class="author">JonasJelonek</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-48745193" class="timestamp">
+      <time>2014-07-11 15:31:41</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>No, empty quotes doesn’t appear but </bitmap></bitmap></int></int> appears, it is recognized as a HTML-Tag. How can I fix this?</p>
+<p>From: George Bateman
+Sent: ‎Friday‎, ‎11‎ ‎July‎ ‎2014 ‎05‎:‎26‎ ‎pm
+To: alexgorbatchev/syntaxhighlighter
+Cc: Jonas Jelonek</p>
+<p>Oh, I understand. </bitmap></bitmap></int></int> appears. You said that '' appears (empty quotes) which is not quite the same thing... (I suppose you were read as HTML by GitHub).</p>
+<p>—
+Reply to this email directly or view it on GitHub.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+</body></html>

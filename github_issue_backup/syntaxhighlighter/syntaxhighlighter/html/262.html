@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html class='' lang='en'>
+<head prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#'>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8'>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta http-equiv='Content-Language' content='en'>
+<title>syntaxhighlighter/syntaxhighlighter/262</title>
+<link href='github-c486157afcc5f58155a921bc675afb08733fbaa8dcf39ac2104d3.css' media='all' rel='stylesheet'>
+<link href='github2-da2e842cc3f0aaf33b727d0ef034243c12ab008fd09b24868b97.css' media='all' rel='stylesheet'>
+<meta http-equiv='x-pjax-version' content='4426702614c8182f33d1780ad1169662'>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shAutoloader.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAppleScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAS3.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushBash.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushColdFusion.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCpp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCSharp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCss.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDelphi.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDiff.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushErlang.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushGroovy.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJava.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJavaFX.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/syntaxhighlighter/scripts/shBrushJScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPerl.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPhp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPlain.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPowerShell.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPython.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushRuby.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSass.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushScala.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSql.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushVb.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushXml.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shLegacy.js'></script>
+	<link type='text/css' rel='stylesheet' href='syntaxhighlighter/styles/shCoreDefault.css'/>
+	<script type='text/javascript'>SyntaxHighlighter.all();</script>
+</head>
+<body class='logged_in  env-production windows vis-public'>
+<h1 align='center'><a href='https://github.com/syntaxhighlighter/syntaxhighlighter/issues/262' target='_blank'>With updates to instructions, getting errors on build. </h1><hr/><div id="#issue-21044543" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/snowe2010" class="author">snowe2010</a>
+    </strong>
+    commented on 
+    <a href="#issue-21044543" class="timestamp">
+      <time>2013-10-15 21:05:59</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Followed instructions in new readme up till .\node_modules.bin\grunt build</p>
+<p>This output the error</p>
+<pre><code>.\node_modules\.bin\grunt build
+Loading "Gruntfile.coffee" tasks...ERROR
+&gt;&gt; Error: Cannot find module 'node-sass'
+Warning: Task "build" not found. Use --force to continue.
+
+Aborted due to warnings.</code></pre>
+<p>According to issue 240 this is fixed by a simple <code>npm install 'node-sass'</code>
+But after installing node-sass I now get this error. </p>
+<pre><code> .\node_modules\.bin\grunt build
+Running "clean" task
+Warning: ENOENT, no such file or directory 'C:\C:\Users\tyler.thrailkill\Dropbox\git_projects\snowe-syntaxhighlighter\pkg' Use --force to continue.
+
+Aborted due to warnings.</code></pre>
+<p>As you can see it seems to have appended C:\ onto the front of the path and also, because the pkg folder doesn't exist yet it's giving an error. </p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-26372241" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/snowe2010" class="author">snowe2010</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-26372241" class="timestamp">
+      <time>2013-10-15 21:06:47</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I should mention, this is on Windows 7, through PowerShell 3.0</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-26374849" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/alexgorbatchev" class="author">alexgorbatchev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-26374849" class="timestamp">
+      <time>2013-10-15 21:40:29</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I fixed missing <code>node-sass</code> dependency. Would really appreciate a patch to get it to work on windows.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-26379817" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/snowe2010" class="author">snowe2010</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-26379817" class="timestamp">
+      <time>2013-10-15 22:54:01</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Ok. I don't know too much js, but I'll see what I can do. </p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-26382103" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/snowe2010" class="author">snowe2010</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-26382103" class="timestamp">
+      <time>2013-10-15 23:40:26</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Ok looks like the problem is on <a href="https://github.com/alexgorbatchev/SyntaxHighlighter/blob/master/build/tasks.coffee#L39-L42">lines 39-42 in tasks.coffee</a>. It looks like you set dir = &quot;/&quot; and then split the path up. On windows though the &quot;\&quot; character is used so nothing is split. This is the resulting path after splitting and then joining dir and part.</p>
+<pre><code>\C:\Users\tyler.thrailkill\Dropbox\git_projects\snowe-syntaxhighlighter\pkg</code></pre>
+<p>this would work though if the c: was removed, because windows still recognizes &quot;\&quot;. Or maybe if there are &quot;\&quot;s then reverse them and then apply the join. I'm not sure. I'll try and learn javascript and coffeescript and put in a patch. I already had to learn enough to modify some of the source for SyntaxHighlighter anyway.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-26470118" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/alexgorbatchev" class="author">alexgorbatchev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-26470118" class="timestamp">
+      <time>2013-10-17 00:10:30</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/snowe2010" target="_blank">@snowe2010</a></strong> I updated the build file and it should address this problem. Please test.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-26537952" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/snowe2010" class="author">snowe2010</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-26537952" class="timestamp">
+      <time>2013-10-17 18:48:37</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Still fails: Different spot though :)</p>
+<pre><code>C:\Users\tyler.thrailkill\Dropbox\git_projects\snowe-syntaxhighlighter [master]&gt; npm install
+npm http GET https://registry.npmjs.org/jade/-/jade-0.30.0.tgz
+npm http GET https://registry.npmjs.org/less/-/less-1.3.3.tgz
+npm http 200 https://registry.npmjs.org/jade/-/jade-0.30.0.tgz
+npm http 200 https://registry.npmjs.org/less/-/less-1.3.3.tgz
+C:\Users\tyler.thrailkill\Dropbox\git_projects\snowe-syntaxhighlighter [master]&gt; .\node_modules\.bin\bower install
+C:\Users\tyler.thrailkill\Dropbox\git_projects\snowe-syntaxhighlighter [master]&gt; .\node_modules\.bin\grunt build -v
+Initializing
+Command-line options: --verbose
+
+Reading "Gruntfile.coffee" Gruntfile...OK
+
+Registering Gruntfile tasks.
+Loading "Gruntfile.coffee" tasks...ERROR
+&gt;&gt; Error: Cannot find module 'shelljs'
+&gt;&gt;     at Function.Module._resolveFilename (module.js:338:15)
+&gt;&gt;     at Function.Module._load (module.js:280:25)
+&gt;&gt;     at Module.require (module.js:364:17)
+&gt;&gt;     at require (module.js:380:17)
+&gt;&gt;     at Object.&lt;anonymous&gt; (C:\Users\tyler.thrailkill\Dropbox\git_projects\snowe-syntaxhighlighter\build\tasks.coffee:16:13)
+&gt;&gt;     at Object.&lt;anonymous&gt; (C:\Users\tyler.thrailkill\Dropbox\git_projects\snowe-syntaxhighlighter\build\tasks.coffee:186:4)
+&gt;&gt;     at Module._compile (module.js:456:26)
+&gt;&gt;     at Object.require.extensions..coffee (C:\Users\tyler.thrailkill\Dropbox\git_projects\snowe-syntaxhighlighter\node_modules\grunt\node_modules\coffee-script\lib\coffee-script\coffee-script.js:22:21)
+&gt;&gt;     at Module.load (module.js:356:32)
+&gt;&gt;     at Function.Module._load (module.js:312:12)
+
+Running tasks: build
+Warning: Task "build" not found. Use --force to continue.
+
+Aborted due to warnings.</code></pre>
+<p>Sorry I would have had this up last night, but I had a late night.  I'll research into where this is happening, because I think I might just need to <code>npm install shelljs</code></p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-26538163" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/snowe2010" class="author">snowe2010</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-26538163" class="timestamp">
+      <time>2013-10-17 18:51:01</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Ok with npm install I get much further. </p>
+<pre><code>
+C:\Users\tyler.thrailkill\Dropbox\git_projects\snowe-syntaxhighlighter [master]&gt; npm install shelljs
+npm http GET https://registry.npmjs.org/shelljs
+npm http 200 https://registry.npmjs.org/shelljs
+npm http GET https://registry.npmjs.org/shelljs/-/shelljs-0.2.6.tgz
+npm http 200 https://registry.npmjs.org/shelljs/-/shelljs-0.2.6.tgz
+shelljs<strong><a href="https://github.com/0" target="_blank">@0</a></strong>.2.6 node_modules\shelljs
+C:\Users\tyler.thrailkill\Dropbox\git_projects\snowe-syntaxhighlighter [master]&gt; .\node_modules\.bin\grunt build -v
+Initializing
+Command-line options: --verbose
+
+Reading "Gruntfile.coffee" Gruntfile...OK
+
+Registering Gruntfile tasks.
+Loading "Gruntfile.coffee" tasks...OK
++ add_header, build, clean, compile_sass, copy, express, pack, process_variables, test, validate
+
+Running tasks: build
+
+Running "build" task
+
+Running "clean" task
+
+Running "compile_sass" task
+
+Running "copy" task
+
+Running "add_header" task
+
+Running "process_variables" task
+
+Running "validate" task
+Warning: Unexpected token ILLEGAL Use --force to continue.
+
+Aborted due to warnings.</code></pre>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-26538378" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/alexgorbatchev" class="author">alexgorbatchev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-26538378" class="timestamp">
+      <time>2013-10-17 18:53:38</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>It would appear that your build is generating invalid JavaScript... Could you try opening <code>pkg/index.html</code> and tell me if the highlighter is working?</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-26539041" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/snowe2010" class="author">snowe2010</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-26539041" class="timestamp">
+      <time>2013-10-17 19:01:58</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Yep, it's broken. It just shows a page that looks like this. <a href="http://i.imgur.com/zH9fmTp.png">http://i.imgur.com/zH9fmTp.png</a>
+the code seems fine though. :\</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-26539752" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/snowe2010" class="author">snowe2010</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-26539752" class="timestamp">
+      <time>2013-10-17 19:10:54</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>When debugging I'm getting an Uncaught ReferenceError: SyntaxHighlighter is not defined at line 9 in the html file, where you call SyntaxHighlighter.all();</p>
+<p>It looks like SyntaxHighlighter is not getting instantiated.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-26540193" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/snowe2010" class="author">snowe2010</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-26540193" class="timestamp">
+      <time>2013-10-17 19:16:45</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>This is the problem. </p>
+<pre><code>            // this is populated by the build script
+            aboutDialog : '&lt;!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
+&lt;html xmlns=\"http://www.w3.org/1999/xhtml"&gt;
+&lt;head&gt;
+&lt;meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" /&gt;
+&lt;title&gt;About SyntaxHighlighter&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body style=\"font-family:Geneva,Arial,Helvetica,sans-serif;background-color:#fff;color:#000;font-size:1em;text-align:center;"&gt;
+&lt;div style=\"text-align:center;margin-top:1.5em;"&gt;
+&lt;div style=\"font-size:xx-large;"&gt;SyntaxHighlighter&lt;/div&gt;
+&lt;div style=\"font-size:.75em;margin-bottom:3em;"&gt;
+&lt;div&gt;version <strong><a href="https://github.com/VERSION" target="_blank">@VERSION</a></strong>@ (<strong><a href="https://github.com/DATE" target="_blank">@DATE</a></strong>@)&lt;/div&gt;
+&lt;div&gt;&lt;a href="http://alexgorbatchev.com/SyntaxHighlighter\" target=\"_blank\" style=\"color:#005896"&gt;http://alexgorbatchev.com/SyntaxHighlighter&lt;/a&gt;&lt;/div&gt;
+&lt;div&gt;JavaScript code syntax highlighter.&lt;/div&gt;
+&lt;div&gt;Copyright 2004-2010 Alex Gorbatchev.&lt;/div&gt;
+&lt;/div&gt;
+&lt;div&gt;If you like this script, please &lt;a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=2930402\" style=\"color:#005896"&gt;donate&lt;/a&gt; to &lt;br/&gt;
+keep development active!&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+'</code></pre>
+<p>This doesn't output on the same line so I get the error <code>Uncaught SyntaxError: Unexpected token ILLEGAL</code> When I put all the code on the same line everything works just fine. :)</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-26540889" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/alexgorbatchev" class="author">alexgorbatchev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-26540889" class="timestamp">
+      <time>2013-10-17 19:26:13</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>gotcha! new lines on windows :) i'll fix it! thanks for helping me debug this!</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-26550164" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/snowe2010" class="author">snowe2010</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-26550164" class="timestamp">
+      <time>2013-10-17 20:36:18</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>haha no problem! I thought it might have been that, but you handled it fine with the unindent code, so I thought twice.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-26618420" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/alexgorbatchev" class="author">alexgorbatchev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-26618420" class="timestamp">
+      <time>2013-10-18 18:26:42</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Pushed another update to hopefully fix new lines, could you please verify?</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-26636018" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/snowe2010" class="author">snowe2010</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-26636018" class="timestamp">
+      <time>2013-10-18 22:57:45</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Sweet! Seems to work on build! </p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-26636309" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/alexgorbatchev" class="author">alexgorbatchev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-26636309" class="timestamp">
+      <time>2013-10-18 23:04:27</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Fantastic! Thanks for helping out with this!</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-26636448" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/snowe2010" class="author">snowe2010</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-26636448" class="timestamp">
+      <time>2013-10-18 23:07:36</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>No problem! Thanks for all the hard work :)</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+</body></html>

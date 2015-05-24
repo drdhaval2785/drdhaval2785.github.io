@@ -1,0 +1,46 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/296",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/296/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/296/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/296/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/296",
+  "id": 28563675,
+  "number": 296,
+  "title": "Bug in installation instructions on website",
+  "user": {
+    "login": "jrguenther",
+    "id": 1348928,
+    "avatar_url": "https://avatars.githubusercontent.com/u/1348928?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jrguenther",
+    "html_url": "https://github.com/jrguenther",
+    "followers_url": "https://api.github.com/users/jrguenther/followers",
+    "following_url": "https://api.github.com/users/jrguenther/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jrguenther/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jrguenther/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jrguenther/subscriptions",
+    "organizations_url": "https://api.github.com/users/jrguenther/orgs",
+    "repos_url": "https://api.github.com/users/jrguenther/repos",
+    "events_url": "https://api.github.com/users/jrguenther/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jrguenther/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2014-03-01T19:19:08Z",
+  "updated_at": "2014-03-01T19:19:08Z",
+  "closed_at": null,
+  "body": "On http://alexgorbatchev.com/SyntaxHighlighter/manual/installation.html, the sample installation requires a js file from the css directory.\r\n\r\n    <script type=\"text/javascript\" src=\"css/shBrushJScript.js\"></script>\r\n\r\nshould read:\r\n\r\n    <script type=\"text/javascript\" src=\"js/shBrushJScript.js\"></script>",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+
+]

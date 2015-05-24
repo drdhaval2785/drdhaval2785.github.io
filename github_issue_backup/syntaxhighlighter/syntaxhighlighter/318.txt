@@ -1,0 +1,101 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/318",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/318/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/318/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/318/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/318",
+  "id": 36754181,
+  "number": 318,
+  "title": "Line breaks in IE10",
+  "user": {
+    "login": "JimSmith99",
+    "id": 8020273,
+    "avatar_url": "https://avatars.githubusercontent.com/u/8020273?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/JimSmith99",
+    "html_url": "https://github.com/JimSmith99",
+    "followers_url": "https://api.github.com/users/JimSmith99/followers",
+    "following_url": "https://api.github.com/users/JimSmith99/following{/other_user}",
+    "gists_url": "https://api.github.com/users/JimSmith99/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/JimSmith99/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/JimSmith99/subscriptions",
+    "organizations_url": "https://api.github.com/users/JimSmith99/orgs",
+    "repos_url": "https://api.github.com/users/JimSmith99/repos",
+    "events_url": "https://api.github.com/users/JimSmith99/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/JimSmith99/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 2,
+  "created_at": "2014-06-29T19:26:41Z",
+  "updated_at": "2014-11-25T15:03:50Z",
+  "closed_at": null,
+  "body": "Hi\r\nI saw this one and have the exact same problem:\r\nhttps://github.com/alexgorbatchev/syntaxhighlighter/issues/265\r\nIm too using  v3.0.83.\r\nLine breaks ok in latest version?\r\n\r\nBr / Jim",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/comments/48065710",
+    "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/318#issuecomment-48065710",
+    "issue_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/318",
+    "id": 48065710,
+    "user": {
+      "login": "JimSmith99",
+      "id": 8020273,
+      "avatar_url": "https://avatars.githubusercontent.com/u/8020273?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/JimSmith99",
+      "html_url": "https://github.com/JimSmith99",
+      "followers_url": "https://api.github.com/users/JimSmith99/followers",
+      "following_url": "https://api.github.com/users/JimSmith99/following{/other_user}",
+      "gists_url": "https://api.github.com/users/JimSmith99/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/JimSmith99/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/JimSmith99/subscriptions",
+      "organizations_url": "https://api.github.com/users/JimSmith99/orgs",
+      "repos_url": "https://api.github.com/users/JimSmith99/repos",
+      "events_url": "https://api.github.com/users/JimSmith99/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/JimSmith99/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2014-07-04T18:57:37Z",
+    "updated_at": "2014-07-04T19:08:22Z",
+    "body": "Ok, I have now had the time to install newest version of sh.\r\nSame problem. Works fine in FF and Chrome.\r\nAll code in one line when copy/paste from IE10.\r\n\r\nCould anyone comment this, please?"
+  },
+  {
+    "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/comments/64412448",
+    "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/318#issuecomment-64412448",
+    "issue_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/318",
+    "id": 64412448,
+    "user": {
+      "login": "guog",
+      "id": 6947571,
+      "avatar_url": "https://avatars.githubusercontent.com/u/6947571?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/guog",
+      "html_url": "https://github.com/guog",
+      "followers_url": "https://api.github.com/users/guog/followers",
+      "following_url": "https://api.github.com/users/guog/following{/other_user}",
+      "gists_url": "https://api.github.com/users/guog/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/guog/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/guog/subscriptions",
+      "organizations_url": "https://api.github.com/users/guog/orgs",
+      "repos_url": "https://api.github.com/users/guog/repos",
+      "events_url": "https://api.github.com/users/guog/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/guog/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2014-11-25T15:03:50Z",
+    "updated_at": "2014-11-25T15:03:50Z",
+    "body": "So is all in IE10 and 11, you solve this problem?"
+  }
+]

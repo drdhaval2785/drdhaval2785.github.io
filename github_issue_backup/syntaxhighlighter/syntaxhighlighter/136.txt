@@ -1,0 +1,46 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/136",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/136/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/136/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/136/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/136",
+  "id": 5577006,
+  "number": 136,
+  "title": "IE is not displaying it properly - noindex error",
+  "user": {
+    "login": "emage",
+    "id": 1778966,
+    "avatar_url": "https://avatars.githubusercontent.com/u/1778966?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/emage",
+    "html_url": "https://github.com/emage",
+    "followers_url": "https://api.github.com/users/emage/followers",
+    "following_url": "https://api.github.com/users/emage/following{/other_user}",
+    "gists_url": "https://api.github.com/users/emage/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/emage/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/emage/subscriptions",
+    "organizations_url": "https://api.github.com/users/emage/orgs",
+    "repos_url": "https://api.github.com/users/emage/repos",
+    "events_url": "https://api.github.com/users/emage/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/emage/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2012-07-12T17:17:53Z",
+  "updated_at": "2012-07-12T17:22:21Z",
+  "closed_at": null,
+  "body": "all my codes are jumbled up like this:\n\n\n ul nodeIndex=\"1\" sizcache03510843625579006=\"0\"\n\nany tags has that in it with different numbers.. sorry I don't know the code to input into here.\n\n\nonly in IE.. all other browsers are ok.\n\nany clues?\n\n",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+
+]

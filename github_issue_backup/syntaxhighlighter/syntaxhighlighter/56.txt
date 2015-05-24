@@ -1,0 +1,101 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/56",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/56/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/56/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/56/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/56",
+  "id": 2157784,
+  "number": 56,
+  "title": "Copy and raw icons in self-host",
+  "user": {
+    "login": "krax",
+    "id": 1016275,
+    "avatar_url": "https://avatars.githubusercontent.com/u/1016275?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/krax",
+    "html_url": "https://github.com/krax",
+    "followers_url": "https://api.github.com/users/krax/followers",
+    "following_url": "https://api.github.com/users/krax/following{/other_user}",
+    "gists_url": "https://api.github.com/users/krax/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/krax/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/krax/subscriptions",
+    "organizations_url": "https://api.github.com/users/krax/orgs",
+    "repos_url": "https://api.github.com/users/krax/repos",
+    "events_url": "https://api.github.com/users/krax/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/krax/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 2,
+  "created_at": "2011-11-06T20:32:35Z",
+  "updated_at": "2012-03-19T11:49:54Z",
+  "closed_at": null,
+  "body": "Hi alex\r\nin your current version of SyntaxHighlighter which you host for the blogs. We have a problem.  I am using Blogger and the Copy and raw icons are no show and we have just \"?\" icon.\r\nDo you remove this feature or we're missing something?",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/comments/3714931",
+    "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/56#issuecomment-3714931",
+    "issue_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/56",
+    "id": 3714931,
+    "user": {
+      "login": "tiesont",
+      "id": 420293,
+      "avatar_url": "https://avatars.githubusercontent.com/u/420293?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/tiesont",
+      "html_url": "https://github.com/tiesont",
+      "followers_url": "https://api.github.com/users/tiesont/followers",
+      "following_url": "https://api.github.com/users/tiesont/following{/other_user}",
+      "gists_url": "https://api.github.com/users/tiesont/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/tiesont/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/tiesont/subscriptions",
+      "organizations_url": "https://api.github.com/users/tiesont/orgs",
+      "repos_url": "https://api.github.com/users/tiesont/repos",
+      "events_url": "https://api.github.com/users/tiesont/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/tiesont/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2012-01-30T06:00:26Z",
+    "updated_at": "2012-01-30T06:00:26Z",
+    "body": "Yes. The last version to use the extended toolbar was 2.0.278. You can always choose to use an older version - here's the download page: http://alexgorbatchev.com/SyntaxHighlighter/download/\r\n\r\nPlease note that I am not part of this project, but I saw that no one has closed this issue or responded..."
+  },
+  {
+    "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/comments/4571737",
+    "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/56#issuecomment-4571737",
+    "issue_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/56",
+    "id": 4571737,
+    "user": {
+      "login": "cam8001",
+      "id": 139489,
+      "avatar_url": "https://avatars.githubusercontent.com/u/139489?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/cam8001",
+      "html_url": "https://github.com/cam8001",
+      "followers_url": "https://api.github.com/users/cam8001/followers",
+      "following_url": "https://api.github.com/users/cam8001/following{/other_user}",
+      "gists_url": "https://api.github.com/users/cam8001/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/cam8001/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/cam8001/subscriptions",
+      "organizations_url": "https://api.github.com/users/cam8001/orgs",
+      "repos_url": "https://api.github.com/users/cam8001/repos",
+      "events_url": "https://api.github.com/users/cam8001/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/cam8001/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2012-03-19T11:49:54Z",
+    "updated_at": "2012-03-19T11:49:54Z",
+    "body": "Thanks tiesont, this helped me a lot. I guess the onus is on the community to recreate this functionality."
+  }
+]

@@ -1,0 +1,101 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/240",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/240/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/240/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/240/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/240",
+  "id": 16162425,
+  "number": 240,
+  "title": "Can't get SyntaxHighlighter to build",
+  "user": {
+    "login": "smithkl42",
+    "id": 2381026,
+    "avatar_url": "https://avatars.githubusercontent.com/u/2381026?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/smithkl42",
+    "html_url": "https://github.com/smithkl42",
+    "followers_url": "https://api.github.com/users/smithkl42/followers",
+    "following_url": "https://api.github.com/users/smithkl42/following{/other_user}",
+    "gists_url": "https://api.github.com/users/smithkl42/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/smithkl42/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/smithkl42/subscriptions",
+    "organizations_url": "https://api.github.com/users/smithkl42/orgs",
+    "repos_url": "https://api.github.com/users/smithkl42/repos",
+    "events_url": "https://api.github.com/users/smithkl42/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/smithkl42/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 2,
+  "created_at": "2013-06-28T21:24:10Z",
+  "updated_at": "2013-07-29T15:11:13Z",
+  "closed_at": null,
+  "body": "Several issues:\r\n\r\n* The build instructions say to run `/bin/jake`; on both Mac and Windows, it should be `./node_modules/.bin/jake`.\r\n\r\n* On both Mac and Windows, jake complaints about a missing node-sass file. (Running `npm install 'node-sass'` seems to fix this.)\r\n```\r\njake aborted.\r\nError: Cannot find module 'node-sass'\r\n    at Function.Module._resolveFilename (module.js:338:15)\r\n```\r\n\r\n* On Windows, after fixing the above problems, it gives the following error:\r\n```\r\nC:\\source\\thirdparty\\SyntaxHighlighter\\node_modules\\.bin>jake\r\nCleaning build folder\r\njake aborted.\r\nError: ENOENT, no such file or directory 'C:\\C:\\source\\thirdparty\\SyntaxHighlighter\\pkg'\r\n    at Object.fs.mkdirSync (fs.js:642:18)\r\n(See full trace by running task with --trace)\r\n```\r\n\r\n* On Mac, after fixing the above problems, it gives the following error:\r\n```\r\n$ ~/source/SyntaxHighlighter/node_modules/.bin[master*]: ./jake\r\nCleaning build folder\r\nCompiling SASS\r\nCopying files\r\njake aborted.\r\nError: ENOENT, no such file or directory '/Users/ken/source/SyntaxHighlighter/components/xregexp/xregexp-all.js'\r\n    at Object.fs.openSync (fs.js:427:18)\r\n(See full trace by running task with --trace)\r\n```\r\n",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/comments/20236213",
+    "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/240#issuecomment-20236213",
+    "issue_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/240",
+    "id": 20236213,
+    "user": {
+      "login": "apollolux",
+      "id": 493607,
+      "avatar_url": "https://avatars.githubusercontent.com/u/493607?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/apollolux",
+      "html_url": "https://github.com/apollolux",
+      "followers_url": "https://api.github.com/users/apollolux/followers",
+      "following_url": "https://api.github.com/users/apollolux/following{/other_user}",
+      "gists_url": "https://api.github.com/users/apollolux/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/apollolux/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/apollolux/subscriptions",
+      "organizations_url": "https://api.github.com/users/apollolux/orgs",
+      "repos_url": "https://api.github.com/users/apollolux/repos",
+      "events_url": "https://api.github.com/users/apollolux/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/apollolux/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2013-06-29T20:00:02Z",
+    "updated_at": "2013-06-29T20:00:44Z",
+    "body": "Same issues here. The cause of the Windows jake problem seems to be the `mkdir` function in build/build.coffee:37, where `dir` is initialized to \"/\" and the path.join loop that comes next prepends it resulting in the extra c:\\ that throws the ENOENT. Setting `dir` to an empty string brings Windows building to the missing components error, but the scss files will still compile to css (which is what I needed at the time)."
+  },
+  {
+    "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/comments/21309164",
+    "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/240#issuecomment-21309164",
+    "issue_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/240",
+    "id": 21309164,
+    "user": {
+      "login": "mctrusty",
+      "id": 1463546,
+      "avatar_url": "https://avatars.githubusercontent.com/u/1463546?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mctrusty",
+      "html_url": "https://github.com/mctrusty",
+      "followers_url": "https://api.github.com/users/mctrusty/followers",
+      "following_url": "https://api.github.com/users/mctrusty/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mctrusty/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mctrusty/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mctrusty/subscriptions",
+      "organizations_url": "https://api.github.com/users/mctrusty/orgs",
+      "repos_url": "https://api.github.com/users/mctrusty/repos",
+      "events_url": "https://api.github.com/users/mctrusty/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mctrusty/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2013-07-21T12:18:53Z",
+    "updated_at": "2013-07-22T20:28:20Z",
+    "body": "> Error: ENOENT, no such file or directory '/Users/ken/source/SyntaxHighlighter/components/xregexp/xregexp-all.js'\r\n> at Object.fs.openSync (fs.js:427:18)\r\n> (See full trace by running task with --trace)\r\n\r\nI was able to fix this by \r\n1.) Installing bower with npm\r\n2.) running `bower install` to install the packages in bower.json\r\n3.) editing the build.coffee script, line 88, to change:\r\n>  componentsDir = path.join baseDir, '../components'\r\nto\r\n>  componentsDir = path.join baseDir, '../bower_components' \r\n\r\nI'm assuming that this is related to [this pull request in bower changing 'components' to 'bower_components'](https://github.com/bower/bower/pull/435)\r\n\r\nAfter making these changes, jake ran to completion on bodhi 2.3.0. \r\n\r\nOn Windows, if I make the change apollolux suggested (\"/\" -> \"\") in addition to the above steps, I can get it to run all the way to the validation step, where it errors out on `vm.runInNewContext fs.readFileSync(coreFile, \"utf8\"), context, coreFile`. "
+  }
+]

@@ -1,0 +1,101 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/302",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/302/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/302/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/302/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/302",
+  "id": 31458094,
+  "number": 302,
+  "title": "Switch to data-attributes to instatiate the highlighter",
+  "user": {
+    "login": "bennyn",
+    "id": 469989,
+    "avatar_url": "https://avatars.githubusercontent.com/u/469989?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/bennyn",
+    "html_url": "https://github.com/bennyn",
+    "followers_url": "https://api.github.com/users/bennyn/followers",
+    "following_url": "https://api.github.com/users/bennyn/following{/other_user}",
+    "gists_url": "https://api.github.com/users/bennyn/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/bennyn/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/bennyn/subscriptions",
+    "organizations_url": "https://api.github.com/users/bennyn/orgs",
+    "repos_url": "https://api.github.com/users/bennyn/repos",
+    "events_url": "https://api.github.com/users/bennyn/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/bennyn/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 2,
+  "created_at": "2014-04-14T12:47:35Z",
+  "updated_at": "2015-05-22T01:27:19Z",
+  "closed_at": null,
+  "body": "At the moment the configuration for the syntaxhighlighter is set-up as class property. Example: class=\"brush: js; ruler: true; first-line: 10; highlight: [2, 4, 6]\" but it would be nice to have this configuration in a data-attribute like data-config=\"brush: js; ...\" because this does not misuse the class attribute.",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/comments/41174880",
+    "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/302#issuecomment-41174880",
+    "issue_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/302",
+    "id": 41174880,
+    "user": {
+      "login": "cmb69",
+      "id": 2306138,
+      "avatar_url": "https://avatars.githubusercontent.com/u/2306138?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/cmb69",
+      "html_url": "https://github.com/cmb69",
+      "followers_url": "https://api.github.com/users/cmb69/followers",
+      "following_url": "https://api.github.com/users/cmb69/following{/other_user}",
+      "gists_url": "https://api.github.com/users/cmb69/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/cmb69/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/cmb69/subscriptions",
+      "organizations_url": "https://api.github.com/users/cmb69/orgs",
+      "repos_url": "https://api.github.com/users/cmb69/repos",
+      "events_url": "https://api.github.com/users/cmb69/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/cmb69/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2014-04-23T15:26:32Z",
+    "updated_at": "2015-05-22T01:27:19Z",
+    "body": "+1"
+  },
+  {
+    "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/comments/104465758",
+    "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/302#issuecomment-104465758",
+    "issue_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/302",
+    "id": 104465758,
+    "user": {
+      "login": "SirNerdBear",
+      "id": 2721098,
+      "avatar_url": "https://avatars.githubusercontent.com/u/2721098?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/SirNerdBear",
+      "html_url": "https://github.com/SirNerdBear",
+      "followers_url": "https://api.github.com/users/SirNerdBear/followers",
+      "following_url": "https://api.github.com/users/SirNerdBear/following{/other_user}",
+      "gists_url": "https://api.github.com/users/SirNerdBear/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/SirNerdBear/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/SirNerdBear/subscriptions",
+      "organizations_url": "https://api.github.com/users/SirNerdBear/orgs",
+      "repos_url": "https://api.github.com/users/SirNerdBear/repos",
+      "events_url": "https://api.github.com/users/SirNerdBear/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/SirNerdBear/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2015-05-22T01:05:42Z",
+    "updated_at": "2015-05-22T01:05:42Z",
+    "body": "+1"
+  }
+]

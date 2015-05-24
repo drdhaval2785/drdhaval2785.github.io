@@ -1,0 +1,46 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/333",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/333/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/333/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/333/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/333",
+  "id": 39197364,
+  "number": 333,
+  "title": "IE8 skips empty lines",
+  "user": {
+    "login": "davidkokkelink",
+    "id": 6981408,
+    "avatar_url": "https://avatars.githubusercontent.com/u/6981408?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/davidkokkelink",
+    "html_url": "https://github.com/davidkokkelink",
+    "followers_url": "https://api.github.com/users/davidkokkelink/followers",
+    "following_url": "https://api.github.com/users/davidkokkelink/following{/other_user}",
+    "gists_url": "https://api.github.com/users/davidkokkelink/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/davidkokkelink/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/davidkokkelink/subscriptions",
+    "organizations_url": "https://api.github.com/users/davidkokkelink/orgs",
+    "repos_url": "https://api.github.com/users/davidkokkelink/repos",
+    "events_url": "https://api.github.com/users/davidkokkelink/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/davidkokkelink/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2014-07-31T14:05:52Z",
+  "updated_at": "2014-07-31T14:05:52Z",
+  "closed_at": null,
+  "body": "In IE8, empty lines are skipped. The total number of lines displayed in the gutter is correct, but the empty line is not being shown (and therefore a new empty line is added as a last line).\r\n\r\nI assume this is due to the faulty implementation of `String.prototype.split` in IE8. `splitLines` function in shCore.js on line 421:\r\n\r\n`return block.split(/\\r?\\n/);`\r\n\r\nTest: `splitLines('abc\\n\\n')` returns `[\"abc\"]` in IE8 and `[\"abc\",\"\",\"\"]` in newer browsers, so IE8 is skipping two empty lines. It would be better to use XRegExps split function like this:\r\n\r\n`return XRegExp.split(block, /\\r?\\n/);`\r\n\r\nfixed the issue for me.\r\n",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+
+]

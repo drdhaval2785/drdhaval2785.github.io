@@ -1,0 +1,46 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/146",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/146/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/146/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/146/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/146",
+  "id": 6612792,
+  "number": 146,
+  "title": "Cargo Collective / SyntaxHighlighter Integration",
+  "user": {
+    "login": "JK664",
+    "id": 544575,
+    "avatar_url": "https://avatars.githubusercontent.com/u/544575?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/JK664",
+    "html_url": "https://github.com/JK664",
+    "followers_url": "https://api.github.com/users/JK664/followers",
+    "following_url": "https://api.github.com/users/JK664/following{/other_user}",
+    "gists_url": "https://api.github.com/users/JK664/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/JK664/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/JK664/subscriptions",
+    "organizations_url": "https://api.github.com/users/JK664/orgs",
+    "repos_url": "https://api.github.com/users/JK664/repos",
+    "events_url": "https://api.github.com/users/JK664/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/JK664/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2012-09-03T10:18:49Z",
+  "updated_at": "2012-09-03T11:08:33Z",
+  "closed_at": null,
+  "body": "hi has anyone have an experience integrating sytaxhighlighter into cargo with the hosting method ?\nI've tried calling the below code from the css and posting area without any luck.\n(replace * with < or >)\n\n\n<*script src=\"http://alexgorbatchev.com/pub/sh/current/scripts/shCore.js\" type=\"text/javascript\"></script*>\n<*script src=\"http://alexgorbatchev.com/pub/sh/current/scripts/shBrushJScript.js\" type=\"text/javascript\"></script*>\n<*link href=\"http://alexgorbatchev.com/pub/sh/current/styles/shCore.css\" rel=\"stylesheet\" type=\"text/css\"></link*>\n<*link href=\"http://alexgorbatchev.com/pub/sh/current/styles/shThemeDefault.css\" rel=\"stylesheet\" type=\"text/css\"></link*>\n\n*pre class=\"brush: js\">\nfunction foo()\n{\n\nfor ( x = 1, y = 1; x <= 10; x++, y++ ) {\n  if ( ( y % 2 ) == 0 ) {\n    even = even + y;\n  }\n  total = total + x;\n}\n\n}\n</pre*\n\n<*script type=\"text/javascript\">\n     SyntaxHighlighter.all()\n</script*>\n\ncheers",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+
+]

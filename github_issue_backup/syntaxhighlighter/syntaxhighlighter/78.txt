@@ -1,0 +1,73 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/78",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/78/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/78/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/78/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/78",
+  "id": 2761611,
+  "number": 78,
+  "title": "Quote Mark in Regex",
+  "user": {
+    "login": "esplin9466",
+    "id": 1313216,
+    "avatar_url": "https://avatars.githubusercontent.com/u/1313216?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/esplin9466",
+    "html_url": "https://github.com/esplin9466",
+    "followers_url": "https://api.github.com/users/esplin9466/followers",
+    "following_url": "https://api.github.com/users/esplin9466/following{/other_user}",
+    "gists_url": "https://api.github.com/users/esplin9466/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/esplin9466/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/esplin9466/subscriptions",
+    "organizations_url": "https://api.github.com/users/esplin9466/orgs",
+    "repos_url": "https://api.github.com/users/esplin9466/repos",
+    "events_url": "https://api.github.com/users/esplin9466/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/esplin9466/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2012-01-08T16:50:41Z",
+  "updated_at": "2012-10-23T20:03:53Z",
+  "closed_at": null,
+  "body": "My Javascript code had a regular expression in it like this: \r\n```string = string.replace(/\\\"/g, \"&quot;\");```\r\nSyntaxHighlighter saw the string as \"/g, \" and put that in blue instead of the \"&amp;quot;\". It should have left the quote in the regular expression alone. ",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/comments/9716055",
+    "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/78#issuecomment-9716055",
+    "issue_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/78",
+    "id": 9716055,
+    "user": {
+      "login": "jmrware",
+      "id": 171988,
+      "avatar_url": "https://avatars.githubusercontent.com/u/171988?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jmrware",
+      "html_url": "https://github.com/jmrware",
+      "followers_url": "https://api.github.com/users/jmrware/followers",
+      "following_url": "https://api.github.com/users/jmrware/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jmrware/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jmrware/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jmrware/subscriptions",
+      "organizations_url": "https://api.github.com/users/jmrware/orgs",
+      "repos_url": "https://api.github.com/users/jmrware/repos",
+      "events_url": "https://api.github.com/users/jmrware/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jmrware/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2012-10-23T20:03:53Z",
+    "updated_at": "2012-10-23T20:03:53Z",
+    "body": "This behavior is likely due to the bug (issue 72) I reported here: [Major bug in parser design - and a fix.](https://github.com/alexgorbatchev/SyntaxHighlighter/issues/72).\r\n\r\nI wrote an article describing the bug here: [Fixing the SyntaxHighlighter 3.0.83 Parser Bug](http://jmrware.com/articles/2011/sh-bug/SyntaxHighlighterBug.html)\r\n\r\nAlex is aware of this problem but the fix has not yet arrived..."
+  }
+]

@@ -1,0 +1,46 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/29",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/29/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/29/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/29/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/29",
+  "id": 1660813,
+  "number": 29,
+  "title": "Support for different colors when highlighting",
+  "user": {
+    "login": "robertoaloi",
+    "id": 91769,
+    "avatar_url": "https://avatars.githubusercontent.com/u/91769?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/robertoaloi",
+    "html_url": "https://github.com/robertoaloi",
+    "followers_url": "https://api.github.com/users/robertoaloi/followers",
+    "following_url": "https://api.github.com/users/robertoaloi/following{/other_user}",
+    "gists_url": "https://api.github.com/users/robertoaloi/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/robertoaloi/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/robertoaloi/subscriptions",
+    "organizations_url": "https://api.github.com/users/robertoaloi/orgs",
+    "repos_url": "https://api.github.com/users/robertoaloi/repos",
+    "events_url": "https://api.github.com/users/robertoaloi/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/robertoaloi/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2011-09-16T09:38:31Z",
+  "updated_at": "2011-09-16T09:38:31Z",
+  "closed_at": null,
+  "body": "At current you can highlight several lines and you can specify which colour you want to use, but you cannot have different colours for different lines.\r\n\r\nIt would be very helpful to add support for this.",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+
+]

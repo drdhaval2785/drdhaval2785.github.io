@@ -1,0 +1,79 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/82",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/82/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/82/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/82/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/pull/82",
+  "id": 2932135,
+  "number": 82,
+  "title": "Expanded features relating to finding elements for highlighting.",
+  "user": {
+    "login": "outis",
+    "id": 582140,
+    "avatar_url": "https://avatars.githubusercontent.com/u/582140?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/outis",
+    "html_url": "https://github.com/outis",
+    "followers_url": "https://api.github.com/users/outis/followers",
+    "following_url": "https://api.github.com/users/outis/following{/other_user}",
+    "gists_url": "https://api.github.com/users/outis/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/outis/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/outis/subscriptions",
+    "organizations_url": "https://api.github.com/users/outis/orgs",
+    "repos_url": "https://api.github.com/users/outis/repos",
+    "events_url": "https://api.github.com/users/outis/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/outis/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2012-01-23T09:12:29Z",
+  "updated_at": "2013-07-20T22:08:11Z",
+  "closed_at": null,
+  "pull_request": {
+    "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/pulls/82",
+    "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/pull/82",
+    "diff_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/pull/82.diff",
+    "patch_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/pull/82.patch"
+  },
+  "body": "I've got two new features, if you're interested. \r\n\r\nThe first allows SyntaxHighlighter to find multiple element types. Instead of a single tag name, the `tagName` configuration option can be an array of tag names, in which case `findElements` gets all the named elements. I left the config option singular so as not to affect sites that customize it. The default `tagName` option is updated to include `<code>` elements so developers can write more semantic documents yet still get highlighting in JS enabled browsers, all without impacting existing sites that use SyntaxHighlighter.\r\n\r\nThe second expands `findElements` to accept DOM nodes, tag names or an array of both as its `element` parameter. This way, a developer can specify multiple elements to highlight in a single call to `highlight`.\r\n\r\n    var someElt = document.getElementById('Foo');\r\n    SyntaxHighlighter.highlight({}, ['pre', 'code', someElt]);\r\n\r\nDo these updates interest you? Do they need any other work before they can be merged into the main repo?",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/comments/21301303",
+    "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/pull/82#issuecomment-21301303",
+    "issue_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/82",
+    "id": 21301303,
+    "user": {
+      "login": "antoniovazquezblanco",
+      "id": 304193,
+      "avatar_url": "https://avatars.githubusercontent.com/u/304193?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/antoniovazquezblanco",
+      "html_url": "https://github.com/antoniovazquezblanco",
+      "followers_url": "https://api.github.com/users/antoniovazquezblanco/followers",
+      "following_url": "https://api.github.com/users/antoniovazquezblanco/following{/other_user}",
+      "gists_url": "https://api.github.com/users/antoniovazquezblanco/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/antoniovazquezblanco/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/antoniovazquezblanco/subscriptions",
+      "organizations_url": "https://api.github.com/users/antoniovazquezblanco/orgs",
+      "repos_url": "https://api.github.com/users/antoniovazquezblanco/repos",
+      "events_url": "https://api.github.com/users/antoniovazquezblanco/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/antoniovazquezblanco/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2013-07-20T22:08:11Z",
+    "updated_at": "2013-07-20T22:08:11Z",
+    "body": "It would be nice to see this working. Why is it stuck?"
+  }
+]

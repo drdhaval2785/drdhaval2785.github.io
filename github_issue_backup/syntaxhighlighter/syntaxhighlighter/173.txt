@@ -1,0 +1,101 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/173",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/173/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/173/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/173/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/173",
+  "id": 9518072,
+  "number": 173,
+  "title": "Comment in the middle",
+  "user": {
+    "login": "joydeep1982",
+    "id": 3125857,
+    "avatar_url": "https://avatars.githubusercontent.com/u/3125857?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/joydeep1982",
+    "html_url": "https://github.com/joydeep1982",
+    "followers_url": "https://api.github.com/users/joydeep1982/followers",
+    "following_url": "https://api.github.com/users/joydeep1982/following{/other_user}",
+    "gists_url": "https://api.github.com/users/joydeep1982/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/joydeep1982/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/joydeep1982/subscriptions",
+    "organizations_url": "https://api.github.com/users/joydeep1982/orgs",
+    "repos_url": "https://api.github.com/users/joydeep1982/repos",
+    "events_url": "https://api.github.com/users/joydeep1982/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/joydeep1982/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 2,
+  "created_at": "2012-12-26T08:53:35Z",
+  "updated_at": "2013-02-17T06:21:13Z",
+  "closed_at": null,
+  "body": "If the comment is starting from the middle of the line and ending before the end of the line then sysntax highlighter is not taking care of the same ...\r\n\r\nExample\r\n    \r\n    public void setGender(Integer iGender)\r\n    {\r\n        this.json.put(JSonConstant.GENDER, iGender/*gender.getValue()*/);\r\n    }\r\n     \r\n    public Integer getStatus()\r\n    {\r\n        return this.json.optInt(JSonConstant.STATUS);\r\n    }\r\n\r\nIn this case syntax highlighter is commenting the entire file starting from the position of the comment.\r\nIt is unable to track the end of the comment which is not at the end of the line.\r\nPlease check the image attached with the issue.\r\n\r\n![test](https://f.cloud.github.com/assets/3125857/30915/621194bc-4f3a-11e2-967f-a2bed484511f.JPG)",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/comments/13680827",
+    "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/173#issuecomment-13680827",
+    "issue_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/173",
+    "id": 13680827,
+    "user": {
+      "login": "jeffreytang",
+      "id": 3138310,
+      "avatar_url": "https://avatars.githubusercontent.com/u/3138310?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jeffreytang",
+      "html_url": "https://github.com/jeffreytang",
+      "followers_url": "https://api.github.com/users/jeffreytang/followers",
+      "following_url": "https://api.github.com/users/jeffreytang/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jeffreytang/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jeffreytang/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jeffreytang/subscriptions",
+      "organizations_url": "https://api.github.com/users/jeffreytang/orgs",
+      "repos_url": "https://api.github.com/users/jeffreytang/repos",
+      "events_url": "https://api.github.com/users/jeffreytang/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jeffreytang/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2013-02-17T04:53:10Z",
+    "updated_at": "2013-02-17T04:53:10Z",
+    "body": "Is this for Java?\r\nThe latest version seems works fine in my example:\r\n\r\nhttp://jsfiddle.net/gazebotang/xLyGw/1/\r\n"
+  },
+  {
+    "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/comments/13681497",
+    "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/173#issuecomment-13681497",
+    "issue_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/173",
+    "id": 13681497,
+    "user": {
+      "login": "joydeep1982",
+      "id": 3125857,
+      "avatar_url": "https://avatars.githubusercontent.com/u/3125857?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/joydeep1982",
+      "html_url": "https://github.com/joydeep1982",
+      "followers_url": "https://api.github.com/users/joydeep1982/followers",
+      "following_url": "https://api.github.com/users/joydeep1982/following{/other_user}",
+      "gists_url": "https://api.github.com/users/joydeep1982/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/joydeep1982/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/joydeep1982/subscriptions",
+      "organizations_url": "https://api.github.com/users/joydeep1982/orgs",
+      "repos_url": "https://api.github.com/users/joydeep1982/repos",
+      "events_url": "https://api.github.com/users/joydeep1982/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/joydeep1982/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2013-02-17T06:21:13Z",
+    "updated_at": "2013-02-17T06:21:13Z",
+    "body": "Yes the problem is for java\r\nI guess I have downloaded the latest version from the website\r\nI will check if there is any new release given after I have downloaded\r\nBut the problem still persist in my application\r\n\r\nI am not sure I think the problem is there for any language and not only\r\nJava\r\nI will check and update the defect shortly\r\n\r\n\r\nOn Sun, Feb 17, 2013 at 10:23 AM, jeffreytang <notifications@github.com>wrote:\r\n\r\n> Is this for Java?\r\n> The latest version seems works fine in my example:\r\n>\r\n> http://jsfiddle.net/gazebotang/xLyGw/1/\r\n>\r\n> —\r\n> Reply to this email directly or view it on GitHub<https://github.com/alexgorbatchev/SyntaxHighlighter/issues/173#issuecomment-13680827>.\r\n>\r\n>\r\n\r\n\r\n\r\n-- \r\n*Thanks & Regards*\r\nJoydeep Bhattacharya\r\n+91 97318 24411\r\n\r\nVisit My Website: *http://www.scodz.com/*\r\nVisit My Blog: *http://scodz.blogspot.com/*\r\nPrelaunch Pages: *http://joydeep1982.googlepages.com/*\r\nE Mail: joydeep1982@gmail.com"
+  }
+]

@@ -1,0 +1,46 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/107",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/107/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/107/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/107/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/107",
+  "id": 4111416,
+  "number": 107,
+  "title": "Problems with Copy and Paste on Hosted Scripts",
+  "user": {
+    "login": "BlackWasp",
+    "id": 1641418,
+    "avatar_url": "https://avatars.githubusercontent.com/u/1641418?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/BlackWasp",
+    "html_url": "https://github.com/BlackWasp",
+    "followers_url": "https://api.github.com/users/BlackWasp/followers",
+    "following_url": "https://api.github.com/users/BlackWasp/following{/other_user}",
+    "gists_url": "https://api.github.com/users/BlackWasp/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/BlackWasp/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/BlackWasp/subscriptions",
+    "organizations_url": "https://api.github.com/users/BlackWasp/orgs",
+    "repos_url": "https://api.github.com/users/BlackWasp/repos",
+    "events_url": "https://api.github.com/users/BlackWasp/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/BlackWasp/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2012-04-13T19:58:00Z",
+  "updated_at": "2012-04-13T19:58:00Z",
+  "closed_at": null,
+  "body": "I know it's been mentioned before about copying and pasting from IE9 giving the results all on one line. I'm still seeing this whilst testing out the hosted versions of the scripts (but my own copies of the CSS stylesheets). Is there a newer version that fixes copying and pasting that I can download or that can be applied to the current hosted scripts?",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+
+]

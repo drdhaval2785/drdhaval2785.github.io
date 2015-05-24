@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html class='' lang='en'>
+<head prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#'>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8'>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta http-equiv='Content-Language' content='en'>
+<title>syntaxhighlighter/syntaxhighlighter/10</title>
+<link href='github-c486157afcc5f58155a921bc675afb08733fbaa8dcf39ac2104d3.css' media='all' rel='stylesheet'>
+<link href='github2-da2e842cc3f0aaf33b727d0ef034243c12ab008fd09b24868b97.css' media='all' rel='stylesheet'>
+<meta http-equiv='x-pjax-version' content='4426702614c8182f33d1780ad1169662'>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shAutoloader.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAppleScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAS3.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushBash.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushColdFusion.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCpp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCSharp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCss.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDelphi.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDiff.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushErlang.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushGroovy.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJava.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJavaFX.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/syntaxhighlighter/scripts/shBrushJScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPerl.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPhp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPlain.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPowerShell.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPython.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushRuby.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSass.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushScala.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSql.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushVb.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushXml.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shLegacy.js'></script>
+	<link type='text/css' rel='stylesheet' href='syntaxhighlighter/styles/shCoreDefault.css'/>
+	<script type='text/javascript'>SyntaxHighlighter.all();</script>
+</head>
+<body class='logged_in  env-production windows vis-public'>
+<h1 align='center'><a href='https://github.com/syntaxhighlighter/syntaxhighlighter/issues/10' target='_blank'>Empty first line is dropped</h1><hr/><div id="#issue-1435259" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/baron1405" class="author">baron1405</a>
+    </strong>
+    commented on 
+    <a href="#issue-1435259" class="timestamp">
+      <time>2011-08-18 20:56:57</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>if I have a pre block of code that starts with a blank line, the line is not rendered by SyntaxHighlighter. This appears to happen if the first line contains only whitespace or contains only a newline.</p>
+<p>For example, the following pre block:</p>
+<pre>
+
+public class Foo {
+}
+</pre>
+<p>will be rendered without the initial blank line.</p>
+<pre>
+public class Foo {
+}
+</pre>
+<p>Line numbering and highlighting will all be off by one. The problem also appears to occur for trailing blank lines. Blank lines surrounded by non-blank lines render properly.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-1844469" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/jmm" class="author">jmm</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-1844469" class="timestamp">
+      <time>2011-08-19 00:08:02</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I noticed that too.  I wanted to look into it at some point to see if SyntaxHighlighter is doing it or if it's a DOM issue out of SyntaxHighlighter's control.  I would also highly prefer to at least have the option to render leading &amp; trailing newlines in the highlighted code.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-1858765" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/baron1405" class="author">baron1405</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-1858765" class="timestamp">
+      <time>2011-08-20 08:47:46</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I found that if I changed the trimFirstAndLastLines function to:</p>
+<pre>
+function trimFirstAndLastLines(str)
+{
+    return str.replace(/^[ ]*[\n]/g, sh.config.space + '\n').replace(/[\n][ ]*$/g, '');
+};
+</pre>
+<p>this fixes the problem.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-1890355" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/alexgorbatchev" class="author">alexgorbatchev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-1890355" class="timestamp">
+      <time>2011-08-24 14:33:57</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>This is a built in feature. Most times when people start the code blocks they would have <textarea/> on one line and then begin code on the next line. This would result in a new line right after the opening tag. Therefore trimming of empty lines is necessary for most common case. I'm open to having this an on/off feature if you wish to contribute it. Otherwise it seems like a very low priority feature.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-22102416" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/diegohavenstein" class="author">diegohavenstein</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-22102416" class="timestamp">
+      <time>2013-08-05 12:18:40</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>This feature is a bug for my purposes :( I will need an ugly hack, or is it possible with the current version to deactivate this automatic trimming? Thanks for any help!</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-40327026" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/gajus" class="author">gajus</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-40327026" class="timestamp">
+      <time>2014-04-14 01:33:54</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>This should be an opt-in function, not a default behaviour. In my case, I needed to highlight an excerpt from a larger file and line-numbers to refer to the original lines.  I had to add an empty comment to every empty line to avoid empty lines getting stripped (and therefore de-referencing the original file lines).</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+</body></html>

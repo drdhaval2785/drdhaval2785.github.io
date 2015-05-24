@@ -1,0 +1,73 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/135",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/135/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/135/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/135/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/135",
+  "id": 5525361,
+  "number": 135,
+  "title": "JScript brush: keyword \"finally\" is missing",
+  "user": {
+    "login": "arimeq",
+    "id": 705888,
+    "avatar_url": "https://avatars.githubusercontent.com/u/705888?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/arimeq",
+    "html_url": "https://github.com/arimeq",
+    "followers_url": "https://api.github.com/users/arimeq/followers",
+    "following_url": "https://api.github.com/users/arimeq/following{/other_user}",
+    "gists_url": "https://api.github.com/users/arimeq/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/arimeq/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/arimeq/subscriptions",
+    "organizations_url": "https://api.github.com/users/arimeq/orgs",
+    "repos_url": "https://api.github.com/users/arimeq/repos",
+    "events_url": "https://api.github.com/users/arimeq/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/arimeq/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2012-07-10T15:14:09Z",
+  "updated_at": "2013-02-17T05:32:24Z",
+  "closed_at": null,
+  "body": "JavaScript has a full try..catch..finally statement, like this:\n\ntry {\n     // some commands that may raise an exception, like open file descriptor and read contents\n} catch (e) {\n    // exception handling, like weird characters are read from what should be a text file\n} finally {\n    // what to do after all commands, even if there was an exception, like closing a file descriptor\n}\n\nJScript brush does not support last block. It is sufficient to add word \"finally\" at the end of line 25 in file scripts/shBrushJScript.js, in variable \"keywords\".\n\nBest regards,\nArim",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/comments/13681161",
+    "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/135#issuecomment-13681161",
+    "issue_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/135",
+    "id": 13681161,
+    "user": {
+      "login": "jeffreytang",
+      "id": 3138310,
+      "avatar_url": "https://avatars.githubusercontent.com/u/3138310?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jeffreytang",
+      "html_url": "https://github.com/jeffreytang",
+      "followers_url": "https://api.github.com/users/jeffreytang/followers",
+      "following_url": "https://api.github.com/users/jeffreytang/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jeffreytang/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jeffreytang/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jeffreytang/subscriptions",
+      "organizations_url": "https://api.github.com/users/jeffreytang/orgs",
+      "repos_url": "https://api.github.com/users/jeffreytang/repos",
+      "events_url": "https://api.github.com/users/jeffreytang/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jeffreytang/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2013-02-17T05:32:24Z",
+    "updated_at": "2013-02-17T05:32:24Z",
+    "body": "Confirmed\r\n\r\nhttp://jsfiddle.net/gazebotang/xLyGw/4/\r\n"
+  }
+]

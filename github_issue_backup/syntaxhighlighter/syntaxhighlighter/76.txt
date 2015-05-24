@@ -1,0 +1,52 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/76",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/76/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/76/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/76/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/pull/76",
+  "id": 2699576,
+  "number": 76,
+  "title": "dom ranges are great for selection of dom nodes",
+  "user": {
+    "login": "theeternalsw0rd",
+    "id": 789681,
+    "avatar_url": "https://avatars.githubusercontent.com/u/789681?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/theeternalsw0rd",
+    "html_url": "https://github.com/theeternalsw0rd",
+    "followers_url": "https://api.github.com/users/theeternalsw0rd/followers",
+    "following_url": "https://api.github.com/users/theeternalsw0rd/following{/other_user}",
+    "gists_url": "https://api.github.com/users/theeternalsw0rd/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/theeternalsw0rd/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/theeternalsw0rd/subscriptions",
+    "organizations_url": "https://api.github.com/users/theeternalsw0rd/orgs",
+    "repos_url": "https://api.github.com/users/theeternalsw0rd/repos",
+    "events_url": "https://api.github.com/users/theeternalsw0rd/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/theeternalsw0rd/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2012-01-02T06:51:53Z",
+  "updated_at": "2012-01-02T06:51:53Z",
+  "closed_at": null,
+  "pull_request": {
+    "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/pulls/76",
+    "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/pull/76",
+    "diff_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/pull/76.diff",
+    "patch_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/pull/76.patch"
+  },
+  "body": "1) Added jQuery hook that (if jQuery is loaded) fires newSyntaxHighlighter event and passes the highlighter div id\r\n2) Prefers ranges for quick-code selection with textarea method as fallback allowing for more seamless experience",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+
+]

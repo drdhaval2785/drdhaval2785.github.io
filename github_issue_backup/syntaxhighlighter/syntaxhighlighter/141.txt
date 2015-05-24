@@ -1,0 +1,79 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/141",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/141/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/141/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/141/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/pull/141",
+  "id": 6133529,
+  "number": 141,
+  "title": "Code block generated from md file support",
+  "user": {
+    "login": "maginemu",
+    "id": 614403,
+    "avatar_url": "https://avatars.githubusercontent.com/u/614403?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/maginemu",
+    "html_url": "https://github.com/maginemu",
+    "followers_url": "https://api.github.com/users/maginemu/followers",
+    "following_url": "https://api.github.com/users/maginemu/following{/other_user}",
+    "gists_url": "https://api.github.com/users/maginemu/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/maginemu/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/maginemu/subscriptions",
+    "organizations_url": "https://api.github.com/users/maginemu/orgs",
+    "repos_url": "https://api.github.com/users/maginemu/repos",
+    "events_url": "https://api.github.com/users/maginemu/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/maginemu/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2012-08-09T18:11:04Z",
+  "updated_at": "2013-10-11T01:56:47Z",
+  "closed_at": null,
+  "pull_request": {
+    "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/pulls/141",
+    "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/pull/141",
+    "diff_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/pull/141.diff",
+    "patch_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/pull/141.patch"
+  },
+  "body": "issue \n====\n\n\nMarkdown-ed document codeblock is represented as:\n\n\n    var something_code_block\n\n\nActually, this generates below:\n\n\n    <pre><code>var something_code_block</code></pre>\n\n\nwhen I paste \n\n\n    <pre class=\"brush: js\"><code>var something_code_block</code></pre>\n\n\ninto my Google Blogger, results like below:\n\n\n    <code>var something_code_block</code>\n\n\nI changed\n=======\n\nwhen config.useMdPreCode === true, then strip leading &lt;code&gt;&lt;/code&gt; from &lt;pre&gt;&lt;/pre&gt; block.\n\n",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/comments/26107761",
+    "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/pull/141#issuecomment-26107761",
+    "issue_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/141",
+    "id": 26107761,
+    "user": {
+      "login": "snowe2010",
+      "id": 1534535,
+      "avatar_url": "https://avatars.githubusercontent.com/u/1534535?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/snowe2010",
+      "html_url": "https://github.com/snowe2010",
+      "followers_url": "https://api.github.com/users/snowe2010/followers",
+      "following_url": "https://api.github.com/users/snowe2010/following{/other_user}",
+      "gists_url": "https://api.github.com/users/snowe2010/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/snowe2010/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/snowe2010/subscriptions",
+      "organizations_url": "https://api.github.com/users/snowe2010/orgs",
+      "repos_url": "https://api.github.com/users/snowe2010/repos",
+      "events_url": "https://api.github.com/users/snowe2010/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/snowe2010/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2013-10-11T01:55:10Z",
+    "updated_at": "2013-10-11T01:56:47Z",
+    "body": "If you could merge this, this would be the best plugin ever...\r\nBut first we need to make it so that it doesn't look for a class=\"code\" because Markdown won't generate that."
+  }
+]

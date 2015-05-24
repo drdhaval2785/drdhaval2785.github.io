@@ -1,0 +1,101 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/215",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/215/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/215/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/215/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/215",
+  "id": 14581172,
+  "number": 215,
+  "title": "Javascript single-quoted strings with keywords inside messes up the syntax highlighting",
+  "user": {
+    "login": "github-kiran-user",
+    "id": 4491818,
+    "avatar_url": "https://avatars.githubusercontent.com/u/4491818?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/github-kiran-user",
+    "html_url": "https://github.com/github-kiran-user",
+    "followers_url": "https://api.github.com/users/github-kiran-user/followers",
+    "following_url": "https://api.github.com/users/github-kiran-user/following{/other_user}",
+    "gists_url": "https://api.github.com/users/github-kiran-user/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/github-kiran-user/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/github-kiran-user/subscriptions",
+    "organizations_url": "https://api.github.com/users/github-kiran-user/orgs",
+    "repos_url": "https://api.github.com/users/github-kiran-user/repos",
+    "events_url": "https://api.github.com/users/github-kiran-user/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/github-kiran-user/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 2,
+  "created_at": "2013-05-21T17:50:50Z",
+  "updated_at": "2013-12-14T23:24:35Z",
+  "closed_at": null,
+  "body": "Noticed that using the Javascript syntax highlighter does not handle single quoted strings very well.\r\n\r\nI have noticed syntax highlighting going haywire for multple cases:\r\n  1. Having a single quote immediately following an open parenthesis - ('\r\n  2. Having a keyword within a single-quoted string messes up the syntax highlighting once the keyword is encountered.\r\n\r\nAt time it is simply erratic and stops recognizing the string after a while.\r\n\r\nThis causes strings to be highlighted in reverse - i.e. the end of the string gets treated as the start and vice versa.",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/comments/29724882",
+    "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/215#issuecomment-29724882",
+    "issue_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/215",
+    "id": 29724882,
+    "user": {
+      "login": "WillsB3",
+      "id": 868834,
+      "avatar_url": "https://avatars.githubusercontent.com/u/868834?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/WillsB3",
+      "html_url": "https://github.com/WillsB3",
+      "followers_url": "https://api.github.com/users/WillsB3/followers",
+      "following_url": "https://api.github.com/users/WillsB3/following{/other_user}",
+      "gists_url": "https://api.github.com/users/WillsB3/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/WillsB3/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/WillsB3/subscriptions",
+      "organizations_url": "https://api.github.com/users/WillsB3/orgs",
+      "repos_url": "https://api.github.com/users/WillsB3/repos",
+      "events_url": "https://api.github.com/users/WillsB3/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/WillsB3/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2013-12-03T16:27:52Z",
+    "updated_at": "2013-12-03T16:27:52Z",
+    "body": "Here's a screenshot if the JS brush tripping up on the source of Backbone.js for example \r\n![screen shot 2013-12-03 at 16 27 13](https://f.cloud.github.com/assets/868834/1665485/da281c72-5c37-11e3-8235-60b1ef73d2b8.png)\r\n"
+  },
+  {
+    "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/comments/30593987",
+    "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/215#issuecomment-30593987",
+    "issue_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/215",
+    "id": 30593987,
+    "user": {
+      "login": "russorat",
+      "id": 4805997,
+      "avatar_url": "https://avatars.githubusercontent.com/u/4805997?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/russorat",
+      "html_url": "https://github.com/russorat",
+      "followers_url": "https://api.github.com/users/russorat/followers",
+      "following_url": "https://api.github.com/users/russorat/following{/other_user}",
+      "gists_url": "https://api.github.com/users/russorat/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/russorat/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/russorat/subscriptions",
+      "organizations_url": "https://api.github.com/users/russorat/orgs",
+      "repos_url": "https://api.github.com/users/russorat/repos",
+      "events_url": "https://api.github.com/users/russorat/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/russorat/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2013-12-14T23:24:35Z",
+    "updated_at": "2013-12-14T23:24:35Z",
+    "body": "I found that this is due to the single quote inside the comment, not the parentheses. Since multi line single quotes are rare in Javascript (much rarer than single quotes in comments), I updated scripts/shBrushJScript.js to use the single line versions of the RegExp instead of the multi line.  Change lines 18 and 19 to use r.doubleQuotedString and r.singleQuotedString.\r\n\r\nhttps://github.com/alexgorbatchev/SyntaxHighlighter/blob/master/src/js/shBrushJScript.js#L18\r\n\r\n"
+  }
+]

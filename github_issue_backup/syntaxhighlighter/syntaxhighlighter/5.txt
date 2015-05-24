@@ -1,0 +1,91 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/5",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/5/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/5/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/5/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/5",
+  "id": 1375929,
+  "number": 5,
+  "title": "Code Autocorrection",
+  "user": {
+    "login": "meisterlumpi",
+    "id": 969850,
+    "avatar_url": "https://avatars.githubusercontent.com/u/969850?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/meisterlumpi",
+    "html_url": "https://github.com/meisterlumpi",
+    "followers_url": "https://api.github.com/users/meisterlumpi/followers",
+    "following_url": "https://api.github.com/users/meisterlumpi/following{/other_user}",
+    "gists_url": "https://api.github.com/users/meisterlumpi/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/meisterlumpi/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/meisterlumpi/subscriptions",
+    "organizations_url": "https://api.github.com/users/meisterlumpi/orgs",
+    "repos_url": "https://api.github.com/users/meisterlumpi/repos",
+    "events_url": "https://api.github.com/users/meisterlumpi/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/meisterlumpi/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2011-08-09T22:04:18Z",
+  "updated_at": "2011-08-10T06:23:42Z",
+  "closed_at": "2011-08-10T06:23:38Z",
+  "body": "In the [vb] environment, if I use\r\n\r\n<b>8)</b>\r\n\r\nit is transformed to:\r\n\r\n<b>< img src=\"http://nerdjacking.de/wp-includes/images/smilies/icon_cool.gif\" alt=\"8)\" class=\"wp-smiley\" ></b>\r\n\r\nin the frontend (\"view source\" also). (which is this smiley <img src=\"http://nerdjacking.de/wp-includes/images/smilies/icon_cool.gif\" alt=\"8)\" class=\"wp-smiley\">)\r\n\r\nWordpress HTML-Editor is used for editing.\r\n\r\n<br><br><br/>\r\nScreenshot Back-End (<b>see line 5</b>)\r\n______________________________<br>\r\n<img src=\"http://img155.imageshack.us/img155/213/syntaxhighlighter1.png\" alt=\"Image Hosted by ImageShack.us\"/>\r\n______________________________<br>\r\n\r\n<br><br><br/>\r\nScreenshot Front-End (<b>see line 34</b>)\r\n______________________________<br>\r\n<img src=\"http://img51.imageshack.us/img51/92/syntaxhighlighter2.png\" alt=\"Image Hosted by ImageShack.us\">\r\n______________________________<br>\r\n\r\n",
+  "closed_by": {
+    "login": "alexgorbatchev",
+    "id": 65633,
+    "avatar_url": "https://avatars.githubusercontent.com/u/65633?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/alexgorbatchev",
+    "html_url": "https://github.com/alexgorbatchev",
+    "followers_url": "https://api.github.com/users/alexgorbatchev/followers",
+    "following_url": "https://api.github.com/users/alexgorbatchev/following{/other_user}",
+    "gists_url": "https://api.github.com/users/alexgorbatchev/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/alexgorbatchev/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/alexgorbatchev/subscriptions",
+    "organizations_url": "https://api.github.com/users/alexgorbatchev/orgs",
+    "repos_url": "https://api.github.com/users/alexgorbatchev/repos",
+    "events_url": "https://api.github.com/users/alexgorbatchev/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/alexgorbatchev/received_events",
+    "type": "User",
+    "site_admin": false
+  }
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/comments/1770198",
+    "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/5#issuecomment-1770198",
+    "issue_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/5",
+    "id": 1770198,
+    "user": {
+      "login": "alexgorbatchev",
+      "id": 65633,
+      "avatar_url": "https://avatars.githubusercontent.com/u/65633?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgorbatchev",
+      "html_url": "https://github.com/alexgorbatchev",
+      "followers_url": "https://api.github.com/users/alexgorbatchev/followers",
+      "following_url": "https://api.github.com/users/alexgorbatchev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgorbatchev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgorbatchev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgorbatchev/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgorbatchev/orgs",
+      "repos_url": "https://api.github.com/users/alexgorbatchev/repos",
+      "events_url": "https://api.github.com/users/alexgorbatchev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgorbatchev/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2011-08-10T06:23:42Z",
+    "updated_at": "2011-08-10T06:23:42Z",
+    "body": "Looks like VBulletin does the auto correction. Please address with the plugin author, this tracker is just for the SyntaxHighlighter itself, not the plugins."
+  }
+]

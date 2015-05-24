@@ -1,0 +1,64 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/351",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/351/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/351/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/351/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/351",
+  "id": 56947933,
+  "number": 351,
+  "title": "Java code doesn't work with Generics",
+  "user": {
+    "login": "vswamy",
+    "id": 7234532,
+    "avatar_url": "https://avatars.githubusercontent.com/u/7234532?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/vswamy",
+    "html_url": "https://github.com/vswamy",
+    "followers_url": "https://api.github.com/users/vswamy/followers",
+    "following_url": "https://api.github.com/users/vswamy/following{/other_user}",
+    "gists_url": "https://api.github.com/users/vswamy/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/vswamy/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/vswamy/subscriptions",
+    "organizations_url": "https://api.github.com/users/vswamy/orgs",
+    "repos_url": "https://api.github.com/users/vswamy/repos",
+    "events_url": "https://api.github.com/users/vswamy/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/vswamy/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2015-02-08T11:13:21Z",
+  "updated_at": "2015-02-08T11:53:30Z",
+  "closed_at": "2015-02-08T11:53:30Z",
+  "body": "The below code doesn't seem to display properly on safari browser.\r\n\r\nThe xml like tags <Point> are not handled properly. In the end of the code, I'm seeing </Point> tags and also the capital letters are turned into lower case while displaying.\r\n\r\ncode =>\r\n\r\nclass Point\r\n{\r\n\tint x;\r\n\tint y;\r\n\tint z;\r\n\tPoint(int x, int y, int z)\r\n\t{\r\n\t\tthis.x = x;\r\n\t\tthis.y = y;\r\n\t\tthis.z = z;\r\n\t}\r\n}\r\npublic void findElement(int[][][] arr, int ele) throws NullPointerException\r\n{\r\n\tif(arr == null) throw new NullPointerException(\"array cannot be null\");\r\n\tint x = 0;\r\n\tint y = arr[0].length - 1;\r\n\tint z = arr[0][y].length - 1;\r\n\tStack<Point> stack = new Stack<Point>();\r\n\tstack.push(new Point(x,y,z));\r\n\twhile(Point p = stack.pop() != null)\r\n\t{\r\n\t\tif(ele == arr[p.x][p.y][p.z])\r\n\t\t{\r\n\t\t\tSystem.out.println(\"Element found at {0}, {1}, {2}\", p.x, p.y, p.z);\r\n\t\t\treturn;\r\n\t\t}\r\n\t\telse if(ele > arr[p.x][p.y][p.z])\r\n\t\t{\r\n\t\t\tif(p.x < arr.length - 1)\r\n\t\t\t\tstack.push(new Point(p.x + 1, p.y, p.z));\r\n\t\t}\r\n\t\telse\r\n\t\t{\r\n\t\t\tif(p.y > 0)\r\n\t\t\t\tstack.push(new Point(p.x, p.y - 1, p.z));\r\n\t\t\tif(p.z > 0)\r\n\t\t\t\tstack.push(new Point(p.x, p.y, p.z - 1));\r\n\t\t}\r\n\t}\r\n\tSystem.out.println(\"Element not found\");\r\n\treturn;\r\n}",
+  "closed_by": {
+    "login": "vswamy",
+    "id": 7234532,
+    "avatar_url": "https://avatars.githubusercontent.com/u/7234532?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/vswamy",
+    "html_url": "https://github.com/vswamy",
+    "followers_url": "https://api.github.com/users/vswamy/followers",
+    "following_url": "https://api.github.com/users/vswamy/following{/other_user}",
+    "gists_url": "https://api.github.com/users/vswamy/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/vswamy/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/vswamy/subscriptions",
+    "organizations_url": "https://api.github.com/users/vswamy/orgs",
+    "repos_url": "https://api.github.com/users/vswamy/repos",
+    "events_url": "https://api.github.com/users/vswamy/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/vswamy/received_events",
+    "type": "User",
+    "site_admin": false
+  }
+}
+BODY STARTS FROM HERE
+[
+
+]

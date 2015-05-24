@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html class='' lang='en'>
+<head prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#'>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8'>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta http-equiv='Content-Language' content='en'>
+<title>syntaxhighlighter/syntaxhighlighter/121</title>
+<link href='github-c486157afcc5f58155a921bc675afb08733fbaa8dcf39ac2104d3.css' media='all' rel='stylesheet'>
+<link href='github2-da2e842cc3f0aaf33b727d0ef034243c12ab008fd09b24868b97.css' media='all' rel='stylesheet'>
+<meta http-equiv='x-pjax-version' content='4426702614c8182f33d1780ad1169662'>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shAutoloader.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAppleScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAS3.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushBash.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushColdFusion.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCpp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCSharp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCss.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDelphi.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDiff.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushErlang.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushGroovy.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJava.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJavaFX.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/syntaxhighlighter/scripts/shBrushJScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPerl.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPhp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPlain.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPowerShell.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPython.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushRuby.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSass.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushScala.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSql.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushVb.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushXml.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shLegacy.js'></script>
+	<link type='text/css' rel='stylesheet' href='syntaxhighlighter/styles/shCoreDefault.css'/>
+	<script type='text/javascript'>SyntaxHighlighter.all();</script>
+</head>
+<body class='logged_in  env-production windows vis-public'>
+<h1 align='center'><a href='https://github.com/syntaxhighlighter/syntaxhighlighter/pull/121' target='_blank'>Upgrade to XRegExp v2.0.0</h1><hr/><div id="#issue-4692274" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/slevithan" class="author">slevithan</a>
+    </strong>
+    commented on 
+    <a href="#issue-4692274" class="timestamp">
+      <time>2012-05-22 14:58:35</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I recently upgraded <a href="https://github.com/slevithan/XRegExp">XRegExp</a> from 1.5.1 to 2.0.0. The changelog is <a href="http://xregexp.com/history/">here</a>. It includes many fixes and other changes. Probably the most relevant changes for SyntaxHighlighter are that XRegExp no longer modifies any native methods by default, and no longer throws an error if it's (inappropriately) loaded twice in the same frame.</p>
+<p>XRegExp 2.0.0 adds a lot of inline documentation, but the file size difference after minification and gzipping is less than a kilobyte (total size is a little under 3.5 KB). Of course, XRegExp 2.0.0 also includes a lot of new and improved functionality, which could be taken advantage of in SyntaxHighlighter's core and brushes.</p>
+<p>In addition to upgrading XRegExp, I've reviewed all usage of XRegExp in SyntaxHighlighter. As a result, the attached commits additionally make the following changes:</p>
+<ul>
+<li>Renamed <code>XRegExp.js</code> to <code>xregexp.js</code>. This is for consistency, since the official source file has always used lowercase.</li>
+<li>Changed the <code>require</code> statement in <code>shCore.js</code> from <code>require('XRegExp').XRegExp</code> to <code>require('xregexp').XRegExp</code>. Both the local file and the <a href="http://search.npmjs.org/#/xregexp">project on npm</a> use the lowercase &quot;xregexp&quot; (npm requires lowercase project names).</li>
+<li>Removed the now-obsolete tests in <code>015_xregexp.html</code>. This isn't to say that any tests would be inappropriate, but the tests that were included are no longer relevant since XRegExp 2 no longer overrides native methods by default.</li>
+<li>Cleaned up all regexes that use XRegExp. I've removed superfluous escapings and flags, etc., while taking care to make no functionality changes. I've also changed all calls to the <code>XRegExp</code> constructor from <code>new XRegExp</code> to simply <code>XRegExp</code>. The <code>new</code> operator doesn't make a difference with XRegExp, since the <code>XRegExp</code> function returns a nonprimitive value (a <code>RegExp</code> object) and therefore isn't technically a constructor according to ES rules.</li>
+</ul>
+<p>Note that since XRegExp no longer overrides native methods by default, it's now 100% safe to distribute XRegExp alongside SyntaxHighlighter. Previously, third party scripts could break if they relied on native bugs that XRegExp fixed.</p>
+<p>If SyntaxHighlighter was <em>relying</em> on any cross-browser fixes (doubtful) that XRegExp 1.5.1 applied automatically by overriding native regex methods, it's easy to address this by just using <code>XRegExp.exec</code>, <code>XRegExp.test</code>, <code>XRegExp.replace</code>, and <code>XRegExp.split</code>, rather than using the corresponding native (and sometimes buggy) <code>RegExp</code> and <code>String</code> methods. However, I suspect this will not be an issue at all.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-5857097" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/attiks" class="author">attiks</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-5857097" class="timestamp">
+      <time>2012-05-22 19:57:53</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I'm all in favor mainly because it's breaking some modules inside Drupal, we tried working around it by creating <a href="http://drupal.org/project/xregexp_api">http://drupal.org/project/xregexp_api</a> but upgrading to XRegExp v2.0.0 will solve it.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-17263763" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/alexgorbatchev" class="author">alexgorbatchev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-17263763" class="timestamp">
+      <time>2013-05-01 01:09:45</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Thank you for your work! Much appreciated!</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+</body></html>

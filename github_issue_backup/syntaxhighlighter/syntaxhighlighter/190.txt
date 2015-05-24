@@ -1,0 +1,70 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/190",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/190/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/190/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/190/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/pull/190",
+  "id": 11319742,
+  "number": 190,
+  "title": "Bugfix for more than one mulit line comment in SQL",
+  "user": {
+    "login": "hskigithub",
+    "id": 1921015,
+    "avatar_url": "https://avatars.githubusercontent.com/u/1921015?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/hskigithub",
+    "html_url": "https://github.com/hskigithub",
+    "followers_url": "https://api.github.com/users/hskigithub/followers",
+    "following_url": "https://api.github.com/users/hskigithub/following{/other_user}",
+    "gists_url": "https://api.github.com/users/hskigithub/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/hskigithub/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/hskigithub/subscriptions",
+    "organizations_url": "https://api.github.com/users/hskigithub/orgs",
+    "repos_url": "https://api.github.com/users/hskigithub/repos",
+    "events_url": "https://api.github.com/users/hskigithub/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/hskigithub/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2013-02-23T13:18:31Z",
+  "updated_at": "2013-02-24T12:33:10Z",
+  "closed_at": "2013-02-24T12:33:10Z",
+  "pull_request": {
+    "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/pulls/190",
+    "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/pull/190",
+    "diff_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/pull/190.diff",
+    "patch_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/pull/190.patch"
+  },
+  "body": "Similar to latest bugfix for multi line comment in Java source #150.",
+  "closed_by": {
+    "login": "hskigithub",
+    "id": 1921015,
+    "avatar_url": "https://avatars.githubusercontent.com/u/1921015?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/hskigithub",
+    "html_url": "https://github.com/hskigithub",
+    "followers_url": "https://api.github.com/users/hskigithub/followers",
+    "following_url": "https://api.github.com/users/hskigithub/following{/other_user}",
+    "gists_url": "https://api.github.com/users/hskigithub/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/hskigithub/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/hskigithub/subscriptions",
+    "organizations_url": "https://api.github.com/users/hskigithub/orgs",
+    "repos_url": "https://api.github.com/users/hskigithub/repos",
+    "events_url": "https://api.github.com/users/hskigithub/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/hskigithub/received_events",
+    "type": "User",
+    "site_admin": false
+  }
+}
+BODY STARTS FROM HERE
+[
+
+]

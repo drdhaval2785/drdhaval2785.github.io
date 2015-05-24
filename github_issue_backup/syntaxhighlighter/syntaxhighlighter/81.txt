@@ -1,0 +1,46 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/81",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/81/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/81/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/81/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/81",
+  "id": 2882624,
+  "number": 81,
+  "title": "The collapse: true option does not work",
+  "user": {
+    "login": "SomMeri",
+    "id": 618879,
+    "avatar_url": "https://avatars.githubusercontent.com/u/618879?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/SomMeri",
+    "html_url": "https://github.com/SomMeri",
+    "followers_url": "https://api.github.com/users/SomMeri/followers",
+    "following_url": "https://api.github.com/users/SomMeri/following{/other_user}",
+    "gists_url": "https://api.github.com/users/SomMeri/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/SomMeri/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/SomMeri/subscriptions",
+    "organizations_url": "https://api.github.com/users/SomMeri/orgs",
+    "repos_url": "https://api.github.com/users/SomMeri/repos",
+    "events_url": "https://api.github.com/users/SomMeri/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/SomMeri/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2012-01-18T13:54:22Z",
+  "updated_at": "2012-01-18T13:54:22Z",
+  "closed_at": null,
+  "body": "I'm using current SyntaxHighlighter hosted by the author: http://alexgorbatchev.com/pub/sh/current/\r\n\r\nCollapse: true option generates toolbar with 'expand source?' link. Click on the 'expand source ' link does nothing. The code itself is expanded.\r\n\r\nMy code:\r\n<pre class=\"brush:java; collapse: true;\">\r\n  @Test\r\n  public void theTest() {\r\n    // some java code\r\n  }\r\n</pre>\r\n\r\n\r\nGenerated HTML:\r\n\r\n<div id=\"highlighter_705997\" class=\"syntaxhighlighter collapsed nogutter java\">\r\n<div class=\"toolbar\">\r\n<span>\r\n<a class=\"toolbar_item command_expandSource expandSource\" href=\"#\">expand source</a>\r\n</span>\r\n<span>\r\n<a class=\"toolbar_item command_help help\" href=\"#\">?</a>\r\n</span>\r\n</div>\r\n<table cellspacing=\"0\" cellpadding=\"0\" border=\"0\">\r\n<tbody>\r\n<tr>\r\n<td class=\"code\">\r\n<div class=\"container\">\r\n<div class=\"line number1 index0 alt2\">\r\n<code class=\"java color1\">@Test</code>\r\n</div>\r\n<div class=\"line number2 index1 alt1\">\r\n<code class=\"java keyword\">public</code>\r\n<code class=\"java keyword\">void</code>\r\n<code class=\"java plain\">theTest() {</code>\r\n</div>\r\n<div class=\"line number3 index2 alt2\">\r\n<code class=\"java spaces\">&nbsp;&nbsp;</code>\r\n<code class=\"java comments\">// some java code</code>\r\n</div>\r\n<div class=\"line number4 index3 alt1\">\r\n<code class=\"java plain\">}</code>\r\n</div>\r\n</div>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n</div>\r\n</div>",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+
+]

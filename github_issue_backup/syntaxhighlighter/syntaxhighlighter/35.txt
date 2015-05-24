@@ -1,0 +1,97 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/35",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/35/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/35/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/35/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/pull/35",
+  "id": 1731729,
+  "number": 35,
+  "title": "Include hash/anchor in url regexp",
+  "user": {
+    "login": "rwstauner",
+    "id": 142719,
+    "avatar_url": "https://avatars.githubusercontent.com/u/142719?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/rwstauner",
+    "html_url": "https://github.com/rwstauner",
+    "followers_url": "https://api.github.com/users/rwstauner/followers",
+    "following_url": "https://api.github.com/users/rwstauner/following{/other_user}",
+    "gists_url": "https://api.github.com/users/rwstauner/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/rwstauner/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/rwstauner/subscriptions",
+    "organizations_url": "https://api.github.com/users/rwstauner/orgs",
+    "repos_url": "https://api.github.com/users/rwstauner/repos",
+    "events_url": "https://api.github.com/users/rwstauner/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/rwstauner/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2011-09-24T22:04:13Z",
+  "updated_at": "2011-10-04T20:09:59Z",
+  "closed_at": "2011-10-04T20:08:25Z",
+  "pull_request": {
+    "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/pulls/35",
+    "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/pull/35",
+    "diff_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/pull/35.diff",
+    "patch_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/pull/35.patch"
+  },
+  "body": "This addresses #21.\r\n\r\nI implemented a few tests and it seems like it works.\r\nTests passed in syntaxhighlighter_tests.html on:\r\n\r\n* linux firefox 6\r\n* linux chrome 13\r\n* windows ie 7\r\n* windows ie 8\r\n\r\nAnything else I should test?",
+  "closed_by": {
+    "login": "alexgorbatchev",
+    "id": 65633,
+    "avatar_url": "https://avatars.githubusercontent.com/u/65633?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/alexgorbatchev",
+    "html_url": "https://github.com/alexgorbatchev",
+    "followers_url": "https://api.github.com/users/alexgorbatchev/followers",
+    "following_url": "https://api.github.com/users/alexgorbatchev/following{/other_user}",
+    "gists_url": "https://api.github.com/users/alexgorbatchev/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/alexgorbatchev/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/alexgorbatchev/subscriptions",
+    "organizations_url": "https://api.github.com/users/alexgorbatchev/orgs",
+    "repos_url": "https://api.github.com/users/alexgorbatchev/repos",
+    "events_url": "https://api.github.com/users/alexgorbatchev/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/alexgorbatchev/received_events",
+    "type": "User",
+    "site_admin": false
+  }
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/comments/2290745",
+    "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/pull/35#issuecomment-2290745",
+    "issue_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/35",
+    "id": 2290745,
+    "user": {
+      "login": "alexgorbatchev",
+      "id": 65633,
+      "avatar_url": "https://avatars.githubusercontent.com/u/65633?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgorbatchev",
+      "html_url": "https://github.com/alexgorbatchev",
+      "followers_url": "https://api.github.com/users/alexgorbatchev/followers",
+      "following_url": "https://api.github.com/users/alexgorbatchev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgorbatchev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgorbatchev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgorbatchev/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgorbatchev/orgs",
+      "repos_url": "https://api.github.com/users/alexgorbatchev/repos",
+      "events_url": "https://api.github.com/users/alexgorbatchev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgorbatchev/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2011-10-04T20:09:59Z",
+    "updated_at": "2011-10-04T20:09:59Z",
+    "body": "Merged, thank you very much!"
+  }
+]

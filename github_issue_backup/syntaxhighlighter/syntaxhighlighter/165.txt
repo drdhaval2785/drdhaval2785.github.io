@@ -1,0 +1,46 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/165",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/165/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/165/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/165/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/165",
+  "id": 8195391,
+  "number": 165,
+  "title": "Want to add support for Mainframe JCL/Cobol/Rexx, but keep getting \"Can't find brush Error\"",
+  "user": {
+    "login": "chunawall",
+    "id": 1885897,
+    "avatar_url": "https://avatars.githubusercontent.com/u/1885897?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/chunawall",
+    "html_url": "https://github.com/chunawall",
+    "followers_url": "https://api.github.com/users/chunawall/followers",
+    "following_url": "https://api.github.com/users/chunawall/following{/other_user}",
+    "gists_url": "https://api.github.com/users/chunawall/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/chunawall/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/chunawall/subscriptions",
+    "organizations_url": "https://api.github.com/users/chunawall/orgs",
+    "repos_url": "https://api.github.com/users/chunawall/repos",
+    "events_url": "https://api.github.com/users/chunawall/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/chunawall/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2012-11-08T05:43:29Z",
+  "updated_at": "2012-11-08T05:52:44Z",
+  "closed_at": null,
+  "body": "Hi everyone,\r\nI work on Mainframe Legacy platform, and host the popular blog http://www.mainframes360.com. My blog is parked on Blogger. The blog has several code snippets in languages like JCL, Cobol, Rexx which are popular on the Legacy platform.\r\n\r\nI am starting to write a new brush for JCL(Job Control Language). I have hosted its code on git-hub at https://raw.github.com/chunawall/Syntax_Highlighter_JCL_Brush/master/JCL.js. However, when my page loads, I still get the \"Brush not found\" error. I have added the brush to the list of brushes on my Blogger template too. I can't figure out, what's wrong.\r\n\r\nThe new Brush\r\n/**\r\nEvery JCL statement has the following format\r\nidentifier [name] command parameter [comments]\r\n*/\r\nSyntaxHighlighter.brushes.JCL = function()\r\n{\r\n    var identifier = '//';\r\n    var operation = 'COMMAND CNTL DD ENDCNTL EXEC IF THEN ELSE ENDIF INCLUDE' +\r\n                    'JCLLIB JOB OUTPUT PEND PROC SET XMIT';\r\n    var positional_parameters = '';\r\n    var keyword_parameters = 'ADDRSPC BYTES CARDS CCSID COND GROUP LINES MSGCLASS' +\r\n                             'MSGLEVEL NOTIFY PAGES PASSWORD PERFORM RD REGION RESTART' +\r\n                             'SECLABEL SCHENV TIME TYPRUN USER';\r\n    this.regexList = [\r\n    {regex: //\\*(.*)$\\Sgm,                                  css: 'comments'},\r\n    {regex: SyntaxHighlighter.regexLib.singleQuotedString,  css: 'string'},\r\n    {regex: new RegExp(this.getKeywords(operation), 'gmi'), css: 'color2'},\r\n    ];\r\n};\r\nSyntaxHighlighter.brushes.JCL.prototype = new SyntaxHighlighter.Highlighter();\r\nSyntaxHighlighter.brushes.JCL.aliases = ['JCL','jcl','job'];",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+
+]

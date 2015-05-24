@@ -1,0 +1,73 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/251",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/251/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/251/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/251/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/251",
+  "id": 18399254,
+  "number": 251,
+  "title": "Syntax displays with unexpected linebreaks",
+  "user": {
+    "login": "bcieszewski",
+    "id": 5284883,
+    "avatar_url": "https://avatars.githubusercontent.com/u/5284883?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/bcieszewski",
+    "html_url": "https://github.com/bcieszewski",
+    "followers_url": "https://api.github.com/users/bcieszewski/followers",
+    "following_url": "https://api.github.com/users/bcieszewski/following{/other_user}",
+    "gists_url": "https://api.github.com/users/bcieszewski/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/bcieszewski/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/bcieszewski/subscriptions",
+    "organizations_url": "https://api.github.com/users/bcieszewski/orgs",
+    "repos_url": "https://api.github.com/users/bcieszewski/repos",
+    "events_url": "https://api.github.com/users/bcieszewski/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/bcieszewski/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2013-08-22T08:04:49Z",
+  "updated_at": "2013-09-05T12:28:37Z",
+  "closed_at": null,
+  "body": "I'm using java class here (but it was like that also for HTML). The output on blogger looks like this:\r\n![image](https://f.cloud.github.com/assets/5284883/1007195/5e2995e2-0b01-11e3-9076-49692d52f921.png)\r\n\r\nThe code I'm trying to show is:\r\n\r\nclass Kwadrat{\r\nint bokA;\r\nint bokB;\r\n\r\n//metoda WpiszBoki nic nie zwraca\r\n\tvoid WpiszBoki(int a, int b) {\r\n\t\tbokA = a;\r\n\t\tbokB = b;\r\n\t}\r\n\t\r\n// metoda podaj pole korzysta z zadeklarowanych zmiennych, więc nic nie ma w nawiasach\r\n\tint PodajPole() {\r\n\t\tint pole = bokA*bokB;\r\n\t\treturn pole;\r\n\t}\r\n\t\r\n\tint PodajObwod() {\r\n\t\tint obwod = (2*bokA)+(2*bokB);\r\n\t\treturn obwod;\r\n\t}\r\n\t\r\n\tvoid WypiszWsio() {\r\n\t\tint obwod=(2*bokA)+(2*bokB);\r\n\t\tint pole = bokA*bokB;\r\n\t\tSystem.out.println(\"bok A=\"+bokA+\"\\nbokB=\"+bokB+\"\\npole=\"+pole+\"\\nobwod=\"+obwod);\r\n\t}\r\n}",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/comments/23863669",
+    "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/251#issuecomment-23863669",
+    "issue_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/251",
+    "id": 23863669,
+    "user": {
+      "login": "elpd",
+      "id": 3258587,
+      "avatar_url": "https://avatars.githubusercontent.com/u/3258587?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/elpd",
+      "html_url": "https://github.com/elpd",
+      "followers_url": "https://api.github.com/users/elpd/followers",
+      "following_url": "https://api.github.com/users/elpd/following{/other_user}",
+      "gists_url": "https://api.github.com/users/elpd/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/elpd/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/elpd/subscriptions",
+      "organizations_url": "https://api.github.com/users/elpd/orgs",
+      "repos_url": "https://api.github.com/users/elpd/repos",
+      "events_url": "https://api.github.com/users/elpd/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/elpd/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2013-09-05T12:23:26Z",
+    "updated_at": "2013-09-05T12:28:37Z",
+    "body": "Check if you have a custom Css with \"code\" definition in it. \r\n \r\nI've Just discovered SyntaxHighlighter and tried to put it to use in my blog on blogger. I've encountered the same problem.\r\n\r\nAfter playing with it I think that my problem arise from a custom Css snippet I am using for previous posts simple code highlights. It's a method I've found on the web describing a way to differentiate your code from the rest of the post specifically for Blogger. A simple background color change and font change.\r\n\r\nWhat I think, from what I gather looking at SyntaxHighlighter script code, is that in the process of the parsing of the post text, the parser captures all the text sections marked for syntaxHighlighter to be processes \"pre\" and \"script\" tags ex., and then it divides those section for structural viewing parts and wrap those parts with \"code\" element tag. The SyntaxHighlighter css defines some rules for those \"code\" elements and the custom css I've used overrides those. I didn't debug the process but removing the custom Css code relevent to the \"code\" element worked for me. \r\n\r\nHope this helps. "
+  }
+]

@@ -1,0 +1,46 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/145",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/145/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/145/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/145/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/145",
+  "id": 6465597,
+  "number": 145,
+  "title": "Problem with SyntaxHighlighter and Fixed Header",
+  "user": {
+    "login": "wyvern666",
+    "id": 2224799,
+    "avatar_url": "https://avatars.githubusercontent.com/u/2224799?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/wyvern666",
+    "html_url": "https://github.com/wyvern666",
+    "followers_url": "https://api.github.com/users/wyvern666/followers",
+    "following_url": "https://api.github.com/users/wyvern666/following{/other_user}",
+    "gists_url": "https://api.github.com/users/wyvern666/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/wyvern666/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/wyvern666/subscriptions",
+    "organizations_url": "https://api.github.com/users/wyvern666/orgs",
+    "repos_url": "https://api.github.com/users/wyvern666/repos",
+    "events_url": "https://api.github.com/users/wyvern666/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/wyvern666/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2012-08-27T03:22:48Z",
+  "updated_at": "2012-08-27T03:22:48Z",
+  "closed_at": null,
+  "body": "Hi all, mi web site have fixed header with a simple CSS dropdown menu and have a fixed footer, it is inspired in this example: http://www.wickham43.net/headerfooterfixexample.php . \n\nI needed code highlighting so i tried SyntaxHighlighter. But i have some issues, mi dropdown menu when actived is below the highlighted code, and  when scrolls down a long code it is covering all the fixed header (however it never cover the fixed footer). \n\nIf somebody can help me i I'll be thankful.",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+
+]

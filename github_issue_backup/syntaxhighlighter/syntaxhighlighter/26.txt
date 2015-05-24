@@ -1,0 +1,46 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/26",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/26/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/26/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/26/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/26",
+  "id": 1633975,
+  "number": 26,
+  "title": "XML nested instead of repeated",
+  "user": {
+    "login": "wtroost",
+    "id": 1047599,
+    "avatar_url": "https://avatars.githubusercontent.com/u/1047599?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/wtroost",
+    "html_url": "https://github.com/wtroost",
+    "followers_url": "https://api.github.com/users/wtroost/followers",
+    "following_url": "https://api.github.com/users/wtroost/following{/other_user}",
+    "gists_url": "https://api.github.com/users/wtroost/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/wtroost/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/wtroost/subscriptions",
+    "organizations_url": "https://api.github.com/users/wtroost/orgs",
+    "repos_url": "https://api.github.com/users/wtroost/repos",
+    "events_url": "https://api.github.com/users/wtroost/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/wtroost/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2011-09-13T14:57:36Z",
+  "updated_at": "2011-09-13T14:57:36Z",
+  "closed_at": null,
+  "body": "I'm using SyntaxHighlighter to mark up XML. It works great, but some XML shows nested:\r\n\r\n    <hardwareitemcapability capability=\"SuppAdsl1A\" value=\"true\">\r\n    <hardwareitemcapability capability=\"SuppAdsl1B\" value=\"false\">\r\n    <hardwareitemcapability capability=\"SuppAdsl2A\" value=\"true\">\r\n    <hardwareitemcapability capability=\"SuppAdsl2B\" value=\"false\">\r\n    <hardwareitemcapability capability=\"SuppAdsl2OnIsam\" value=\"true\">\r\n    <hardwareitemcapability capability=\"SuppAdslOnBr\" value=\"true\">\r\n    <hardwareitemcapability capability=\"SuppTvBriding1p\" value=\"false\">\r\n    <hardwareitemcapability capability=\"SuppTvBriding2p\" value=\"false\">\r\n    <hardwareitemcapability capability=\"SuppVdsl2\" value=\"false\">\r\n    </hardwareitemcapability></hardwareitemcapability></hardwareitemcapability></hardwareitemcapability></hardwareitemcapability></hardwareitemcapability></hardwareitemcapability></hardwareitemcapability></hardwareitemcapability></capabilities>\r\n\r\n\r\nInstead of:\r\n\r\n    <HardwareItemCapability Value=\"true\" Capability=\"SuppAdsl1A\"></HardwareItemCapability>\r\n    <HardwareItemCapability Value=\"false\" Capability=\"SuppAdsl1B\"></HardwareItemCapability>\r\n    <HardwareItemCapability Value=\"true\" Capability=\"SuppAdsl2A\"></HardwareItemCapability>\r\n    <HardwareItemCapability Value=\"false\" Capability=\"SuppAdsl2B\"></HardwareItemCapability>\r\n    <HardwareItemCapability Value=\"true\" Capability=\"SuppAdsl2OnIsam\"></HardwareItemCapability>\r\n    <HardwareItemCapability Value=\"true\" Capability=\"SuppAdslOnBr\"></HardwareItemCapability>\r\n    <HardwareItemCapability Value=\"false\" Capability=\"SuppTvBriding1p\"></HardwareItemCapability>\r\n    <HardwareItemCapability Value=\"false\" Capability=\"SuppTvBriding2p\"></HardwareItemCapability>\r\n    <HardwareItemCapability Value=\"false\" Capability=\"SuppVdsl2\"></HardwareItemCapability>\r\n\r\nI'll try to attach an example to this issue. If I can assist in solving it, let me know!",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+
+]

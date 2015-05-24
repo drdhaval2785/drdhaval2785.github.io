@@ -1,0 +1,91 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/67",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/67/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/67/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/67/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/67",
+  "id": 2562639,
+  "number": 67,
+  "title": "Can't Get it to work at all on blogger.",
+  "user": {
+    "login": "Quinico",
+    "id": 1115073,
+    "avatar_url": "https://avatars.githubusercontent.com/u/1115073?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Quinico",
+    "html_url": "https://github.com/Quinico",
+    "followers_url": "https://api.github.com/users/Quinico/followers",
+    "following_url": "https://api.github.com/users/Quinico/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Quinico/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Quinico/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Quinico/subscriptions",
+    "organizations_url": "https://api.github.com/users/Quinico/orgs",
+    "repos_url": "https://api.github.com/users/Quinico/repos",
+    "events_url": "https://api.github.com/users/Quinico/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Quinico/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2011-12-15T03:16:34Z",
+  "updated_at": "2011-12-15T03:56:19Z",
+  "closed_at": "2011-12-15T03:56:11Z",
+  "body": "This is what I have:\r\n\r\n<pre style=\"font-family: Andale Mono, Lucida Console, Monaco, fixed, monospace; color: #000000; background-color: #eee;font-size: 12px;border: 1px dashed #999999;line-height: 14px;padding: 5px; overflow: auto; width: 100%\"><code>&lt;script src=&quot;http://alexgorbatchev.com/pub/sh/current/scripts/shCore.js&quot; type=&quot;text/javascript&quot;&gt;\r\n&lt;/script&gt;\r\n&lt;script src=&quot;http://alexgorbatchev.com/pub/sh/current/scripts/shBrushJScript.js&quot; type=&quot;text/javascript&quot;&gt;\r\n&lt;/script&gt;\r\n&lt;link href=&quot;http://alexgorbatchev.com/pub/sh/current/styles/shCore.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;&lt;/link&gt;\r\n&lt;link href=&quot;http://alexgorbatchev.com/pub/sh/current/styles/shThemeDefault.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;&lt;/link&gt;\r\n \r\n&lt;br /&gt;\r\n&lt;pre class=&quot;brush: js; bloggerMode: true;&quot;&gt;function foo()\r\n{\r\n}\r\n&lt;/pre&gt;\r\n&lt;script type=&quot;text/javascript&quot;&gt;\r\n     SyntaxHighlighter.all()\r\n&lt;/script&gt;\r\n\r\n</code></pre>",
+  "closed_by": {
+    "login": "Quinico",
+    "id": 1115073,
+    "avatar_url": "https://avatars.githubusercontent.com/u/1115073?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Quinico",
+    "html_url": "https://github.com/Quinico",
+    "followers_url": "https://api.github.com/users/Quinico/followers",
+    "following_url": "https://api.github.com/users/Quinico/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Quinico/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Quinico/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Quinico/subscriptions",
+    "organizations_url": "https://api.github.com/users/Quinico/orgs",
+    "repos_url": "https://api.github.com/users/Quinico/repos",
+    "events_url": "https://api.github.com/users/Quinico/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Quinico/received_events",
+    "type": "User",
+    "site_admin": false
+  }
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/comments/3156423",
+    "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/67#issuecomment-3156423",
+    "issue_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/67",
+    "id": 3156423,
+    "user": {
+      "login": "Quinico",
+      "id": 1115073,
+      "avatar_url": "https://avatars.githubusercontent.com/u/1115073?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Quinico",
+      "html_url": "https://github.com/Quinico",
+      "followers_url": "https://api.github.com/users/Quinico/followers",
+      "following_url": "https://api.github.com/users/Quinico/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Quinico/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Quinico/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Quinico/subscriptions",
+      "organizations_url": "https://api.github.com/users/Quinico/orgs",
+      "repos_url": "https://api.github.com/users/Quinico/repos",
+      "events_url": "https://api.github.com/users/Quinico/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Quinico/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2011-12-15T03:56:19Z",
+    "updated_at": "2011-12-15T03:56:19Z",
+    "body": "Fixed it"
+  }
+]

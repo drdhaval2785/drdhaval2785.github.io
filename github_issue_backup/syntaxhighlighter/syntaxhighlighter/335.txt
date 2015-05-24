@@ -1,0 +1,46 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/335",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/335/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/335/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/335/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/335",
+  "id": 40804324,
+  "number": 335,
+  "title": "Syntax Highlighter’s internal span tags appearing",
+  "user": {
+    "login": "discern",
+    "id": 246210,
+    "avatar_url": "https://avatars.githubusercontent.com/u/246210?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/discern",
+    "html_url": "https://github.com/discern",
+    "followers_url": "https://api.github.com/users/discern/followers",
+    "following_url": "https://api.github.com/users/discern/following{/other_user}",
+    "gists_url": "https://api.github.com/users/discern/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/discern/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/discern/subscriptions",
+    "organizations_url": "https://api.github.com/users/discern/orgs",
+    "repos_url": "https://api.github.com/users/discern/repos",
+    "events_url": "https://api.github.com/users/discern/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/discern/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2014-08-21T13:31:22Z",
+  "updated_at": "2014-08-21T13:31:22Z",
+  "closed_at": null,
+  "body": "Lately (in Safari only) I've been seeing this crop up:\r\n\r\n![skimlinks](https://cloud.githubusercontent.com/assets/246210/3996612/490e0e72-2937-11e4-8056-1ad5b094506c.png)\r\n\r\n",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+
+]

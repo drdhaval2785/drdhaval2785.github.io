@@ -1,0 +1,91 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/94",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/94/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/94/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/94/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/94",
+  "id": 3336283,
+  "number": 94,
+  "title": "diff getting generated incorrectly",
+  "user": {
+    "login": "rajinderyadav",
+    "id": 1158052,
+    "avatar_url": "https://avatars.githubusercontent.com/u/1158052?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/rajinderyadav",
+    "html_url": "https://github.com/rajinderyadav",
+    "followers_url": "https://api.github.com/users/rajinderyadav/followers",
+    "following_url": "https://api.github.com/users/rajinderyadav/following{/other_user}",
+    "gists_url": "https://api.github.com/users/rajinderyadav/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/rajinderyadav/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/rajinderyadav/subscriptions",
+    "organizations_url": "https://api.github.com/users/rajinderyadav/orgs",
+    "repos_url": "https://api.github.com/users/rajinderyadav/repos",
+    "events_url": "https://api.github.com/users/rajinderyadav/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/rajinderyadav/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2012-02-22T17:11:17Z",
+  "updated_at": "2012-02-22T17:15:17Z",
+  "closed_at": "2012-02-22T17:15:17Z",
+  "body": "Hi diff has a bug, the last 3 lines from the bottom are getting added by SH. Also it would be nice to be able to turn off '\\ No newline at end of file'\r\n\r\nNOTE: I had to add a space in the tags on the last line, otherwise it don't show up in this post.\r\n\r\n+#include <vector>\r\n #include <iostream>\r\n+#include <string>\r\n   \r\n using namespace std;\r\n   \r\n void main()\r\n {\r\n-   cout << \"Hello World\" << endl;\r\n+   string s1 = \"Hello\";\r\n+   string s2 = \"World!\";\r\n+\r\n+   cout << s1 << \" \" << s2 << endl;\r\n }\r\n\\ No newline at end of file\r\n \r\n< /string >< /iostream> < /vector>",
+  "closed_by": {
+    "login": "rajinderyadav",
+    "id": 1158052,
+    "avatar_url": "https://avatars.githubusercontent.com/u/1158052?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/rajinderyadav",
+    "html_url": "https://github.com/rajinderyadav",
+    "followers_url": "https://api.github.com/users/rajinderyadav/followers",
+    "following_url": "https://api.github.com/users/rajinderyadav/following{/other_user}",
+    "gists_url": "https://api.github.com/users/rajinderyadav/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/rajinderyadav/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/rajinderyadav/subscriptions",
+    "organizations_url": "https://api.github.com/users/rajinderyadav/orgs",
+    "repos_url": "https://api.github.com/users/rajinderyadav/repos",
+    "events_url": "https://api.github.com/users/rajinderyadav/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/rajinderyadav/received_events",
+    "type": "User",
+    "site_admin": false
+  }
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/comments/4109281",
+    "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/94#issuecomment-4109281",
+    "issue_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/94",
+    "id": 4109281,
+    "user": {
+      "login": "rajinderyadav",
+      "id": 1158052,
+      "avatar_url": "https://avatars.githubusercontent.com/u/1158052?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rajinderyadav",
+      "html_url": "https://github.com/rajinderyadav",
+      "followers_url": "https://api.github.com/users/rajinderyadav/followers",
+      "following_url": "https://api.github.com/users/rajinderyadav/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rajinderyadav/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rajinderyadav/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rajinderyadav/subscriptions",
+      "organizations_url": "https://api.github.com/users/rajinderyadav/orgs",
+      "repos_url": "https://api.github.com/users/rajinderyadav/repos",
+      "events_url": "https://api.github.com/users/rajinderyadav/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rajinderyadav/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2012-02-22T17:15:17Z",
+    "updated_at": "2012-02-22T17:15:17Z",
+    "body": "never mind, i realized my mistake, i was outputting it as raw in my rails view!"
+  }
+]

@@ -1,0 +1,46 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/116",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/116/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/116/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/116/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/116",
+  "id": 4350801,
+  "number": 116,
+  "title": "Support for Self Closing HTML Tags",
+  "user": {
+    "login": "kerns",
+    "id": 20254,
+    "avatar_url": "https://avatars.githubusercontent.com/u/20254?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kerns",
+    "html_url": "https://github.com/kerns",
+    "followers_url": "https://api.github.com/users/kerns/followers",
+    "following_url": "https://api.github.com/users/kerns/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kerns/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kerns/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kerns/subscriptions",
+    "organizations_url": "https://api.github.com/users/kerns/orgs",
+    "repos_url": "https://api.github.com/users/kerns/repos",
+    "events_url": "https://api.github.com/users/kerns/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kerns/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2012-04-30T14:09:52Z",
+  "updated_at": "2012-04-30T14:09:52Z",
+  "closed_at": null,
+  "body": "When using HTML inside the PHP brush, self closing tags seem to be ignored.\r\n\r\n\r\nFor example...\r\n\r\n```html\r\n<hr/>\r\n```\r\n\r\n...is converted to:\r\n\r\n```html\r\n<hr>\r\n```\r\n",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+
+]

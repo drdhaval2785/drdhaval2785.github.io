@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html class='' lang='en'>
+<head prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#'>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8'>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta http-equiv='Content-Language' content='en'>
+<title>syntaxhighlighter/syntaxhighlighter/173</title>
+<link href='github-c486157afcc5f58155a921bc675afb08733fbaa8dcf39ac2104d3.css' media='all' rel='stylesheet'>
+<link href='github2-da2e842cc3f0aaf33b727d0ef034243c12ab008fd09b24868b97.css' media='all' rel='stylesheet'>
+<meta http-equiv='x-pjax-version' content='4426702614c8182f33d1780ad1169662'>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shAutoloader.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAppleScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAS3.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushBash.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushColdFusion.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCpp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCSharp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCss.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDelphi.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDiff.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushErlang.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushGroovy.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJava.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJavaFX.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/syntaxhighlighter/scripts/shBrushJScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPerl.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPhp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPlain.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPowerShell.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPython.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushRuby.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSass.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushScala.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSql.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushVb.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushXml.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shLegacy.js'></script>
+	<link type='text/css' rel='stylesheet' href='syntaxhighlighter/styles/shCoreDefault.css'/>
+	<script type='text/javascript'>SyntaxHighlighter.all();</script>
+</head>
+<body class='logged_in  env-production windows vis-public'>
+<h1 align='center'><a href='https://github.com/syntaxhighlighter/syntaxhighlighter/issues/173' target='_blank'>Comment in the middle</h1><hr/><div id="#issue-9518072" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/joydeep1982" class="author">joydeep1982</a>
+    </strong>
+    commented on 
+    <a href="#issue-9518072" class="timestamp">
+      <time>2012-12-26 08:53:35</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>If the comment is starting from the middle of the line and ending before the end of the line then sysntax highlighter is not taking care of the same ...</p>
+<p>Example</p>
+<pre><code>public void setGender(Integer iGender)
+{
+    this.json.put(JSonConstant.GENDER, iGender/*gender.getValue()*/);
+}
+
+public Integer getStatus()
+{
+    return this.json.optInt(JSonConstant.STATUS);
+}</code></pre>
+<p>In this case syntax highlighter is commenting the entire file starting from the position of the comment.
+It is unable to track the end of the comment which is not at the end of the line.
+Please check the image attached with the issue.</p>
+<p><img src="https://f.cloud.github.com/assets/3125857/30915/621194bc-4f3a-11e2-967f-a2bed484511f.JPG" alt="test" /></p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-13680827" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/jeffreytang" class="author">jeffreytang</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-13680827" class="timestamp">
+      <time>2013-02-17 04:53:10</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Is this for Java?
+The latest version seems works fine in my example:</p>
+<p><a href="http://jsfiddle.net/gazebotang/xLyGw/1/">http://jsfiddle.net/gazebotang/xLyGw/1/</a></p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-13681497" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/joydeep1982" class="author">joydeep1982</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-13681497" class="timestamp">
+      <time>2013-02-17 06:21:13</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Yes the problem is for java
+I guess I have downloaded the latest version from the website
+I will check if there is any new release given after I have downloaded
+But the problem still persist in my application</p>
+<p>I am not sure I think the problem is there for any language and not only
+Java
+I will check and update the defect shortly</p>
+<p>On Sun, Feb 17, 2013 at 10:23 AM, jeffreytang <a href="mailto:notifications<strong><a href="https://github.com/github" target="_blank">@github</a></strong>.com">notifications<strong><a href="https://github.com/github" target="_blank">@github</a></strong>.com</a>wrote:</p>
+<blockquote>
+<p>Is this for Java?
+The latest version seems works fine in my example:</p>
+<p><a href="http://jsfiddle.net/gazebotang/xLyGw/1/">http://jsfiddle.net/gazebotang/xLyGw/1/</a></p>
+<p>—
+Reply to this email directly or view it on GitHub<a href="https://github.com/alexgorbatchev/SyntaxHighlighter/issues/173#issuecomment-13680827">https://github.com/alexgorbatchev/SyntaxHighlighter/issues/173#issuecomment-13680827</a>.</p>
+</blockquote>
+<p>--
+<em>Thanks &amp; Regards</em>
+Joydeep Bhattacharya
++91 97318 24411</p>
+<p>Visit My Website: <em><a href="http://www.scodz.com/">http://www.scodz.com/</a></em>
+Visit My Blog: <em><a href="http://scodz.blogspot.com/">http://scodz.blogspot.com/</a></em>
+Prelaunch Pages: <em><a href="http://joydeep1982.googlepages.com/">http://joydeep1982.googlepages.com/</a></em>
+E Mail: joydeep1982<strong><a href="https://github.com/gmail" target="_blank">@gmail</a></strong>.com</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+</body></html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html class='' lang='en'>
+<head prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#'>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8'>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta http-equiv='Content-Language' content='en'>
+<title>syntaxhighlighter/syntaxhighlighter/31</title>
+<link href='github-c486157afcc5f58155a921bc675afb08733fbaa8dcf39ac2104d3.css' media='all' rel='stylesheet'>
+<link href='github2-da2e842cc3f0aaf33b727d0ef034243c12ab008fd09b24868b97.css' media='all' rel='stylesheet'>
+<meta http-equiv='x-pjax-version' content='4426702614c8182f33d1780ad1169662'>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shAutoloader.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAppleScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAS3.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushBash.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushColdFusion.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCpp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCSharp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCss.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDelphi.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDiff.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushErlang.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushGroovy.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJava.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJavaFX.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/syntaxhighlighter/scripts/shBrushJScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPerl.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPhp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPlain.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPowerShell.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPython.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushRuby.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSass.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushScala.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSql.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushVb.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushXml.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shLegacy.js'></script>
+	<link type='text/css' rel='stylesheet' href='syntaxhighlighter/styles/shCoreDefault.css'/>
+	<script type='text/javascript'>SyntaxHighlighter.all();</script>
+</head>
+<body class='logged_in  env-production windows vis-public'>
+<h1 align='center'><a href='https://github.com/syntaxhighlighter/syntaxhighlighter/issues/31' target='_blank'>Chrome: Double click on code, copy and paste - spaces aren't spaces</h1><hr/><div id="#issue-1671784" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/robertmarkbram" class="author">robertmarkbram</a>
+    </strong>
+    commented on 
+    <a href="#issue-1671784" class="timestamp">
+      <time>2011-09-18 06:14:07</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I can test this with demos/big_file.html. I open it in Chrome, double click on the code, copy and paste it to an editor. In UltraEdit I can see that the indend spaces aren't space characters. </p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-3595672" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/marcushouse" class="author">marcushouse</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-3595672" class="timestamp">
+      <time>2012-01-21 11:18:19</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Yep. I am also seeing this. My hex editor tells me that the characters are coming in as C2A0 (some sort of multibyte character that is not working correctly for PHP. You can see it happen here when using Chrome 16.0.912.75</p>
+<p><a href="http://modxrevo.datawebnet.com.au/formitbuilder-complex-example">http://modxrevo.datawebnet.com.au/formitbuilder-complex-example</a></p>
+<p>Any assistance appreciated. Not sure if this is a Chrome problem or a Syntax Highlighter problem. If you mouse down and drag to select the code it does copy correctly. If you select all, tripple click etc,  the spaces get copied incorrectly.
+Cant seem to reproduce in any other browser.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-3699387" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/DataTables" class="author">DataTables</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-3699387" class="timestamp">
+      <time>2012-01-28 10:02:11</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Just been investigating this myself and it appears that Webkit browsers are putting nbsp characters into the text area. Probably fair enough since nbsp is useful for the layout of the code, but no so great for copying and pasting from the text area. I've just committed a fix to my fork and added a pull request: <a href="https://github.com/alexgorbatchev/SyntaxHighlighter/pull/86">https://github.com/alexgorbatchev/SyntaxHighlighter/pull/86</a></p>
+<p>Love syntax highlighter :-)</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-4656267" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/marcushouse" class="author">marcushouse</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-4656267" class="timestamp">
+      <time>2012-03-23 09:55:31</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I've had a few more complaints from users about this, did your pull request get accepted?</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-4656369" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/DataTables" class="author">DataTables</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-4656369" class="timestamp">
+      <time>2012-03-23 10:03:08</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Yup - looks like it was just recently: <a href="https://github.com/alexgorbatchev/SyntaxHighlighter/pull/86">https://github.com/alexgorbatchev/SyntaxHighlighter/pull/86</a></p>
+  </div>
+  </div>
+  </div>
+  <br/>
+</body></html>

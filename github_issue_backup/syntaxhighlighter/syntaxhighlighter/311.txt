@@ -1,0 +1,64 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/311",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/311/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/311/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/311/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/311",
+  "id": 34940134,
+  "number": 311,
+  "title": "Wrong highligting of Java code",
+  "user": {
+    "login": "sergzt",
+    "id": 2872627,
+    "avatar_url": "https://avatars.githubusercontent.com/u/2872627?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/sergzt",
+    "html_url": "https://github.com/sergzt",
+    "followers_url": "https://api.github.com/users/sergzt/followers",
+    "following_url": "https://api.github.com/users/sergzt/following{/other_user}",
+    "gists_url": "https://api.github.com/users/sergzt/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/sergzt/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/sergzt/subscriptions",
+    "organizations_url": "https://api.github.com/users/sergzt/orgs",
+    "repos_url": "https://api.github.com/users/sergzt/repos",
+    "events_url": "https://api.github.com/users/sergzt/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/sergzt/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2014-06-04T08:43:58Z",
+  "updated_at": "2014-06-04T09:07:03Z",
+  "closed_at": "2014-06-04T09:07:03Z",
+  "body": "Map<String, String> becomes Map<string, string=\"\">\r\nAlso </string,> appears at the end of source code",
+  "closed_by": {
+    "login": "sergzt",
+    "id": 2872627,
+    "avatar_url": "https://avatars.githubusercontent.com/u/2872627?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/sergzt",
+    "html_url": "https://github.com/sergzt",
+    "followers_url": "https://api.github.com/users/sergzt/followers",
+    "following_url": "https://api.github.com/users/sergzt/following{/other_user}",
+    "gists_url": "https://api.github.com/users/sergzt/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/sergzt/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/sergzt/subscriptions",
+    "organizations_url": "https://api.github.com/users/sergzt/orgs",
+    "repos_url": "https://api.github.com/users/sergzt/repos",
+    "events_url": "https://api.github.com/users/sergzt/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/sergzt/received_events",
+    "type": "User",
+    "site_admin": false
+  }
+}
+BODY STARTS FROM HERE
+[
+
+]

@@ -1,0 +1,46 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/252",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/252/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/252/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/252/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/252",
+  "id": 18524542,
+  "number": 252,
+  "title": "Special characters being escaped in custom brush",
+  "user": {
+    "login": "AussieJake",
+    "id": 5307065,
+    "avatar_url": "https://avatars.githubusercontent.com/u/5307065?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/AussieJake",
+    "html_url": "https://github.com/AussieJake",
+    "followers_url": "https://api.github.com/users/AussieJake/followers",
+    "following_url": "https://api.github.com/users/AussieJake/following{/other_user}",
+    "gists_url": "https://api.github.com/users/AussieJake/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/AussieJake/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/AussieJake/subscriptions",
+    "organizations_url": "https://api.github.com/users/AussieJake/orgs",
+    "repos_url": "https://api.github.com/users/AussieJake/repos",
+    "events_url": "https://api.github.com/users/AussieJake/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/AussieJake/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2013-08-25T18:17:12Z",
+  "updated_at": "2013-08-25T18:18:57Z",
+  "closed_at": null,
+  "body": "Hi everyone.\r\n\r\nI am creating a custom brush for assembly language which I use when programming micro electronics. (lets call it Asm)\r\n- I have a webpage\r\n- I have my code wrapped in pre class=\"brush: asm;\" tags\r\n- I have Ran the script\r\n- And have links to shCore.js / shBrushAsm.js / shCore .css / shCoreCustom.css.\r\n\r\nIt is going well but have hit a wall when it comes to displaying special characters in combinations. They are being replaced, reformatted from the pre tag.\r\n\r\nMy files are located here:\r\nWebsite with Code : http://jakeselectronics.net/ZQXprojects_digitaltemperaturesensor.php\r\nJavascript Core: http://jakeselectronics.net/SyntaxHighlighter/scripts/shCore.js\r\nJavascript Custom Asm Brush: http://jakeselectronics.net/SyntaxHighlighter/scripts/shBrushAsm.js\r\nCss Core: http://jakeselectronics.net/SyntaxHighlighter/styles/shCore.css\r\nCss Custom Colours: http://jakeselectronics.net/SyntaxHighlighter/styles/shCoreCustom.css\r\n\r\nWithin the Asm.js file i have 2 lines which contain Regular Expressions to match comments, (anything proceeding a ';' in a line including the semi-colon), and also Arithmetical Operators, eg <<, !=, etc, see image for more examples.\r\nI have attached 4 images of the Asm.js code and the code output result as shown on webpage.\r\nI have commented the Regular Expression lines out alternatively to shown how the webpage displays things each time.\r\nHere are the image links below:\r\nBoth lines commented out:\r\nhttp://jakeselectronics.net/SyntaxHighlighter/code%201.jpg\r\nArithical Operators Regular Expression only commented out:\r\nhttp://jakeselectronics.net/SyntaxHighlighter/code%202.jpg\r\nComments Regular Expression only commented out:\r\nhttp://jakeselectronics.net/SyntaxHighlighter/code%203.jpg\r\nBoth NOT commented out and running\r\nhttp://jakeselectronics.net/SyntaxHighlighter/code%204.jpg\r\n\r\nSometimes when trying to display << i get <;\r\nand sometimes I get &lt;&lt; depending on which regular expression line I comment out.\r\n\r\nWhat is happening here?",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+
+]

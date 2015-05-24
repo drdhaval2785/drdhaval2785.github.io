@@ -1,0 +1,101 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/90",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/90/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/90/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/90/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/90",
+  "id": 3152434,
+  "number": 90,
+  "title": "wrong html tag completion in cpp brush",
+  "user": {
+    "login": "clementfarabet",
+    "id": 188959,
+    "avatar_url": "https://avatars.githubusercontent.com/u/188959?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/clementfarabet",
+    "html_url": "https://github.com/clementfarabet",
+    "followers_url": "https://api.github.com/users/clementfarabet/followers",
+    "following_url": "https://api.github.com/users/clementfarabet/following{/other_user}",
+    "gists_url": "https://api.github.com/users/clementfarabet/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/clementfarabet/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/clementfarabet/subscriptions",
+    "organizations_url": "https://api.github.com/users/clementfarabet/orgs",
+    "repos_url": "https://api.github.com/users/clementfarabet/repos",
+    "events_url": "https://api.github.com/users/clementfarabet/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/clementfarabet/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 2,
+  "created_at": "2012-02-09T04:47:24Z",
+  "updated_at": "2012-12-14T05:12:42Z",
+  "closed_at": null,
+  "body": "When highlighting C or CPP code that contains html-like tags, SyntaxHighlighter appends a closing tag.\r\n\r\nC example:\r\n\r\nvoid somefunction() {\r\n  printf(\"something, and an html \\<tag\\>\");\r\n  return 1;\r\n}\r\n\r\nrendered output:\r\n\r\n1 |   void somefunction() {\r\n2 |     printf(\"something, and an html \\<tag\\>\");\r\n3 |     return 1;\r\n4 |   }\r\n5 |   \\</tag\\>\r\n\r\nIt might not be due to the CPP/C mode.\r\n",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/comments/11365186",
+    "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/90#issuecomment-11365186",
+    "issue_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/90",
+    "id": 11365186,
+    "user": {
+      "login": "LeviHarman",
+      "id": 1418544,
+      "avatar_url": "https://avatars.githubusercontent.com/u/1418544?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/LeviHarman",
+      "html_url": "https://github.com/LeviHarman",
+      "followers_url": "https://api.github.com/users/LeviHarman/followers",
+      "following_url": "https://api.github.com/users/LeviHarman/following{/other_user}",
+      "gists_url": "https://api.github.com/users/LeviHarman/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/LeviHarman/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/LeviHarman/subscriptions",
+      "organizations_url": "https://api.github.com/users/LeviHarman/orgs",
+      "repos_url": "https://api.github.com/users/LeviHarman/repos",
+      "events_url": "https://api.github.com/users/LeviHarman/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/LeviHarman/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2012-12-14T04:48:58Z",
+    "updated_at": "2012-12-14T04:48:58Z",
+    "body": "I am having this problem too. Mainly with vectors."
+  },
+  {
+    "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/comments/11365529",
+    "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/90#issuecomment-11365529",
+    "issue_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/90",
+    "id": 11365529,
+    "user": {
+      "login": "LeviHarman",
+      "id": 1418544,
+      "avatar_url": "https://avatars.githubusercontent.com/u/1418544?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/LeviHarman",
+      "html_url": "https://github.com/LeviHarman",
+      "followers_url": "https://api.github.com/users/LeviHarman/followers",
+      "following_url": "https://api.github.com/users/LeviHarman/following{/other_user}",
+      "gists_url": "https://api.github.com/users/LeviHarman/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/LeviHarman/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/LeviHarman/subscriptions",
+      "organizations_url": "https://api.github.com/users/LeviHarman/orgs",
+      "repos_url": "https://api.github.com/users/LeviHarman/repos",
+      "events_url": "https://api.github.com/users/LeviHarman/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/LeviHarman/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2012-12-14T05:12:42Z",
+    "updated_at": "2012-12-14T05:12:42Z",
+    "body": "Never mind I found this issue.\r\n\r\nThe problem is we are using pre tag.\r\n\r\nIf you use '<' in your source code. You must either escape each tag individually. Or use <script type=\"syntaxhighlighter\" class=\"brush: cpp;\"> instead of <pre class=\"brush: cpp;\">\r\n\r\nThe installation page mentions this bug.\r\nhttp://alexgorbatchev.com/SyntaxHighlighter/manual/installation.html"
+  }
+]

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html class='' lang='en'>
+<head prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#'>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8'>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta http-equiv='Content-Language' content='en'>
+<title>syntaxhighlighter/syntaxhighlighter/218</title>
+<link href='github-c486157afcc5f58155a921bc675afb08733fbaa8dcf39ac2104d3.css' media='all' rel='stylesheet'>
+<link href='github2-da2e842cc3f0aaf33b727d0ef034243c12ab008fd09b24868b97.css' media='all' rel='stylesheet'>
+<meta http-equiv='x-pjax-version' content='4426702614c8182f33d1780ad1169662'>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shAutoloader.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAppleScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAS3.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushBash.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushColdFusion.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCpp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCSharp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCss.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDelphi.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDiff.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushErlang.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushGroovy.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJava.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJavaFX.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/syntaxhighlighter/scripts/shBrushJScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPerl.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPhp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPlain.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPowerShell.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPython.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushRuby.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSass.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushScala.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSql.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushVb.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushXml.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shLegacy.js'></script>
+	<link type='text/css' rel='stylesheet' href='syntaxhighlighter/styles/shCoreDefault.css'/>
+	<script type='text/javascript'>SyntaxHighlighter.all();</script>
+</head>
+<body class='logged_in  env-production windows vis-public'>
+<h1 align='center'><a href='https://github.com/syntaxhighlighter/syntaxhighlighter/pull/218' target='_blank'>Add annotation and line specific highlight feature</h1><hr/><div id="#issue-14782852" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/m42e" class="author">m42e</a>
+    </strong>
+    commented on 
+    <a href="#issue-14782852" class="timestamp">
+      <time>2013-05-27 05:38:49</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>This patch allows to specify a highlight class for each line as you can see it here:</p>
+<pre class="brush: html">    &lt;pre class="brush: c;
+      annotations:{
+        &amp;quot;3&amp;quot;:[
+          {&amp;quot;classes&amp;quot;: [&amp;quot;plugin_Test&amp;quot;, &amp;quot;type_Comment&amp;quot;], &amp;quot;message&amp;quot;:&amp;quot;Filename does not match;},
+          {&amp;quot;classes&amp;quot;:[&amp;quot;plugin_Test&amp;quot;, &amp;quot;type_Comment&amp;quot;],  &amp;quot;message&amp;quot;:&amp;quot;I'm not sure the file is properly named&amp;quot;}
+        ], 
+        &amp;quot;6&amp;quot;:[
+          {&amp;quot;classes&amp;quot;: [&amp;quot;plugin_Parser&amp;quot;, &amp;quot;type_Exception&amp;quot;], &amp;quot;message&amp;quot;:&amp;quot;this file does not exist&amp;quot;}
+        ]
+      };
+      highlight:{
+        &amp;quot;10&amp;quot;: &amp;quot;fullycovered&amp;quot;,
+        &amp;quot;11&amp;quot;: &amp;quot;partlycovered&amp;quot;,
+        &amp;quot;12&amp;quot;: &amp;quot;notcovered&amp;quot;
+      };
+    "&gt;
+    /*----------------------------------------------------------------------------*/
+    /**
+    *  \file      mynoop.c
+    *
+    */
+    #include "something.h"
+    int j;
+    for(j = 0; j &amp;lt; 1000; j++){
+      asm("nop");
+    }
+    /*--- End of file ------------------------------------------------------------*/
+    &lt;/pre&gt;</code></pre>
+<p>The resulting HTML will be:</p>
+<pre class="brush: html">    &lt;div class="syntaxhighlighter  c" id="highlighter_243657"&gt;
+    &lt;div class="toolbar"&gt;
+    &lt;span&gt;
+    &lt;a class="toolbar_item command_help help" href="#"&gt;
+    ?&lt;/a&gt;
+    &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;table cellspacing="0" cellpadding="0" border="0"&gt;
+    &lt;tbody&gt;
+    &lt;tr&gt;
+    &lt;td class="gutter"&gt;
+    &lt;div class="line number1 index0 alt2 "&gt;
+    1&lt;/div&gt;
+    &lt;div class="line number2 index1 alt1 "&gt;
+    2&lt;/div&gt;
+    &lt;div class="line number3 index2 alt2 "&gt;
+    3&lt;/div&gt;
+    &lt;div class="annotation annotation_line_spacer annotation3" style="height: 70px !important"&gt;
+    &amp;nbsp;&lt;/div&gt;
+    &lt;div class="line number4 index3 alt1 "&gt;
+    4&lt;/div&gt;
+    &lt;div class="line number5 index4 alt2 "&gt;
+    5&lt;/div&gt;
+    &lt;div class="line number6 index5 alt1 "&gt;
+    6&lt;/div&gt;
+    &lt;div class="annotation annotation_line_spacer annotation6" style="height: 35px !important"&gt;
+    &amp;nbsp;&lt;/div&gt;
+    &lt;div class="line number7 index6 alt2 "&gt;
+    7&lt;/div&gt;
+    &lt;div class="line number8 index7 alt1 "&gt;
+    8&lt;/div&gt;
+    &lt;div class="line number9 index8 alt2 "&gt;
+    9&lt;/div&gt;
+    &lt;div class="line number10 index9 alt1 fullycovered"&gt;
+    10&lt;/div&gt;
+    &lt;div class="line number11 index10 alt2 partlycovered"&gt;
+    11&lt;/div&gt;
+    &lt;/td&gt;
+    &lt;td class="code"&gt;
+    &lt;div class="container"&gt;
+    &lt;div class="line number1 index0 alt2 "&gt;
+    &lt;code class="c comments"&gt;
+    /*----------------------------------------------------------------------------*/&lt;/code&gt;
+    &lt;/div&gt;
+    &lt;div class="line number2 index1 alt1 "&gt;
+    &lt;code class="c comments"&gt;
+    /**&lt;/code&gt;
+    &lt;/div&gt;
+    &lt;div class="line number3 index2 alt2 "&gt;
+    &lt;code class="c comments"&gt;
+    *&amp;nbsp; \file&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; mynoop.c&lt;/code&gt;
+    &lt;/div&gt;
+    &lt;div class="annotation annotation3"&gt;
+    &lt;div class="plugin_Test type_Comment"&gt;
+    Filename does not match;&lt;/div&gt;
+    &lt;div class="plugin_Test type_Comment"&gt;
+    I'm not sure the file is properly named&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="line number4 index3 alt1 "&gt;
+    &lt;code class="c comments"&gt;
+    *&lt;/code&gt;
+    &lt;/div&gt;
+    &lt;div class="line number5 index4 alt2 "&gt;
+    &lt;code class="c comments"&gt;
+    */&lt;/code&gt;
+    &lt;/div&gt;
+    &lt;div class="line number6 index5 alt1 "&gt;
+    &lt;code class="c preprocessor"&gt;
+    #include "something.h"&lt;/code&gt;
+    &lt;/div&gt;
+    &lt;div class="annotation annotation6"&gt;
+    &lt;div class="plugin_Parser type_Exception"&gt;
+    this file does not exist&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="line number7 index6 alt2 "&gt;
+    &lt;code class="c color1 bold"&gt;
+    int&lt;/code&gt;
+     &lt;code class="c plain"&gt;
+    j;&lt;/code&gt;
+    &lt;/div&gt;
+    &lt;div class="line number8 index7 alt1 "&gt;
+    &lt;code class="c keyword bold"&gt;
+    for&lt;/code&gt;
+    &lt;code class="c plain"&gt;
+    (j = 0; j &amp;lt; 1000; j++){&lt;/code&gt;
+    &lt;/div&gt;
+    &lt;div class="line number9 index8 alt2 "&gt;
+    &lt;code class="c spaces"&gt;
+    &amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/code&gt;
+    &lt;code class="c plain"&gt;
+    asm(&lt;/code&gt;
+    &lt;code class="c string"&gt;
+    "nop"&lt;/code&gt;
+    &lt;code class="c plain"&gt;
+    );&lt;/code&gt;
+    &lt;/div&gt;
+    &lt;div class="line number10 index9 alt1 fullycovered"&gt;
+    &lt;code class="c plain"&gt;
+    }&lt;/code&gt;
+    &lt;/div&gt;
+    &lt;div class="line number11 index10 alt2 partlycovered"&gt;
+    &lt;code class="c comments"&gt;
+    /*--- End of file ------------------------------------------------------------*/&lt;/code&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;/tbody&gt;
+    &lt;/table&gt;
+    &lt;/div&gt;</code></pre>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-30689262" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/alexgorbatchev" class="author">alexgorbatchev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-30689262" class="timestamp">
+      <time>2013-12-16 19:01:36</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I like the idea, but I'm wondering if there's a better way to pass annotations in. Having them encoded in HTML attribute like that seems pretty clunky.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+</body></html>

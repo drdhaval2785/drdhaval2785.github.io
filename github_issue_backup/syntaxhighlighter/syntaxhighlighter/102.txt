@@ -1,0 +1,97 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/102",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/102/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/102/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/102/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/pull/102",
+  "id": 3777341,
+  "number": 102,
+  "title": "Update package.json",
+  "user": {
+    "login": "dreamflywang",
+    "id": 866068,
+    "avatar_url": "https://avatars.githubusercontent.com/u/866068?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/dreamflywang",
+    "html_url": "https://github.com/dreamflywang",
+    "followers_url": "https://api.github.com/users/dreamflywang/followers",
+    "following_url": "https://api.github.com/users/dreamflywang/following{/other_user}",
+    "gists_url": "https://api.github.com/users/dreamflywang/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/dreamflywang/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/dreamflywang/subscriptions",
+    "organizations_url": "https://api.github.com/users/dreamflywang/orgs",
+    "repos_url": "https://api.github.com/users/dreamflywang/repos",
+    "events_url": "https://api.github.com/users/dreamflywang/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/dreamflywang/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2012-03-23T09:42:20Z",
+  "updated_at": "2013-04-19T23:21:09Z",
+  "closed_at": "2013-04-19T23:21:09Z",
+  "pull_request": {
+    "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/pulls/102",
+    "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/pull/102",
+    "diff_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/pull/102.diff",
+    "patch_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/pull/102.patch"
+  },
+  "body": "",
+  "closed_by": {
+    "login": "alexgorbatchev",
+    "id": 65633,
+    "avatar_url": "https://avatars.githubusercontent.com/u/65633?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/alexgorbatchev",
+    "html_url": "https://github.com/alexgorbatchev",
+    "followers_url": "https://api.github.com/users/alexgorbatchev/followers",
+    "following_url": "https://api.github.com/users/alexgorbatchev/following{/other_user}",
+    "gists_url": "https://api.github.com/users/alexgorbatchev/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/alexgorbatchev/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/alexgorbatchev/subscriptions",
+    "organizations_url": "https://api.github.com/users/alexgorbatchev/orgs",
+    "repos_url": "https://api.github.com/users/alexgorbatchev/repos",
+    "events_url": "https://api.github.com/users/alexgorbatchev/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/alexgorbatchev/received_events",
+    "type": "User",
+    "site_admin": false
+  }
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/comments/12433370",
+    "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/pull/102#issuecomment-12433370",
+    "issue_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/102",
+    "id": 12433370,
+    "user": {
+      "login": "alexgorbatchev",
+      "id": 65633,
+      "avatar_url": "https://avatars.githubusercontent.com/u/65633?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgorbatchev",
+      "html_url": "https://github.com/alexgorbatchev",
+      "followers_url": "https://api.github.com/users/alexgorbatchev/followers",
+      "following_url": "https://api.github.com/users/alexgorbatchev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgorbatchev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgorbatchev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgorbatchev/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgorbatchev/orgs",
+      "repos_url": "https://api.github.com/users/alexgorbatchev/repos",
+      "events_url": "https://api.github.com/users/alexgorbatchev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgorbatchev/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2013-01-18T17:53:27Z",
+    "updated_at": "2013-01-18T17:53:27Z",
+    "body": "Thanks for contributing! Could you please explain this change? I'm not clear on why it's necessary."
+  }
+]

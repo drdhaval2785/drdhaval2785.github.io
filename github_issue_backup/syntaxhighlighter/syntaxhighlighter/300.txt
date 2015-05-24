@@ -1,0 +1,46 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/300",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/300/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/300/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/300/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/300",
+  "id": 31093633,
+  "number": 300,
+  "title": "Certain keywords break the regex.",
+  "user": {
+    "login": "latreides",
+    "id": 2358247,
+    "avatar_url": "https://avatars.githubusercontent.com/u/2358247?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/latreides",
+    "html_url": "https://github.com/latreides",
+    "followers_url": "https://api.github.com/users/latreides/followers",
+    "following_url": "https://api.github.com/users/latreides/following{/other_user}",
+    "gists_url": "https://api.github.com/users/latreides/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/latreides/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/latreides/subscriptions",
+    "organizations_url": "https://api.github.com/users/latreides/orgs",
+    "repos_url": "https://api.github.com/users/latreides/repos",
+    "events_url": "https://api.github.com/users/latreides/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/latreides/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2014-04-08T18:00:29Z",
+  "updated_at": "2014-04-08T18:00:29Z",
+  "closed_at": null,
+  "body": "Using certain symbols like: + - * % / and ^ as keywords (even escaped) causes the regex to fail.",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+
+]

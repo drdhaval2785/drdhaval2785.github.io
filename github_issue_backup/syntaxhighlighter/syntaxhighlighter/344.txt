@@ -1,0 +1,91 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/344",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/344/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/344/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/344/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/344",
+  "id": 43590962,
+  "number": 344,
+  "title": "hope to support golang",
+  "user": {
+    "login": "duguying",
+    "id": 3050360,
+    "avatar_url": "https://avatars.githubusercontent.com/u/3050360?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/duguying",
+    "html_url": "https://github.com/duguying",
+    "followers_url": "https://api.github.com/users/duguying/followers",
+    "following_url": "https://api.github.com/users/duguying/following{/other_user}",
+    "gists_url": "https://api.github.com/users/duguying/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/duguying/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/duguying/subscriptions",
+    "organizations_url": "https://api.github.com/users/duguying/orgs",
+    "repos_url": "https://api.github.com/users/duguying/repos",
+    "events_url": "https://api.github.com/users/duguying/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/duguying/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2014-09-23T04:46:24Z",
+  "updated_at": "2014-09-24T03:51:12Z",
+  "closed_at": "2014-09-24T03:51:12Z",
+  "body": "hope to support golang,thanks",
+  "closed_by": {
+    "login": "duguying",
+    "id": 3050360,
+    "avatar_url": "https://avatars.githubusercontent.com/u/3050360?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/duguying",
+    "html_url": "https://github.com/duguying",
+    "followers_url": "https://api.github.com/users/duguying/followers",
+    "following_url": "https://api.github.com/users/duguying/following{/other_user}",
+    "gists_url": "https://api.github.com/users/duguying/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/duguying/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/duguying/subscriptions",
+    "organizations_url": "https://api.github.com/users/duguying/orgs",
+    "repos_url": "https://api.github.com/users/duguying/repos",
+    "events_url": "https://api.github.com/users/duguying/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/duguying/received_events",
+    "type": "User",
+    "site_admin": false
+  }
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/comments/56621855",
+    "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/344#issuecomment-56621855",
+    "issue_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/344",
+    "id": 56621855,
+    "user": {
+      "login": "duguying",
+      "id": 3050360,
+      "avatar_url": "https://avatars.githubusercontent.com/u/3050360?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/duguying",
+      "html_url": "https://github.com/duguying",
+      "followers_url": "https://api.github.com/users/duguying/followers",
+      "following_url": "https://api.github.com/users/duguying/following{/other_user}",
+      "gists_url": "https://api.github.com/users/duguying/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/duguying/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/duguying/subscriptions",
+      "organizations_url": "https://api.github.com/users/duguying/orgs",
+      "repos_url": "https://api.github.com/users/duguying/repos",
+      "events_url": "https://api.github.com/users/duguying/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/duguying/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2014-09-24T03:51:12Z",
+    "updated_at": "2014-09-24T03:51:12Z",
+    "body": "solved.\r\nhttps://wordpress.org/plugins/golang-brush-for-syntaxhighlighter-evolved/"
+  }
+]

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html class='' lang='en'>
+<head prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#'>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8'>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta http-equiv='Content-Language' content='en'>
+<title>syntaxhighlighter/syntaxhighlighter/144</title>
+<link href='github-c486157afcc5f58155a921bc675afb08733fbaa8dcf39ac2104d3.css' media='all' rel='stylesheet'>
+<link href='github2-da2e842cc3f0aaf33b727d0ef034243c12ab008fd09b24868b97.css' media='all' rel='stylesheet'>
+<meta http-equiv='x-pjax-version' content='4426702614c8182f33d1780ad1169662'>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shAutoloader.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAppleScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAS3.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushBash.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushColdFusion.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCpp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCSharp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCss.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDelphi.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDiff.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushErlang.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushGroovy.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJava.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJavaFX.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/syntaxhighlighter/scripts/shBrushJScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPerl.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPhp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPlain.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPowerShell.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPython.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushRuby.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSass.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushScala.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSql.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushVb.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushXml.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shLegacy.js'></script>
+	<link type='text/css' rel='stylesheet' href='syntaxhighlighter/styles/shCoreDefault.css'/>
+	<script type='text/javascript'>SyntaxHighlighter.all();</script>
+</head>
+<body class='logged_in  env-production windows vis-public'>
+<h1 align='center'><a href='https://github.com/syntaxhighlighter/syntaxhighlighter/issues/144' target='_blank'>Semi-colons as comments?</h1><hr/><div id="#issue-6350323" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/nekoyoubi" class="author">nekoyoubi</a>
+    </strong>
+    commented on 
+    <a href="#issue-6350323" class="timestamp">
+      <time>2012-08-21 13:35:31</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I am experiencing some issues with a custom brush I've made for <a href="http://www.autoitscript.com/site/">AutoIt</a> script.</p>
+<p>The problem appears to be with semi-colons being used as a comment marker, and possibly something to do with the encoding of markup characters (e.g. &quot;&gt;&quot; to &quot;&gt;&quot;).</p>
+<p>I know nothing about the inner workings of the SyntaxHighlighter, but at a glance, these are the symptoms that I recognize.</p>
+<p><em>EDIT: Removed edit query string param from URL. All apologies; didn't notice when I posted it.</em></p>
+<p>Here is an example of what I'm referring to: <a href="http://forum.nekoyoubi.com/posting.php?f=6&t=2&p=2">http://forum.nekoyoubi.com/posting.php?f=6&t=2&p=2</a></p>
+<p><em>EDIT: As stated below, the following is no longer the case, as I've since altered the brush to 'hack' around the problem. Please note the behavior in lines 18, 19, and 20, however, as I have adjusted them to display the hacked issue instead.</em></p>
+<p>You'll see that on line 18, there is a random semi-colon that jumps in right after the &quot;&lt;&quot;. This semi-colon is not present in the data, obviously, but renders every time in the display. If I change it to a &quot;&gt;&quot; is does the same.</p>
+<p>Not that I think it matters at all, but the custom brush, in case I've done something wrong there, is available here: <a href="http://forum.nekoyoubi.com/js/syntaxhighlighter3/brushes/shBrushAutoIt.js">http://forum.nekoyoubi.com/js/syntaxhighlighter3/brushes/shBrushAutoIt.js</a></p>
+<p>Thanks much in advance for any and all assistance in resolving this issue.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-7905678" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/nekoyoubi" class="author">nekoyoubi</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-7905678" class="timestamp">
+      <time>2012-08-21 15:50:55</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Updating my comment regex to look for whitespace or the beginning of the line <code>(\s+|^);.*$</code> has temporarily fixed the issue, but I would think the problem should still be addressed, as <code>$var = "something"; this should be valid</code> would not result in a comment. ;(</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-8219126" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/QWp6t" class="author">QWp6t</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-8219126" class="timestamp">
+      <time>2012-09-02 05:10:47</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>While I don't have an answer to your question, I would like to provide you with a list of UDFs to add to your script. I also threw in some preprocessor keywords. This is what I use for my AutoIt3 syntax highlighter.</p>
+<p><a href="https://gist.github.com/3594932">https://gist.github.com/3594932</a></p>
+<p>Also, the first link you have there leads to a page where the viewer is prompted to log into your forums. I'm guessing this has something to do with that &quot;mode=edit&quot; in your query string (are you sending us to a page to edit your post?).  don't think you're going to get anybody to register an account on your forums just so they can view an example of your problem. I'd suggest creating a gist with your example.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-8222552" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/nekoyoubi" class="author">nekoyoubi</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-8222552" class="timestamp">
+      <time>2012-09-02 14:46:07</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Thank you for your response. I will add your UDFs and preprocessors to the brush, and thank you for that. I had extracted them from the Scite syntaxt file; just never got them into the brush.</p>
+<p>No, registering was never a part of the deal, I merely copy-pasta'd that URL and unfortunately didn't look before I posted. Thanks for the catch.</p>
+<p>As I posted in my second message, however, I've since &quot;resolved&quot; the issue with a faulty hack that you can see now if you look at lines 18, 19, and 20. I left the issue open because even though I can force the hack to work in all cases (since it's comments that are the issue), having the HTML encoded characters (the markup; not the render) effect the syntax highlighting at all seems like a flaw that someone may want to address.</p>
+<p>If I am wrong in that and should close this issue, just let me know. Thanks! </p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-17276993" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/Kelet" class="author">Kelet</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-17276993" class="timestamp">
+      <time>2013-05-01 11:08:39</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Also experiencing this problem with the AutoHotkey syntax. Going to use your work around for now Nekoyoubi although it is not optimal.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+</body></html>

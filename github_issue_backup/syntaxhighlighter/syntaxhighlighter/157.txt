@@ -1,0 +1,46 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/157",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/157/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/157/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/157/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/157",
+  "id": 7814597,
+  "number": 157,
+  "title": "Strange code tag with class 'java spaces' is in generated markup",
+  "user": {
+    "login": "OneDivZero",
+    "id": 1638511,
+    "avatar_url": "https://avatars.githubusercontent.com/u/1638511?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/OneDivZero",
+    "html_url": "https://github.com/OneDivZero",
+    "followers_url": "https://api.github.com/users/OneDivZero/followers",
+    "following_url": "https://api.github.com/users/OneDivZero/following{/other_user}",
+    "gists_url": "https://api.github.com/users/OneDivZero/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/OneDivZero/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/OneDivZero/subscriptions",
+    "organizations_url": "https://api.github.com/users/OneDivZero/orgs",
+    "repos_url": "https://api.github.com/users/OneDivZero/repos",
+    "events_url": "https://api.github.com/users/OneDivZero/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/OneDivZero/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2012-10-24T00:11:04Z",
+  "updated_at": "2012-10-24T00:11:04Z",
+  "closed_at": null,
+  "body": "Hi! \r\n\r\nI'm storing some java-code in a database using a simple textarea (no syntax highlighting, just plain). \r\n\r\nIf there is javacode on the first line in textarea, displaying the result on another page using SyntaxHighlighter includes an additional tag as follows: <code class=\"java spaces\">    </code>\r\n(contains 4 spaces between code-tag)\r\n\r\nIf I edit again my javacode and keep the first line in the textarea free, displaying the result on another page is as expected (Additional code-tag with class named 'java spaces' is not any more present). \r\n\r\nWhy does this mentioned code tag with 'java spaces' class get's inserted ? How can i prevent this ?\r\n\r\nThanks!\r\n\r\n",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+
+]

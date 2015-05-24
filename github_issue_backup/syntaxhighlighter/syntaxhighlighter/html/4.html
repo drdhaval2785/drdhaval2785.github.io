@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html class='' lang='en'>
+<head prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#'>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8'>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta http-equiv='Content-Language' content='en'>
+<title>syntaxhighlighter/syntaxhighlighter/4</title>
+<link href='github-c486157afcc5f58155a921bc675afb08733fbaa8dcf39ac2104d3.css' media='all' rel='stylesheet'>
+<link href='github2-da2e842cc3f0aaf33b727d0ef034243c12ab008fd09b24868b97.css' media='all' rel='stylesheet'>
+<meta http-equiv='x-pjax-version' content='4426702614c8182f33d1780ad1169662'>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shAutoloader.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAppleScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAS3.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushBash.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushColdFusion.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCpp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCSharp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCss.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDelphi.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDiff.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushErlang.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushGroovy.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJava.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJavaFX.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/syntaxhighlighter/scripts/shBrushJScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPerl.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPhp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPlain.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPowerShell.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPython.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushRuby.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSass.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushScala.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSql.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushVb.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushXml.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shLegacy.js'></script>
+	<link type='text/css' rel='stylesheet' href='syntaxhighlighter/styles/shCoreDefault.css'/>
+	<script type='text/javascript'>SyntaxHighlighter.all();</script>
+</head>
+<body class='logged_in  env-production windows vis-public'>
+<h1 align='center'><a href='https://github.com/syntaxhighlighter/syntaxhighlighter/pull/4' target='_blank'>Fixed highlighting of PHP when mixed with HTML</h1><hr/><div id="#issue-1369433" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/jmm" class="author">jmm</a>
+    </strong>
+    commented on 
+    <a href="#issue-1369433" class="timestamp">
+      <time>2011-08-09 00:39:36</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I noticed that when used with the html-script option, SyntaxHighlighter didn't highlight PHP code between a PHP start tag and the end of the code snippet, when the PHP code goes to the end of the snippet and there is no PHP end tag.  By &quot;the end of the code snippet&quot;, I mean what would be EOF if the code were in a file.</p>
+<p>The PHP end tag is not required at the end of a file, and omitting it is considered a best practice in files that are not supposed to generate any output (such as a file that defines a class and is meant to be included by other scripts).</p>
+<p>Here is a really minimal example of the situation I'm talking about:</p>
+<pre><code>
+&lt;div class="whatever"&gt;
+Blah blah blah.
+&lt;/div&gt;
+
+&lt;?php
+
+$something = "something";
+</code></pre>
+<p>I modified SyntaxHighlighter to highlight PHP code in that situation.  I did that by adding a boolean property, <code>eof_end</code>, to <code>phpScriptTags</code>, then checking for that in <code>forHtmlScript()</code> and adding end of line (&quot;$&quot;) as an alternative pattern to the end tag.</p>
+<p>I eventually noticed that <code>phpScriptTags</code> is also used for the Perl brush, and I don't know if Perl behaves the same as PHP (closing tag at EOF not necessary), so perhaps the information represented by <code>eof_end</code> needs to be set in the PHP brush instead. </p>
+<p>Or perhaps PHP and Perl need separate variables to define their start / end tag regexes.  Particularly because I changed <code>phpScriptTags.left</code> so that it can match <code>&lt;?php</code>.  After I added the <code>eof_end</code> functionality, SyntaxHighlighter still wasn't highlighting everything quite right.  When using <code>&lt;?php</code> as the start tag and not using a corresponding end tag (because the PHP code goes to EOF), it was highlighting the <code>&lt;?</code> but not the <code>php</code>.</p>
+<p>Personally, I'm not even sure I want it highlighting the PHP start and end tags when mixed with HTML.  It doesn't highlight them when not mixed with HTML.  But if it is going to highlight them, then I want it to apply the same highlighting to start tags that have a corresponding end tag, and start tags that don't have an end tag because the PHP code goes to EOF.</p>
+<p>Jesse</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+</body></html>

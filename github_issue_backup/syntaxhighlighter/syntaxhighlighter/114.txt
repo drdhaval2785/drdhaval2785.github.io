@@ -1,0 +1,46 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/114",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/114/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/114/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/114/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/114",
+  "id": 4339026,
+  "number": 114,
+  "title": "why class attribute",
+  "user": {
+    "login": "metadings",
+    "id": 1684098,
+    "avatar_url": "https://avatars.githubusercontent.com/u/1684098?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/metadings",
+    "html_url": "https://github.com/metadings",
+    "followers_url": "https://api.github.com/users/metadings/followers",
+    "following_url": "https://api.github.com/users/metadings/following{/other_user}",
+    "gists_url": "https://api.github.com/users/metadings/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/metadings/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/metadings/subscriptions",
+    "organizations_url": "https://api.github.com/users/metadings/orgs",
+    "repos_url": "https://api.github.com/users/metadings/repos",
+    "events_url": "https://api.github.com/users/metadings/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/metadings/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2012-04-29T04:10:23Z",
+  "updated_at": "2012-04-29T04:10:23Z",
+  "closed_at": null,
+  "body": "Why do you use the colon (:) in the html class attribute, the css-name or className attribute?\r\n\r\nI noticed that MDN uses SyntaxHighlighter, but v1.5.1, where SH did not misuse the class attribute...\r\nIs there any way to get you using another attribute (also without data- what google and ms also don't do)?\r\n\r\nUse syntax-highlighter=\"ruler: false; minDigits: 2\" ! HTML class attribute is only for CSS valid names!!",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+
+]

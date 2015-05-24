@@ -1,0 +1,46 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/95",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/95/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/95/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/95/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/95",
+  "id": 3368121,
+  "number": 95,
+  "title": "diff brush colour's extra line",
+  "user": {
+    "login": "rajinderyadav",
+    "id": 1158052,
+    "avatar_url": "https://avatars.githubusercontent.com/u/1158052?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/rajinderyadav",
+    "html_url": "https://github.com/rajinderyadav",
+    "followers_url": "https://api.github.com/users/rajinderyadav/followers",
+    "following_url": "https://api.github.com/users/rajinderyadav/following{/other_user}",
+    "gists_url": "https://api.github.com/users/rajinderyadav/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/rajinderyadav/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/rajinderyadav/subscriptions",
+    "organizations_url": "https://api.github.com/users/rajinderyadav/orgs",
+    "repos_url": "https://api.github.com/users/rajinderyadav/repos",
+    "events_url": "https://api.github.com/users/rajinderyadav/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/rajinderyadav/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2012-02-24T05:03:42Z",
+  "updated_at": "2012-02-24T05:03:42Z",
+  "closed_at": null,
+  "body": "Hi when I view the following with the diff brush, I see 'void main' get the same colour as the added lines, this is incorrect.\r\n\r\n+#include <iostream>\r\n+using namespace std;\r\n+\r\n void main\r\n {\r\n    cout << \"hello world\" << endl;\r\n }\r\n\\ No newline at end of file",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+
+]

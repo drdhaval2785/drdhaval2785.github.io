@@ -1,0 +1,46 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/178",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/178/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/178/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/178/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/178",
+  "id": 10665936,
+  "number": 178,
+  "title": "flexslider and syntaxhighlighter problem on ie",
+  "user": {
+    "login": "partnuz",
+    "id": 3278265,
+    "avatar_url": "https://avatars.githubusercontent.com/u/3278265?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/partnuz",
+    "html_url": "https://github.com/partnuz",
+    "followers_url": "https://api.github.com/users/partnuz/followers",
+    "following_url": "https://api.github.com/users/partnuz/following{/other_user}",
+    "gists_url": "https://api.github.com/users/partnuz/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/partnuz/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/partnuz/subscriptions",
+    "organizations_url": "https://api.github.com/users/partnuz/orgs",
+    "repos_url": "https://api.github.com/users/partnuz/repos",
+    "events_url": "https://api.github.com/users/partnuz/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/partnuz/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2013-02-05T20:25:33Z",
+  "updated_at": "2013-02-05T20:25:33Z",
+  "closed_at": null,
+  "body": "Hi\r\nI use flexslider and initialize using this piece of code\r\n\r\n\t\t\t $('#slider').flexslider({\r\n\t\t\t\tstart: function(slider) {\r\n\t\t\t\t\tslider.removeClass('loading');\r\n\t\t\t\t},\r\n\t\t\t\tanimation: \"slide\",\r\n\t\t\t\tcontrolNav: false,\r\n\t\t\t\tanimationLoop: true,\r\n\t\t\t\tslideshow: true,\r\n\t\t\t\tbefore: function(){\r\n\t\t\t\t\t$('#slider div.shade').animate({ left: 999 });\r\n\t\t\t\t},          \r\n\t\t\t\tafter: function(){\r\n\t\t\t\t\t$('#slider div.shade').animate({ left: 0});\r\n\t\t\t\t}, \r\n\t\t\t\tsync: \"#carousel\"\r\n\t\t\t  });\r\n\r\nThe problem are before and after functions causing ie8+ to show up error in jquery 1.8.3 \"Object does not support this property or method\". Any solution ?",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+
+]

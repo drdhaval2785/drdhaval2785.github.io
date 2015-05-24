@@ -1,0 +1,46 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/299",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/299/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/299/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/299/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/299",
+  "id": 30992499,
+  "number": 299,
+  "title": "question on syntax highlighting request initiated by user's javascript",
+  "user": {
+    "login": "user1020",
+    "id": 1478660,
+    "avatar_url": "https://avatars.githubusercontent.com/u/1478660?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/user1020",
+    "html_url": "https://github.com/user1020",
+    "followers_url": "https://api.github.com/users/user1020/followers",
+    "following_url": "https://api.github.com/users/user1020/following{/other_user}",
+    "gists_url": "https://api.github.com/users/user1020/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/user1020/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/user1020/subscriptions",
+    "organizations_url": "https://api.github.com/users/user1020/orgs",
+    "repos_url": "https://api.github.com/users/user1020/repos",
+    "events_url": "https://api.github.com/users/user1020/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/user1020/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2014-04-07T15:08:25Z",
+  "updated_at": "2014-04-07T15:08:25Z",
+  "closed_at": null,
+  "body": "Thanks for this great software, I have been using it in my blog and really like it.\r\n\r\nThe following html code is meant to do syntax highlight on a chunk of code pasted in the textarea. However, it's strange that when the page initially load, the part in div was syntax-highlighted, however, when I click \"Format\" button, it doesn't do syntax-highlighting. I guess something basic must be wrong with my javascript.\r\n\r\nThanks in advance.\r\n```\r\n<html>\r\n<head>\r\n\t<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\r\n\t<title>Hello SyntaxHighlighter</title>\r\n\t<script type=\"text/javascript\" src=\"scripts/shCore.js\"></script>\r\n\t<script type=\"text/javascript\" src=\"scripts/shBrushJScript.js\"></script>\r\n\t<link type=\"text/css\" rel=\"stylesheet\" href=\"styles/shCoreDefault.css\"/>\r\n\t<script type=\"text/javascript\">SyntaxHighlighter.all();</script>\r\n</head>\r\n<body>\r\n<textarea id=\"src\" rows=\"7\" cols=\"80\"> </textarea>\r\n<button onclick=\"render()\"/>Format</button>\r\n<div id=\"display\">\r\n\t<pre class=\"brush: js;\">a = \"hello world\";\r\nif (a &gt; 10) {\r\n\tconsole.log(\"done\");\r\n}</pre>\r\n</div>\r\n<script>\r\nfunction render() {\r\n\ttmp  = '<pre class=\"brush: js;\">';\r\n\ttmp +=document.getElementById(\"src\").value;\r\n\ttmp += '</pre>';\r\n\tdocument.getElementById(\"display\").innerHTML = tmp;\r\n\tSyntaxHighlighter.all();\r\n}\r\n</script>\r\n</body>\r\n</html>\r\n```",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+
+]

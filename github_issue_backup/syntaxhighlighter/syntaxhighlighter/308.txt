@@ -1,0 +1,46 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/308",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/308/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/308/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/308/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/308",
+  "id": 32372573,
+  "number": 308,
+  "title": "square brackets in c# code",
+  "user": {
+    "login": "tecmanii",
+    "id": 7430700,
+    "avatar_url": "https://avatars.githubusercontent.com/u/7430700?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/tecmanii",
+    "html_url": "https://github.com/tecmanii",
+    "followers_url": "https://api.github.com/users/tecmanii/followers",
+    "following_url": "https://api.github.com/users/tecmanii/following{/other_user}",
+    "gists_url": "https://api.github.com/users/tecmanii/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/tecmanii/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/tecmanii/subscriptions",
+    "organizations_url": "https://api.github.com/users/tecmanii/orgs",
+    "repos_url": "https://api.github.com/users/tecmanii/repos",
+    "events_url": "https://api.github.com/users/tecmanii/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/tecmanii/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2014-04-28T16:01:14Z",
+  "updated_at": "2014-04-28T16:01:14Z",
+  "closed_at": null,
+  "body": "SyntaxHighlighter 3.0.87 (November 12 2010), used as a part of the YAF forum engine.\r\n\r\nAny multi-line C# code with square brackets like the following one isn't rendered properly:\r\n\r\nvar property = (PropertyInfo)col.Tag;\r\nvar objValue = property.GetValue(element, null);\r\nrow.Cells[i].Value = objValue;\r\n\r\nI see this:\r\n\r\n.Value = objValue;\r\n\r\nHowever, the only line\r\n\r\nrow.Cells[i].Value = objValue;\r\n\r\nis rendered properly",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+
+]

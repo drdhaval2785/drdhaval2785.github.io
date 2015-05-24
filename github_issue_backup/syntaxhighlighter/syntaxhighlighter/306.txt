@@ -1,0 +1,46 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/306",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/306/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/306/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/306/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/306",
+  "id": 31807380,
+  "number": 306,
+  "title": "Feature Request -- option to import file contents to be highlighted.",
+  "user": {
+    "login": "lawlist",
+    "id": 3762134,
+    "avatar_url": "https://avatars.githubusercontent.com/u/3762134?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/lawlist",
+    "html_url": "https://github.com/lawlist",
+    "followers_url": "https://api.github.com/users/lawlist/followers",
+    "following_url": "https://api.github.com/users/lawlist/following{/other_user}",
+    "gists_url": "https://api.github.com/users/lawlist/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/lawlist/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/lawlist/subscriptions",
+    "organizations_url": "https://api.github.com/users/lawlist/orgs",
+    "repos_url": "https://api.github.com/users/lawlist/repos",
+    "events_url": "https://api.github.com/users/lawlist/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/lawlist/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2014-04-18T16:05:22Z",
+  "updated_at": "2014-04-19T21:32:00Z",
+  "closed_at": null,
+  "body": "As a feature request, please consider adding the option to import the file contents to be highlighted --  (*With the \"ability to place virtually anything inside the CDATA without having to escape anything . . .\"*)\r\n\r\n\r\n    <pre class=\"brush: lisp\">\r\n\r\n    /home/lawlist/archives/init.el\r\n\r\n    </pre>\r\n\r\n___\r\n\r\n**EDIT**:  Here is one possible solution you may wish to include, or a modification thereof.  Alternatively, perhaps a sample in the readme file would be sufficient.\r\n\r\n    <script type=\"text/javascript\">\r\n      var ajaxRq = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject(\"Msxml2.XMLHTTP\");\r\n      ajaxRq.open(\"GET\", \"/home/lawlist/archives/init.el\", false);\r\n      ajaxRq.send(null);\r\n      document.write('<pre class=\"brush:  lisp\">');\r\n      document.write(ajaxRq.responseText);\r\n      document.write('</pre>');\r\n    </script>",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+
+]

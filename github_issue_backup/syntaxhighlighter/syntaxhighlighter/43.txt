@@ -1,0 +1,46 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/43",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/43/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/43/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/43/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/43",
+  "id": 1761435,
+  "number": 43,
+  "title": "Update Installation Documents",
+  "user": {
+    "login": "cfhcwebs",
+    "id": 775842,
+    "avatar_url": "https://avatars.githubusercontent.com/u/775842?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/cfhcwebs",
+    "html_url": "https://github.com/cfhcwebs",
+    "followers_url": "https://api.github.com/users/cfhcwebs/followers",
+    "following_url": "https://api.github.com/users/cfhcwebs/following{/other_user}",
+    "gists_url": "https://api.github.com/users/cfhcwebs/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/cfhcwebs/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/cfhcwebs/subscriptions",
+    "organizations_url": "https://api.github.com/users/cfhcwebs/orgs",
+    "repos_url": "https://api.github.com/users/cfhcwebs/repos",
+    "events_url": "https://api.github.com/users/cfhcwebs/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/cfhcwebs/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2011-09-28T05:26:50Z",
+  "updated_at": "2011-09-28T05:26:50Z",
+  "closed_at": null,
+  "body": "Source directories in the current download do not match the directories in the online documentation.\r\n\r\nLots of troubleshooting and firing blindly to finally get it working.",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+
+]

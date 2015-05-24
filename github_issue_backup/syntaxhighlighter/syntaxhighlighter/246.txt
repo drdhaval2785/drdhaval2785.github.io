@@ -1,0 +1,46 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/246",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/246/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/246/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/246/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/246",
+  "id": 17432901,
+  "number": 246,
+  "title": "empty lines become single space lines",
+  "user": {
+    "login": "lilydjwg",
+    "id": 440661,
+    "avatar_url": "https://avatars.githubusercontent.com/u/440661?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/lilydjwg",
+    "html_url": "https://github.com/lilydjwg",
+    "followers_url": "https://api.github.com/users/lilydjwg/followers",
+    "following_url": "https://api.github.com/users/lilydjwg/following{/other_user}",
+    "gists_url": "https://api.github.com/users/lilydjwg/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/lilydjwg/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/lilydjwg/subscriptions",
+    "organizations_url": "https://api.github.com/users/lilydjwg/orgs",
+    "repos_url": "https://api.github.com/users/lilydjwg/repos",
+    "events_url": "https://api.github.com/users/lilydjwg/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/lilydjwg/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2013-07-31T03:29:13Z",
+  "updated_at": "2013-07-31T03:29:55Z",
+  "closed_at": null,
+  "body": "If there are empty lines in the code, SyntaxHighlighter will render them as lines that contains a single space, even when copy the code after a double-click. Check [this page](http://alexgorbatchev.com/SyntaxHighlighter/manual/brushes/python.html).\r\n\r\nIt doesn't hurt very much, but I hope I won't see those extra spaces marked as errors.",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+
+]

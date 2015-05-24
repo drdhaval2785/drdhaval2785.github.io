@@ -1,0 +1,46 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/305",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/305/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/305/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/305/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/305",
+  "id": 31807178,
+  "number": 305,
+  "title": "Suggestion -- README.md to include link to prebuilt download option.",
+  "user": {
+    "login": "lawlist",
+    "id": 3762134,
+    "avatar_url": "https://avatars.githubusercontent.com/u/3762134?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/lawlist",
+    "html_url": "https://github.com/lawlist",
+    "followers_url": "https://api.github.com/users/lawlist/followers",
+    "following_url": "https://api.github.com/users/lawlist/following{/other_user}",
+    "gists_url": "https://api.github.com/users/lawlist/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/lawlist/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/lawlist/subscriptions",
+    "organizations_url": "https://api.github.com/users/lawlist/orgs",
+    "repos_url": "https://api.github.com/users/lawlist/repos",
+    "events_url": "https://api.github.com/users/lawlist/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/lawlist/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2014-04-18T16:01:56Z",
+  "updated_at": "2014-04-18T16:35:40Z",
+  "closed_at": null,
+  "body": "Please consider adding a line or two somewhere in the README.md for the regular Github, and the developer branch too, that describes how to download a pre-built version:\r\n\r\nhttp://alexgorbatchev.com/SyntaxHighlighter/download/\r\n\r\nAnd, a link to the installation / usage instructions:\r\n\r\nhttp://alexgorbatchev.com/SyntaxHighlighter/manual/installation.html",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+
+]

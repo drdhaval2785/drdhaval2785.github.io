@@ -1,0 +1,91 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/312",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/312/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/312/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/312/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/312",
+  "id": 35629735,
+  "number": 312,
+  "title": "Warning: ENOENT, no such file or directory",
+  "user": {
+    "login": "givanse",
+    "id": 431270,
+    "avatar_url": "https://avatars.githubusercontent.com/u/431270?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/givanse",
+    "html_url": "https://github.com/givanse",
+    "followers_url": "https://api.github.com/users/givanse/followers",
+    "following_url": "https://api.github.com/users/givanse/following{/other_user}",
+    "gists_url": "https://api.github.com/users/givanse/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/givanse/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/givanse/subscriptions",
+    "organizations_url": "https://api.github.com/users/givanse/orgs",
+    "repos_url": "https://api.github.com/users/givanse/repos",
+    "events_url": "https://api.github.com/users/givanse/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/givanse/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2014-06-12T22:33:05Z",
+  "updated_at": "2014-06-12T23:28:34Z",
+  "closed_at": "2014-06-12T23:28:27Z",
+  "body": "```\r\nRunning \"build_core\" task\r\nWarning: ENOENT, no such file or directory '/media/code/givanse/vendor/SyntaxHighlighter/components/xregexp/src/xregexp.js' Used --force, continuing.\r\n```\r\n\r\nAs suggested, I continued with:\r\n```\r\ngrunt build --force\r\n```\r\nHow do I solve that warning?",
+  "closed_by": {
+    "login": "givanse",
+    "id": 431270,
+    "avatar_url": "https://avatars.githubusercontent.com/u/431270?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/givanse",
+    "html_url": "https://github.com/givanse",
+    "followers_url": "https://api.github.com/users/givanse/followers",
+    "following_url": "https://api.github.com/users/givanse/following{/other_user}",
+    "gists_url": "https://api.github.com/users/givanse/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/givanse/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/givanse/subscriptions",
+    "organizations_url": "https://api.github.com/users/givanse/orgs",
+    "repos_url": "https://api.github.com/users/givanse/repos",
+    "events_url": "https://api.github.com/users/givanse/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/givanse/received_events",
+    "type": "User",
+    "site_admin": false
+  }
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/comments/45960484",
+    "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/312#issuecomment-45960484",
+    "issue_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/312",
+    "id": 45960484,
+    "user": {
+      "login": "givanse",
+      "id": 431270,
+      "avatar_url": "https://avatars.githubusercontent.com/u/431270?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/givanse",
+      "html_url": "https://github.com/givanse",
+      "followers_url": "https://api.github.com/users/givanse/followers",
+      "following_url": "https://api.github.com/users/givanse/following{/other_user}",
+      "gists_url": "https://api.github.com/users/givanse/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/givanse/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/givanse/subscriptions",
+      "organizations_url": "https://api.github.com/users/givanse/orgs",
+      "repos_url": "https://api.github.com/users/givanse/repos",
+      "events_url": "https://api.github.com/users/givanse/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/givanse/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2014-06-12T23:28:27Z",
+    "updated_at": "2014-06-12T23:28:34Z",
+    "body": "```\r\nmkdir components\r\ncd components\r\ngit clone https://github.com/slevithan/xregexp.git\r\ncd -\r\ngrunt build\r\n```"
+  }
+]

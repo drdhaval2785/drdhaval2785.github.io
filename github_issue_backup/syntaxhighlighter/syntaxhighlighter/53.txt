@@ -1,0 +1,46 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/53",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/53/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/53/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/53/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/53",
+  "id": 2108260,
+  "number": 53,
+  "title": "Small number disappear in \"plain\" mode",
+  "user": {
+    "login": "loicfevrier",
+    "id": 1164403,
+    "avatar_url": "https://avatars.githubusercontent.com/u/1164403?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/loicfevrier",
+    "html_url": "https://github.com/loicfevrier",
+    "followers_url": "https://api.github.com/users/loicfevrier/followers",
+    "following_url": "https://api.github.com/users/loicfevrier/following{/other_user}",
+    "gists_url": "https://api.github.com/users/loicfevrier/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/loicfevrier/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/loicfevrier/subscriptions",
+    "organizations_url": "https://api.github.com/users/loicfevrier/orgs",
+    "repos_url": "https://api.github.com/users/loicfevrier/repos",
+    "events_url": "https://api.github.com/users/loicfevrier/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/loicfevrier/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2011-11-01T08:39:32Z",
+  "updated_at": "2011-11-01T08:39:32Z",
+  "closed_at": null,
+  "body": "As you can see here : \r\nhttp://pix.toile-libre.org/?img=1320136666.png\r\n\r\nThere is a problem with small number in \"plain\" (html code on the left, result in the browser on the right)",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+
+]

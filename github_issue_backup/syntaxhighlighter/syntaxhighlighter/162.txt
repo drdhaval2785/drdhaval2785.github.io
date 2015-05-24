@@ -1,0 +1,73 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/162",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/162/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/162/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/162/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/162",
+  "id": 8102623,
+  "number": 162,
+  "title": "Error highlighting single <script /> tags",
+  "user": {
+    "login": "thesec",
+    "id": 91770,
+    "avatar_url": "https://avatars.githubusercontent.com/u/91770?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/thesec",
+    "html_url": "https://github.com/thesec",
+    "followers_url": "https://api.github.com/users/thesec/followers",
+    "following_url": "https://api.github.com/users/thesec/following{/other_user}",
+    "gists_url": "https://api.github.com/users/thesec/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/thesec/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/thesec/subscriptions",
+    "organizations_url": "https://api.github.com/users/thesec/orgs",
+    "repos_url": "https://api.github.com/users/thesec/repos",
+    "events_url": "https://api.github.com/users/thesec/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/thesec/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2012-11-05T11:52:03Z",
+  "updated_at": "2012-11-07T10:19:38Z",
+  "closed_at": null,
+  "body": "shCore.js' default setting\r\n\r\n```javascript\r\n/** Enables use of <SCRIPT type=\"syntaxhighlighter\" /> tags. */\r\nuseScriptTags : true,\r\n```\r\n\r\nis used twice in *findElements* and *highlight*.\r\n\r\nThe issue is within *findElements*, where\r\n\r\n```javascript\r\n// support for <SCRIPT TYPE=\"syntaxhighlighter\" /> feature\r\nif (conf.useScriptTags)\r\nelements = elements.concat(getSyntaxHighlighterScriptTags());\r\n```\r\n\r\nappends script tags even when a specific element has been passed in\r\n*highlight* uses the bool to strip CDATA or not.\r\n\r\n\r\n*findElements* should append script tags only when no element is passed in, probably it should look for sh.config.tagName being setup as 'script' as well?\r\n\r\n\r\n",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/comments/10068361",
+    "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/162#issuecomment-10068361",
+    "issue_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/162",
+    "id": 10068361,
+    "user": {
+      "login": "thesec",
+      "id": 91770,
+      "avatar_url": "https://avatars.githubusercontent.com/u/91770?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/thesec",
+      "html_url": "https://github.com/thesec",
+      "followers_url": "https://api.github.com/users/thesec/followers",
+      "following_url": "https://api.github.com/users/thesec/following{/other_user}",
+      "gists_url": "https://api.github.com/users/thesec/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/thesec/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/thesec/subscriptions",
+      "organizations_url": "https://api.github.com/users/thesec/orgs",
+      "repos_url": "https://api.github.com/users/thesec/repos",
+      "events_url": "https://api.github.com/users/thesec/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/thesec/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2012-11-05T12:13:39Z",
+    "updated_at": "2012-11-05T12:13:39Z",
+    "body": "... being added twice to the elements array in 'highlight' and replaced within that methods' for-loop the second element fails being parsed since it is no longer in DOM."
+  }
+]

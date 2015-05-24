@@ -1,0 +1,46 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/301",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/301/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/301/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/301/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/301",
+  "id": 31341820,
+  "number": 301,
+  "title": "Bower package is not pointing to this repo",
+  "user": {
+    "login": "sagikazarmark",
+    "id": 1226384,
+    "avatar_url": "https://avatars.githubusercontent.com/u/1226384?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/sagikazarmark",
+    "html_url": "https://github.com/sagikazarmark",
+    "followers_url": "https://api.github.com/users/sagikazarmark/followers",
+    "following_url": "https://api.github.com/users/sagikazarmark/following{/other_user}",
+    "gists_url": "https://api.github.com/users/sagikazarmark/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/sagikazarmark/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/sagikazarmark/subscriptions",
+    "organizations_url": "https://api.github.com/users/sagikazarmark/orgs",
+    "repos_url": "https://api.github.com/users/sagikazarmark/repos",
+    "events_url": "https://api.github.com/users/sagikazarmark/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/sagikazarmark/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2014-04-11T16:32:12Z",
+  "updated_at": "2014-04-11T16:32:12Z",
+  "closed_at": null,
+  "body": "The bower package with the name points to [this](https://github.com/ramitos/SyntaxHighlighter) repo",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+
+]

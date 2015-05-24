@@ -1,0 +1,91 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/206",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/206/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/206/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/206/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/206",
+  "id": 13709678,
+  "number": 206,
+  "title": "What's next?",
+  "user": {
+    "login": "aurium",
+    "id": 30254,
+    "avatar_url": "https://avatars.githubusercontent.com/u/30254?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/aurium",
+    "html_url": "https://github.com/aurium",
+    "followers_url": "https://api.github.com/users/aurium/followers",
+    "following_url": "https://api.github.com/users/aurium/following{/other_user}",
+    "gists_url": "https://api.github.com/users/aurium/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/aurium/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/aurium/subscriptions",
+    "organizations_url": "https://api.github.com/users/aurium/orgs",
+    "repos_url": "https://api.github.com/users/aurium/repos",
+    "events_url": "https://api.github.com/users/aurium/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/aurium/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2013-04-26T21:43:23Z",
+  "updated_at": "2013-12-16T19:06:59Z",
+  "closed_at": "2013-12-16T19:06:59Z",
+  "body": "Hi Alex and SyntaxHighlighter contributors,\r\n\r\nI see your call at the root README. Well, i can't say i have time to contribute, but i and others may try small things. So...\r\n* What are the interesting ideas?\r\n* What have you planed to the next iteration?\r\n* Have you a TODO list? (a roadmap file would be nice)",
+  "closed_by": {
+    "login": "alexgorbatchev",
+    "id": 65633,
+    "avatar_url": "https://avatars.githubusercontent.com/u/65633?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/alexgorbatchev",
+    "html_url": "https://github.com/alexgorbatchev",
+    "followers_url": "https://api.github.com/users/alexgorbatchev/followers",
+    "following_url": "https://api.github.com/users/alexgorbatchev/following{/other_user}",
+    "gists_url": "https://api.github.com/users/alexgorbatchev/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/alexgorbatchev/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/alexgorbatchev/subscriptions",
+    "organizations_url": "https://api.github.com/users/alexgorbatchev/orgs",
+    "repos_url": "https://api.github.com/users/alexgorbatchev/repos",
+    "events_url": "https://api.github.com/users/alexgorbatchev/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/alexgorbatchev/received_events",
+    "type": "User",
+    "site_admin": false
+  }
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/comments/17125714",
+    "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/206#issuecomment-17125714",
+    "issue_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/206",
+    "id": 17125714,
+    "user": {
+      "login": "alexgorbatchev",
+      "id": 65633,
+      "avatar_url": "https://avatars.githubusercontent.com/u/65633?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgorbatchev",
+      "html_url": "https://github.com/alexgorbatchev",
+      "followers_url": "https://api.github.com/users/alexgorbatchev/followers",
+      "following_url": "https://api.github.com/users/alexgorbatchev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgorbatchev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgorbatchev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgorbatchev/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgorbatchev/orgs",
+      "repos_url": "https://api.github.com/users/alexgorbatchev/repos",
+      "events_url": "https://api.github.com/users/alexgorbatchev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgorbatchev/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2013-04-28T00:07:32Z",
+    "updated_at": "2013-04-28T00:07:32Z",
+    "body": "Hey @aurium, thanks for being interested :) I've had a few things on my mind...\r\n\r\n1. Move rendering into iframe to avoid conflicts with css and remove !important from all styles\r\n2. Hide the line numbers by default and I have some neat ideas on rendering improvements\r\n3. Long shot features would be proper support for nested brushes\r\n4. Some testing using mocha or something more up to date\r\n\r\nWhat about you, any ideas?\r\n"
+  }
+]

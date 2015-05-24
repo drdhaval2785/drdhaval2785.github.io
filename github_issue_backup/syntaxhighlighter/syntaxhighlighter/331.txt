@@ -1,0 +1,46 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/331",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/331/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/331/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/331/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/331",
+  "id": 38231226,
+  "number": 331,
+  "title": "html-script + brush: css CRASH",
+  "user": {
+    "login": "wolf-w",
+    "id": 7399618,
+    "avatar_url": "https://avatars.githubusercontent.com/u/7399618?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/wolf-w",
+    "html_url": "https://github.com/wolf-w",
+    "followers_url": "https://api.github.com/users/wolf-w/followers",
+    "following_url": "https://api.github.com/users/wolf-w/following{/other_user}",
+    "gists_url": "https://api.github.com/users/wolf-w/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/wolf-w/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/wolf-w/subscriptions",
+    "organizations_url": "https://api.github.com/users/wolf-w/orgs",
+    "repos_url": "https://api.github.com/users/wolf-w/repos",
+    "events_url": "https://api.github.com/users/wolf-w/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/wolf-w/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2014-07-19T10:52:30Z",
+  "updated_at": "2014-07-19T10:52:30Z",
+  "closed_at": null,
+  "body": "&lt;script&gt; \r\n        SyntaxHighlighter.defaults['html-script'] = true;\r\n        SyntaxHighlighter.all();\r\n&lt;/script&gt; \r\nand \r\n&lt;pre class='brush: css'&gt; \r\nbody{\r\n    color: black;\r\n}\r\n&lt;/pre&gt; \r\n\r\n-The css would be completly marked as »htmlscript plain«\r\n\r\nIf html-script is »false« highlighter is doing his job.",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+
+]

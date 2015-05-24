@@ -1,0 +1,52 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/245",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/245/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/245/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/245/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/pull/245",
+  "id": 17343949,
+  "number": 245,
+  "title": "Updates for bower-specific folder changes and windows builds (covers things in issue 240)",
+  "user": {
+    "login": "mctrusty",
+    "id": 1463546,
+    "avatar_url": "https://avatars.githubusercontent.com/u/1463546?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/mctrusty",
+    "html_url": "https://github.com/mctrusty",
+    "followers_url": "https://api.github.com/users/mctrusty/followers",
+    "following_url": "https://api.github.com/users/mctrusty/following{/other_user}",
+    "gists_url": "https://api.github.com/users/mctrusty/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/mctrusty/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/mctrusty/subscriptions",
+    "organizations_url": "https://api.github.com/users/mctrusty/orgs",
+    "repos_url": "https://api.github.com/users/mctrusty/repos",
+    "events_url": "https://api.github.com/users/mctrusty/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/mctrusty/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2013-07-29T15:11:12Z",
+  "updated_at": "2013-07-29T15:12:56Z",
+  "closed_at": null,
+  "pull_request": {
+    "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/pulls/245",
+    "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/pull/245",
+    "diff_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/pull/245.diff",
+    "patch_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/pull/245.patch"
+  },
+  "body": "These updates should cover problems brought up in [issue 240](https://github.com/alexgorbatchev/SyntaxHighlighter/issues/240)\r\n\r\nI made some updates to build.coffee to point to bower-specific changes ([components -> bower_components](https://github.com/bower/bower/pull/435)). \r\n\r\nAlso made changes to get the build to run under Windows:\r\n1. Added `\\r` to the `variable.about.replace` regex to handle windows-specific line endings. That character wasn't getting picked up and it would cause the validation step to hang on windows builds.\r\n2. Put conditional in build.coffee to check for windows/non-windows to set the beginning of `dir` accordingly. I placed the variable `isWin` in the same location as the other variables to follow that file style and then used it in mkdir to initialize the `dir` variable. It covers [the case apollolux brought up on issue 240](https://github.com/alexgorbatchev/SyntaxHighlighter/issues/240#issuecomment-20236213). \r\n\r\nI also changed the javascript references in  tests to point to the new locations so that they would run. I wasn't sure if you were going to phase out qunit testing (and some of those files) -- that's what it looked like from previous changes -- but xregexp (for now, though I believe that changes in 3+) has a reference to qunit so I used it to make those work for the time being.\r\n\r\nLast, I added a README.md in the build folder with updated build instructions.\r\n\r\nBuild now seems to be working for me on Bodhi 2.3 with node 0.8.25 (using node-sass 0.3.0) and node 0.10.12 (node-sass 0.5.0) as well as on Windows7 under node 0.10. \r\n\r\nNotes:\r\n* I was originally going to add `node-sass` to the `devDependencies` but then found that the build wouldn't work under node 0.8. If I added `node-sass 0.3.x` instead, the build wouldn't work under node 0.10. So I left it out and just added that information to the build folder's README.md because I wasn't sure if you wanted to maintain support for node 0.8. \r\n* bower won't install anything on node versions pre-0.8. It will give a `TypeError: Object #<Object> has no method 'tmpDir'` because the `os` module [doesn't include `tmpDir` until 0.7.11](http://blog.nodejs.org/2012/06/15/version-0-7-11-unstable/)\r\n* There are libraries available (like [mkdirp](https://npmjs.org/package/mkdirp)) that might be of use in handling the `mkdir` functionality in build.coffee. I didn't really want to start adding dependencies and making those changes without some discussion.",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+
+]

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html class='' lang='en'>
+<head prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#'>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8'>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta http-equiv='Content-Language' content='en'>
+<title>syntaxhighlighter/syntaxhighlighter/143</title>
+<link href='github-c486157afcc5f58155a921bc675afb08733fbaa8dcf39ac2104d3.css' media='all' rel='stylesheet'>
+<link href='github2-da2e842cc3f0aaf33b727d0ef034243c12ab008fd09b24868b97.css' media='all' rel='stylesheet'>
+<meta http-equiv='x-pjax-version' content='4426702614c8182f33d1780ad1169662'>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shAutoloader.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAppleScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAS3.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushBash.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushColdFusion.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCpp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCSharp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCss.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDelphi.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDiff.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushErlang.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushGroovy.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJava.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJavaFX.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/syntaxhighlighter/scripts/shBrushJScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPerl.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPhp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPlain.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPowerShell.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPython.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushRuby.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSass.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushScala.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSql.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushVb.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushXml.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shLegacy.js'></script>
+	<link type='text/css' rel='stylesheet' href='syntaxhighlighter/styles/shCoreDefault.css'/>
+	<script type='text/javascript'>SyntaxHighlighter.all();</script>
+</head>
+<body class='logged_in  env-production windows vis-public'>
+<h1 align='center'><a href='https://github.com/syntaxhighlighter/syntaxhighlighter/issues/143' target='_blank'>SyntaxHighlighter should support being loaded with an AMD loader</h1><hr/><div id="#issue-6216802" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/graouts" class="author">graouts</a>
+    </strong>
+    commented on 
+    <a href="#issue-6216802" class="timestamp">
+      <time>2012-08-14 14:06:00</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I can't seem to load SyntaxHighlighter with curl.js, I always get the following in the WebKit console:</p>
+<p>ReferenceError: Can't find variable: SyntaxHighlighter
+Error: define() missing or duplicated: shBrushJScript.js </p>
+<p>I've created a Gist that should reproduce the issue <a href="https://gist.github.com/3349493">https://gist.github.com/3349493</a>. Is this a SyntaxHighlighter issue or a curl.js one?</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-7726750" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/graouts" class="author">graouts</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-7726750" class="timestamp">
+      <time>2012-08-14 14:06:31</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I've created an issue with curl.js here in case it's a problem in that library: <a href="https://github.com/cujojs/curl/issues/124">https://github.com/cujojs/curl/issues/124</a>.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-7754345" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/unscriptable" class="author">unscriptable</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-7754345" class="timestamp">
+      <time>2012-08-15 12:16:43</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Since SyntaxHighlighter's code is CJS Module-compatible, not AMD-compatible, there are some additional steps needed to use it in AMD.  See <a href="https://github.com/cujojs/curl/issues/124">https://github.com/cujojs/curl/issues/124</a>.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-7754880" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/graouts" class="author">graouts</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-7754880" class="timestamp">
+      <time>2012-08-15 12:47:19</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I've renamed this issue to clearly state that the issue is that it's not loadable as-is by an AMD loader. Is that a feature that should be added to SyntaxHighlighter?</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-7757442" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/unscriptable" class="author">unscriptable</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-7757442" class="timestamp">
+      <time>2012-08-15 14:37:00</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/graouts" target="_blank">@graouts</a></strong> it's looks like it might be a one-liner that could be added to shCore.js.  Something like this at the very end of the file:</p>
+<pre class="brush: js">if (typeof define == 'function' &amp;&amp; define.amd) define(function () { return SyntaxHighlighter; });</code></pre>
+<p>hm.. it looks like their code style is a bit different, so maybe the following?</p>
+<pre class="brush: js">typeof define == 'function' &amp;&amp; define.amd &amp;&amp; define(function () { return SyntaxHighlighter; });</code></pre>
+<p>Pull request? :)</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-26354409" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/alexgorbatchev" class="author">alexgorbatchev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-26354409" class="timestamp">
+      <time>2013-10-15 17:23:09</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I want to add UMD headers to all the files and make them AMD and CommonJS compatible. Do you guys have any suggestions for a time proven template?</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-26414424" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/unscriptable" class="author">unscriptable</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-26414424" class="timestamp">
+      <time>2013-10-16 12:46:34</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/alexgorbatchev" target="_blank">@alexgorbatchev</a></strong>: to which of the following environments would you like to export the SyntaxHighlighter constructor?</p>
+<ol>
+<li>browser globals</li>
+<li>AMD</li>
+<li>node</li>
+<li>other CommonJS environments that don't support node's extensions</li>
+</ol>
+<p>I may be able to suggest a UMD given the above.  Note: the more environments, the more the boilerplate. :)</p>
+<p>-- John</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-26470026" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/alexgorbatchev" class="author">alexgorbatchev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-26470026" class="timestamp">
+      <time>2013-10-17 00:08:48</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>All of the above :) including the brushes.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-35559650" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/neonstalwart" class="author">neonstalwart</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-35559650" class="timestamp">
+      <time>2014-02-19 22:47:29</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/unscriptable" target="_blank">@unscriptable</a></strong> did you ever come up with a suggestion?</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-35560581" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/csnover" class="author">csnover</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-35560581" class="timestamp">
+      <time>2014-02-19 22:57:21</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><a href="https://github.com/umdjs/umd/">https://github.com/umdjs/umd/</a> is the repo with formalised UMD patterns for use.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-35567394" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/unscriptable" class="author">unscriptable</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-35567394" class="timestamp">
+      <time>2014-02-20 00:00:51</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Oops, this fell off my radar.  We opted to use curl.js's CommonJS/node loader instead.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+</body></html>

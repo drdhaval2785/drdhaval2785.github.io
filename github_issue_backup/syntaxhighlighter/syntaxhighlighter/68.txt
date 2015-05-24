@@ -1,0 +1,73 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/68",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/68/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/68/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/68/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/68",
+  "id": 2576533,
+  "number": 68,
+  "title": "Do not highlight numbers which are part of an identifier",
+  "user": {
+    "login": "orfjackal",
+    "id": 42678,
+    "avatar_url": "https://avatars.githubusercontent.com/u/42678?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/orfjackal",
+    "html_url": "https://github.com/orfjackal",
+    "followers_url": "https://api.github.com/users/orfjackal/followers",
+    "following_url": "https://api.github.com/users/orfjackal/following{/other_user}",
+    "gists_url": "https://api.github.com/users/orfjackal/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/orfjackal/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/orfjackal/subscriptions",
+    "organizations_url": "https://api.github.com/users/orfjackal/orgs",
+    "repos_url": "https://api.github.com/users/orfjackal/repos",
+    "events_url": "https://api.github.com/users/orfjackal/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/orfjackal/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2011-12-16T05:29:03Z",
+  "updated_at": "2014-10-01T13:53:41Z",
+  "closed_at": null,
+  "body": "At least the Scala brush suffers from a case that if there is a variable called `file2` then it would highlight the number 2 from that identifier, resulting in `file` being black and `2` being green (on default theme). The expected behavior would be that the whole identifier is of the same color.\r\n\r\nHere is a quick fix for shBrushScala.js, but it would be good to check also the other brushes for similar bugs.\r\n\r\nFind:\r\n\r\n    regex: /0x[a-f0-9]+|\\d+(\\.\\d+)?/gi,\r\n\r\nReplace it with:\r\n\r\n    regex: /\\b0x[a-f0-9]+|\\b\\d+(\\.\\d+)?/gi,\r\n\r\nI'm using syntaxhighlighter 3.0.83",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/comments/57466068",
+    "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/68#issuecomment-57466068",
+    "issue_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/68",
+    "id": 57466068,
+    "user": {
+      "login": "kobell",
+      "id": 4549682,
+      "avatar_url": "https://avatars.githubusercontent.com/u/4549682?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/kobell",
+      "html_url": "https://github.com/kobell",
+      "followers_url": "https://api.github.com/users/kobell/followers",
+      "following_url": "https://api.github.com/users/kobell/following{/other_user}",
+      "gists_url": "https://api.github.com/users/kobell/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/kobell/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/kobell/subscriptions",
+      "organizations_url": "https://api.github.com/users/kobell/orgs",
+      "repos_url": "https://api.github.com/users/kobell/repos",
+      "events_url": "https://api.github.com/users/kobell/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/kobell/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2014-10-01T13:53:41Z",
+    "updated_at": "2014-10-01T13:53:41Z",
+    "body": "I found a similar issue with the CSS brush. Thanks for offering a fix."
+  }
+]

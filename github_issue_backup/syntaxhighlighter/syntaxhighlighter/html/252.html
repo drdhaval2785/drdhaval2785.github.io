@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html class='' lang='en'>
+<head prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#'>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8'>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta http-equiv='Content-Language' content='en'>
+<title>syntaxhighlighter/syntaxhighlighter/252</title>
+<link href='github-c486157afcc5f58155a921bc675afb08733fbaa8dcf39ac2104d3.css' media='all' rel='stylesheet'>
+<link href='github2-da2e842cc3f0aaf33b727d0ef034243c12ab008fd09b24868b97.css' media='all' rel='stylesheet'>
+<meta http-equiv='x-pjax-version' content='4426702614c8182f33d1780ad1169662'>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shAutoloader.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAppleScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAS3.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushBash.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushColdFusion.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCpp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCSharp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCss.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDelphi.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDiff.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushErlang.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushGroovy.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJava.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJavaFX.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/syntaxhighlighter/scripts/shBrushJScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPerl.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPhp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPlain.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPowerShell.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPython.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushRuby.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSass.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushScala.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSql.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushVb.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushXml.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shLegacy.js'></script>
+	<link type='text/css' rel='stylesheet' href='syntaxhighlighter/styles/shCoreDefault.css'/>
+	<script type='text/javascript'>SyntaxHighlighter.all();</script>
+</head>
+<body class='logged_in  env-production windows vis-public'>
+<h1 align='center'><a href='https://github.com/syntaxhighlighter/syntaxhighlighter/issues/252' target='_blank'>Special characters being escaped in custom brush</h1><hr/><div id="#issue-18524542" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/AussieJake" class="author">AussieJake</a>
+    </strong>
+    commented on 
+    <a href="#issue-18524542" class="timestamp">
+      <time>2013-08-25 18:17:12</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Hi everyone.</p>
+<p>I am creating a custom brush for assembly language which I use when programming micro electronics. (lets call it Asm)</p>
+<ul>
+<li>I have a webpage</li>
+<li>I have my code wrapped in pre class=&quot;brush: asm;&quot; tags</li>
+<li>I have Ran the script</li>
+<li>And have links to shCore.js / shBrushAsm.js / shCore .css / shCoreCustom.css.</li>
+</ul>
+<p>It is going well but have hit a wall when it comes to displaying special characters in combinations. They are being replaced, reformatted from the pre tag.</p>
+<p>My files are located here:
+Website with Code : <a href="http://jakeselectronics.net/ZQXprojects_digitaltemperaturesensor.php">http://jakeselectronics.net/ZQXprojects_digitaltemperaturesensor.php</a>
+Javascript Core: <a href="http://jakeselectronics.net/SyntaxHighlighter/scripts/shCore.js">http://jakeselectronics.net/SyntaxHighlighter/scripts/shCore.js</a>
+Javascript Custom Asm Brush: <a href="http://jakeselectronics.net/SyntaxHighlighter/scripts/shBrushAsm.js">http://jakeselectronics.net/SyntaxHighlighter/scripts/shBrushAsm.js</a>
+Css Core: <a href="http://jakeselectronics.net/SyntaxHighlighter/styles/shCore.css">http://jakeselectronics.net/SyntaxHighlighter/styles/shCore.css</a>
+Css Custom Colours: <a href="http://jakeselectronics.net/SyntaxHighlighter/styles/shCoreCustom.css">http://jakeselectronics.net/SyntaxHighlighter/styles/shCoreCustom.css</a></p>
+<p>Within the Asm.js file i have 2 lines which contain Regular Expressions to match comments, (anything proceeding a ';' in a line including the semi-colon), and also Arithmetical Operators, eg &lt;&lt;, !=, etc, see image for more examples.
+I have attached 4 images of the Asm.js code and the code output result as shown on webpage.
+I have commented the Regular Expression lines out alternatively to shown how the webpage displays things each time.
+Here are the image links below:
+Both lines commented out:
+<a href="http://jakeselectronics.net/SyntaxHighlighter/code%201.jpg">http://jakeselectronics.net/SyntaxHighlighter/code%201.jpg</a>
+Arithical Operators Regular Expression only commented out:
+<a href="http://jakeselectronics.net/SyntaxHighlighter/code%202.jpg">http://jakeselectronics.net/SyntaxHighlighter/code%202.jpg</a>
+Comments Regular Expression only commented out:
+<a href="http://jakeselectronics.net/SyntaxHighlighter/code%203.jpg">http://jakeselectronics.net/SyntaxHighlighter/code%203.jpg</a>
+Both NOT commented out and running
+<a href="http://jakeselectronics.net/SyntaxHighlighter/code%204.jpg">http://jakeselectronics.net/SyntaxHighlighter/code%204.jpg</a></p>
+<p>Sometimes when trying to display &lt;&lt; i get &lt;;
+and sometimes I get &lt;&lt; depending on which regular expression line I comment out.</p>
+<p>What is happening here?</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+</body></html>

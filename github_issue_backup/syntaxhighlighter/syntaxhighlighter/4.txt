@@ -1,0 +1,70 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/4",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/4/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/4/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/4/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/pull/4",
+  "id": 1369433,
+  "number": 4,
+  "title": "Fixed highlighting of PHP when mixed with HTML",
+  "user": {
+    "login": "jmm",
+    "id": 129203,
+    "avatar_url": "https://avatars.githubusercontent.com/u/129203?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jmm",
+    "html_url": "https://github.com/jmm",
+    "followers_url": "https://api.github.com/users/jmm/followers",
+    "following_url": "https://api.github.com/users/jmm/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jmm/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jmm/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jmm/subscriptions",
+    "organizations_url": "https://api.github.com/users/jmm/orgs",
+    "repos_url": "https://api.github.com/users/jmm/repos",
+    "events_url": "https://api.github.com/users/jmm/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jmm/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2011-08-09T00:39:36Z",
+  "updated_at": "2011-12-16T21:46:37Z",
+  "closed_at": "2011-12-16T21:46:37Z",
+  "pull_request": {
+    "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/pulls/4",
+    "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/pull/4",
+    "diff_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/pull/4.diff",
+    "patch_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/pull/4.patch"
+  },
+  "body": "I noticed that when used with the html-script option, SyntaxHighlighter didn't highlight PHP code between a PHP start tag and the end of the code snippet, when the PHP code goes to the end of the snippet and there is no PHP end tag.  By \"the end of the code snippet\", I mean what would be EOF if the code were in a file.\r\n\r\nThe PHP end tag is not required at the end of a file, and omitting it is considered a best practice in files that are not supposed to generate any output (such as a file that defines a class and is meant to be included by other scripts).\r\n\r\nHere is a really minimal example of the situation I'm talking about:\r\n\r\n```\r\n\r\n<div class=\"whatever\">\r\nBlah blah blah.\r\n</div>\r\n\r\n<?php\r\n\r\n$something = \"something\";\r\n\r\n```\r\n\r\n\r\nI modified SyntaxHighlighter to highlight PHP code in that situation.  I did that by adding a boolean property, `eof_end`, to `phpScriptTags`, then checking for that in `forHtmlScript()` and adding end of line (\"$\") as an alternative pattern to the end tag.\r\n\r\nI eventually noticed that `phpScriptTags` is also used for the Perl brush, and I don't know if Perl behaves the same as PHP (closing tag at EOF not necessary), so perhaps the information represented by `eof_end` needs to be set in the PHP brush instead. \r\n\r\nOr perhaps PHP and Perl need separate variables to define their start / end tag regexes.  Particularly because I changed `phpScriptTags.left` so that it can match `<?php`.  After I added the `eof_end` functionality, SyntaxHighlighter still wasn't highlighting everything quite right.  When using `<?php` as the start tag and not using a corresponding end tag (because the PHP code goes to EOF), it was highlighting the `<?` but not the `php`.\r\n\r\nPersonally, I'm not even sure I want it highlighting the PHP start and end tags when mixed with HTML.  It doesn't highlight them when not mixed with HTML.  But if it is going to highlight them, then I want it to apply the same highlighting to start tags that have a corresponding end tag, and start tags that don't have an end tag because the PHP code goes to EOF.\r\n\r\nJesse\r\n\r\n",
+  "closed_by": {
+    "login": "alexgorbatchev",
+    "id": 65633,
+    "avatar_url": "https://avatars.githubusercontent.com/u/65633?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/alexgorbatchev",
+    "html_url": "https://github.com/alexgorbatchev",
+    "followers_url": "https://api.github.com/users/alexgorbatchev/followers",
+    "following_url": "https://api.github.com/users/alexgorbatchev/following{/other_user}",
+    "gists_url": "https://api.github.com/users/alexgorbatchev/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/alexgorbatchev/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/alexgorbatchev/subscriptions",
+    "organizations_url": "https://api.github.com/users/alexgorbatchev/orgs",
+    "repos_url": "https://api.github.com/users/alexgorbatchev/repos",
+    "events_url": "https://api.github.com/users/alexgorbatchev/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/alexgorbatchev/received_events",
+    "type": "User",
+    "site_admin": false
+  }
+}
+BODY STARTS FROM HERE
+[
+
+]

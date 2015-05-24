@@ -1,0 +1,91 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/79",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/79/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/79/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/79/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/79",
+  "id": 2798594,
+  "number": 79,
+  "title": "Auto Closing CF Tags",
+  "user": {
+    "login": "webmasterjunkie",
+    "id": 1320031,
+    "avatar_url": "https://avatars.githubusercontent.com/u/1320031?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/webmasterjunkie",
+    "html_url": "https://github.com/webmasterjunkie",
+    "followers_url": "https://api.github.com/users/webmasterjunkie/followers",
+    "following_url": "https://api.github.com/users/webmasterjunkie/following{/other_user}",
+    "gists_url": "https://api.github.com/users/webmasterjunkie/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/webmasterjunkie/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/webmasterjunkie/subscriptions",
+    "organizations_url": "https://api.github.com/users/webmasterjunkie/orgs",
+    "repos_url": "https://api.github.com/users/webmasterjunkie/repos",
+    "events_url": "https://api.github.com/users/webmasterjunkie/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/webmasterjunkie/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2012-01-10T23:38:24Z",
+  "updated_at": "2012-01-11T00:10:14Z",
+  "closed_at": "2012-01-11T00:10:14Z",
+  "body": "I am having an issue where the script is auto closing my \"&lt;cfset /&gt;\" tags. Which are self closing tags. It appends a \"&lt;/cfset&gt;\" tag to the end of the containing pre. Is there a workaround to this?",
+  "closed_by": {
+    "login": "alexgorbatchev",
+    "id": 65633,
+    "avatar_url": "https://avatars.githubusercontent.com/u/65633?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/alexgorbatchev",
+    "html_url": "https://github.com/alexgorbatchev",
+    "followers_url": "https://api.github.com/users/alexgorbatchev/followers",
+    "following_url": "https://api.github.com/users/alexgorbatchev/following{/other_user}",
+    "gists_url": "https://api.github.com/users/alexgorbatchev/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/alexgorbatchev/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/alexgorbatchev/subscriptions",
+    "organizations_url": "https://api.github.com/users/alexgorbatchev/orgs",
+    "repos_url": "https://api.github.com/users/alexgorbatchev/repos",
+    "events_url": "https://api.github.com/users/alexgorbatchev/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/alexgorbatchev/received_events",
+    "type": "User",
+    "site_admin": false
+  }
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/comments/3439792",
+    "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/79#issuecomment-3439792",
+    "issue_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/79",
+    "id": 3439792,
+    "user": {
+      "login": "alexgorbatchev",
+      "id": 65633,
+      "avatar_url": "https://avatars.githubusercontent.com/u/65633?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgorbatchev",
+      "html_url": "https://github.com/alexgorbatchev",
+      "followers_url": "https://api.github.com/users/alexgorbatchev/followers",
+      "following_url": "https://api.github.com/users/alexgorbatchev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgorbatchev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgorbatchev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgorbatchev/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgorbatchev/orgs",
+      "repos_url": "https://api.github.com/users/alexgorbatchev/repos",
+      "events_url": "https://api.github.com/users/alexgorbatchev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgorbatchev/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2012-01-11T00:10:14Z",
+    "updated_at": "2012-01-11T00:10:14Z",
+    "body": "You have to escape opening angle brackets. Please see the manual. http://alexgorbatchev.com/SyntaxHighlighter/manual/installation.html"
+  }
+]

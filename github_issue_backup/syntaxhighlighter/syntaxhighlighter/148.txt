@@ -1,0 +1,101 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/148",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/148/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/148/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/148/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/148",
+  "id": 6834914,
+  "number": 148,
+  "title": "loading syntaxhighlighter with requirejs-jquery causes an error",
+  "user": {
+    "login": "newtonianb",
+    "id": 2313644,
+    "avatar_url": "https://avatars.githubusercontent.com/u/2313644?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/newtonianb",
+    "html_url": "https://github.com/newtonianb",
+    "followers_url": "https://api.github.com/users/newtonianb/followers",
+    "following_url": "https://api.github.com/users/newtonianb/following{/other_user}",
+    "gists_url": "https://api.github.com/users/newtonianb/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/newtonianb/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/newtonianb/subscriptions",
+    "organizations_url": "https://api.github.com/users/newtonianb/orgs",
+    "repos_url": "https://api.github.com/users/newtonianb/repos",
+    "events_url": "https://api.github.com/users/newtonianb/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/newtonianb/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 2,
+  "created_at": "2012-09-12T23:27:52Z",
+  "updated_at": "2013-07-21T02:30:33Z",
+  "closed_at": null,
+  "body": "I am trying to load the 'syntaxhighlighter' module with 'require-js' but am getting the following error 'Uncaught Error: Module name 'shCore' has not been loaded yet for context: _'. The only way I can get this to work is to load the javascript libraries before loading the requirejs library.\n\n// and this throws the error\ndefine([\n  'lib/load',\n  'lib/syntaxhighlighter/scripts/shCore.js',\n  'lib/syntaxhighlighter/scripts/shBrushPerl.js',\n], function(emc) {\n\n\n});\n\n",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/comments/13225319",
+    "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/148#issuecomment-13225319",
+    "issue_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/148",
+    "id": 13225319,
+    "user": {
+      "login": "boban984",
+      "id": 1124994,
+      "avatar_url": "https://avatars.githubusercontent.com/u/1124994?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/boban984",
+      "html_url": "https://github.com/boban984",
+      "followers_url": "https://api.github.com/users/boban984/followers",
+      "following_url": "https://api.github.com/users/boban984/following{/other_user}",
+      "gists_url": "https://api.github.com/users/boban984/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/boban984/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/boban984/subscriptions",
+      "organizations_url": "https://api.github.com/users/boban984/orgs",
+      "repos_url": "https://api.github.com/users/boban984/repos",
+      "events_url": "https://api.github.com/users/boban984/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/boban984/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2013-02-07T07:51:03Z",
+    "updated_at": "2013-02-07T07:51:03Z",
+    "body": "I have the same issue ,  i tried to remove the code that uses require inside the script but than it breaks.\r\nI can't believe this issue is open 5 months."
+  },
+  {
+    "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/comments/21304013",
+    "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/148#issuecomment-21304013",
+    "issue_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/148",
+    "id": 21304013,
+    "user": {
+      "login": "azumbrunnen",
+      "id": 113188,
+      "avatar_url": "https://avatars.githubusercontent.com/u/113188?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/azumbrunnen",
+      "html_url": "https://github.com/azumbrunnen",
+      "followers_url": "https://api.github.com/users/azumbrunnen/followers",
+      "following_url": "https://api.github.com/users/azumbrunnen/following{/other_user}",
+      "gists_url": "https://api.github.com/users/azumbrunnen/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/azumbrunnen/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/azumbrunnen/subscriptions",
+      "organizations_url": "https://api.github.com/users/azumbrunnen/orgs",
+      "repos_url": "https://api.github.com/users/azumbrunnen/repos",
+      "events_url": "https://api.github.com/users/azumbrunnen/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/azumbrunnen/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2013-07-21T02:30:33Z",
+    "updated_at": "2013-07-21T02:30:33Z",
+    "body": "really too bad. can't use it because of this. any alternative??"
+  }
+]

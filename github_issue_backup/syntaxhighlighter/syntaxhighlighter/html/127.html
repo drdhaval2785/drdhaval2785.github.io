@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html class='' lang='en'>
+<head prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#'>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8'>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta http-equiv='Content-Language' content='en'>
+<title>syntaxhighlighter/syntaxhighlighter/127</title>
+<link href='github-c486157afcc5f58155a921bc675afb08733fbaa8dcf39ac2104d3.css' media='all' rel='stylesheet'>
+<link href='github2-da2e842cc3f0aaf33b727d0ef034243c12ab008fd09b24868b97.css' media='all' rel='stylesheet'>
+<meta http-equiv='x-pjax-version' content='4426702614c8182f33d1780ad1169662'>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shAutoloader.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAppleScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAS3.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushBash.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushColdFusion.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCpp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCSharp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCss.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDelphi.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDiff.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushErlang.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushGroovy.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJava.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJavaFX.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/syntaxhighlighter/scripts/shBrushJScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPerl.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPhp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPlain.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPowerShell.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPython.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushRuby.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSass.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushScala.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSql.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushVb.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushXml.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shLegacy.js'></script>
+	<link type='text/css' rel='stylesheet' href='syntaxhighlighter/styles/shCoreDefault.css'/>
+	<script type='text/javascript'>SyntaxHighlighter.all();</script>
+</head>
+<body class='logged_in  env-production windows vis-public'>
+<h1 align='center'><a href='https://github.com/syntaxhighlighter/syntaxhighlighter/issues/127' target='_blank'>Getting error when using xregexp 2.0.0</h1><hr/><div id="#issue-5126956" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/scootergrisen" class="author">scootergrisen</a>
+    </strong>
+    commented on 
+    <a href="#issue-5126956" class="timestamp">
+      <time>2012-06-18 15:48:54</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I tryed downloade the latest xregexp version 2.0.0 at <a href="http://xregexp.com/">http://xregexp.com/</a> but this causes a error with in the ShCore.js at line 759 :
+var value = match.value</p>
+<p>It works when using xregexp 1.5.1.</p>
+<p>Also maby change to linie to something like :
+var value = (match.value || '').replace(/^['&quot;]|['&quot;]$/g, '');
+if(!value &amp;&amp; arrayRegex.test(value)) { </p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-6405277" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/slevithan" class="author">slevithan</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-6405277" class="timestamp">
+      <time>2012-06-18 18:46:14</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>The solution for this is for <strong><a href="https://github.com/alexgorbatchev" target="_blank">@alexgorbatchev</a></strong> to merge pull request #121, which adds XRegExp 2.0.0 and makes some other necessary tweaks.</p>
+<p>Until that's done, there are two different ways you can address this. You can either include the patches I submitted in <a href='121.html' target='_blank'>#121</a> in your own copy of the repository, or you can simply run the following line of JavaScript after loading XRegExp 2.0.0 and before loading SyntaxHighlighter:</p>
+<pre class="brush: js">XRegExp.install('natives');</code></pre>
+<p>That overrides native regex methods with extended versions as was done automatically in v1.5.1. If you include the patches in the pull request I referenced, you don't need that line.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-6406312" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/scootergrisen" class="author">scootergrisen</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-6406312" class="timestamp">
+      <time>2012-06-18 19:22:02</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Ok cool.
+I just use version 1.5.1 for now.</p>
+<p>Im new at this githug so dont know if im supose to write these errors and such here in issues.</p>
+<p>For example i also have problems with &nbsp; being inserted on blanklinies that gets copien when you select the code and paste in you texteditor, its a little annoying.
+So im a supose to write that in issues ?</p>
+<p>What about &quot;pull requests&quot; whats that for ?</p>
+<p>Will alex make the changes or im i supose to editor the code and uploade the changes if i find i solution ?</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-6408023" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/slevithan" class="author">slevithan</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-6408023" class="timestamp">
+      <time>2012-06-18 20:26:48</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Pull requests are for submitting fixes or other changes yourself. You don't have to do so, but it might lead to the issue being fixed more quickly.</p>
+<p>You should open a new issue for the thing you mentioned about copying and pasting blank lines, rather than using a single issue to discuss all of your problems. It is polite to open a new issue for each problem you run into, if there isn't already an open issue for it. This advice is not specific to GitHub. Developers for any project generally appreciate that, regardless of where the project is hosted.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-6408556" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/scootergrisen" class="author">scootergrisen</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-6408556" class="timestamp">
+      <time>2012-06-18 20:47:59</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Ok thanks.
+I will try and se if i can help with how to fix some of the problems im having so i can come into new releases.
+I seem that syntaxhighlighter issent updated so often but maby thats just because it works well.
+Hope that alex has not stopped updating.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-18703320" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/alexgorbatchev" class="author">alexgorbatchev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-18703320" class="timestamp">
+      <time>2013-05-30 19:43:37</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Think <a href="https://github.com/alexgorbatchev/SyntaxHighlighter/commit/36b637d6ec1dd2d91390b85efde10b2d61cb8968">https://github.com/alexgorbatchev/SyntaxHighlighter/commit/36b637d6ec1dd2d91390b85efde10b2d61cb8968</a> addresses xregexp 2 issues. </p>
+  </div>
+  </div>
+  </div>
+  <br/>
+</body></html>

@@ -1,0 +1,91 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/125",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/125/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/125/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/125/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/125",
+  "id": 4995005,
+  "number": 125,
+  "title": "Validation error",
+  "user": {
+    "login": "scootergrisen",
+    "id": 1836590,
+    "avatar_url": "https://avatars.githubusercontent.com/u/1836590?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/scootergrisen",
+    "html_url": "https://github.com/scootergrisen",
+    "followers_url": "https://api.github.com/users/scootergrisen/followers",
+    "following_url": "https://api.github.com/users/scootergrisen/following{/other_user}",
+    "gists_url": "https://api.github.com/users/scootergrisen/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/scootergrisen/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/scootergrisen/subscriptions",
+    "organizations_url": "https://api.github.com/users/scootergrisen/orgs",
+    "repos_url": "https://api.github.com/users/scootergrisen/repos",
+    "events_url": "https://api.github.com/users/scootergrisen/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/scootergrisen/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2012-06-10T23:58:17Z",
+  "updated_at": "2013-05-31T00:16:14Z",
+  "closed_at": "2013-05-31T00:16:14Z",
+  "body": "When trying to validate my code at W3C i get this error :\n\"Bad value syntaxhighlighter for attribute type on element script: Subtype missing.\"\n<script type=\"syntaxhighlighter\"...\n\nGuess it should be <script type=\"text/syntaxhighlighter\"... or something.\n\nCan this be fixed so the code can validate ? I use HTML 5.",
+  "closed_by": {
+    "login": "scootergrisen",
+    "id": 1836590,
+    "avatar_url": "https://avatars.githubusercontent.com/u/1836590?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/scootergrisen",
+    "html_url": "https://github.com/scootergrisen",
+    "followers_url": "https://api.github.com/users/scootergrisen/followers",
+    "following_url": "https://api.github.com/users/scootergrisen/following{/other_user}",
+    "gists_url": "https://api.github.com/users/scootergrisen/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/scootergrisen/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/scootergrisen/subscriptions",
+    "organizations_url": "https://api.github.com/users/scootergrisen/orgs",
+    "repos_url": "https://api.github.com/users/scootergrisen/repos",
+    "events_url": "https://api.github.com/users/scootergrisen/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/scootergrisen/received_events",
+    "type": "User",
+    "site_admin": false
+  }
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/comments/18716641",
+    "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/125#issuecomment-18716641",
+    "issue_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/125",
+    "id": 18716641,
+    "user": {
+      "login": "scootergrisen",
+      "id": 1836590,
+      "avatar_url": "https://avatars.githubusercontent.com/u/1836590?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/scootergrisen",
+      "html_url": "https://github.com/scootergrisen",
+      "followers_url": "https://api.github.com/users/scootergrisen/followers",
+      "following_url": "https://api.github.com/users/scootergrisen/following{/other_user}",
+      "gists_url": "https://api.github.com/users/scootergrisen/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/scootergrisen/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/scootergrisen/subscriptions",
+      "organizations_url": "https://api.github.com/users/scootergrisen/orgs",
+      "repos_url": "https://api.github.com/users/scootergrisen/repos",
+      "events_url": "https://api.github.com/users/scootergrisen/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/scootergrisen/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2013-05-31T00:16:14Z",
+    "updated_at": "2013-05-31T00:16:14Z",
+    "body": "I made a commit about it so it should be fixed in future versions."
+  }
+]

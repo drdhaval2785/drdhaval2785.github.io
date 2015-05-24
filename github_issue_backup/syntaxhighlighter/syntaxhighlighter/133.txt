@@ -1,0 +1,73 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/133",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/133/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/133/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/133/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/133",
+  "id": 5275980,
+  "number": 133,
+  "title": "Wish: Add defered loading of brushes to the autoloader",
+  "user": {
+    "login": "siebenschlaefer",
+    "id": 1228739,
+    "avatar_url": "https://avatars.githubusercontent.com/u/1228739?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/siebenschlaefer",
+    "html_url": "https://github.com/siebenschlaefer",
+    "followers_url": "https://api.github.com/users/siebenschlaefer/followers",
+    "following_url": "https://api.github.com/users/siebenschlaefer/following{/other_user}",
+    "gists_url": "https://api.github.com/users/siebenschlaefer/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/siebenschlaefer/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/siebenschlaefer/subscriptions",
+    "organizations_url": "https://api.github.com/users/siebenschlaefer/orgs",
+    "repos_url": "https://api.github.com/users/siebenschlaefer/repos",
+    "events_url": "https://api.github.com/users/siebenschlaefer/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/siebenschlaefer/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2012-06-26T15:20:14Z",
+  "updated_at": "2012-06-27T08:09:15Z",
+  "closed_at": null,
+  "body": "SyntaxHighlighter.all(params) executes .highlight(params) on window.load:\n```javascript\n\tall: function(params)\n\t{\n\t\tattachEvent(\n\t\t\twindow,\n\t\t\t'load',\n\t\t\tfunction() { sh.highlight(params); }\n\t\t);\n\t}\n```\n\nCould there be a similar function for the autoloader? Something like:\n```javascript\n\tautoload: function(brushes)\n\t{\n\t\tattachEvent(\n\t\t\twindow,\n\t\t\t'load',\n\t\t\tfunction() { sh.autoloader(brushes); }\n\t\t);\n\t}\n```\n\nDisclaimer: I don't know much about JS, so maybe I missed this functionality in the existing codebase.\nThe snippet above needs attachEvent which is not available outside of shCore.js.",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/comments/6597235",
+    "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/133#issuecomment-6597235",
+    "issue_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/133",
+    "id": 6597235,
+    "user": {
+      "login": "siebenschlaefer",
+      "id": 1228739,
+      "avatar_url": "https://avatars.githubusercontent.com/u/1228739?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/siebenschlaefer",
+      "html_url": "https://github.com/siebenschlaefer",
+      "followers_url": "https://api.github.com/users/siebenschlaefer/followers",
+      "following_url": "https://api.github.com/users/siebenschlaefer/following{/other_user}",
+      "gists_url": "https://api.github.com/users/siebenschlaefer/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/siebenschlaefer/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/siebenschlaefer/subscriptions",
+      "organizations_url": "https://api.github.com/users/siebenschlaefer/orgs",
+      "repos_url": "https://api.github.com/users/siebenschlaefer/repos",
+      "events_url": "https://api.github.com/users/siebenschlaefer/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/siebenschlaefer/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2012-06-27T08:09:15Z",
+    "updated_at": "2012-06-27T08:09:15Z",
+    "body": "Actually, this works for me:\n\n```javascript\n   SyntaxHighlighter.autoload = function(brushes)\n    {\n        function handler(e)\n        {\n            e = e || window.event;\n\n            if (!e.target)\n            {\n                e.target = e.srcElement;\n                e.preventDefault = function()\n                {\n                    this.returnValue = false;\n                };\n            }\n            SyntaxHighlighter.autoloader.apply(this, brushes);\n            SyntaxHighlighter.all();\n        };\n\n        if (window.attachEvent)\n        {\n            window.attachEvent('on' + 'load', handler);\n        }\n        else\n        {\n            window.addEventListener('load', handler, false);\n        }\n    }\n\n    function addPath(path, array)\n    {\n      var result = [];\n      for (var i = 0; i < array.length; ++i)\n      {\n        var elem = array[i].slice();\n        elem[elem.length - 1] = path + elem[elem.length - 1];\n        result.push(elem);\n      }\n      return result;\n    }\n\n    SyntaxHighlighter.autoload(\n        addPath('/static/syntaxhighlighter/scripts/', [\n        ['applescript', 'shBrushAppleScript.js'],\n        ['actionscript3', 'as3', 'shBrushAS3.js'],\n        ['bash', 'shell', 'shBrushBash.js'],\n        ['coldfusion', 'cf', 'shBrushColdFusion.js'],\n        ['cpp', 'c', 'shBrushCpp.js'],\n        ['c#', 'c-sharp', 'csharp', 'shBrushCSharp.js'],\n        ['css', 'shBrushCss.js'],\n        ['delphi', 'pascal', 'shBrushDelphi.js'],\n        ['diff', 'patch', 'pas', 'shBrushDiff.js'],\n        ['erl', 'erlang', 'shBrushErlang.js'],\n        ['groovy', 'shBrushGroovy.js'],\n        ['java', 'shBrushJava.js'],\n        ['jfx', 'javafx', 'shBrushJavaFX.js'],\n        ['js', 'jscript', 'javascript', 'shBrushJScript.js'],\n        ['perl', 'pl', 'shBrushPerl.js'],\n        ['php', 'shBrushPhp.js'],\n        ['text', 'plain', 'shBrushPlain.js'],\n        ['py', 'python', 'shBrushPython.js'],\n        ['ruby', 'rails', 'ror', 'rb', 'shBrushRuby.js'],\n        ['sass', 'scss', 'shBrushSass.js'],\n        ['scala', 'shBrushScala.js'],\n        ['sql', 'shBrushSql.js'],\n        ['vb', 'vbnet', 'shBrushVb.js'],\n        ['xml', 'xhtml', 'xslt', 'html', 'shBrushXml.js']\n        ]));\n```\n\nBut couldn't a method like `SyntaxHighlighter.autoload(brushes)` from above become part of the library?"
+  }
+]

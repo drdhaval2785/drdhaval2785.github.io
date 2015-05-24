@@ -1,0 +1,91 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/9",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/9/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/9/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/9/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/9",
+  "id": 1421000,
+  "number": 9,
+  "title": "Renders with spaces between lines",
+  "user": {
+    "login": "yaroslavvb",
+    "id": 23068,
+    "avatar_url": "https://avatars.githubusercontent.com/u/23068?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/yaroslavvb",
+    "html_url": "https://github.com/yaroslavvb",
+    "followers_url": "https://api.github.com/users/yaroslavvb/followers",
+    "following_url": "https://api.github.com/users/yaroslavvb/following{/other_user}",
+    "gists_url": "https://api.github.com/users/yaroslavvb/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/yaroslavvb/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/yaroslavvb/subscriptions",
+    "organizations_url": "https://api.github.com/users/yaroslavvb/orgs",
+    "repos_url": "https://api.github.com/users/yaroslavvb/repos",
+    "events_url": "https://api.github.com/users/yaroslavvb/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/yaroslavvb/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2011-08-17T06:44:42Z",
+  "updated_at": "2013-12-13T22:11:21Z",
+  "closed_at": "2013-12-13T22:11:21Z",
+  "body": "I tried both script and pre class methods, and I get empty lines between my lines\r\n\r\nFor instance this \r\n<pre class=\"brush:plain\">\r\ntar -xf package.tar\r\ncd cde-package/cde-root/temp\r\n../../cde-exec python -c \"from scipy import *; print ones(15)\"\r\n</pre>\r\n\r\nshows as\r\n<pre>\r\n1  tar -xf package.tar\r\n2\r\n3  cd cde-package/cde-root/temp\r\n4\r\n5 ../../cde-exec python -c \"from scipy import *; print ones(15)\"\r\n</pre>\r\nhttp://yaroslavvb.blogspot.com/2011/08/making-self-contained-unix-programs.html",
+  "closed_by": {
+    "login": "alexgorbatchev",
+    "id": 65633,
+    "avatar_url": "https://avatars.githubusercontent.com/u/65633?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/alexgorbatchev",
+    "html_url": "https://github.com/alexgorbatchev",
+    "followers_url": "https://api.github.com/users/alexgorbatchev/followers",
+    "following_url": "https://api.github.com/users/alexgorbatchev/following{/other_user}",
+    "gists_url": "https://api.github.com/users/alexgorbatchev/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/alexgorbatchev/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/alexgorbatchev/subscriptions",
+    "organizations_url": "https://api.github.com/users/alexgorbatchev/orgs",
+    "repos_url": "https://api.github.com/users/alexgorbatchev/repos",
+    "events_url": "https://api.github.com/users/alexgorbatchev/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/alexgorbatchev/received_events",
+    "type": "User",
+    "site_admin": false
+  }
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/comments/30547886",
+    "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/9#issuecomment-30547886",
+    "issue_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/9",
+    "id": 30547886,
+    "user": {
+      "login": "alexgorbatchev",
+      "id": 65633,
+      "avatar_url": "https://avatars.githubusercontent.com/u/65633?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgorbatchev",
+      "html_url": "https://github.com/alexgorbatchev",
+      "followers_url": "https://api.github.com/users/alexgorbatchev/followers",
+      "following_url": "https://api.github.com/users/alexgorbatchev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgorbatchev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgorbatchev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgorbatchev/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgorbatchev/orgs",
+      "repos_url": "https://api.github.com/users/alexgorbatchev/repos",
+      "events_url": "https://api.github.com/users/alexgorbatchev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgorbatchev/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2013-12-13T22:11:21Z",
+    "updated_at": "2013-12-13T22:11:21Z",
+    "body": "Did you figure this out? Seems like your `pre` tags use `<br>` for new lines... i don't remember what behavior it would cause."
+  }
+]

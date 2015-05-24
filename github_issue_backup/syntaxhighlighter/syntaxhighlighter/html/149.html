@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html class='' lang='en'>
+<head prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#'>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8'>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta http-equiv='Content-Language' content='en'>
+<title>syntaxhighlighter/syntaxhighlighter/149</title>
+<link href='github-c486157afcc5f58155a921bc675afb08733fbaa8dcf39ac2104d3.css' media='all' rel='stylesheet'>
+<link href='github2-da2e842cc3f0aaf33b727d0ef034243c12ab008fd09b24868b97.css' media='all' rel='stylesheet'>
+<meta http-equiv='x-pjax-version' content='4426702614c8182f33d1780ad1169662'>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shAutoloader.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAppleScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAS3.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushBash.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushColdFusion.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCpp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCSharp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCss.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDelphi.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDiff.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushErlang.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushGroovy.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJava.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJavaFX.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/syntaxhighlighter/scripts/shBrushJScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPerl.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPhp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPlain.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPowerShell.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPython.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushRuby.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSass.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushScala.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSql.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushVb.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushXml.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shLegacy.js'></script>
+	<link type='text/css' rel='stylesheet' href='syntaxhighlighter/styles/shCoreDefault.css'/>
+	<script type='text/javascript'>SyntaxHighlighter.all();</script>
+</head>
+<body class='logged_in  env-production windows vis-public'>
+<h1 align='center'><a href='https://github.com/syntaxhighlighter/syntaxhighlighter/issues/149' target='_blank'>getting Â Â characters instead of spaces</h1><hr/><div id="#issue-7056907" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/carlschooff" class="author">carlschooff</a>
+    </strong>
+    commented on 
+    <a href="#issue-7056907" class="timestamp">
+      <time>2012-09-22 02:55:24</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Hi,</p>
+<p>I am getting an odd issue on the mac. When my code is copied from a rendered syntaxHighlighter block and then pasted into dreamweaver's code view it looks great. When I try to view the webpage it renders those Â Â characters and doing &quot;view source&quot; reveals many of them. </p>
+<p>For instance if I copy code from your smart-tabs demo:</p>
+<p><a href="http://alexgorbatchev.com/SyntaxHighlighter/manual/demo/smart-tabs.html">http://alexgorbatchev.com/SyntaxHighlighter/manual/demo/smart-tabs.html</a></p>
+<p>and paste it into the body tag of a dreamweaver html doc it renders like this:</p>
+<p><a href="http://snorkl.tv/dev/syntaxbug/syntaxbug.html">http://snorkl.tv/dev/syntaxbug/syntaxbug.html</a></p>
+<p>I would think I would just be copying plain text along with some spaces, but if you do a &quot;view source&quot; you'll see:
+Â Â hello there!Â Â Â  ya!
+12Â Â Â  helloÂ Â Â Â Â Â Â Â Â Â  ya!</p>
+<p>Â Â Â Â hello there!Â Â Â  ya!
+12Â Â Â  helloÂ Â Â Â Â Â Â Â Â Â Â  ya!</p>
+<hr />
+<p>Here is a more typical example including a full syntaxHighlighter block of rendered html/css/js:
+<a href="http://snorkl.tv/dev/syntaxbug/syntaxbug2.html">http://snorkl.tv/dev/syntaxbug/syntaxbug2.html</a></p>
+<p>When that code is pasted into a new html file it renders like this: <a href="http://snorkl.tv/dev/syntaxbug/syntaxbug2_output.html">http://snorkl.tv/dev/syntaxbug/syntaxbug2_output.html</a></p>
+<hr />
+<p>I look forward to your response. Been loving syntaxHighlighter's many features.</p>
+<p>thanks</p>
+<p>Carl</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-19678245" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/oberstet" class="author">oberstet</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-19678245" class="timestamp">
+      <time>2013-06-19 11:36:54</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I have the same problem: Firefox and IE10 works, Chrome not.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-36622822" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/laurentbristiel" class="author">laurentbristiel</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-36622822" class="timestamp">
+      <time>2014-03-04 13:21:56</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I have the same problem with Chrome, both on Mac and Linux. (no problem on Firefox).
+Does anyone have a feeling if the problem comes from syntaxhighlighter or Chrome?</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-36636912" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/laurentbristiel" class="author">laurentbristiel</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-36636912" class="timestamp">
+      <time>2014-03-04 15:37:08</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I think this is a duplicate of <a href="https://github.com/alexgorbatchev/syntaxhighlighter/issues/31">https://github.com/alexgorbatchev/syntaxhighlighter/issues/31</a>
+which was fixed some time ago.
+<strong><a href="https://github.com/oberset" target="_blank">@oberset</a></strong> <strong><a href="https://github.com/carlschooff" target="_blank">@carlschooff</a></strong> : maybe you could try with a newer version and tell us if you still have the problem?</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+</body></html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html class='' lang='en'>
+<head prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#'>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8'>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta http-equiv='Content-Language' content='en'>
+<title>syntaxhighlighter/syntaxhighlighter/343</title>
+<link href='github-c486157afcc5f58155a921bc675afb08733fbaa8dcf39ac2104d3.css' media='all' rel='stylesheet'>
+<link href='github2-da2e842cc3f0aaf33b727d0ef034243c12ab008fd09b24868b97.css' media='all' rel='stylesheet'>
+<meta http-equiv='x-pjax-version' content='4426702614c8182f33d1780ad1169662'>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shAutoloader.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAppleScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAS3.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushBash.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushColdFusion.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCpp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCSharp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCss.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDelphi.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDiff.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushErlang.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushGroovy.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJava.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJavaFX.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/syntaxhighlighter/scripts/shBrushJScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPerl.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPhp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPlain.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPowerShell.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPython.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushRuby.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSass.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushScala.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSql.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushVb.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushXml.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shLegacy.js'></script>
+	<link type='text/css' rel='stylesheet' href='syntaxhighlighter/styles/shCoreDefault.css'/>
+	<script type='text/javascript'>SyntaxHighlighter.all();</script>
+</head>
+<body class='logged_in  env-production windows vis-public'>
+<h1 align='center'><a href='https://github.com/syntaxhighlighter/syntaxhighlighter/issues/343' target='_blank'><t> and <l> in XML brush turns to &lt;t></h1><hr/><div id="#issue-43292470" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/LaKing" class="author">LaKing</a>
+    </strong>
+    commented on 
+    <a href="#issue-43292470" class="timestamp">
+      <time>2014-09-19 23:34:31</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><code>&lt;t&gt;</code> in XML brush turns to <code>&amp;lt;t&gt;</code>,  where  the highlight is on the first t of the encoded &lt;.
+.. but anything else appears to be ok. eg, <code>&lt;tx&gt;</code> <code>&lt;a&gt;</code> .. etc.</p>
+<p>This is an issue for us, in etherpad lite / ep_codepad, as it breaks the editor.</p>
+<p>We are working on it, any help, or hints appreciated.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-56475275" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/MarlonRodriguez" class="author">MarlonRodriguez</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-56475275" class="timestamp">
+      <time>2014-09-23 04:30:22</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>That looks like when you set up the brush using \<pre> tags instead of \<script>.  Is that how it does it?  You didnt provide examples of the problem or a link to where the code is broken.
+you are saying this happens right:
+\<xml>
+\&lt;t&gt;\&lt;t&gt;
+\</xml></p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-56507123" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/LaKing" class="author">LaKing</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-56507123" class="timestamp">
+      <time>2014-09-23 11:37:30</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>It does not metter what method is used, pre or script, Both behave ~identically.</p>
+<p><img src="https://cloud.githubusercontent.com/assets/2204838/4371535/f59ea14c-4318-11e4-8342-43cbf113c144.png" alt="screenshot from 2014-09-23 13 57 06" /></p>
+<p>This is the project:
+<a href="https://www.npmjs.org/package/ep_codepad">https://www.npmjs.org/package/ep_codepad</a>
+<a href="https://github.com/LaKing/ep_codepad">https://github.com/LaKing/ep_codepad</a></p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-57451555" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/LaKing" class="author">LaKing</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-57451555" class="timestamp">
+      <time>2014-10-01 11:42:03</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I noticed the same behaviour with the <code>&lt;l&gt;</code> tag. Highlights the l of the encoded &quot;&lt;&quot;.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-58187100" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/alexgorbatchev" class="author">alexgorbatchev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-58187100" class="timestamp">
+      <time>2014-10-07 13:53:12</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><a href="http://alexgorbatchev.com/SyntaxHighlighter/manual/installation.html">http://alexgorbatchev.com/SyntaxHighlighter/manual/installation.html</a></p>
+<blockquote>
+<p>PROBLEMS: Major issue with this method is that all right angle brackets must be HTML escaped, eg all &lt; must be replaced with &lt; This will ensure correct rendering.</p>
+</blockquote>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-58266684" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/LaKing" class="author">LaKing</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-58266684" class="timestamp">
+      <time>2014-10-07 21:34:24</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>As you see on the source, white right side of the attached image, the &lt; is HTML escaped. The green left side is the rendered text.</p>
+<p>However, this is not an issue for me any more. </p>
+<p>Thank you for your reply.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-58426009" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/MarlonRodriguez" class="author">MarlonRodriguez</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-58426009" class="timestamp">
+      <time>2014-10-08 20:54:43</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Why is it not an issue anymore?</p>
+<p>Thank you,</p>
+<p>MR</p>
+<hr />
+<p>Sent from my iPhone</p>
+<p>On Oct 7, 2014, at 4:34 PM, LaKing <a href="mailto:notifications<strong><a href="https://github.com/github" target="_blank">@github</a></strong>.com">notifications<strong><a href="https://github.com/github" target="_blank">@github</a></strong>.com</a> wrote:</p>
+<p>As you see on the source, white right side of the attached image, the &lt; is HTML escaped. The green left side is the rendered text.</p>
+<p>However, this is not an issue for me any more.</p>
+<p>Thank you for your reply.</p>
+<p>—
+Reply to this email directly or view it on GitHub.=</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-58466128" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/LaKing" class="author">LaKing</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-58466128" class="timestamp">
+      <time>2014-10-09 05:51:20</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>It is an issue IMO.</p>
+<p>.. but its not an issue for me. .)</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-58714771" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/MarlonRodriguez" class="author">MarlonRodriguez</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-58714771" class="timestamp">
+      <time>2014-10-10 20:53:06</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>This is still an issue <strong><a href="https://github.com/alexgorbatchev" target="_blank">@alexgorbatchev</a></strong> :
+<img src="https://cloud.githubusercontent.com/assets/185747/4598970/dd5f1aa8-50bf-11e4-963e-3d1e79b3327b.png" alt="html-code" /></p>
+<p>yields:
+<img src="https://cloud.githubusercontent.com/assets/185747/4598942/6bc35ecc-50bf-11e4-947f-60af5a18ca61.png" alt="rendered-text" /></p>
+  </div>
+  </div>
+  </div>
+  <br/>
+</body></html>

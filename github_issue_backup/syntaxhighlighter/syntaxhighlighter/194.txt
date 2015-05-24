@@ -1,0 +1,91 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/194",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/194/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/194/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/194/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/194",
+  "id": 12285826,
+  "number": 194,
+  "title": "SyntaxHighlighter is undefined",
+  "user": {
+    "login": "quarks",
+    "id": 1048291,
+    "avatar_url": "https://avatars.githubusercontent.com/u/1048291?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/quarks",
+    "html_url": "https://github.com/quarks",
+    "followers_url": "https://api.github.com/users/quarks/followers",
+    "following_url": "https://api.github.com/users/quarks/following{/other_user}",
+    "gists_url": "https://api.github.com/users/quarks/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/quarks/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/quarks/subscriptions",
+    "organizations_url": "https://api.github.com/users/quarks/orgs",
+    "repos_url": "https://api.github.com/users/quarks/repos",
+    "events_url": "https://api.github.com/users/quarks/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/quarks/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2013-03-21T17:31:11Z",
+  "updated_at": "2013-04-19T23:29:34Z",
+  "closed_at": "2013-04-19T23:29:34Z",
+  "body": "I have been having problems getting the hihlighter to work.\r\n\r\nBetween the head tags I have leading < have been removed)\r\n\r\n link href='/css/sh/shCore.css' rel='stylesheet' type='text/css'/>\r\n link href='/css/sh/shThemeDefault.css' rel='stylesheet' type='text/css'/>\r\n\r\n script src='/js/sh/shCore.js' type='text/javascript'></script>\r\n script src='/js/sh/shBrushCpp.js' type='text/javascript'></script>\r\n script src='/js/sh/shBrushJava.js' type='text/javascript'></script>\r\n script language=\"javascript\" type=\"text/javascript\">\r\n      SyntaxHighlighter.config.bloggerMode = true;\r\n      SyntaxHighlighter.all();\r\n /script>\r\n\r\nIf working offline I get the SyntaxHighlighter is undefined but if I put it on to my webserver I get XRegExp is undefined and then SyntaxHighlighter is null. Now if I replace the above html with:\r\n\r\nlink href='http://alexgorbatchev.com/pub/sh/current/styles/shCore.css' rel='stylesheet' type='text/css'/>\r\nlink href='http://alexgorbatchev.com/pub/sh/current/styles/shThemeDefault.css' rel='stylesheet' type='text/css'/>\r\n\r\nscript src='http://alexgorbatchev.com/pub/sh/current/scripts/shCore.js' type='text/javascript'></script>\r\nscript src='http://alexgorbatchev.com/pub/sh/current/scripts/shBrushCpp.js' type='text/javascript'></script>\r\nscript src='http://alexgorbatchev.com/pub/sh/current/scripts/shBrushJava.js' type='text/javascript'></script>\r\nscript language=\"javascript\" type=\"text/javascript\">\r\n      SyntaxHighlighter.config.bloggerMode = true;\r\n      SyntaxHighlighter.all();\r\n/script>\r\n\r\n\r\nThe highlighter works. \r\nNo other changes were made and I confirmed all the file paths and filenames were correct.",
+  "closed_by": {
+    "login": "alexgorbatchev",
+    "id": 65633,
+    "avatar_url": "https://avatars.githubusercontent.com/u/65633?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/alexgorbatchev",
+    "html_url": "https://github.com/alexgorbatchev",
+    "followers_url": "https://api.github.com/users/alexgorbatchev/followers",
+    "following_url": "https://api.github.com/users/alexgorbatchev/following{/other_user}",
+    "gists_url": "https://api.github.com/users/alexgorbatchev/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/alexgorbatchev/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/alexgorbatchev/subscriptions",
+    "organizations_url": "https://api.github.com/users/alexgorbatchev/orgs",
+    "repos_url": "https://api.github.com/users/alexgorbatchev/repos",
+    "events_url": "https://api.github.com/users/alexgorbatchev/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/alexgorbatchev/received_events",
+    "type": "User",
+    "site_admin": false
+  }
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/comments/16694803",
+    "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/194#issuecomment-16694803",
+    "issue_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/194",
+    "id": 16694803,
+    "user": {
+      "login": "alexgorbatchev",
+      "id": 65633,
+      "avatar_url": "https://avatars.githubusercontent.com/u/65633?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgorbatchev",
+      "html_url": "https://github.com/alexgorbatchev",
+      "followers_url": "https://api.github.com/users/alexgorbatchev/followers",
+      "following_url": "https://api.github.com/users/alexgorbatchev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgorbatchev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgorbatchev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgorbatchev/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgorbatchev/orgs",
+      "repos_url": "https://api.github.com/users/alexgorbatchev/repos",
+      "events_url": "https://api.github.com/users/alexgorbatchev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgorbatchev/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2013-04-19T23:29:34Z",
+    "updated_at": "2013-04-19T23:29:34Z",
+    "body": "You can't have absolute `/` links working offline. They need to be relative if you want the script to work offline."
+  }
+]

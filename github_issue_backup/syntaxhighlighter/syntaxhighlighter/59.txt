@@ -1,0 +1,73 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/59",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/59/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/59/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/59/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/59",
+  "id": 2253952,
+  "number": 59,
+  "title": "\"?\"icon can not auto move",
+  "user": {
+    "login": "feimeng0530",
+    "id": 1198867,
+    "avatar_url": "https://avatars.githubusercontent.com/u/1198867?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/feimeng0530",
+    "html_url": "https://github.com/feimeng0530",
+    "followers_url": "https://api.github.com/users/feimeng0530/followers",
+    "following_url": "https://api.github.com/users/feimeng0530/following{/other_user}",
+    "gists_url": "https://api.github.com/users/feimeng0530/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/feimeng0530/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/feimeng0530/subscriptions",
+    "organizations_url": "https://api.github.com/users/feimeng0530/orgs",
+    "repos_url": "https://api.github.com/users/feimeng0530/repos",
+    "events_url": "https://api.github.com/users/feimeng0530/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/feimeng0530/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2011-11-16T08:35:33Z",
+  "updated_at": "2011-12-19T01:48:12Z",
+  "closed_at": null,
+  "body": "when the codes are long,and you move the scroll bar ,the \"?\"icon in the codes and can not auto move.\r\nmy used version is 3.0.83",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/comments/3198352",
+    "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/59#issuecomment-3198352",
+    "issue_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/59",
+    "id": 3198352,
+    "user": {
+      "login": "ghost",
+      "id": 10137,
+      "avatar_url": "https://avatars.githubusercontent.com/u/10137?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ghost",
+      "html_url": "https://github.com/ghost",
+      "followers_url": "https://api.github.com/users/ghost/followers",
+      "following_url": "https://api.github.com/users/ghost/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ghost/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ghost/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ghost/subscriptions",
+      "organizations_url": "https://api.github.com/users/ghost/orgs",
+      "repos_url": "https://api.github.com/users/ghost/repos",
+      "events_url": "https://api.github.com/users/ghost/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ghost/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2011-12-19T01:48:12Z",
+    "updated_at": "2011-12-19T01:48:12Z",
+    "body": "Remove the scroll bar.\r\nshCoreDefault.css\r\n.syntaxhighlighter textarea {\r\n   overflow: hidden !important; \r\n}\r\n\r\nRemove the ? icon.\r\nshCoreDefault.css\r\n.syntaxhighlighter .toolbar {\r\n   display: none; \r\n}\r\n"
+  }
+]

@@ -1,0 +1,91 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/8",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/8/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/8/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/8/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/8",
+  "id": 1404740,
+  "number": 8,
+  "title": "Support for multiple syntax highlighting styles on the same page ",
+  "user": {
+    "login": "sherifgmansour",
+    "id": 37729,
+    "avatar_url": "https://avatars.githubusercontent.com/u/37729?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/sherifgmansour",
+    "html_url": "https://github.com/sherifgmansour",
+    "followers_url": "https://api.github.com/users/sherifgmansour/followers",
+    "following_url": "https://api.github.com/users/sherifgmansour/following{/other_user}",
+    "gists_url": "https://api.github.com/users/sherifgmansour/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/sherifgmansour/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/sherifgmansour/subscriptions",
+    "organizations_url": "https://api.github.com/users/sherifgmansour/orgs",
+    "repos_url": "https://api.github.com/users/sherifgmansour/repos",
+    "events_url": "https://api.github.com/users/sherifgmansour/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/sherifgmansour/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2011-08-14T23:04:22Z",
+  "updated_at": "2011-08-24T14:34:29Z",
+  "closed_at": "2011-08-24T14:34:29Z",
+  "body": "We are currently using the SyntaxHighlighter lib in our product, Confluence.\r\n\r\nWe have had a [few requests](https://studio.plugins.atlassian.com/browse/NCODE-159) for the ability to highlight multiple code blocks with different styles on the same page.  ",
+  "closed_by": {
+    "login": "alexgorbatchev",
+    "id": 65633,
+    "avatar_url": "https://avatars.githubusercontent.com/u/65633?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/alexgorbatchev",
+    "html_url": "https://github.com/alexgorbatchev",
+    "followers_url": "https://api.github.com/users/alexgorbatchev/followers",
+    "following_url": "https://api.github.com/users/alexgorbatchev/following{/other_user}",
+    "gists_url": "https://api.github.com/users/alexgorbatchev/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/alexgorbatchev/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/alexgorbatchev/subscriptions",
+    "organizations_url": "https://api.github.com/users/alexgorbatchev/orgs",
+    "repos_url": "https://api.github.com/users/alexgorbatchev/repos",
+    "events_url": "https://api.github.com/users/alexgorbatchev/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/alexgorbatchev/received_events",
+    "type": "User",
+    "site_admin": false
+  }
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/comments/1805252",
+    "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/8#issuecomment-1805252",
+    "issue_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/8",
+    "id": 1805252,
+    "user": {
+      "login": "alexgorbatchev",
+      "id": 65633,
+      "avatar_url": "https://avatars.githubusercontent.com/u/65633?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgorbatchev",
+      "html_url": "https://github.com/alexgorbatchev",
+      "followers_url": "https://api.github.com/users/alexgorbatchev/followers",
+      "following_url": "https://api.github.com/users/alexgorbatchev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgorbatchev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgorbatchev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgorbatchev/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgorbatchev/orgs",
+      "repos_url": "https://api.github.com/users/alexgorbatchev/repos",
+      "events_url": "https://api.github.com/users/alexgorbatchev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgorbatchev/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2011-08-15T07:18:24Z",
+    "updated_at": "2011-08-15T07:18:24Z",
+    "body": "It's possible to do that with separate snippets. Unfortunately current architecture wouldn't allow for true multiple languages within one snippet feature."
+  }
+]

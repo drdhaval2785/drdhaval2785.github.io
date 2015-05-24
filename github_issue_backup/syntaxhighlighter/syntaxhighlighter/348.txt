@@ -1,0 +1,73 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/348",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/348/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/348/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/348/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/348",
+  "id": 54555942,
+  "number": 348,
+  "title": "I have to declare what program language I want to highlight ?",
+  "user": {
+    "login": "hojas",
+    "id": 4729039,
+    "avatar_url": "https://avatars.githubusercontent.com/u/4729039?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/hojas",
+    "html_url": "https://github.com/hojas",
+    "followers_url": "https://api.github.com/users/hojas/followers",
+    "following_url": "https://api.github.com/users/hojas/following{/other_user}",
+    "gists_url": "https://api.github.com/users/hojas/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/hojas/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/hojas/subscriptions",
+    "organizations_url": "https://api.github.com/users/hojas/orgs",
+    "repos_url": "https://api.github.com/users/hojas/repos",
+    "events_url": "https://api.github.com/users/hojas/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/hojas/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2015-01-16T09:34:54Z",
+  "updated_at": "2015-01-31T14:03:43Z",
+  "closed_at": null,
+  "body": "```\r\n<pre class=\"brush: js\">\r\n    /**\r\n     * SyntaxHighlighter\r\n     */\r\n    function foo()\r\n    {\r\n        if (counter <= 10)\r\n            return;\r\n        // it works!\r\n    }\r\n</pre>\r\n```\r\n\r\nIf I want to highlight this , I have to add `class=\"brush: js\"`, but I do not know what the language is that will be highlight sometimes. What should I do with this ?",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/comments/72318920",
+    "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/348#issuecomment-72318920",
+    "issue_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/348",
+    "id": 72318920,
+    "user": {
+      "login": "SoboLAN",
+      "id": 6078542,
+      "avatar_url": "https://avatars.githubusercontent.com/u/6078542?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/SoboLAN",
+      "html_url": "https://github.com/SoboLAN",
+      "followers_url": "https://api.github.com/users/SoboLAN/followers",
+      "following_url": "https://api.github.com/users/SoboLAN/following{/other_user}",
+      "gists_url": "https://api.github.com/users/SoboLAN/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/SoboLAN/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/SoboLAN/subscriptions",
+      "organizations_url": "https://api.github.com/users/SoboLAN/orgs",
+      "repos_url": "https://api.github.com/users/SoboLAN/repos",
+      "events_url": "https://api.github.com/users/SoboLAN/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/SoboLAN/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2015-01-31T14:03:43Z",
+    "updated_at": "2015-01-31T14:03:43Z",
+    "body": "Well, since most languages are C-derivatives, you could use that as a fallback."
+  }
+]

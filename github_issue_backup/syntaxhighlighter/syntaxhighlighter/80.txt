@@ -1,0 +1,64 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/80",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/80/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/80/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/80/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/80",
+  "id": 2801642,
+  "number": 80,
+  "title": "C# Parsing Error",
+  "user": {
+    "login": "sirisian",
+    "id": 1320998,
+    "avatar_url": "https://avatars.githubusercontent.com/u/1320998?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/sirisian",
+    "html_url": "https://github.com/sirisian",
+    "followers_url": "https://api.github.com/users/sirisian/followers",
+    "following_url": "https://api.github.com/users/sirisian/following{/other_user}",
+    "gists_url": "https://api.github.com/users/sirisian/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/sirisian/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/sirisian/subscriptions",
+    "organizations_url": "https://api.github.com/users/sirisian/orgs",
+    "repos_url": "https://api.github.com/users/sirisian/repos",
+    "events_url": "https://api.github.com/users/sirisian/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/sirisian/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2012-01-11T08:08:24Z",
+  "updated_at": "2012-01-12T01:54:32Z",
+  "closed_at": "2012-01-12T01:54:32Z",
+  "body": "Nevermind... I was using this wrong. I didn't know you had to copy and paste code into the visual editor to convert < and >.\r\n\r\n    <pre class=\"brush: csharp; gutter: false;\">\r\n    var arrayBasePow = new List<ulong>();\r\n    arrayBasePow.Add(1);\r\n    </pre>\r\n\r\nTurns into this:\r\n\r\n    var arrayBasePow = new List\r\n    <ulong>();\r\n    arrayBasePow.Add(1);\r\n    </ulong>",
+  "closed_by": {
+    "login": "sirisian",
+    "id": 1320998,
+    "avatar_url": "https://avatars.githubusercontent.com/u/1320998?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/sirisian",
+    "html_url": "https://github.com/sirisian",
+    "followers_url": "https://api.github.com/users/sirisian/followers",
+    "following_url": "https://api.github.com/users/sirisian/following{/other_user}",
+    "gists_url": "https://api.github.com/users/sirisian/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/sirisian/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/sirisian/subscriptions",
+    "organizations_url": "https://api.github.com/users/sirisian/orgs",
+    "repos_url": "https://api.github.com/users/sirisian/repos",
+    "events_url": "https://api.github.com/users/sirisian/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/sirisian/received_events",
+    "type": "User",
+    "site_admin": false
+  }
+}
+BODY STARTS FROM HERE
+[
+
+]

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html class='' lang='en'>
+<head prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#'>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8'>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta http-equiv='Content-Language' content='en'>
+<title>syntaxhighlighter/syntaxhighlighter/167</title>
+<link href='github-c486157afcc5f58155a921bc675afb08733fbaa8dcf39ac2104d3.css' media='all' rel='stylesheet'>
+<link href='github2-da2e842cc3f0aaf33b727d0ef034243c12ab008fd09b24868b97.css' media='all' rel='stylesheet'>
+<meta http-equiv='x-pjax-version' content='4426702614c8182f33d1780ad1169662'>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shAutoloader.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAppleScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAS3.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushBash.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushColdFusion.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCpp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCSharp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCss.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDelphi.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDiff.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushErlang.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushGroovy.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJava.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJavaFX.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/syntaxhighlighter/scripts/shBrushJScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPerl.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPhp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPlain.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPowerShell.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPython.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushRuby.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSass.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushScala.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSql.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushVb.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushXml.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shLegacy.js'></script>
+	<link type='text/css' rel='stylesheet' href='syntaxhighlighter/styles/shCoreDefault.css'/>
+	<script type='text/javascript'>SyntaxHighlighter.all();</script>
+</head>
+<body class='logged_in  env-production windows vis-public'>
+<h1 align='center'><a href='https://github.com/syntaxhighlighter/syntaxhighlighter/issues/167' target='_blank'>Doesn't play nice with Bootstrap</h1><hr/><div id="#issue-8408975" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/nmakarov" class="author">nmakarov</a>
+    </strong>
+    commented on 
+    <a href="#issue-8408975" class="timestamp">
+      <time>2012-11-16 02:02:37</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>... since Bootstrap css tweaks selectors .container:before and .container:after. </p>
+<p>As a result, the whole code div shifts about 15 pixels down (related to the gutter) and line numbering becomes thrown out of sync with the code. Confirmed in Firefox 10.0.7 under CentOS. </p>
+<p>After some consideration I have replaced the class name from &quot;.container&quot; to &quot;.shcontainer&quot; - two modifications in shCore.js and three in shCore.css.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-10487212" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/Dartcode" class="author">Dartcode</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-10487212" class="timestamp">
+      <time>2012-11-18 15:26:54</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Thanks for the fix, just stumbled upon the same problem myself.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-11735278" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/davidcroda" class="author">davidcroda</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-11735278" class="timestamp">
+      <time>2012-12-28 16:26:24</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Unfortunately, this class is also referenced in the CSS theme files.  I was going to look to modify the source to allow you to override the container class name, but since it is hard coded into the CSS I don't think this is feasible.</p>
+<p>I think it would make the most sense to change the default to something unique, but this would obviously need to be decided by the maintainer</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-11735574" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/davidcroda" class="author">davidcroda</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-11735574" class="timestamp">
+      <time>2012-12-28 16:39:17</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I was actually able to fix this without modifying SyntaxHighlighter or Bootstrap by adding the following to my stylesheet.  This could probably be integraded into the core without causing issues.</p>
+<pre class="brush: css">div.syntaxhighlighter .container:before,div.syntaxhighlighter .container:after {
+    content:none;
+}</code></pre>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-14361342" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/Gator92" class="author">Gator92</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-14361342" class="timestamp">
+      <time>2013-03-04 02:24:41</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>At first, I thought this was a container class conflict as well, however, the formatting issue referenced here turned out to be a conflict with the bootstrap pre/code css styles. If you are using a local bootstrap version, simply remove the conflicting tags, I doubt if the &quot;code&quot; tag is used anywhere else, or override it in your website css.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-21296878" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/lanoxx" class="author">lanoxx</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-21296878" class="timestamp">
+      <time>2013-07-20 17:12:29</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>It there going to be an official fix for this?</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-30364669" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/alexgorbatchev" class="author">alexgorbatchev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-30364669" class="timestamp">
+      <time>2013-12-11 21:15:22</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>There will be a fix. I'm working on 4.0 version these days.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-30528389" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/DrewAPicture" class="author">DrewAPicture</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-30528389" class="timestamp">
+      <time>2013-12-13 17:44:25</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Yup, just ran into this myself. <strong><a href="https://github.com/davidcroda" target="_blank">@davidcroda</a></strong>'s shim worked for the time being, but I'll keep an eye peeled for a future fix :/</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-38381968" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/yassirh" class="author">yassirh</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-38381968" class="timestamp">
+      <time>2014-03-23 13:11:15</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/davidcroda" target="_blank">@davidcroda</a></strong> Your code worked! Thank you!</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-50246487" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/givanse" class="author">givanse</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-50246487" class="timestamp">
+      <time>2014-07-26 19:45:56</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Thanks for the hard work! Can we get an ETA for 4.0? Let me suggest that smaller/faster releases would be nice.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-73813148" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/tristantao" class="author">tristantao</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-73813148" class="timestamp">
+      <time>2015-02-11 00:20:28</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I know this is old, but bump <strong><a href="https://github.com/davidcroda" target="_blank">@davidcroda</a></strong> for the awesome working answer.</p>
+<p>OS X 10.9.5
+Doesn't interfere with <em>Chrome 40.0.2214.111</em>
+Fixes the issue on <em>Firefox 35.0.1</em></p>
+  </div>
+  </div>
+  </div>
+  <br/>
+</body></html>

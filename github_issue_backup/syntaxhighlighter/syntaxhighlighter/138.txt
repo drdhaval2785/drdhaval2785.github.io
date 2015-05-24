@@ -1,0 +1,46 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/138",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/138/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/138/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/138/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/138",
+  "id": 5866226,
+  "number": 138,
+  "title": "Build script not replacing variables",
+  "user": {
+    "login": "johnfmorton",
+    "id": 119723,
+    "avatar_url": "https://avatars.githubusercontent.com/u/119723?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/johnfmorton",
+    "html_url": "https://github.com/johnfmorton",
+    "followers_url": "https://api.github.com/users/johnfmorton/followers",
+    "following_url": "https://api.github.com/users/johnfmorton/following{/other_user}",
+    "gists_url": "https://api.github.com/users/johnfmorton/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/johnfmorton/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/johnfmorton/subscriptions",
+    "organizations_url": "https://api.github.com/users/johnfmorton/orgs",
+    "repos_url": "https://api.github.com/users/johnfmorton/repos",
+    "events_url": "https://api.github.com/users/johnfmorton/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/johnfmorton/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2012-07-26T22:48:28Z",
+  "updated_at": "2012-07-26T22:49:14Z",
+  "closed_at": null,
+  "body": "I may be using the Node build script incorrectly so I apologize in advance if I'm sticking my foot in my mouth. :-)  \n\nWhen I use the build script, the @ABOUT@ variable was not being replaced in my final output file. In digging through the build.js file, I discovered the line:\n\n    var files = glob(outputDir, '**.js').concat(glob(outputDir, '**.css'));\n\nWhen I did a console.log for the value of \"files\", it returned empty.\n\nI rewrote it as:\n\n    var files = glob(outputDir, '**');\n\nThe compiled file now does the variable replacement. I realize that it's now processing ALL the files in the output directory, not just the JS and CSS files. I haven't figured out how to do the limiting of files that was intended by the original line yet though. \n",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+
+]

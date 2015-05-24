@@ -1,0 +1,46 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/137",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/137/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/137/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/137/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/137",
+  "id": 5688503,
+  "number": 137,
+  "title": "Wrong escapement of colon in getValuesCSS regex",
+  "user": {
+    "login": "andrejm",
+    "id": 1662128,
+    "avatar_url": "https://avatars.githubusercontent.com/u/1662128?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/andrejm",
+    "html_url": "https://github.com/andrejm",
+    "followers_url": "https://api.github.com/users/andrejm/followers",
+    "following_url": "https://api.github.com/users/andrejm/following{/other_user}",
+    "gists_url": "https://api.github.com/users/andrejm/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/andrejm/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/andrejm/subscriptions",
+    "organizations_url": "https://api.github.com/users/andrejm/orgs",
+    "repos_url": "https://api.github.com/users/andrejm/repos",
+    "events_url": "https://api.github.com/users/andrejm/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/andrejm/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2012-07-18T12:53:31Z",
+  "updated_at": "2012-07-18T12:53:31Z",
+  "closed_at": null,
+  "body": "Hi,\n\nJSLint (http://jslint.com/) seems to complain about this line of code in shBrushCss.js:\n\n```javascript\nreturn '\\\\b' + str.replace(/ /g, '(?!-)(?!:)\\\\b|\\\\b()') + '\\:\\\\b';\n```\nSince colon (:) is no special character in javaScript, there should be no reason to escape it.",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+
+]

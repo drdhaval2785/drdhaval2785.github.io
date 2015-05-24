@@ -1,0 +1,91 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/347",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/347/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/347/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/347/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/347",
+  "id": 52200260,
+  "number": 347,
+  "title": "数据库取出来的中文不能显示?",
+  "user": {
+    "login": "AlSodium",
+    "id": 7974100,
+    "avatar_url": "https://avatars.githubusercontent.com/u/7974100?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/AlSodium",
+    "html_url": "https://github.com/AlSodium",
+    "followers_url": "https://api.github.com/users/AlSodium/followers",
+    "following_url": "https://api.github.com/users/AlSodium/following{/other_user}",
+    "gists_url": "https://api.github.com/users/AlSodium/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/AlSodium/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/AlSodium/subscriptions",
+    "organizations_url": "https://api.github.com/users/AlSodium/orgs",
+    "repos_url": "https://api.github.com/users/AlSodium/repos",
+    "events_url": "https://api.github.com/users/AlSodium/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/AlSodium/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2014-12-17T04:25:51Z",
+  "updated_at": "2015-01-26T19:24:18Z",
+  "closed_at": "2015-01-26T19:24:18Z",
+  "body": "具体问题我在这里描述:\r\nhttp://segmentfault.com/q/1010000002429246",
+  "closed_by": {
+    "login": "alexgorbatchev",
+    "id": 65633,
+    "avatar_url": "https://avatars.githubusercontent.com/u/65633?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/alexgorbatchev",
+    "html_url": "https://github.com/alexgorbatchev",
+    "followers_url": "https://api.github.com/users/alexgorbatchev/followers",
+    "following_url": "https://api.github.com/users/alexgorbatchev/following{/other_user}",
+    "gists_url": "https://api.github.com/users/alexgorbatchev/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/alexgorbatchev/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/alexgorbatchev/subscriptions",
+    "organizations_url": "https://api.github.com/users/alexgorbatchev/orgs",
+    "repos_url": "https://api.github.com/users/alexgorbatchev/repos",
+    "events_url": "https://api.github.com/users/alexgorbatchev/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/alexgorbatchev/received_events",
+    "type": "User",
+    "site_admin": false
+  }
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/comments/71520661",
+    "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/347#issuecomment-71520661",
+    "issue_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/347",
+    "id": 71520661,
+    "user": {
+      "login": "alexgorbatchev",
+      "id": 65633,
+      "avatar_url": "https://avatars.githubusercontent.com/u/65633?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgorbatchev",
+      "html_url": "https://github.com/alexgorbatchev",
+      "followers_url": "https://api.github.com/users/alexgorbatchev/followers",
+      "following_url": "https://api.github.com/users/alexgorbatchev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgorbatchev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgorbatchev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgorbatchev/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgorbatchev/orgs",
+      "repos_url": "https://api.github.com/users/alexgorbatchev/repos",
+      "events_url": "https://api.github.com/users/alexgorbatchev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgorbatchev/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2015-01-26T19:24:18Z",
+    "updated_at": "2015-01-26T19:24:18Z",
+    "body": "Please post in English."
+  }
+]

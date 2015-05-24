@@ -1,0 +1,46 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/338",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/338/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/338/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/338/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/338",
+  "id": 41360027,
+  "number": 338,
+  "title": "Width overflows its boundary on long-lines",
+  "user": {
+    "login": "danielHalan",
+    "id": 641348,
+    "avatar_url": "https://avatars.githubusercontent.com/u/641348?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/danielHalan",
+    "html_url": "https://github.com/danielHalan",
+    "followers_url": "https://api.github.com/users/danielHalan/followers",
+    "following_url": "https://api.github.com/users/danielHalan/following{/other_user}",
+    "gists_url": "https://api.github.com/users/danielHalan/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/danielHalan/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/danielHalan/subscriptions",
+    "organizations_url": "https://api.github.com/users/danielHalan/orgs",
+    "repos_url": "https://api.github.com/users/danielHalan/repos",
+    "events_url": "https://api.github.com/users/danielHalan/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/danielHalan/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2014-08-28T06:46:34Z",
+  "updated_at": "2014-08-28T06:56:20Z",
+  "closed_at": null,
+  "body": "The Width of the Code-box overruns the width of the parent container when code line length is long, as seen here. \r\n(IE11, Chrome and FF)\r\n\r\n![image](https://cloud.githubusercontent.com/assets/641348/4072003/af216c12-2e7e-11e4-9edc-9190e75d5ae3.png)\r\n\r\nModified the Code so it \"fits\" better (but still some overflow) by shortening the lines, the DOM can be found here,\r\nhttp://blog.halan.se/post/Replaying-events-using-Event-Store-with-RavenDB.aspx\r\n",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+
+]

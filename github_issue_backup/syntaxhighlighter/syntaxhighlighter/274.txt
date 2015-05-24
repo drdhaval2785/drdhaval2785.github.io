@@ -1,0 +1,91 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/274",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/274/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/274/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/274/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/274",
+  "id": 23299761,
+  "number": 274,
+  "title": "JavaScript breaks HTML code",
+  "user": {
+    "login": "AmgedOsman",
+    "id": 1734716,
+    "avatar_url": "https://avatars.githubusercontent.com/u/1734716?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/AmgedOsman",
+    "html_url": "https://github.com/AmgedOsman",
+    "followers_url": "https://api.github.com/users/AmgedOsman/followers",
+    "following_url": "https://api.github.com/users/AmgedOsman/following{/other_user}",
+    "gists_url": "https://api.github.com/users/AmgedOsman/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/AmgedOsman/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/AmgedOsman/subscriptions",
+    "organizations_url": "https://api.github.com/users/AmgedOsman/orgs",
+    "repos_url": "https://api.github.com/users/AmgedOsman/repos",
+    "events_url": "https://api.github.com/users/AmgedOsman/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/AmgedOsman/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2013-11-26T08:25:08Z",
+  "updated_at": "2013-12-11T21:37:37Z",
+  "closed_at": "2013-12-11T21:37:37Z",
+  "body": "If I add <script>//js code here </script> after UL > li code it breaks teh html and adds\r\n\r\nstyle=\"display: none; z-index: 9999; position: absolute;\" to any UL\r\n![2013-11-26 11_24_25-create ipb menu on the fly - paste it - amged osman](https://f.cloud.github.com/assets/1734716/1620324/3cfbd902-5674-11e3-8469-93ad0aa7a50f.png)\r\n\r\n ",
+  "closed_by": {
+    "login": "alexgorbatchev",
+    "id": 65633,
+    "avatar_url": "https://avatars.githubusercontent.com/u/65633?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/alexgorbatchev",
+    "html_url": "https://github.com/alexgorbatchev",
+    "followers_url": "https://api.github.com/users/alexgorbatchev/followers",
+    "following_url": "https://api.github.com/users/alexgorbatchev/following{/other_user}",
+    "gists_url": "https://api.github.com/users/alexgorbatchev/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/alexgorbatchev/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/alexgorbatchev/subscriptions",
+    "organizations_url": "https://api.github.com/users/alexgorbatchev/orgs",
+    "repos_url": "https://api.github.com/users/alexgorbatchev/repos",
+    "events_url": "https://api.github.com/users/alexgorbatchev/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/alexgorbatchev/received_events",
+    "type": "User",
+    "site_admin": false
+  }
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/comments/29274939",
+    "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/274#issuecomment-29274939",
+    "issue_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/274",
+    "id": 29274939,
+    "user": {
+      "login": "AmgedOsman",
+      "id": 1734716,
+      "avatar_url": "https://avatars.githubusercontent.com/u/1734716?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/AmgedOsman",
+      "html_url": "https://github.com/AmgedOsman",
+      "followers_url": "https://api.github.com/users/AmgedOsman/followers",
+      "following_url": "https://api.github.com/users/AmgedOsman/following{/other_user}",
+      "gists_url": "https://api.github.com/users/AmgedOsman/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/AmgedOsman/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/AmgedOsman/subscriptions",
+      "organizations_url": "https://api.github.com/users/AmgedOsman/orgs",
+      "repos_url": "https://api.github.com/users/AmgedOsman/repos",
+      "events_url": "https://api.github.com/users/AmgedOsman/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/AmgedOsman/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2013-11-26T08:33:52Z",
+    "updated_at": "2013-11-26T08:33:52Z",
+    "body": "Never mind it was my parser, if i parse HTML while loading the \"content\" from database it adds weird style='code...'"
+  }
+]

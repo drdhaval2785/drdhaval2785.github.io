@@ -1,0 +1,91 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/202",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/202/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/202/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/202/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/202",
+  "id": 13419479,
+  "number": 202,
+  "title": "A question about toolbar and help button",
+  "user": {
+    "login": "smmurf",
+    "id": 169367,
+    "avatar_url": "https://avatars.githubusercontent.com/u/169367?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/smmurf",
+    "html_url": "https://github.com/smmurf",
+    "followers_url": "https://api.github.com/users/smmurf/followers",
+    "following_url": "https://api.github.com/users/smmurf/following{/other_user}",
+    "gists_url": "https://api.github.com/users/smmurf/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/smmurf/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/smmurf/subscriptions",
+    "organizations_url": "https://api.github.com/users/smmurf/orgs",
+    "repos_url": "https://api.github.com/users/smmurf/repos",
+    "events_url": "https://api.github.com/users/smmurf/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/smmurf/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2013-04-19T20:29:45Z",
+  "updated_at": "2013-04-19T23:25:33Z",
+  "closed_at": "2013-04-19T23:25:33Z",
+  "body": "Trying to use syntaxhighlighter and can't figure out a few questions.\r\n\r\nAt first, the help button doesn't actually show the «About» information, it only displays a placeholder. I've cloned repo and ran build, as described in build/README.txt. I expected it had to generate correct about window, but there is still a placeholder. Do I miss something?\r\n\r\nAlso, can I configure toolbar to add my own controls without editing core js? Is toolbar configurable from the outside?\r\n\r\nThanks in advance.",
+  "closed_by": {
+    "login": "alexgorbatchev",
+    "id": 65633,
+    "avatar_url": "https://avatars.githubusercontent.com/u/65633?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/alexgorbatchev",
+    "html_url": "https://github.com/alexgorbatchev",
+    "followers_url": "https://api.github.com/users/alexgorbatchev/followers",
+    "following_url": "https://api.github.com/users/alexgorbatchev/following{/other_user}",
+    "gists_url": "https://api.github.com/users/alexgorbatchev/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/alexgorbatchev/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/alexgorbatchev/subscriptions",
+    "organizations_url": "https://api.github.com/users/alexgorbatchev/orgs",
+    "repos_url": "https://api.github.com/users/alexgorbatchev/repos",
+    "events_url": "https://api.github.com/users/alexgorbatchev/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/alexgorbatchev/received_events",
+    "type": "User",
+    "site_admin": false
+  }
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/comments/16694714",
+    "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/202#issuecomment-16694714",
+    "issue_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/202",
+    "id": 16694714,
+    "user": {
+      "login": "alexgorbatchev",
+      "id": 65633,
+      "avatar_url": "https://avatars.githubusercontent.com/u/65633?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgorbatchev",
+      "html_url": "https://github.com/alexgorbatchev",
+      "followers_url": "https://api.github.com/users/alexgorbatchev/followers",
+      "following_url": "https://api.github.com/users/alexgorbatchev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgorbatchev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgorbatchev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgorbatchev/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgorbatchev/orgs",
+      "repos_url": "https://api.github.com/users/alexgorbatchev/repos",
+      "events_url": "https://api.github.com/users/alexgorbatchev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgorbatchev/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2013-04-19T23:25:33Z",
+    "updated_at": "2013-04-19T23:25:33Z",
+    "body": "Toolbar used to be configurable in the past but no longer since noone ever used that feature. As far as the build goes, I'm not sure what the problem is. Will have to look at it."
+  }
+]

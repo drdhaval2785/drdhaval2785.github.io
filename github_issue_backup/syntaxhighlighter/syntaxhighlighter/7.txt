@@ -1,0 +1,73 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/7",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/7/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/7/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/7/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/7",
+  "id": 1398095,
+  "number": 7,
+  "title": "Regarding small screens",
+  "user": {
+    "login": "murtaugh",
+    "id": 308752,
+    "avatar_url": "https://avatars.githubusercontent.com/u/308752?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/murtaugh",
+    "html_url": "https://github.com/murtaugh",
+    "followers_url": "https://api.github.com/users/murtaugh/followers",
+    "following_url": "https://api.github.com/users/murtaugh/following{/other_user}",
+    "gists_url": "https://api.github.com/users/murtaugh/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/murtaugh/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/murtaugh/subscriptions",
+    "organizations_url": "https://api.github.com/users/murtaugh/orgs",
+    "repos_url": "https://api.github.com/users/murtaugh/repos",
+    "events_url": "https://api.github.com/users/murtaugh/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/murtaugh/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2011-08-12T22:50:25Z",
+  "updated_at": "2011-08-25T08:59:30Z",
+  "closed_at": null,
+  "body": "Hi — thanks for all your work on this, it seems to be one of the best syntax highlighters out there.\r\n\r\nQuestion: Have you given any thought to small screens? Just wondering if you (or anyone) has worked on any media-query-based alternative presentations for the script.\r\n\r\nThanks!",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/comments/1898290",
+    "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/7#issuecomment-1898290",
+    "issue_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/7",
+    "id": 1898290,
+    "user": {
+      "login": "shanselman",
+      "id": 2892,
+      "avatar_url": "https://avatars.githubusercontent.com/u/2892?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/shanselman",
+      "html_url": "https://github.com/shanselman",
+      "followers_url": "https://api.github.com/users/shanselman/followers",
+      "following_url": "https://api.github.com/users/shanselman/following{/other_user}",
+      "gists_url": "https://api.github.com/users/shanselman/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/shanselman/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/shanselman/subscriptions",
+      "organizations_url": "https://api.github.com/users/shanselman/orgs",
+      "repos_url": "https://api.github.com/users/shanselman/repos",
+      "events_url": "https://api.github.com/users/shanselman/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/shanselman/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2011-08-25T08:59:30Z",
+    "updated_at": "2011-08-25T08:59:30Z",
+    "body": "Actually, this helps, but the line numbers are out of alignment...\r\n\r\n\r\npre { \r\n\t-webkit-text-size-adjust: 85%;\r\n} \r\ncode { \r\n\t-webkit-text-size-adjust: 85%; \r\n}\r\n"
+  }
+]

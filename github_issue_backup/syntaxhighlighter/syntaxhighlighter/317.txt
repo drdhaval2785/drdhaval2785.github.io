@@ -1,0 +1,46 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/317",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/317/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/317/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/317/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/317",
+  "id": 36722676,
+  "number": 317,
+  "title": "Xml example on website is not valid",
+  "user": {
+    "login": "StefH",
+    "id": 249938,
+    "avatar_url": "https://avatars.githubusercontent.com/u/249938?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/StefH",
+    "html_url": "https://github.com/StefH",
+    "followers_url": "https://api.github.com/users/StefH/followers",
+    "following_url": "https://api.github.com/users/StefH/following{/other_user}",
+    "gists_url": "https://api.github.com/users/StefH/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/StefH/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/StefH/subscriptions",
+    "organizations_url": "https://api.github.com/users/StefH/orgs",
+    "repos_url": "https://api.github.com/users/StefH/repos",
+    "events_url": "https://api.github.com/users/StefH/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/StefH/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2014-06-28T10:32:13Z",
+  "updated_at": "2014-06-28T10:32:28Z",
+  "closed_at": null,
+  "body": "Please replace it with something like this:\r\n```xml\r\n<?xml version=\"1.0\" encoding=\"utf-8\" ?>\r\n\r\n<!-- comments -->\r\n<rootNode xmlns:namespace=\"http://www.w3.org/TR/html4/\">\r\n  <childNodes>\r\n    <childNode attribute1 = \"value\"\r\n               namespace:attribute2='value'\r\n               attribute3=''/>\r\n    <childNode />\r\n    <childNode />\r\n    <childNode />\r\n    <childNode\r\n      attr1=\"value\"\r\n      attr2=\"10\"\r\n      attr3=\"hello\"\r\n          >\r\n      value\r\n    </childNode>\r\n    <namespace:childNode>\r\n      <![CDATA[\r\n              this is some CDATA content\r\n              <!-- comments inside cdata -->\r\n              <b alert='false'>tags inside cdata</b>\r\n          ]]>\r\n\r\n      value = \"plain string outside\"\r\n      hello = world\r\n    </namespace:childNode>\r\n  </childNodes>\r\n</rootNode>\r\n\r\n<!--\r\n  Multiline comments <b>tag</b>\r\n-->",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+
+]

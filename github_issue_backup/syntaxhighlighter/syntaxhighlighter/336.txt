@@ -1,0 +1,91 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/336",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/336/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/336/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/336/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/336",
+  "id": 41074891,
+  "number": 336,
+  "title": "HTML form tag not displaying correctly",
+  "user": {
+    "login": "jtkinser",
+    "id": 7031736,
+    "avatar_url": "https://avatars.githubusercontent.com/u/7031736?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jtkinser",
+    "html_url": "https://github.com/jtkinser",
+    "followers_url": "https://api.github.com/users/jtkinser/followers",
+    "following_url": "https://api.github.com/users/jtkinser/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jtkinser/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jtkinser/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jtkinser/subscriptions",
+    "organizations_url": "https://api.github.com/users/jtkinser/orgs",
+    "repos_url": "https://api.github.com/users/jtkinser/repos",
+    "events_url": "https://api.github.com/users/jtkinser/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jtkinser/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2014-08-25T15:49:43Z",
+  "updated_at": "2014-08-25T17:15:14Z",
+  "closed_at": "2014-08-25T17:15:14Z",
+  "body": "When I use a html form tag inside of the pre tag it actually renders on my page as a form rather than code. How can I stop this?\r\n\r\n",
+  "closed_by": {
+    "login": "jtkinser",
+    "id": 7031736,
+    "avatar_url": "https://avatars.githubusercontent.com/u/7031736?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jtkinser",
+    "html_url": "https://github.com/jtkinser",
+    "followers_url": "https://api.github.com/users/jtkinser/followers",
+    "following_url": "https://api.github.com/users/jtkinser/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jtkinser/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jtkinser/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jtkinser/subscriptions",
+    "organizations_url": "https://api.github.com/users/jtkinser/orgs",
+    "repos_url": "https://api.github.com/users/jtkinser/repos",
+    "events_url": "https://api.github.com/users/jtkinser/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jtkinser/received_events",
+    "type": "User",
+    "site_admin": false
+  }
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/comments/53293879",
+    "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/336#issuecomment-53293879",
+    "issue_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/336",
+    "id": 53293879,
+    "user": {
+      "login": "jtkinser",
+      "id": 7031736,
+      "avatar_url": "https://avatars.githubusercontent.com/u/7031736?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jtkinser",
+      "html_url": "https://github.com/jtkinser",
+      "followers_url": "https://api.github.com/users/jtkinser/followers",
+      "following_url": "https://api.github.com/users/jtkinser/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jtkinser/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jtkinser/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jtkinser/subscriptions",
+      "organizations_url": "https://api.github.com/users/jtkinser/orgs",
+      "repos_url": "https://api.github.com/users/jtkinser/repos",
+      "events_url": "https://api.github.com/users/jtkinser/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jtkinser/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2014-08-25T17:15:12Z",
+    "updated_at": "2014-08-25T17:15:12Z",
+    "body": "I just realized that I needed to use the <script /> method of installation for this to work. Sorry!"
+  }
+]

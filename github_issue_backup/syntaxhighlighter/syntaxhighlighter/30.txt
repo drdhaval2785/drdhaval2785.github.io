@@ -1,0 +1,64 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/30",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/30/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/30/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/30/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/30",
+  "id": 1670412,
+  "number": 30,
+  "title": "Pre class",
+  "user": {
+    "login": "mikt",
+    "id": 1029234,
+    "avatar_url": "https://avatars.githubusercontent.com/u/1029234?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/mikt",
+    "html_url": "https://github.com/mikt",
+    "followers_url": "https://api.github.com/users/mikt/followers",
+    "following_url": "https://api.github.com/users/mikt/following{/other_user}",
+    "gists_url": "https://api.github.com/users/mikt/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/mikt/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/mikt/subscriptions",
+    "organizations_url": "https://api.github.com/users/mikt/orgs",
+    "repos_url": "https://api.github.com/users/mikt/repos",
+    "events_url": "https://api.github.com/users/mikt/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/mikt/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2011-09-17T19:59:49Z",
+  "updated_at": "2011-09-18T11:36:58Z",
+  "closed_at": "2011-09-18T11:36:58Z",
+  "body": "Hi,\r\nHow does this Pre class thing work? I'm creating a mini-pastebin and so far i got this part:\r\n<script type=\"text/javascript\" src=\"js/'.$row[\"lang\"].'.js\"></script>\r\nSo it finds the right language.js file, but how about the pre class, how can i make that auto? I'm not quite understanding this page: http://alexgorbatchev.com/SyntaxHighlighter/manual/api/autoloader.html  I'm afraid. ",
+  "closed_by": {
+    "login": "mikt",
+    "id": 1029234,
+    "avatar_url": "https://avatars.githubusercontent.com/u/1029234?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/mikt",
+    "html_url": "https://github.com/mikt",
+    "followers_url": "https://api.github.com/users/mikt/followers",
+    "following_url": "https://api.github.com/users/mikt/following{/other_user}",
+    "gists_url": "https://api.github.com/users/mikt/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/mikt/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/mikt/subscriptions",
+    "organizations_url": "https://api.github.com/users/mikt/orgs",
+    "repos_url": "https://api.github.com/users/mikt/repos",
+    "events_url": "https://api.github.com/users/mikt/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/mikt/received_events",
+    "type": "User",
+    "site_admin": false
+  }
+}
+BODY STARTS FROM HERE
+[
+
+]

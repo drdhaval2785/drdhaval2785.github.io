@@ -1,0 +1,52 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/286",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/286/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/286/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/286/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/pull/286",
+  "id": 26283163,
+  "number": 286,
+  "title": "background-color must be `transparent`",
+  "user": {
+    "login": "Volker-E",
+    "id": 619536,
+    "avatar_url": "https://avatars.githubusercontent.com/u/619536?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Volker-E",
+    "html_url": "https://github.com/Volker-E",
+    "followers_url": "https://api.github.com/users/Volker-E/followers",
+    "following_url": "https://api.github.com/users/Volker-E/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Volker-E/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Volker-E/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Volker-E/subscriptions",
+    "organizations_url": "https://api.github.com/users/Volker-E/orgs",
+    "repos_url": "https://api.github.com/users/Volker-E/repos",
+    "events_url": "https://api.github.com/users/Volker-E/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Volker-E/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2014-01-25T01:21:03Z",
+  "updated_at": "2014-01-25T01:21:03Z",
+  "closed_at": null,
+  "pull_request": {
+    "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/pulls/286",
+    "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/pull/286",
+    "diff_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/pull/286.diff",
+    "patch_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/pull/286.patch"
+  },
+  "body": "`background-color: none;` doesn't exist, see\r\nhttp://www.w3.org/TR/CSS2/syndata.html#value-def-color",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+
+]

@@ -1,0 +1,46 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/352",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/352/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/352/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/352/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/352",
+  "id": 57420872,
+  "number": 352,
+  "title": "[bug] in spring mvc 4.x",
+  "user": {
+    "login": "liefdiy",
+    "id": 962740,
+    "avatar_url": "https://avatars.githubusercontent.com/u/962740?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/liefdiy",
+    "html_url": "https://github.com/liefdiy",
+    "followers_url": "https://api.github.com/users/liefdiy/followers",
+    "following_url": "https://api.github.com/users/liefdiy/following{/other_user}",
+    "gists_url": "https://api.github.com/users/liefdiy/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/liefdiy/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/liefdiy/subscriptions",
+    "organizations_url": "https://api.github.com/users/liefdiy/orgs",
+    "repos_url": "https://api.github.com/users/liefdiy/repos",
+    "events_url": "https://api.github.com/users/liefdiy/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/liefdiy/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2015-02-12T05:59:10Z",
+  "updated_at": "2015-02-12T05:59:10Z",
+  "closed_at": null,
+  "body": "there is a annotation key word named \"@MatrixVariable\",  when java code contains MatrixVariable,  it'll add a <string,> in the end. like this:\r\n    \r\n\t// /user/matrix4/asaa/pets/aa;q=11;r=12 输出{}, {q=[11], r=[12]}\r\n\t@RequestMapping(value = \"/matrix4/{ver}/pets/{petId}\", method = RequestMethod.GET)\r\n\tpublic String matrix4(@MatrixVariable(pathVar = \"ver\") Map<string, string=\"\"> mtx1, @MatrixVariable(pathVar = \"petId\") Map<string, string=\"\"> mtx2, Model model) {\r\n\t    System.out.println(mtx1);\r\n\t    System.out.println(mtx2);\r\n\t    return \"/user/index\";\r\n\t}\r\n\t</string,></string,>\r\n\r\nI think it may be lack of key work,how to fix it ?",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+
+]

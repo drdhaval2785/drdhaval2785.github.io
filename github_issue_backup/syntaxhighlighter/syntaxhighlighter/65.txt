@@ -1,0 +1,91 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/65",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/65/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/65/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/65/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/65",
+  "id": 2364716,
+  "number": 65,
+  "title": "copy, print, raw code",
+  "user": {
+    "login": "gitbase",
+    "id": 614402,
+    "avatar_url": "https://avatars.githubusercontent.com/u/614402?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/gitbase",
+    "html_url": "https://github.com/gitbase",
+    "followers_url": "https://api.github.com/users/gitbase/followers",
+    "following_url": "https://api.github.com/users/gitbase/following{/other_user}",
+    "gists_url": "https://api.github.com/users/gitbase/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/gitbase/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/gitbase/subscriptions",
+    "organizations_url": "https://api.github.com/users/gitbase/orgs",
+    "repos_url": "https://api.github.com/users/gitbase/repos",
+    "events_url": "https://api.github.com/users/gitbase/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/gitbase/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2011-11-28T07:28:22Z",
+  "updated_at": "2012-01-11T15:38:15Z",
+  "closed_at": "2012-01-11T15:38:15Z",
+  "body": "previous versions were using swf, and now you removed them.\r\n\r\nthose features were awesome and i request you to implement them without flash :)",
+  "closed_by": {
+    "login": "alexgorbatchev",
+    "id": 65633,
+    "avatar_url": "https://avatars.githubusercontent.com/u/65633?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/alexgorbatchev",
+    "html_url": "https://github.com/alexgorbatchev",
+    "followers_url": "https://api.github.com/users/alexgorbatchev/followers",
+    "following_url": "https://api.github.com/users/alexgorbatchev/following{/other_user}",
+    "gists_url": "https://api.github.com/users/alexgorbatchev/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/alexgorbatchev/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/alexgorbatchev/subscriptions",
+    "organizations_url": "https://api.github.com/users/alexgorbatchev/orgs",
+    "repos_url": "https://api.github.com/users/alexgorbatchev/repos",
+    "events_url": "https://api.github.com/users/alexgorbatchev/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/alexgorbatchev/received_events",
+    "type": "User",
+    "site_admin": false
+  }
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/comments/2959294",
+    "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/65#issuecomment-2959294",
+    "issue_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/65",
+    "id": 2959294,
+    "user": {
+      "login": "nullzero",
+      "id": 685251,
+      "avatar_url": "https://avatars.githubusercontent.com/u/685251?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/nullzero",
+      "html_url": "https://github.com/nullzero",
+      "followers_url": "https://api.github.com/users/nullzero/followers",
+      "following_url": "https://api.github.com/users/nullzero/following{/other_user}",
+      "gists_url": "https://api.github.com/users/nullzero/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/nullzero/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/nullzero/subscriptions",
+      "organizations_url": "https://api.github.com/users/nullzero/orgs",
+      "repos_url": "https://api.github.com/users/nullzero/repos",
+      "events_url": "https://api.github.com/users/nullzero/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/nullzero/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2011-11-30T12:52:53Z",
+    "updated_at": "2011-11-30T12:52:53Z",
+    "body": "From http://alexgorbatchev.com/SyntaxHighlighter/whatsnew.html\r\n\r\n\"Well, it's finally happening -- no more Flash. I think I've came up with user interface to copy code to clipboard which is a lot more intuitive and almost too easy.\r\n\r\nIf you double click anywhere on the code, the entire code view is replaces with a pre-selected view from which users can copy with a simple Ctrl/Cmd-C. Clicking anywhere else returns the view to the original state. \"\r\n\r\n\"Another popular request has been ability to select the code without line numbers. This is also now part of the SyntaxHighlighter as it allows you to select the code with your mouse and then copy and paste it without straight into your code without any additional effort. \""
+  }
+]

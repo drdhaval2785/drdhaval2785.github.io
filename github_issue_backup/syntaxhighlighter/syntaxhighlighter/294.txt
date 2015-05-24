@@ -1,0 +1,46 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/294",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/294/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/294/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/294/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/294",
+  "id": 28291464,
+  "number": 294,
+  "title": "Bower.json incorrect main",
+  "user": {
+    "login": "CMCDragonkai",
+    "id": 640797,
+    "avatar_url": "https://avatars.githubusercontent.com/u/640797?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/CMCDragonkai",
+    "html_url": "https://github.com/CMCDragonkai",
+    "followers_url": "https://api.github.com/users/CMCDragonkai/followers",
+    "following_url": "https://api.github.com/users/CMCDragonkai/following{/other_user}",
+    "gists_url": "https://api.github.com/users/CMCDragonkai/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/CMCDragonkai/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/CMCDragonkai/subscriptions",
+    "organizations_url": "https://api.github.com/users/CMCDragonkai/orgs",
+    "repos_url": "https://api.github.com/users/CMCDragonkai/repos",
+    "events_url": "https://api.github.com/users/CMCDragonkai/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/CMCDragonkai/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2014-02-25T22:35:23Z",
+  "updated_at": "2014-02-25T22:35:23Z",
+  "closed_at": null,
+  "body": "I think this line is incorrect: https://github.com/alexgorbatchev/syntaxhighlighter/blob/master/bower.json#L4\r\n\r\nThe main should be pointing the src directory.",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+
+]

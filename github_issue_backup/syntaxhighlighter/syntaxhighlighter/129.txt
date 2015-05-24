@@ -1,0 +1,46 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/129",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/129/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/129/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/129/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/129",
+  "id": 5158389,
+  "number": 129,
+  "title": "& nbsp; on blank linies getting into the clipboard",
+  "user": {
+    "login": "scootergrisen",
+    "id": 1836590,
+    "avatar_url": "https://avatars.githubusercontent.com/u/1836590?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/scootergrisen",
+    "html_url": "https://github.com/scootergrisen",
+    "followers_url": "https://api.github.com/users/scootergrisen/followers",
+    "following_url": "https://api.github.com/users/scootergrisen/following{/other_user}",
+    "gists_url": "https://api.github.com/users/scootergrisen/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/scootergrisen/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/scootergrisen/subscriptions",
+    "organizations_url": "https://api.github.com/users/scootergrisen/orgs",
+    "repos_url": "https://api.github.com/users/scootergrisen/repos",
+    "events_url": "https://api.github.com/users/scootergrisen/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/scootergrisen/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2012-06-19T23:01:11Z",
+  "updated_at": "2012-06-19T23:01:11Z",
+  "closed_at": null,
+  "body": "Ok so when i doubleclick a syntaxhighlighter area all the code is selected for easy copying.\nBut on all the blank linies a & nbsp; is inserted which issent to nice because its not part of the orginal code resulting in a space on each blank linie.\n\nAnyhow the solution is/might be going to \"src/shCore.js\" line number 1481 where is says :\n\n\t\t\tif (line.length == 0)\n\t\t\t\tline = sh.config.space;\n\nAnd change it to :\n\n\t\t\tif (line.length == 0)\n\t\t\t\tline = '\\n';\n\nSeems to work fine.",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+
+]

@@ -1,0 +1,46 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/104",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/104/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/104/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/104/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/104",
+  "id": 3910943,
+  "number": 104,
+  "title": "Apostrophes don't seem to work on titles?",
+  "user": {
+    "login": "ShedoSurashu",
+    "id": 635367,
+    "avatar_url": "https://avatars.githubusercontent.com/u/635367?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ShedoSurashu",
+    "html_url": "https://github.com/ShedoSurashu",
+    "followers_url": "https://api.github.com/users/ShedoSurashu/followers",
+    "following_url": "https://api.github.com/users/ShedoSurashu/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ShedoSurashu/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ShedoSurashu/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ShedoSurashu/subscriptions",
+    "organizations_url": "https://api.github.com/users/ShedoSurashu/orgs",
+    "repos_url": "https://api.github.com/users/ShedoSurashu/repos",
+    "events_url": "https://api.github.com/users/ShedoSurashu/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ShedoSurashu/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2012-03-31T15:46:07Z",
+  "updated_at": "2012-03-31T15:46:33Z",
+  "closed_at": null,
+  "body": "For the code block's title, I'm trying to see if apostrophes ( ' ) will work with the title property. So far I already tried ( &amp;apos; ) and the escaped version ( \\' ) to no avail",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+
+]

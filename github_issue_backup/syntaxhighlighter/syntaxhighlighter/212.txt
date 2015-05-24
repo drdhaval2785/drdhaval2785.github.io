@@ -1,0 +1,46 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/212",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/212/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/212/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/212/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/212",
+  "id": 14109980,
+  "number": 212,
+  "title": "Autoloader doesn't seem to be working when tagName is changed.",
+  "user": {
+    "login": "shivateja",
+    "id": 1393746,
+    "avatar_url": "https://avatars.githubusercontent.com/u/1393746?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/shivateja",
+    "html_url": "https://github.com/shivateja",
+    "followers_url": "https://api.github.com/users/shivateja/followers",
+    "following_url": "https://api.github.com/users/shivateja/following{/other_user}",
+    "gists_url": "https://api.github.com/users/shivateja/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/shivateja/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/shivateja/subscriptions",
+    "organizations_url": "https://api.github.com/users/shivateja/orgs",
+    "repos_url": "https://api.github.com/users/shivateja/repos",
+    "events_url": "https://api.github.com/users/shivateja/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/shivateja/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2013-05-08T16:31:25Z",
+  "updated_at": "2013-05-08T16:31:25Z",
+  "closed_at": null,
+  "body": "When I tried to change the default tag, autoloader was not working (http://jsfiddle.net/Y3ftv/).\r\nNew to SyntaxHighlighter. I hope I didn't do anything wrong.",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+
+]

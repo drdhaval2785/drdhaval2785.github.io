@@ -1,0 +1,97 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/63",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/63/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/63/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/63/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/pull/63",
+  "id": 2305969,
+  "number": 63,
+  "title": "fix conflict with CJS require('shCore') and AMD loaders (issue #62)",
+  "user": {
+    "login": "millermedeiros",
+    "id": 155633,
+    "avatar_url": "https://avatars.githubusercontent.com/u/155633?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/millermedeiros",
+    "html_url": "https://github.com/millermedeiros",
+    "followers_url": "https://api.github.com/users/millermedeiros/followers",
+    "following_url": "https://api.github.com/users/millermedeiros/following{/other_user}",
+    "gists_url": "https://api.github.com/users/millermedeiros/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/millermedeiros/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/millermedeiros/subscriptions",
+    "organizations_url": "https://api.github.com/users/millermedeiros/orgs",
+    "repos_url": "https://api.github.com/users/millermedeiros/repos",
+    "events_url": "https://api.github.com/users/millermedeiros/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/millermedeiros/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2011-11-21T15:51:35Z",
+  "updated_at": "2011-12-16T22:40:11Z",
+  "closed_at": "2011-12-16T22:40:11Z",
+  "pull_request": {
+    "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/pulls/63",
+    "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/pull/63",
+    "diff_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/pull/63.diff",
+    "patch_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/pull/63.patch"
+  },
+  "body": "just changed the SyntaxHighlighter check at the top of each brush.\r\n\r\nsee #62",
+  "closed_by": {
+    "login": "alexgorbatchev",
+    "id": 65633,
+    "avatar_url": "https://avatars.githubusercontent.com/u/65633?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/alexgorbatchev",
+    "html_url": "https://github.com/alexgorbatchev",
+    "followers_url": "https://api.github.com/users/alexgorbatchev/followers",
+    "following_url": "https://api.github.com/users/alexgorbatchev/following{/other_user}",
+    "gists_url": "https://api.github.com/users/alexgorbatchev/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/alexgorbatchev/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/alexgorbatchev/subscriptions",
+    "organizations_url": "https://api.github.com/users/alexgorbatchev/orgs",
+    "repos_url": "https://api.github.com/users/alexgorbatchev/repos",
+    "events_url": "https://api.github.com/users/alexgorbatchev/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/alexgorbatchev/received_events",
+    "type": "User",
+    "site_admin": false
+  }
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/comments/2906174",
+    "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/pull/63#issuecomment-2906174",
+    "issue_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/63",
+    "id": 2906174,
+    "user": {
+      "login": "frne",
+      "id": 724395,
+      "avatar_url": "https://avatars.githubusercontent.com/u/724395?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/frne",
+      "html_url": "https://github.com/frne",
+      "followers_url": "https://api.github.com/users/frne/followers",
+      "following_url": "https://api.github.com/users/frne/following{/other_user}",
+      "gists_url": "https://api.github.com/users/frne/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/frne/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/frne/subscriptions",
+      "organizations_url": "https://api.github.com/users/frne/orgs",
+      "repos_url": "https://api.github.com/users/frne/repos",
+      "events_url": "https://api.github.com/users/frne/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/frne/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2011-11-28T19:48:42Z",
+    "updated_at": "2011-11-28T19:48:42Z",
+    "body": "*pull upvote"
+  }
+]

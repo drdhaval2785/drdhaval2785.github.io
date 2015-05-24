@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html class='' lang='en'>
+<head prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#'>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8'>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta http-equiv='Content-Language' content='en'>
+<title>syntaxhighlighter/syntaxhighlighter/140</title>
+<link href='github-c486157afcc5f58155a921bc675afb08733fbaa8dcf39ac2104d3.css' media='all' rel='stylesheet'>
+<link href='github2-da2e842cc3f0aaf33b727d0ef034243c12ab008fd09b24868b97.css' media='all' rel='stylesheet'>
+<meta http-equiv='x-pjax-version' content='4426702614c8182f33d1780ad1169662'>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shAutoloader.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAppleScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAS3.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushBash.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushColdFusion.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCpp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCSharp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCss.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDelphi.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDiff.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushErlang.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushGroovy.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJava.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJavaFX.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/syntaxhighlighter/scripts/shBrushJScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPerl.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPhp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPlain.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPowerShell.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPython.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushRuby.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSass.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushScala.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSql.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushVb.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushXml.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shLegacy.js'></script>
+	<link type='text/css' rel='stylesheet' href='syntaxhighlighter/styles/shCoreDefault.css'/>
+	<script type='text/javascript'>SyntaxHighlighter.all();</script>
+</head>
+<body class='logged_in  env-production windows vis-public'>
+<h1 align='center'><a href='https://github.com/syntaxhighlighter/syntaxhighlighter/issues/140' target='_blank'>Many extra lines</h1><hr/><div id="#issue-6069064" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/rvosa" class="author">rvosa</a>
+    </strong>
+    commented on 
+    <a href="#issue-6069064" class="timestamp">
+      <time>2012-08-07 06:08:48</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Recently the syntax highlighter has been adding many extra lines at the end of each block, and the line numbers have become weird. This is in chrome on OSX, firefox looks fine.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-7545437" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/josiahcarlson" class="author">josiahcarlson</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-7545437" class="timestamp">
+      <time>2012-08-07 07:09:15</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Chrome on Windows has the same issue. The width of the line number column on the left is only 1 character wide. The Chromium developer build 22.0.1195.0 also has the issue.</p>
+<p>Firefox, Opera, and Safari (5.5) on Windows are fine.</p>
+<p>Smells like an issue with the most recent Chrome and Chromium builds.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-7573103" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/alekdavis" class="author">alekdavis</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-7573103" class="timestamp">
+      <time>2012-08-08 02:08:38</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Have the same issue on Windows 7 (x64) and Chrome. Have not noticed this until recently.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-7588965" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/adelzhang" class="author">adelzhang</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-7588965" class="timestamp">
+      <time>2012-08-08 16:24:56</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Have the same issue.</p>
+<p>Chrome Version 21.0.1180.57<br />
+Ubuntu 12.04 (x64)</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-7665604" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/eildosa" class="author">eildosa</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-7665604" class="timestamp">
+      <time>2012-08-11 10:19:07</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>same thing, last chrome version and windows 7 64b</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-7844603" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/alexjlockwood" class="author">alexjlockwood</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-7844603" class="timestamp">
+      <time>2012-08-18 13:49:56</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Same issue. I'm using chrome build 21.0.1180.79 on Windows 7 Home Edition 64b. Everything looks fine in Firefox.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-7845435" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/gkmuse" class="author">gkmuse</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-7845435" class="timestamp">
+      <time>2012-08-18 15:31:50</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Same issue, last Chrome version and Windows 7 64bit.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-7845453" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/alexjlockwood" class="author">alexjlockwood</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-7845453" class="timestamp">
+      <time>2012-08-18 15:34:25</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I tried the fix suggested here and it fixed the issue. I don't think it will mess up things in the long run either, but it might be a good idea to check back for updates just to be safe.</p>
+<p><a href="http://stackoverflow.com/q/11804789/844882">http://stackoverflow.com/q/11804789/844882</a></p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-7845586" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/gkmuse" class="author">gkmuse</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-7845586" class="timestamp">
+      <time>2012-08-18 15:51:09</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/alexjlockwood" target="_blank">@alexjlockwood</a></strong> Thanks. It works.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-8284947" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/anbinhtrong" class="author">anbinhtrong</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-8284947" class="timestamp">
+      <time>2012-09-05 01:29:56</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>But this page runs normally: <a href="http://alexgorbatchev.com/SyntaxHighlighter/manual/installation.html">http://alexgorbatchev.com/SyntaxHighlighter/manual/installation.html</a>.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-8285051" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/anbinhtrong" class="author">anbinhtrong</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-8285051" class="timestamp">
+      <time>2012-09-05 01:35:35</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I tested Chrome 21 and Chromium 21. The issue only occur in Chrome</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+</body></html>

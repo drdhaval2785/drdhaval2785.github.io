@@ -1,0 +1,97 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/18",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/18/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/18/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/18/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/pull/18",
+  "id": 1501172,
+  "number": 18,
+  "title": "Added 'var' keyword for CSharp brush",
+  "user": {
+    "login": "alexbeletsky",
+    "id": 304929,
+    "avatar_url": "https://avatars.githubusercontent.com/u/304929?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/alexbeletsky",
+    "html_url": "https://github.com/alexbeletsky",
+    "followers_url": "https://api.github.com/users/alexbeletsky/followers",
+    "following_url": "https://api.github.com/users/alexbeletsky/following{/other_user}",
+    "gists_url": "https://api.github.com/users/alexbeletsky/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/alexbeletsky/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/alexbeletsky/subscriptions",
+    "organizations_url": "https://api.github.com/users/alexbeletsky/orgs",
+    "repos_url": "https://api.github.com/users/alexbeletsky/repos",
+    "events_url": "https://api.github.com/users/alexbeletsky/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/alexbeletsky/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2011-08-27T17:30:34Z",
+  "updated_at": "2011-09-23T16:40:48Z",
+  "closed_at": "2011-09-23T16:40:42Z",
+  "pull_request": {
+    "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/pulls/18",
+    "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/pull/18",
+    "diff_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/pull/18.diff",
+    "patch_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/pull/18.patch"
+  },
+  "body": "'var' appeared from .NET 3.5 and really widelly spreaded. Without it colored syntax looks weird :)",
+  "closed_by": {
+    "login": "alexgorbatchev",
+    "id": 65633,
+    "avatar_url": "https://avatars.githubusercontent.com/u/65633?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/alexgorbatchev",
+    "html_url": "https://github.com/alexgorbatchev",
+    "followers_url": "https://api.github.com/users/alexgorbatchev/followers",
+    "following_url": "https://api.github.com/users/alexgorbatchev/following{/other_user}",
+    "gists_url": "https://api.github.com/users/alexgorbatchev/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/alexgorbatchev/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/alexgorbatchev/subscriptions",
+    "organizations_url": "https://api.github.com/users/alexgorbatchev/orgs",
+    "repos_url": "https://api.github.com/users/alexgorbatchev/repos",
+    "events_url": "https://api.github.com/users/alexgorbatchev/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/alexgorbatchev/received_events",
+    "type": "User",
+    "site_admin": false
+  }
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/comments/2180452",
+    "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/pull/18#issuecomment-2180452",
+    "issue_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/18",
+    "id": 2180452,
+    "user": {
+      "login": "alexgorbatchev",
+      "id": 65633,
+      "avatar_url": "https://avatars.githubusercontent.com/u/65633?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/alexgorbatchev",
+      "html_url": "https://github.com/alexgorbatchev",
+      "followers_url": "https://api.github.com/users/alexgorbatchev/followers",
+      "following_url": "https://api.github.com/users/alexgorbatchev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/alexgorbatchev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/alexgorbatchev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/alexgorbatchev/subscriptions",
+      "organizations_url": "https://api.github.com/users/alexgorbatchev/orgs",
+      "repos_url": "https://api.github.com/users/alexgorbatchev/repos",
+      "events_url": "https://api.github.com/users/alexgorbatchev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/alexgorbatchev/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2011-09-23T16:40:48Z",
+    "updated_at": "2011-09-23T16:40:48Z",
+    "body": "Thank you!"
+  }
+]

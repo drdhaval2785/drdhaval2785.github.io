@@ -1,0 +1,73 @@
+{
+  "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/96",
+  "labels_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/96/labels{/name}",
+  "comments_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/96/comments",
+  "events_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/96/events",
+  "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/96",
+  "id": 3391830,
+  "number": 96,
+  "title": "incorrect rendering, c++ code",
+  "user": {
+    "login": "rajinderyadav",
+    "id": 1158052,
+    "avatar_url": "https://avatars.githubusercontent.com/u/1158052?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/rajinderyadav",
+    "html_url": "https://github.com/rajinderyadav",
+    "followers_url": "https://api.github.com/users/rajinderyadav/followers",
+    "following_url": "https://api.github.com/users/rajinderyadav/following{/other_user}",
+    "gists_url": "https://api.github.com/users/rajinderyadav/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/rajinderyadav/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/rajinderyadav/subscriptions",
+    "organizations_url": "https://api.github.com/users/rajinderyadav/orgs",
+    "repos_url": "https://api.github.com/users/rajinderyadav/repos",
+    "events_url": "https://api.github.com/users/rajinderyadav/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/rajinderyadav/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2012-02-26T17:06:08Z",
+  "updated_at": "2012-12-14T05:13:17Z",
+  "closed_at": null,
+  "body": "NOTE: I had to added a space in my post after the '<' as github end up eating these as tags and you won't see it!\r\n\r\nHello I am seeing a render bug in my rails app, when I pass the following raw string to SH,\r\n\r\n\"#include < iostream>\\r\\n#include < string>\\r\\n\\r\\nusing namespace std;\\r\\n\\r\\nvoid main()\\r\\n{\\r\\n   string str = \\\"Hello World!\\\";\\r\\n   cout << str << endl;\\r\\n}\"\r\n\r\nI am see the following output, note '< /string>< /iostream>' should not be part of the output! (I am using the c++ brush)\r\n\r\n#include < iostream>\r\n#include < string>\r\n \r\nusing namespace std;\r\n \r\nvoid main()\r\n{\r\n   string str = \"Hello World!\";\r\n   cout << str << endl;\r\n}< /string>< /iostream>",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/comments/11365518",
+    "html_url": "https://github.com/syntaxhighlighter/syntaxhighlighter/issues/96#issuecomment-11365518",
+    "issue_url": "https://api.github.com/repos/syntaxhighlighter/syntaxhighlighter/issues/96",
+    "id": 11365518,
+    "user": {
+      "login": "LeviHarman",
+      "id": 1418544,
+      "avatar_url": "https://avatars.githubusercontent.com/u/1418544?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/LeviHarman",
+      "html_url": "https://github.com/LeviHarman",
+      "followers_url": "https://api.github.com/users/LeviHarman/followers",
+      "following_url": "https://api.github.com/users/LeviHarman/following{/other_user}",
+      "gists_url": "https://api.github.com/users/LeviHarman/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/LeviHarman/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/LeviHarman/subscriptions",
+      "organizations_url": "https://api.github.com/users/LeviHarman/orgs",
+      "repos_url": "https://api.github.com/users/LeviHarman/repos",
+      "events_url": "https://api.github.com/users/LeviHarman/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/LeviHarman/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2012-12-14T05:11:15Z",
+    "updated_at": "2012-12-14T05:13:17Z",
+    "body": "The problem is you are using pre tag.\r\n\r\nIf you use '<' in your source code. You must either escape each tag individually. Or use <script type=\"syntaxhighlighter\" class=\"brush: cpp;\"> instead of <pre class=\"brush: cpp;\">\r\n\r\nThe installation page mentions this bug.\r\nhttp://alexgorbatchev.com/SyntaxHighlighter/manual/installation.html"
+  }
+]

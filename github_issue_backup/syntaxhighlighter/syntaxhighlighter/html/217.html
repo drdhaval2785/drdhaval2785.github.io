@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html class='' lang='en'>
+<head prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#'>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8'>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta http-equiv='Content-Language' content='en'>
+<title>syntaxhighlighter/syntaxhighlighter/217</title>
+<link href='github-c486157afcc5f58155a921bc675afb08733fbaa8dcf39ac2104d3.css' media='all' rel='stylesheet'>
+<link href='github2-da2e842cc3f0aaf33b727d0ef034243c12ab008fd09b24868b97.css' media='all' rel='stylesheet'>
+<meta http-equiv='x-pjax-version' content='4426702614c8182f33d1780ad1169662'>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shAutoloader.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAppleScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAS3.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushBash.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushColdFusion.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCpp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCSharp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCss.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDelphi.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDiff.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushErlang.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushGroovy.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJava.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJavaFX.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/syntaxhighlighter/scripts/shBrushJScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPerl.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPhp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPlain.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPowerShell.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPython.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushRuby.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSass.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushScala.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSql.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushVb.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushXml.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shLegacy.js'></script>
+	<link type='text/css' rel='stylesheet' href='syntaxhighlighter/styles/shCoreDefault.css'/>
+	<script type='text/javascript'>SyntaxHighlighter.all();</script>
+</head>
+<body class='logged_in  env-production windows vis-public'>
+<h1 align='center'><a href='https://github.com/syntaxhighlighter/syntaxhighlighter/pull/217' target='_blank'>Two improvements.</h1><hr/><div id="#issue-14771377" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/s4wny" class="author">s4wny</a>
+    </strong>
+    commented on 
+    <a href="#issue-14771377" class="timestamp">
+      <time>2013-05-26 15:07:30</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <ol>
+<li>Removed all !important rules from src/sass/*</li>
+<li>Fixed theme bug. When double cliking on code the background was always white, regardless what the $background variable was set to.</li>
+</ol>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-18703108" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/alexgorbatchev" class="author">alexgorbatchev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-18703108" class="timestamp">
+      <time>2013-05-30 19:40:39</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/s4wny" target="_blank">@s4wny</a></strong> <code>!important</code> is littered everywhere because of the integrations problems with existing styles on peoples pages. When iframe rendering is implemented, we can remove this. Until then, it's crucial to have this to avoid css mess.</p>
+<p>Thank you for taking time to do this however!</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-18704773" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/s4wny" class="author">s4wny</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-18704773" class="timestamp">
+      <time>2013-05-30 20:08:15</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Well that is the reason I always remove the <code>!important</code> stuff.</p>
+<p>I want to restyle things without using <code>!important</code> to overwrite the SH default styles. <code>!important</code> should rarely be used at all. </p>
+<p>For example I often want to do this:</p>
+<pre class="brush: sass">.code-box {
+    //Some nice padding
+    padding: 10px 10px 0px 10px;
+    box-sizing: border-box;
+
+    //Decrease the font-size
+    font-size: 0.77em;
+
+    //No scroll bar thx
+    word-wrap: break-word;
+    overflow: hidden;
+
+    table {
+        table-layout: fixed; //Overflow fix
+    }
+}</code></pre>
+<p>(without using !important after every single property)</p>
+<p>I think the best solution would be to make SH use specific classes instead of general targeting.</p>
+<p>This...</p>
+<pre class="brush: css">    a,
+    div,
+    code,
+    table,
+    table td,
+    table tr,
+    table tbody,
+    table thead,
+    table caption,</code></pre>
+<p>...should be...</p>
+<pre class="brush: css">    a.SH-a
+    div.SH-div
+    code.SH-code
+    table.SH-table
+    table td.SH-td
+    table tr.SH-tr
+    table tbody.SH-tbody
+    table thead.SH-thead
+    table caption.SH-caption</code></pre>
+<p>That way peoples existing style sheets won't be a problem <em>and</em> we can drop all <code>!important</code> tags.</p>
+<p>Anyway I look forward to the next version of SH.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-18709757" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/alexgorbatchev" class="author">alexgorbatchev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-18709757" class="timestamp">
+      <time>2013-05-30 21:30:06</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I totally understand your need to override CSS in your environment. Consider however what would happen on a wordpress site with a theme setting <code>td : { padding : 10px !important }</code>. It's probably important for the theme to make sure that there is 10px padding on the site, but definitely not in the highlighted code.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-18789373" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/s4wny" class="author">s4wny</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-18789373" class="timestamp">
+      <time>2013-06-01 13:27:56</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Okay, I get why the <code>!important</code> is necessary.</p>
+<p>Sad that people use <code>!important</code> and generic selectors. If they didn't we wouldn't have this problem at all.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-18877930" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/alexgorbatchev" class="author">alexgorbatchev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-18877930" class="timestamp">
+      <time>2013-06-03 22:28:37</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I think iframe rendering will solve this problem.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+</body></html>
