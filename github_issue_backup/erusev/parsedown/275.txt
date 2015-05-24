@@ -1,0 +1,111 @@
+{
+  "url": "https://api.github.com/repos/erusev/parsedown/issues/275",
+  "labels_url": "https://api.github.com/repos/erusev/parsedown/issues/275/labels{/name}",
+  "comments_url": "https://api.github.com/repos/erusev/parsedown/issues/275/comments",
+  "events_url": "https://api.github.com/repos/erusev/parsedown/issues/275/events",
+  "html_url": "https://github.com/erusev/parsedown/pull/275",
+  "id": 54947425,
+  "number": 275,
+  "title": "Add a CLI",
+  "user": {
+    "login": "hkdobrev",
+    "id": 506129,
+    "avatar_url": "https://avatars.githubusercontent.com/u/506129?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/hkdobrev",
+    "html_url": "https://github.com/hkdobrev",
+    "followers_url": "https://api.github.com/users/hkdobrev/followers",
+    "following_url": "https://api.github.com/users/hkdobrev/following{/other_user}",
+    "gists_url": "https://api.github.com/users/hkdobrev/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/hkdobrev/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/hkdobrev/subscriptions",
+    "organizations_url": "https://api.github.com/users/hkdobrev/orgs",
+    "repos_url": "https://api.github.com/users/hkdobrev/repos",
+    "events_url": "https://api.github.com/users/hkdobrev/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/hkdobrev/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "url": "https://api.github.com/repos/erusev/parsedown/labels/suggestion",
+      "name": "suggestion",
+      "color": "bfd4f2"
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 2,
+  "created_at": "2015-01-20T22:07:55Z",
+  "updated_at": "2015-01-24T18:06:49Z",
+  "closed_at": null,
+  "pull_request": {
+    "url": "https://api.github.com/repos/erusev/parsedown/pulls/275",
+    "html_url": "https://github.com/erusev/parsedown/pull/275",
+    "diff_url": "https://github.com/erusev/parsedown/pull/275.diff",
+    "patch_url": "https://github.com/erusev/parsedown/pull/275.patch"
+  },
+  "body": "- Super simple CLI with the ability to read from files and STDIN.\n- Add [vendor binary to\n`composer.json`](https://getcomposer.org/doc/articles/vendor-binaries.md).\n- Add CLI usage to README.\n\nCloses #76.",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/erusev/parsedown/issues/comments/70926796",
+    "html_url": "https://github.com/erusev/parsedown/pull/275#issuecomment-70926796",
+    "issue_url": "https://api.github.com/repos/erusev/parsedown/issues/275",
+    "id": 70926796,
+    "user": {
+      "login": "hkdobrev",
+      "id": 506129,
+      "avatar_url": "https://avatars.githubusercontent.com/u/506129?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/hkdobrev",
+      "html_url": "https://github.com/hkdobrev",
+      "followers_url": "https://api.github.com/users/hkdobrev/followers",
+      "following_url": "https://api.github.com/users/hkdobrev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/hkdobrev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/hkdobrev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/hkdobrev/subscriptions",
+      "organizations_url": "https://api.github.com/users/hkdobrev/orgs",
+      "repos_url": "https://api.github.com/users/hkdobrev/repos",
+      "events_url": "https://api.github.com/users/hkdobrev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/hkdobrev/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2015-01-21T21:37:55Z",
+    "updated_at": "2015-01-21T21:37:55Z",
+    "body": "@erusev @cebe @scottchiefbaker I've updated the PR a bit. I am not sure if the `parsedown` binary is better off in a `bin/` folder or in the root of the repo. What do you think?"
+  },
+  {
+    "url": "https://api.github.com/repos/erusev/parsedown/issues/comments/71009410",
+    "html_url": "https://github.com/erusev/parsedown/pull/275#issuecomment-71009410",
+    "issue_url": "https://api.github.com/repos/erusev/parsedown/issues/275",
+    "id": 71009410,
+    "user": {
+      "login": "cebe",
+      "id": 189796,
+      "avatar_url": "https://avatars.githubusercontent.com/u/189796?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/cebe",
+      "html_url": "https://github.com/cebe",
+      "followers_url": "https://api.github.com/users/cebe/followers",
+      "following_url": "https://api.github.com/users/cebe/following{/other_user}",
+      "gists_url": "https://api.github.com/users/cebe/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/cebe/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/cebe/subscriptions",
+      "organizations_url": "https://api.github.com/users/cebe/orgs",
+      "repos_url": "https://api.github.com/users/cebe/repos",
+      "events_url": "https://api.github.com/users/cebe/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/cebe/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2015-01-22T11:50:43Z",
+    "updated_at": "2015-01-22T11:50:43Z",
+    "body": "I do not think a bin subdirectory is needed."
+  }
+]

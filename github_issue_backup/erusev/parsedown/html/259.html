@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html class='' lang='en'>
+<head prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#'>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8'>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta http-equiv='Content-Language' content='en'>
+<title>erusev/parsedown/259</title>
+<link href='github-c486157afcc5f58155a921bc675afb08733fbaa8dcf39ac2104d3.css' media='all' rel='stylesheet'>
+<link href='github2-da2e842cc3f0aaf33b727d0ef034243c12ab008fd09b24868b97.css' media='all' rel='stylesheet'>
+<meta http-equiv='x-pjax-version' content='4426702614c8182f33d1780ad1169662'>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shAutoloader.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAppleScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAS3.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushBash.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushColdFusion.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCpp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCSharp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCss.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDelphi.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDiff.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushErlang.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushGroovy.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJava.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJavaFX.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/syntaxhighlighter/scripts/shBrushJScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPerl.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPhp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPlain.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPowerShell.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPython.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushRuby.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSass.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushScala.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSql.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushVb.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushXml.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shLegacy.js'></script>
+	<link type='text/css' rel='stylesheet' href='syntaxhighlighter/styles/shCoreDefault.css'/>
+	<script type='text/javascript'>SyntaxHighlighter.all();</script>
+</head>
+<body class='logged_in  env-production windows vis-public'>
+<h1 align='center'><a href='https://github.com/erusev/parsedown/issues/259' target='_blank'>Handling of Invalid HTML</h1><hr/><div id="#issue-53960939" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/pchri" class="author">pchri</a>
+    </strong>
+    commented on 
+    <a href="#issue-53960939" class="timestamp">
+      <time>2015-01-10 15:16:03</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I want to use Parsedown on a site that I run for a small group of people. Currently the users can write plain text messages on the site, but I would like to use Parsedown to allow them to make the text look a little more interesting. However, obviously I have no control over what the users write, but I would like to have control over what HTML gets generated so that it doesn't break the rest of the site.</p>
+<p>My problem is, that the users might try to add HTML to their text. And that it is not necessarily valid HTML.</p>
+<p>For the input</p>
+<pre><code>&lt;div&gt;&lt;p&gt;</code></pre>
+<p>Parsedown generates</p>
+<pre><code>&lt;p&gt;&lt;div&gt;&lt;p&gt;&lt;/p&gt;</code></pre>
+<p>Obviously this is illegal HTML in any context (paragraph inside paragraph), but it also leaves an open div-element that will break the layout of the rest of my site.</p>
+<p>(The simpler case with just the div start element is not such a big problem, because browsers will close the div when they see the paragraph end element)</p>
+<p>I know that no sane person would write this input, but I still think that Parsedown should generate valid HTML for any input.</p>
+<p>I have found a site that <a href="http://johnmacfarlane.net/babelmark2/?normalize=1&amp;text=%3Cdiv%3E%3Cp%3E">compares the HTML generated by various Markdown implemetations</a>, and this shows that almost none of the tested implementations get it right.</p>
+<p>Currently my workaround is to feed the output of Parsedown into an XML parser, and print it back out. This ensures that there are no open tags, but I have very little control. Another possible workaround could be to use javascript to add the generated HTML to the innerHTML of a div element, but again I feel this shouldn't be necessary.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-69459471" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-69459471" class="timestamp">
+      <time>2015-01-10 15:28:32</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>What is the output that you'd expect?</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-69475677" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/pchri" class="author">pchri</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-69475677" class="timestamp">
+      <time>2015-01-10 22:58:05</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Ah, yes I should have stated that in my first post...</p>
+<p>Actually I'm not so fuzzy about that. </p>
+<p>I would consider an empty output as perfectly acceptable, but I would like to see something like</p>
+<pre><code>&lt;div&gt;&lt;p&gt;&lt;/p&gt;&lt;/div&gt;</code></pre>
+<p>or</p>
+<pre><code>&lt;p&gt;&lt;/p&gt;&lt;div&gt;&lt;p&gt;&lt;/p&gt;&lt;/div&gt;</code></pre>
+<p>I.e. close any open tags.</p>
+<p>Another problem is when the source tries to close tags that are not open, i.e.</p>
+<pre><code>&lt;/div&gt;</code></pre>
+<p>The current output is</p>
+<pre><code>&lt;p&gt;&lt;/div&gt;&lt;/p&gt;</code></pre>
+<p>which is not good. Again I'm not particularly fuzzy about the output as long as it is valid. I would accept an empty output, or any of</p>
+<pre><code>&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;div&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;&amp;lt;/div&amp;gt;&lt;/p&gt;</code></pre>
+<p>I really appreciate, that you take time to look at this.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-69476613" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/smz" class="author">smz</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-69476613" class="timestamp">
+      <time>2015-01-10 23:29:28</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/pchri" target="_blank">@pchri</a></strong> </p>
+<blockquote>
+<p>... but I still think that Parsedown should generate valid HTML for any input.</p>
+</blockquote>
+<p>I'm afraid your expectations far exceeds what is reasonable to expect: Parsedown will generate valid HTML from <strong>markdown</strong> that it is feed of, but you can't expect it to be a magic wand fixing invalid HTML.</p>
+<p>My personal advice in your case would be to sanitize user input by stripping <strong>any</strong> HTML before passing it to Markdown.</p>
+<p>Loooooong decades ago, when I first approached programming, I learned about an acronym that I think still holds: GIGO (Garbage In - Garbage Out) :stuck_out_tongue_winking_eye: </p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-69491041" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-69491041" class="timestamp">
+      <time>2015-01-11 11:22:41</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Even if Parsedown does improve the validity of the output a bit in these, it cannot be enough for you. It is not hard at all with Markdown to generate input which would be either invalid or unspecified. You could use HTMLTidy to literally &quot;tidy&quot; the output. It has quite good options for invalid HTML, empty elements, blacklisting and whitelisting etc. And even if Parsedown does indeed output correct HTML, it would not be in its current scope to blacklist iframes for example.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-69497177" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/pchri" class="author">pchri</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-69497177" class="timestamp">
+      <time>2015-01-11 14:58:39</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/smz" target="_blank">@smz</a></strong>
+I don't necessarily expect parsedown to fix the HTML input. It can ignore the html or treat it as text and generate html-entities for it for all I care. My last example shows just that. So I don't expect parsedown to fix the html, but I still expect the output to be valid.</p>
+<p>I am familiar with GIGO, but having a background that includes compiler construction I have always felt that GIGO is a sign of low quality in software. (I'm <strong>not</strong> saying that parsedown is low quality. It is free, and easy to use and it does what it says on the package and I can work around the problems I encounter). Imagine a compiler (or interpreter) for a programming language. GIGO allows the compiler to erase the entire harddisk when it encounters a syntax error. A good compiler produces a helpful error message and does <em>not</em> generate false code.</p>
+<p>I guess I see parsedown as a compiler translating markdown to HTML and I would actually also be happy if parsedown gave me an error indication on the invalid input.</p>
+<p><strong><a href="https://github.com/hkdobrev" target="_blank">@hkdobrev</a></strong>
+Unfortunately my hosting service does not support HTMLTidy or the PHP Tidy extension. As stated I use an XML parser to do some tidying up, and it would be fairly easy for me to blacklist iframes in that context if I wanted that.</p>
+<p>Anyway, thank you for your time.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-69498322" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/smz" class="author">smz</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-69498322" class="timestamp">
+      <time>2015-01-11 15:33:40</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/pchri" target="_blank">@pchri</a></strong> </p>
+<blockquote>
+<p>I guess I see parsedown as a compiler translating markdown to HTML and I would actually also be happy if parsedown gave me an error indication on the invalid input.</p>
+</blockquote>
+<p>That's correct. But to achieve what you are expecting Parsedown should also be able to parse HTML (to judge on its validity) and this, I think, is beyond its scope.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+</body></html>

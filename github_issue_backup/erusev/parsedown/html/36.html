@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html class='' lang='en'>
+<head prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#'>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8'>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta http-equiv='Content-Language' content='en'>
+<title>erusev/parsedown/36</title>
+<link href='github-c486157afcc5f58155a921bc675afb08733fbaa8dcf39ac2104d3.css' media='all' rel='stylesheet'>
+<link href='github2-da2e842cc3f0aaf33b727d0ef034243c12ab008fd09b24868b97.css' media='all' rel='stylesheet'>
+<meta http-equiv='x-pjax-version' content='4426702614c8182f33d1780ad1169662'>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shAutoloader.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAppleScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAS3.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushBash.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushColdFusion.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCpp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCSharp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCss.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDelphi.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDiff.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushErlang.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushGroovy.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJava.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJavaFX.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/syntaxhighlighter/scripts/shBrushJScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPerl.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPhp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPlain.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPowerShell.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPython.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushRuby.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSass.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushScala.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSql.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushVb.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushXml.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shLegacy.js'></script>
+	<link type='text/css' rel='stylesheet' href='syntaxhighlighter/styles/shCoreDefault.css'/>
+	<script type='text/javascript'>SyntaxHighlighter.all();</script>
+</head>
+<body class='logged_in  env-production windows vis-public'>
+<h1 align='center'><a href='https://github.com/erusev/parsedown/pull/36' target='_blank'>Update Parsedown.php</h1><hr/><div id="#issue-23143102" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/josephok" class="author">josephok</a>
+    </strong>
+    commented on 
+    <a href="#issue-23143102" class="timestamp">
+      <time>2013-11-22 15:05:53</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Changes the htmlentities() to htmlspecialchars(). The htmlentities() has some problems encoding non-english words(like Chinese)</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-29088042" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-29088042" class="timestamp">
+      <time>2013-11-22 16:46:31</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><a href="http://php.net/manual/en/function.htmlentities.php">http://php.net/manual/en/function.htmlentities.php</a></p>
+<blockquote>
+<p>Like <a href="http://php.net/manual/en/function.htmlspecialchars.php"><code>htmlspecialchars()</code></a>, <a href="http://php.net/manual/en/function.htmlentities.php"><code>htmlentities()</code></a> takes an optional third argument encoding which defines encoding used in conversion. If omitted, the default value for this argument is <strong>ISO-8859-1</strong> in versions of PHP prior to 5.4.0, and <strong>UTF-8</strong> from PHP 5.4.0 onwards. Although this argument is technically optional, you are highly encouraged to specify the correct value for your code.</p>
+</blockquote>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-29104605" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-29104605" class="timestamp">
+      <time>2013-11-22 20:02:36</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/hkdobrev" target="_blank">@hkdobrev</a></strong> That's a good point. Would you like to make a PR that sets encoding to UTF-8? It should be beneficial to people using the parser on earlier versions of PHP.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-29104702" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-29104702" class="timestamp">
+      <time>2013-11-22 20:03:46</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/erusev" target="_blank">@erusev</a></strong> I would. But I think it should use <code>htmlentities()</code>. I am not entirely convinced about <code>htmlspecialchars()</code>.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-29104949" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-29104949" class="timestamp">
+      <time>2013-11-22 20:07:09</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>The intention of the call to is encode <code>&amp;</code>, <code>&lt;</code> and <code>&gt;</code>. <code>htmlspecialchars</code> does exactly that. <code>htmlentities</code> does it too but it does more than that and this is not necessary and, as <strong><a href="https://github.com/josephok" target="_blank">@josephok</a></strong> points out, it leads to errors.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-29105154" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-29105154" class="timestamp">
+      <time>2013-11-22 20:10:04</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/erusev" target="_blank">@erusev</a></strong> Right, I have probably misread the documentation the opposite way.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+</body></html>

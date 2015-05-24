@@ -1,0 +1,111 @@
+{
+  "url": "https://api.github.com/repos/erusev/parsedown/issues/216",
+  "labels_url": "https://api.github.com/repos/erusev/parsedown/issues/216/labels{/name}",
+  "comments_url": "https://api.github.com/repos/erusev/parsedown/issues/216/comments",
+  "events_url": "https://api.github.com/repos/erusev/parsedown/issues/216/events",
+  "html_url": "https://github.com/erusev/parsedown/pull/216",
+  "id": 42061871,
+  "number": 216,
+  "title": "Fixed closing of tables if there is a table following a table with only ...",
+  "user": {
+    "login": "ifpingram",
+    "id": 1426859,
+    "avatar_url": "https://avatars.githubusercontent.com/u/1426859?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ifpingram",
+    "html_url": "https://github.com/ifpingram",
+    "followers_url": "https://api.github.com/users/ifpingram/followers",
+    "following_url": "https://api.github.com/users/ifpingram/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ifpingram/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ifpingram/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ifpingram/subscriptions",
+    "organizations_url": "https://api.github.com/users/ifpingram/orgs",
+    "repos_url": "https://api.github.com/users/ifpingram/repos",
+    "events_url": "https://api.github.com/users/ifpingram/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ifpingram/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "url": "https://api.github.com/repos/erusev/parsedown/labels/issue",
+      "name": "issue",
+      "color": "f7c6c7"
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 2,
+  "created_at": "2014-09-05T16:04:22Z",
+  "updated_at": "2014-09-08T10:49:41Z",
+  "closed_at": null,
+  "pull_request": {
+    "url": "https://api.github.com/repos/erusev/parsedown/pulls/216",
+    "html_url": "https://github.com/erusev/parsedown/pull/216",
+    "diff_url": "https://github.com/erusev/parsedown/pull/216.diff",
+    "patch_url": "https://github.com/erusev/parsedown/pull/216.patch"
+  },
+  "body": "...a new line between them.\r\n\r\nif you had 2 tables following each other with just a new line between, like:\r\n\r\n|test1a|test1a|\r\n|------|------|\r\n|test1b|test1b|\r\n\r\n|test2a|test2a|\r\n|------|------|\r\n|test2b|test2b|\r\n\r\n\r\nIt produced one joined up table, as opposed to two tables:\r\n\r\n<table>\r\n<thead>\r\n<tr>\r\n<th>test1a</th>\r\n<th>test1a</th>\r\n</tr>\r\n</thead>\r\n<tbody>\r\n<tr>\r\n<td>test1b</td>\r\n<td>test1b</td>\r\n</tr>\r\n<tr>\r\n<th>test2a</th>\r\n<th>test2a</th>\r\n</tr>\r\n</thead>\r\n<tbody>\r\n<tr>\r\n<td>test2b</td>\r\n<td>test2b</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n\r\nNow it produces:\r\n\r\n<table>\r\n<thead>\r\n<tr>\r\n<th>test1a</th>\r\n<th>test1a</th>\r\n</tr>\r\n</thead>\r\n<tbody>\r\n<tr>\r\n<td>test1b</td>\r\n<td>test1b</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<table>\r\n<thead>\r\n<tr>\r\n<th>test2a</th>\r\n<th>test2a</th>\r\n</tr>\r\n</thead>\r\n<tbody>\r\n<tr>\r\n<td>test2b</td>\r\n<td>test2b</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n\r\n--\r\n\r\nI've not tested it for anything else, it probably breaks more than it fixes :o \r\n\r\nSomething screwey with the indentation in my commit - apologies!",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/erusev/parsedown/issues/comments/54665605",
+    "html_url": "https://github.com/erusev/parsedown/pull/216#issuecomment-54665605",
+    "issue_url": "https://api.github.com/repos/erusev/parsedown/issues/216",
+    "id": 54665605,
+    "user": {
+      "login": "hkdobrev",
+      "id": 506129,
+      "avatar_url": "https://avatars.githubusercontent.com/u/506129?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/hkdobrev",
+      "html_url": "https://github.com/hkdobrev",
+      "followers_url": "https://api.github.com/users/hkdobrev/followers",
+      "following_url": "https://api.github.com/users/hkdobrev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/hkdobrev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/hkdobrev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/hkdobrev/subscriptions",
+      "organizations_url": "https://api.github.com/users/hkdobrev/orgs",
+      "repos_url": "https://api.github.com/users/hkdobrev/repos",
+      "events_url": "https://api.github.com/users/hkdobrev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/hkdobrev/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2014-09-05T18:48:42Z",
+    "updated_at": "2014-09-05T18:49:21Z",
+    "body": "@ifpingram Your pull request [brakes a lot of tests](https://travis-ci.org/erusev/parsedown/builds/34510657), because the opening `<p>` is on a new line.\r\n\r\nAlso you should probably include the examples you've provided in the test files.\r\n\r\nI hope I am helpful and you'd accept my review as constructive."
+  },
+  {
+    "url": "https://api.github.com/repos/erusev/parsedown/issues/comments/54800676",
+    "html_url": "https://github.com/erusev/parsedown/pull/216#issuecomment-54800676",
+    "issue_url": "https://api.github.com/repos/erusev/parsedown/issues/216",
+    "id": 54800676,
+    "user": {
+      "login": "ifpingram",
+      "id": 1426859,
+      "avatar_url": "https://avatars.githubusercontent.com/u/1426859?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ifpingram",
+      "html_url": "https://github.com/ifpingram",
+      "followers_url": "https://api.github.com/users/ifpingram/followers",
+      "following_url": "https://api.github.com/users/ifpingram/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ifpingram/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ifpingram/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ifpingram/subscriptions",
+      "organizations_url": "https://api.github.com/users/ifpingram/orgs",
+      "repos_url": "https://api.github.com/users/ifpingram/repos",
+      "events_url": "https://api.github.com/users/ifpingram/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ifpingram/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2014-09-08T10:31:58Z",
+    "updated_at": "2014-09-08T10:31:58Z",
+    "body": "Apologies, I rushed out the PR without giving it the necessary work to test\r\nit etc. I'll sort it all out over the next couple of days and update the PR.\r\n\r\n\r\n\r\n\r\nOn Fri, Sep 5, 2014 at 7:48 PM, Haralan Dobrev <notifications@github.com>\r\nwrote:\r\n\r\n> @ifpingram <https://github.com/ifpingram> Your pull request brakes a lot\r\n> of tests, because the opening <p> is on a new line.\r\n>\r\n> Also you should probably include the examples you've provided in the test\r\n> files.\r\n>\r\n> —\r\n> Reply to this email directly or view it on GitHub\r\n> <https://github.com/erusev/parsedown/pull/216#issuecomment-54665605>.\r\n>"
+  }
+]

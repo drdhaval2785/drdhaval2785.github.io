@@ -1,0 +1,97 @@
+{
+  "url": "https://api.github.com/repos/erusev/parsedown/issues/208",
+  "labels_url": "https://api.github.com/repos/erusev/parsedown/issues/208/labels{/name}",
+  "comments_url": "https://api.github.com/repos/erusev/parsedown/issues/208/comments",
+  "events_url": "https://api.github.com/repos/erusev/parsedown/issues/208/events",
+  "html_url": "https://github.com/erusev/parsedown/pull/208",
+  "id": 41094450,
+  "number": 208,
+  "title": "Limit generated headlines to h6",
+  "user": {
+    "login": "apfelbox",
+    "id": 1032411,
+    "avatar_url": "https://avatars.githubusercontent.com/u/1032411?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/apfelbox",
+    "html_url": "https://github.com/apfelbox",
+    "followers_url": "https://api.github.com/users/apfelbox/followers",
+    "following_url": "https://api.github.com/users/apfelbox/following{/other_user}",
+    "gists_url": "https://api.github.com/users/apfelbox/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/apfelbox/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/apfelbox/subscriptions",
+    "organizations_url": "https://api.github.com/users/apfelbox/orgs",
+    "repos_url": "https://api.github.com/users/apfelbox/repos",
+    "events_url": "https://api.github.com/users/apfelbox/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/apfelbox/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2014-08-25T19:09:05Z",
+  "updated_at": "2014-08-26T06:31:52Z",
+  "closed_at": "2014-08-26T06:31:52Z",
+  "pull_request": {
+    "url": "https://api.github.com/repos/erusev/parsedown/pulls/208",
+    "html_url": "https://github.com/erusev/parsedown/pull/208",
+    "diff_url": "https://github.com/erusev/parsedown/pull/208.diff",
+    "patch_url": "https://github.com/erusev/parsedown/pull/208.patch"
+  },
+  "body": "Currently it is possible to generate invalid headlines:\r\n\r\n![](http://oi60.tinypic.com/35hmdug.jpg)\r\n\r\nThis is the simplest fix for it. Headlines with too many `#` will now be restricted to a `h6` (it mimics PHP Markdown in this case).",
+  "closed_by": {
+    "login": "erusev",
+    "id": 184170,
+    "avatar_url": "https://avatars.githubusercontent.com/u/184170?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/erusev",
+    "html_url": "https://github.com/erusev",
+    "followers_url": "https://api.github.com/users/erusev/followers",
+    "following_url": "https://api.github.com/users/erusev/following{/other_user}",
+    "gists_url": "https://api.github.com/users/erusev/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/erusev/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/erusev/subscriptions",
+    "organizations_url": "https://api.github.com/users/erusev/orgs",
+    "repos_url": "https://api.github.com/users/erusev/repos",
+    "events_url": "https://api.github.com/users/erusev/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/erusev/received_events",
+    "type": "User",
+    "site_admin": false
+  }
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/erusev/parsedown/issues/comments/53336187",
+    "html_url": "https://github.com/erusev/parsedown/pull/208#issuecomment-53336187",
+    "issue_url": "https://api.github.com/repos/erusev/parsedown/issues/208",
+    "id": 53336187,
+    "user": {
+      "login": "hkdobrev",
+      "id": 506129,
+      "avatar_url": "https://avatars.githubusercontent.com/u/506129?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/hkdobrev",
+      "html_url": "https://github.com/hkdobrev",
+      "followers_url": "https://api.github.com/users/hkdobrev/followers",
+      "following_url": "https://api.github.com/users/hkdobrev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/hkdobrev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/hkdobrev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/hkdobrev/subscriptions",
+      "organizations_url": "https://api.github.com/users/hkdobrev/orgs",
+      "repos_url": "https://api.github.com/users/hkdobrev/repos",
+      "events_url": "https://api.github.com/users/hkdobrev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/hkdobrev/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2014-08-25T21:26:00Z",
+    "updated_at": "2014-08-25T21:26:00Z",
+    "body": ":+1: I'm all for that!"
+  }
+]

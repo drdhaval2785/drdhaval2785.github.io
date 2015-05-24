@@ -1,0 +1,123 @@
+{
+  "url": "https://api.github.com/repos/erusev/parsedown/issues/172",
+  "labels_url": "https://api.github.com/repos/erusev/parsedown/issues/172/labels{/name}",
+  "comments_url": "https://api.github.com/repos/erusev/parsedown/issues/172/comments",
+  "events_url": "https://api.github.com/repos/erusev/parsedown/issues/172/events",
+  "html_url": "https://github.com/erusev/parsedown/issues/172",
+  "id": 33482726,
+  "number": 172,
+  "title": "Add ability to add custom attributes",
+  "user": {
+    "login": "Lakhman",
+    "id": 1582690,
+    "avatar_url": "https://avatars.githubusercontent.com/u/1582690?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Lakhman",
+    "html_url": "https://github.com/Lakhman",
+    "followers_url": "https://api.github.com/users/Lakhman/followers",
+    "following_url": "https://api.github.com/users/Lakhman/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Lakhman/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Lakhman/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Lakhman/subscriptions",
+    "organizations_url": "https://api.github.com/users/Lakhman/orgs",
+    "repos_url": "https://api.github.com/users/Lakhman/repos",
+    "events_url": "https://api.github.com/users/Lakhman/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Lakhman/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "url": "https://api.github.com/repos/erusev/parsedown/labels/suggestion",
+      "name": "suggestion",
+      "color": "bfd4f2"
+    }
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 2,
+  "created_at": "2014-05-14T11:17:18Z",
+  "updated_at": "2015-01-15T18:18:21Z",
+  "closed_at": "2015-01-15T17:16:53Z",
+  "body": "Would it be possible to add the ability to add custom attributes to elements that have been parsed? - So we can add things like a `nofollow` tag to links (as well as other things like adding a class to the `<pre>` tags (so we can use it with prettyprint (syntax highlighting) e.g: `<pre class=\"prettyprint lang-html\">` )\r\n\r\nSo say I generate a link like so:\r\n```\r\n[`Google`](http://google.com \"followed link\")\r\n```\r\n\r\nPerhaps something like adding a `!` after the URL opening bracket?\r\n\r\n```\r\n[`Google`](!http://google.com \"no-followed-link\")\r\n```\r\n\r\nOr is this feature already there and am I just missing how to do it?",
+  "closed_by": {
+    "login": "erusev",
+    "id": 184170,
+    "avatar_url": "https://avatars.githubusercontent.com/u/184170?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/erusev",
+    "html_url": "https://github.com/erusev",
+    "followers_url": "https://api.github.com/users/erusev/followers",
+    "following_url": "https://api.github.com/users/erusev/following{/other_user}",
+    "gists_url": "https://api.github.com/users/erusev/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/erusev/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/erusev/subscriptions",
+    "organizations_url": "https://api.github.com/users/erusev/orgs",
+    "repos_url": "https://api.github.com/users/erusev/repos",
+    "events_url": "https://api.github.com/users/erusev/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/erusev/received_events",
+    "type": "User",
+    "site_admin": false
+  }
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/erusev/parsedown/issues/comments/70122443",
+    "html_url": "https://github.com/erusev/parsedown/issues/172#issuecomment-70122443",
+    "issue_url": "https://api.github.com/repos/erusev/parsedown/issues/172",
+    "id": 70122443,
+    "user": {
+      "login": "erusev",
+      "id": 184170,
+      "avatar_url": "https://avatars.githubusercontent.com/u/184170?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/erusev",
+      "html_url": "https://github.com/erusev",
+      "followers_url": "https://api.github.com/users/erusev/followers",
+      "following_url": "https://api.github.com/users/erusev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/erusev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/erusev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/erusev/subscriptions",
+      "organizations_url": "https://api.github.com/users/erusev/orgs",
+      "repos_url": "https://api.github.com/users/erusev/repos",
+      "events_url": "https://api.github.com/users/erusev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/erusev/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2015-01-15T17:16:53Z",
+    "updated_at": "2015-01-15T17:16:53Z",
+    "body": "It is possible and quite easy to do through an extension. You can see the wiki for more details."
+  },
+  {
+    "url": "https://api.github.com/repos/erusev/parsedown/issues/comments/70133644",
+    "html_url": "https://github.com/erusev/parsedown/issues/172#issuecomment-70133644",
+    "issue_url": "https://api.github.com/repos/erusev/parsedown/issues/172",
+    "id": 70133644,
+    "user": {
+      "login": "Lakhman",
+      "id": 1582690,
+      "avatar_url": "https://avatars.githubusercontent.com/u/1582690?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Lakhman",
+      "html_url": "https://github.com/Lakhman",
+      "followers_url": "https://api.github.com/users/Lakhman/followers",
+      "following_url": "https://api.github.com/users/Lakhman/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Lakhman/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Lakhman/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Lakhman/subscriptions",
+      "organizations_url": "https://api.github.com/users/Lakhman/orgs",
+      "repos_url": "https://api.github.com/users/Lakhman/repos",
+      "events_url": "https://api.github.com/users/Lakhman/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Lakhman/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2015-01-15T18:18:21Z",
+    "updated_at": "2015-01-15T18:18:21Z",
+    "body": "Thanks, I haven't had a chance to play with the latest version, it looks awesome!! I'll try write up an extension on the weekend for all my needs!!\r\n\r\nMany thanks!"
+  }
+]

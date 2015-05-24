@@ -1,0 +1,64 @@
+{
+  "url": "https://api.github.com/repos/erusev/parsedown/issues/283",
+  "labels_url": "https://api.github.com/repos/erusev/parsedown/issues/283/labels{/name}",
+  "comments_url": "https://api.github.com/repos/erusev/parsedown/issues/283/comments",
+  "events_url": "https://api.github.com/repos/erusev/parsedown/issues/283/events",
+  "html_url": "https://github.com/erusev/parsedown/issues/283",
+  "id": 56444060,
+  "number": 283,
+  "title": "Blank quoted title text in links and inline images doesn't parse properly",
+  "user": {
+    "login": "jstanden",
+    "id": 63288,
+    "avatar_url": "https://avatars.githubusercontent.com/u/63288?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jstanden",
+    "html_url": "https://github.com/jstanden",
+    "followers_url": "https://api.github.com/users/jstanden/followers",
+    "following_url": "https://api.github.com/users/jstanden/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jstanden/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jstanden/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jstanden/subscriptions",
+    "organizations_url": "https://api.github.com/users/jstanden/orgs",
+    "repos_url": "https://api.github.com/users/jstanden/repos",
+    "events_url": "https://api.github.com/users/jstanden/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jstanden/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2015-02-03T21:58:32Z",
+  "updated_at": "2015-02-03T22:39:07Z",
+  "closed_at": "2015-02-03T22:39:07Z",
+  "body": "Some Markdown editors always insert a title for links and inline images, and just default it to a blank string when the user didn't input anything in the \"Title:\" prompt.  In a perfect world, these editors would just leave off the title argument when content wasn't provided, but this isn't something we can always depend on in [our app](http://www.cerbweb.com).\r\n\r\nIn previous versions of Parsedown, these blank titles parsed properly.  In the latest version, the regular expression requires content between the quotes or it doesn't parse the entire link.\r\n\r\nThe following properly converts to a link:\r\n\r\n~~~\r\n[link to google](http://www.google.com \"This is the link title\")\r\n~~~\r\n\r\nWhile this doesn't:\r\n\r\n~~~\r\n[link to google](http://www.google.com \"\")\r\n~~~\r\n\r\nThis also breaks with inline images that have blank titles:\r\n\r\n~~~\r\n![blank title](/md.png \"\")\r\n~~~\r\n\r\nI've made the minor tweak and added new PHPUnit tests.  I'll submit the pull request after submitting this issue.",
+  "closed_by": {
+    "login": "erusev",
+    "id": 184170,
+    "avatar_url": "https://avatars.githubusercontent.com/u/184170?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/erusev",
+    "html_url": "https://github.com/erusev",
+    "followers_url": "https://api.github.com/users/erusev/followers",
+    "following_url": "https://api.github.com/users/erusev/following{/other_user}",
+    "gists_url": "https://api.github.com/users/erusev/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/erusev/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/erusev/subscriptions",
+    "organizations_url": "https://api.github.com/users/erusev/orgs",
+    "repos_url": "https://api.github.com/users/erusev/repos",
+    "events_url": "https://api.github.com/users/erusev/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/erusev/received_events",
+    "type": "User",
+    "site_admin": false
+  }
+}
+BODY STARTS FROM HERE
+[
+
+]

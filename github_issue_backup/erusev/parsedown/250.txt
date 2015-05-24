@@ -1,0 +1,91 @@
+{
+  "url": "https://api.github.com/repos/erusev/parsedown/issues/250",
+  "labels_url": "https://api.github.com/repos/erusev/parsedown/issues/250/labels{/name}",
+  "comments_url": "https://api.github.com/repos/erusev/parsedown/issues/250/comments",
+  "events_url": "https://api.github.com/repos/erusev/parsedown/issues/250/events",
+  "html_url": "https://github.com/erusev/parsedown/issues/250",
+  "id": 52087696,
+  "number": 250,
+  "title": "Link to local disk",
+  "user": {
+    "login": "Londeren",
+    "id": 757427,
+    "avatar_url": "https://avatars.githubusercontent.com/u/757427?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Londeren",
+    "html_url": "https://github.com/Londeren",
+    "followers_url": "https://api.github.com/users/Londeren/followers",
+    "following_url": "https://api.github.com/users/Londeren/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Londeren/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Londeren/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Londeren/subscriptions",
+    "organizations_url": "https://api.github.com/users/Londeren/orgs",
+    "repos_url": "https://api.github.com/users/Londeren/repos",
+    "events_url": "https://api.github.com/users/Londeren/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Londeren/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2014-12-16T09:01:31Z",
+  "updated_at": "2014-12-16T11:18:01Z",
+  "closed_at": "2014-12-16T11:18:01Z",
+  "body": "`Y:\\_Folder\\Templates\\Project\\file.txt`\r\nbecomes to \r\n`Y:_Folder\\Templates\\Project\\file.txt`\r\nIs it a right behavior?",
+  "closed_by": {
+    "login": "erusev",
+    "id": 184170,
+    "avatar_url": "https://avatars.githubusercontent.com/u/184170?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/erusev",
+    "html_url": "https://github.com/erusev",
+    "followers_url": "https://api.github.com/users/erusev/followers",
+    "following_url": "https://api.github.com/users/erusev/following{/other_user}",
+    "gists_url": "https://api.github.com/users/erusev/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/erusev/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/erusev/subscriptions",
+    "organizations_url": "https://api.github.com/users/erusev/orgs",
+    "repos_url": "https://api.github.com/users/erusev/repos",
+    "events_url": "https://api.github.com/users/erusev/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/erusev/received_events",
+    "type": "User",
+    "site_admin": false
+  }
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/erusev/parsedown/issues/comments/67144979",
+    "html_url": "https://github.com/erusev/parsedown/issues/250#issuecomment-67144979",
+    "issue_url": "https://api.github.com/repos/erusev/parsedown/issues/250",
+    "id": 67144979,
+    "user": {
+      "login": "erusev",
+      "id": 184170,
+      "avatar_url": "https://avatars.githubusercontent.com/u/184170?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/erusev",
+      "html_url": "https://github.com/erusev",
+      "followers_url": "https://api.github.com/users/erusev/followers",
+      "following_url": "https://api.github.com/users/erusev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/erusev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/erusev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/erusev/subscriptions",
+      "organizations_url": "https://api.github.com/users/erusev/orgs",
+      "repos_url": "https://api.github.com/users/erusev/repos",
+      "events_url": "https://api.github.com/users/erusev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/erusev/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2014-12-16T11:18:01Z",
+    "updated_at": "2014-12-16T11:18:01Z",
+    "body": "It is the expected behaviour. The backslash escapes the underscore. To prevent this, use double backslash:\r\n\r\n    Y:\\\\_Folder\\Templates\\Project\\file.txt"
+  }
+]

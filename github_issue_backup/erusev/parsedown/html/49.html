@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html class='' lang='en'>
+<head prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#'>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8'>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta http-equiv='Content-Language' content='en'>
+<title>erusev/parsedown/49</title>
+<link href='github-c486157afcc5f58155a921bc675afb08733fbaa8dcf39ac2104d3.css' media='all' rel='stylesheet'>
+<link href='github2-da2e842cc3f0aaf33b727d0ef034243c12ab008fd09b24868b97.css' media='all' rel='stylesheet'>
+<meta http-equiv='x-pjax-version' content='4426702614c8182f33d1780ad1169662'>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shAutoloader.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAppleScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAS3.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushBash.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushColdFusion.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCpp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCSharp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCss.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDelphi.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDiff.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushErlang.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushGroovy.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJava.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJavaFX.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/syntaxhighlighter/scripts/shBrushJScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPerl.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPhp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPlain.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPowerShell.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPython.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushRuby.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSass.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushScala.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSql.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushVb.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushXml.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shLegacy.js'></script>
+	<link type='text/css' rel='stylesheet' href='syntaxhighlighter/styles/shCoreDefault.css'/>
+	<script type='text/javascript'>SyntaxHighlighter.all();</script>
+</head>
+<body class='logged_in  env-production windows vis-public'>
+<h1 align='center'><a href='https://github.com/erusev/parsedown/pull/49' target='_blank'>Adding failing test for a list with following list with links</h1><hr/><div id="#issue-24512773" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/AnhNhan" class="author">AnhNhan</a>
+    </strong>
+    commented on 
+    <a href="#issue-24512773" class="timestamp">
+      <time>2013-12-18 19:31:31</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Didn't take a close look at what's happening yet.</p>
+<p>This is the output created by PHPUnit:</p>
+<pre><code>PHPUnit 3.7.28 by Sebastian Bergmann.
+
+Configuration read from C:\Users\AnhNhan\Documents\dev\parsedown\phpunit.xml.dist
+
+............................[41;37mF[0m...
+
+Time: 156 ms, Memory: 2.00Mb
+
+There was 1 failure:
+
+1) Test::test_ with data set <a href='28.html' target='_blank'>#28</a> ('Links:
+ - [Google][2]
+ - [Microsoft][3]
+
+ [2]: http://google.com/
+ [3]: http://microsoft.com/', '&lt;p&gt;Links:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://google.com"&gt;Google&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href="http://microsoft.com/"&gt;Microsoft&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;')
+Failed asserting that two strings are equal.
+--- Expected
++++ Actual
+<strong><a href="https://github.com/" target="_blank">@</a></strong>@ <strong><a href="https://github.com/" target="_blank">@</a></strong>@
+ '&lt;p&gt;Links:&lt;/p&gt;
+ &lt;ul&gt;
+-&lt;li&gt;&lt;a href="http://google.com"&gt;Google&lt;/a&gt;&lt;/li&gt;
++&lt;li&gt;[Google][2]&lt;/li&gt;
+ &lt;li&gt;
+ &lt;p&gt;&lt;a href="http://microsoft.com/"&gt;Microsoft&lt;/a&gt;&lt;/p&gt;
+ &lt;/li&gt;
+ &lt;/ul&gt;'
+
+C:\Users\AnhNhan\Documents\dev\parsedown\tests\Test.php:16
+
+[37;41m[2KFAILURES!
+[0m[37;41m[2KTests: 32, Assertions: 32, Failures: 1.
+[0m[2K
+</code></pre>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-30873313" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/AnhNhan" class="author">AnhNhan</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-30873313" class="timestamp">
+      <time>2013-12-18 19:39:41</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Btw, started with link index 2, since index 1 points to <code>http://example.com/</code>.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-30878231" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-30878231" class="timestamp">
+      <time>2013-12-18 20:37:58</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Thanks!</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-30879290" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/AnhNhan" class="author">AnhNhan</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-30879290" class="timestamp">
+      <time>2013-12-18 20:49:09</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>No problem.</p>
+<p>Apparently <code>[2]: http://google.com/</code> gets parsed together with the last list element. That's how much I can say for now.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-30879814" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-30879814" class="timestamp">
+      <time>2013-12-18 20:55:19</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>This is because indented lines that follow list items are considered part of these list items. It is as if they belong to the scope of these list items. This is true for lines of any type. I'm not sure if reference lines should become an exception and get parsed outside of their scope. If they do they won't get parsed in contexts such as the followng:</p>
+<pre><code>&gt; [quoted link][1]
+&gt;
+&gt; [1]: http://example.com</code></pre>
+  </div>
+  </div>
+  </div>
+  <br/>
+</body></html>

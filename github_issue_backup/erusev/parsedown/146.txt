@@ -1,0 +1,95 @@
+{
+  "url": "https://api.github.com/repos/erusev/parsedown/issues/146",
+  "labels_url": "https://api.github.com/repos/erusev/parsedown/issues/146/labels{/name}",
+  "comments_url": "https://api.github.com/repos/erusev/parsedown/issues/146/comments",
+  "events_url": "https://api.github.com/repos/erusev/parsedown/issues/146/events",
+  "html_url": "https://github.com/erusev/parsedown/issues/146",
+  "id": 30000838,
+  "number": 146,
+  "title": "Failed test with images (runs in Markdown PHP 1.3 but not in Parsedown)",
+  "user": {
+    "login": "queirozfcom",
+    "id": 1554354,
+    "avatar_url": "https://avatars.githubusercontent.com/u/1554354?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/queirozfcom",
+    "html_url": "https://github.com/queirozfcom",
+    "followers_url": "https://api.github.com/users/queirozfcom/followers",
+    "following_url": "https://api.github.com/users/queirozfcom/following{/other_user}",
+    "gists_url": "https://api.github.com/users/queirozfcom/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/queirozfcom/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/queirozfcom/subscriptions",
+    "organizations_url": "https://api.github.com/users/queirozfcom/orgs",
+    "repos_url": "https://api.github.com/users/queirozfcom/repos",
+    "events_url": "https://api.github.com/users/queirozfcom/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/queirozfcom/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "url": "https://api.github.com/repos/erusev/parsedown/labels/issue",
+      "name": "issue",
+      "color": "f7c6c7"
+    }
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2014-03-23T22:58:50Z",
+  "updated_at": "2015-01-15T20:14:25Z",
+  "closed_at": "2015-01-15T20:14:25Z",
+  "body": "Hello. This is a small example of a little post with Images I've written which gets parsed OK when run in Markdown 1.3 (as shown in the demo page). When I try to parse it using Parsedown, the image references don't get rendered into the actual images:\r\n\r\nHere is the link: http://pastie.org/pastes/8962289/text\r\n\r\n(I've added it to pastie because when I try to write it here, github parses it and you can't see the original text.)",
+  "closed_by": {
+    "login": "erusev",
+    "id": 184170,
+    "avatar_url": "https://avatars.githubusercontent.com/u/184170?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/erusev",
+    "html_url": "https://github.com/erusev",
+    "followers_url": "https://api.github.com/users/erusev/followers",
+    "following_url": "https://api.github.com/users/erusev/following{/other_user}",
+    "gists_url": "https://api.github.com/users/erusev/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/erusev/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/erusev/subscriptions",
+    "organizations_url": "https://api.github.com/users/erusev/orgs",
+    "repos_url": "https://api.github.com/users/erusev/repos",
+    "events_url": "https://api.github.com/users/erusev/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/erusev/received_events",
+    "type": "User",
+    "site_admin": false
+  }
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/erusev/parsedown/issues/comments/70153486",
+    "html_url": "https://github.com/erusev/parsedown/issues/146#issuecomment-70153486",
+    "issue_url": "https://api.github.com/repos/erusev/parsedown/issues/146",
+    "id": 70153486,
+    "user": {
+      "login": "erusev",
+      "id": 184170,
+      "avatar_url": "https://avatars.githubusercontent.com/u/184170?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/erusev",
+      "html_url": "https://github.com/erusev",
+      "followers_url": "https://api.github.com/users/erusev/followers",
+      "following_url": "https://api.github.com/users/erusev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/erusev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/erusev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/erusev/subscriptions",
+      "organizations_url": "https://api.github.com/users/erusev/orgs",
+      "repos_url": "https://api.github.com/users/erusev/repos",
+      "events_url": "https://api.github.com/users/erusev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/erusev/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2015-01-15T20:14:25Z",
+    "updated_at": "2015-01-15T20:14:25Z",
+    "body": "This is resolved now."
+  }
+]

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html class='' lang='en'>
+<head prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#'>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8'>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta http-equiv='Content-Language' content='en'>
+<title>erusev/parsedown/99</title>
+<link href='github-c486157afcc5f58155a921bc675afb08733fbaa8dcf39ac2104d3.css' media='all' rel='stylesheet'>
+<link href='github2-da2e842cc3f0aaf33b727d0ef034243c12ab008fd09b24868b97.css' media='all' rel='stylesheet'>
+<meta http-equiv='x-pjax-version' content='4426702614c8182f33d1780ad1169662'>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shAutoloader.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAppleScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAS3.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushBash.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushColdFusion.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCpp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCSharp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCss.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDelphi.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDiff.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushErlang.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushGroovy.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJava.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJavaFX.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/syntaxhighlighter/scripts/shBrushJScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPerl.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPhp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPlain.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPowerShell.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPython.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushRuby.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSass.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushScala.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSql.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushVb.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushXml.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shLegacy.js'></script>
+	<link type='text/css' rel='stylesheet' href='syntaxhighlighter/styles/shCoreDefault.css'/>
+	<script type='text/javascript'>SyntaxHighlighter.all();</script>
+</head>
+<body class='logged_in  env-production windows vis-public'>
+<h1 align='center'><a href='https://github.com/erusev/parsedown/issues/99' target='_blank'>John Gruber's test suite</h1><hr/><div id="#issue-27487714" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/wkpark" class="author">wkpark</a>
+    </strong>
+    commented on 
+    <a href="#issue-27487714" class="timestamp">
+      <time>2014-02-13 01:38:29</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>This is a John Gruber's test suite
+<a href="http://daringfireball.net/projects/downloads/MarkdownTest_1.0.zip">http://daringfireball.net/projects/downloads/MarkdownTest_1.0.zip</a></p>
+<p>and the following example rendered incorrectly by the parsedown.</p>
+<pre><code>In Markdown 1.0.0 and earlier. Version
+8. This line turns into a list item.
+Because a hard-wrapped line in the
+middle of a paragraph looked like a
+list item.
+
+Here's one with a bullet.
+* criminey.</code></pre>
+<p>In Markdown 1.0.0 and earlier. Version</p>
+<ol>
+<li>This line turns into a list item.
+Because a hard-wrapped line in the
+middle of a paragraph looked like a
+list item.</li>
+</ol>
+<p>Here's one with a bullet.</p>
+<ul>
+<li>criminey.</li>
+</ul>
+<p>babelmark2 result:
+<a href="http://johnmacfarlane.net/babelmark2/?text=In+Markdown+1.0.0+and+earlier.+Version%0A8.+This+line+turns+into+a+list+item.%0ABecause+a+hard-wrapped+line+in+the%0Amiddle+of+a+paragraph+looked+like+a%0Alist+item.%0A%0AHere%27s+one+with+a+bullet.%0A*+criminey">http://johnmacfarlane.net/babelmark2/?text=In+Markdown+1.0.0+and+earlier.+Version%0A8.+This+line+turns+into+a+list+item.%0ABecause+a+hard-wrapped+line+in+the%0Amiddle+of+a+paragraph+looked+like+a%0Alist+item.%0A%0AHere%27s+one+with+a+bullet.%0A*+criminey</a>.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-34960921" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-34960921" class="timestamp">
+      <time>2014-02-13 09:23:03</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/wkpark" target="_blank">@wkpark</a></strong> Great catch!</p>
+<p>I saw a separate and not so important issue about ordered lists in your example. Parsedown should use the <a href="http://www.w3.org/TR/html5/grouping-content.html#attr-ol-start"><code>start</code> attribute on <code>ol</code> elements</a>. I'll submit another issue for that.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-35293740" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/wkpark" class="author">wkpark</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-35293740" class="timestamp">
+      <time>2014-02-17 15:36:55</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>This is the Markdown testsuite by John Gruber and the Markdown 1.0.2b8</p>
+<p><a href="https://github.com/wkpark/markdown-testsuite">https://github.com/wkpark/markdown-testsuite</a></p>
+  </div>
+  </div>
+  </div>
+  <br/>
+</body></html>

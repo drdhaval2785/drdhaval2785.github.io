@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html class='' lang='en'>
+<head prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#'>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8'>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta http-equiv='Content-Language' content='en'>
+<title>erusev/parsedown/240</title>
+<link href='github-c486157afcc5f58155a921bc675afb08733fbaa8dcf39ac2104d3.css' media='all' rel='stylesheet'>
+<link href='github2-da2e842cc3f0aaf33b727d0ef034243c12ab008fd09b24868b97.css' media='all' rel='stylesheet'>
+<meta http-equiv='x-pjax-version' content='4426702614c8182f33d1780ad1169662'>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shAutoloader.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAppleScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAS3.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushBash.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushColdFusion.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCpp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCSharp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCss.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDelphi.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDiff.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushErlang.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushGroovy.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJava.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJavaFX.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/syntaxhighlighter/scripts/shBrushJScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPerl.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPhp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPlain.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPowerShell.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPython.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushRuby.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSass.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushScala.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSql.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushVb.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushXml.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shLegacy.js'></script>
+	<link type='text/css' rel='stylesheet' href='syntaxhighlighter/styles/shCoreDefault.css'/>
+	<script type='text/javascript'>SyntaxHighlighter.all();</script>
+</head>
+<body class='logged_in  env-production windows vis-public'>
+<h1 align='center'><a href='https://github.com/erusev/parsedown/issues/240' target='_blank'>Links with target blank break</h1><hr/><div id="#issue-46637750" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/bastianallgeier" class="author">bastianallgeier</a>
+    </strong>
+    commented on 
+    <a href="#issue-46637750" class="timestamp">
+      <time>2014-10-23 15:24:46</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Links with a target blank attribute create weird messed-up double links, but only when the link text is the
+link itself: </p>
+<p>This:</p>
+<pre><code>&lt;a href="http://google.com" target="_blank"&gt;http://google.com&lt;/a&gt;</code></pre>
+<p>is being converted to: </p>
+<pre><code>&lt;a href="http://google.com" target="_blank"&gt;&lt;a href="http://google.com"&gt;http://google.com&lt;/a&gt;&lt;/a&gt;</code></pre>
+<p>Any ideas? </p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-60297398" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/jonabaptistella" class="author">jonabaptistella</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-60297398" class="timestamp">
+      <time>2014-10-23 19:44:29</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>For me it is also happen if there is text in the text link. </p>
+<p>This one works more or less:</p>
+<pre><code>
+(image: image.png link: /feature/ class: border popup: yes)
+</code></pre>
+<p>This work not:</p>
+<pre><code>
+(image: image.png link: /feature/ popup: yes class: border)
+</code></pre>
+<p>is being converted to:</p>
+<pre><code>
+&lt;figure class="border popup: yes"&gt;&lt;a href="http://domain.com/feature/"&gt;&lt;img src="http://domain.com/content/01-home/image.png" alt="image" /&gt;&lt;/a&gt;&lt;/figure&gt;
+</code></pre>
+<p>Hope this can help you bring some more light at the issue.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-60322776" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/cebe" class="author">cebe</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-60322776" class="timestamp">
+      <time>2014-10-23 23:03:46</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>The cause of this is the auto highlighting of URLs which is done in any kind of inline markdown. This has to be disabled depended on context somehow.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-60326472" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-60326472" class="timestamp">
+      <time>2014-10-23 23:46:56</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I think this is a duplicate of #178. Please specify if there's a difference.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-60326727" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/cebe" class="author">cebe</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-60326727" class="timestamp">
+      <time>2014-10-23 23:50:13</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>its a duplicate.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-60357698" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/bastianallgeier" class="author">bastianallgeier</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-60357698" class="timestamp">
+      <time>2014-10-24 08:19:17</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Yep, looks like a duplicate to me. Sorry for posting it. Any news on the other issue? </p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-60357763" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/bastianallgeier" class="author">bastianallgeier</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-60357763" class="timestamp">
+      <time>2014-10-24 08:20:03</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/jonabaptistella" target="_blank">@jonabaptistella</a></strong> your code is Kirby specific and is not related with Markdown. The problem described is a Markdown/Parsedown problem. </p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-60357954" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/jonabaptistella" class="author">jonabaptistella</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-60357954" class="timestamp">
+      <time>2014-10-24 08:22:13</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Understand but the issue happen when I updated from Kirby 1, so that was working fine with the old Kirby.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-60358067" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/bastianallgeier" class="author">bastianallgeier</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-60358067" class="timestamp">
+      <time>2014-10-24 08:23:36</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/jonabaptistella" target="_blank">@jonabaptistella</a></strong> because Kirby 1 did not use the Parsedown parser but Michael Fortin's PHP Markdown class. We should not discuss this here though :) I guess the Parsedown guys will be not too happy with Kirby-related stuff in their issues. </p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-60358193" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/jonabaptistella" class="author">jonabaptistella</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-60358193" class="timestamp">
+      <time>2014-10-24 08:24:59</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Got it. :) </p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-66476855" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/bastianallgeier" class="author">bastianallgeier</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-66476855" class="timestamp">
+      <time>2014-12-10 16:16:39</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>It seems this is still not entirely resolved. </p>
+<p>This</p>
+<pre><code>&lt;a href="http://example.com" target="_blank"&gt;http://example.com&lt;/a&gt;</code></pre>
+<p>produces: </p>
+<pre><code>&lt;a href="http://example.com" target="_blank"&gt;&lt;a href="http://example.com"&gt;http://example.com&lt;/a&gt;&lt;/a&gt;</code></pre>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-66477385" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/jonabaptistella" class="author">jonabaptistella</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-66477385" class="timestamp">
+      <time>2014-12-10 16:19:50</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>It happens with img tag as well. </p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-66491453" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-66491453" class="timestamp">
+      <time>2014-12-10 17:42:14</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I'm looking into it.</p>
+<p>p.s. Both <a href="https://github.com/chjj/marked">marked</a> and the parser that GitHub uses seem to share this behaviour.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-66495368" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-66495368" class="timestamp">
+      <time>2014-12-10 18:07:08</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/bastianallgeier" target="_blank">@bastianallgeier</a></strong> I think this is more related to <a href='178.html' target='_blank'>#178</a> instead of <code>target="_blank"</code>. It could be reproduced without the target attribute.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-69935123" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-69935123" class="timestamp">
+      <time>2015-01-14 15:41:39</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I'm closing this as it seems to be a duplicate of #178.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+</body></html>

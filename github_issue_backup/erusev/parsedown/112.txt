@@ -1,0 +1,77 @@
+{
+  "url": "https://api.github.com/repos/erusev/parsedown/issues/112",
+  "labels_url": "https://api.github.com/repos/erusev/parsedown/issues/112/labels{/name}",
+  "comments_url": "https://api.github.com/repos/erusev/parsedown/issues/112/comments",
+  "events_url": "https://api.github.com/repos/erusev/parsedown/issues/112/events",
+  "html_url": "https://github.com/erusev/parsedown/issues/112",
+  "id": 27777496,
+  "number": 112,
+  "title": "Integrate tests from MarkDown Test Suite",
+  "user": {
+    "login": "Cerdic",
+    "id": 342805,
+    "avatar_url": "https://avatars.githubusercontent.com/u/342805?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Cerdic",
+    "html_url": "https://github.com/Cerdic",
+    "followers_url": "https://api.github.com/users/Cerdic/followers",
+    "following_url": "https://api.github.com/users/Cerdic/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Cerdic/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Cerdic/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Cerdic/subscriptions",
+    "organizations_url": "https://api.github.com/users/Cerdic/orgs",
+    "repos_url": "https://api.github.com/users/Cerdic/repos",
+    "events_url": "https://api.github.com/users/Cerdic/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Cerdic/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "url": "https://api.github.com/repos/erusev/parsedown/labels/suggestion",
+      "name": "suggestion",
+      "color": "bfd4f2"
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2014-02-18T08:44:12Z",
+  "updated_at": "2014-05-25T22:45:44Z",
+  "closed_at": null,
+  "body": "A MarkDown TestSuite has been initiated by Karl Dubost \r\nhttps://github.com/karlcow/markdown-testsuite\r\n\r\nIt would be interesting to integrate it and be sure ParseDown is compliant to this test suite.",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/erusev/parsedown/issues/comments/44147515",
+    "html_url": "https://github.com/erusev/parsedown/issues/112#issuecomment-44147515",
+    "issue_url": "https://api.github.com/repos/erusev/parsedown/issues/112",
+    "id": 44147515,
+    "user": {
+      "login": "JCMais",
+      "id": 1041647,
+      "avatar_url": "https://avatars.githubusercontent.com/u/1041647?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/JCMais",
+      "html_url": "https://github.com/JCMais",
+      "followers_url": "https://api.github.com/users/JCMais/followers",
+      "following_url": "https://api.github.com/users/JCMais/following{/other_user}",
+      "gists_url": "https://api.github.com/users/JCMais/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/JCMais/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/JCMais/subscriptions",
+      "organizations_url": "https://api.github.com/users/JCMais/orgs",
+      "repos_url": "https://api.github.com/users/JCMais/repos",
+      "events_url": "https://api.github.com/users/JCMais/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/JCMais/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2014-05-25T22:36:16Z",
+    "updated_at": "2014-05-25T22:45:44Z",
+    "body": "Looks like we only need a cli interface to make it work. I will take a look into that."
+  }
+]

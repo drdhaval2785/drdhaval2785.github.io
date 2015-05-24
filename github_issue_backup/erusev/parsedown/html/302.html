@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html class='' lang='en'>
+<head prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#'>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8'>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta http-equiv='Content-Language' content='en'>
+<title>erusev/parsedown/302</title>
+<link href='github-c486157afcc5f58155a921bc675afb08733fbaa8dcf39ac2104d3.css' media='all' rel='stylesheet'>
+<link href='github2-da2e842cc3f0aaf33b727d0ef034243c12ab008fd09b24868b97.css' media='all' rel='stylesheet'>
+<meta http-equiv='x-pjax-version' content='4426702614c8182f33d1780ad1169662'>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shAutoloader.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAppleScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAS3.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushBash.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushColdFusion.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCpp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCSharp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCss.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDelphi.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDiff.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushErlang.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushGroovy.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJava.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJavaFX.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/syntaxhighlighter/scripts/shBrushJScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPerl.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPhp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPlain.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPowerShell.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPython.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushRuby.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSass.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushScala.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSql.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushVb.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushXml.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shLegacy.js'></script>
+	<link type='text/css' rel='stylesheet' href='syntaxhighlighter/styles/shCoreDefault.css'/>
+	<script type='text/javascript'>SyntaxHighlighter.all();</script>
+</head>
+<body class='logged_in  env-production windows vis-public'>
+<h1 align='center'><a href='https://github.com/erusev/parsedown/pull/302' target='_blank'>PHP 7 compatibility fixes</h1><hr/><div id="#issue-64932790" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/GawainLynch" class="author">GawainLynch</a>
+    </strong>
+    commented on 
+    <a href="#issue-64932790" class="timestamp">
+      <time>2015-03-28 11:33:46</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Hi from the <a href="http://bolt.cm">Bolt CMS</a> crew :wave: </p>
+<p>I'm working on getting us able to run on PHP 7 and found a compatibility issue with Parsedown:</p>
+<pre><code>PHP Fatal error: Function name must be a string</code></pre>
+<p>This PR resolves that by changing <code>$this-&gt;{$mystrin}</code> to use call_user_func() and call_user_func_array() instead.  </p>
+<p>Passes the Parsedown PHPUnit tests on both PHP 5.x &amp; 7</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-87217504" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/GrahamCampbell" class="author">GrahamCampbell</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-87217504" class="timestamp">
+      <time>2015-03-28 12:10:19</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>This reduces performance. :(</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-87225726" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-87225726" class="timestamp">
+      <time>2015-03-28 13:03:06</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Thanks. I'll have a more detailed look sometime next week. I wonder if the same can be achieved without adding function calls. Function calls, as <strong><a href="https://github.com/GrahamCampbell" target="_blank">@GrahamCampbell</a></strong> correctly notes, have a performance cost.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-87225939" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/cebe" class="author">cebe</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-87225939" class="timestamp">
+      <time>2015-03-28 13:07:02</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>isn't this a bug in php7? As far as I see there is no reason this should not work in 7.0.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-87227054" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/GawainLynch" class="author">GawainLynch</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-87227054" class="timestamp">
+      <time>2015-03-28 13:25:07</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/erusev" target="_blank">@erusev</a></strong> they do, looping 1,000 PHPUnit runs on 5.6 there is a 2 millisecond average cost… However on PHP7 there is a 50 millisecond gain ;-)</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-87255648" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/GawainLynch" class="author">GawainLynch</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-87255648" class="timestamp">
+      <time>2015-03-28 16:06:57</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/cebe" target="_blank">@cebe</a></strong> your comment struck me with a &quot;Hmm… why would Carsten object?&quot; type of curiosity, so I set up a simple test case to prove <em>one</em> of us wrong (I can't be bothered with nerd-debates, evidence rules!)</p>
+<p>Anyway, I can't reproduce it with a 10 line test case — with the same approach — <em>but</em>, in our tests it is failing! Dumping <code>$Element['handler']</code> (line 1405) I am seeing the valid string of &quot;lines&quot; when it's erroring under PHP 7 (built from cset 2fe6acd). So :+1: <strong><a href="https://github.com/cebe" target="_blank">@cebe</a></strong> </p>
+<p>Long story short, I am going to pull this for now until I can better isolate what in Parsedown is triggering this.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-87271377" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-87271377" class="timestamp">
+      <time>2015-03-28 17:28:49</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/cebe" target="_blank">@cebe</a></strong> <strong><a href="https://github.com/GawainLynch" target="_blank">@GawainLynch</a></strong> Thanks.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-87274521" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/GawainLynch" class="author">GawainLynch</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-87274521" class="timestamp">
+      <time>2015-03-28 18:01:36</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Wow… I am going to hand in my programmers license! Our tests are running against v1.5.1 and cb8cc57742546648bb5461e66e35a92f2f89538b is not in a tagged release yet!</p>
+<p>Nothing to see here, move along :grinning: </p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-87281881" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-87281881" class="timestamp">
+      <time>2015-03-28 18:47:22</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I tagged the latest code as 1.5.2. </p>
+  </div>
+  </div>
+  </div>
+  <br/>
+</body></html>

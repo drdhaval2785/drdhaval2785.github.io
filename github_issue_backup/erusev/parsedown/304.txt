@@ -1,0 +1,77 @@
+{
+  "url": "https://api.github.com/repos/erusev/parsedown/issues/304",
+  "labels_url": "https://api.github.com/repos/erusev/parsedown/issues/304/labels{/name}",
+  "comments_url": "https://api.github.com/repos/erusev/parsedown/issues/304/comments",
+  "events_url": "https://api.github.com/repos/erusev/parsedown/issues/304/events",
+  "html_url": "https://github.com/erusev/parsedown/issues/304",
+  "id": 65527752,
+  "number": 304,
+  "title": "# in image title breaks parsing the image",
+  "user": {
+    "login": "petermolnar",
+    "id": 1552192,
+    "avatar_url": "https://avatars.githubusercontent.com/u/1552192?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/petermolnar",
+    "html_url": "https://github.com/petermolnar",
+    "followers_url": "https://api.github.com/users/petermolnar/followers",
+    "following_url": "https://api.github.com/users/petermolnar/following{/other_user}",
+    "gists_url": "https://api.github.com/users/petermolnar/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/petermolnar/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/petermolnar/subscriptions",
+    "organizations_url": "https://api.github.com/users/petermolnar/orgs",
+    "repos_url": "https://api.github.com/users/petermolnar/repos",
+    "events_url": "https://api.github.com/users/petermolnar/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/petermolnar/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "url": "https://api.github.com/repos/erusev/parsedown/labels/issue",
+      "name": "issue",
+      "color": "f7c6c7"
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2015-03-31T19:26:56Z",
+  "updated_at": "2015-04-23T23:17:00Z",
+  "closed_at": null,
+  "body": "I can't tell if this is a feature or a bug: if there is a # in an image title, the image will not be parsed to html. I'm importing content from instagtram and I ended up with entries like this:\r\n\r\n`![This is a #post from #Instagram](/path/to/file.jpg/){#id-552}`\r\n\r\nParsedown Extra is enabled and the image refuses to become HTML.",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/erusev/parsedown/issues/comments/95745258",
+    "html_url": "https://github.com/erusev/parsedown/issues/304#issuecomment-95745258",
+    "issue_url": "https://api.github.com/repos/erusev/parsedown/issues/304",
+    "id": 95745258,
+    "user": {
+      "login": "hkdobrev",
+      "id": 506129,
+      "avatar_url": "https://avatars.githubusercontent.com/u/506129?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/hkdobrev",
+      "html_url": "https://github.com/hkdobrev",
+      "followers_url": "https://api.github.com/users/hkdobrev/followers",
+      "following_url": "https://api.github.com/users/hkdobrev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/hkdobrev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/hkdobrev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/hkdobrev/subscriptions",
+      "organizations_url": "https://api.github.com/users/hkdobrev/orgs",
+      "repos_url": "https://api.github.com/users/hkdobrev/repos",
+      "events_url": "https://api.github.com/users/hkdobrev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/hkdobrev/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2015-04-23T23:17:00Z",
+    "updated_at": "2015-04-23T23:17:00Z",
+    "body": "I believe this is resolved in latest master. I've tried it both in Parsedown and Parsedown Extra."
+  }
+]

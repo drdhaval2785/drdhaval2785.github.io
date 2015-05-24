@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html class='' lang='en'>
+<head prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#'>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8'>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta http-equiv='Content-Language' content='en'>
+<title>erusev/parsedown/285</title>
+<link href='github-c486157afcc5f58155a921bc675afb08733fbaa8dcf39ac2104d3.css' media='all' rel='stylesheet'>
+<link href='github2-da2e842cc3f0aaf33b727d0ef034243c12ab008fd09b24868b97.css' media='all' rel='stylesheet'>
+<meta http-equiv='x-pjax-version' content='4426702614c8182f33d1780ad1169662'>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shAutoloader.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAppleScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAS3.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushBash.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushColdFusion.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCpp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCSharp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCss.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDelphi.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDiff.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushErlang.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushGroovy.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJava.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJavaFX.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/syntaxhighlighter/scripts/shBrushJScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPerl.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPhp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPlain.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPowerShell.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPython.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushRuby.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSass.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushScala.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSql.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushVb.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushXml.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shLegacy.js'></script>
+	<link type='text/css' rel='stylesheet' href='syntaxhighlighter/styles/shCoreDefault.css'/>
+	<script type='text/javascript'>SyntaxHighlighter.all();</script>
+</head>
+<body class='logged_in  env-production windows vis-public'>
+<h1 align='center'><a href='https://github.com/erusev/parsedown/pull/285' target='_blank'>Add "id" attribute to headings</h1><hr/><div id="#issue-56965858" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/henriquemoody" class="author">henriquemoody</a>
+    </strong>
+    commented on 
+    <a href="#issue-56965858" class="timestamp">
+      <time>2015-02-08 20:19:13</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>This is more or less how GitHub Flavored Markdown works.</p>
+<p>See an example: <a href="https://github.com/henriquemoody/parsedown/blob/titles/test/data/atx_heading.md">https://github.com/henriquemoody/parsedown/blob/titles/test/data/atx_heading.md</a></p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-73429471" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/henriquemoody" class="author">henriquemoody</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-73429471" class="timestamp">
+      <time>2015-02-08 20:21:44</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Looks like the problem is on Travis, not in my feature.</p>
+<p>Seems PHP 5.2 is no longer available.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-73436374" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/cebe" class="author">cebe</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-73436374" class="timestamp">
+      <time>2015-02-08 22:33:18</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <blockquote>
+<p>Seems PHP 5.2 is no longer available.</p>
+</blockquote>
+<p>Yep, right: <a href="http://docs.travis-ci.com/user/build-environment-updates/2015-02-03/#PHP-VM">http://docs.travis-ci.com/user/build-environment-updates/2015-02-03/#PHP-VM</a></p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-73436421" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/GrahamCampbell" class="author">GrahamCampbell</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-73436421" class="timestamp">
+      <time>2015-02-08 22:34:09</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Yeh. They had to remove it because it was no-longer building on their system.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-73438252" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/henriquemoody" class="author">henriquemoody</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-73438252" class="timestamp">
+      <time>2015-02-08 23:07:12</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>It's green now.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-73442267" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-73442267" class="timestamp">
+      <time>2015-02-09 00:22:24</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Thanks. I'll have a look at this next weekend.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-73471804" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-73471804" class="timestamp">
+      <time>2015-02-09 08:19:38</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>:+1: </p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-73509985" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/naNuke" class="author">naNuke</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-73509985" class="timestamp">
+      <time>2015-02-09 13:43:37</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Why not use ATX function instead of adding buch of code into text()? </p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-73547729" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/henriquemoody" class="author">henriquemoody</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-73547729" class="timestamp">
+      <time>2015-02-09 17:11:17</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/naNuke" target="_blank">@naNuke</a></strong>, I'm sorry but I don't know about ATX function. Can you elaborate?</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-73548872" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-73548872" class="timestamp">
+      <time>2015-02-09 17:17:23</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <blockquote>
+<p>This is more or less how GitHub Flavored Markdown works.</p>
+</blockquote>
+<p>Is it described in <a href="https://help.github.com/articles/github-flavored-markdown/">the specification</a>?</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-73549040" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/naNuke" class="author">naNuke</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-73549040" class="timestamp">
+      <time>2015-02-09 17:18:14</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/henriquemoody" target="_blank">@henriquemoody</a></strong> line 468, sorry it was called atx in previous versions, now it's blockHeader()</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-73550852" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/henriquemoody" class="author">henriquemoody</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-73550852" class="timestamp">
+      <time>2015-02-09 17:27:44</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/erusev" target="_blank">@erusev</a></strong>, no it's not in the spec but If you take a look on all processed Markdown files rendered by GitHub you will he something like that right after <code>&lt;hN&gt;</code> tags:</p>
+<pre class="brush: html">&lt;a name="this-is-an-anchor" class="anchor" href="#this-is-an-anchor"&gt;
+    &lt;span class="octicon octicon-link"&gt;&lt;/span&gt;
+&lt;/a&gt;</code></pre>
+<p>I don't think put these tags on processed Markdown files is a good idea because it's based on the GitHub's CSS, but with the ids we still have the reference and we can link the titles. It's useful when you want to write a table of contents or just create an link to the same document. </p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-73551128" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-73551128" class="timestamp">
+      <time>2015-02-09 17:29:05</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/erusev" target="_blank">@erusev</a></strong> I don't think this is described in the spec. This is just how GitHub.com works. But it is really useful. Perhaps an extension? And then a community-driven wiki with a list of useful extensions?</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-74398845" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/henriquemoody" class="author">henriquemoody</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-74398845" class="timestamp">
+      <time>2015-02-15 00:45:50</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I think better I close this.</p>
+<p>GitHub Flavored Markdown only does it on pages and wiki, but it's not a standard (you can see that on comments and issue descriptions), besides, this parser may/must be used to render lots of files, if two different files have the same title (header) the <code>id</code> will not be generated correctly.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-74399066" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/henriquemoody" class="author">henriquemoody</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-74399066" class="timestamp">
+      <time>2015-02-15 00:53:38</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>PS.: <strong><a href="https://github.com/erusev" target="_blank">@erusev</a></strong>, I will keep my fork for a couple days, if you think this feature worth I will update it to reset the id counter every time something is rendered.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-74408148" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-74408148" class="timestamp">
+      <time>2015-02-15 08:01:18</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/henriquemoody" target="_blank">@henriquemoody</a></strong> </p>
+<p>Thanks for elaborating on this. Since this is not a part of the GFM spec, I'd have to agree with <strong><a href="https://github.com/hkdobrev" target="_blank">@hkdobrev</a></strong> and suggest that it would make more sense as an extension.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+</body></html>

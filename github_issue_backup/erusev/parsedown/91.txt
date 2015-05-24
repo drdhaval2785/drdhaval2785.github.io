@@ -1,0 +1,97 @@
+{
+  "url": "https://api.github.com/repos/erusev/parsedown/issues/91",
+  "labels_url": "https://api.github.com/repos/erusev/parsedown/issues/91/labels{/name}",
+  "comments_url": "https://api.github.com/repos/erusev/parsedown/issues/91/comments",
+  "events_url": "https://api.github.com/repos/erusev/parsedown/issues/91/events",
+  "html_url": "https://github.com/erusev/parsedown/pull/91",
+  "id": 26858111,
+  "number": 91,
+  "title": "Update Parsedown to handle URLs with a trailing /",
+  "user": {
+    "login": "scottchiefbaker",
+    "id": 3429760,
+    "avatar_url": "https://avatars.githubusercontent.com/u/3429760?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/scottchiefbaker",
+    "html_url": "https://github.com/scottchiefbaker",
+    "followers_url": "https://api.github.com/users/scottchiefbaker/followers",
+    "following_url": "https://api.github.com/users/scottchiefbaker/following{/other_user}",
+    "gists_url": "https://api.github.com/users/scottchiefbaker/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/scottchiefbaker/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/scottchiefbaker/subscriptions",
+    "organizations_url": "https://api.github.com/users/scottchiefbaker/orgs",
+    "repos_url": "https://api.github.com/users/scottchiefbaker/repos",
+    "events_url": "https://api.github.com/users/scottchiefbaker/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/scottchiefbaker/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2014-02-04T03:54:48Z",
+  "updated_at": "2014-02-06T03:15:15Z",
+  "closed_at": "2014-02-06T03:15:15Z",
+  "pull_request": {
+    "url": "https://api.github.com/repos/erusev/parsedown/pulls/91",
+    "html_url": "https://github.com/erusev/parsedown/pull/91",
+    "diff_url": "https://github.com/erusev/parsedown/pull/91.diff",
+    "patch_url": "https://github.com/erusev/parsedown/pull/91.patch"
+  },
+  "body": "Looked around the web and found a better regexp to match URLs. It passes all the tests I could throw at it.",
+  "closed_by": {
+    "login": "scottchiefbaker",
+    "id": 3429760,
+    "avatar_url": "https://avatars.githubusercontent.com/u/3429760?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/scottchiefbaker",
+    "html_url": "https://github.com/scottchiefbaker",
+    "followers_url": "https://api.github.com/users/scottchiefbaker/followers",
+    "following_url": "https://api.github.com/users/scottchiefbaker/following{/other_user}",
+    "gists_url": "https://api.github.com/users/scottchiefbaker/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/scottchiefbaker/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/scottchiefbaker/subscriptions",
+    "organizations_url": "https://api.github.com/users/scottchiefbaker/orgs",
+    "repos_url": "https://api.github.com/users/scottchiefbaker/repos",
+    "events_url": "https://api.github.com/users/scottchiefbaker/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/scottchiefbaker/received_events",
+    "type": "User",
+    "site_admin": false
+  }
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/erusev/parsedown/issues/comments/34041779",
+    "html_url": "https://github.com/erusev/parsedown/pull/91#issuecomment-34041779",
+    "issue_url": "https://api.github.com/repos/erusev/parsedown/issues/91",
+    "id": 34041779,
+    "user": {
+      "login": "hkdobrev",
+      "id": 506129,
+      "avatar_url": "https://avatars.githubusercontent.com/u/506129?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/hkdobrev",
+      "html_url": "https://github.com/hkdobrev",
+      "followers_url": "https://api.github.com/users/hkdobrev/followers",
+      "following_url": "https://api.github.com/users/hkdobrev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/hkdobrev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/hkdobrev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/hkdobrev/subscriptions",
+      "organizations_url": "https://api.github.com/users/hkdobrev/orgs",
+      "repos_url": "https://api.github.com/users/hkdobrev/repos",
+      "events_url": "https://api.github.com/users/hkdobrev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/hkdobrev/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2014-02-04T09:12:21Z",
+    "updated_at": "2014-02-04T09:12:21Z",
+    "body": "Fixes #82."
+  }
+]

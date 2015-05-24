@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html class='' lang='en'>
+<head prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#'>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8'>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta http-equiv='Content-Language' content='en'>
+<title>erusev/parsedown/159</title>
+<link href='github-c486157afcc5f58155a921bc675afb08733fbaa8dcf39ac2104d3.css' media='all' rel='stylesheet'>
+<link href='github2-da2e842cc3f0aaf33b727d0ef034243c12ab008fd09b24868b97.css' media='all' rel='stylesheet'>
+<meta http-equiv='x-pjax-version' content='4426702614c8182f33d1780ad1169662'>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shAutoloader.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAppleScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAS3.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushBash.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushColdFusion.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCpp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCSharp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCss.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDelphi.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDiff.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushErlang.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushGroovy.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJava.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJavaFX.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/syntaxhighlighter/scripts/shBrushJScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPerl.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPhp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPlain.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPowerShell.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPython.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushRuby.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSass.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushScala.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSql.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushVb.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushXml.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shLegacy.js'></script>
+	<link type='text/css' rel='stylesheet' href='syntaxhighlighter/styles/shCoreDefault.css'/>
+	<script type='text/javascript'>SyntaxHighlighter.all();</script>
+</head>
+<body class='logged_in  env-production windows vis-public'>
+<h1 align='center'><a href='https://github.com/erusev/parsedown/issues/159' target='_blank'>Documentation</h1><hr/><div id="#issue-32255480" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issue-32255480" class="timestamp">
+      <time>2014-04-25 18:28:41</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Parsedown is approaching a stable version and it needs some kind of documentation (see #133).</p>
+<h3>Implementation</h3>
+<p>Here are possible implementations:</p>
+<ul>
+<li>Markdown files in the repository;</li>
+<li>Separate repository with Markdown files;</li>
+<li>GitHub wiki;</li>
+<li>HTML files in <a href="https://pages.github.com/"><code>gh-pages</code></a> branch.</li>
+</ul>
+<p>Markdown approaches allow using the files/pages for documentation generators like <a href="https://readthedocs.org/">https://readthedocs.org/</a> if needed.</p>
+<p>I personally prefer the Markdown files to be in the same repository, because:</p>
+<ul>
+<li>Documentation could be written using the same issue tracker and pull requests like the code.</li>
+<li>A single pull request about a piece of code could include a related change in the documentation.</li>
+</ul>
+<h3>Contents</h3>
+<p>What should be documented?</p>
+<p>I suggest:</p>
+<ul>
+<li>Public interface - most common use cases.</li>
+<li>Extensibility - writing your own extensions with modifications to the parsing and compiling.</li>
+<li>Tests structure and how/why to add more tests. Also how to test local modifications.</li>
+<li>Porting guide - how to easily port Parsedown to another language. E.g. Describe the algorithm.</li>
+</ul>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-41426278" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-41426278" class="timestamp">
+      <time>2014-04-25 18:44:51</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Thanks for bringing this up.</p>
+<p>Here are my concerns for the &quot;Markdown files&quot; approach:</p>
+<ul>
+<li>too much noise in the feed of the watchers (as I tend to be quite obsessive about editing)</li>
+<li>too much noise in the commit messages</li>
+<li>too much writing of commit messages for every little change</li>
+<li>too restricted</li>
+</ul>
+<p>I'd vote for the third approach - GitHub wiki, as it would introduce a quick and easy way for anyone to contribute.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-41426757" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-41426757" class="timestamp">
+      <time>2014-04-25 18:49:19</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Every GitHub wiki change is included in the feed of the watchers as well. There are no notifications though.</p>
+<p>If you go with a wiki, do you plan to keep it open so anyone could help? If you plan to restrict the write access to the wiki, there would be no way to submit a pull request.</p>
+<hr />
+<p>I've missed one approach - Markdown files in <code>gh-branch</code> using Jekyll.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-41427494" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-41427494" class="timestamp">
+      <time>2014-04-25 18:56:10</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <blockquote>
+<p>If you go with a wiki, do you plan to keep it open so anyone could help?</p>
+</blockquote>
+<p>Yes. I'd love to try that.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-41427806" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-41427806" class="timestamp">
+      <time>2014-04-25 18:59:11</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/erusev" target="_blank">@erusev</a></strong> Great!</p>
+<p>What about the actual documentation content? I've outlined some ideas above.</p>
+<p>The wiki is currently open so anyone could start the docs right away. It would be useful if we agree to some guideline though.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-43847241" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/barnettjw" class="author">barnettjw</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-43847241" class="timestamp">
+      <time>2014-05-22 04:21:16</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I found Parsedown earlier today and started playing with it.</p>
+<p>I threw a <em>very</em> <a href="http://runnable.com/U314bamP1FkG5tH1/parsedown-demo-a-parser-for-markdown-in-php">simple demo of Parsedown</a> up on Runnable.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-70106613" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-70106613" class="timestamp">
+      <time>2015-01-15 15:52:49</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I added a wiki page about writing extensions.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+</body></html>

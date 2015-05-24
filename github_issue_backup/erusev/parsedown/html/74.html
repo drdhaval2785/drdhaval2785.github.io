@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html class='' lang='en'>
+<head prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#'>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8'>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta http-equiv='Content-Language' content='en'>
+<title>erusev/parsedown/74</title>
+<link href='github-c486157afcc5f58155a921bc675afb08733fbaa8dcf39ac2104d3.css' media='all' rel='stylesheet'>
+<link href='github2-da2e842cc3f0aaf33b727d0ef034243c12ab008fd09b24868b97.css' media='all' rel='stylesheet'>
+<meta http-equiv='x-pjax-version' content='4426702614c8182f33d1780ad1169662'>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shAutoloader.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAppleScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAS3.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushBash.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushColdFusion.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCpp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCSharp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCss.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDelphi.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDiff.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushErlang.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushGroovy.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJava.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJavaFX.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/syntaxhighlighter/scripts/shBrushJScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPerl.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPhp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPlain.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPowerShell.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPython.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushRuby.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSass.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushScala.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSql.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushVb.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushXml.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shLegacy.js'></script>
+	<link type='text/css' rel='stylesheet' href='syntaxhighlighter/styles/shCoreDefault.css'/>
+	<script type='text/javascript'>SyntaxHighlighter.all();</script>
+</head>
+<body class='logged_in  env-production windows vis-public'>
+<h1 align='center'><a href='https://github.com/erusev/parsedown/pull/74' target='_blank'>better approach to extending markdown</h1><hr/><div id="#issue-26535390" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/cebe" class="author">cebe</a>
+    </strong>
+    commented on 
+    <a href="#issue-26535390" class="timestamp">
+      <time>2014-01-29 17:01:18</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>this approach is totally based on callbacks and more consistent.</p>
+<p>obsoletes <a href='70.html' target='_blank'>#70</a> and #73</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-33606589" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/cebe" class="author">cebe</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-33606589" class="timestamp">
+      <time>2014-01-29 17:16:57</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Usage example for code highlighting:</p>
+<pre class="brush: php">$handler = function(&amp;$block, &amp;$markup)
+{
+    if (strncmp($block['text'], '&lt;?php', 5) === 0) {
+        $text = highlight_string($block['text'], true);
+    } else {
+        $text = highlight_string("&lt;?php\n".$block['text'], true);
+    }
+
+        $markup .= '&lt;pre&gt;&lt;code';
+
+        if (isset($block['language']))
+        {
+            if ($block['language'] !== 'php') {
+                return false;
+            }
+            $markup .= ' class="language-'.$block['language'].'"';
+        }
+
+    $markup .= '&gt;'.$text.'&lt;/code&gt;&lt;/pre&gt;'."\n";
+    return true;
+}
+
+$p  = Parsedown::instance();
+$p-&gt;register_block_hander('code', $handler);
+$p-&gt;register_block_hander('fenced', $handler);
+$p-&gt;parse(...);</code></pre>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-33607213" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/scottchiefbaker" class="author">scottchiefbaker</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-33607213" class="timestamp">
+      <time>2014-01-29 17:22:25</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>This would be to override the internal handlers for certain types of blocks?</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-33609261" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/cebe" class="author">cebe</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-33609261" class="timestamp">
+      <time>2014-01-29 17:41:04</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>if you return true you will overide it completely i.e. only your implementation will handle it. if function returns nothing or false you can manipulate the block but let Parsedown do the rendering.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-33611131" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/scottchiefbaker" class="author">scottchiefbaker</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-33611131" class="timestamp">
+      <time>2014-01-29 17:58:20</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Perfect... I like this implementation. There is going to be some serious documentation/examples that will need to be written to support this. Are you also able to do that?</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-33611233" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/cebe" class="author">cebe</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-33611233" class="timestamp">
+      <time>2014-01-29 17:59:17</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Sure, just wanted to make sure it is going to get accepted before writing docs.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-33611769" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/scottchiefbaker" class="author">scottchiefbaker</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-33611769" class="timestamp">
+      <time>2014-01-29 18:04:10</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>It's not my project, but I fully support this. I imagine <strong><a href="https://github.com/erusev" target="_blank">@erusev</a></strong>'s main concern would be performance for instances where the user is NOT doing any overrides. We'd want to make very sure the impact is low.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-33612531" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/cebe" class="author">cebe</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-33612531" class="timestamp">
+      <time>2014-01-29 18:11:38</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>the effect on span parsing is nearly 0 as I only added isset() check in default part of switch.
+In block parsing there one isset() call more per block which should also not do too much as it is one of the fastest things you can do in php.
+the only thing that may have any impact is ksort() that is added to span parsing and comes ones per span element that occurs. Still nothing I would be worried about.
+Imo it is worth compared to the flexibility it brings.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-33613339" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/scottchiefbaker" class="author">scottchiefbaker</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-33613339" class="timestamp">
+      <time>2014-01-29 18:19:52</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Some benchmarks before/after on big blocks of Markdown would be pretty simple to do.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-33613851" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/scottchiefbaker" class="author">scottchiefbaker</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-33613851" class="timestamp">
+      <time>2014-01-29 18:24:47</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>If you can implement/document this without a major impact to the speed of the code (one of the major focuses of Parsedown) I'd fully support this. It seems like a great feature.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-33629744" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-33629744" class="timestamp">
+      <time>2014-01-29 20:56:37</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/cebe" target="_blank">@cebe</a></strong> These handlers should really just return HTML. Every function is a better function if it relies only on its arguments and return a value based on these arguments. The so-called &quot;pure&quot; functions.</p>
+<p>I don't see why the <code>$block</code> and <code>$markup</code> should be passed by reference.</p>
+<p>Here is an example:</p>
+<pre class="brush: php">$handler = function($block)
+{
+    if (strncmp($block['text'], '&lt;?php', 5) === 0) {
+        $text = highlight_string($block['text'], true);
+    } else {
+        $text = highlight_string("&lt;?php\n".$block['text'], true);
+    }
+
+    $markup = '&lt;pre&gt;&lt;code';
+
+    if (isset($block['language']))
+    {
+        if ($block['language'] !== 'php') {
+            return null;
+        }
+        $markup .= ' class="language-'.$block['language'].'"';
+    }
+
+    $markup .= '&gt;'.$text.'&lt;/code&gt;&lt;/pre&gt;'."\n";
+    return $markup;
+}
+
+$p  = Parsedown::instance();
+$p-&gt;register_block_hander('code', $handler);
+$p-&gt;register_block_hander('fenced', $handler);
+$p-&gt;parse(...);</code></pre>
+<p>What you gain with your current implementation is the ability to update not only the markup, but the <code>$block</code> as well. Which would be a very rare case IMHO.</p>
+<hr />
+<p>You could write some tests about this.</p>
+<hr />
+<p>You could squash your commits into one.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-33879040" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/cebe" class="author">cebe</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-33879040" class="timestamp">
+      <time>2014-02-01 18:15:13</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Thanks for your review and comments, will get back to them when I find the time for it.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-33957090" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/cebe" class="author">cebe</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-33957090" class="timestamp">
+      <time>2014-02-03 14:11:54</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <blockquote>
+<p>Some benchmarks before/after on big blocks of Markdown would be pretty simple to do.</p>
+</blockquote>
+<p>Created a benchmark:</p>
+<pre class="brush: php">&lt;?php
+
+require('Parsedown.php');
+
+$markdown = file_get_contents('http://daringfireball.net/projects/markdown/syntax.text');
+
+$m = [];
+$t = [];
+
+for ($n = 0; $n &lt; 1000; $n++) {
+    $oldmem = memory_get_usage();
+    $begin = microtime(true);
+
+    // ---
+
+    $pd = new Parsedown();
+    $pd-&gt;parse($markdown);
+
+    // ---
+
+    $mem = memory_get_usage();
+    $t[$n] = microtime(true) - $begin;
+    $m[$n] = $mem - $oldmem;
+    unset($pd);
+}
+
+// discard the first iteration
+array_shift($m);
+array_shift($t);
+
+echo "memory usage: \n";
+echo " - min: ". (min($m)/1024)." kb\n";
+echo " - avg: ". (array_sum($m)/count($m)/1024)." kb\n";
+echo " - max: ". (($max=max($m))/1024)." kb\n";
+foreach($m as $k =&gt; $v) {
+    if ($v == $max) {
+        echo " - max at $k\n";
+    }
+}
+echo "\n";
+
+echo "time: \n";
+echo " - min: ". (min($t))." s\n";
+echo " - avg: ". (array_sum($t)/count($t))." s\n";
+echo " - max: ". ($max=max($t))." s\n";
+foreach($t as $k =&gt; $v) {
+    if ($v &gt; $max - 0.00001) {
+        echo " - max at $k\n";
+    }
+}
+echo "\n";</code></pre>
+<p>Ran it 3 times on current <a href="https://github.com/erusev/parsedown/tree/7193e634b277f389a38dd525363e5804e45b2c7f">master</a>:</p>
+<pre><code># php benchmark.php 
+memory usage: 
+ - min: 4.8359375 kb
+ - avg: 4.8752971721722 kb
+ - max: 5.1328125 kb
+ - max at 569
+
+time: 
+ - min: 0.0085000991821289 s
+ - avg: 0.0086580107997249 s
+ - max: 0.0097930431365967 s
+ - max at 458
+
+# php benchmark.php 
+memory usage: 
+ - min: 4.8359375 kb
+ - avg: 4.8752971721722 kb
+ - max: 5.1328125 kb
+ - max at 569
+
+time: 
+ - min: 0.0084569454193115 s
+ - avg: 0.0086186533575659 s
+ - max: 0.010159015655518 s
+ - max at 461
+
+# php benchmark.php 
+php benchmark.php 
+memory usage: 
+ - min: 4.8359375 kb
+ - avg: 4.8752971721722 kb
+ - max: 5.1328125 kb
+ - max at 569
+
+time: 
+ - min: 0.0082619190216064 s
+ - avg: 0.0084668878797774 s
+ - max: 0.012995004653931 s
+ - max at 825
+ - max at 826</code></pre>
+<p>Ran it 3 times on this branch:</p>
+<pre><code># php benchmark.php 
+memory usage: 
+ - min: 4.859375 kb
+ - avg: 4.8985626251251 kb
+ - max: 5.140625 kb
+ - max at 519
+
+time: 
+ - min: 0.0085580348968506 s
+ - avg: 0.0088489790697833 s
+ - max: 0.013104915618896 s
+ - max at 340
+
+# php benchmark.php 
+memory usage: 
+ - min: 4.859375 kb
+ - avg: 4.8985626251251 kb
+ - max: 5.140625 kb
+ - max at 519
+
+time: 
+ - min: 0.0089371204376221 s
+ - avg: 0.0092274615237185 s
+ - max: 0.01418399810791 s
+ - max at 355
+
+# php benchmark.php 
+memory usage: 
+ - min: 4.859375 kb
+ - avg: 4.8985626251251 kb
+ - max: 5.140625 kb
+ - max at 519
+
+time: 
+ - min: 0.0089361667633057 s
+ - avg: 0.0091655559845276 s
+ - max: 0.010545015335083 s
+ - max at 961</code></pre>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-33957209" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-33957209" class="timestamp">
+      <time>2014-02-03 14:13:28</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/cebe" target="_blank">@cebe</a></strong> BTW I would really love to have benchmarks for Parsedown. Do you think creating a separate issue for that and discussing it there would make sense? Thanks!</p>
+<p>cc <strong><a href="https://github.com/erusev" target="_blank">@erusev</a></strong> </p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-33959915" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/cebe" class="author">cebe</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-33959915" class="timestamp">
+      <time>2014-02-03 14:42:31</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <blockquote>
+<p><strong><a href="https://github.com/cebe" target="_blank">@cebe</a></strong> These handlers should really just return HTML. Every function is a better function if it relies only on its arguments and return a value based on these arguments. The so-called &quot;pure&quot; functions.</p>
+<p>I don't see why the $block and $markup should be passed by reference.</p>
+</blockquote>
+<p>In general you are right. A good function does not take parameters by reference and modifies them when it could just return the modified result.
+But as these functions here are hooks into a parser they should be designed like it.
+They get a text to parse and the markup to append to but also have to ensure the text is shortened by the part they parsed. For the block it might work to only return the HTML markup but this is not possible for the inline callback. I'd like to keep both handlers consistent in how they work.
+Another argument for giving by reference is that the text would be duplicated in memory in each call. when working with large files this will increase memory usage significantly.
+Imo the signature of the functions fit good for the usecase in a parser.</p>
+<blockquote>
+<p>What you gain with your current implementation is the ability to update not only the markup, but the $block as well. Which would be a very rare case IMHO.</p>
+</blockquote>
+<p>It is not possible to call the rendering of inline markup from within the handler so you might want to modify the block and let parsedown render it finally. This can be useful for complex blocks like lists or tables where you would need to duplicate the complete rendering logic when you only want to adjust minimal parts of it.</p>
+<blockquote>
+<p>You could squash your commits into one.</p>
+</blockquote>
+<p>I could do this but I think there are good reasons not to do it. For example the introduction of the ksort() method will allow you to see the reason directly when doing a git blame. I can rebase the commits and squash those which could fit well into one when we agree that implementation is final.</p>
+<blockquote>
+<p>You could write some tests about this.</p>
+</blockquote>
+<p>will do when we agree on this to be merged. there is not much to test in this except that handlers are called in the right place so I am going to do it when code is finalized.</p>
+<blockquote>
+<p>I would really love to have benchmarks for Parsedown. Do you think creating a separate issue for that and discussing it there would make sense? Thanks!</p>
+</blockquote>
+<p>yeah, better open a new issue for this, it would mess up the discussion here.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-33960219" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/cebe" class="author">cebe</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-33960219" class="timestamp">
+      <time>2014-02-03 14:45:21</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/erusev" target="_blank">@erusev</a></strong> can I please have your opinion on this one? Feel free to share your doubts, if any, so we can discuss them.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-34012323" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-34012323" class="timestamp">
+      <time>2014-02-03 23:12:05</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/cebe" target="_blank">@cebe</a></strong> </p>
+<p>Before I decide to go with an implementation that uses callbacks, I'd like to explore one that uses inheritance.</p>
+<p>I appreciate your contributions.</p>
+<p>p.s. It is unlikely that I'd merge a pull request that introduces a feature or changes the API.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-34013212" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/scottchiefbaker" class="author">scottchiefbaker</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-34013212" class="timestamp">
+      <time>2014-02-03 23:23:14</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>My vote is callbacks over inheritance. I think it would be more logical, and easier to maintain.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-34015144" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-34015144" class="timestamp">
+      <time>2014-02-03 23:48:10</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>My vote would go to inheritance. Here is why:</p>
+<ul>
+<li>Extensions to Parsedown are an ideal candidate for object-oriented polymorphism. Every child would do what the parent would do with a little more. Example child is <code>ParsedownExtra</code> (for Markdown Extra syntax).</li>
+<li>In the long run inheritance would contribute to the better structure of the Parsedown core.</li>
+<li>Methods declarations (both in Parsedown and extensions) could have PHPDoc hints and more. It is less likely people would write them for closures.</li>
+<li>There would be literally zero performance hit. You would not even think the core Parsedown could be slowed down because of an extension if you don't use it.</li>
+<li>Extensions could be Composer packages. You could then just alias <code>ParsedownExtra</code> as <code>Parsedown</code> using the PHP 5.3+ <code>use</code> feature. You would use only one line of PHP to define which extension is used.</li>
+<li>You could use PHP 5.4+ Traits. You could extend the <code>Parsedown</code> class and <code>use</code> some traits about syntax-highlighting, ASCII art or whatever and all of them could be in separate repos.</li>
+</ul>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-34018337" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/cebe" class="author">cebe</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-34018337" class="timestamp">
+      <time>2014-02-04 00:32:53</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/erusev" target="_blank">@erusev</a></strong> thanks for you answer. I am happy to propose an extension way that uses inheritance but I am not sure if it can be as fast as this one (as far as I understood you are concerned about speed :) ). It is also not as easy to implement as it would be with callbacks because the existing methods would need some re-arrangement.</p>
+<blockquote>
+<p>However, I feel that I have to say that it is highly unlikely that I'd merge a pull request that introduces a feature or changes the API. I've updated the contributing guidelines to make this clear. I hope that you would understand.</p>
+</blockquote>
+<p>I'm not sure I understand. If there is a PR that implements a feature you would like to have (there is an issue for this: #18) and it adds some methods, you are free to propose different naming and arrangement if you think it should be implemented differently. This is an open source project so you can have other people do some work for you if you just let them. Not merging PRs because you just want to do it on your own does not make sense if we can come up with a better solution together.
+I am not saying that mine or your solution would be the better one but I am sure the one we think/create together would be better than one I or you have written on my own.
+You have created a great tool. You should not refuse to allow making it a perfect one together.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-34018770" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-34018770" class="timestamp">
+      <time>2014-02-04 00:39:52</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <blockquote>
+<p>I am not saying that mine or your solution would better but I am sure the one we think/create together would be better than one I or you have written on my own.</p>
+</blockquote>
+<p>I'd welcome any pull request that improves an existing feature.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-34018892" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/scottchiefbaker" class="author">scottchiefbaker</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-34018892" class="timestamp">
+      <time>2014-02-04 00:42:11</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <blockquote>
+<p>Not merging PRs because you just want to do it on your own does not make sense if we can come up with a better solution together.</p>
+</blockquote>
+<p>:+1: </p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-34019233" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/cebe" class="author">cebe</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-34019233" class="timestamp">
+      <time>2014-02-04 00:48:01</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Btw: We are currently in the <a href="https://github.com/yiisoft/yii2/issues/47#issuecomment-31922693">process of choosing a markdown parser</a> that will be bundled with the <a href="http://www.yiiframework.com/">Yii Framework</a> 2.0 (I am part of the core dev team there). I am quite unhappy with most of the existing implementations and I found yours which is great considering <a href="http://kzykhys.com/blog/benchmarked-markdown-parsers-written-in-php/">speed</a> and I also like the implementation approach.
+The only thing that is missing here is extension support so I am happy to help you adding this feature.</p>
+<p>I could start maintaining a fork that adds it but I prefer working together with the original community and contribute directly instead of creating a competition. You have a healthy community here, you should use it.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-34019391" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-34019391" class="timestamp">
+      <time>2014-02-04 00:50:30</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>+1 to all of what <strong><a href="https://github.com/cebe" target="_blank">@cebe</a></strong> just said!</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-34019770" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-34019770" class="timestamp">
+      <time>2014-02-04 00:55:39</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <blockquote>
+<p>The only thing that is missing here is extension support so I am happy to help you adding this feature.</p>
+</blockquote>
+<p>I'm working on it and I'm open to ideas.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-34019964" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-34019964" class="timestamp">
+      <time>2014-02-04 00:58:46</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/erusev" target="_blank">@erusev</a></strong> If you use a branch for your ideas/experiments it would be much easier to suggest ideas.</p>
+<p><strong><a href="https://github.com/cebe" target="_blank">@cebe</a></strong> The benchmark of Ciconia's author is really cool. It really shows Parsedown is much faster even with GFM baked-in. Thank you for the link!</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-37573876" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/rr-" class="author">rr-</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-37573876" class="timestamp">
+      <time>2014-03-13 19:06:02</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>:+1: for subclassing approach. I (ab)use it all the time with PHP-markdown, adding my own handlers and replacing existing ones. The current implementation of the project isn't very flexible in that regard, mainly due to usage of big <code>switch</code>es. Each of the <code>case</code> statement could be replaced to separate method. That alone would allow users to hack around quite a lot. I don't think calling handlers, as opposed to having them hard-coded into <code>switch</code>, would hit performance very much.</p>
+<p>Edit: I see it's partially done in better-extendability branch. Great! All that's left is a way for users to add custom block parsers and allow to customize span parsing (for example,  let the users configure their subclasses to parse <code>\s*\n</code> into <code>&lt;br/&gt;</code>, not just <code>[ ][ ]\n</code>).</p>
+<p>I haven't dug into the implementation very deep, but I have this random idea to drop <code>switch</code>es altogether in favor of some user-controllable dictionary, that would map blocks/span markers to respective handlers. The more methods, the more control users have, and that's a good thing.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-40750967" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-40750967" class="timestamp">
+      <time>2014-04-17 19:08:20</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/erusev" target="_blank">@erusev</a></strong> <strong><a href="https://github.com/cebe" target="_blank">@cebe</a></strong> This should be implemented now with the many public and protected function introduced in Parsedown.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-40752641" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/cebe" class="author">cebe</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-40752641" class="timestamp">
+      <time>2014-04-17 19:24:47</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>yeah, closing this then.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+</body></html>

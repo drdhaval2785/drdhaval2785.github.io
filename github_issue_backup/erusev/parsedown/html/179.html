@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html class='' lang='en'>
+<head prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#'>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8'>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta http-equiv='Content-Language' content='en'>
+<title>erusev/parsedown/179</title>
+<link href='github-c486157afcc5f58155a921bc675afb08733fbaa8dcf39ac2104d3.css' media='all' rel='stylesheet'>
+<link href='github2-da2e842cc3f0aaf33b727d0ef034243c12ab008fd09b24868b97.css' media='all' rel='stylesheet'>
+<meta http-equiv='x-pjax-version' content='4426702614c8182f33d1780ad1169662'>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shAutoloader.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAppleScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAS3.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushBash.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushColdFusion.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCpp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCSharp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCss.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDelphi.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDiff.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushErlang.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushGroovy.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJava.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJavaFX.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/syntaxhighlighter/scripts/shBrushJScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPerl.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPhp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPlain.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPowerShell.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPython.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushRuby.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSass.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushScala.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSql.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushVb.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushXml.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shLegacy.js'></script>
+	<link type='text/css' rel='stylesheet' href='syntaxhighlighter/styles/shCoreDefault.css'/>
+	<script type='text/javascript'>SyntaxHighlighter.all();</script>
+</head>
+<body class='logged_in  env-production windows vis-public'>
+<h1 align='center'><a href='https://github.com/erusev/parsedown/issues/179' target='_blank'><ins> parses incorrectly</h1><hr/><div id="#issue-34684240" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/brendanfalkowski" class="author">brendanfalkowski</a>
+    </strong>
+    commented on 
+    <a href="#issue-34684240" class="timestamp">
+      <time>2014-05-30 21:52:42</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I have a markup pattern for updates to blog posts that looks like this:</p>
+<pre><code>&lt;ins class="update" datetime="2014-03-30"&gt;
+    &lt;h2&gt;&lt;span&gt;Update&lt;/span&gt; 2014&amp;ndash;03&amp;ndash;30&lt;/h2&gt;
+
+    &lt;p&gt;Lorem ipsum&lt;/p&gt;
+&lt;/ins&gt;</code></pre>
+<p>While testing this parser in <a href="http://statamic.com">http://statamic.com</a>, it doesn't render properly. This is how the markup comes back:</p>
+<pre><code>&lt;p&gt;&lt;ins class="update" datetime="2014-03-30"&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;h2&amp;gt;&amp;lt;span&amp;gt;Update&amp;lt;/span&amp;gt; 2014&amp;amp;ndash;03&amp;amp;ndash;30&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;Lorem ipsum&amp;lt;/p&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;/ins&gt;&lt;/p&gt;</code></pre>
+<p>If I wrap a DIV around the INS it's fine, but don't want to do that. Not sure there's a happy workaround for this since INS is inline by default, and I'm styling it like a block-level element.</p>
+<p>May just have to revert to using a DIV instead of INS to avoid the wrapper.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-44704032" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-44704032" class="timestamp">
+      <time>2014-05-30 21:56:02</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I'll see what I can do.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-44707368" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-44707368" class="timestamp">
+      <time>2014-05-30 22:41:48</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I think this is because the <code>&lt;ins&gt;</code> tag is incorrectly <a href="https://github.com/erusev/parsedown/blob/d24439ada0704948deef0d3eda2ea20fd8db1747/Parsedown.php#L1395">considered an inline element by Parsedown</a>.</p>
+<p>HTML spec: <a href="http://dev.w3.org/html5/html-author/#the-ins-element">http://dev.w3.org/html5/html-author/#the-ins-element</a></p>
+<p>Also the <a href="http://validator.w3.org/">HTML Validator</a> is considering this a valid HTML fragment.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-44707808" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/brendanfalkowski" class="author">brendanfalkowski</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-44707808" class="timestamp">
+      <time>2014-05-30 22:48:01</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Well it is inline by default in browsers. The HTML spec declares it flow or phrasing, so it may contain block level elements -- just like an anchor -- but that's not its natural state.</p>
+<p>In all likelihood the parser is treating this properly according to how Markdown behaves. It should be wrapped in a paragraph in 99% of cases.</p>
+<p>I don't know if the parser is smart enough to inspect child elements and make the choice not to para-wrap. I could just use a DIV and not cry too much over the semantics being lost.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-44707951" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-44707951" class="timestamp">
+      <time>2014-05-30 22:50:13</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>The link to the HTML spec I've posted is not actually defining whether <code>&lt;ins&gt;</code> is either block-level or text-level element.</p>
+<p>Here is a good article explaining it could be both and when: <a href="http://reference.sitepoint.com/html/ins">http://reference.sitepoint.com/html/ins</a></p>
+<p>In the example given <code>&lt;ins&gt;</code> is a block-level element, because it is not nested under <code>&lt;p&gt;</code> for example.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-44714906" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/brendanfalkowski" class="author">brendanfalkowski</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-44714906" class="timestamp">
+      <time>2014-05-31 01:42:26</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>That Sitepoint article seems incorrect. I'm not aware of any element that changes its display property relative to its parent. That would create all kinds of edge cases.</p>
+<p>If you create a blank HTML document and nest INS directly beneath BODY, it always inherits the browser default of display:inline. Based on this, I think Markdown should treat INS elements as flow content for continuity.</p>
+<p>It's less likely that a developer would intend INS to be block-level and override the inherited default, so a paragraph wrapper would be necessary in most contexts.</p>
+<p>I kind of talked myself out of this one, but unless the parser can read into child elements of INS, then it probably shouldn't treat INS as block-level by leaving it unwrapped.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+</body></html>

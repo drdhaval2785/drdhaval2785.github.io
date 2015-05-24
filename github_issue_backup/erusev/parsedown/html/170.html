@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html class='' lang='en'>
+<head prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#'>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8'>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta http-equiv='Content-Language' content='en'>
+<title>erusev/parsedown/170</title>
+<link href='github-c486157afcc5f58155a921bc675afb08733fbaa8dcf39ac2104d3.css' media='all' rel='stylesheet'>
+<link href='github2-da2e842cc3f0aaf33b727d0ef034243c12ab008fd09b24868b97.css' media='all' rel='stylesheet'>
+<meta http-equiv='x-pjax-version' content='4426702614c8182f33d1780ad1169662'>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shAutoloader.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAppleScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAS3.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushBash.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushColdFusion.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCpp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCSharp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCss.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDelphi.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDiff.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushErlang.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushGroovy.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJava.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJavaFX.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/syntaxhighlighter/scripts/shBrushJScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPerl.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPhp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPlain.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPowerShell.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPython.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushRuby.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSass.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushScala.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSql.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushVb.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushXml.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shLegacy.js'></script>
+	<link type='text/css' rel='stylesheet' href='syntaxhighlighter/styles/shCoreDefault.css'/>
+	<script type='text/javascript'>SyntaxHighlighter.all();</script>
+</head>
+<body class='logged_in  env-production windows vis-public'>
+<h1 align='center'><a href='https://github.com/erusev/parsedown/issues/170' target='_blank'>GFM not enabled by default</h1><hr/><div id="#issue-32818961" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/clphillips" class="author">clphillips</a>
+    </strong>
+    commented on 
+    <a href="#issue-32818961" class="timestamp">
+      <time>2014-05-05 15:33:51</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Apparently, most of the library is <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#lines">GFM</a> compliant, with the exception of line breaks. Why? This library claims to be GFM so it should be, by default, GFM. If someone wants original MD line breaks that should require invoking <em>Parsedown::setBreaksEnabled()</em> (obviously not named the same as that would introduce all kinds of issues for existing users).</p>
+<p>See related #169.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-42202122" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/kminchev" class="author">kminchev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-42202122" class="timestamp">
+      <time>2014-05-05 15:45:19</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><em>Sigh</em>
+It's not an exception. It supports GFM linebreaks, just enable them. That doesn't make it incompliant. This 'library' doesn't claims to be GFM (to my understanding), it claims to support features of GFM.
+If GFM linebreaks are enabled by default, then someone else like you will complain why MD linebreaks aren't enabled by default, since this 'library' is MD parser.
+You can't make everybody happy. That's why there are options to toggle things on and off. It's not like enabling GFM linebreaks requires you to recompile it or something.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-42203187" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/clphillips" class="author">clphillips</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-42203187" class="timestamp">
+      <time>2014-05-05 15:55:03</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>The library <strong>is</strong> a GFM parser. It handles <a href="https://help.github.com/articles/github-flavored-markdown">EVERYTHING</a> just like GFM, not at all like vanilla MD.</p>
+<pre class="brush: php">&lt;?php
+include "Parsedown.php";
+
+$parser = new Parsedown();
+
+$text = "wow_great_stuff";
+var_dump($parser-&gt;text($text));
+
+$text = "~~Mistaken text.~~";
+var_dump($parser-&gt;text($text));
+?&gt;</code></pre>
+<p>Let's not pretend this is a vanilla MD parser with GFM add-ons. It's a GFM parser, so it should act line one out of the box (wrt line breaks, as it does with everything else).</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-42204081" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/kminchev" class="author">kminchev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-42204081" class="timestamp">
+      <time>2014-05-05 16:02:54</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>No, it doesn't support everything of GFM. Example: go make some task lists with it.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-42204971" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/clphillips" class="author">clphillips</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-42204971" class="timestamp">
+      <time>2014-05-05 16:10:58</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/kminchev" target="_blank">@kminchev</a></strong> Now you're just being silly. Show me where task lists are mentioned in the <a href="https://help.github.com/articles/github-flavored-markdown">GFM spec</a>.</p>
+<p>I proved you wrong, just accept it. :)</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-42205140" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/kminchev" class="author">kminchev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-42205140" class="timestamp">
+      <time>2014-05-05 16:12:34</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><a href="https://github.com/blog/1375-task-lists-in-gfm-issues-pulls-comments">https://github.com/blog/1375-task-lists-in-gfm-issues-pulls-comments</a>
+<a href="http://github.github.com/github-flavored-markdown/">http://github.github.com/github-flavored-markdown/</a></p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-42205422" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/scottchiefbaker" class="author">scottchiefbaker</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-42205422" class="timestamp">
+      <time>2014-05-05 16:15:03</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>GFM also supports Emoji which Parsedown doesn't support yet. It may in the future, I know it was mentioned in another bug. </p>
+<p>If emoji is supported it should be disabled by default, and enabled with an option.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-42206031" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/clphillips" class="author">clphillips</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-42206031" class="timestamp">
+      <time>2014-05-05 16:20:20</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/kminchev" target="_blank">@kminchev</a></strong> :) That's github specific functionality. Next you'll be telling me this isn't GFM because it doesn't support linking to github issues:</p>
+<pre class="brush: php">include "Parsedown.php";
+
+$parser = new Parsedown();
+
+$text = "Fixes #170";
+echo $parser-&gt;text($text);</code></pre>
+<p>Let's be realistic.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-42206987" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/kminchev" class="author">kminchev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-42206987" class="timestamp">
+      <time>2014-05-05 16:28:45</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Perhaps you didn't read the first sentence of the blog post I linked. Oh, and just because someone forgot to add task lists, email obfuscation and emoji to 'the GFM spec' doesn't mean it's not there.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-42207278" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/clphillips" class="author">clphillips</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-42207278" class="timestamp">
+      <time>2014-05-05 16:30:52</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/scottchiefbaker" target="_blank">@scottchiefbaker</a></strong> Github also supports <strong><a href="https://github.com/" target="_blank">@</a></strong> linking people, which doesn't make much sense outside the context of github (just like task lists). </p>
+<p>This isn't about what github supports in their parser, this is about GFM with respect to how it differs from vanilla MD. Specifically in regards to line breaks.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-42217360" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-42217360" class="timestamp">
+      <time>2014-05-05 18:00:58</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <blockquote>
+<p>This library claims to be GFM so it should be, by default, GFM.</p>
+</blockquote>
+<p>I consider the document at <a href="https://help.github.com/articles/github-flavored-markdown">https://help.github.com/articles/github-flavored-markdown</a> to be the specification of GFM. It used to mention line breaks. It no longer does. That's the reason it is an option and off by default. </p>
+<p>I hope this makes sense.</p>
+<blockquote>
+<p>obviously not named the same as that would introduce all kinds of issues for existing users</p>
+</blockquote>
+<p>What do you mean?</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-42222519" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/clphillips" class="author">clphillips</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-42222519" class="timestamp">
+      <time>2014-05-05 18:44:29</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <blockquote>
+<p>I consider the document at <a href="https://help.github.com/articles/github-flavored-markdown">https://help.github.com/articles/github-flavored-markdown</a> to be the specification of GFM. It used to mention line breaks. It no longer does. That's the reason it is an option and off by default. </p>
+</blockquote>
+<p>Thanks for the clarification. I think you are 100% correct that line breaks are no longer part of GFM as <a href="https://help.github.com/articles/writing-on-github">per this</a>:</p>
+<blockquote>
+<p>written using GitHub Flavored Markdown <strong>along with some additional features</strong> to make writing content on GitHub easy.</p>
+</blockquote>
+<p>Closing this issue.</p>
+<blockquote>
+<blockquote>
+<p>obviously not named the same as that would introduce all kinds of issues for existing users</p>
+</blockquote>
+<p>What do you mean?</p>
+</blockquote>
+<p>I meant, if github line breaks were to be the default behavior, this would mean that there would need to be an option to enable vanilla MD line breaks. That would probably work something like:</p>
+<pre class="brush: php">$parser = new Parsedown();
+$parser-&gt;setBreaksAfterSpaceEnabled();</code></pre>
+<p>You'd essentially want to rename the method so as not to conflict with setBreaksEnabled() during the deprecated/transition period. But that's a moot point.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+</body></html>

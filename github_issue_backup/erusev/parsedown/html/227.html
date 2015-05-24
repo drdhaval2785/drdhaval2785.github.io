@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html class='' lang='en'>
+<head prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#'>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8'>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta http-equiv='Content-Language' content='en'>
+<title>erusev/parsedown/227</title>
+<link href='github-c486157afcc5f58155a921bc675afb08733fbaa8dcf39ac2104d3.css' media='all' rel='stylesheet'>
+<link href='github2-da2e842cc3f0aaf33b727d0ef034243c12ab008fd09b24868b97.css' media='all' rel='stylesheet'>
+<meta http-equiv='x-pjax-version' content='4426702614c8182f33d1780ad1169662'>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shAutoloader.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAppleScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAS3.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushBash.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushColdFusion.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCpp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCSharp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCss.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDelphi.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDiff.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushErlang.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushGroovy.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJava.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJavaFX.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/syntaxhighlighter/scripts/shBrushJScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPerl.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPhp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPlain.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPowerShell.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPython.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushRuby.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSass.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushScala.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSql.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushVb.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushXml.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shLegacy.js'></script>
+	<link type='text/css' rel='stylesheet' href='syntaxhighlighter/styles/shCoreDefault.css'/>
+	<script type='text/javascript'>SyntaxHighlighter.all();</script>
+</head>
+<body class='logged_in  env-production windows vis-public'>
+<h1 align='center'><a href='https://github.com/erusev/parsedown/issues/227' target='_blank'>Why is Parsedown removing all line breaks?</h1><hr/><div id="#issue-44279701" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/stonetwig" class="author">stonetwig</a>
+    </strong>
+    commented on 
+    <a href="#issue-44279701" class="timestamp">
+      <time>2014-09-29 10:41:41</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <pre><code># trim line breaks
+$markup = trim($markup, "\n");
+return $markup;</code></pre>
+<p>In my code, I need to break up the markup afterwards to do some operations on it and since all line breaks are removed this causes problem for me and I will have to convert the markdown line for line. </p>
+<p>Why is all line breaks removed?</p>
+<p>My guess is that in the future people may have the same issue since this is kind of unexpected behavior, an idea would be functionality to skip that last trim with a parameter or something :)</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-57162600" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-57162600" class="timestamp">
+      <time>2014-09-29 13:46:58</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>This is how Markdown works. If you want the lines to break into multiple lines you could set the <code>$parsedown-&gt;breaksEnabled(true)</code> option. This will tell Parsedown to work similar to how GitHub renders Markdown in the pull request/issue description and comments.</p>
+<p>See the <a href="https://github.com/erusev/parsedown/wiki/Usage">Usage wiki</a> for more.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-57162989" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-57162989" class="timestamp">
+      <time>2014-09-29 13:49:49</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Here is the relevant spec exceprt: <a href="http://daringfireball.net/projects/markdown/syntax#p">http://daringfireball.net/projects/markdown/syntax#p</a></p>
+<blockquote>
+<p>The implication of the “one or more consecutive lines of text” rule is that Markdown supports “hard-wrapped” text paragraphs. This differs significantly from most other text-to-HTML formatters (including Movable Type’s “Convert Line Breaks” option) which translate every line break character in a paragraph into a <code>&lt;br /&gt;</code> tag.</p>
+<p>When you do want to insert a <code>&lt;br /&gt;</code> break tag using Markdown, you end a line with two or more spaces, then type return.</p>
+<p>Yes, this takes a tad more effort to create a <code>&lt;br /&gt;</code>, but a simplistic “every line break is a <code>&lt;br /&gt;</code>” rule wouldn’t work for Markdown. Markdown’s email-style blockquoting and multi-paragraph list items work best — and look better — when you format them with hard breaks.</p>
+</blockquote>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-57163868" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/stonetwig" class="author">stonetwig</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-57163868" class="timestamp">
+      <time>2014-09-29 13:55:54</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Yeah I understand and thanks for the reply. However, I tried to just extend the Markdown class with my own class to just redo that text-method to do my operations before the newlines is removed. But the <code>lines</code>method is private so I had to go with the line-by-line approach anyway. It doesn't matter so much to me, as this will happen fairly rarely but it would be great if it was easier to extend using the <code>protected</code>visibility instead.</p>
+<p>Anyway, thanks again :)</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-57215996" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-57215996" class="timestamp">
+      <time>2014-09-29 19:36:04</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Reading your comments again I don't think I've got what you meant. Why would you need the line breaks surrounding the whole Markdown source?</p>
+<p>And about the <code>private</code> vs. <code>protected</code> thing I'm with you. I think at least the <code>lines()</code> method to be made extensible via the <code>protected</code> access level.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-57236101" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/stonetwig" class="author">stonetwig</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-57236101" class="timestamp">
+      <time>2014-09-29 21:50:24</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Because when the markdown is converted to html, I want to be able to add attributes and classes to the html to be able to style the html that comes out. Since PHP DOMDocument is not very good for this (it adds a lot of extra garbage upon save) and the needs were very specific and small, I used regular expressions instead.</p>
+<p>With regular expressions, I found it much easier to just go through the document line by line and append the attributes I needed. So basically I would send in a bunch of markdown with my extra special arguments like <code>#This is a header {.with-a-class}</code> and get a easier-to-style document out. Maybe this could be used in the ParsedownExtra repo since it's basically an extension of the regular Parsedown, with some refactoring I could open a pull request if this sounds interesting.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-70073210" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-70073210" class="timestamp">
+      <time>2015-01-15 11:31:47</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/stonetwig" target="_blank">@stonetwig</a></strong> </p>
+<p>I'm not sure I understand.</p>
+<blockquote>
+<p>Because when the markdown is converted to html, I want to be able to add attributes and classes to the html to be able to style the html that comes out.</p>
+</blockquote>
+<p>How would keeping the new line characters around the output help you with that?</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+</body></html>

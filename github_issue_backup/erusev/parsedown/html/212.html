@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html class='' lang='en'>
+<head prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#'>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8'>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta http-equiv='Content-Language' content='en'>
+<title>erusev/parsedown/212</title>
+<link href='github-c486157afcc5f58155a921bc675afb08733fbaa8dcf39ac2104d3.css' media='all' rel='stylesheet'>
+<link href='github2-da2e842cc3f0aaf33b727d0ef034243c12ab008fd09b24868b97.css' media='all' rel='stylesheet'>
+<meta http-equiv='x-pjax-version' content='4426702614c8182f33d1780ad1169662'>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shAutoloader.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAppleScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAS3.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushBash.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushColdFusion.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCpp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCSharp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCss.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDelphi.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDiff.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushErlang.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushGroovy.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJava.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJavaFX.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/syntaxhighlighter/scripts/shBrushJScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPerl.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPhp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPlain.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPowerShell.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPython.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushRuby.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSass.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushScala.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSql.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushVb.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushXml.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shLegacy.js'></script>
+	<link type='text/css' rel='stylesheet' href='syntaxhighlighter/styles/shCoreDefault.css'/>
+	<script type='text/javascript'>SyntaxHighlighter.all();</script>
+</head>
+<body class='logged_in  env-production windows vis-public'>
+<h1 align='center'><a href='https://github.com/erusev/parsedown/pull/212' target='_blank'>Automatically encode all email links using as hex HTML entities</h1><hr/><div id="#issue-41684824" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/apfelbox" class="author">apfelbox</a>
+    </strong>
+    commented on 
+    <a href="#issue-41684824" class="timestamp">
+      <time>2014-09-02 08:13:02</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>It currently only encodes the <code>href</code>, not any content of the node.</p>
+<p>So something like</p>
+<pre><code>[mail<strong><a href="https://github.com/example" target="_blank">@example</a></strong>.org](mailto:mail<strong><a href="https://github.com/example" target="_blank">@example</a></strong>.org) will only encode the link.
+The same goes for &lt;mail<strong><a href="https://github.com/example" target="_blank">@example</a></strong>.org&gt;.</code></pre>
+<p>Although in the latter case one could actually argue to also encode the text.
+Thoughts?</p>
+<p>Fixes <a href='193.html' target='_blank'>#193</a> </p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-54607754" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/RexDude" class="author">RexDude</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-54607754" class="timestamp">
+      <time>2014-09-05 10:17:03</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>This should be definitly an optional feature if accepted by <strong><a href="https://github.com/erusev" target="_blank">@erusev</a></strong>. There are people out there that use other methods to obfuscate email addresses or a cms ist handling this automatically.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-54608167" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/cebe" class="author">cebe</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-54608167" class="timestamp">
+      <time>2014-09-05 10:21:38</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>The encoding of emails is part of the markdown description by John Gruber so it should be enabled by default imo.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-54613195" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-54613195" class="timestamp">
+      <time>2014-09-05 11:20:58</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>It is part of markdown, but I don't think it is still relevant. Anti-spam detection have become better and some people do not want obfuscation.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-54613723" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/RexDude" class="author">RexDude</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-54613723" class="timestamp">
+      <time>2014-09-05 11:27:02</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/hkdobrev" target="_blank">@hkdobrev</a></strong> :+1: </p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-54732788" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/apfelbox" class="author">apfelbox</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-54732788" class="timestamp">
+      <time>2014-09-07 00:09:35</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>CommonMark doesn't mention anything about it, too.</p>
+<p>The patch is simple enough - should I submit a PR against <code>parsedown-extra</code>. Maybe you could choose your encoding mechanism, something like <a href="http://www.smarty.net/docs/en/language.function.mailto.tpl">Smarty does (<code>encode</code> parameter)</a>.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+</body></html>

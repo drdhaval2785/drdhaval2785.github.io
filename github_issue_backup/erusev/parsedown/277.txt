@@ -1,0 +1,128 @@
+{
+  "url": "https://api.github.com/repos/erusev/parsedown/issues/277",
+  "labels_url": "https://api.github.com/repos/erusev/parsedown/issues/277/labels{/name}",
+  "comments_url": "https://api.github.com/repos/erusev/parsedown/issues/277/comments",
+  "events_url": "https://api.github.com/repos/erusev/parsedown/issues/277/events",
+  "html_url": "https://github.com/erusev/parsedown/issues/277",
+  "id": 54985671,
+  "number": 277,
+  "title": "Parsedown corrupts HTML",
+  "user": {
+    "login": "jtojnar",
+    "id": 705123,
+    "avatar_url": "https://avatars.githubusercontent.com/u/705123?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jtojnar",
+    "html_url": "https://github.com/jtojnar",
+    "followers_url": "https://api.github.com/users/jtojnar/followers",
+    "following_url": "https://api.github.com/users/jtojnar/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jtojnar/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jtojnar/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jtojnar/subscriptions",
+    "organizations_url": "https://api.github.com/users/jtojnar/orgs",
+    "repos_url": "https://api.github.com/users/jtojnar/repos",
+    "events_url": "https://api.github.com/users/jtojnar/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jtojnar/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "url": "https://api.github.com/repos/erusev/parsedown/labels/issue",
+      "name": "issue",
+      "color": "f7c6c7"
+    },
+    {
+      "url": "https://api.github.com/repos/erusev/parsedown/labels/priority",
+      "name": "priority",
+      "color": "fef2c0"
+    }
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 2,
+  "created_at": "2015-01-21T07:14:54Z",
+  "updated_at": "2015-01-24T12:22:17Z",
+  "closed_at": "2015-01-24T12:22:17Z",
+  "body": "Simple input which should be left alone:\r\n\r\n```html\r\n<div class=\"row\">\r\n<div class=\"col-sm-6 col-md-4\"><a href=\"https://google.com\" class=\"thumbnail\"><img src=\"https://www.google.cz/images/srpr/logo11w.png\" alt=\"Google\"></a></div>\r\n</div>\r\n```\r\n\r\nis translated into this pile of nonsense\r\n\r\n```html\r\n<div class=\"row\"><div class=\"col-sm-6 col-md-4\"><a href=\"https://google.com\" class=\"thumbnail\"><img src=\"https://www.google.cz/images/srpr/logo11w.png\" alt=\"Google\"></a>\r\n<div class=\"col-sm-6 col-md-4\"><a href=\"https://google.com\" class=\"thumbnail\"><img src=\"https://www.google.cz/images/srpr/logo11w.png\" alt=\"Google\"></a></div>\r\n</div>\r\n```\r\n\r\nTry it yourself at http://parsedown.org/demo",
+  "closed_by": {
+    "login": "erusev",
+    "id": 184170,
+    "avatar_url": "https://avatars.githubusercontent.com/u/184170?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/erusev",
+    "html_url": "https://github.com/erusev",
+    "followers_url": "https://api.github.com/users/erusev/followers",
+    "following_url": "https://api.github.com/users/erusev/following{/other_user}",
+    "gists_url": "https://api.github.com/users/erusev/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/erusev/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/erusev/subscriptions",
+    "organizations_url": "https://api.github.com/users/erusev/orgs",
+    "repos_url": "https://api.github.com/users/erusev/repos",
+    "events_url": "https://api.github.com/users/erusev/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/erusev/received_events",
+    "type": "User",
+    "site_admin": false
+  }
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/erusev/parsedown/issues/comments/70797090",
+    "html_url": "https://github.com/erusev/parsedown/issues/277#issuecomment-70797090",
+    "issue_url": "https://api.github.com/repos/erusev/parsedown/issues/277",
+    "id": 70797090,
+    "user": {
+      "login": "erusev",
+      "id": 184170,
+      "avatar_url": "https://avatars.githubusercontent.com/u/184170?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/erusev",
+      "html_url": "https://github.com/erusev",
+      "followers_url": "https://api.github.com/users/erusev/followers",
+      "following_url": "https://api.github.com/users/erusev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/erusev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/erusev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/erusev/subscriptions",
+      "organizations_url": "https://api.github.com/users/erusev/orgs",
+      "repos_url": "https://api.github.com/users/erusev/repos",
+      "events_url": "https://api.github.com/users/erusev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/erusev/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2015-01-21T07:46:32Z",
+    "updated_at": "2015-01-21T07:46:32Z",
+    "body": "Thanks. I'll fix this over the weekend."
+  },
+  {
+    "url": "https://api.github.com/repos/erusev/parsedown/issues/comments/70899145",
+    "html_url": "https://github.com/erusev/parsedown/issues/277#issuecomment-70899145",
+    "issue_url": "https://api.github.com/repos/erusev/parsedown/issues/277",
+    "id": 70899145,
+    "user": {
+      "login": "rhukster",
+      "id": 1084697,
+      "avatar_url": "https://avatars.githubusercontent.com/u/1084697?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rhukster",
+      "html_url": "https://github.com/rhukster",
+      "followers_url": "https://api.github.com/users/rhukster/followers",
+      "following_url": "https://api.github.com/users/rhukster/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rhukster/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rhukster/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rhukster/subscriptions",
+      "organizations_url": "https://api.github.com/users/rhukster/orgs",
+      "repos_url": "https://api.github.com/users/rhukster/repos",
+      "events_url": "https://api.github.com/users/rhukster/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rhukster/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2015-01-21T19:00:50Z",
+    "updated_at": "2015-01-21T19:00:50Z",
+    "body": "I noticed this also, it's specifically related to the line breaks and the 'interrupted' blocks:\r\n\r\n``` .html\r\n<div class=\"row\"><div class=\"col-sm-6 col-md-4\"><a href=\"https://google.com\" class=\"thumbnail\"><img src=\"https://www.google.cz/images/srpr/logo11w.png\" alt=\"Google\"></a></div>\r\n</div>\r\n```\r\n\r\nresults in:\r\n\r\n``` .html\r\n<div class=\"row\"><div class=\"col-sm-6 col-md-4\"><a href=\"https://google.com\" class=\"thumbnail\"><img src=\"https://www.google.cz/images/srpr/logo11w.png\" alt=\"Google\"></a></div>\r\n<p></div></p>\r\n```\r\n\r\nAnd all on one line:\r\n\r\n``` .html\r\n<div class=\"row\"><div class=\"col-sm-6 col-md-4\"><a href=\"https://google.com\" class=\"thumbnail\"><img src=\"https://www.google.cz/images/srpr/logo11w.png\" alt=\"Google\"></a></div></div>\r\n```\r\n\r\nWorks fine.\r\n\r\nSo the logic in `lines()` function is not keeping track of the interrupted blocks properly. "
+  }
+]

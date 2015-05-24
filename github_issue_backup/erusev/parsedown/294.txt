@@ -1,0 +1,73 @@
+{
+  "url": "https://api.github.com/repos/erusev/parsedown/issues/294",
+  "labels_url": "https://api.github.com/repos/erusev/parsedown/issues/294/labels{/name}",
+  "comments_url": "https://api.github.com/repos/erusev/parsedown/issues/294/comments",
+  "events_url": "https://api.github.com/repos/erusev/parsedown/issues/294/events",
+  "html_url": "https://github.com/erusev/parsedown/issues/294",
+  "id": 60258550,
+  "number": 294,
+  "title": "Release a new version compatible with PHP7",
+  "user": {
+    "login": "fonsecas72",
+    "id": 1098293,
+    "avatar_url": "https://avatars.githubusercontent.com/u/1098293?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/fonsecas72",
+    "html_url": "https://github.com/fonsecas72",
+    "followers_url": "https://api.github.com/users/fonsecas72/followers",
+    "following_url": "https://api.github.com/users/fonsecas72/following{/other_user}",
+    "gists_url": "https://api.github.com/users/fonsecas72/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/fonsecas72/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/fonsecas72/subscriptions",
+    "organizations_url": "https://api.github.com/users/fonsecas72/orgs",
+    "repos_url": "https://api.github.com/users/fonsecas72/repos",
+    "events_url": "https://api.github.com/users/fonsecas72/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/fonsecas72/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2015-03-08T14:22:41Z",
+  "updated_at": "2015-03-08T14:27:48Z",
+  "closed_at": null,
+  "body": "Hi, it seems to me that current version of parsedown is not compatible with PHP7 yet.\r\nCan you please tag one more version? I think It's worth the effort. :)",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/erusev/parsedown/issues/comments/77751736",
+    "html_url": "https://github.com/erusev/parsedown/issues/294#issuecomment-77751736",
+    "issue_url": "https://api.github.com/repos/erusev/parsedown/issues/294",
+    "id": 77751736,
+    "user": {
+      "login": "erusev",
+      "id": 184170,
+      "avatar_url": "https://avatars.githubusercontent.com/u/184170?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/erusev",
+      "html_url": "https://github.com/erusev",
+      "followers_url": "https://api.github.com/users/erusev/followers",
+      "following_url": "https://api.github.com/users/erusev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/erusev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/erusev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/erusev/subscriptions",
+      "organizations_url": "https://api.github.com/users/erusev/orgs",
+      "repos_url": "https://api.github.com/users/erusev/repos",
+      "events_url": "https://api.github.com/users/erusev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/erusev/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2015-03-08T14:27:30Z",
+    "updated_at": "2015-03-08T14:27:48Z",
+    "body": "Sure,\r\n\r\n@hkdobrev \r\n\r\nSince u did that for [Base](https://github.com/erusev/base), do u think u could do it for this project as well?"
+  }
+]

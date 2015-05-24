@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html class='' lang='en'>
+<head prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#'>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8'>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta http-equiv='Content-Language' content='en'>
+<title>erusev/parsedown/229</title>
+<link href='github-c486157afcc5f58155a921bc675afb08733fbaa8dcf39ac2104d3.css' media='all' rel='stylesheet'>
+<link href='github2-da2e842cc3f0aaf33b727d0ef034243c12ab008fd09b24868b97.css' media='all' rel='stylesheet'>
+<meta http-equiv='x-pjax-version' content='4426702614c8182f33d1780ad1169662'>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shAutoloader.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAppleScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAS3.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushBash.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushColdFusion.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCpp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCSharp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCss.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDelphi.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDiff.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushErlang.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushGroovy.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJava.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJavaFX.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/syntaxhighlighter/scripts/shBrushJScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPerl.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPhp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPlain.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPowerShell.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPython.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushRuby.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSass.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushScala.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSql.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushVb.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushXml.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shLegacy.js'></script>
+	<link type='text/css' rel='stylesheet' href='syntaxhighlighter/styles/shCoreDefault.css'/>
+	<script type='text/javascript'>SyntaxHighlighter.all();</script>
+</head>
+<body class='logged_in  env-production windows vis-public'>
+<h1 align='center'><a href='https://github.com/erusev/parsedown/issues/229' target='_blank'>Disable parsing of specific elements</h1><hr/><div id="#issue-44673471" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/IlanF" class="author">IlanF</a>
+    </strong>
+    commented on 
+    <a href="#issue-44673471" class="timestamp">
+      <time>2014-10-02 11:05:32</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I'm working on a comment section for my website and I parse it with Parsedown.
+But the thing is that I want to disallow posting of some elements, specifically images, headers and tables.
+Anyway I can do this with Parsedown?</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-57615901" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-57615901" class="timestamp">
+      <time>2014-10-02 11:41:56</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>You could create an extension of Parsedown (just another class extending Parsedown) and you could override the protected methods like <code>identifyTable</code> to return <code>NULL</code>.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-57616834" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/IlanF" class="author">IlanF</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-57616834" class="timestamp">
+      <time>2014-10-02 11:53:20</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Thanks I will do that.
+As for the images I found an elegant solution, I do a simple preg_replace and change images to links before saving the comment to the database. Needs some testing to make sure that the regex works properly, but it is better than ignoring it</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-70033239" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-70033239" class="timestamp">
+      <time>2015-01-15 03:03:23</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I'm closing this.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-75805546" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/moldcraft" class="author">moldcraft</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-75805546" class="timestamp">
+      <time>2015-02-24 17:41:31</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>May be useful for somebody: I also use Parsedown for user comments and I wanted to replace all <code>h1</code>, <code>h2</code>, <code>h3</code> with <code>h4</code> to prevent SEO warnings (for e.g. only one <code>h1</code> must be on the page), here is my Symfony2 service</p>
+<pre class="brush: php">&lt;?php
+
+namespace App\MainBundle\Service;
+
+use Parsedown;
+use HTMLPurifier;
+use Emojione\Emojione;
+use Symfony\Component\DependencyInjection\ContainerInterface;
+
+class Markdown extends Parsedown
+{
+    /**
+     * <strong><a href="https://github.com/var" target="_blank">@var</a></strong> HTMLPurifier
+     */
+    private $purifier;
+
+    public function __construct(ContainerInterface $container)
+    {
+        $this-&gt;setMarkupEscaped(true);
+
+        {
+            $purifierConfig = array(
+                'HTML.ForbiddenElements' =&gt; array('h1', 'h2', 'h3'),
+                'HTML.ForbiddenAttributes' =&gt; array('style', 'onclick',),
+                'HTML.TargetBlank' =&gt; true,
+            );
+
+            $this-&gt;purifier = new HTMLPurifier($purifierConfig);
+        }
+
+        {
+            Emojione::$imageType = 'svg';
+            Emojione::$sprites = true;
+            Emojione::$imagePathSVGSprites = $container-&gt;get('templating.helper.assets')-&gt;getUrl(
+                'bundles/appmain/emojione/sprites/emojione.sprites.svg'
+            );
+            Emojione::$ascii = true;
+        }
+    }
+
+    function text($raw)
+    {
+        return Emojione::shortnameToImage(
+            $this-&gt;purifier-&gt;purify(
+                parent::text($raw)
+            )
+        );
+    }
+
+    private function safeHeader($Block)
+    {
+        if ($Block &amp;&amp; isset($Block['element'])) {
+            /**
+             * Change h1, h2, h3 to h4
+             */
+            if (in_array($Block['element']['name'], array('h1', 'h2', 'h3'))) {
+                $Block['element']['name'] = 'h4';
+            }
+        }
+
+        return $Block;
+    }
+
+    protected function blockHeader($Line)
+    {
+        return $this-&gt;safeHeader(
+            parent::blockHeader($Line)
+        );
+    }
+
+    protected function blockSetextHeader($Line, array $Block = null)
+    {
+        return $this-&gt;safeHeader(
+            parent::blockSetextHeader($Line, $Block)
+        );
+    }
+}</code></pre>
+  </div>
+  </div>
+  </div>
+  <br/>
+</body></html>

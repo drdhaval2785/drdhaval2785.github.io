@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html class='' lang='en'>
+<head prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#'>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8'>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta http-equiv='Content-Language' content='en'>
+<title>erusev/parsedown/52</title>
+<link href='github-c486157afcc5f58155a921bc675afb08733fbaa8dcf39ac2104d3.css' media='all' rel='stylesheet'>
+<link href='github2-da2e842cc3f0aaf33b727d0ef034243c12ab008fd09b24868b97.css' media='all' rel='stylesheet'>
+<meta http-equiv='x-pjax-version' content='4426702614c8182f33d1780ad1169662'>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shAutoloader.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAppleScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAS3.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushBash.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushColdFusion.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCpp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCSharp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCss.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDelphi.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDiff.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushErlang.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushGroovy.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJava.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJavaFX.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/syntaxhighlighter/scripts/shBrushJScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPerl.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPhp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPlain.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPowerShell.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPython.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushRuby.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSass.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushScala.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSql.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushVb.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushXml.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shLegacy.js'></script>
+	<link type='text/css' rel='stylesheet' href='syntaxhighlighter/styles/shCoreDefault.css'/>
+	<script type='text/javascript'>SyntaxHighlighter.all();</script>
+</head>
+<body class='logged_in  env-production windows vis-public'>
+<h1 align='center'><a href='https://github.com/erusev/parsedown/issues/52' target='_blank'>Security ?</h1><hr/><div id="#issue-24710049" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/PunKeel" class="author">PunKeel</a>
+    </strong>
+    commented on 
+    <a href="#issue-24710049" class="timestamp">
+      <time>2013-12-23 15:17:54</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Hi,
+On Github, tags like <code>script</code> are escaped. I think it could be a good option to have, maybe is it as simple as <code>$text = htmlentities($text);</code>, but it would require an options array, and may lead to some additions ...</p>
+<p>Thanks in advance</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-31126818" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-31126818" class="timestamp">
+      <time>2013-12-23 16:04:17</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/PunKeel" target="_blank">@PunKeel</a></strong> Markdown parsers convert Markdown texts to HTML. Usually, they are not responsible for sanitization. There are other libraries, such as <a href="http://htmlpurifier.org/">HTML Purifier</a>, that sanitize HTML. You could such library when sanitization is necessary.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-31127136" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/PunKeel" class="author">PunKeel</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-31127136" class="timestamp">
+      <time>2013-12-23 16:09:17</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>You're right, and I &quot;already&quot; use a class for this job, but I feel like it could be Markdown's job to do it ...</p>
+<p>For example, <code>[Naughty link](javascript: alert(0\))</code> (-&gt; [Naughty link](javascript: alert(0))) is rendered as it should by Github (at least, I assume); but as it's in a <code>code</code> tag, HTML purifier ignores it ...</p>
+<p>On the other side, security and purification depends on context, and should be treated by everyone ... You're right, and I think this issue should be closed before becoming a debate. I'll stick with home-made configs, the best to do I think :)</p>
+<p>EDIT: looks like Github strips my naughty link. Well.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-31144758" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-31144758" class="timestamp">
+      <time>2013-12-23 21:26:01</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/PunKeel" target="_blank">@PunKeel</a></strong> Imagine you don't have Markdown inputs and Markdown parsing. Imagine you just have HTML inputs. You still need to prevent XSS attacks. In your case though the HTML is not coming directly from user input, but instead it comes out of the parser.</p>
+<p>What GitHub most probably does is to clean up the HTML before outputting it.</p>
+<p>If a Markdown parser strips out <code>&lt;script&gt;</code> tags, it would not be according to the spec. Also you would not be able to generate a full HTML page with scripts and all using Markdown as a source.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-31148597" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-31148597" class="timestamp">
+      <time>2013-12-23 22:48:21</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/hkdobrev" target="_blank">@hkdobrev</a></strong> That's right. Still, one could make a case that, since the parser already knows a lot about the input, it would be more efficient for it to do the sanitization when necessary. That should of course not be the default behavior since as you say it is not compatible with the spec.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+</body></html>

@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html class='' lang='en'>
+<head prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#'>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8'>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta http-equiv='Content-Language' content='en'>
+<title>erusev/parsedown/43</title>
+<link href='github-c486157afcc5f58155a921bc675afb08733fbaa8dcf39ac2104d3.css' media='all' rel='stylesheet'>
+<link href='github2-da2e842cc3f0aaf33b727d0ef034243c12ab008fd09b24868b97.css' media='all' rel='stylesheet'>
+<meta http-equiv='x-pjax-version' content='4426702614c8182f33d1780ad1169662'>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shAutoloader.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAppleScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAS3.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushBash.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushColdFusion.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCpp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCSharp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCss.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDelphi.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDiff.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushErlang.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushGroovy.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJava.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJavaFX.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/syntaxhighlighter/scripts/shBrushJScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPerl.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPhp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPlain.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPowerShell.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPython.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushRuby.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSass.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushScala.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSql.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushVb.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushXml.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shLegacy.js'></script>
+	<link type='text/css' rel='stylesheet' href='syntaxhighlighter/styles/shCoreDefault.css'/>
+	<script type='text/javascript'>SyntaxHighlighter.all();</script>
+</head>
+<body class='logged_in  env-production windows vis-public'>
+<h1 align='center'><a href='https://github.com/erusev/parsedown/issues/43' target='_blank'>Allow to remove the englobing paragraph</h1><hr/><div id="#issue-23754897" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/Hypoaristerolactotherapist" class="author">Hypoaristerolactotherapist</a>
+    </strong>
+    commented on 
+    <a href="#issue-23754897" class="timestamp">
+      <time>2013-12-04 23:25:05</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I would like to remove the <code>&lt;p&gt;&lt;/p&gt;</code> englobing the html output as it has not specifically been asked.</p>
+<p>Just make an optional parameter to remove it in parse</p>
+<pre class="brush: php">$parser = new Parsedown();
+$output = $parser-&gt;parse($input,false);//Without &lt;p&gt;&lt;/p&gt;
+$output = $parser-&gt;parse($input,true);//With &lt;p&gt;&lt;/p&gt;
+$output = $parser-&gt;parse($input);//With &lt;p&gt;&lt;/p&gt;</code></pre>
+<p>Thanks</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-31064026" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-31064026" class="timestamp">
+      <time>2013-12-21 14:18:17</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Why?</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-31067803" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/Hypoaristerolactotherapist" class="author">Hypoaristerolactotherapist</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-31067803" class="timestamp">
+      <time>2013-12-21 17:32:02</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Because, this is unsolicited and in some occasions it is causing trouble by breaking some templates by adding an additional layer in the HTML of the web page that cannot be controlled.</p>
+<p>For instance, I don't want it in the articles title nor the articles themselves as the template the business has bought may not require it.</p>
+<p>For now I am stripping it by hand when a <code>&lt;p&gt;&lt;/p&gt;</code> and keeping it otherwise (like <code>&lt;ul&gt;&lt;/ul&gt;</code>) but I would like to avoid this process of undoing part of what parsedown is doing.</p>
+<p>What I am asking is a &quot;bare&quot; parameter. Do you add an optional englobing tag like <code>&lt;p&gt;</code> not like <code>&lt;ul&gt;</code> when the content can live without ? <code>true</code> or <code>false</code>.</p>
+<p>Tell me if you need more clarification.</p>
+<p>Thank you</p>
+<p>Adrien</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-31068349" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/scottchiefbaker" class="author">scottchiefbaker</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-31068349" class="timestamp">
+      <time>2013-12-21 17:57:28</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>If we were to implement this, it would make more sense to make the second option to parse() be <code>$opt</code> which is a hash of potential options, instead of a single option. Even if all we initially support is removing the P tags.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-31069868" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-31069868" class="timestamp">
+      <time>2013-12-21 19:12:37</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>With paragraphs set to <code>false</code> what output would the following text produce:</p>
+<pre><code>paragraph 1
+
+paragraph 2</code></pre>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-31075177" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/Hypoaristerolactotherapist" class="author">Hypoaristerolactotherapist</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-31075177" class="timestamp">
+      <time>2013-12-21 23:44:55</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/scottchiefbaker" target="_blank">@scottchiefbaker</a></strong>  : You are absolutely right, true/false is shortsighted
+<strong><a href="https://github.com/erusev" target="_blank">@erusev</a></strong> : Although I admit this is a tricky concept, here is how I can imagine things going for your example</p>
+<pre class="brush: html">&lt;p&gt;paragraph1&lt;/p&gt;
+&lt;p&gt;paragraph2&lt;/p&gt;</code></pre>
+<p>But my point is more why</p>
+<pre><code>paragraph alone</code></pre>
+<p>should be</p>
+<pre class="brush: html">paragraph alone</code></pre>
+<p>and not</p>
+<pre class="brush: html">&lt;p&gt;paragraph alone&lt;/p&gt;</code></pre>
+<p>which in my sense does not make a whole lot of sense. From your example and refining my understanding it seems more the way the parser works than an option for removing tags so I guess you will far more reluctant than adding an option, but as I said, for titles, I need to parse again the output of the parser and determine how many paragraph there are and decide accordingly to what to do, when you got the information while parsing in the first place.</p>
+<p>What do you think?</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-31075223" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-31075223" class="timestamp">
+      <time>2013-12-21 23:47:51</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I'm not sure I understand. Maybe what you are looking for is a way to parse just inline / span elements.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-31076540" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/scottchiefbaker" class="author">scottchiefbaker</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-31076540" class="timestamp">
+      <time>2013-12-22 01:20:02</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/Arculeo" target="_blank">@Arculeo</a></strong> are you suggesting that we just allow an option to strip off any OUTSIDE tag? That seems feasible.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-31083113" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/Hypoaristerolactotherapist" class="author">Hypoaristerolactotherapist</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-31083113" class="timestamp">
+      <time>2013-12-22 11:11:48</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/erusev" target="_blank">@erusev</a></strong> : &quot;Inline&quot; element is another way a saying the same as <strong><a href="https://github.com/scottchiefbaker" target="_blank">@scottchiefbaker</a></strong> I believe.
+<strong><a href="https://github.com/scottchiefbaker" target="_blank">@scottchiefbaker</a></strong> : That is my point, yes, strip down outside tag.</p>
+<p>You got my point, thank you for trying so hard as it seems from the length of the discussion that being clear in English is not my best point.</p>
+<p>A bit of context : we use parsedown to convert the content written by business people to be on the web page of our web site. (Typical CMS style) This means that the title of a piece of content is an inline element, you are right <strong><a href="https://github.com/erusev" target="_blank">@erusev</a></strong>, so I need to avoid any tags around it so I need to strip any <code>&lt;p&gt;</code></p>
+<p>The body has to fit inside a template and sometimes adding a <code>&lt;p&gt;</code> and sometimes not may break the CSS so I thought of removing it all also. But removing a <code>&lt;ul&gt;</code> breaks more styling.</p>
+<p>That is why I asked you guys of making it in a more clever way that <code>strip_down_the_parsedown</code> function.</p>
+<ol>
+<li>detect what kind of outside tag is there<br />
+2.1. if it is a <code>&lt;p&gt;</code> they count them<br />
+2.2. if the count == 1 strip it   </li>
+</ol>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-31274086" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/scottchiefbaker" class="author">scottchiefbaker</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-31274086" class="timestamp">
+      <time>2013-12-27 18:29:00</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I ran in to an issue today where I wanted Parsedown to <strong>not</strong> convert tabs to spaces. This seems like another use case for an <code>$opt</code> variable that allows us to tweak how Parsedown renders code at runtime.</p>
+<p>Would you be will to take a pull request of that type of feature?</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-31285238" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/scottchiefbaker" class="author">scottchiefbaker</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-31285238" class="timestamp">
+      <time>2013-12-27 23:38:43</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I actually kind of like this in concept the more I think about it. I'm not sure what the feature should be called, but I'm leaning towards <strong>simple</strong> or <strong>one_line</strong>. If you set that in the <code>parse()</code> options it does <strong>not</strong> include the outer &lt;p&gt; if there is one.</p>
+<p>What about something like:</p>
+<pre><code>$opts = array(
+    'one_line' =&gt; true,
+);
+
+$text = "This is a **a** test";
+print $pd-&gt;parse($text,$opts);</code></pre>
+<p>Would print <code>This is a &lt;strong&gt;a&lt;/strong&gt; test</code> without the outer &lt;p&gt; tags. I've got a mock up of the code 90% done if we can agree on:</p>
+<p>a) It's a feature we want to include
+b) What the option should be called so we can catch it</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-31287539" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-31287539" class="timestamp">
+      <time>2013-12-28 01:29:14</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>What I might do is make the <code>parse_span_elements</code> method public. This would probably address the issue.</p>
+<p><strong><a href="https://github.com/scottchiefbaker" target="_blank">@scottchiefbaker</a></strong> Could you elaborate on why you consider tabs » spaces conversion an issue?</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-31287604" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/scottchiefbaker" class="author">scottchiefbaker</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-31287604" class="timestamp">
+      <time>2013-12-28 01:33:18</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/erusev" target="_blank">@erusev</a></strong> I commented about that on the pull request #53. </p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-33586666" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/cebe" class="author">cebe</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-33586666" class="timestamp">
+      <time>2014-01-29 14:05:57</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>what about adding a <code>parseLine()</code> method that does only markdown parsing for non block elements?
+I needed this feature when developing APIdocs generator based on markdown and filling a table with short descriptions which are only one liners per definition but may contain markdown such as inline code and bold/italic. See <a href="http://stuff.cebe.cc/yii2docs/index.html">http://stuff.cebe.cc/yii2docs/index.html</a> for an example.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-38804951" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/lukasbestle" class="author">lukasbestle</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-38804951" class="timestamp">
+      <time>2014-03-27 13:56:09</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Sorry for the duplicate, I didn't find this.</p>
+<p>OK, so how's the state? Is there any reason why this feature shouldn't exist?
+In my opinion, the argument <strong><a href="https://github.com/erusev" target="_blank">@erusev</a></strong> stated is totally legit, but it's the responsibility of the user to use it only when appropriate.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-38851522" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-38851522" class="timestamp">
+      <time>2014-03-27 19:45:14</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/vis7mac" target="_blank">@vis7mac</a></strong> Parsedown already has a separate method that handles inline markup. The next version would make this method public. This should resolve your issue.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-38852315" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/lukasbestle" class="author">lukasbestle</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-38852315" class="timestamp">
+      <time>2014-03-27 19:52:05</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Exactly. As I already wrote, there is the <code>parseLine()</code> method doing exactly that.<br />
+Making it public would solve the issue.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-40750787" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-40750787" class="timestamp">
+      <time>2014-04-17 19:06:48</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>This should be possible now with the public function <code>line()</code>.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-40751726" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/kminchev" class="author">kminchev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-40751726" class="timestamp">
+      <time>2014-04-17 19:15:43</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/hkdobrev" target="_blank">@hkdobrev</a></strong>, can you give an example?</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-40753665" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-40753665" class="timestamp">
+      <time>2014-04-17 19:35:39</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/kminchev" target="_blank">@kminchev</a></strong></p>
+<p><strong>testParsedownLine.php</strong>:</p>
+<pre class="brush: php">&lt;?php
+
+require 'Parsedown.php';
+
+$p = new Parsedown;
+
+echo $p-&gt;text("some **text**");
+
+echo "\n\n";
+
+echo $p-&gt;line("some **text**");
+
+echo "\n";</code></pre>
+<p><strong>Output</strong>:</p>
+<pre class="brush: shell">$ php testParsedownLine.php </code></pre>
+<pre class="brush: html">&lt;p&gt;some &lt;strong&gt;text&lt;/strong&gt;&lt;/p&gt;
+
+some &lt;strong&gt;text&lt;/strong&gt;</code></pre>
+<p><strong><a href="https://github.com/Hypoaristerolactotherapist" target="_blank">@Hypoaristerolactotherapist</a></strong> This is your desired behavior, right?</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-40753734" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-40753734" class="timestamp">
+      <time>2014-04-17 19:36:29</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/hkdobrev" target="_blank">@hkdobrev</a></strong> </p>
+<blockquote>
+<p>This should be possible now with the public function line().</p>
+</blockquote>
+<p>Yes.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-40754248" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-40754248" class="timestamp">
+      <time>2014-04-17 19:41:31</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/hkdobrev" target="_blank">@hkdobrev</a></strong> </p>
+<p>Note that <em>parse</em> is now deprecated in favour of <em>text</em>.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-40754358" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-40754358" class="timestamp">
+      <time>2014-04-17 19:42:25</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <blockquote>
+<p>Note that parse is now deprecated in favour of text.</p>
+</blockquote>
+<p><strong><a href="https://github.com/erusev" target="_blank">@erusev</a></strong> Thanks! Updated example for future visitors.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-40824251" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/kminchev" class="author">kminchev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-40824251" class="timestamp">
+      <time>2014-04-18 16:55:38</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I think you can close this.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-40930713" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/kminchev" class="author">kminchev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-40930713" class="timestamp">
+      <time>2014-04-21 11:45:16</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/erusev" target="_blank">@erusev</a></strong>, I think you should add an example usage of <code>line</code> function in the README.md file.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-40975055" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-40975055" class="timestamp">
+      <time>2014-04-21 20:44:45</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/kminchev" target="_blank">@kminchev</a></strong> I should indeed.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+</body></html>

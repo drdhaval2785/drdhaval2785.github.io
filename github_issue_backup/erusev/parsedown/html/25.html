@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html class='' lang='en'>
+<head prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#'>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8'>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta http-equiv='Content-Language' content='en'>
+<title>erusev/parsedown/25</title>
+<link href='github-c486157afcc5f58155a921bc675afb08733fbaa8dcf39ac2104d3.css' media='all' rel='stylesheet'>
+<link href='github2-da2e842cc3f0aaf33b727d0ef034243c12ab008fd09b24868b97.css' media='all' rel='stylesheet'>
+<meta http-equiv='x-pjax-version' content='4426702614c8182f33d1780ad1169662'>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shAutoloader.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAppleScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAS3.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushBash.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushColdFusion.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCpp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCSharp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCss.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDelphi.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDiff.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushErlang.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushGroovy.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJava.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJavaFX.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/syntaxhighlighter/scripts/shBrushJScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPerl.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPhp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPlain.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPowerShell.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPython.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushRuby.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSass.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushScala.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSql.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushVb.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushXml.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shLegacy.js'></script>
+	<link type='text/css' rel='stylesheet' href='syntaxhighlighter/styles/shCoreDefault.css'/>
+	<script type='text/javascript'>SyntaxHighlighter.all();</script>
+</head>
+<body class='logged_in  env-production windows vis-public'>
+<h1 align='center'><a href='https://github.com/erusev/parsedown/pull/25' target='_blank'>Rewrite parse_block_elements() to remove goto</h1><hr/><div id="#issue-22396862" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/mitio" class="author">mitio</a>
+    </strong>
+    commented on 
+    <a href="#issue-22396862" class="timestamp">
+      <time>2013-11-10 00:36:35</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>The <code>goto</code> clause is the only thing which prevents this class to work on PHP 5.2.</p>
+<p>Also, using goto is not considered a good coding practice and should be avoided since there are other control flow constructs which can replace the need for <code>goto</code>.</p>
+<p>In the case of the <code>Paragraph</code> class, I just put the code which the <code>goto</code> skipped before in an <code>if</code> and inverted the condition.</p>
+<p>All tests are passing.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-28149560" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-28149560" class="timestamp">
+      <time>2013-11-10 12:35:50</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>IMHO PHP 5.2 compatibility is the only strong argument for removing <code>goto</code>.</p>
+<p><a href="http://adamjonrichardson.com/2012/02/06/long-live-the-goto-statement/"><code>goto</code> is not evil</a>. It is a common technique for algorithm implementations striving for performance. It is NOT a good practice to use it proactively in a maintainable application codebase.</p>
+<p>I think <strong><a href="https://github.com/erusev" target="_blank">@erusev</a></strong> would have much more arguments for the <code>goto</code> statement.</p>
+<p>I think the Travis CI build should be configured to run the tests on PHP 5.2 as well. Composer requires PHP 5.3.2+ so Travis CI could use Git to download Parsedown on 5.2.x environment.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-28149659" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-28149659" class="timestamp">
+      <time>2013-11-10 12:40:35</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <blockquote>
+<p>I think the Travis CI build should be configured to run the tests on PHP 5.2 as well.</p>
+</blockquote>
+<p><a href="https://github.com/erusev/parsedown/commit/df3db716981e632305b46e47510d81b5428b1068">https://github.com/erusev/parsedown/commit/df3db716981e632305b46e47510d81b5428b1068</a> already done that.</p>
+<p>However builds fail at the composer stage <a href="https://travis-ci.org/erusev/parsedown/jobs/13758053">https://travis-ci.org/erusev/parsedown/jobs/13758053</a>.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-28246022" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-28246022" class="timestamp">
+      <time>2013-11-11 22:26:22</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/mitio" target="_blank">@mitio</a></strong> I appreciate your interest. 5.2 support is welcome as long as it doesn't hurt more recent versions. The role of the <code>goto</code> in question is not essential. I'd rather remove it than introduce another level of nesting. I'm not sure if it would be worth it, though, as that would make the parser a bit slower.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-28276769" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/mitio" class="author">mitio</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-28276769" class="timestamp">
+      <time>2013-11-12 08:44:02</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>If I understand it correctly, your premise is that replacing <code>goto</code> with an <code>if</code> will make the code slower. Do you have any benchmarks to verify this premise? To be honest, I'd be surprised to see any difference between the two, which is significant enough to be treated as an argument when choosing between <code>goto</code> and <code>if</code>. But anyway, only benchmarks on real data would tell the truth, anything else should be considered speculation.</p>
+<p>Parsedown is a great library. I like it because it's simple, fast and has no external dependencies. It's quickly becoming popular. And with this popularity comes a certain form of responsibility to the community, so to speak :-) Sure, PHP 5.2.x is ancient, but it's still used on a decent amount of shared hostings out there. I'm using this library on such a host, for example, and it works great. And yes, the final decision which versions of PHP you want to support is yours. I'm just saying that it's not particularly hard (currenlty) to support 5.2 as well, because the code is simple and that would expand the potential userbase of the lib even more. I guess that if you don't want to burden the master branch with 5.2 compatibility, you can keep a separate, 5.2-compatible branch and just mention that in the readme, so people could use that in legacy software.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-28279439" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-28279439" class="timestamp">
+      <time>2013-11-12 09:33:36</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <blockquote>
+<p>I guess that if you don't want to burden the master branch with 5.2 compatibility, you can keep a separate, 5.2-compatible branch and just mention that in the readme, so people could use that in legacy software.</p>
+</blockquote>
+<p><strong><a href="https://github.com/mitio" target="_blank">@mitio</a></strong> +1</p>
+<p>I would recommend a tag though unless it would be maintained with future updates. Composer/Packagist would show the tag as a stable version, while the branch would be a <code>dev-</code> one.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-28279908" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/mitio" class="author">mitio</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-28279908" class="timestamp">
+      <time>2013-11-12 09:41:14</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Sometimes it makes sense to backport some critical security and bug fixes. That's why I'd recommend using a branch. Having that, tagging releases from it can also be done.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-28344368" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-28344368" class="timestamp">
+      <time>2013-11-12 23:23:58</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/mitio" target="_blank">@mitio</a></strong> The <code>goto</code> is not essential to the functioning of the parser. Nothing depends on it. Removing it would not change the output. I'd rather remove it completely than add an extra level of nesting that an if statement would introduce. I apologize for not being clear enough in my first comment.</p>
+<blockquote>
+<p>I guess that if you don't want to burden the master branch with 5.2 compatibility, you can keep a separate, 5.2-compatible branch and just mention that in the readme, so people could use that in legacy software.</p>
+</blockquote>
+<p>This makes sense.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-28399522" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/mitio" class="author">mitio</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-28399522" class="timestamp">
+      <time>2013-11-13 14:44:31</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Ah, I understand. Indeed, all tests pass even without this check. Do you want me to remove the <code>if</code> then, or do you prefer to create a separate branch where you'd keep this change?</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-28738443" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-28738443" class="timestamp">
+      <time>2013-11-18 21:13:30</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>PHP 5.2 is now supported. Thank you for the valuable feedback.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-28738838" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/mitio" class="author">mitio</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-28738838" class="timestamp">
+      <time>2013-11-18 21:18:10</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Thanks! :)</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+</body></html>

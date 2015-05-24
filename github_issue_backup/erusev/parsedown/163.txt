@@ -1,0 +1,95 @@
+{
+  "url": "https://api.github.com/repos/erusev/parsedown/issues/163",
+  "labels_url": "https://api.github.com/repos/erusev/parsedown/issues/163/labels{/name}",
+  "comments_url": "https://api.github.com/repos/erusev/parsedown/issues/163/comments",
+  "events_url": "https://api.github.com/repos/erusev/parsedown/issues/163/events",
+  "html_url": "https://github.com/erusev/parsedown/issues/163",
+  "id": 32534998,
+  "number": 163,
+  "title": "A html link followed by an <email@address.com> results in a bug",
+  "user": {
+    "login": "bastianallgeier",
+    "id": 24532,
+    "avatar_url": "https://avatars.githubusercontent.com/u/24532?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/bastianallgeier",
+    "html_url": "https://github.com/bastianallgeier",
+    "followers_url": "https://api.github.com/users/bastianallgeier/followers",
+    "following_url": "https://api.github.com/users/bastianallgeier/following{/other_user}",
+    "gists_url": "https://api.github.com/users/bastianallgeier/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/bastianallgeier/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/bastianallgeier/subscriptions",
+    "organizations_url": "https://api.github.com/users/bastianallgeier/orgs",
+    "repos_url": "https://api.github.com/users/bastianallgeier/repos",
+    "events_url": "https://api.github.com/users/bastianallgeier/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/bastianallgeier/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "url": "https://api.github.com/repos/erusev/parsedown/labels/issue",
+      "name": "issue",
+      "color": "f7c6c7"
+    }
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2014-04-30T13:36:49Z",
+  "updated_at": "2014-04-30T22:47:25Z",
+  "closed_at": "2014-04-30T22:47:25Z",
+  "body": "If you try something like this\r\n\r\n```\r\n<a href=\"http://super.com\">Hallo</a> Some text in between <mail@google.com>\r\n```\r\n\r\nThe output is completely messed up. \r\nIt only happens when they are on the same line and when you use an html link first followed by an email address. ",
+  "closed_by": {
+    "login": "erusev",
+    "id": 184170,
+    "avatar_url": "https://avatars.githubusercontent.com/u/184170?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/erusev",
+    "html_url": "https://github.com/erusev",
+    "followers_url": "https://api.github.com/users/erusev/followers",
+    "following_url": "https://api.github.com/users/erusev/following{/other_user}",
+    "gists_url": "https://api.github.com/users/erusev/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/erusev/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/erusev/subscriptions",
+    "organizations_url": "https://api.github.com/users/erusev/orgs",
+    "repos_url": "https://api.github.com/users/erusev/repos",
+    "events_url": "https://api.github.com/users/erusev/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/erusev/received_events",
+    "type": "User",
+    "site_admin": false
+  }
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/erusev/parsedown/issues/comments/41798757",
+    "html_url": "https://github.com/erusev/parsedown/issues/163#issuecomment-41798757",
+    "issue_url": "https://api.github.com/repos/erusev/parsedown/issues/163",
+    "id": 41798757,
+    "user": {
+      "login": "hkdobrev",
+      "id": 506129,
+      "avatar_url": "https://avatars.githubusercontent.com/u/506129?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/hkdobrev",
+      "html_url": "https://github.com/hkdobrev",
+      "followers_url": "https://api.github.com/users/hkdobrev/followers",
+      "following_url": "https://api.github.com/users/hkdobrev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/hkdobrev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/hkdobrev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/hkdobrev/subscriptions",
+      "organizations_url": "https://api.github.com/users/hkdobrev/orgs",
+      "repos_url": "https://api.github.com/users/hkdobrev/repos",
+      "events_url": "https://api.github.com/users/hkdobrev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/hkdobrev/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2014-04-30T13:55:04Z",
+    "updated_at": "2014-04-30T13:55:04Z",
+    "body": "This is some very strange output.\r\n\r\nHere is the output from http://parsedown.org/demo:\r\n\r\n``` html\r\n<p><a href=\"mailto:mail@google.com\">mail@google.com</a>uper.com\">Hallo<a href=\"mailto:mail@google.com\">mail@google.com</a> between <a href=\"mailto:mail@google.com\">mail@google.com</a></p>\r\n```"
+  }
+]

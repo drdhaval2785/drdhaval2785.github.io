@@ -1,0 +1,91 @@
+{
+  "url": "https://api.github.com/repos/erusev/parsedown/issues/51",
+  "labels_url": "https://api.github.com/repos/erusev/parsedown/issues/51/labels{/name}",
+  "comments_url": "https://api.github.com/repos/erusev/parsedown/issues/51/comments",
+  "events_url": "https://api.github.com/repos/erusev/parsedown/issues/51/events",
+  "html_url": "https://github.com/erusev/parsedown/issues/51",
+  "id": 24685826,
+  "number": 51,
+  "title": "Implant new tags",
+  "user": {
+    "login": "qwertygc",
+    "id": 4261986,
+    "avatar_url": "https://avatars.githubusercontent.com/u/4261986?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/qwertygc",
+    "html_url": "https://github.com/qwertygc",
+    "followers_url": "https://api.github.com/users/qwertygc/followers",
+    "following_url": "https://api.github.com/users/qwertygc/following{/other_user}",
+    "gists_url": "https://api.github.com/users/qwertygc/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/qwertygc/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/qwertygc/subscriptions",
+    "organizations_url": "https://api.github.com/users/qwertygc/orgs",
+    "repos_url": "https://api.github.com/users/qwertygc/repos",
+    "events_url": "https://api.github.com/users/qwertygc/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/qwertygc/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2013-12-22T19:07:06Z",
+  "updated_at": "2013-12-28T12:21:02Z",
+  "closed_at": "2013-12-28T12:20:44Z",
+  "body": "Hi !\r\nI suggest to implant new tags for extends  parsedown.\r\nFor example : \r\n^(x) becomes < sup >x</ sup >\r\n_(x) becomes < sub >x</ sub >\r\n[ [ x ] \\] (or other, i search) becomes <mark>x</mark>\r\ni don't now for < kbd > tags\r\ni don't now for < audio > and < video > tags.\r\nPS : Sorry for my ~~english~~ globish !",
+  "closed_by": {
+    "login": "erusev",
+    "id": 184170,
+    "avatar_url": "https://avatars.githubusercontent.com/u/184170?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/erusev",
+    "html_url": "https://github.com/erusev",
+    "followers_url": "https://api.github.com/users/erusev/followers",
+    "following_url": "https://api.github.com/users/erusev/following{/other_user}",
+    "gists_url": "https://api.github.com/users/erusev/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/erusev/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/erusev/subscriptions",
+    "organizations_url": "https://api.github.com/users/erusev/orgs",
+    "repos_url": "https://api.github.com/users/erusev/repos",
+    "events_url": "https://api.github.com/users/erusev/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/erusev/received_events",
+    "type": "User",
+    "site_admin": false
+  }
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/erusev/parsedown/issues/comments/31295589",
+    "html_url": "https://github.com/erusev/parsedown/issues/51#issuecomment-31295589",
+    "issue_url": "https://api.github.com/repos/erusev/parsedown/issues/51",
+    "id": 31295589,
+    "user": {
+      "login": "erusev",
+      "id": 184170,
+      "avatar_url": "https://avatars.githubusercontent.com/u/184170?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/erusev",
+      "html_url": "https://github.com/erusev",
+      "followers_url": "https://api.github.com/users/erusev/followers",
+      "following_url": "https://api.github.com/users/erusev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/erusev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/erusev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/erusev/subscriptions",
+      "organizations_url": "https://api.github.com/users/erusev/orgs",
+      "repos_url": "https://api.github.com/users/erusev/repos",
+      "events_url": "https://api.github.com/users/erusev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/erusev/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2013-12-28T12:20:44Z",
+    "updated_at": "2013-12-28T12:21:02Z",
+    "body": "These are interesting but I would rather not implement them as they don't seem to be a part of a specification."
+  }
+]

@@ -1,0 +1,97 @@
+{
+  "url": "https://api.github.com/repos/erusev/parsedown/issues/115",
+  "labels_url": "https://api.github.com/repos/erusev/parsedown/issues/115/labels{/name}",
+  "comments_url": "https://api.github.com/repos/erusev/parsedown/issues/115/comments",
+  "events_url": "https://api.github.com/repos/erusev/parsedown/issues/115/events",
+  "html_url": "https://github.com/erusev/parsedown/pull/115",
+  "id": 27853270,
+  "number": 115,
+  "title": "extract render() HTML formatting method.",
+  "user": {
+    "login": "wkpark",
+    "id": 232347,
+    "avatar_url": "https://avatars.githubusercontent.com/u/232347?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/wkpark",
+    "html_url": "https://github.com/wkpark",
+    "followers_url": "https://api.github.com/users/wkpark/followers",
+    "following_url": "https://api.github.com/users/wkpark/following{/other_user}",
+    "gists_url": "https://api.github.com/users/wkpark/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/wkpark/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/wkpark/subscriptions",
+    "organizations_url": "https://api.github.com/users/wkpark/orgs",
+    "repos_url": "https://api.github.com/users/wkpark/repos",
+    "events_url": "https://api.github.com/users/wkpark/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/wkpark/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2014-02-19T06:14:43Z",
+  "updated_at": "2014-04-24T10:00:29Z",
+  "closed_at": "2014-04-24T10:00:29Z",
+  "pull_request": {
+    "url": "https://api.github.com/repos/erusev/parsedown/pulls/115",
+    "html_url": "https://github.com/erusev/parsedown/pull/115",
+    "diff_url": "https://github.com/erusev/parsedown/pull/115.diff",
+    "patch_url": "https://github.com/erusev/parsedown/pull/115.patch"
+  },
+  "body": "",
+  "closed_by": {
+    "login": "erusev",
+    "id": 184170,
+    "avatar_url": "https://avatars.githubusercontent.com/u/184170?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/erusev",
+    "html_url": "https://github.com/erusev",
+    "followers_url": "https://api.github.com/users/erusev/followers",
+    "following_url": "https://api.github.com/users/erusev/following{/other_user}",
+    "gists_url": "https://api.github.com/users/erusev/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/erusev/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/erusev/subscriptions",
+    "organizations_url": "https://api.github.com/users/erusev/orgs",
+    "repos_url": "https://api.github.com/users/erusev/repos",
+    "events_url": "https://api.github.com/users/erusev/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/erusev/received_events",
+    "type": "User",
+    "site_admin": false
+  }
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/erusev/parsedown/issues/comments/41262870",
+    "html_url": "https://github.com/erusev/parsedown/pull/115#issuecomment-41262870",
+    "issue_url": "https://api.github.com/repos/erusev/parsedown/issues/115",
+    "id": 41262870,
+    "user": {
+      "login": "erusev",
+      "id": 184170,
+      "avatar_url": "https://avatars.githubusercontent.com/u/184170?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/erusev",
+      "html_url": "https://github.com/erusev",
+      "followers_url": "https://api.github.com/users/erusev/followers",
+      "following_url": "https://api.github.com/users/erusev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/erusev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/erusev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/erusev/subscriptions",
+      "organizations_url": "https://api.github.com/users/erusev/orgs",
+      "repos_url": "https://api.github.com/users/erusev/repos",
+      "events_url": "https://api.github.com/users/erusev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/erusev/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2014-04-24T10:00:29Z",
+    "updated_at": "2014-04-24T10:00:29Z",
+    "body": "I believe that this is resolved in the latest version."
+  }
+]

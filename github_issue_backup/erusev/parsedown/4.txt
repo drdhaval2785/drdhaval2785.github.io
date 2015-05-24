@@ -1,0 +1,97 @@
+{
+  "url": "https://api.github.com/repos/erusev/parsedown/issues/4",
+  "labels_url": "https://api.github.com/repos/erusev/parsedown/issues/4/labels{/name}",
+  "comments_url": "https://api.github.com/repos/erusev/parsedown/issues/4/comments",
+  "events_url": "https://api.github.com/repos/erusev/parsedown/issues/4/events",
+  "html_url": "https://github.com/erusev/parsedown/pull/4",
+  "id": 17005426,
+  "number": 4,
+  "title": "All hidden files are skipped from the test dir",
+  "user": {
+    "login": "hkdobrev",
+    "id": 506129,
+    "avatar_url": "https://avatars.githubusercontent.com/u/506129?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/hkdobrev",
+    "html_url": "https://github.com/hkdobrev",
+    "followers_url": "https://api.github.com/users/hkdobrev/followers",
+    "following_url": "https://api.github.com/users/hkdobrev/following{/other_user}",
+    "gists_url": "https://api.github.com/users/hkdobrev/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/hkdobrev/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/hkdobrev/subscriptions",
+    "organizations_url": "https://api.github.com/users/hkdobrev/orgs",
+    "repos_url": "https://api.github.com/users/hkdobrev/repos",
+    "events_url": "https://api.github.com/users/hkdobrev/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/hkdobrev/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2013-07-20T11:33:29Z",
+  "updated_at": "2013-07-21T22:15:22Z",
+  "closed_at": "2013-07-21T22:15:22Z",
+  "pull_request": {
+    "url": "https://api.github.com/repos/erusev/parsedown/pulls/4",
+    "html_url": "https://github.com/erusev/parsedown/pull/4",
+    "diff_url": "https://github.com/erusev/parsedown/pull/4.diff",
+    "patch_url": "https://github.com/erusev/parsedown/pull/4.patch"
+  },
+  "body": ".DS_Store is a platform-specific file for Mac OS. It would be better to skip\r\nall hidden files (which start with a dot).\r\n\r\nOn Windows however hidden files are marked by a file attribute, so this is\r\nactually only valid on Unix.",
+  "closed_by": {
+    "login": "hkdobrev",
+    "id": 506129,
+    "avatar_url": "https://avatars.githubusercontent.com/u/506129?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/hkdobrev",
+    "html_url": "https://github.com/hkdobrev",
+    "followers_url": "https://api.github.com/users/hkdobrev/followers",
+    "following_url": "https://api.github.com/users/hkdobrev/following{/other_user}",
+    "gists_url": "https://api.github.com/users/hkdobrev/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/hkdobrev/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/hkdobrev/subscriptions",
+    "organizations_url": "https://api.github.com/users/hkdobrev/orgs",
+    "repos_url": "https://api.github.com/users/hkdobrev/repos",
+    "events_url": "https://api.github.com/users/hkdobrev/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/hkdobrev/received_events",
+    "type": "User",
+    "site_admin": false
+  }
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/erusev/parsedown/issues/comments/21318125",
+    "html_url": "https://github.com/erusev/parsedown/pull/4#issuecomment-21318125",
+    "issue_url": "https://api.github.com/repos/erusev/parsedown/issues/4",
+    "id": 21318125,
+    "user": {
+      "login": "hkdobrev",
+      "id": 506129,
+      "avatar_url": "https://avatars.githubusercontent.com/u/506129?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/hkdobrev",
+      "html_url": "https://github.com/hkdobrev",
+      "followers_url": "https://api.github.com/users/hkdobrev/followers",
+      "following_url": "https://api.github.com/users/hkdobrev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/hkdobrev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/hkdobrev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/hkdobrev/subscriptions",
+      "organizations_url": "https://api.github.com/users/hkdobrev/orgs",
+      "repos_url": "https://api.github.com/users/hkdobrev/repos",
+      "events_url": "https://api.github.com/users/hkdobrev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/hkdobrev/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2013-07-21T22:15:22Z",
+    "updated_at": "2013-07-21T22:15:22Z",
+    "body": "Most probably obsolete after https://github.com/erusev/parsedown/commit/85dd9fd9659798019e381070aa614e9b6d61e392"
+  }
+]

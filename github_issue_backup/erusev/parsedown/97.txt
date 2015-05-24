@@ -1,0 +1,144 @@
+{
+  "url": "https://api.github.com/repos/erusev/parsedown/issues/97",
+  "labels_url": "https://api.github.com/repos/erusev/parsedown/issues/97/labels{/name}",
+  "comments_url": "https://api.github.com/repos/erusev/parsedown/issues/97/comments",
+  "events_url": "https://api.github.com/repos/erusev/parsedown/issues/97/events",
+  "html_url": "https://github.com/erusev/parsedown/pull/97",
+  "id": 27266916,
+  "number": 97,
+  "title": "check the validity of heading",
+  "user": {
+    "login": "wkpark",
+    "id": 232347,
+    "avatar_url": "https://avatars.githubusercontent.com/u/232347?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/wkpark",
+    "html_url": "https://github.com/wkpark",
+    "followers_url": "https://api.github.com/users/wkpark/followers",
+    "following_url": "https://api.github.com/users/wkpark/following{/other_user}",
+    "gists_url": "https://api.github.com/users/wkpark/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/wkpark/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/wkpark/subscriptions",
+    "organizations_url": "https://api.github.com/users/wkpark/orgs",
+    "repos_url": "https://api.github.com/users/wkpark/repos",
+    "events_url": "https://api.github.com/users/wkpark/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/wkpark/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "url": "https://api.github.com/repos/erusev/parsedown/labels/issue",
+      "name": "issue",
+      "color": "f7c6c7"
+    },
+    {
+      "url": "https://api.github.com/repos/erusev/parsedown/labels/on%20hold",
+      "name": "on hold",
+      "color": "fad8c7"
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 3,
+  "created_at": "2014-02-10T13:59:40Z",
+  "updated_at": "2014-05-01T00:01:04Z",
+  "closed_at": null,
+  "pull_request": {
+    "url": "https://api.github.com/repos/erusev/parsedown/pulls/97",
+    "html_url": "https://github.com/erusev/parsedown/pull/97",
+    "diff_url": "https://github.com/erusev/parsedown/pull/97.diff",
+    "patch_url": "https://github.com/erusev/parsedown/pull/97.patch"
+  },
+  "body": "parsedown does not check the validity of the title heading\r\n\r\n## examples\r\n\r\n~~~\r\n#######\r\n~~~\r\n#######\r\n\r\n| GFM | parsedown |\r\n|------- | -------------- |\r\n| OK    | `<h6></h6>` |\r\n\r\n~~~\r\n############# 1 ##############\r\n~~~\r\n############## 1 #############\r\n\r\n| GFM | parsedown | markdown extra |\r\n|------- | -------------- | ------------------- |\r\n| OK    | `<h27></h27>` | `<h6>######## 1</h6>` |\r\n",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/erusev/parsedown/issues/comments/34642208",
+    "html_url": "https://github.com/erusev/parsedown/pull/97#issuecomment-34642208",
+    "issue_url": "https://api.github.com/repos/erusev/parsedown/issues/97",
+    "id": 34642208,
+    "user": {
+      "login": "hkdobrev",
+      "id": 506129,
+      "avatar_url": "https://avatars.githubusercontent.com/u/506129?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/hkdobrev",
+      "html_url": "https://github.com/hkdobrev",
+      "followers_url": "https://api.github.com/users/hkdobrev/followers",
+      "following_url": "https://api.github.com/users/hkdobrev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/hkdobrev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/hkdobrev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/hkdobrev/subscriptions",
+      "organizations_url": "https://api.github.com/users/hkdobrev/orgs",
+      "repos_url": "https://api.github.com/users/hkdobrev/repos",
+      "events_url": "https://api.github.com/users/hkdobrev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/hkdobrev/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2014-02-10T15:12:50Z",
+    "updated_at": "2014-02-10T15:12:50Z",
+    "body": "@wkpark Could you add a test demonstrating the difference?"
+  },
+  {
+    "url": "https://api.github.com/repos/erusev/parsedown/issues/comments/34648828",
+    "html_url": "https://github.com/erusev/parsedown/pull/97#issuecomment-34648828",
+    "issue_url": "https://api.github.com/repos/erusev/parsedown/issues/97",
+    "id": 34648828,
+    "user": {
+      "login": "wkpark",
+      "id": 232347,
+      "avatar_url": "https://avatars.githubusercontent.com/u/232347?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/wkpark",
+      "html_url": "https://github.com/wkpark",
+      "followers_url": "https://api.github.com/users/wkpark/followers",
+      "following_url": "https://api.github.com/users/wkpark/following{/other_user}",
+      "gists_url": "https://api.github.com/users/wkpark/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/wkpark/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/wkpark/subscriptions",
+      "organizations_url": "https://api.github.com/users/wkpark/orgs",
+      "repos_url": "https://api.github.com/users/wkpark/repos",
+      "events_url": "https://api.github.com/users/wkpark/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/wkpark/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2014-02-10T16:09:30Z",
+    "updated_at": "2014-02-10T16:14:19Z",
+    "body": "oops!\r\nthere are some mistake... and fixed again with test cases"
+  },
+  {
+    "url": "https://api.github.com/repos/erusev/parsedown/issues/comments/40754736",
+    "html_url": "https://github.com/erusev/parsedown/pull/97#issuecomment-40754736",
+    "issue_url": "https://api.github.com/repos/erusev/parsedown/issues/97",
+    "id": 40754736,
+    "user": {
+      "login": "hkdobrev",
+      "id": 506129,
+      "avatar_url": "https://avatars.githubusercontent.com/u/506129?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/hkdobrev",
+      "html_url": "https://github.com/hkdobrev",
+      "followers_url": "https://api.github.com/users/hkdobrev/followers",
+      "following_url": "https://api.github.com/users/hkdobrev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/hkdobrev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/hkdobrev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/hkdobrev/subscriptions",
+      "organizations_url": "https://api.github.com/users/hkdobrev/orgs",
+      "repos_url": "https://api.github.com/users/hkdobrev/repos",
+      "events_url": "https://api.github.com/users/hkdobrev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/hkdobrev/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2014-04-17T19:46:17Z",
+    "updated_at": "2014-04-17T19:46:26Z",
+    "body": ":+1: \r\n\r\nThis is still an issue with the latest changes.\r\n\r\n@wkpark Do you think you could rebase (re-implement) that onto latest master?"
+  }
+]

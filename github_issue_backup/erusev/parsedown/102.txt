@@ -1,0 +1,105 @@
+{
+  "url": "https://api.github.com/repos/erusev/parsedown/issues/102",
+  "labels_url": "https://api.github.com/repos/erusev/parsedown/issues/102/labels{/name}",
+  "comments_url": "https://api.github.com/repos/erusev/parsedown/issues/102/comments",
+  "events_url": "https://api.github.com/repos/erusev/parsedown/issues/102/events",
+  "html_url": "https://github.com/erusev/parsedown/issues/102",
+  "id": 27562088,
+  "number": 102,
+  "title": "Benchmarking",
+  "user": {
+    "login": "hkdobrev",
+    "id": 506129,
+    "avatar_url": "https://avatars.githubusercontent.com/u/506129?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/hkdobrev",
+    "html_url": "https://github.com/hkdobrev",
+    "followers_url": "https://api.github.com/users/hkdobrev/followers",
+    "following_url": "https://api.github.com/users/hkdobrev/following{/other_user}",
+    "gists_url": "https://api.github.com/users/hkdobrev/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/hkdobrev/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/hkdobrev/subscriptions",
+    "organizations_url": "https://api.github.com/users/hkdobrev/orgs",
+    "repos_url": "https://api.github.com/users/hkdobrev/repos",
+    "events_url": "https://api.github.com/users/hkdobrev/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/hkdobrev/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "url": "https://api.github.com/repos/erusev/parsedown/labels/suggestion",
+      "name": "suggestion",
+      "color": "bfd4f2"
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 2,
+  "created_at": "2014-02-13T23:32:02Z",
+  "updated_at": "2014-04-24T21:55:18Z",
+  "closed_at": null,
+  "body": "One of the most important features of Parsedown is its speed. It would be very useful to have a consistent way of measuring the performance of the parser across versions.\r\n\r\nThe purpose of this issue is to be the place to discuss implementations.",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/erusev/parsedown/issues/comments/35040030",
+    "html_url": "https://github.com/erusev/parsedown/issues/102#issuecomment-35040030",
+    "issue_url": "https://api.github.com/repos/erusev/parsedown/issues/102",
+    "id": 35040030,
+    "user": {
+      "login": "hkdobrev",
+      "id": 506129,
+      "avatar_url": "https://avatars.githubusercontent.com/u/506129?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/hkdobrev",
+      "html_url": "https://github.com/hkdobrev",
+      "followers_url": "https://api.github.com/users/hkdobrev/followers",
+      "following_url": "https://api.github.com/users/hkdobrev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/hkdobrev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/hkdobrev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/hkdobrev/subscriptions",
+      "organizations_url": "https://api.github.com/users/hkdobrev/orgs",
+      "repos_url": "https://api.github.com/users/hkdobrev/repos",
+      "events_url": "https://api.github.com/users/hkdobrev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/hkdobrev/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2014-02-13T23:36:26Z",
+    "updated_at": "2014-02-13T23:36:26Z",
+    "body": "I think some kind of benchmarking should be performed on the CI server for every push and pull request. This way the author and the contributors would be able to easily see which feature or bug request is slowing it down without the hassle of installing software.\r\n\r\nSome questions could be discussed about the implementation like:\r\n- Should the benchmarking should be a part of this repo?\r\n- Should there be a dedicated benchmarking tool for Parsedown only?\r\n- How do you perform the actual benchmark?\r\n- How do you compare the results across versions?\r\n\r\nSome tools which could be used:\r\n- XDebug profiler\r\n- Facebook xhprof.\r\n- [Markbench](https://github.com/kzykhys/Markbench)"
+  },
+  {
+    "url": "https://api.github.com/repos/erusev/parsedown/issues/comments/35069582",
+    "html_url": "https://github.com/erusev/parsedown/issues/102#issuecomment-35069582",
+    "issue_url": "https://api.github.com/repos/erusev/parsedown/issues/102",
+    "id": 35069582,
+    "user": {
+      "login": "cebe",
+      "id": 189796,
+      "avatar_url": "https://avatars.githubusercontent.com/u/189796?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/cebe",
+      "html_url": "https://github.com/cebe",
+      "followers_url": "https://api.github.com/users/cebe/followers",
+      "following_url": "https://api.github.com/users/cebe/following{/other_user}",
+      "gists_url": "https://api.github.com/users/cebe/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/cebe/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/cebe/subscriptions",
+      "organizations_url": "https://api.github.com/users/cebe/orgs",
+      "repos_url": "https://api.github.com/users/cebe/repos",
+      "events_url": "https://api.github.com/users/cebe/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/cebe/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2014-02-14T09:45:24Z",
+    "updated_at": "2014-02-14T09:45:24Z",
+    "body": "> I think some kind of benchmarking should be performed on the CI server\r\n\r\nI think this would cause problems because travis servers are not a good environment for benchmarking. They are virtual machines that are sometimes paused for a few milliseconds while running software so you can not do accurate measurements. Had some problems with testing timeouts there some time ago."
+  }
+]

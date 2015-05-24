@@ -1,0 +1,97 @@
+{
+  "url": "https://api.github.com/repos/erusev/parsedown/issues/48",
+  "labels_url": "https://api.github.com/repos/erusev/parsedown/issues/48/labels{/name}",
+  "comments_url": "https://api.github.com/repos/erusev/parsedown/issues/48/comments",
+  "events_url": "https://api.github.com/repos/erusev/parsedown/issues/48/events",
+  "html_url": "https://github.com/erusev/parsedown/pull/48",
+  "id": 24487295,
+  "number": 48,
+  "title": "Fix HTML Bug",
+  "user": {
+    "login": "kaamaru",
+    "id": 583418,
+    "avatar_url": "https://avatars.githubusercontent.com/u/583418?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kaamaru",
+    "html_url": "https://github.com/kaamaru",
+    "followers_url": "https://api.github.com/users/kaamaru/followers",
+    "following_url": "https://api.github.com/users/kaamaru/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kaamaru/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kaamaru/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kaamaru/subscriptions",
+    "organizations_url": "https://api.github.com/users/kaamaru/orgs",
+    "repos_url": "https://api.github.com/users/kaamaru/repos",
+    "events_url": "https://api.github.com/users/kaamaru/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kaamaru/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2013-12-18T12:39:33Z",
+  "updated_at": "2014-01-13T22:35:09Z",
+  "closed_at": "2013-12-18T18:36:06Z",
+  "pull_request": {
+    "url": "https://api.github.com/repos/erusev/parsedown/pulls/48",
+    "html_url": "https://github.com/erusev/parsedown/pull/48",
+    "diff_url": "https://github.com/erusev/parsedown/pull/48.diff",
+    "patch_url": "https://github.com/erusev/parsedown/pull/48.patch"
+  },
+  "body": "If you add markdown after HTML on the same line, all the remaining markdown will not be parsed.\r\n\r\nDemo:\r\nAdd ```\"<span></span> *test*\"``` without quotes to the top of a markdown page on it's own line and then parse.\r\n\r\nPHPUnit:\r\n```\r\nTime: 30 ms, Memory: 2.75Mb\r\n\r\nOK (31 tests, 31 assertions)\r\n```",
+  "closed_by": {
+    "login": "erusev",
+    "id": 184170,
+    "avatar_url": "https://avatars.githubusercontent.com/u/184170?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/erusev",
+    "html_url": "https://github.com/erusev",
+    "followers_url": "https://api.github.com/users/erusev/followers",
+    "following_url": "https://api.github.com/users/erusev/following{/other_user}",
+    "gists_url": "https://api.github.com/users/erusev/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/erusev/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/erusev/subscriptions",
+    "organizations_url": "https://api.github.com/users/erusev/orgs",
+    "repos_url": "https://api.github.com/users/erusev/repos",
+    "events_url": "https://api.github.com/users/erusev/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/erusev/received_events",
+    "type": "User",
+    "site_admin": false
+  }
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/erusev/parsedown/issues/comments/30844700",
+    "html_url": "https://github.com/erusev/parsedown/pull/48#issuecomment-30844700",
+    "issue_url": "https://api.github.com/repos/erusev/parsedown/issues/48",
+    "id": 30844700,
+    "user": {
+      "login": "hkdobrev",
+      "id": 506129,
+      "avatar_url": "https://avatars.githubusercontent.com/u/506129?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/hkdobrev",
+      "html_url": "https://github.com/hkdobrev",
+      "followers_url": "https://api.github.com/users/hkdobrev/followers",
+      "following_url": "https://api.github.com/users/hkdobrev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/hkdobrev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/hkdobrev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/hkdobrev/subscriptions",
+      "organizations_url": "https://api.github.com/users/hkdobrev/orgs",
+      "repos_url": "https://api.github.com/users/hkdobrev/repos",
+      "events_url": "https://api.github.com/users/hkdobrev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/hkdobrev/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2013-12-18T14:20:50Z",
+    "updated_at": "2013-12-18T14:21:15Z",
+    "body": ":+1: \r\n\r\nIn the original spec the whole relevant section is called \"Inline HTML\", and there is an exception for the block-level elements, not for the inline ones.\r\n\r\nhttp://daringfireball.net/projects/markdown/syntax#html"
+  }
+]

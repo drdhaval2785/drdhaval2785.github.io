@@ -1,0 +1,97 @@
+{
+  "url": "https://api.github.com/repos/erusev/parsedown/issues/47",
+  "labels_url": "https://api.github.com/repos/erusev/parsedown/issues/47/labels{/name}",
+  "comments_url": "https://api.github.com/repos/erusev/parsedown/issues/47/comments",
+  "events_url": "https://api.github.com/repos/erusev/parsedown/issues/47/events",
+  "html_url": "https://github.com/erusev/parsedown/pull/47",
+  "id": 24287507,
+  "number": 47,
+  "title": "Add ability to specify link titles on inline and reference links.",
+  "user": {
+    "login": "malorisdead",
+    "id": 2583176,
+    "avatar_url": "https://avatars.githubusercontent.com/u/2583176?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/malorisdead",
+    "html_url": "https://github.com/malorisdead",
+    "followers_url": "https://api.github.com/users/malorisdead/followers",
+    "following_url": "https://api.github.com/users/malorisdead/following{/other_user}",
+    "gists_url": "https://api.github.com/users/malorisdead/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/malorisdead/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/malorisdead/subscriptions",
+    "organizations_url": "https://api.github.com/users/malorisdead/orgs",
+    "repos_url": "https://api.github.com/users/malorisdead/repos",
+    "events_url": "https://api.github.com/users/malorisdead/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/malorisdead/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2013-12-14T07:38:18Z",
+  "updated_at": "2013-12-15T23:35:39Z",
+  "closed_at": "2013-12-15T22:56:12Z",
+  "pull_request": {
+    "url": "https://api.github.com/repos/erusev/parsedown/pulls/47",
+    "html_url": "https://github.com/erusev/parsedown/pull/47",
+    "diff_url": "https://github.com/erusev/parsedown/pull/47.diff",
+    "patch_url": "https://github.com/erusev/parsedown/pull/47.patch"
+  },
+  "body": "The Markdown specification provides a way to specify the title attribute for inline and reference links.  This is a relatively minor change that fixes #15.\r\n\r\nFor example:\r\n```\r\n[Inline link](http://example.com \"Example\")\r\n```\r\nBecomes:\r\n[Inline link](http://example.com \"Example\")",
+  "closed_by": {
+    "login": "erusev",
+    "id": 184170,
+    "avatar_url": "https://avatars.githubusercontent.com/u/184170?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/erusev",
+    "html_url": "https://github.com/erusev",
+    "followers_url": "https://api.github.com/users/erusev/followers",
+    "following_url": "https://api.github.com/users/erusev/following{/other_user}",
+    "gists_url": "https://api.github.com/users/erusev/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/erusev/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/erusev/subscriptions",
+    "organizations_url": "https://api.github.com/users/erusev/orgs",
+    "repos_url": "https://api.github.com/users/erusev/repos",
+    "events_url": "https://api.github.com/users/erusev/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/erusev/received_events",
+    "type": "User",
+    "site_admin": false
+  }
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/erusev/parsedown/issues/comments/30625179",
+    "html_url": "https://github.com/erusev/parsedown/pull/47#issuecomment-30625179",
+    "issue_url": "https://api.github.com/repos/erusev/parsedown/issues/47",
+    "id": 30625179,
+    "user": {
+      "login": "hkdobrev",
+      "id": 506129,
+      "avatar_url": "https://avatars.githubusercontent.com/u/506129?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/hkdobrev",
+      "html_url": "https://github.com/hkdobrev",
+      "followers_url": "https://api.github.com/users/hkdobrev/followers",
+      "following_url": "https://api.github.com/users/hkdobrev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/hkdobrev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/hkdobrev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/hkdobrev/subscriptions",
+      "organizations_url": "https://api.github.com/users/hkdobrev/orgs",
+      "repos_url": "https://api.github.com/users/hkdobrev/repos",
+      "events_url": "https://api.github.com/users/hkdobrev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/hkdobrev/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2013-12-15T23:35:39Z",
+    "updated_at": "2013-12-15T23:35:39Z",
+    "body": "@malorisdead Thanks!"
+  }
+]

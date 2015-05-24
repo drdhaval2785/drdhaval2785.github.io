@@ -1,0 +1,77 @@
+{
+  "url": "https://api.github.com/repos/erusev/parsedown/issues/242",
+  "labels_url": "https://api.github.com/repos/erusev/parsedown/issues/242/labels{/name}",
+  "comments_url": "https://api.github.com/repos/erusev/parsedown/issues/242/comments",
+  "events_url": "https://api.github.com/repos/erusev/parsedown/issues/242/events",
+  "html_url": "https://github.com/erusev/parsedown/issues/242",
+  "id": 47795839,
+  "number": 242,
+  "title": "Add composer installation docs to Readme",
+  "user": {
+    "login": "montogeek",
+    "id": 1002461,
+    "avatar_url": "https://avatars.githubusercontent.com/u/1002461?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/montogeek",
+    "html_url": "https://github.com/montogeek",
+    "followers_url": "https://api.github.com/users/montogeek/followers",
+    "following_url": "https://api.github.com/users/montogeek/following{/other_user}",
+    "gists_url": "https://api.github.com/users/montogeek/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/montogeek/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/montogeek/subscriptions",
+    "organizations_url": "https://api.github.com/users/montogeek/orgs",
+    "repos_url": "https://api.github.com/users/montogeek/repos",
+    "events_url": "https://api.github.com/users/montogeek/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/montogeek/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "url": "https://api.github.com/repos/erusev/parsedown/labels/suggestion",
+      "name": "suggestion",
+      "color": "bfd4f2"
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2014-11-05T03:28:45Z",
+  "updated_at": "2015-02-04T02:52:22Z",
+  "closed_at": null,
+  "body": "Please add ```composer require erusev/parsedown:version``` to the docs :)\r\n\r\nIt is a reliable way to install it",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/erusev/parsedown/issues/comments/72781257",
+    "html_url": "https://github.com/erusev/parsedown/issues/242#issuecomment-72781257",
+    "issue_url": "https://api.github.com/repos/erusev/parsedown/issues/242",
+    "id": 72781257,
+    "user": {
+      "login": "mnapoli",
+      "id": 720328,
+      "avatar_url": "https://avatars.githubusercontent.com/u/720328?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mnapoli",
+      "html_url": "https://github.com/mnapoli",
+      "followers_url": "https://api.github.com/users/mnapoli/followers",
+      "following_url": "https://api.github.com/users/mnapoli/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mnapoli/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mnapoli/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mnapoli/subscriptions",
+      "organizations_url": "https://api.github.com/users/mnapoli/orgs",
+      "repos_url": "https://api.github.com/users/mnapoli/repos",
+      "events_url": "https://api.github.com/users/mnapoli/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mnapoli/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2015-02-04T02:52:22Z",
+    "updated_at": "2015-02-04T02:52:22Z",
+    "body": "`composer require erusev/parsedown` alone should be better :)"
+  }
+]

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html class='' lang='en'>
+<head prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#'>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8'>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta http-equiv='Content-Language' content='en'>
+<title>erusev/parsedown/88</title>
+<link href='github-c486157afcc5f58155a921bc675afb08733fbaa8dcf39ac2104d3.css' media='all' rel='stylesheet'>
+<link href='github2-da2e842cc3f0aaf33b727d0ef034243c12ab008fd09b24868b97.css' media='all' rel='stylesheet'>
+<meta http-equiv='x-pjax-version' content='4426702614c8182f33d1780ad1169662'>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shAutoloader.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAppleScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAS3.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushBash.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushColdFusion.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCpp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCSharp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCss.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDelphi.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDiff.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushErlang.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushGroovy.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJava.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJavaFX.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/syntaxhighlighter/scripts/shBrushJScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPerl.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPhp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPlain.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPowerShell.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPython.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushRuby.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSass.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushScala.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSql.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushVb.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushXml.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shLegacy.js'></script>
+	<link type='text/css' rel='stylesheet' href='syntaxhighlighter/styles/shCoreDefault.css'/>
+	<script type='text/javascript'>SyntaxHighlighter.all();</script>
+</head>
+<body class='logged_in  env-production windows vis-public'>
+<h1 align='center'><a href='https://github.com/erusev/parsedown/issues/88' target='_blank'>Support title in parentheses for reference-style links</h1><hr/><div id="#issue-26838411" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issue-26838411" class="timestamp">
+      <time>2014-02-03 21:22:54</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>From the Markdown spec:</p>
+<blockquote>
+<p>The following three link definitions are equivalent:</p>
+<pre><code>[foo]: http://example.com/  "Optional Title Here"
+[foo]: http://example.com/  'Optional Title Here'
+[foo]: http://example.com/  (Optional Title Here)</code></pre>
+</blockquote>
+<p>Parsedown is not supporting the third case. Here is a failing test:</p>
+<pre><code>[Reference link][link title with double quotes]
+[Reference link][link title with single quotes]
+[Reference link][link title with parentheses]
+
+[Reference link with a space] [link title with double quotes]
+[Reference link with a space] [link title with single quotes]
+[Reference link with a space] [link title with parentheses]
+
+[link title with double quotes]: http://example.com/  "Double Quotes Title"
+[link title with single quotes]: http://example.com/  'Single Quotes Title'
+[link title with parentheses]: http://example.com/  (Parentheses Title)</code></pre>
+<pre class="brush: html">&lt;p&gt;&lt;a href="http://example.com/" title="Double Quotes Title"&gt;Reference link&lt;/a&gt;
+&lt;a href="http://example.com/" title="Single Quotes Title"&gt;Reference link&lt;/a&gt;
+&lt;a href="http://example.com/" title="Parentheses Title"&gt;Reference link&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://example.com/" title="Double Quotes Title"&gt;Reference link with a space&lt;/a&gt;
+&lt;a href="http://example.com/" title="Single Quotes Title"&gt;Reference link with a space&lt;/a&gt;
+&lt;a href="http://example.com/" title="Parentheses Title"&gt;Reference link with a space&lt;/a&gt;&lt;/p&gt;</code></pre>
+<p>Currently Parsedown outputs HTML like:</p>
+<pre class="brush: html">&lt;a href="http://example.com/  (Parentheses Title)"&gt;Reference link&lt;/a&gt;&lt;/p&gt;</code></pre>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-34013622" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/scottchiefbaker" class="author">scottchiefbaker</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-34013622" class="timestamp">
+      <time>2014-02-03 23:28:38</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Why don't you submit a pull request with the failing test.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-34014724" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-34014724" class="timestamp">
+      <time>2014-02-03 23:42:51</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/scottchiefbaker" target="_blank">@scottchiefbaker</a></strong> I've used to do that. Unfortunately GitHub pull requests are not made for that. Since a GitHub pull request is a subset of a GitHub issue, pull requests are like issues with code attached. Here are some example scenarios:</p>
+<ul>
+<li>I submit a PR with a failing test. The PR is merged. The build fails.</li>
+<li>I submit a PR with a failing test. A new PR is submitted with a fix. The new PR is merged. Then my PR is merged so the test goes to the testsuite. The new PR then would not make sense without the test as a part of it.</li>
+<li>I submit a PR with a failing test. A new PR is submitted which includes both the fix and my test (it means the test was most probably copy-pasted or <code>git apply</code>ed, but it doesn't matter). My PR is not merged and closed.</li>
+</ul>
+<p>The second scenario is ideal for a PR in a private repo or in a repo where everyone involved has a push access. Then I would submit a PR with a failing test from another branch in the same repo. The person who would fix it could push the same branch and therefore update the PR.</p>
+<p>Since every working scenario in a public repo is either not really userful (or right) or involves copy-paste-like techniques, I've decided I would just post it as a simple issue. With an issue no one could get confused whether the PR fixes something or just points out the problem. Also all the contributing stats for issues vs. pull requests which could be extracted would be correct.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-34060753" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/wkpark" class="author">wkpark</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-34060753" class="timestamp">
+      <time>2014-02-04 13:54:22</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>this is my try to fix it using conditional subpattern</p>
+<pre class="brush: patch">diff --git a/Parsedown.php b/Parsedown.php
+index 040b774..4c32d4d 100755
+--- a/Parsedown.php
++++ b/Parsedown.php
+<strong><a href="https://github.com/" target="_blank">@</a></strong>@ -426,7 +426,7 <strong><a href="https://github.com/" target="_blank">@</a></strong>@ class Parsedown
+
+                     <a href='.html' target='_blank'>#</a> reference
+
+-                    if (preg_match('/^\[(.+?)\]:[ ]*(.+?)(?:[ ]+[\'"](.+?)[\'"])?[ ]*$/', $outdented_line, $matches))
++                    if (preg_match('/^\[(.+?)\]:[ ]*(.+?)(?:[ ]+(?:([\'"])|(\())(.+?)(?(4)\)|\3))?[ ]*$/', $outdented_line, $matches))
+                     {
+                         $label = strtolower($matches[1]);
+
+<strong><a href="https://github.com/" target="_blank">@</a></strong>@ -434,9 +434,9 <strong><a href="https://github.com/" target="_blank">@</a></strong>@ class Parsedown
+                             '»' =&gt; trim($matches[2], '&lt;&gt;'),
+                         );
+
+-                        if (isset($matches[3]))
++                        if (isset($matches[5]))
+                         {
+-                            $this-&gt;reference_map[$label]['#'] = $matches[3];
++                            $this-&gt;reference_map[$label]['#'] = $matches[5];
+                         }
+
+                         continue 2;</code></pre>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-35050204" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/wkpark" class="author">wkpark</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-35050204" class="timestamp">
+      <time>2014-02-14 02:31:35</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>the following reference does not work correctly (found Markdown Basic.text)</p>
+<pre><code>      [s]: /url/      "test"</code></pre>
+<p>spaces after url are acceptable and have to be trimed out</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+</body></html>

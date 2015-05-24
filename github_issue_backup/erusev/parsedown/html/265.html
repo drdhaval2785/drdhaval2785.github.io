@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html class='' lang='en'>
+<head prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#'>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8'>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta http-equiv='Content-Language' content='en'>
+<title>erusev/parsedown/265</title>
+<link href='github-c486157afcc5f58155a921bc675afb08733fbaa8dcf39ac2104d3.css' media='all' rel='stylesheet'>
+<link href='github2-da2e842cc3f0aaf33b727d0ef034243c12ab008fd09b24868b97.css' media='all' rel='stylesheet'>
+<meta http-equiv='x-pjax-version' content='4426702614c8182f33d1780ad1169662'>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shAutoloader.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAppleScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAS3.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushBash.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushColdFusion.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCpp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCSharp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCss.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDelphi.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDiff.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushErlang.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushGroovy.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJava.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJavaFX.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/syntaxhighlighter/scripts/shBrushJScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPerl.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPhp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPlain.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPowerShell.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPython.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushRuby.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSass.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushScala.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSql.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushVb.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushXml.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shLegacy.js'></script>
+	<link type='text/css' rel='stylesheet' href='syntaxhighlighter/styles/shCoreDefault.css'/>
+	<script type='text/javascript'>SyntaxHighlighter.all();</script>
+</head>
+<body class='logged_in  env-production windows vis-public'>
+<h1 align='center'><a href='https://github.com/erusev/parsedown/issues/265' target='_blank'>Broken Headlines in the latest version</h1><hr/><div id="#issue-54387644" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/bastianallgeier" class="author">bastianallgeier</a>
+    </strong>
+    commented on 
+    <a href="#issue-54387644" class="timestamp">
+      <time>2015-01-14 22:40:54</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Unfortunately the latest version comes with this pretty massive bug: </p>
+<pre><code>##heading</code></pre>
+<p>is being converted to</p>
+<pre><code>&lt;p&gt;##heading&lt;/p&gt;</code></pre>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-70008287" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-70008287" class="timestamp">
+      <time>2015-01-14 22:47:54</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/bastianallgeier" target="_blank">@bastianallgeier</a></strong> </p>
+<p>This is expected. Headers need a space between the <code>#</code> and the text. This is dictated by the CommonMark spec. You are the second person to complain about it. Perhaps I should change it back. Requiring that space doesn't seem to add much value.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-70008498" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/rhukster" class="author">rhukster</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-70008498" class="timestamp">
+      <time>2015-01-14 22:49:19</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Even in the <strong>not-so-specific</strong> Gruber spec, they have spaces:</p>
+<p><a href="http://daringfireball.net/projects/markdown/syntax#header">http://daringfireball.net/projects/markdown/syntax#header</a></p>
+<p>IMHO, I don' think you should support 'spaceless' header tags.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-70008951" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-70008951" class="timestamp">
+      <time>2015-01-14 22:52:24</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/rhukster" target="_blank">@rhukster</a></strong> </p>
+<p>True, but perhaps a huge number of Markdown texts don't have these spaces.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-70009012" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/bastianallgeier" class="author">bastianallgeier</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-70009012" class="timestamp">
+      <time>2015-01-14 22:52:50</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I didn't even find it myself. I added it to Kirby's develop branch a couple hours ago and already got a ticket for it. I get that it's officially not documented that way, but I'm sure that lots of people write it like that. </p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-70009160" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-70009160" class="timestamp">
+      <time>2015-01-14 22:53:44</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/bastianallgeier" target="_blank">@bastianallgeier</a></strong> </p>
+<p>I believe that to be true. I'll release a patch within the next 10 min.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-70009307" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/rhukster" class="author">rhukster</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-70009307" class="timestamp">
+      <time>2015-01-14 22:54:44</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>True, I guess it depends on how close to the CommonMark spec you are trying to get.  Is it possible to have a toggle/option at some point to enforce markdown or legacy? </p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-70009338" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/bastianallgeier" class="author">bastianallgeier</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-70009338" class="timestamp">
+      <time>2015-01-14 22:54:54</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/erusev" target="_blank">@erusev</a></strong> awesome! I think it's a lot about usability in this case, so I'm glad you see it this way as well. </p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-70009664" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/bastianallgeier" class="author">bastianallgeier</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-70009664" class="timestamp">
+      <time>2015-01-14 22:57:04</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/rhukster" target="_blank">@rhukster</a></strong> <strong><a href="https://github.com/erusev" target="_blank">@erusev</a></strong> I wouldn't add too many &quot;toggles&quot;. They add complexity and probably negatively affect the performance. Where's the harm if it does follow the specs but also is slightly more forgiving?</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-70009736" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-70009736" class="timestamp">
+      <time>2015-01-14 22:57:38</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>The release is out. You can update now.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-70010041" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-70010041" class="timestamp">
+      <time>2015-01-14 22:59:39</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/rhukster" target="_blank">@rhukster</a></strong> </p>
+<p>It is possible. It could be just one toggle. I'm considering it.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-70010136" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/cebe" class="author">cebe</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-70010136" class="timestamp">
+      <time>2015-01-14 23:00:22</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>The only conflict I see with this, is that if you write markdown like this:</p>
+<pre><code>
+- <a href='123.html' target='_blank'>#123</a> abc
+- <a href='456.html' target='_blank'>#456</a> def
+</code></pre>
+<p>you will get headlines instead of issue numbers...</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-70010408" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/rhukster" class="author">rhukster</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-70010408" class="timestamp">
+      <time>2015-01-14 23:02:27</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Well in this case the CommonMark explicitly says:</p>
+<blockquote>
+<p>The opening sequence of <a href='.html' target='_blank'>#</a> characters cannot be followed directly by a nonspace character.</p>
+</blockquote>
+<p><a href="http://spec.commonmark.org/0.14/#atx-headers">http://spec.commonmark.org/0.14/#atx-headers</a></p>
+<p>If the spec didn't mention it, then it would be fine.  But the whole point of CommonMark is to tidy up issues related to lack of detail in the original spec. </p>
+<p>I know changes like this could potentially break lots of people's content, hence the idea for the toggle.  This forgiving change actually makes Parsedown less CommonMark compatible.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-70010761" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/rhukster" class="author">rhukster</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-70010761" class="timestamp">
+      <time>2015-01-14 23:04:49</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Here's an even better CommonMark spec quote:</p>
+<blockquote>
+<p>A space is required between the <a href='.html' target='_blank'>#</a> characters and the header’s contents. Note that many implementations currently do not require the space. However, the space was required by the original ATX implementation, and it helps prevent things like the following from being parsed as headers:</p>
+</blockquote>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-70011363" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/naNuke" class="author">naNuke</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-70011363" class="timestamp">
+      <time>2015-01-14 23:09:06</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Why is this an issue that needs to be solved by parsedown, if the goal is to follow commonmark, then it should, users who cant spend time to fix their markdown files and add spaces after <a href='.html' target='_blank'>#</a> (which isnt that hard) can just extend the parser and remove that rule?</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-70011407" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-70011407" class="timestamp">
+      <time>2015-01-14 23:09:25</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/rhukster" target="_blank">@rhukster</a></strong> </p>
+<p>I agree. I believe that Parsedown can be both tolerant to existing Markdown texts and strict regarding rules like the one we discuss here. Hopefully, the toggle in question would not require adding too much complexity.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-70012211" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/bastianallgeier" class="author">bastianallgeier</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-70012211" class="timestamp">
+      <time>2015-01-14 23:15:24</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/erusev" target="_blank">@erusev</a></strong> if the toggle is easy to add and doesn't add much complexity, it's probably the best way to please us all :) Personally I think the power of Markdown has always been the focus on writers — even those without a technical background. The specs are a great tool to tidy stuff, but in the end it's all about the users/writers. </p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-70012740" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-70012740" class="timestamp">
+      <time>2015-01-14 23:20:04</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/naNuke" target="_blank">@naNuke</a></strong> </p>
+<p>I believe that before Parsedown introduces changes that could break existing texts, it should at least provide that extension that would make the existing texts work. I'm in favour of compliance, but I believe that it should be done without breaking things. I hope that you'd agree.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-70016695" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/naNuke" class="author">naNuke</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-70016695" class="timestamp">
+      <time>2015-01-14 23:54:58</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/erusev" target="_blank">@erusev</a></strong> </p>
+<p>I completely agree, as long as compliance is not given up in favor of supporting every single possibility of different markup style (which can lead to more problems than it is worth), thats what the spec is for anyway.
+Maybe in future, things like this could be unified under single &quot;strict&quot; setter, where strict parsing would mean fast and reliable while &quot;non-strict&quot; might be slower and possibly broken in some edge-cases.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-70016957" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-70016957" class="timestamp">
+      <time>2015-01-14 23:57:20</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/naNuke" target="_blank">@naNuke</a></strong> </p>
+<p>I'm glad to hear that. A &quot;strict&quot; setter sounds good.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-70017153" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/rhukster" class="author">rhukster</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-70017153" class="timestamp">
+      <time>2015-01-14 23:59:10</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I like it :+1: </p>
+  </div>
+  </div>
+  </div>
+  <br/>
+</body></html>

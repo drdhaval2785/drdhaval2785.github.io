@@ -1,0 +1,52 @@
+{
+  "url": "https://api.github.com/repos/erusev/parsedown/issues/187",
+  "labels_url": "https://api.github.com/repos/erusev/parsedown/issues/187/labels{/name}",
+  "comments_url": "https://api.github.com/repos/erusev/parsedown/issues/187/comments",
+  "events_url": "https://api.github.com/repos/erusev/parsedown/issues/187/events",
+  "html_url": "https://github.com/erusev/parsedown/pull/187",
+  "id": 35796438,
+  "number": 187,
+  "title": "Allow user to set a relative path",
+  "user": {
+    "login": "mulquin",
+    "id": 570034,
+    "avatar_url": "https://avatars.githubusercontent.com/u/570034?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/mulquin",
+    "html_url": "https://github.com/mulquin",
+    "followers_url": "https://api.github.com/users/mulquin/followers",
+    "following_url": "https://api.github.com/users/mulquin/following{/other_user}",
+    "gists_url": "https://api.github.com/users/mulquin/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/mulquin/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/mulquin/subscriptions",
+    "organizations_url": "https://api.github.com/users/mulquin/orgs",
+    "repos_url": "https://api.github.com/users/mulquin/repos",
+    "events_url": "https://api.github.com/users/mulquin/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/mulquin/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2014-06-16T13:36:16Z",
+  "updated_at": "2014-06-16T13:36:44Z",
+  "closed_at": null,
+  "pull_request": {
+    "url": "https://api.github.com/repos/erusev/parsedown/pulls/187",
+    "html_url": "https://github.com/erusev/parsedown/pull/187",
+    "diff_url": "https://github.com/erusev/parsedown/pull/187.diff",
+    "patch_url": "https://github.com/erusev/parsedown/pull/187.patch"
+  },
+  "body": "I wrote this for one a project where markdown files are strewn across multiple folders. \r\n\r\nInserting images was becoming troublesome as the full path for each image had to be set in each file.\r\n\r\nThis little work-around can be used to dynamically change the relative path to the folder with the markdown file inside.\r\n\r\nUnsure if more appropriate for MarkdownExtra or not.",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+
+]

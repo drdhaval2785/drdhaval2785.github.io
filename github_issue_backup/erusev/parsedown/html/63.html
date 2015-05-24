@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html class='' lang='en'>
+<head prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#'>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8'>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta http-equiv='Content-Language' content='en'>
+<title>erusev/parsedown/63</title>
+<link href='github-c486157afcc5f58155a921bc675afb08733fbaa8dcf39ac2104d3.css' media='all' rel='stylesheet'>
+<link href='github2-da2e842cc3f0aaf33b727d0ef034243c12ab008fd09b24868b97.css' media='all' rel='stylesheet'>
+<meta http-equiv='x-pjax-version' content='4426702614c8182f33d1780ad1169662'>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shAutoloader.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAppleScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAS3.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushBash.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushColdFusion.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCpp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCSharp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCss.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDelphi.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDiff.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushErlang.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushGroovy.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJava.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJavaFX.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/syntaxhighlighter/scripts/shBrushJScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPerl.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPhp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPlain.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPowerShell.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPython.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushRuby.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSass.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushScala.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSql.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushVb.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushXml.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shLegacy.js'></script>
+	<link type='text/css' rel='stylesheet' href='syntaxhighlighter/styles/shCoreDefault.css'/>
+	<script type='text/javascript'>SyntaxHighlighter.all();</script>
+</head>
+<body class='logged_in  env-production windows vis-public'>
+<h1 align='center'><a href='https://github.com/erusev/parsedown/pull/63' target='_blank'>Added automatic email detection</h1><hr/><div id="#issue-26107568" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/bastianallgeier" class="author">bastianallgeier</a>
+    </strong>
+    commented on 
+    <a href="#issue-26107568" class="timestamp">
+      <time>2014-01-22 17:36:48</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>The regular expression for detecting emails could be a bit better but it is rather liberal and works. </p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-33060624" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-33060624" class="timestamp">
+      <time>2014-01-22 19:54:31</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>A couple of points:</p>
+<ul>
+<li>
+<p>The regex seems to be too specific. It would probably hurt performance as not only emails but every inline HTML tag would have to go through it.</p>
+</li>
+<li>
+<p>The obfuscation should produce unpredictable output.</p>
+<p>Here's a quote from the spec:</p>
+<blockquote>
+<p>Automatic links for email addresses work similarly, except that Markdown will also perform a bit of randomized decimal and hex entity-encoding to help obscure your address from address-harvesting spambots.</p>
+</blockquote>
+</li>
+</ul>
+<p>I pushed a partial implementation of the feature and there are a bunch of commits on top of it so I'd not be merging this but I appreciate your contribution and I hope I'll see more pull requests from you.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-33070459" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/bastianallgeier" class="author">bastianallgeier</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-33070459" class="timestamp">
+      <time>2014-01-22 21:30:43</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I completely understand and look forward to your implementation. The obfuscation method was actually producing random output first, but it wasn't testable with your test setup. It's a bit stupid, but that's why I removed the random part. It was all a pretty quick shot though. </p>
+<p>I really love your parser. I was using Michel Fortin's Markdown parsers for kirby cms so far, but I was always looking for a faster more compact alternative. Any plans to work on similar rules like those in the Markdown Extra class? </p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-33070696" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-33070696" class="timestamp">
+      <time>2014-01-22 21:32:58</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <blockquote>
+<p>Any plans to work on similar rules like those in the Markdown Extra class?</p>
+</blockquote>
+<p><strong><a href="https://github.com/bastianallgeier" target="_blank">@bastianallgeier</a></strong> Perhaps you could create a separate issue with some ideas/questions.</p>
+<hr />
+<p>On a separate note what do you think of not implementing email obfuscation as a thing of the past? Do you use it?</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-33071129" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/bastianallgeier" class="author">bastianallgeier</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-33071129" class="timestamp">
+      <time>2014-01-22 21:37:26</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/hkdobrev" target="_blank">@hkdobrev</a></strong> just discovered the discussion about plugins in the issues. I'll maybe post some ideas there. </p>
+<p>I think obfuscation still has a point and the overhead is probably pretty minimal. </p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-33071527" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/scottchiefbaker" class="author">scottchiefbaker</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-33071527" class="timestamp">
+      <time>2014-01-22 21:41:31</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I think obfuscation is still a <strong>very</strong> good idea. The potential minimal overhead is worth it for the added security.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+</body></html>

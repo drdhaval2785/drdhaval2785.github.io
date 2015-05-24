@@ -1,0 +1,107 @@
+{
+  "url": "https://api.github.com/repos/erusev/parsedown/issues/177",
+  "labels_url": "https://api.github.com/repos/erusev/parsedown/issues/177/labels{/name}",
+  "comments_url": "https://api.github.com/repos/erusev/parsedown/issues/177/comments",
+  "events_url": "https://api.github.com/repos/erusev/parsedown/issues/177/events",
+  "html_url": "https://github.com/erusev/parsedown/pull/177",
+  "id": 34504765,
+  "number": 177,
+  "title": "Added safe mode",
+  "user": {
+    "login": "clphillips",
+    "id": 682986,
+    "avatar_url": "https://avatars.githubusercontent.com/u/682986?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/clphillips",
+    "html_url": "https://github.com/clphillips",
+    "followers_url": "https://api.github.com/users/clphillips/followers",
+    "following_url": "https://api.github.com/users/clphillips/following{/other_user}",
+    "gists_url": "https://api.github.com/users/clphillips/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/clphillips/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/clphillips/subscriptions",
+    "organizations_url": "https://api.github.com/users/clphillips/orgs",
+    "repos_url": "https://api.github.com/users/clphillips/repos",
+    "events_url": "https://api.github.com/users/clphillips/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/clphillips/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 2,
+  "created_at": "2014-05-28T20:42:54Z",
+  "updated_at": "2014-12-01T16:22:42Z",
+  "closed_at": null,
+  "pull_request": {
+    "url": "https://api.github.com/repos/erusev/parsedown/pulls/177",
+    "html_url": "https://github.com/erusev/parsedown/pull/177",
+    "diff_url": "https://github.com/erusev/parsedown/pull/177.diff",
+    "patch_url": "https://github.com/erusev/parsedown/pull/177.patch"
+  },
+  "body": "I've added new unit tests as well, for which this patch does not pass completely due to the expected unsafe output in the existing markdown output results. These tests should probably be ignored.\r\n\r\nAs the unit tests show, there's also an issue with plain email conversion due to the < and > around the email address. Still a work in progress, but I figured best commit what I have since others are working on the issue.",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/erusev/parsedown/issues/comments/44461840",
+    "html_url": "https://github.com/erusev/parsedown/pull/177#issuecomment-44461840",
+    "issue_url": "https://api.github.com/repos/erusev/parsedown/issues/177",
+    "id": 44461840,
+    "user": {
+      "login": "clphillips",
+      "id": 682986,
+      "avatar_url": "https://avatars.githubusercontent.com/u/682986?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/clphillips",
+      "html_url": "https://github.com/clphillips",
+      "followers_url": "https://api.github.com/users/clphillips/followers",
+      "following_url": "https://api.github.com/users/clphillips/following{/other_user}",
+      "gists_url": "https://api.github.com/users/clphillips/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/clphillips/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/clphillips/subscriptions",
+      "organizations_url": "https://api.github.com/users/clphillips/orgs",
+      "repos_url": "https://api.github.com/users/clphillips/repos",
+      "events_url": "https://api.github.com/users/clphillips/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/clphillips/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2014-05-28T20:43:51Z",
+    "updated_at": "2014-05-28T20:43:51Z",
+    "body": "Fixes #161."
+  },
+  {
+    "url": "https://api.github.com/repos/erusev/parsedown/issues/comments/65089727",
+    "html_url": "https://github.com/erusev/parsedown/pull/177#issuecomment-65089727",
+    "issue_url": "https://api.github.com/repos/erusev/parsedown/issues/177",
+    "id": 65089727,
+    "user": {
+      "login": "clphillips",
+      "id": 682986,
+      "avatar_url": "https://avatars.githubusercontent.com/u/682986?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/clphillips",
+      "html_url": "https://github.com/clphillips",
+      "followers_url": "https://api.github.com/users/clphillips/followers",
+      "following_url": "https://api.github.com/users/clphillips/following{/other_user}",
+      "gists_url": "https://api.github.com/users/clphillips/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/clphillips/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/clphillips/subscriptions",
+      "organizations_url": "https://api.github.com/users/clphillips/orgs",
+      "repos_url": "https://api.github.com/users/clphillips/repos",
+      "events_url": "https://api.github.com/users/clphillips/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/clphillips/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2014-12-01T16:22:42Z",
+    "updated_at": "2014-12-01T16:22:42Z",
+    "body": "Must have been by mistake. Not sure why I would have intentionally added that .gitignore."
+  }
+]

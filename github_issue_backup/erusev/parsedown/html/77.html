@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html class='' lang='en'>
+<head prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#'>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8'>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta http-equiv='Content-Language' content='en'>
+<title>erusev/parsedown/77</title>
+<link href='github-c486157afcc5f58155a921bc675afb08733fbaa8dcf39ac2104d3.css' media='all' rel='stylesheet'>
+<link href='github2-da2e842cc3f0aaf33b727d0ef034243c12ab008fd09b24868b97.css' media='all' rel='stylesheet'>
+<meta http-equiv='x-pjax-version' content='4426702614c8182f33d1780ad1169662'>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shAutoloader.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAppleScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAS3.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushBash.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushColdFusion.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCpp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCSharp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCss.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDelphi.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDiff.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushErlang.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushGroovy.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJava.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJavaFX.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/syntaxhighlighter/scripts/shBrushJScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPerl.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPhp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPlain.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPowerShell.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPython.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushRuby.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSass.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushScala.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSql.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushVb.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushXml.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shLegacy.js'></script>
+	<link type='text/css' rel='stylesheet' href='syntaxhighlighter/styles/shCoreDefault.css'/>
+	<script type='text/javascript'>SyntaxHighlighter.all();</script>
+</head>
+<body class='logged_in  env-production windows vis-public'>
+<h1 align='center'><a href='https://github.com/erusev/parsedown/pull/77' target='_blank'>Add support for GFM style table support</h1><hr/><div id="#issue-26617377" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/scottchiefbaker" class="author">scottchiefbaker</a>
+    </strong>
+    commented on 
+    <a href="#issue-26617377" class="timestamp">
+      <time>2014-01-30 17:46:57</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Add support for GFM tables and also a bunch of tests.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-33715632" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/scottchiefbaker" class="author">scottchiefbaker</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-33715632" class="timestamp">
+      <time>2014-01-30 18:13:11</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>All the PHPUnit tests are green with 75d8383.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-33969978" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/scottchiefbaker" class="author">scottchiefbaker</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-33969978" class="timestamp">
+      <time>2014-02-03 16:14:08</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Can someone review this, I'd really like to see it land. It's pretty self-contained code. Should be easy to parse.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-33979733" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/kminchev" class="author">kminchev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-33979733" class="timestamp">
+      <time>2014-02-03 17:43:58</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Looking forward for table support in Parsedown. That will help me A LOT in the website I'm making right now.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-33996870" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-33996870" class="timestamp">
+      <time>2014-02-03 20:34:59</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/scottchiefbaker" target="_blank">@scottchiefbaker</a></strong> </p>
+<p>I understand that you have put a significant effort into this so it is quite uncomfortable for me to say it but I'll have to reject. Due to the nature of the project, it would be much easier for me to implement this rather than adapt an unfamiliar implementation. In order to prevent other people from putting effort into implementing features, I've update the contributing guideline to advice against it.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-34001372" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/scottchiefbaker" class="author">scottchiefbaker</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-34001372" class="timestamp">
+      <time>2014-02-03 21:21:15</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>You really should reconsider. 95% of the work is already done, and it's very easily understandable. It's two sections: capturing the text, and outputting the formatted html. You should be able to figure out what it does in 15 minutes.</p>
+<p>I'm sure it's <strong>not</strong> in your coding style, but you could easily land the code, and change the formatting after the fact to match your style.</p>
+<p>Again it's very simple. You'll save yourself a lot of time of learning the spec and doing the guess work if you use what I wrote as a starting point.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-34054493" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/kminchev" class="author">kminchev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-34054493" class="timestamp">
+      <time>2014-02-04 12:27:16</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/scottchiefbaker" target="_blank">@scottchiefbaker</a></strong>, if you type the vertical bar inside `` the bar isn't parsed while it is in GFM - ` | `.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-34056005" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-34056005" class="timestamp">
+      <time>2014-02-04 12:50:11</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/scottchiefbaker" target="_blank">@scottchiefbaker</a></strong> I think <strong><a href="https://github.com/kminchev" target="_blank">@kminchev</a></strong> is correct. You've added tests which verify the parsing of tables works correctly. But you should also add tests which verify this implementation is not breaking other features. For example something which looks like a table with pipe charactes, but is not according to the GFM spec, should be tested that it's not parsed as a table. This is called negative testing, you have only performed positive testing here.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-34056227" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-34056227" class="timestamp">
+      <time>2014-02-04 12:54:02</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/kminchev" target="_blank">@kminchev</a></strong> </p>
+<blockquote>
+<p>Looking forward for table support in Parsedown. That will help me A LOT in the website I'm making right now.</p>
+</blockquote>
+<p>I've been working on the feature. It should be available in 1.0.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-34060727" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/kminchev" class="author">kminchev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-34060727" class="timestamp">
+      <time>2014-02-04 13:54:00</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/erusev" target="_blank">@erusev</a></strong>, sounds great! Can you give a sneak preview of what is going be added in 1.0? :)</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-34072772" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/scottchiefbaker" class="author">scottchiefbaker</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-34072772" class="timestamp">
+      <time>2014-02-04 15:48:06</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/hkdobrev" target="_blank">@hkdobrev</a></strong> it doesn't make sense to write any tests on this since <strong><a href="https://github.com/erusev" target="_blank">@erusev</a></strong> closed the pull request. Also <strong><a href="https://github.com/erusev" target="_blank">@erusev</a></strong> said not to write any more tests. Not really feeling motivated at this point.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-34123212" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-34123212" class="timestamp">
+      <time>2014-02-05 00:00:02</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/kminchev" target="_blank">@kminchev</a></strong> </p>
+<blockquote>
+<p>Can you give a sneak preview of what is going be added in 1.0?</p>
+</blockquote>
+<p>I guess you could check out the relevant milestone: <a href="https://github.com/erusev/parsedown/issues?milestone=1">https://github.com/erusev/parsedown/issues?milestone=1</a></p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-34125307" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/wkpark" class="author">wkpark</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-34125307" class="timestamp">
+      <time>2014-02-05 00:31:00</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>this fix render the following as tables but the github builtin parser does not</p>
+<pre><code>hello | world
+or
+| hello | world |</code></pre>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-34125496" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-34125496" class="timestamp">
+      <time>2014-02-05 00:33:57</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/wkpark" target="_blank">@wkpark</a></strong> Yes, that's right. According to the way I understand the GFM spec, this is not a table, because it does not have a line with <code>-</code> separating the head from the body.</p>
+<blockquote>
+<p>You can create tables by assembling a list of words and dividing them with hyphens <code>-</code> (for the first row), and then separating each column with a pipe <code>|</code>.</p>
+</blockquote>
+  </div>
+  </div>
+  </div>
+  <br/>
+</body></html>

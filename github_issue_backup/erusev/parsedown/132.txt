@@ -1,0 +1,95 @@
+{
+  "url": "https://api.github.com/repos/erusev/parsedown/issues/132",
+  "labels_url": "https://api.github.com/repos/erusev/parsedown/issues/132/labels{/name}",
+  "comments_url": "https://api.github.com/repos/erusev/parsedown/issues/132/comments",
+  "events_url": "https://api.github.com/repos/erusev/parsedown/issues/132/events",
+  "html_url": "https://github.com/erusev/parsedown/issues/132",
+  "id": 28704480,
+  "number": 132,
+  "title": "elements within multiple lines",
+  "user": {
+    "login": "wkpark",
+    "id": 232347,
+    "avatar_url": "https://avatars.githubusercontent.com/u/232347?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/wkpark",
+    "html_url": "https://github.com/wkpark",
+    "followers_url": "https://api.github.com/users/wkpark/followers",
+    "following_url": "https://api.github.com/users/wkpark/following{/other_user}",
+    "gists_url": "https://api.github.com/users/wkpark/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/wkpark/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/wkpark/subscriptions",
+    "organizations_url": "https://api.github.com/users/wkpark/orgs",
+    "repos_url": "https://api.github.com/users/wkpark/repos",
+    "events_url": "https://api.github.com/users/wkpark/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/wkpark/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "url": "https://api.github.com/repos/erusev/parsedown/labels/suggestion",
+      "name": "suggestion",
+      "color": "bfd4f2"
+    }
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2014-03-04T13:24:41Z",
+  "updated_at": "2015-01-15T20:08:55Z",
+  "closed_at": "2015-01-15T20:08:55Z",
+  "body": "these examples are not specifically described in the Markdown spec. but I guess it is not quite difficult to make parsedown compatible with other dialects.\r\n\r\n`code` elements within multiple lines\r\n\r\nhttp://johnmacfarlane.net/babelmark2/?text=normal+text+%60inline+code%0Acode%60+normal+text%0A%0Anormal+text+%60inline+code%0A++++code%60+normal+text%0A\r\n\r\n~~~\r\nnormal text `inline code\r\ncode` normal text\r\n\r\nnormal text `inline code\r\n    code` normal text\r\n~~~\r\n\r\n`emph` elements within multiple lines\r\n\r\nhttp://johnmacfarlane.net/babelmark2/?text=normal+text+*inline+code%0Acode*+normal+text%0A%0Anormal+text+*inline+code%0A++++code*+normal+text%0A\r\n\r\n~~~\r\nnormal text *inline code\r\ncode* normal text\r\n\r\nnormal text *inline code\r\n    code* normal text\r\n~~~\r\n\r\nlabels with a break within multiple lines (see also #104)\r\n\r\nhttp://johnmacfarlane.net/babelmark2/?text=normal+text+%5Bline%0Abreak%5D+normal+text%0A%0Anormal+text+%5Bline%0A++++break%5D+normal+text%0A%0A%5Bline+break%5D%3A+%2Furl\r\n~~~\r\nnormal text [line\r\nbreak] normal text\r\n\r\nnormal text [line\r\n    break] normal text\r\n\r\n    [line break]: /url \"4-spaces prepended to show this label to workaround GFM\"\r\n~~~\r\n\r\nhtml inline elements within multilines\r\n\r\nhttp://johnmacfarlane.net/babelmark2/?text=normal+text+%3Cspan%0Aclass%3D%22foobar%22%3Eline%3C%2Fspan%3E+normal+text%0A%0Anormal+text+%3Cspan%0A++++class%3D%22foobar%22%3Eline%3C%2Fspan%3E+normal+text%0A\r\n~~~\r\nnormal text <span\r\nclass=\"foobar\">line</span> normal text\r\n\r\nnormal text <span\r\n    class=\"foobar\">line</span> normal text\r\n~~~",
+  "closed_by": {
+    "login": "erusev",
+    "id": 184170,
+    "avatar_url": "https://avatars.githubusercontent.com/u/184170?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/erusev",
+    "html_url": "https://github.com/erusev",
+    "followers_url": "https://api.github.com/users/erusev/followers",
+    "following_url": "https://api.github.com/users/erusev/following{/other_user}",
+    "gists_url": "https://api.github.com/users/erusev/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/erusev/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/erusev/subscriptions",
+    "organizations_url": "https://api.github.com/users/erusev/orgs",
+    "repos_url": "https://api.github.com/users/erusev/repos",
+    "events_url": "https://api.github.com/users/erusev/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/erusev/received_events",
+    "type": "User",
+    "site_admin": false
+  }
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/erusev/parsedown/issues/comments/70152591",
+    "html_url": "https://github.com/erusev/parsedown/issues/132#issuecomment-70152591",
+    "issue_url": "https://api.github.com/repos/erusev/parsedown/issues/132",
+    "id": 70152591,
+    "user": {
+      "login": "erusev",
+      "id": 184170,
+      "avatar_url": "https://avatars.githubusercontent.com/u/184170?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/erusev",
+      "html_url": "https://github.com/erusev",
+      "followers_url": "https://api.github.com/users/erusev/followers",
+      "following_url": "https://api.github.com/users/erusev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/erusev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/erusev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/erusev/subscriptions",
+      "organizations_url": "https://api.github.com/users/erusev/orgs",
+      "repos_url": "https://api.github.com/users/erusev/repos",
+      "events_url": "https://api.github.com/users/erusev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/erusev/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2015-01-15T20:08:55Z",
+    "updated_at": "2015-01-15T20:08:55Z",
+    "body": "I believe that this is resolved in the latest release."
+  }
+]

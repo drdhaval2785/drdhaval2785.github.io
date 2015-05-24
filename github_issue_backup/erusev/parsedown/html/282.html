@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html class='' lang='en'>
+<head prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#'>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8'>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta http-equiv='Content-Language' content='en'>
+<title>erusev/parsedown/282</title>
+<link href='github-c486157afcc5f58155a921bc675afb08733fbaa8dcf39ac2104d3.css' media='all' rel='stylesheet'>
+<link href='github2-da2e842cc3f0aaf33b727d0ef034243c12ab008fd09b24868b97.css' media='all' rel='stylesheet'>
+<meta http-equiv='x-pjax-version' content='4426702614c8182f33d1780ad1169662'>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shAutoloader.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAppleScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAS3.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushBash.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushColdFusion.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCpp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCSharp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCss.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDelphi.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDiff.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushErlang.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushGroovy.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJava.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJavaFX.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/syntaxhighlighter/scripts/shBrushJScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPerl.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPhp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPlain.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPowerShell.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPython.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushRuby.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSass.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushScala.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSql.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushVb.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushXml.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shLegacy.js'></script>
+	<link type='text/css' rel='stylesheet' href='syntaxhighlighter/styles/shCoreDefault.css'/>
+	<script type='text/javascript'>SyntaxHighlighter.all();</script>
+</head>
+<body class='logged_in  env-production windows vis-public'>
+<h1 align='center'><a href='https://github.com/erusev/parsedown/issues/282' target='_blank'>Weird I can't figure out.</h1><hr/><div id="#issue-56366597" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/gamejerksnet" class="author">gamejerksnet</a>
+    </strong>
+    commented on 
+    <a href="#issue-56366597" class="timestamp">
+      <time>2015-02-03 11:38:37</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Okay so I'm having an issue I can't figure out. Here is my extension:</p>
+<pre class="brush: php">&lt;?php namespace App\Extensions;
+
+use Parsedown;
+
+class ParsedownExtension extends Parsedown {
+
+    protected $InlineTypes, $inlineMarkerList;
+
+    public function __construct()
+    {
+        $this-&gt;InlineTypes['<strong><a href="https://github.com/" target="_blank">@</a></strong>']     =   ['UserTag'];
+        $this-&gt;inlineMarkerList     .=  '<strong><a href="https://github.com/" target="_blank">@</a></strong>';
+    }
+
+    public function inlineUserTag($Excerpt)
+    {
+        if (preg_match('/(?:<strong><a href="https://github.com/" target="_blank">@</a></strong>)([a-zA-Z0-9\_\-\.\=\<strong><a href="https://github.com/" target="_blank">@</a></strong>\[\]\{\}\(\)\&lt;\&gt;\,\\\*\&amp;\^\%\#\<strong><a href="https://github.com/" target="_blank">@</a></strong>\!\/\:\;\|\~\`])+\b/', $Excerpt['text'], $matches))
+        {
+            return array(
+                'extent' =&gt; strlen($matches[0]),
+                'element' =&gt; array(
+                    'name' =&gt; 'a',
+                    'text' =&gt; '<strong><a href="https://github.com/" target="_blank">@</a></strong>' . $matches[0],
+                    'attributes' =&gt; array(
+                        'href' =&gt; 'http://www.gamejerks.net/members/testing',
+                    ),
+                ),
+            );
+        }
+    }
+
+}</code></pre>
+<p>And here is the exact bit that I'm calling it:</p>
+<pre class="brush: php">$parsedown = new \App\Extensions\ParsedownExtension();
+$comment    =   $parsedown-&gt;text( $value );</code></pre>
+<p>I get error that no method <code>Parsedown::text()</code> exists, and when I die and dump <code>$parsedown</code> above and it only shows the child class <code>ParsedownExtension</code> and I have no clue why it isn't extending properly.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-72637113" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-72637113" class="timestamp">
+      <time>2015-02-03 11:44:04</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>The extension looks correct to me. Does it work outside of Laravel?</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-72674194" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/gamejerksnet" class="author">gamejerksnet</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-72674194" class="timestamp">
+      <time>2015-02-03 15:49:57</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>No I am currently pulling it purely as you see. I mean I haven't tried loading in a clean PHP file but I don't see Laravel causing any issues..</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-72743544" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-72743544" class="timestamp">
+      <time>2015-02-03 21:55:39</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Could you try it, please?</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-72762976" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/naNuke" class="author">naNuke</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-72762976" class="timestamp">
+      <time>2015-02-03 23:56:39</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Dont you overwrite all the types and markers with nulls by writing
+<code>protected $InlineTypes, $inlineMarkerList;</code>? </p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-72802422" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/gamejerksnet" class="author">gamejerksnet</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-72802422" class="timestamp">
+      <time>2015-02-04 07:21:57</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I'm not sure how I would go about pulling in autoloaded files outside of Laravel.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-73343843" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-73343843" class="timestamp">
+      <time>2015-02-07 01:46:15</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/gamejerksnet" target="_blank">@gamejerksnet</a></strong> </p>
+<p>I asked not because I wanted to suggest that you use the extension outside of Laravel, but rather because it'd help us find the cause of the problem.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+</body></html>

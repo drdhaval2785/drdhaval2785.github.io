@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html class='' lang='en'>
+<head prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#'>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8'>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta http-equiv='Content-Language' content='en'>
+<title>erusev/parsedown/138</title>
+<link href='github-c486157afcc5f58155a921bc675afb08733fbaa8dcf39ac2104d3.css' media='all' rel='stylesheet'>
+<link href='github2-da2e842cc3f0aaf33b727d0ef034243c12ab008fd09b24868b97.css' media='all' rel='stylesheet'>
+<meta http-equiv='x-pjax-version' content='4426702614c8182f33d1780ad1169662'>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shAutoloader.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAppleScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAS3.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushBash.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushColdFusion.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCpp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCSharp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCss.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDelphi.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDiff.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushErlang.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushGroovy.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJava.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJavaFX.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/syntaxhighlighter/scripts/shBrushJScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPerl.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPhp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPlain.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPowerShell.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPython.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushRuby.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSass.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushScala.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSql.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushVb.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushXml.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shLegacy.js'></script>
+	<link type='text/css' rel='stylesheet' href='syntaxhighlighter/styles/shCoreDefault.css'/>
+	<script type='text/javascript'>SyntaxHighlighter.all();</script>
+</head>
+<body class='logged_in  env-production windows vis-public'>
+<h1 align='center'><a href='https://github.com/erusev/parsedown/issues/138' target='_blank'>Table/List parsing problem</h1><hr/><div id="#issue-29517497" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/tekuram" class="author">tekuram</a>
+    </strong>
+    commented on 
+    <a href="#issue-29517497" class="timestamp">
+      <time>2014-03-16 14:22:01</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Hi!
+'''
+- One
+- Zwo
+- Three</p>
+<p>| T1 | T2 |
+| :------------------ | :---------------- |
+| in List above | me too |
+'''
+produces wrong output. You can check it on the testpage.</p>
+<p>This should be the output:</p>
+<ul>
+<li>One</li>
+<li>Zwo</li>
+<li>Three</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">T1</th>
+<th style="text-align: left;">T2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">in List above</td>
+<td style="text-align: left;">me too (no. I'm ONLY in the table)</td>
+</tr>
+</tbody>
+</table>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-37758622" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/kminchev" class="author">kminchev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-37758622" class="timestamp">
+      <time>2014-03-16 14:35:47</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Nope, those parse correctly from <a href="http://parsedown.org/demo">http://parsedown.org/demo</a></p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-37758780" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/tekuram" class="author">tekuram</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-37758780" class="timestamp">
+      <time>2014-03-16 14:41:48</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>It isn't. Please take a look at the list above. &quot;in List above&quot; and &quot;me too&quot; are parts of the list ................. 8-)</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-37759283" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/tekuram" class="author">tekuram</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-37759283" class="timestamp">
+      <time>2014-03-16 15:02:40</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>A bad workaround:</p>
+<p>- 1
+- 2
+- 3
+- 4</p>
+<p>| T1 | T2 | T3 |
+| ------------------ | ---------------- |  ------------|
+| 1 |+ |+++++ |
+| 2 |++++ |+++++ |
+| 3 |+++ |+++++ |
+| 4 |+++++ |+++++ |
+| | | |</p>
+<p>Produces one empty row at the end of the table and one more list-item in the last list of the page.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-37762714" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/kminchev" class="author">kminchev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-37762714" class="timestamp">
+      <time>2014-03-16 17:00:26</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Parses fine in the demo.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-37770278" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/tekuram" class="author">tekuram</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-37770278" class="timestamp">
+      <time>2014-03-16 20:48:55</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Hmmm ... Do you use another demo?
+<img src="https://f.cloud.github.com/assets/6966718/2431990/929d76de-ad4c-11e3-8ae3-1628ab4932ec.png" alt="parsedown-table" /></p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-37771443" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/kminchev" class="author">kminchev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-37771443" class="timestamp">
+      <time>2014-03-16 21:22:29</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Oh, now I got it, sorry for my comments earlier.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-37807432" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/tekuram" class="author">tekuram</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-37807432" class="timestamp">
+      <time>2014-03-17 11:54:09</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>No Problem :-)</p>
+<p>Nice to see that such things not only happen to me, makes you very sympathic .... ;-)</p>
+<p>Hope we find a real solution ;-) and not that poor workaround...</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-37908506" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/schucan" class="author">schucan</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-37908506" class="timestamp">
+      <time>2014-03-18 08:20:54</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Any idea how to fix this? Is anyone working on this yet?</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-37909475" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-37909475" class="timestamp">
+      <time>2014-03-18 08:36:27</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/schucan" target="_blank">@schucan</a></strong> </p>
+<p>I've been working on this.</p>
+<p>Should be fixed in the next version.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-37910366" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/schucan" class="author">schucan</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-37910366" class="timestamp">
+      <time>2014-03-18 08:50:02</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Cool - thanks! I just started investigating. I am assuming some variable is not unset? When can the &quot;next version&quot; be expected?</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-37910439" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-37910439" class="timestamp">
+      <time>2014-03-18 08:51:01</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/schucan" target="_blank">@schucan</a></strong> </p>
+<p>Later this week.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-37910614" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/schucan" class="author">schucan</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-37910614" class="timestamp">
+      <time>2014-03-18 08:53:38</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Thanks Emanuil!</p>
+<p>On Tue, Mar 18, 2014 at 9:51 AM, Emanuil Rusev <a href="mailto:notifications<strong><a href="https://github.com/github" target="_blank">@github</a></strong>.com">notifications<strong><a href="https://github.com/github" target="_blank">@github</a></strong>.com</a>wrote:</p>
+<blockquote>
+<p><strong><a href="https://github.com/schucan" target="_blank">@schucan</a></strong> <a href="https://github.com/schucan">https://github.com/schucan</a></p>
+<p>Later this week.</p>
+<p>—
+Reply to this email directly or view it on GitHub<a href="https://github.com/erusev/parsedown/issues/138#issuecomment-37910439">https://github.com/erusev/parsedown/issues/138#issuecomment-37910439</a>
+.</p>
+</blockquote>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-37910655" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/tekuram" class="author">tekuram</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-37910655" class="timestamp">
+      <time>2014-03-18 08:54:12</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>WOW! Seems to be a high speed support! :-) Great thanks for that!</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-38788349" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/schucan" class="author">schucan</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-38788349" class="timestamp">
+      <time>2014-03-27 10:40:11</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/erusev" target="_blank">@erusev</a></strong> I am really in trouble. I had started using parsedown in October 2013 and was very happy with it. I created a lot of content with it. I recently installed the latest version, and there were multiple problems: this list issue, the HTML entity issue (markdown not formatted within div), and HTML comments that were previously directly left as HTML comments.</p>
+<p>I don't know which ones of those issues are compliant with which &quot;standard&quot;, but the fact is that they have all been changed between the october 2013 and the current version.</p>
+<p>Also, I am waiting for the version you announced for last week - when is it coming? I hope it fixes all these issues.</p>
+<p>For the time being, I reverted back to the October 2013 version. </p>
+<p>Any clarification or further info is greatly appreciated - as is your work!!! I really prefer your converter to all others I have encountered. But I think your upbeat promotion (&quot;Better Markdown parser in PHP.&quot;) deserves some challenging... ;-)</p>
+<p>Sorry I write this into this issue - I don't see how else I could contact you.</p>
+<p>Thanks, and cheers,
+Luzi.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-38792995" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-38792995" class="timestamp">
+      <time>2014-03-27 11:42:15</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/schucan" target="_blank">@schucan</a></strong> From the <a href="http://semver.org/">Semantic Versioning Specification (SemVer)</a>:</p>
+<blockquote>
+<p>Major version zero (0.y.z) is for initial development. Anything may change at any time. The public API should not be considered stable.</p>
+</blockquote>
+<p>You should check for yourself whether parsedown is in a stable enough version for you. The API and the parsing may change drastically before reaching a 1.0 release.</p>
+<p>However <strong><a href="https://github.com/erusev" target="_blank">@erusev</a></strong> has provided correct minor (x.<strong>X</strong>.x) version bumps when anything major was added/changed so you are free to use any version which suits your needs and you could use it forever.</p>
+<p>I hope your issues are resolved in the future. Cheers!</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-38793939" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/schucan" class="author">schucan</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-38793939" class="timestamp">
+      <time>2014-03-27 11:54:46</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/hkdobrev" target="_blank">@hkdobrev</a></strong> Thanks Haralan for the pointer to the versioning and the fact that we're still in zero!</p>
+<p>I am very new to github and wasn't actively aware of these things. Is there a way to be specifically informed on new versions? I am &quot;Watching&quot; this repository - but is there any other notification setting? Will &quot;Watching&quot; inform me about new versions?</p>
+<p>I look forward to version 1, then! ;-)</p>
+<p>For the time being, I use <a href="https://github.com/erusev/parsedown/issues/133#issuecomment-38793358">this dirty wrapper</a>.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-38795226" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-38795226" class="timestamp">
+      <time>2014-03-27 12:11:59</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/schucan" target="_blank">@schucan</a></strong> You will be notified via a notification on github.com for new GitHub releases. However you will not be notified for git tags which are not related to a GitHub release.</p>
+<p>You could get free email notifications from <a href="https://www.versioneye.com/">VersionEye</a> if you subscribe to this repository on their website.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-38801402" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/schucan" class="author">schucan</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-38801402" class="timestamp">
+      <time>2014-03-27 13:24:30</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/hkdobrev" target="_blank">@hkdobrev</a></strong> Thanks again Haralan - VersionEye looks exactly like what I was looking for!</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+</body></html>

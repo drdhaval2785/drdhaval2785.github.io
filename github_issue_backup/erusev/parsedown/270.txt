@@ -1,0 +1,105 @@
+{
+  "url": "https://api.github.com/repos/erusev/parsedown/issues/270",
+  "labels_url": "https://api.github.com/repos/erusev/parsedown/issues/270/labels{/name}",
+  "comments_url": "https://api.github.com/repos/erusev/parsedown/issues/270/comments",
+  "events_url": "https://api.github.com/repos/erusev/parsedown/issues/270/events",
+  "html_url": "https://github.com/erusev/parsedown/issues/270",
+  "id": 54824756,
+  "number": 270,
+  "title": "Nested ordered lists do not support more than 2 levels of indentation",
+  "user": {
+    "login": "zipang",
+    "id": 658082,
+    "avatar_url": "https://avatars.githubusercontent.com/u/658082?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/zipang",
+    "html_url": "https://github.com/zipang",
+    "followers_url": "https://api.github.com/users/zipang/followers",
+    "following_url": "https://api.github.com/users/zipang/following{/other_user}",
+    "gists_url": "https://api.github.com/users/zipang/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/zipang/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/zipang/subscriptions",
+    "organizations_url": "https://api.github.com/users/zipang/orgs",
+    "repos_url": "https://api.github.com/users/zipang/repos",
+    "events_url": "https://api.github.com/users/zipang/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/zipang/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "url": "https://api.github.com/repos/erusev/parsedown/labels/suggestion",
+      "name": "suggestion",
+      "color": "bfd4f2"
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 2,
+  "created_at": "2015-01-19T23:22:53Z",
+  "updated_at": "2015-01-19T23:48:00Z",
+  "closed_at": null,
+  "body": "Try these nested lists in the parser :\r\n\r\n1. Type some Markdown text\r\n  1. Insert some nested ordered list\r\n    1. We should be 1.1.1 (level 3) here\r\n    2. Why oh my?\r\n  2. One level back (1.2) here\r\n    1. We should be 1.2.1 (level 3) here\r\n2. Hit *Parse*\r\n3. See the flat lists that result\r\n\r\nApparently, github isn't using `parsedown` because the indentation it produces in this issue is correct...? :)",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/erusev/parsedown/issues/comments/70580098",
+    "html_url": "https://github.com/erusev/parsedown/issues/270#issuecomment-70580098",
+    "issue_url": "https://api.github.com/repos/erusev/parsedown/issues/270",
+    "id": 70580098,
+    "user": {
+      "login": "erusev",
+      "id": 184170,
+      "avatar_url": "https://avatars.githubusercontent.com/u/184170?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/erusev",
+      "html_url": "https://github.com/erusev",
+      "followers_url": "https://api.github.com/users/erusev/followers",
+      "following_url": "https://api.github.com/users/erusev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/erusev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/erusev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/erusev/subscriptions",
+      "organizations_url": "https://api.github.com/users/erusev/orgs",
+      "repos_url": "https://api.github.com/users/erusev/repos",
+      "events_url": "https://api.github.com/users/erusev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/erusev/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2015-01-19T23:36:23Z",
+    "updated_at": "2015-01-19T23:43:58Z",
+    "body": "It does support more levels, but it expects more indentation. It probably shouldn't. I'll see what I can do."
+  },
+  {
+    "url": "https://api.github.com/repos/erusev/parsedown/issues/comments/70580304",
+    "html_url": "https://github.com/erusev/parsedown/issues/270#issuecomment-70580304",
+    "issue_url": "https://api.github.com/repos/erusev/parsedown/issues/270",
+    "id": 70580304,
+    "user": {
+      "login": "zipang",
+      "id": 658082,
+      "avatar_url": "https://avatars.githubusercontent.com/u/658082?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/zipang",
+      "html_url": "https://github.com/zipang",
+      "followers_url": "https://api.github.com/users/zipang/followers",
+      "following_url": "https://api.github.com/users/zipang/following{/other_user}",
+      "gists_url": "https://api.github.com/users/zipang/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/zipang/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/zipang/subscriptions",
+      "organizations_url": "https://api.github.com/users/zipang/orgs",
+      "repos_url": "https://api.github.com/users/zipang/repos",
+      "events_url": "https://api.github.com/users/zipang/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/zipang/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2015-01-19T23:38:24Z",
+    "updated_at": "2015-01-19T23:38:24Z",
+    "body": "Yes ! That's what i noticed shortly after !\r\nIf i try to indent using 4 spaces, it produce the desired indentation !"
+  }
+]

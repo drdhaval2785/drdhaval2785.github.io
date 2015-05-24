@@ -1,0 +1,68 @@
+{
+  "url": "https://api.github.com/repos/erusev/parsedown/issues/247",
+  "labels_url": "https://api.github.com/repos/erusev/parsedown/issues/247/labels{/name}",
+  "comments_url": "https://api.github.com/repos/erusev/parsedown/issues/247/comments",
+  "events_url": "https://api.github.com/repos/erusev/parsedown/issues/247/events",
+  "html_url": "https://github.com/erusev/parsedown/issues/247",
+  "id": 50326207,
+  "number": 247,
+  "title": "failed parsing of div",
+  "user": {
+    "login": "nwtn",
+    "id": 786799,
+    "avatar_url": "https://avatars.githubusercontent.com/u/786799?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/nwtn",
+    "html_url": "https://github.com/nwtn",
+    "followers_url": "https://api.github.com/users/nwtn/followers",
+    "following_url": "https://api.github.com/users/nwtn/following{/other_user}",
+    "gists_url": "https://api.github.com/users/nwtn/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/nwtn/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/nwtn/subscriptions",
+    "organizations_url": "https://api.github.com/users/nwtn/orgs",
+    "repos_url": "https://api.github.com/users/nwtn/repos",
+    "events_url": "https://api.github.com/users/nwtn/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/nwtn/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "url": "https://api.github.com/repos/erusev/parsedown/labels/issue",
+      "name": "issue",
+      "color": "f7c6c7"
+    }
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2014-11-27T22:17:26Z",
+  "updated_at": "2014-11-29T02:29:28Z",
+  "closed_at": "2014-11-29T02:29:28Z",
+  "body": "I have a `div` that I don't want parsed by Parsedown, but the indentation is getting picked up and I'm ending up with `pre`/`code` blocks. The `div` is (correctly) ignored by Markdown PHP 1.3, but (incorrectly) not ignored by Parsedown.\r\n\r\nHere's the input:\r\n\r\n````\r\nFor questions about this report, please contact:\r\n\r\n<div class=\"h-card hcard vcard\" itemscope itemtype=\"http://schema.org/Person\" vocab=\"http://schema.org/\" typeof=\"Person\">\r\n\t<div>\r\n\t\t<span class=\"p-name fn\" itemprop=\"name\" property=\"name\">\r\n\t\t\t<span class=\"p-given-name given-name\" itemprop=\"givenName\" property=\"givenName\">xxx</span>\r\n\t\t\t<span class=\"p-family-name family-name\" itemprop=\"familyName\" property=\"familyName\">xxx</span>,\r\n\t\t</span>\r\n\t\t<span class=\"p-job-title title\" itemprop=\"jobTitle\" property=\"jobTitle\">xxx</span>\r\n\t</div>\r\n\t<div class=\"p-org org\" itemprop=\"affiliation\" property=\"affiliation\" itemscope itemtype=\"http://schema.org/Organization\" vocab=\"http://schema.org/\" typeof=\"Organization\">\r\n\t\t<span class=\"p-organization-unit organization-unit\" itemprop=\"department\" property=\"department\">xxx</span>,\r\n\t\t<span class=\"p-organization-name organization-name\" itemprop=\"legalName\" property=\"legalName\">xxx</span>\r\n\t</div>\r\n\t<div>\r\n\t\tEmail: <a class=\"u-email email\" itemprop=\"email\" property=\"email\" href=\"mailto:xxx\">xxx</a>\r\n\t</div>\r\n\t<div class=\"tel\">\r\n\t\tPhone: <a class=\"p-tel value\" itemprop=\"telephone\" property=\"telephone\" href=\"tel:xxx\">xxx</a>\r\n\t</div>\r\n</div>\r\n````\r\n\r\nThe output from Markdown PHP 1.3 (via <http://parsedown.org/demo>):\r\n\r\n````\r\n<p>For questions about this report, please contact:</p>\r\n\r\n<div class=\"h-card hcard vcard\" itemscope itemtype=\"http://schema.org/Person\" vocab=\"http://schema.org/\" typeof=\"Person\">\r\n    <div>\r\n        <span class=\"p-name fn\" itemprop=\"name\" property=\"name\">\r\n            <span class=\"p-given-name given-name\" itemprop=\"givenName\" property=\"givenName\">xxx</span>\r\n            <span class=\"p-family-name family-name\" itemprop=\"familyName\" property=\"familyName\">xxx</span>,\r\n        </span>\r\n        <span class=\"p-job-title title\" itemprop=\"jobTitle\" property=\"jobTitle\">xxx</span>\r\n    </div>\r\n    <div class=\"p-org org\" itemprop=\"affiliation\" property=\"affiliation\" itemscope itemtype=\"http://schema.org/Organization\" vocab=\"http://schema.org/\" typeof=\"Organization\">\r\n        <span class=\"p-organization-unit organization-unit\" itemprop=\"department\" property=\"department\">xxx</span>,\r\n        <span class=\"p-organization-name organization-name\" itemprop=\"legalName\" property=\"legalName\">xxx</span>\r\n    </div>\r\n    <div>\r\n        Email: <a class=\"u-email email\" itemprop=\"email\" property=\"email\" href=\"mailto:xxx\">xxx</a>\r\n    </div>\r\n    <div class=\"tel\">\r\n        Phone: <a class=\"p-tel value\" itemprop=\"telephone\" property=\"telephone\" href=\"tel:xxx\">xxx</a>\r\n    </div>\r\n</div>\r\n````\r\n\r\n…and the output from Parsedown (again, via <http://parsedown.org/demo>):\r\n\r\n````\r\n<p>For questions about this report, please contact:</p>\r\n<div class=\"h-card hcard vcard\" itemscope itemtype=\"http://schema.org/Person\" vocab=\"http://schema.org/\" typeof=\"Person\">\r\n    <div>\r\n        <span class=\"p-name fn\" itemprop=\"name\" property=\"name\">\r\n            <span class=\"p-given-name given-name\" itemprop=\"givenName\" property=\"givenName\">xxx</span>\r\n            <span class=\"p-family-name family-name\" itemprop=\"familyName\" property=\"familyName\">xxx</span>,\r\n        </span>\r\n        <span class=\"p-job-title title\" itemprop=\"jobTitle\" property=\"jobTitle\">xxx</span>\r\n    </div>\r\n    <div class=\"p-org org\" itemprop=\"affiliation\" property=\"affiliation\" itemscope itemtype=\"http://schema.org/Organization\" vocab=\"http://schema.org/\" typeof=\"Organization\">\r\n        <span class=\"p-organization-unit organization-unit\" itemprop=\"department\" property=\"department\">xxx</span>,\r\n        <span class=\"p-organization-name organization-name\" itemprop=\"legalName\" property=\"legalName\">xxx</span>\r\n    </div>\r\n<pre><code>&lt;div&gt;\r\n    Email: &lt;a class=\"u-email email\" itemprop=\"email\" property=\"email\" href=\"mailto:xxx\"&gt;xxx&lt;/a&gt;\r\n&lt;/div&gt;\r\n&lt;div class=\"tel\"&gt;\r\n    Phone: &lt;a class=\"p-tel value\" itemprop=\"telephone\" property=\"telephone\" href=\"tel:xxx\"&gt;xxx&lt;/a&gt;\r\n&lt;/div&gt;</code></pre>\r\n<p></div></p>\r\n````",
+  "closed_by": {
+    "login": "erusev",
+    "id": 184170,
+    "avatar_url": "https://avatars.githubusercontent.com/u/184170?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/erusev",
+    "html_url": "https://github.com/erusev",
+    "followers_url": "https://api.github.com/users/erusev/followers",
+    "following_url": "https://api.github.com/users/erusev/following{/other_user}",
+    "gists_url": "https://api.github.com/users/erusev/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/erusev/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/erusev/subscriptions",
+    "organizations_url": "https://api.github.com/users/erusev/orgs",
+    "repos_url": "https://api.github.com/users/erusev/repos",
+    "events_url": "https://api.github.com/users/erusev/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/erusev/received_events",
+    "type": "User",
+    "site_admin": false
+  }
+}
+BODY STARTS FROM HERE
+[
+
+]

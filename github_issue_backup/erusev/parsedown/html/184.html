@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html class='' lang='en'>
+<head prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#'>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8'>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta http-equiv='Content-Language' content='en'>
+<title>erusev/parsedown/184</title>
+<link href='github-c486157afcc5f58155a921bc675afb08733fbaa8dcf39ac2104d3.css' media='all' rel='stylesheet'>
+<link href='github2-da2e842cc3f0aaf33b727d0ef034243c12ab008fd09b24868b97.css' media='all' rel='stylesheet'>
+<meta http-equiv='x-pjax-version' content='4426702614c8182f33d1780ad1169662'>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shAutoloader.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAppleScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAS3.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushBash.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushColdFusion.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCpp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCSharp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCss.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDelphi.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDiff.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushErlang.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushGroovy.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJava.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJavaFX.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/syntaxhighlighter/scripts/shBrushJScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPerl.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPhp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPlain.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPowerShell.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPython.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushRuby.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSass.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushScala.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSql.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushVb.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushXml.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shLegacy.js'></script>
+	<link type='text/css' rel='stylesheet' href='syntaxhighlighter/styles/shCoreDefault.css'/>
+	<script type='text/javascript'>SyntaxHighlighter.all();</script>
+</head>
+<body class='logged_in  env-production windows vis-public'>
+<h1 align='center'><a href='https://github.com/erusev/parsedown/issues/184' target='_blank'>Pipe character can not be used within tables</h1><hr/><div id="#issue-35034493" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/Seldaek" class="author">Seldaek</a>
+    </strong>
+    commented on 
+    <a href="#issue-35034493" class="timestamp">
+      <time>2014-06-05 07:52:55</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Source:</p>
+<pre><code>Foo | Bar | State
+------ | ------ | -----
+`Code | Pipe` | Broken | Blank
+`Escaped Code \| Pipe` | Broken | Blank
+Escaped \| Pipe | Broken | Blank</code></pre>
+<p>Current Output (github markdown is also affected so this works as a demo of the problem):</p>
+<table>
+<thead>
+<tr>
+<th>Foo</th>
+<th>Bar</th>
+<th>State</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Code | Pipe</code></td>
+<td>Broken</td>
+<td>Blank</td>
+</tr>
+<tr>
+<td><code>Escaped Code \| Pipe</code></td>
+<td>Broken</td>
+<td>Blank</td>
+</tr>
+<tr>
+<td>Escaped | Pipe</td>
+<td>Broken</td>
+<td>Blank</td>
+</tr>
+</tbody>
+</table>
+<p>Expected:</p>
+<table>
+<thead>
+<tr>
+<th>Foo</th>
+<th>Bar</th>
+<th>State</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Code &#124; Pipe</code></td>
+<td>Broken</td>
+<td>Blank</td>
+</tr>
+<tr>
+<td><code>Escaped Code \&#124; Pipe</code></td>
+<td>Broken</td>
+<td>Blank</td>
+</tr>
+<tr>
+<td>Escaped &#124; Pipe</td>
+<td>Broken</td>
+<td>Blank</td>
+</tr>
+</tbody>
+</table>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-45269764" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/JCMais" class="author">JCMais</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-45269764" class="timestamp">
+      <time>2014-06-05 20:26:00</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Would be nice to report to the github team too: <a href="https://github.com/contact">https://github.com/contact</a></p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-45323288" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-45323288" class="timestamp">
+      <time>2014-06-06 10:31:36</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/JCMais" target="_blank">@JCMais</a></strong> You should actually open an issue on the library they are using. It used to be redcarpet, I don't know if they've changed it.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-45324412" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/cebe" class="author">cebe</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-45324412" class="timestamp">
+      <time>2014-06-06 10:49:07</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>already done as far as I see: <a href="https://github.com/composer/getcomposer.org/issues/68#issuecomment-45194356">https://github.com/composer/getcomposer.org/issues/68#issuecomment-45194356</a></p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-45409716" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/Seldaek" class="author">Seldaek</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-45409716" class="timestamp">
+      <time>2014-06-07 13:09:09</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I assumed that redcarpet is just wrapping hoedown since it says it uses sundown and sundown says it's deprecated and replaced by hoedown. I'll send a ping to github anyway to make sure this is on their radar.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-70143393" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-70143393" class="timestamp">
+      <time>2015-01-15 19:14:24</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I believe that the latest release resolves this. You can test it in <a href="http://parsedown.org/demo">the demo</a>.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-70144454" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/cebe" class="author">cebe</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-70144454" class="timestamp">
+      <time>2015-01-15 19:20:53</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Looks great, a little thing remaining:</p>
+<pre><code>`Escaped Code \| Pipe`</code></pre>
+<p>Parse result is <code>Escaped Code | Pipe</code> inside of tables but <code>Escaped Code \| Pipe</code> out side.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-70145624" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-70145624" class="timestamp">
+      <time>2015-01-15 19:27:46</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/cebe" target="_blank">@cebe</a></strong> </p>
+<p>Right. I'll see what I can do about that.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-70146827" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-70146827" class="timestamp">
+      <time>2015-01-15 19:34:36</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Thanks to the idea of <strong><a href="https://github.com/cebe" target="_blank">@cebe</a></strong> this seems to be completely resolved now.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+</body></html>

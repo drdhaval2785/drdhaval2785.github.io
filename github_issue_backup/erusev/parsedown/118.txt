@@ -1,0 +1,123 @@
+{
+  "url": "https://api.github.com/repos/erusev/parsedown/issues/118",
+  "labels_url": "https://api.github.com/repos/erusev/parsedown/issues/118/labels{/name}",
+  "comments_url": "https://api.github.com/repos/erusev/parsedown/issues/118/comments",
+  "events_url": "https://api.github.com/repos/erusev/parsedown/issues/118/events",
+  "html_url": "https://github.com/erusev/parsedown/issues/118",
+  "id": 28113690,
+  "number": 118,
+  "title": "Disable tags",
+  "user": {
+    "login": "Kiri-rin",
+    "id": 1738743,
+    "avatar_url": "https://avatars.githubusercontent.com/u/1738743?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Kiri-rin",
+    "html_url": "https://github.com/Kiri-rin",
+    "followers_url": "https://api.github.com/users/Kiri-rin/followers",
+    "following_url": "https://api.github.com/users/Kiri-rin/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Kiri-rin/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Kiri-rin/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Kiri-rin/subscriptions",
+    "organizations_url": "https://api.github.com/users/Kiri-rin/orgs",
+    "repos_url": "https://api.github.com/users/Kiri-rin/repos",
+    "events_url": "https://api.github.com/users/Kiri-rin/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Kiri-rin/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "url": "https://api.github.com/repos/erusev/parsedown/labels/suggestion",
+      "name": "suggestion",
+      "color": "bfd4f2"
+    }
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 2,
+  "created_at": "2014-02-23T06:50:07Z",
+  "updated_at": "2015-01-15T11:58:30Z",
+  "closed_at": "2015-01-15T11:57:53Z",
+  "body": "I do not want users to be able to post images. Can I disable the desired tag in the options?",
+  "closed_by": {
+    "login": "erusev",
+    "id": 184170,
+    "avatar_url": "https://avatars.githubusercontent.com/u/184170?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/erusev",
+    "html_url": "https://github.com/erusev",
+    "followers_url": "https://api.github.com/users/erusev/followers",
+    "following_url": "https://api.github.com/users/erusev/following{/other_user}",
+    "gists_url": "https://api.github.com/users/erusev/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/erusev/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/erusev/subscriptions",
+    "organizations_url": "https://api.github.com/users/erusev/orgs",
+    "repos_url": "https://api.github.com/users/erusev/repos",
+    "events_url": "https://api.github.com/users/erusev/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/erusev/received_events",
+    "type": "User",
+    "site_admin": false
+  }
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/erusev/parsedown/issues/comments/35829340",
+    "html_url": "https://github.com/erusev/parsedown/issues/118#issuecomment-35829340",
+    "issue_url": "https://api.github.com/repos/erusev/parsedown/issues/118",
+    "id": 35829340,
+    "user": {
+      "login": "cebe",
+      "id": 189796,
+      "avatar_url": "https://avatars.githubusercontent.com/u/189796?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/cebe",
+      "html_url": "https://github.com/cebe",
+      "followers_url": "https://api.github.com/users/cebe/followers",
+      "following_url": "https://api.github.com/users/cebe/following{/other_user}",
+      "gists_url": "https://api.github.com/users/cebe/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/cebe/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/cebe/subscriptions",
+      "organizations_url": "https://api.github.com/users/cebe/orgs",
+      "repos_url": "https://api.github.com/users/cebe/repos",
+      "events_url": "https://api.github.com/users/cebe/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/cebe/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2014-02-23T11:20:14Z",
+    "updated_at": "2014-02-23T11:20:14Z",
+    "body": "you can post-process the markup output with something like HTML purifier to remove all unwanted tags. note that markdown allows writing plain HTML too."
+  },
+  {
+    "url": "https://api.github.com/repos/erusev/parsedown/issues/comments/70075795",
+    "html_url": "https://github.com/erusev/parsedown/issues/118#issuecomment-70075795",
+    "issue_url": "https://api.github.com/repos/erusev/parsedown/issues/118",
+    "id": 70075795,
+    "user": {
+      "login": "erusev",
+      "id": 184170,
+      "avatar_url": "https://avatars.githubusercontent.com/u/184170?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/erusev",
+      "html_url": "https://github.com/erusev",
+      "followers_url": "https://api.github.com/users/erusev/followers",
+      "following_url": "https://api.github.com/users/erusev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/erusev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/erusev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/erusev/subscriptions",
+      "organizations_url": "https://api.github.com/users/erusev/orgs",
+      "repos_url": "https://api.github.com/users/erusev/repos",
+      "events_url": "https://api.github.com/users/erusev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/erusev/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2015-01-15T11:57:53Z",
+    "updated_at": "2015-01-15T11:58:30Z",
+    "body": "Alternatively, you could set \"MarkupEscaped\" to `true` to disable HTML and override the methods that handle the types that you want disabled to `return null`."
+  }
+]

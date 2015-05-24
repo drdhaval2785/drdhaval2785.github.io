@@ -1,0 +1,97 @@
+{
+  "url": "https://api.github.com/repos/erusev/parsedown/issues/37",
+  "labels_url": "https://api.github.com/repos/erusev/parsedown/issues/37/labels{/name}",
+  "comments_url": "https://api.github.com/repos/erusev/parsedown/issues/37/comments",
+  "events_url": "https://api.github.com/repos/erusev/parsedown/issues/37/events",
+  "html_url": "https://github.com/erusev/parsedown/pull/37",
+  "id": 23167862,
+  "number": 37,
+  "title": "Use UTF-8 encoding for htmlspecialchars.",
+  "user": {
+    "login": "hkdobrev",
+    "id": 506129,
+    "avatar_url": "https://avatars.githubusercontent.com/u/506129?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/hkdobrev",
+    "html_url": "https://github.com/hkdobrev",
+    "followers_url": "https://api.github.com/users/hkdobrev/followers",
+    "following_url": "https://api.github.com/users/hkdobrev/following{/other_user}",
+    "gists_url": "https://api.github.com/users/hkdobrev/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/hkdobrev/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/hkdobrev/subscriptions",
+    "organizations_url": "https://api.github.com/users/hkdobrev/orgs",
+    "repos_url": "https://api.github.com/users/hkdobrev/repos",
+    "events_url": "https://api.github.com/users/hkdobrev/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/hkdobrev/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2013-11-22T21:12:31Z",
+  "updated_at": "2013-11-23T07:22:44Z",
+  "closed_at": "2013-11-22T21:23:21Z",
+  "pull_request": {
+    "url": "https://api.github.com/repos/erusev/parsedown/pulls/37",
+    "html_url": "https://github.com/erusev/parsedown/pull/37",
+    "diff_url": "https://github.com/erusev/parsedown/pull/37.diff",
+    "patch_url": "https://github.com/erusev/parsedown/pull/37.patch"
+  },
+  "body": "See #36.\r\n\r\nPrior to PHP 5.4.0 the default encoding for `htmlentities()` and\r\n`htmlspecialchars` is \"ISO-8859-1\". For PHP 5.4+ is \"UTF-8\".\r\n\r\nThis ensures always the right encoding is used no matter the PHP version and\r\nthe locale settings.\r\n\r\nI have included tests which test both the change from `htmlentities()` to\r\n`htmlspecialshars` and the encoding.\r\n\r\nExample output with `htmlentities()` would be:\r\n\r\n    Let's play some cards &clubs; &spades; &hearts; &diams;\r\n\r\nExample output with `htmlentities()` and \"ISO-8859-1\" encoding would be:\r\n\r\n    Let's play some cards &acirc;?&nbsp; &acirc;?&pound; &acirc;?&yen; &acirc;?&brvbar;",
+  "closed_by": {
+    "login": "erusev",
+    "id": 184170,
+    "avatar_url": "https://avatars.githubusercontent.com/u/184170?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/erusev",
+    "html_url": "https://github.com/erusev",
+    "followers_url": "https://api.github.com/users/erusev/followers",
+    "following_url": "https://api.github.com/users/erusev/following{/other_user}",
+    "gists_url": "https://api.github.com/users/erusev/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/erusev/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/erusev/subscriptions",
+    "organizations_url": "https://api.github.com/users/erusev/orgs",
+    "repos_url": "https://api.github.com/users/erusev/repos",
+    "events_url": "https://api.github.com/users/erusev/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/erusev/received_events",
+    "type": "User",
+    "site_admin": false
+  }
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/erusev/parsedown/issues/comments/29127653",
+    "html_url": "https://github.com/erusev/parsedown/pull/37#issuecomment-29127653",
+    "issue_url": "https://api.github.com/repos/erusev/parsedown/issues/37",
+    "id": 29127653,
+    "user": {
+      "login": "erusev",
+      "id": 184170,
+      "avatar_url": "https://avatars.githubusercontent.com/u/184170?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/erusev",
+      "html_url": "https://github.com/erusev",
+      "followers_url": "https://api.github.com/users/erusev/followers",
+      "following_url": "https://api.github.com/users/erusev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/erusev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/erusev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/erusev/subscriptions",
+      "organizations_url": "https://api.github.com/users/erusev/orgs",
+      "repos_url": "https://api.github.com/users/erusev/repos",
+      "events_url": "https://api.github.com/users/erusev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/erusev/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2013-11-23T07:22:22Z",
+    "updated_at": "2013-11-23T07:22:44Z",
+    "body": "Did the updated test fail without the encoding parameter?"
+  }
+]

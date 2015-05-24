@@ -1,0 +1,97 @@
+{
+  "url": "https://api.github.com/repos/erusev/parsedown/issues/8",
+  "labels_url": "https://api.github.com/repos/erusev/parsedown/issues/8/labels{/name}",
+  "comments_url": "https://api.github.com/repos/erusev/parsedown/issues/8/comments",
+  "events_url": "https://api.github.com/repos/erusev/parsedown/issues/8/events",
+  "html_url": "https://github.com/erusev/parsedown/pull/8",
+  "id": 17020876,
+  "number": 8,
+  "title": "Fix for undefined variable when having a paragraph after list",
+  "user": {
+    "login": "hkdobrev",
+    "id": 506129,
+    "avatar_url": "https://avatars.githubusercontent.com/u/506129?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/hkdobrev",
+    "html_url": "https://github.com/hkdobrev",
+    "followers_url": "https://api.github.com/users/hkdobrev/followers",
+    "following_url": "https://api.github.com/users/hkdobrev/following{/other_user}",
+    "gists_url": "https://api.github.com/users/hkdobrev/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/hkdobrev/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/hkdobrev/subscriptions",
+    "organizations_url": "https://api.github.com/users/hkdobrev/orgs",
+    "repos_url": "https://api.github.com/users/hkdobrev/repos",
+    "events_url": "https://api.github.com/users/hkdobrev/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/hkdobrev/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2013-07-21T16:43:07Z",
+  "updated_at": "2013-07-21T20:43:42Z",
+  "closed_at": "2013-07-21T20:39:47Z",
+  "pull_request": {
+    "url": "https://api.github.com/repos/erusev/parsedown/pulls/8",
+    "html_url": "https://github.com/erusev/parsedown/pull/8",
+    "diff_url": "https://github.com/erusev/parsedown/pull/8.diff",
+    "patch_url": "https://github.com/erusev/parsedown/pull/8.patch"
+  },
+  "body": "If you turn enable error_reporting for E_NOTICE and set display_errors to\nTRUE, you would see the undefined variable on several tests.\n\nThe error occurs in Parsedown.php:150. If you have a list set and then a\nparagraph which satisfies the condition $block\\[0\\] > 'A'.",
+  "closed_by": {
+    "login": "hkdobrev",
+    "id": 506129,
+    "avatar_url": "https://avatars.githubusercontent.com/u/506129?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/hkdobrev",
+    "html_url": "https://github.com/hkdobrev",
+    "followers_url": "https://api.github.com/users/hkdobrev/followers",
+    "following_url": "https://api.github.com/users/hkdobrev/following{/other_user}",
+    "gists_url": "https://api.github.com/users/hkdobrev/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/hkdobrev/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/hkdobrev/subscriptions",
+    "organizations_url": "https://api.github.com/users/hkdobrev/orgs",
+    "repos_url": "https://api.github.com/users/hkdobrev/repos",
+    "events_url": "https://api.github.com/users/hkdobrev/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/hkdobrev/received_events",
+    "type": "User",
+    "site_admin": false
+  }
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/erusev/parsedown/issues/comments/21316619",
+    "html_url": "https://github.com/erusev/parsedown/pull/8#issuecomment-21316619",
+    "issue_url": "https://api.github.com/repos/erusev/parsedown/issues/8",
+    "id": 21316619,
+    "user": {
+      "login": "hkdobrev",
+      "id": 506129,
+      "avatar_url": "https://avatars.githubusercontent.com/u/506129?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/hkdobrev",
+      "html_url": "https://github.com/hkdobrev",
+      "followers_url": "https://api.github.com/users/hkdobrev/followers",
+      "following_url": "https://api.github.com/users/hkdobrev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/hkdobrev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/hkdobrev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/hkdobrev/subscriptions",
+      "organizations_url": "https://api.github.com/users/hkdobrev/orgs",
+      "repos_url": "https://api.github.com/users/hkdobrev/repos",
+      "events_url": "https://api.github.com/users/hkdobrev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/hkdobrev/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2013-07-21T20:39:47Z",
+    "updated_at": "2013-07-21T20:39:47Z",
+    "body": "@erusev Since you have already fixed this, do you want another PR with just the error reporting turned on?\r\n\r\nFixed in: https://github.com/erusev/parsedown/commit/5bbbabe8aa44265e7654d1cbf13bace1357345a5"
+  }
+]

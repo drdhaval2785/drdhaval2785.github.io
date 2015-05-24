@@ -1,0 +1,97 @@
+{
+  "url": "https://api.github.com/repos/erusev/parsedown/issues/26",
+  "labels_url": "https://api.github.com/repos/erusev/parsedown/issues/26/labels{/name}",
+  "comments_url": "https://api.github.com/repos/erusev/parsedown/issues/26/comments",
+  "events_url": "https://api.github.com/repos/erusev/parsedown/issues/26/events",
+  "html_url": "https://github.com/erusev/parsedown/pull/26",
+  "id": 22407582,
+  "number": 26,
+  "title": "Don't run `composer --version` on install or before_install",
+  "user": {
+    "login": "hkdobrev",
+    "id": 506129,
+    "avatar_url": "https://avatars.githubusercontent.com/u/506129?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/hkdobrev",
+    "html_url": "https://github.com/hkdobrev",
+    "followers_url": "https://api.github.com/users/hkdobrev/followers",
+    "following_url": "https://api.github.com/users/hkdobrev/following{/other_user}",
+    "gists_url": "https://api.github.com/users/hkdobrev/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/hkdobrev/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/hkdobrev/subscriptions",
+    "organizations_url": "https://api.github.com/users/hkdobrev/orgs",
+    "repos_url": "https://api.github.com/users/hkdobrev/repos",
+    "events_url": "https://api.github.com/users/hkdobrev/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/hkdobrev/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2013-11-10T13:18:18Z",
+  "updated_at": "2013-11-10T13:23:41Z",
+  "closed_at": "2013-11-10T13:23:41Z",
+  "pull_request": {
+    "url": "https://api.github.com/repos/erusev/parsedown/pulls/26",
+    "html_url": "https://github.com/erusev/parsedown/pull/26",
+    "diff_url": "https://github.com/erusev/parsedown/pull/26.diff",
+    "patch_url": "https://github.com/erusev/parsedown/pull/26.patch"
+  },
+  "body": "Parsedown does not require any dependecies installed via Composer to run the tests.\nTravis CI is automatically running `composer --version`.\nBut on PHP 5.2 Composer is not working.\nNo need to run `composer --version` on `before_install` or `install` phase.\n\n`true` is a *nix command which exists with 0 and therefore disables the default Travis behavior.",
+  "closed_by": {
+    "login": "hkdobrev",
+    "id": 506129,
+    "avatar_url": "https://avatars.githubusercontent.com/u/506129?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/hkdobrev",
+    "html_url": "https://github.com/hkdobrev",
+    "followers_url": "https://api.github.com/users/hkdobrev/followers",
+    "following_url": "https://api.github.com/users/hkdobrev/following{/other_user}",
+    "gists_url": "https://api.github.com/users/hkdobrev/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/hkdobrev/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/hkdobrev/subscriptions",
+    "organizations_url": "https://api.github.com/users/hkdobrev/orgs",
+    "repos_url": "https://api.github.com/users/hkdobrev/repos",
+    "events_url": "https://api.github.com/users/hkdobrev/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/hkdobrev/received_events",
+    "type": "User",
+    "site_admin": false
+  }
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/erusev/parsedown/issues/comments/28150487",
+    "html_url": "https://github.com/erusev/parsedown/pull/26#issuecomment-28150487",
+    "issue_url": "https://api.github.com/repos/erusev/parsedown/issues/26",
+    "id": 28150487,
+    "user": {
+      "login": "hkdobrev",
+      "id": 506129,
+      "avatar_url": "https://avatars.githubusercontent.com/u/506129?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/hkdobrev",
+      "html_url": "https://github.com/hkdobrev",
+      "followers_url": "https://api.github.com/users/hkdobrev/followers",
+      "following_url": "https://api.github.com/users/hkdobrev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/hkdobrev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/hkdobrev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/hkdobrev/subscriptions",
+      "organizations_url": "https://api.github.com/users/hkdobrev/orgs",
+      "repos_url": "https://api.github.com/users/hkdobrev/repos",
+      "events_url": "https://api.github.com/users/hkdobrev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/hkdobrev/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2013-11-10T13:23:41Z",
+    "updated_at": "2013-11-10T13:23:41Z",
+    "body": "Scratch that. `composer --version` is still run by Travis."
+  }
+]

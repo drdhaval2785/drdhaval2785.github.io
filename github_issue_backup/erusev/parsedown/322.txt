@@ -1,0 +1,91 @@
+{
+  "url": "https://api.github.com/repos/erusev/parsedown/issues/322",
+  "labels_url": "https://api.github.com/repos/erusev/parsedown/issues/322/labels{/name}",
+  "comments_url": "https://api.github.com/repos/erusev/parsedown/issues/322/comments",
+  "events_url": "https://api.github.com/repos/erusev/parsedown/issues/322/events",
+  "html_url": "https://github.com/erusev/parsedown/issues/322",
+  "id": 79447153,
+  "number": 322,
+  "title": "New features",
+  "user": {
+    "login": "bobmulder",
+    "id": 5465074,
+    "avatar_url": "https://avatars.githubusercontent.com/u/5465074?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/bobmulder",
+    "html_url": "https://github.com/bobmulder",
+    "followers_url": "https://api.github.com/users/bobmulder/followers",
+    "following_url": "https://api.github.com/users/bobmulder/following{/other_user}",
+    "gists_url": "https://api.github.com/users/bobmulder/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/bobmulder/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/bobmulder/subscriptions",
+    "organizations_url": "https://api.github.com/users/bobmulder/orgs",
+    "repos_url": "https://api.github.com/users/bobmulder/repos",
+    "events_url": "https://api.github.com/users/bobmulder/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/bobmulder/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2015-05-22T13:01:49Z",
+  "updated_at": "2015-05-22T13:18:50Z",
+  "closed_at": "2015-05-22T13:18:50Z",
+  "body": "Hey @erusev,\r\n\r\nThanks for this cool stuff.. It really helps me for http://cakemanager.org/docs/1.0/.\r\n\r\nHowever, I have some ideas for some new features... I would like to add meta-tags to my pages.... So something like this:\r\n```\r\nmeta: \"metatag, metatag, metatag\"\r\n``` \r\n\r\nwould be transformed to some html code...\r\n\r\nJust let me know if you wanna talk ;)\r\n\r\nGreetz\r\n\r\nBob\r\n",
+  "closed_by": {
+    "login": "erusev",
+    "id": 184170,
+    "avatar_url": "https://avatars.githubusercontent.com/u/184170?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/erusev",
+    "html_url": "https://github.com/erusev",
+    "followers_url": "https://api.github.com/users/erusev/followers",
+    "following_url": "https://api.github.com/users/erusev/following{/other_user}",
+    "gists_url": "https://api.github.com/users/erusev/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/erusev/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/erusev/subscriptions",
+    "organizations_url": "https://api.github.com/users/erusev/orgs",
+    "repos_url": "https://api.github.com/users/erusev/repos",
+    "events_url": "https://api.github.com/users/erusev/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/erusev/received_events",
+    "type": "User",
+    "site_admin": false
+  }
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/erusev/parsedown/issues/comments/104658609",
+    "html_url": "https://github.com/erusev/parsedown/issues/322#issuecomment-104658609",
+    "issue_url": "https://api.github.com/repos/erusev/parsedown/issues/322",
+    "id": 104658609,
+    "user": {
+      "login": "erusev",
+      "id": 184170,
+      "avatar_url": "https://avatars.githubusercontent.com/u/184170?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/erusev",
+      "html_url": "https://github.com/erusev",
+      "followers_url": "https://api.github.com/users/erusev/followers",
+      "following_url": "https://api.github.com/users/erusev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/erusev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/erusev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/erusev/subscriptions",
+      "organizations_url": "https://api.github.com/users/erusev/orgs",
+      "repos_url": "https://api.github.com/users/erusev/repos",
+      "events_url": "https://api.github.com/users/erusev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/erusev/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2015-05-22T13:18:50Z",
+    "updated_at": "2015-05-22T13:18:50Z",
+    "body": "Sure, send me an email and we can talk."
+  }
+]

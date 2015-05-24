@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html class='' lang='en'>
+<head prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#'>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8'>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta http-equiv='Content-Language' content='en'>
+<title>erusev/parsedown/121</title>
+<link href='github-c486157afcc5f58155a921bc675afb08733fbaa8dcf39ac2104d3.css' media='all' rel='stylesheet'>
+<link href='github2-da2e842cc3f0aaf33b727d0ef034243c12ab008fd09b24868b97.css' media='all' rel='stylesheet'>
+<meta http-equiv='x-pjax-version' content='4426702614c8182f33d1780ad1169662'>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shAutoloader.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAppleScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAS3.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushBash.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushColdFusion.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCpp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCSharp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCss.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDelphi.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDiff.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushErlang.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushGroovy.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJava.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJavaFX.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/syntaxhighlighter/scripts/shBrushJScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPerl.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPhp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPlain.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPowerShell.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPython.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushRuby.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSass.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushScala.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSql.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushVb.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushXml.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shLegacy.js'></script>
+	<link type='text/css' rel='stylesheet' href='syntaxhighlighter/styles/shCoreDefault.css'/>
+	<script type='text/javascript'>SyntaxHighlighter.all();</script>
+</head>
+<body class='logged_in  env-production windows vis-public'>
+<h1 align='center'><a href='https://github.com/erusev/parsedown/pull/121' target='_blank'>speed up using $offset parameter with strpos()/preg_match()</h1><hr/><div id="#issue-28147958" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/wkpark" class="author">wkpark</a>
+    </strong>
+    commented on 
+    <a href="#issue-28147958" class="timestamp">
+      <time>2014-02-24 09:35:31</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <ul>
+<li>reduce using substr()</li>
+<li>preg_match() with $offset parameter.</li>
+<li>preg_match() with 'A' regex modifier.</li>
+</ul>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-35871656" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-35871656" class="timestamp">
+      <time>2014-02-24 10:01:23</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/wkpark" target="_blank">@wkpark</a></strong> Why do you think this is faster?</p>
+<p>I've benchmarked both the current master branch and your PR with <a href="https://github.com/kzykhys/Markbench">https://github.com/kzykhys/Markbench</a>. Your PR is giving slightly slower results. But the benchmark may not be suitable for catching the difference in regex execution time compared to real-world usage (PHP is automatically optimizing regex when matched multiple times so the benchmark results could be wrong).</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-35875007" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/wkpark" class="author">wkpark</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-35875007" class="timestamp">
+      <time>2014-02-24 10:47:49</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I did not test much of benchmarks.</p>
+<p>first of all
+this fix reduce bunch of <code>substr()</code> operations.</p>
+<p>and
+<code>strpos($marker, $text)</code> replaced by <code>strpos($marker, $text, $offset)</code> it must be almost identical.</p>
+<p>and
+<code>preg_match()</code> with or without <code>$offset</code> nearly identical.</p>
+<p>using regex with &quot;<code>^</code>&quot; or <code>A</code> regex modifier mabe slightly different but i did not compare it.
+(original code does not even do properly use &quot;<code>^</code>&quot;)</p>
+<p>so any benchmark tests almost get same result, I guess.</p>
+<p>should i change the commit msg like as &quot;reduce substr()&quot; etc?</p>
+<p>logically this fix speed up a bit.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-35875188" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-35875188" class="timestamp">
+      <time>2014-02-24 10:50:16</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <blockquote>
+<p>original code does not even do properly use &quot;^&quot;</p>
+</blockquote>
+<p>What do you mean by that?</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-35878119" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/wkpark" class="author">wkpark</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-35878119" class="timestamp">
+      <time>2014-02-24 11:37:13</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/erusev" target="_blank">@erusev</a></strong>
+some regexps do not use <code>^</code> correctly.</p>
+<p>for example<br />
+<code>[[[[foobar]]](/url)</code> match <code>preg_match()</code> return true 2 times.
+(first match <code>*[*[[[foobar]]](/url)</code> but fail,
+second match <code>[*[*[[foobr]]](/url)</code> with success.</p>
+<p>this fix return true only 1 time.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-35878367" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/wkpark" class="author">wkpark</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-35878367" class="timestamp">
+      <time>2014-02-24 11:41:17</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Another example <code>[Foobar](((/url)</code></p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-35878851" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/wkpark" class="author">wkpark</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-35878851" class="timestamp">
+      <time>2014-02-24 11:49:01</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>This is slightly different case <code>&lt;&lt;&lt;foobar<strong><a href="https://github.com/bar" target="_blank">@bar</a></strong>.com&gt;</code></p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-35883405" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-35883405" class="timestamp">
+      <time>2014-02-24 12:55:01</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/wkpark" target="_blank">@wkpark</a></strong> Great examples!</p>
+<p>Your last example <code>&lt;&lt;&lt;foobar<strong><a href="https://github.com/bar" target="_blank">@bar</a></strong>.com&gt;</code> is producing something completely undesired in Parsedown ATM.</p>
+<p>It returns:</p>
+<pre class="brush: html">&lt;a href="mailto:&lt;&lt;foobar<strong><a href="https://github.com/bar" target="_blank">@bar</a></strong>.com"&gt;&lt;&lt;foobar<strong><a href="https://github.com/bar" target="_blank">@bar</a></strong>.com&lt;/a&gt;</code></pre>
+<p>Which after rendered by the browser is equivalent to:</p>
+<pre class="brush: html">&lt;a href="mailto:&amp;lt;&amp;lt;foobar<strong><a href="https://github.com/bar" target="_blank">@bar</a></strong>.com"&gt;&amp;lt;&lt;foobar<strong><a href="https://github.com/bar" target="_blank">@bar</a></strong>.com&lt; a=""&gt;&lt;/foobar<strong><a href="https://github.com/bar" target="_blank">@bar</a></strong>.com&lt;&gt;&lt;/a&gt;</code></pre>
+<p>However this PR is producing the same output.</p>
+<p>I think it should be:</p>
+<pre class="brush: html">&amp;lt;&amp;lt;&lt;a href="foobar<strong><a href="https://github.com/bar" target="_blank">@bar</a></strong>.com"&gt;foobar<strong><a href="https://github.com/bar" target="_blank">@bar</a></strong>.com&lt;/a&gt;</code></pre>
+<p>This is the output of Markdown PHP 1.3. (I've removed the email obfuscation.)</p>
+<p>I think the output for such links should be corrected before optimizing for this kind of input.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-35887169" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/wkpark" class="author">wkpark</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-35887169" class="timestamp">
+      <time>2014-02-24 13:47:28</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/hkdobrev" target="_blank">@hkdobrev</a></strong> yes
+this commit just modify <code>$offset</code> related things, almost all regexps are identical except <code>A</code> regex modifier.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-41258247" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-41258247" class="timestamp">
+      <time>2014-04-24 09:02:42</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/wkpark" target="_blank">@wkpark</a></strong> Is this relevant in the latest version?</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+</body></html>

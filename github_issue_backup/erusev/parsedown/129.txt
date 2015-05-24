@@ -1,0 +1,95 @@
+{
+  "url": "https://api.github.com/repos/erusev/parsedown/issues/129",
+  "labels_url": "https://api.github.com/repos/erusev/parsedown/issues/129/labels{/name}",
+  "comments_url": "https://api.github.com/repos/erusev/parsedown/issues/129/comments",
+  "events_url": "https://api.github.com/repos/erusev/parsedown/issues/129/events",
+  "html_url": "https://github.com/erusev/parsedown/issues/129",
+  "id": 28555121,
+  "number": 129,
+  "title": "html markup blocks with attributes.",
+  "user": {
+    "login": "wkpark",
+    "id": 232347,
+    "avatar_url": "https://avatars.githubusercontent.com/u/232347?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/wkpark",
+    "html_url": "https://github.com/wkpark",
+    "followers_url": "https://api.github.com/users/wkpark/followers",
+    "following_url": "https://api.github.com/users/wkpark/following{/other_user}",
+    "gists_url": "https://api.github.com/users/wkpark/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/wkpark/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/wkpark/subscriptions",
+    "organizations_url": "https://api.github.com/users/wkpark/orgs",
+    "repos_url": "https://api.github.com/users/wkpark/repos",
+    "events_url": "https://api.github.com/users/wkpark/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/wkpark/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "url": "https://api.github.com/repos/erusev/parsedown/labels/issue",
+      "name": "issue",
+      "color": "f7c6c7"
+    }
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2014-03-01T11:07:00Z",
+  "updated_at": "2014-05-13T22:11:12Z",
+  "closed_at": "2014-05-13T22:11:12Z",
+  "body": "parsedown does not correctly handle attributes of html block elements\r\n\r\n~~~html\r\n<div id='foobar'>\r\n  <div class=\"foo\">\r\n     foo\r\n  </div>\r\n</div>\r\n~~~\r\n\r\nparsedown result.\r\n~~~html\r\n<div id='foobar'>\r\n  <div class=\"foo\">\r\n     foo\r\n  </div>\r\n<p></div></p>\r\n~~~",
+  "closed_by": {
+    "login": "erusev",
+    "id": 184170,
+    "avatar_url": "https://avatars.githubusercontent.com/u/184170?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/erusev",
+    "html_url": "https://github.com/erusev",
+    "followers_url": "https://api.github.com/users/erusev/followers",
+    "following_url": "https://api.github.com/users/erusev/following{/other_user}",
+    "gists_url": "https://api.github.com/users/erusev/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/erusev/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/erusev/subscriptions",
+    "organizations_url": "https://api.github.com/users/erusev/orgs",
+    "repos_url": "https://api.github.com/users/erusev/repos",
+    "events_url": "https://api.github.com/users/erusev/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/erusev/received_events",
+    "type": "User",
+    "site_admin": false
+  }
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/erusev/parsedown/issues/comments/40930346",
+    "html_url": "https://github.com/erusev/parsedown/issues/129#issuecomment-40930346",
+    "issue_url": "https://api.github.com/repos/erusev/parsedown/issues/129",
+    "id": 40930346,
+    "user": {
+      "login": "kminchev",
+      "id": 6413068,
+      "avatar_url": "https://avatars.githubusercontent.com/u/6413068?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/kminchev",
+      "html_url": "https://github.com/kminchev",
+      "followers_url": "https://api.github.com/users/kminchev/followers",
+      "following_url": "https://api.github.com/users/kminchev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/kminchev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/kminchev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/kminchev/subscriptions",
+      "organizations_url": "https://api.github.com/users/kminchev/orgs",
+      "repos_url": "https://api.github.com/users/kminchev/repos",
+      "events_url": "https://api.github.com/users/kminchev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/kminchev/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2014-04-21T11:36:23Z",
+    "updated_at": "2014-04-21T11:36:23Z",
+    "body": "Resolved using `line` function."
+  }
+]

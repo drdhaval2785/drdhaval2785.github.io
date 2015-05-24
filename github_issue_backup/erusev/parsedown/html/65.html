@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html class='' lang='en'>
+<head prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#'>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8'>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta http-equiv='Content-Language' content='en'>
+<title>erusev/parsedown/65</title>
+<link href='github-c486157afcc5f58155a921bc675afb08733fbaa8dcf39ac2104d3.css' media='all' rel='stylesheet'>
+<link href='github2-da2e842cc3f0aaf33b727d0ef034243c12ab008fd09b24868b97.css' media='all' rel='stylesheet'>
+<meta http-equiv='x-pjax-version' content='4426702614c8182f33d1780ad1169662'>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shAutoloader.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAppleScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAS3.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushBash.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushColdFusion.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCpp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCSharp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCss.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDelphi.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDiff.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushErlang.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushGroovy.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJava.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJavaFX.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/syntaxhighlighter/scripts/shBrushJScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPerl.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPhp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPlain.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPowerShell.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPython.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushRuby.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSass.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushScala.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSql.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushVb.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushXml.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shLegacy.js'></script>
+	<link type='text/css' rel='stylesheet' href='syntaxhighlighter/styles/shCoreDefault.css'/>
+	<script type='text/javascript'>SyntaxHighlighter.all();</script>
+</head>
+<body class='logged_in  env-production windows vis-public'>
+<h1 align='center'><a href='https://github.com/erusev/parsedown/pull/65' target='_blank'>Use imperative tense in comments</h1><hr/><div id="#issue-26205571" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issue-26205571" class="timestamp">
+      <time>2014-01-23 22:50:26</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>There are number of style guides, recommendations and suggestions about
+formatting and wording of the comments in your code.</p>
+<p>One of the &quot;rules&quot; which seems quite common is the usage of present
+imperative tense instead of third-person.</p>
+<p>Here are some of the resources I've just found:</p>
+<ul>
+<li><a href="http://luisespinal.wordpress.com/2012/01/02/rules-for-commenting-code-revisited-v2/">http://luisespinal.wordpress.com/2012/01/02/rules-for-commenting-code-revisited-v2/</a></li>
+<li><a href="http://stackoverflow.com/questions/8910214/comment-style-imperative-or-third-person">http://stackoverflow.com/questions/8910214/comment-style-imperative-or-third-person</a></li>
+<li><a href="http://www.hongkiat.com/blog/source-code-comment-styling-tips/">http://www.hongkiat.com/blog/source-code-comment-styling-tips/</a></li>
+<li><a href="http://luisespinal.wordpress.com/2011/03/11/simple-rules-on-commenting-code/">http://luisespinal.wordpress.com/2011/03/11/simple-rules-on-commenting-code/</a></li>
+<li><a href="http://www.devtopics.com/13-tips-to-comment-your-code/">http://www.devtopics.com/13-tips-to-comment-your-code/</a></li>
+</ul>
+<p>Also there is a similar recommendation for commits messages (which serve similar purpose):</p>
+<ul>
+<li><a href="http://programmers.stackexchange.com/questions/157590/why-is-it-preferred-to-write-a-commit-message-in-present-tense-imperative-mood">http://programmers.stackexchange.com/questions/157590/why-is-it-preferred-to-write-a-commit-message-in-present-tense-imperative-mood</a></li>
+<li><a href="http://programmers.stackexchange.com/questions/56031/version-control-comments-past-or-present-tense">http://programmers.stackexchange.com/questions/56031/version-control-comments-past-or-present-tense</a></li>
+<li><a href="http://stackoverflow.com/questions/3580013/should-i-use-past-or-present-tense-in-git-commit-messages">http://stackoverflow.com/questions/3580013/should-i-use-past-or-present-tense-in-git-commit-messages</a></li>
+</ul>
+<p>My personal arguments are:</p>
+<ul>
+<li>It is shorter.</li>
+<li>It sounds like programming without the programming language. Imagine writing the comments first. You would definitely write them in imperative form.</li>
+</ul>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-33182824" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-33182824" class="timestamp">
+      <time>2014-01-23 23:49:28</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I've just updated my PR to accommodate the changes in latest master.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-33259071" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-33259071" class="timestamp">
+      <time>2014-01-24 20:45:29</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I can see how imperative makes sense for comments that describe steps of the algorithm, e.g.:</p>
+<pre class="brush: php"># standardise line breaks
+$text = str_replace("\r\n", "\n", $text);
+$text = str_replace("\r", "\n", $text);</code></pre>
+<p>Does it, however, make sense for describing setters or methods?</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-33260481" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/ryanve" class="author">ryanve</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-33260481" class="timestamp">
+      <time>2014-01-24 21:02:47</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I prefer imperative comments wherever possible. They seem easier to read because they tend to be complete sentences rather than fragments.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-33261357" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-33261357" class="timestamp">
+      <time>2014-01-24 21:08:01</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <blockquote>
+<p>Does it make sense for describing setters or just methods?</p>
+</blockquote>
+<p><strong><a href="https://github.com/erusev" target="_blank">@erusev</a></strong> In my opinion it does. It goes very well for methods. Actually I think it is a popular convention. Example: <a href="https://github.com/laravel/framework/blob/master/src/Illuminate/Auth/AuthManager.php">Laravel</a></p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-33262737" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-33262737" class="timestamp">
+      <time>2014-01-24 21:25:19</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/hkdobrev" target="_blank">@hkdobrev</a></strong> </p>
+<p>Let me try with an example.</p>
+<pre class="brush: php"># Enable GFM line breaks.
+
+function set_breaks_enabled...</code></pre>
+<p>The commented code above does not <em>enable ...</em> . It rather defines a method that <em>enables ...</em> .</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-33262933" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-33262933" class="timestamp">
+      <time>2014-01-24 21:27:33</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/erusev" target="_blank">@erusev</a></strong> I see your point now. In that case then I would really write a different comment.</p>
+<p>For example:</p>
+<pre class="brush: php"># Set breaksEnabled option
+
+function set_breaks_enabled...</code></pre>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-33263240" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-33263240" class="timestamp">
+      <time>2014-01-24 21:31:13</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>It is recommended to have PHPDoc blocks on variables and properties as well. Especially on configuration properties like this one. Even when it's a private property the PHPDoc does make sense. You could imagine developer who is working on the class would read and would know how to use it. They don't need to know it was set.</p>
+<p>So in this case I would document the line breaks and GFM/non-GFM difference in the property comment and leave a simple comment on the setter. If you really want to expand the comment docs on the public API I'd add more sentences.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-33263865" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-33263865" class="timestamp">
+      <time>2014-01-24 21:39:07</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <pre class="brush: php"># Set breaksEnabled option</code></pre>
+<p>It doesn't set. It defines. The line that calls the defined method is the one that does set.</p>
+<p>I'd be happy to merge the PR if it'd keep the comments that describe methods unmodified.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-33264929" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-33264929" class="timestamp">
+      <time>2014-01-24 21:52:18</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/erusev" target="_blank">@erusev</a></strong> If it doesn't set why the name of the function begins with... guess what - <code>set</code> :smile: </p>
+<p>I think the name of function is way more important the comment. And I think you've named it correctly.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-33265088" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-33265088" class="timestamp">
+      <time>2014-01-24 21:54:15</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Because that is what the function does. It sets. The code that defines the function defines. I feel like we are moving in circles with this discussion.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-33266912" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-33266912" class="timestamp">
+      <time>2014-01-24 22:11:24</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>OK, let's start from the beginning of the circle.</p>
+<p>You have a property and a function.</p>
+<p>The function accepts an argument.</p>
+<p>When you call the function with an argument it <strong>sets</strong> the value of the property to the value of the argument.</p>
+<p>The comment above the function <strong>should say what you are doing when you call</strong> the function. (<strong>not when the function just exists</strong>)</p>
+<p>You don't define anything. With a setter you set stuff.</p>
+<hr />
+<p>For example take a look at this class: <a href="https://github.com/laravel/framework/blob/master/src/Illuminate/Auth/AuthServiceProvider.php">https://github.com/laravel/framework/blob/master/src/Illuminate/Auth/AuthServiceProvider.php</a></p>
+<p>They use a third-person form to describe what the property is used for. And they use imperative form for the methods.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+</body></html>

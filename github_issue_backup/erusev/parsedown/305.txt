@@ -1,0 +1,91 @@
+{
+  "url": "https://api.github.com/repos/erusev/parsedown/issues/305",
+  "labels_url": "https://api.github.com/repos/erusev/parsedown/issues/305/labels{/name}",
+  "comments_url": "https://api.github.com/repos/erusev/parsedown/issues/305/comments",
+  "events_url": "https://api.github.com/repos/erusev/parsedown/issues/305/events",
+  "html_url": "https://github.com/erusev/parsedown/issues/305",
+  "id": 65916320,
+  "number": 305,
+  "title": "language class should be configurable for <code> elements",
+  "user": {
+    "login": "Lakhman",
+    "id": 1582690,
+    "avatar_url": "https://avatars.githubusercontent.com/u/1582690?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Lakhman",
+    "html_url": "https://github.com/Lakhman",
+    "followers_url": "https://api.github.com/users/Lakhman/followers",
+    "following_url": "https://api.github.com/users/Lakhman/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Lakhman/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Lakhman/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Lakhman/subscriptions",
+    "organizations_url": "https://api.github.com/users/Lakhman/orgs",
+    "repos_url": "https://api.github.com/users/Lakhman/repos",
+    "events_url": "https://api.github.com/users/Lakhman/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Lakhman/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2015-04-02T12:33:28Z",
+  "updated_at": "2015-04-02T14:19:44Z",
+  "closed_at": "2015-04-02T14:19:28Z",
+  "body": "Hi,\r\n\r\nI noticed the following issue when rendering a fenced code block.\r\n\r\n    ```php\r\n       <?php echo \"some php code\"; ?>\r\n    ```\r\n\r\nwhich renders as:\r\n\r\n    <pre>\r\n        <code class=\"language-php\"><?php echo \"hello world from php!\"; ?></code>\r\n    </pre>\r\n\r\n---\r\n\r\nIt would be great if the `language` class prefix could be specified when creating a new instance of parsedown.\r\n\r\nI found the line in question here:\r\n\r\nhttps://github.com/erusev/parsedown/blob/master/Parsedown.php#L406\r\n\r\nbut not sure if it should be a public property that can be set, or if I should use getters and setters for it.\r\n\r\nWould it be possible to add this as a property (so by default it uses `language`, - but can be overridden when creating an instance of parsedown (or parsedownExtra).\r\n\r\n    $parsedown = new \\ParsedownExtra();\r\n    $parsedown->setCodeClass('custom-class-for-code'); // example `setter` for class\r\n\r\nThis would be awesome to have as various syntax highlighters use different classes, and is sometimes a pain to change it in the javascript, so having the option to do it when we parse the markdown would be a huge help!\r\n\r\nThanks!",
+  "closed_by": {
+    "login": "erusev",
+    "id": 184170,
+    "avatar_url": "https://avatars.githubusercontent.com/u/184170?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/erusev",
+    "html_url": "https://github.com/erusev",
+    "followers_url": "https://api.github.com/users/erusev/followers",
+    "following_url": "https://api.github.com/users/erusev/following{/other_user}",
+    "gists_url": "https://api.github.com/users/erusev/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/erusev/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/erusev/subscriptions",
+    "organizations_url": "https://api.github.com/users/erusev/orgs",
+    "repos_url": "https://api.github.com/users/erusev/repos",
+    "events_url": "https://api.github.com/users/erusev/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/erusev/received_events",
+    "type": "User",
+    "site_admin": false
+  }
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/erusev/parsedown/issues/comments/88924205",
+    "html_url": "https://github.com/erusev/parsedown/issues/305#issuecomment-88924205",
+    "issue_url": "https://api.github.com/repos/erusev/parsedown/issues/305",
+    "id": 88924205,
+    "user": {
+      "login": "erusev",
+      "id": 184170,
+      "avatar_url": "https://avatars.githubusercontent.com/u/184170?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/erusev",
+      "html_url": "https://github.com/erusev",
+      "followers_url": "https://api.github.com/users/erusev/followers",
+      "following_url": "https://api.github.com/users/erusev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/erusev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/erusev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/erusev/subscriptions",
+      "organizations_url": "https://api.github.com/users/erusev/orgs",
+      "repos_url": "https://api.github.com/users/erusev/repos",
+      "events_url": "https://api.github.com/users/erusev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/erusev/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2015-04-02T14:19:28Z",
+    "updated_at": "2015-04-02T14:19:44Z",
+    "body": "This could be implemented with a very simple extension - see [writing extensions](https://github.com/erusev/parsedown/wiki/Writing-Extensions). It doesn't seem popular enough to be a setter."
+  }
+]

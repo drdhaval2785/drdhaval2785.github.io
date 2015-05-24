@@ -1,0 +1,56 @@
+{
+  "url": "https://api.github.com/repos/erusev/parsedown/issues/108",
+  "labels_url": "https://api.github.com/repos/erusev/parsedown/issues/108/labels{/name}",
+  "comments_url": "https://api.github.com/repos/erusev/parsedown/issues/108/comments",
+  "events_url": "https://api.github.com/repos/erusev/parsedown/issues/108/events",
+  "html_url": "https://github.com/erusev/parsedown/pull/108",
+  "id": 27672306,
+  "number": 108,
+  "title": "Fix #107 : em and strong containing html link with _ inside",
+  "user": {
+    "login": "Cerdic",
+    "id": 342805,
+    "avatar_url": "https://avatars.githubusercontent.com/u/342805?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Cerdic",
+    "html_url": "https://github.com/Cerdic",
+    "followers_url": "https://api.github.com/users/Cerdic/followers",
+    "following_url": "https://api.github.com/users/Cerdic/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Cerdic/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Cerdic/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Cerdic/subscriptions",
+    "organizations_url": "https://api.github.com/users/Cerdic/orgs",
+    "repos_url": "https://api.github.com/users/Cerdic/repos",
+    "events_url": "https://api.github.com/users/Cerdic/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Cerdic/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "url": "https://api.github.com/repos/erusev/parsedown/labels/issue",
+      "name": "issue",
+      "color": "f7c6c7"
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2014-02-16T12:55:45Z",
+  "updated_at": "2014-04-24T21:42:30Z",
+  "closed_at": null,
+  "pull_request": {
+    "url": "https://api.github.com/repos/erusev/parsedown/pulls/108",
+    "html_url": "https://github.com/erusev/parsedown/pull/108",
+    "diff_url": "https://github.com/erusev/parsedown/pull/108.diff",
+    "patch_url": "https://github.com/erusev/parsedown/pull/108.patch"
+  },
+  "body": "",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+
+]

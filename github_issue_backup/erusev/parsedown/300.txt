@@ -1,0 +1,91 @@
+{
+  "url": "https://api.github.com/repos/erusev/parsedown/issues/300",
+  "labels_url": "https://api.github.com/repos/erusev/parsedown/issues/300/labels{/name}",
+  "comments_url": "https://api.github.com/repos/erusev/parsedown/issues/300/comments",
+  "events_url": "https://api.github.com/repos/erusev/parsedown/issues/300/events",
+  "html_url": "https://github.com/erusev/parsedown/issues/300",
+  "id": 64362484,
+  "number": 300,
+  "title": "Support for GFM-style checkbox lists",
+  "user": {
+    "login": "GuzziGuy",
+    "id": 1054446,
+    "avatar_url": "https://avatars.githubusercontent.com/u/1054446?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/GuzziGuy",
+    "html_url": "https://github.com/GuzziGuy",
+    "followers_url": "https://api.github.com/users/GuzziGuy/followers",
+    "following_url": "https://api.github.com/users/GuzziGuy/following{/other_user}",
+    "gists_url": "https://api.github.com/users/GuzziGuy/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/GuzziGuy/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/GuzziGuy/subscriptions",
+    "organizations_url": "https://api.github.com/users/GuzziGuy/orgs",
+    "repos_url": "https://api.github.com/users/GuzziGuy/repos",
+    "events_url": "https://api.github.com/users/GuzziGuy/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/GuzziGuy/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2015-03-25T20:10:48Z",
+  "updated_at": "2015-03-25T20:18:18Z",
+  "closed_at": "2015-03-25T20:18:04Z",
+  "body": "A la https://github.com/blog/1375%0A-task-lists-in-gfm-issues-pulls-comments - would be great!",
+  "closed_by": {
+    "login": "erusev",
+    "id": 184170,
+    "avatar_url": "https://avatars.githubusercontent.com/u/184170?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/erusev",
+    "html_url": "https://github.com/erusev",
+    "followers_url": "https://api.github.com/users/erusev/followers",
+    "following_url": "https://api.github.com/users/erusev/following{/other_user}",
+    "gists_url": "https://api.github.com/users/erusev/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/erusev/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/erusev/subscriptions",
+    "organizations_url": "https://api.github.com/users/erusev/orgs",
+    "repos_url": "https://api.github.com/users/erusev/repos",
+    "events_url": "https://api.github.com/users/erusev/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/erusev/received_events",
+    "type": "User",
+    "site_admin": false
+  }
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/erusev/parsedown/issues/comments/86201199",
+    "html_url": "https://github.com/erusev/parsedown/issues/300#issuecomment-86201199",
+    "issue_url": "https://api.github.com/repos/erusev/parsedown/issues/300",
+    "id": 86201199,
+    "user": {
+      "login": "erusev",
+      "id": 184170,
+      "avatar_url": "https://avatars.githubusercontent.com/u/184170?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/erusev",
+      "html_url": "https://github.com/erusev",
+      "followers_url": "https://api.github.com/users/erusev/followers",
+      "following_url": "https://api.github.com/users/erusev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/erusev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/erusev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/erusev/subscriptions",
+      "organizations_url": "https://api.github.com/users/erusev/orgs",
+      "repos_url": "https://api.github.com/users/erusev/repos",
+      "events_url": "https://api.github.com/users/erusev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/erusev/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2015-03-25T20:18:02Z",
+    "updated_at": "2015-03-25T20:18:18Z",
+    "body": "It would be, indeed, but since it is not a part of the GFM spec, I think that it should rather be implemented as an extension."
+  }
+]

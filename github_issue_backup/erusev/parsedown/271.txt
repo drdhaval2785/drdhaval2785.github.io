@@ -1,0 +1,123 @@
+{
+  "url": "https://api.github.com/repos/erusev/parsedown/issues/271",
+  "labels_url": "https://api.github.com/repos/erusev/parsedown/issues/271/labels{/name}",
+  "comments_url": "https://api.github.com/repos/erusev/parsedown/issues/271/comments",
+  "events_url": "https://api.github.com/repos/erusev/parsedown/issues/271/events",
+  "html_url": "https://github.com/erusev/parsedown/issues/271",
+  "id": 54827868,
+  "number": 271,
+  "title": "suggestion: a simple script for newbies to use and test it quickly",
+  "user": {
+    "login": "miltosc",
+    "id": 9156710,
+    "avatar_url": "https://avatars.githubusercontent.com/u/9156710?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/miltosc",
+    "html_url": "https://github.com/miltosc",
+    "followers_url": "https://api.github.com/users/miltosc/followers",
+    "following_url": "https://api.github.com/users/miltosc/following{/other_user}",
+    "gists_url": "https://api.github.com/users/miltosc/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/miltosc/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/miltosc/subscriptions",
+    "organizations_url": "https://api.github.com/users/miltosc/orgs",
+    "repos_url": "https://api.github.com/users/miltosc/repos",
+    "events_url": "https://api.github.com/users/miltosc/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/miltosc/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "url": "https://api.github.com/repos/erusev/parsedown/labels/suggestion",
+      "name": "suggestion",
+      "color": "bfd4f2"
+    }
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 2,
+  "created_at": "2015-01-20T00:05:45Z",
+  "updated_at": "2015-01-24T12:52:41Z",
+  "closed_at": "2015-01-24T12:51:47Z",
+  "body": "```php\r\n<?\r\nif ($argv[1]==''){\r\necho '\r\nusage: php /mnt/htdocs_server/markdown-github/miltos-parsedown.php [input file] [output file]\r\nex.\r\nphp /mnt/htdocs_server/markdown-github/miltos-parsedown.php /mnt/useful/migration/miltos-migration-notes.txt /mnt/useful/migration/miltos-migration-notes_markdown.html\r\n\r\n';\r\n\r\n}else{\r\ninclude (dirname(__FILE__).\"/parsedown-master/Parsedown.php\");\r\n$Parsedown = new Parsedown();\r\n$from_file=$argv[1];\r\n$to_file=$argv[2];\r\n$input_string = file_get_contents($from_file);\r\n\r\n//echo $Parsedown->text('Hello _Parsedown_!'); # would print <p>Hello <em>Parsedown</em>!</p>\r\n$output_string=$Parsedown->text($input_string); # would print <p>Hello <em>Parsedown</em>!</p>\r\n\r\nfile_put_contents($to_file, $output_string);\r\n}\r\n?>\r\n```\r\n\r\nusage: php /mnt/htdocs_server/markdown-github/miltos-parsedown.php [input file] [output file]",
+  "closed_by": {
+    "login": "erusev",
+    "id": 184170,
+    "avatar_url": "https://avatars.githubusercontent.com/u/184170?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/erusev",
+    "html_url": "https://github.com/erusev",
+    "followers_url": "https://api.github.com/users/erusev/followers",
+    "following_url": "https://api.github.com/users/erusev/following{/other_user}",
+    "gists_url": "https://api.github.com/users/erusev/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/erusev/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/erusev/subscriptions",
+    "organizations_url": "https://api.github.com/users/erusev/orgs",
+    "repos_url": "https://api.github.com/users/erusev/repos",
+    "events_url": "https://api.github.com/users/erusev/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/erusev/received_events",
+    "type": "User",
+    "site_admin": false
+  }
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/erusev/parsedown/issues/comments/70596078",
+    "html_url": "https://github.com/erusev/parsedown/issues/271#issuecomment-70596078",
+    "issue_url": "https://api.github.com/repos/erusev/parsedown/issues/271",
+    "id": 70596078,
+    "user": {
+      "login": "cebe",
+      "id": 189796,
+      "avatar_url": "https://avatars.githubusercontent.com/u/189796?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/cebe",
+      "html_url": "https://github.com/cebe",
+      "followers_url": "https://api.github.com/users/cebe/followers",
+      "following_url": "https://api.github.com/users/cebe/following{/other_user}",
+      "gists_url": "https://api.github.com/users/cebe/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/cebe/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/cebe/subscriptions",
+      "organizations_url": "https://api.github.com/users/cebe/orgs",
+      "repos_url": "https://api.github.com/users/cebe/repos",
+      "events_url": "https://api.github.com/users/cebe/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/cebe/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2015-01-20T02:42:22Z",
+    "updated_at": "2015-01-20T02:42:22Z",
+    "body": "duplicate of #76"
+  },
+  {
+    "url": "https://api.github.com/repos/erusev/parsedown/issues/comments/71315313",
+    "html_url": "https://github.com/erusev/parsedown/issues/271#issuecomment-71315313",
+    "issue_url": "https://api.github.com/repos/erusev/parsedown/issues/271",
+    "id": 71315313,
+    "user": {
+      "login": "erusev",
+      "id": 184170,
+      "avatar_url": "https://avatars.githubusercontent.com/u/184170?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/erusev",
+      "html_url": "https://github.com/erusev",
+      "followers_url": "https://api.github.com/users/erusev/followers",
+      "following_url": "https://api.github.com/users/erusev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/erusev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/erusev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/erusev/subscriptions",
+      "organizations_url": "https://api.github.com/users/erusev/orgs",
+      "repos_url": "https://api.github.com/users/erusev/repos",
+      "events_url": "https://api.github.com/users/erusev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/erusev/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2015-01-24T12:51:47Z",
+    "updated_at": "2015-01-24T12:52:41Z",
+    "body": "Thanks. It does look like a duplicate. I'll close the issue, but it would still be available in search for people that look for something like this."
+  }
+]

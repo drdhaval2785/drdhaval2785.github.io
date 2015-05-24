@@ -1,0 +1,97 @@
+{
+  "url": "https://api.github.com/repos/erusev/parsedown/issues/12",
+  "labels_url": "https://api.github.com/repos/erusev/parsedown/issues/12/labels{/name}",
+  "comments_url": "https://api.github.com/repos/erusev/parsedown/issues/12/comments",
+  "events_url": "https://api.github.com/repos/erusev/parsedown/issues/12/events",
+  "html_url": "https://github.com/erusev/parsedown/pull/12",
+  "id": 17064610,
+  "number": 12,
+  "title": "Space separated asterisks should be treated as literals",
+  "user": {
+    "login": "hkdobrev",
+    "id": 506129,
+    "avatar_url": "https://avatars.githubusercontent.com/u/506129?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/hkdobrev",
+    "html_url": "https://github.com/hkdobrev",
+    "followers_url": "https://api.github.com/users/hkdobrev/followers",
+    "following_url": "https://api.github.com/users/hkdobrev/following{/other_user}",
+    "gists_url": "https://api.github.com/users/hkdobrev/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/hkdobrev/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/hkdobrev/subscriptions",
+    "organizations_url": "https://api.github.com/users/hkdobrev/orgs",
+    "repos_url": "https://api.github.com/users/hkdobrev/repos",
+    "events_url": "https://api.github.com/users/hkdobrev/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/hkdobrev/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2013-07-22T19:03:55Z",
+  "updated_at": "2013-09-02T21:22:32Z",
+  "closed_at": "2013-09-02T21:22:32Z",
+  "pull_request": {
+    "url": "https://api.github.com/repos/erusev/parsedown/pulls/12",
+    "html_url": "https://github.com/erusev/parsedown/pull/12",
+    "diff_url": "https://github.com/erusev/parsedown/pull/12.diff",
+    "patch_url": "https://github.com/erusev/parsedown/pull/12.patch"
+  },
+  "body": "According to the Markdown specification, space separated asterisks or space\r\nseparated underscores is not an emphasis.\r\n\r\nThey should be treated as literal asterisks and underscores.\r\n\r\nParsedown however parses asterisks as an emphasis with a space and another\r\nliteral asterisk. Space separated underscores are parsed fine.",
+  "closed_by": {
+    "login": "erusev",
+    "id": 184170,
+    "avatar_url": "https://avatars.githubusercontent.com/u/184170?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/erusev",
+    "html_url": "https://github.com/erusev",
+    "followers_url": "https://api.github.com/users/erusev/followers",
+    "following_url": "https://api.github.com/users/erusev/following{/other_user}",
+    "gists_url": "https://api.github.com/users/erusev/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/erusev/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/erusev/subscriptions",
+    "organizations_url": "https://api.github.com/users/erusev/orgs",
+    "repos_url": "https://api.github.com/users/erusev/repos",
+    "events_url": "https://api.github.com/users/erusev/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/erusev/received_events",
+    "type": "User",
+    "site_admin": false
+  }
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/erusev/parsedown/issues/comments/23678863",
+    "html_url": "https://github.com/erusev/parsedown/pull/12#issuecomment-23678863",
+    "issue_url": "https://api.github.com/repos/erusev/parsedown/issues/12",
+    "id": 23678863,
+    "user": {
+      "login": "erusev",
+      "id": 184170,
+      "avatar_url": "https://avatars.githubusercontent.com/u/184170?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/erusev",
+      "html_url": "https://github.com/erusev",
+      "followers_url": "https://api.github.com/users/erusev/followers",
+      "following_url": "https://api.github.com/users/erusev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/erusev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/erusev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/erusev/subscriptions",
+      "organizations_url": "https://api.github.com/users/erusev/orgs",
+      "repos_url": "https://api.github.com/users/erusev/repos",
+      "events_url": "https://api.github.com/users/erusev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/erusev/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2013-09-02T21:22:16Z",
+    "updated_at": "2013-09-02T21:22:16Z",
+    "body": "This seems to be already resolved."
+  }
+]

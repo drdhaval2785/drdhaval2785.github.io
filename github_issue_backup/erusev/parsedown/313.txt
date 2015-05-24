@@ -1,0 +1,91 @@
+{
+  "url": "https://api.github.com/repos/erusev/parsedown/issues/313",
+  "labels_url": "https://api.github.com/repos/erusev/parsedown/issues/313/labels{/name}",
+  "comments_url": "https://api.github.com/repos/erusev/parsedown/issues/313/comments",
+  "events_url": "https://api.github.com/repos/erusev/parsedown/issues/313/events",
+  "html_url": "https://github.com/erusev/parsedown/issues/313",
+  "id": 71921161,
+  "number": 313,
+  "title": "Version code differs from tag",
+  "user": {
+    "login": "webmaster128",
+    "id": 2603011,
+    "avatar_url": "https://avatars.githubusercontent.com/u/2603011?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/webmaster128",
+    "html_url": "https://github.com/webmaster128",
+    "followers_url": "https://api.github.com/users/webmaster128/followers",
+    "following_url": "https://api.github.com/users/webmaster128/following{/other_user}",
+    "gists_url": "https://api.github.com/users/webmaster128/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/webmaster128/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/webmaster128/subscriptions",
+    "organizations_url": "https://api.github.com/users/webmaster128/orgs",
+    "repos_url": "https://api.github.com/users/webmaster128/repos",
+    "events_url": "https://api.github.com/users/webmaster128/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/webmaster128/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2015-04-29T16:23:37Z",
+  "updated_at": "2015-04-29T20:23:24Z",
+  "closed_at": "2015-04-29T20:23:24Z",
+  "body": "At [git tag 1.5.2](https://github.com/erusev/parsedown/tree/1.5.2) as well as master branch, there is still `const version = '1.5.1';` in code.\r\n\r\nThanks for your effort!",
+  "closed_by": {
+    "login": "erusev",
+    "id": 184170,
+    "avatar_url": "https://avatars.githubusercontent.com/u/184170?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/erusev",
+    "html_url": "https://github.com/erusev",
+    "followers_url": "https://api.github.com/users/erusev/followers",
+    "following_url": "https://api.github.com/users/erusev/following{/other_user}",
+    "gists_url": "https://api.github.com/users/erusev/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/erusev/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/erusev/subscriptions",
+    "organizations_url": "https://api.github.com/users/erusev/orgs",
+    "repos_url": "https://api.github.com/users/erusev/repos",
+    "events_url": "https://api.github.com/users/erusev/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/erusev/received_events",
+    "type": "User",
+    "site_admin": false
+  }
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/erusev/parsedown/issues/comments/97573475",
+    "html_url": "https://github.com/erusev/parsedown/issues/313#issuecomment-97573475",
+    "issue_url": "https://api.github.com/repos/erusev/parsedown/issues/313",
+    "id": 97573475,
+    "user": {
+      "login": "erusev",
+      "id": 184170,
+      "avatar_url": "https://avatars.githubusercontent.com/u/184170?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/erusev",
+      "html_url": "https://github.com/erusev",
+      "followers_url": "https://api.github.com/users/erusev/followers",
+      "following_url": "https://api.github.com/users/erusev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/erusev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/erusev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/erusev/subscriptions",
+      "organizations_url": "https://api.github.com/users/erusev/orgs",
+      "repos_url": "https://api.github.com/users/erusev/repos",
+      "events_url": "https://api.github.com/users/erusev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/erusev/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2015-04-29T20:23:23Z",
+    "updated_at": "2015-04-29T20:23:23Z",
+    "body": "Thanks, this is resolved now."
+  }
+]

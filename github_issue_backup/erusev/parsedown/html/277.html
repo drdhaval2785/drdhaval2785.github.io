@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html class='' lang='en'>
+<head prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#'>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8'>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta http-equiv='Content-Language' content='en'>
+<title>erusev/parsedown/277</title>
+<link href='github-c486157afcc5f58155a921bc675afb08733fbaa8dcf39ac2104d3.css' media='all' rel='stylesheet'>
+<link href='github2-da2e842cc3f0aaf33b727d0ef034243c12ab008fd09b24868b97.css' media='all' rel='stylesheet'>
+<meta http-equiv='x-pjax-version' content='4426702614c8182f33d1780ad1169662'>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shAutoloader.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAppleScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAS3.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushBash.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushColdFusion.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCpp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCSharp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCss.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDelphi.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDiff.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushErlang.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushGroovy.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJava.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJavaFX.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/syntaxhighlighter/scripts/shBrushJScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPerl.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPhp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPlain.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPowerShell.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPython.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushRuby.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSass.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushScala.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSql.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushVb.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushXml.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shLegacy.js'></script>
+	<link type='text/css' rel='stylesheet' href='syntaxhighlighter/styles/shCoreDefault.css'/>
+	<script type='text/javascript'>SyntaxHighlighter.all();</script>
+</head>
+<body class='logged_in  env-production windows vis-public'>
+<h1 align='center'><a href='https://github.com/erusev/parsedown/issues/277' target='_blank'>Parsedown corrupts HTML</h1><hr/><div id="#issue-54985671" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/jtojnar" class="author">jtojnar</a>
+    </strong>
+    commented on 
+    <a href="#issue-54985671" class="timestamp">
+      <time>2015-01-21 07:14:54</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Simple input which should be left alone:</p>
+<pre class="brush: html">&lt;div class="row"&gt;
+&lt;div class="col-sm-6 col-md-4"&gt;&lt;a href="https://google.com" class="thumbnail"&gt;&lt;img src="https://www.google.cz/images/srpr/logo11w.png" alt="Google"&gt;&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+<p>is translated into this pile of nonsense</p>
+<pre class="brush: html">&lt;div class="row"&gt;&lt;div class="col-sm-6 col-md-4"&gt;&lt;a href="https://google.com" class="thumbnail"&gt;&lt;img src="https://www.google.cz/images/srpr/logo11w.png" alt="Google"&gt;&lt;/a&gt;
+&lt;div class="col-sm-6 col-md-4"&gt;&lt;a href="https://google.com" class="thumbnail"&gt;&lt;img src="https://www.google.cz/images/srpr/logo11w.png" alt="Google"&gt;&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+<p>Try it yourself at <a href="http://parsedown.org/demo">http://parsedown.org/demo</a></p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-70797090" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-70797090" class="timestamp">
+      <time>2015-01-21 07:46:32</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Thanks. I'll fix this over the weekend.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-70899145" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/rhukster" class="author">rhukster</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-70899145" class="timestamp">
+      <time>2015-01-21 19:00:50</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I noticed this also, it's specifically related to the line breaks and the 'interrupted' blocks:</p>
+<p>``` .html</p>
+<div class="row"><div class="col-sm-6 col-md-4"><a href="https://google.com" class="thumbnail"><img src="https://www.google.cz/images/srpr/logo11w.png" alt="Google"></a></div>
+<p></div></p>
+<pre><code>
+results in:
+
+``` .html
+&lt;div class="row"&gt;&lt;div class="col-sm-6 col-md-4"&gt;&lt;a href="https://google.com" class="thumbnail"&gt;&lt;img src="https://www.google.cz/images/srpr/logo11w.png" alt="Google"&gt;&lt;/a&gt;&lt;/div&gt;
+&lt;p&gt;&lt;/div&gt;&lt;/p&gt;</code></pre>
+<p>And all on one line:</p>
+<p>``` .html</p>
+<div class="row"><div class="col-sm-6 col-md-4"><a href="https://google.com" class="thumbnail"><img src="https://www.google.cz/images/srpr/logo11w.png" alt="Google"></a></div></div>
+<pre><code>
+
+Works fine.
+
+So the logic in `lines()` function is not keeping track of the interrupted blocks properly. </code></pre>
+  </div>
+  </div>
+  </div>
+  <br/>
+</body></html>

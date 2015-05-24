@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html class='' lang='en'>
+<head prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#'>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8'>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta http-equiv='Content-Language' content='en'>
+<title>erusev/parsedown/181</title>
+<link href='github-c486157afcc5f58155a921bc675afb08733fbaa8dcf39ac2104d3.css' media='all' rel='stylesheet'>
+<link href='github2-da2e842cc3f0aaf33b727d0ef034243c12ab008fd09b24868b97.css' media='all' rel='stylesheet'>
+<meta http-equiv='x-pjax-version' content='4426702614c8182f33d1780ad1169662'>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shAutoloader.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAppleScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAS3.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushBash.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushColdFusion.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCpp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCSharp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCss.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDelphi.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDiff.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushErlang.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushGroovy.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJava.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJavaFX.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/syntaxhighlighter/scripts/shBrushJScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPerl.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPhp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPlain.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPowerShell.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPython.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushRuby.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSass.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushScala.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSql.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushVb.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushXml.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shLegacy.js'></script>
+	<link type='text/css' rel='stylesheet' href='syntaxhighlighter/styles/shCoreDefault.css'/>
+	<script type='text/javascript'>SyntaxHighlighter.all();</script>
+</head>
+<body class='logged_in  env-production windows vis-public'>
+<h1 align='center'><a href='https://github.com/erusev/parsedown/pull/181' target='_blank'>HtmlEscaping and SafeLinks</h1><hr/><div id="#issue-34749259" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/naNuke" class="author">naNuke</a>
+    </strong>
+    commented on 
+    <a href="#issue-34749259" class="timestamp">
+      <time>2014-06-02 06:48:05</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Hello, I just started using parsedown in my project and love it very much! But since I needed html escaping I made some modifications that I use at the moment. I know that this is already discussed in issue list and possibly being already worked on but I want to share my code just in case it might come in handy.</p>
+<p>I tried to stay as much in style of parsedown code as I could.</p>
+<p>Also I am sorry that I am not providing test cases for this, but I never worked with any tests and would possibly do it wrong.</p>
+<ol>
+<li>The html escaping works simply by providing another identifier for &gt; character in spanTypes and disabling all  identifiers for tag, comments and markup handling.</li>
+<li>The safe links just check if there is 'javascript:' inside link url.</li>
+</ol>
+<p>I did quite bit of testing with various markdown texts and all seem to work properly and by trying to understand the parsedown code, I don't see a reason why this method of escaping should break the intended features of markdown.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-44837070" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/apfelbox" class="author">apfelbox</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-44837070" class="timestamp">
+      <time>2014-06-02 13:34:00</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Related to <a href='177.html' target='_blank'>#177</a> #161 </p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-44875129" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/naNuke" class="author">naNuke</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-44875129" class="timestamp">
+      <time>2014-06-02 18:41:31</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Changed my mind about the test cases since there were some small issues.</p>
+<p>Now everything should work as intended.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-44895233" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/naNuke" class="author">naNuke</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-44895233" class="timestamp">
+      <time>2014-06-02 21:41:46</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Hopefully last change, initially thought that removing the indentifiers from the types array would be better for performance but then figured out it might be huge pain to extend so moved the blocks into identify methods instead, feels much better now.</p>
+<p>Cheers :)</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-58666567" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-58666567" class="timestamp">
+      <time>2014-10-10 14:53:10</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/naNuke" target="_blank">@naNuke</a></strong> </p>
+<p>I apologise for neglecting this for so long.</p>
+<p>I was wondering if you saw the <code>MarkupEscaped</code> option in the latest release and if it resolves the issue that your pull request tries to resolve.</p>
+<p>p.s. You can test the option at <a href="http://parsedown.org/demo?set[MarkupEscaped]=1">http://parsedown.org/demo?set[MarkupEscaped]=1</a></p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-58671176" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/naNuke" class="author">naNuke</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-58671176" class="timestamp">
+      <time>2014-10-10 15:24:11</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Yes that is why I closed the request :) tho it doesnt add &quot;safelinks&quot; and I didnt see escaping of html comments which can be used for xss attacks in internet explorer but my pull request is outdated anyway so would have to remake it anyway :P</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-58676361" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-58676361" class="timestamp">
+      <time>2014-10-10 16:00:50</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Thanks! I'd appreciate a pull request that addresses the escaping of comments. It should be as simple as possible, though and strictly focused on the issue it resolves.</p>
+<p>As to &quot;safelinks&quot;, I'd love to discuss these in a separate issue.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+</body></html>

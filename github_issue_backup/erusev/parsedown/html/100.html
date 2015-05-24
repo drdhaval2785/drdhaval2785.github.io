@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html class='' lang='en'>
+<head prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#'>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8'>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta http-equiv='Content-Language' content='en'>
+<title>erusev/parsedown/100</title>
+<link href='github-c486157afcc5f58155a921bc675afb08733fbaa8dcf39ac2104d3.css' media='all' rel='stylesheet'>
+<link href='github2-da2e842cc3f0aaf33b727d0ef034243c12ab008fd09b24868b97.css' media='all' rel='stylesheet'>
+<meta http-equiv='x-pjax-version' content='4426702614c8182f33d1780ad1169662'>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shAutoloader.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAppleScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAS3.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushBash.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushColdFusion.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCpp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCSharp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCss.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDelphi.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDiff.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushErlang.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushGroovy.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJava.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJavaFX.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/syntaxhighlighter/scripts/shBrushJScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPerl.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPhp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPlain.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPowerShell.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPython.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushRuby.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSass.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushScala.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSql.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushVb.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushXml.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shLegacy.js'></script>
+	<link type='text/css' rel='stylesheet' href='syntaxhighlighter/styles/shCoreDefault.css'/>
+	<script type='text/javascript'>SyntaxHighlighter.all();</script>
+</head>
+<body class='logged_in  env-production windows vis-public'>
+<h1 align='center'><a href='https://github.com/erusev/parsedown/issues/100' target='_blank'>Specify start attribute on ordered lists</h1><hr/><div id="#issue-27504558" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issue-27504558" class="timestamp">
+      <time>2014-02-13 09:31:55</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>According to the Markdown spec any number with a following dot could start an ordered list.</p>
+<p>Like so:</p>
+<pre class="brush: md">5. fifth
+6. sixth
+7. seventh</code></pre>
+<p><a href="http://www.w3.org/TR/html5/grouping-content.html#attr-ol-start">In the HTML5 spec there is a <code>start</code> attribute on <code>ol</code> elements</a> which could indicate the start of the list.</p>
+<p>So this should produce something like:</p>
+<pre class="brush: html">&lt;ol start="5"&gt;
+&lt;li&gt;fifth&lt;/li&gt;
+&lt;li&gt;sixth&lt;/li&gt;
+&lt;li&gt;seventh&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+<hr />
+<p>Other implementations which do that:</p>
+<ul>
+<li><a href="https://github.com/jgm/cheapskate">cheapskate</a></li>
+<li><a href="https://github.com/jgm/pandoc">pandoc</a></li>
+</ul>
+<hr />
+<p>Thanks should go to <strong><a href="https://github.com/wkpark" target="_blank">@wkpark</a></strong> for revealing it in #99.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-34990699" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/kminchev" class="author">kminchev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-34990699" class="timestamp">
+      <time>2014-02-13 15:41:52</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I don't like this and #101, and generally any feature specifically addressing HTML5. Not everyone is designing in HTML5.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-34990956" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-34990956" class="timestamp">
+      <time>2014-02-13 15:44:03</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/kminchev" target="_blank">@kminchev</a></strong> This part of the HTML5 spec is completely backwards-compatible. What exactly is your concern?</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-34991474" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-34991474" class="timestamp">
+      <time>2014-02-13 15:48:56</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>It is worth noting the <code>ol[start]</code> and <code>li[value]</code> attributes are part of HTML4 as well, but their semantics are just a little bit different and are deprecated from the final version of HTML4.</p>
+<p>So they are not HTML5-only. They are just resurrected in HTML5.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-35048821" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/wkpark" class="author">wkpark</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-35048821" class="timestamp">
+      <time>2014-02-14 02:01:55</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I didn't know that the start attribute is the part of the Markdown spec :)</p>
+<p>BTW the start attribute also supported by ReStructuredText</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-35049453" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/wkpark" class="author">wkpark</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-35049453" class="timestamp">
+      <time>2014-02-14 02:15:48</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>this is not the part of Markdown spec.</p>
+<pre><code>3. item #1
+1. item #2
+8. item #3</code></pre>
+<ol>
+<li>item #1</li>
+<li>item #2</li>
+<li>item #3</li>
+</ol>
+<p>Markdown does not support &quot;start&quot; or &quot;value&quot; attributes</p>
+<p>all numberings are ignored.</p>
+<p>anyway I like &quot;start&quot; attribute and It is useful to support it optionally.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-35053116" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/scottchiefbaker" class="author">scottchiefbaker</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-35053116" class="timestamp">
+      <time>2014-02-14 03:44:00</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>This is specifically <strong>against</strong> the spec.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-35054736" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/wkpark" class="author">wkpark</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-35054736" class="timestamp">
+      <time>2014-02-14 04:27:37</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>there are Text::Markdown perl module exists (version 1.0.31)</p>
+<p>it has <code>trust_list_start_value</code> option to support &quot;start&quot; attrubute.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-35059441" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/kminchev" class="author">kminchev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-35059441" class="timestamp">
+      <time>2014-02-14 06:21:05</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <blockquote>
+<p>anyway I like &quot;start&quot; attribute and It is useful to support it optionally.</p>
+</blockquote>
+<p>Agreed. If any HTML5 addition is going to be implemented, I suggest it being optional.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-35066945" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-35066945" class="timestamp">
+      <time>2014-02-14 09:03:23</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/wkpark" target="_blank">@wkpark</a></strong> This is not part of the Markdown spec. It is just undefined by the spec. It used to be part of the HTML4 spec and it is part of the HTML5 spec.</p>
+<p><strong><a href="https://github.com/scottchiefbaker" target="_blank">@scottchiefbaker</a></strong> Why is this against the spec?</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-35083240" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/wkpark" class="author">wkpark</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-35083240" class="timestamp">
+      <time>2014-02-14 13:32:40</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>ReStructuredText have similar feature by default. (demo page: <a href="http://rst.ninjs.org/">http://rst.ninjs.org/</a>)</p>
+<p>and as I already said, the <code>Text::Markdown</code> perl module have <code>trust_list_start_value</code> option to support <em>start</em> attribute.
+(<code>Text::Markdown</code> is a fork of the original <code>Markdown.pl</code>)</p>
+<p>the source code of <code>Text::Markdown</code> found at Github <a href="https://github.com/bobtfish/text-markdown">https://github.com/bobtfish/text-markdown</a></p>
+<p><code>trust_list_start_value</code> option is described as following</p>
+<p>If <code>true</code>, ordered lists will use the first number as the starting point for
+numbering.  This will let you pick up where you left off by writing:</p>
+<pre><code>  1. foo
+  2. bar
+
+some paragraph
+
+  3. baz
+  6. quux</code></pre>
+<ol>
+<li>foo</li>
+<li>bar</li>
+</ol>
+<p>some paragraph</p>
+<ol>
+<li>baz</li>
+<li>quux</li>
+</ol>
+<p>(Note that in the above, quux will be numbered 4.)</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-41338374" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-41338374" class="timestamp">
+      <time>2014-04-24 22:03:51</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/hkdobrev" target="_blank">@hkdobrev</a></strong> </p>
+<blockquote>
+<p><strong><a href="https://github.com/scottchiefbaker" target="_blank">@scottchiefbaker</a></strong> Why is this against the spec?</p>
+</blockquote>
+<p>Probably, because of the following excerpt:</p>
+<blockquote>
+<p>If you instead wrote the list in Markdown like this:</p>
+<pre><code>1.  Bird
+1.  McHale
+1.  Parish</code></pre>
+<p>or even:</p>
+<pre><code>3. Bird
+1. McHale
+8. Parish</code></pre>
+<p>you’d get the exact same HTML output. The point is, if you want to, you can use ordinal numbers in your ordered Markdown lists, so that the numbers in your source match the numbers in your published HTML. But if you want to be lazy, you don’t have to.</p>
+</blockquote>
+  </div>
+  </div>
+  </div>
+  <br/>
+</body></html>

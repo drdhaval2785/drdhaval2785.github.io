@@ -1,0 +1,70 @@
+{
+  "url": "https://api.github.com/repos/erusev/parsedown/issues/261",
+  "labels_url": "https://api.github.com/repos/erusev/parsedown/issues/261/labels{/name}",
+  "comments_url": "https://api.github.com/repos/erusev/parsedown/issues/261/comments",
+  "events_url": "https://api.github.com/repos/erusev/parsedown/issues/261/events",
+  "html_url": "https://github.com/erusev/parsedown/pull/261",
+  "id": 53982313,
+  "number": 261,
+  "title": "breaksEnabled fix",
+  "user": {
+    "login": "naNuke",
+    "id": 4591126,
+    "avatar_url": "https://avatars.githubusercontent.com/u/4591126?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/naNuke",
+    "html_url": "https://github.com/naNuke",
+    "followers_url": "https://api.github.com/users/naNuke/followers",
+    "following_url": "https://api.github.com/users/naNuke/following{/other_user}",
+    "gists_url": "https://api.github.com/users/naNuke/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/naNuke/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/naNuke/subscriptions",
+    "organizations_url": "https://api.github.com/users/naNuke/orgs",
+    "repos_url": "https://api.github.com/users/naNuke/repos",
+    "events_url": "https://api.github.com/users/naNuke/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/naNuke/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2015-01-11T05:19:34Z",
+  "updated_at": "2015-01-11T12:08:17Z",
+  "closed_at": "2015-01-11T12:08:17Z",
+  "pull_request": {
+    "url": "https://api.github.com/repos/erusev/parsedown/pulls/261",
+    "html_url": "https://github.com/erusev/parsedown/pull/261",
+    "diff_url": "https://github.com/erusev/parsedown/pull/261.diff",
+    "patch_url": "https://github.com/erusev/parsedown/pull/261.patch"
+  },
+  "body": "Hello, I had a problem with my application after recent release where all linebreaks, with option breaksEnabled set to true, were ignored.\r\nI am not familiar with all the changes you have done to the parser but the issue seems to lie on this one line.\r\n\r\nI did test it localy and all seems to work as intended, but if no, feel free to close this PR :smile:\r\n\r\n",
+  "closed_by": {
+    "login": "erusev",
+    "id": 184170,
+    "avatar_url": "https://avatars.githubusercontent.com/u/184170?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/erusev",
+    "html_url": "https://github.com/erusev",
+    "followers_url": "https://api.github.com/users/erusev/followers",
+    "following_url": "https://api.github.com/users/erusev/following{/other_user}",
+    "gists_url": "https://api.github.com/users/erusev/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/erusev/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/erusev/subscriptions",
+    "organizations_url": "https://api.github.com/users/erusev/orgs",
+    "repos_url": "https://api.github.com/users/erusev/repos",
+    "events_url": "https://api.github.com/users/erusev/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/erusev/received_events",
+    "type": "User",
+    "site_admin": false
+  }
+}
+BODY STARTS FROM HERE
+[
+
+]

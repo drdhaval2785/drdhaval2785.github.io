@@ -1,0 +1,91 @@
+{
+  "url": "https://api.github.com/repos/erusev/parsedown/issues/317",
+  "labels_url": "https://api.github.com/repos/erusev/parsedown/issues/317/labels{/name}",
+  "comments_url": "https://api.github.com/repos/erusev/parsedown/issues/317/comments",
+  "events_url": "https://api.github.com/repos/erusev/parsedown/issues/317/events",
+  "html_url": "https://github.com/erusev/parsedown/issues/317",
+  "id": 75071945,
+  "number": 317,
+  "title": "problem when parsing twice in a row",
+  "user": {
+    "login": "Boo1098",
+    "id": 7719705,
+    "avatar_url": "https://avatars.githubusercontent.com/u/7719705?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Boo1098",
+    "html_url": "https://github.com/Boo1098",
+    "followers_url": "https://api.github.com/users/Boo1098/followers",
+    "following_url": "https://api.github.com/users/Boo1098/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Boo1098/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Boo1098/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Boo1098/subscriptions",
+    "organizations_url": "https://api.github.com/users/Boo1098/orgs",
+    "repos_url": "https://api.github.com/users/Boo1098/repos",
+    "events_url": "https://api.github.com/users/Boo1098/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Boo1098/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2015-05-11T03:36:01Z",
+  "updated_at": "2015-05-11T13:08:57Z",
+  "closed_at": "2015-05-11T13:08:57Z",
+  "body": "When I try to parse twice like this:\r\n\r\n    $html = $Parsedown->text($markdown);\r\n    $htmltwo = $Parsedown->text($markdowntwo);\r\n\r\n$htmltwo returns blank. why is that?\r\n\r\nI'm using PHP 5.6.8 if that makes a difference",
+  "closed_by": {
+    "login": "Boo1098",
+    "id": 7719705,
+    "avatar_url": "https://avatars.githubusercontent.com/u/7719705?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Boo1098",
+    "html_url": "https://github.com/Boo1098",
+    "followers_url": "https://api.github.com/users/Boo1098/followers",
+    "following_url": "https://api.github.com/users/Boo1098/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Boo1098/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Boo1098/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Boo1098/subscriptions",
+    "organizations_url": "https://api.github.com/users/Boo1098/orgs",
+    "repos_url": "https://api.github.com/users/Boo1098/repos",
+    "events_url": "https://api.github.com/users/Boo1098/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Boo1098/received_events",
+    "type": "User",
+    "site_admin": false
+  }
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/erusev/parsedown/issues/comments/100900642",
+    "html_url": "https://github.com/erusev/parsedown/issues/317#issuecomment-100900642",
+    "issue_url": "https://api.github.com/repos/erusev/parsedown/issues/317",
+    "id": 100900642,
+    "user": {
+      "login": "Boo1098",
+      "id": 7719705,
+      "avatar_url": "https://avatars.githubusercontent.com/u/7719705?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Boo1098",
+      "html_url": "https://github.com/Boo1098",
+      "followers_url": "https://api.github.com/users/Boo1098/followers",
+      "following_url": "https://api.github.com/users/Boo1098/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Boo1098/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Boo1098/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Boo1098/subscriptions",
+      "organizations_url": "https://api.github.com/users/Boo1098/orgs",
+      "repos_url": "https://api.github.com/users/Boo1098/repos",
+      "events_url": "https://api.github.com/users/Boo1098/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Boo1098/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2015-05-11T13:08:57Z",
+    "updated_at": "2015-05-11T13:08:57Z",
+    "body": "Fixed it myself. didn't realize the php was erroring before it echoed it. derp."
+  }
+]

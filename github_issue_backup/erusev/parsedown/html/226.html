@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html class='' lang='en'>
+<head prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#'>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8'>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta http-equiv='Content-Language' content='en'>
+<title>erusev/parsedown/226</title>
+<link href='github-c486157afcc5f58155a921bc675afb08733fbaa8dcf39ac2104d3.css' media='all' rel='stylesheet'>
+<link href='github2-da2e842cc3f0aaf33b727d0ef034243c12ab008fd09b24868b97.css' media='all' rel='stylesheet'>
+<meta http-equiv='x-pjax-version' content='4426702614c8182f33d1780ad1169662'>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shAutoloader.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAppleScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAS3.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushBash.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushColdFusion.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCpp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCSharp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCss.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDelphi.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDiff.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushErlang.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushGroovy.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJava.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJavaFX.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/syntaxhighlighter/scripts/shBrushJScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPerl.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPhp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPlain.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPowerShell.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPython.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushRuby.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSass.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushScala.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSql.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushVb.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushXml.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shLegacy.js'></script>
+	<link type='text/css' rel='stylesheet' href='syntaxhighlighter/styles/shCoreDefault.css'/>
+	<script type='text/javascript'>SyntaxHighlighter.all();</script>
+</head>
+<body class='logged_in  env-production windows vis-public'>
+<h1 align='center'><a href='https://github.com/erusev/parsedown/issues/226' target='_blank'>quote and newlines</h1><hr/><div id="#issue-44186705" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/petermolnar" class="author">petermolnar</a>
+    </strong>
+    commented on 
+    <a href="#issue-44186705" class="timestamp">
+      <time>2014-09-27 19:10:36</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>hi,</p>
+<p>Although the Markdown definition is followed, this in my opinion, is a bug.
+The case:</p>
+<p>if you create a blockquote text with <code>&gt;</code> at the beginning and you place line breaks in there, the line breaks will never be translated to <code>&lt;br /&gt;</code> tags.</p>
+<p>A similar issue was raised and solved for Ghost here:
+<a href="https://github.com/TryGhost/Ghost/issues/974">https://github.com/TryGhost/Ghost/issues/974</a></p>
+<p>It'd be lovely to have this as a feature.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-57064914" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-57064914" class="timestamp">
+      <time>2014-09-27 20:35:55</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Are you suggesting that line breaks in quote blocks should be treated differently than the ones outside of quote blocks?</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-57068007" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/petermolnar" class="author">petermolnar</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-57068007" class="timestamp">
+      <time>2014-09-27 22:33:32</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>no. </p>
+<p>The situation is that if I enter this text:</p>
+<pre><code>&gt; this is a blockquote text
+&gt; that originally
+&gt; looked liked this</code></pre>
+<p>Parsedown Extra will render it like this:</p>
+<blockquote>
+<p>this is a blockquote text that originally looked liked this</p>
+</blockquote>
+<p>instead of this:</p>
+<blockquote>
+<p>this is a blockquote text
+that originally
+looked liked this</p>
+</blockquote>
+<p>for me.</p>
+<p>I tested it on <a href="http://parsedown.org/demo?extra=1">http://parsedown.org/demo?extra=1</a> as well, the result is the same.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-57068159" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-57068159" class="timestamp">
+      <time>2014-09-27 22:40:08</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>You should have a look at the &quot;breaksEnabled&quot; property. See <a href="/erusev/parsedown/wiki/Usage">the wiki</a> for more info.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-57084788" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-57084788" class="timestamp">
+      <time>2014-09-28 13:02:02</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <blockquote>
+<p>I tested it on <a href="http://parsedown.org/demo?extra=1">http://parsedown.org/demo?extra=1</a> as well, the result is the same.</p>
+</blockquote>
+<p>Where did you find that URL?</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-57085791" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/petermolnar" class="author">petermolnar</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-57085791" class="timestamp">
+      <time>2014-09-28 13:40:21</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I honestly don't remember.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-57086024" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-57086024" class="timestamp">
+      <time>2014-09-28 13:50:04</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I'm closing this as I believe that the &quot;breaksEnabled&quot; property addresses your issue. Let me know if I'm wrong.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-57086097" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/petermolnar" class="author">petermolnar</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-57086097" class="timestamp">
+      <time>2014-09-28 13:52:19</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>No, that is exactly what I was looking for, thank you.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-57091212" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/kminchev" class="author">kminchev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-57091212" class="timestamp">
+      <time>2014-09-28 16:42:29</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <blockquote>
+<p>Where did you find that URL?</p>
+</blockquote>
+<p>It was posted in 13 issue from Extra repo.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+</body></html>

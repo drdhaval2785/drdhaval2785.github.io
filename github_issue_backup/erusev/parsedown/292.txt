@@ -1,0 +1,82 @@
+{
+  "url": "https://api.github.com/repos/erusev/parsedown/issues/292",
+  "labels_url": "https://api.github.com/repos/erusev/parsedown/issues/292/labels{/name}",
+  "comments_url": "https://api.github.com/repos/erusev/parsedown/issues/292/comments",
+  "events_url": "https://api.github.com/repos/erusev/parsedown/issues/292/events",
+  "html_url": "https://github.com/erusev/parsedown/issues/292",
+  "id": 58729981,
+  "number": 292,
+  "title": "Brackets in automatic link conversion",
+  "user": {
+    "login": "silentguy256",
+    "id": 8693820,
+    "avatar_url": "https://avatars.githubusercontent.com/u/8693820?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/silentguy256",
+    "html_url": "https://github.com/silentguy256",
+    "followers_url": "https://api.github.com/users/silentguy256/followers",
+    "following_url": "https://api.github.com/users/silentguy256/following{/other_user}",
+    "gists_url": "https://api.github.com/users/silentguy256/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/silentguy256/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/silentguy256/subscriptions",
+    "organizations_url": "https://api.github.com/users/silentguy256/orgs",
+    "repos_url": "https://api.github.com/users/silentguy256/repos",
+    "events_url": "https://api.github.com/users/silentguy256/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/silentguy256/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "url": "https://api.github.com/repos/erusev/parsedown/labels/issue",
+      "name": "issue",
+      "color": "f7c6c7"
+    },
+    {
+      "url": "https://api.github.com/repos/erusev/parsedown/labels/priority",
+      "name": "priority",
+      "color": "fef2c0"
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2015-02-24T12:12:00Z",
+  "updated_at": "2015-02-24T12:28:43Z",
+  "closed_at": null,
+  "body": "Hi! It seems automatic link conversion is still affected by #126 \r\n\r\nI tried the three ways to create a link\r\n\r\n* `http://en.wikipedia.org/wiki/Test_(assessment)`\r\n* `[http://en.wikipedia.org/wiki/Test_(assessment)](http://en.wikipedia.org/wiki/Test_(assessment))`\r\n* `[test](http://en.wikipedia.org/wiki/Test_(assessment))`\r\n\r\nThe first gets linkified but has the bracket problem. The last one works as expected.\r\nThe middle one is totally screwed cause it it runs into #126 AND #178. I'm kinda surprised to see #178 as resolved cause it clearly still exists and can create weird situations. Is this freaky instance it creates a broken auto converted link and a proper link, but seeing how the broken link can't be inside the proper link the proper link has an empty text and is just followed by the broken link",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/erusev/parsedown/issues/comments/75747745",
+    "html_url": "https://github.com/erusev/parsedown/issues/292#issuecomment-75747745",
+    "issue_url": "https://api.github.com/repos/erusev/parsedown/issues/292",
+    "id": 75747745,
+    "user": {
+      "login": "erusev",
+      "id": 184170,
+      "avatar_url": "https://avatars.githubusercontent.com/u/184170?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/erusev",
+      "html_url": "https://github.com/erusev",
+      "followers_url": "https://api.github.com/users/erusev/followers",
+      "following_url": "https://api.github.com/users/erusev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/erusev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/erusev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/erusev/subscriptions",
+      "organizations_url": "https://api.github.com/users/erusev/orgs",
+      "repos_url": "https://api.github.com/users/erusev/repos",
+      "events_url": "https://api.github.com/users/erusev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/erusev/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2015-02-24T12:28:43Z",
+    "updated_at": "2015-02-24T12:28:43Z",
+    "body": "Thanks. I'll see what I can do."
+  }
+]

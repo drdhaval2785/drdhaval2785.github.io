@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html class='' lang='en'>
+<head prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#'>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8'>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta http-equiv='Content-Language' content='en'>
+<title>erusev/parsedown/224</title>
+<link href='github-c486157afcc5f58155a921bc675afb08733fbaa8dcf39ac2104d3.css' media='all' rel='stylesheet'>
+<link href='github2-da2e842cc3f0aaf33b727d0ef034243c12ab008fd09b24868b97.css' media='all' rel='stylesheet'>
+<meta http-equiv='x-pjax-version' content='4426702614c8182f33d1780ad1169662'>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shAutoloader.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAppleScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAS3.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushBash.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushColdFusion.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCpp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCSharp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCss.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDelphi.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDiff.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushErlang.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushGroovy.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJava.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJavaFX.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/syntaxhighlighter/scripts/shBrushJScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPerl.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPhp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPlain.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPowerShell.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPython.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushRuby.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSass.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushScala.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSql.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushVb.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushXml.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shLegacy.js'></script>
+	<link type='text/css' rel='stylesheet' href='syntaxhighlighter/styles/shCoreDefault.css'/>
+	<script type='text/javascript'>SyntaxHighlighter.all();</script>
+</head>
+<body class='logged_in  env-production windows vis-public'>
+<h1 align='center'><a href='https://github.com/erusev/parsedown/pull/224' target='_blank'>Add `noMarkup` option to escape user HTML</h1><hr/><div id="#issue-43308743" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issue-43308743" class="timestamp">
+      <time>2014-09-20 11:58:10</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Resolves #106. Addresses #161.</p>
+<p>This change introduces a new option - <code>noMarkup</code>. You could set it in the
+<code>setNoMarkup()</code> method similar to the <code>setBreaksEnabled()</code> one.</p>
+<p>Example usage:</p>
+<pre class="brush: php">&lt;?php
+
+$parsedown = new Parsedown();
+$parsedown-&gt;setNoMarkup(true);
+$parsedown-&gt;text('&lt;div&gt;&lt;strong&gt;*Some text*&lt;/strong&gt;&lt;/div&gt;');
+
+// Outputs:
+// &lt;p&gt;&amp;lt;div&gt;&amp;lt;strong&gt;&lt;em&gt;Some text&lt;/em&gt;&amp;lts;/strong&gt;&amp;lt;/div&gt;&lt;/p&gt;</code></pre>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-56266345" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/xPaw" class="author">xPaw</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-56266345" class="timestamp">
+      <time>2014-09-20 12:18:52</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Shouldn't it escape '&gt;' like it does with '&lt;'?</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-56266603" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-56266603" class="timestamp">
+      <time>2014-09-20 12:31:42</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/xPaw" target="_blank">@xPaw</a></strong> No need. <a href="http://stackoverflow.com/questions/9010678/html-should-i-encode-greater-than-or-not-gt">http://stackoverflow.com/questions/9010678/html-should-i-encode-greater-than-or-not-gt</a></p>
+<p>I think you'd need to escape <code>&lt;</code> in an XML document.</p>
+<p>It should also be escaped in attributes, but this is not relevant to this change.</p>
+<p>I think Parsedown does not escape it for performance reasons and because there is no reason to do it.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-56266759" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/xPaw" class="author">xPaw</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-56266759" class="timestamp">
+      <time>2014-09-20 12:38:52</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>HTML spec suggests escaping it. See <a href="http://www.w3.org/html/wg/drafts/html/master/syntax.html#serializing-html-fragments">http://www.w3.org/html/wg/drafts/html/master/syntax.html#serializing-html-fragments</a></p>
+<p>This includes &amp; and &quot;.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-56268016" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-56268016" class="timestamp">
+      <time>2014-09-20 13:34:49</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/xPaw" target="_blank">@xPaw</a></strong> I believe this text in the spec is targeted towards user agents and other software parsing HTML or working with the DOM.</p>
+<p>Even if Parsedown should escape <code>&lt;</code>, this is not related to this pull request. This is the way Parsedown works regardless of the <code>noMarkup</code> option. You should probably discuss it here: <a href="https://github.com/erusev/parsedown/pull/197">https://github.com/erusev/parsedown/pull/197</a> or open a new issue.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-56269374" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-56269374" class="timestamp">
+      <time>2014-09-20 14:28:02</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>BTW <strong><a href="https://github.com/javiereguiluz" target="_blank">@javiereguiluz</a></strong> has raised the question about releasing in <a href="https://github.com/erusev/parsedown/issues/106#issuecomment-56268657">https://github.com/erusev/parsedown/issues/106#issuecomment-56268657</a></p>
+<p><strong><a href="https://github.com/erusev" target="_blank">@erusev</a></strong> I'd like to add that if you want to be very strict about <a href="http://semver.org">Semantic Versioning</a> this should be released as a new minor version instead of a patch version, because it changes the interface and the major version is bigger than 0. It doesn't matter that <strong>it is backwards compatible</strong>.</p>
+<blockquote>
+<p>7. Minor version Y (x.Y.z | x &gt; 0) MUST be incremented if new, backwards compatible functionality is introduced to the public API.</p>
+</blockquote>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-56311262" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-56311262" class="timestamp">
+      <time>2014-09-21 20:20:16</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/hkdobrev" target="_blank">@hkdobrev</a></strong> </p>
+<blockquote>
+<p>I'd like to add that if you want to be very strict about Semantic Versioning this should be released as a new minor version instead of a patch version</p>
+</blockquote>
+<p>:+1: </p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-56311517" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-56311517" class="timestamp">
+      <time>2014-09-21 20:27:56</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/erusev" target="_blank">@erusev</a></strong> I've just updated the wiki with the example usage.</p>
+<p><a href="https://github.com/erusev/parsedown/wiki/Usage">https://github.com/erusev/parsedown/wiki/Usage</a></p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-56311661" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-56311661" class="timestamp">
+      <time>2014-09-21 20:31:46</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/hkdobrev" target="_blank">@hkdobrev</a></strong> I'm contemplating changing the name of the method to make it more consistent with the name of the other setter. Probably to <code>setMarkupEscaped</code>.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-56311863" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-56311863" class="timestamp">
+      <time>2014-09-21 20:38:14</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/erusev" target="_blank">@erusev</a></strong> I was considering the following names: <code>disallowMarkup</code>, <code>setMarkupDisallowed</code>, <code>setEscapeMarkup</code>, <code>setDisallowHtml</code>, <code>setNoHtml</code>.</p>
+<p>I went for <code>setNoMarkup</code> for the following reasons:</p>
+<ul>
+<li>It is consistent with what users have used with other parsers.</li>
+<li>It is short and clear.</li>
+<li>It is very clear that you are setting an option which is named <code>noMarkup</code>. In the case of <code>setMarkupEscaped</code> one could think you could pass it some markup which is already escaped. Generally such options should be named so it is clear they are options. Thus said I am not happy with <code>breaksEnabled</code> as well. It should be <code>enableBreaks</code> and the method would be <code>setEnableBreaks</code>.</li>
+</ul>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-56316589" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-56316589" class="timestamp">
+      <time>2014-09-21 23:21:51</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/hkdobrev" target="_blank">@hkdobrev</a></strong> </p>
+<p>The name needs to be an adjective, as it represents a boolean, and the attribute in question doesn't remove markup. It escapes it.</p>
+<p>I appreciate the PR and I hope you wouldn't mind me making this change.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-58436455" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/markseu" class="author">markseu</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-58436455" class="timestamp">
+      <time>2014-10-08 22:12:42</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Does <code>setMarkupEscaped(true)</code> escape HTML elements and entities?</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-58541653" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-58541653" class="timestamp">
+      <time>2014-10-09 17:00:31</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/markseu" target="_blank">@markseu</a></strong>  It does. You can test at <a href="http://parsedown.org/demo?set[MarkupEscaped]=1">http://parsedown.org/demo?set[MarkupEscaped]=1</a>.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-58557298" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/javiereguiluz" class="author">javiereguiluz</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-58557298" class="timestamp">
+      <time>2014-10-09 18:42:32</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/markseu" target="_blank">@markseu</a></strong> it does and you must be aware of this if you use the HTML generated by Parsedown afterwards. For instance, I use Parsedown to convert Markdown into HTML and then I use GeSHi to highlight the code listings. This is my workflow:</p>
+<pre class="brush: php">// use Parsedown to get HTML from Markdown
+$parser = new \ParsedownExtra();
+$parser-&gt;setMarkupEscaped(true);
+
+$html = $parser-&gt;text($content);
+
+// highlight code with GeSHi
+$html = preg_replace_callback(
+    '/^&lt;pre&gt;&lt;code( class="language\-(?&lt;syntax&gt;.*)")?&gt;(?&lt;source&gt;.*)&lt;\/code&gt;&lt;\/pre&gt;/Ums',
+    'highlightCode',
+    $html
+);</code></pre>
+<p>The problem is that I need an ugly hack on <code>highlightCode()</code> function in order to unescape elements and entities. Otherwise, GeSHi would double escape them:</p>
+<pre class="brush: php">public function highlightCode($matches)
+{
+    $source = trim($matches['source']);
+
+    // this is the ugly hack to avoid double escaping
+    $source = str_replace(
+        array('&amp;lt;', '&amp;gt;', '&amp;amp;'),
+        array('&lt;',    '&gt;',    '&amp;'),
+        $source
+    );
+
+    // highlight source code with GeSHi ...
+}</code></pre>
+  </div>
+  </div>
+  </div>
+  <br/>
+</body></html>

@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html class='' lang='en'>
+<head prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#'>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8'>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta http-equiv='Content-Language' content='en'>
+<title>erusev/parsedown/228</title>
+<link href='github-c486157afcc5f58155a921bc675afb08733fbaa8dcf39ac2104d3.css' media='all' rel='stylesheet'>
+<link href='github2-da2e842cc3f0aaf33b727d0ef034243c12ab008fd09b24868b97.css' media='all' rel='stylesheet'>
+<meta http-equiv='x-pjax-version' content='4426702614c8182f33d1780ad1169662'>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shAutoloader.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAppleScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAS3.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushBash.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushColdFusion.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCpp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCSharp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCss.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDelphi.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDiff.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushErlang.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushGroovy.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJava.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJavaFX.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/syntaxhighlighter/scripts/shBrushJScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPerl.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPhp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPlain.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPowerShell.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPython.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushRuby.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSass.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushScala.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSql.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushVb.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushXml.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shLegacy.js'></script>
+	<link type='text/css' rel='stylesheet' href='syntaxhighlighter/styles/shCoreDefault.css'/>
+	<script type='text/javascript'>SyntaxHighlighter.all();</script>
+</head>
+<body class='logged_in  env-production windows vis-public'>
+<h1 align='center'><a href='https://github.com/erusev/parsedown/issues/228' target='_blank'>Parse fails on en dash (–)</h1><hr/><div id="#issue-44612939" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/julianrichen" class="author">julianrichen</a>
+    </strong>
+    commented on 
+    <a href="#issue-44612939" class="timestamp">
+      <time>2014-10-01 20:11:24</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Was writing the following markdown code block and it seems to fail in parsedown:</p>
+<pre><code>-A INPUT -p tcp –dport 22 -j ACCEPT
+-A INPUT -p tcp –dport 20:21 -j ACCEPT</code></pre>
+<p>It seems to be caused by the &quot;-dport&quot;, more specifically the dash. Removing the dash allows parsedown to parse the code block.</p>
+<pre><code>-A INPUT -p tcp dport 22 -j ACCEPT
+-A INPUT -p tcp dport 20:21 -j ACCEPT</code></pre>
+<p>Digging a bit further I found out the dash was actually an en dash <code>[&amp;ndash; (150 or 8211)]</code> and the <code>completeCodeBlock()</code> method was using <code>htmlspecialchars()</code> which will return nothing if special characters are found.</p>
+<p>I'm hesitant to label this as a bug as <code>htmlspecialchars()</code> is doing it's job but failing an entire code block seems like a bad idea for a single character, especially when en dashes work in any other instance of parsedown. Could this be handled better by parsedown?</p>
+<p>Unfortunately I don't really have any suggestion for a better solution but figure I would bring it up.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-57538965" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/kminchev" class="author">kminchev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-57538965" class="timestamp">
+      <time>2014-10-01 21:09:16</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Replace any occurance of en dash with dash.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-57562822" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/julianrichen" class="author">julianrichen</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-57562822" class="timestamp">
+      <time>2014-10-02 00:31:33</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I already did that, I was talking about a fix for parsedown. Maybe replace the characters with equivalent characters or just plain allow them. Seems backwards that parsedown would remove entire blocks of code when it's job is to render it.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-57580136" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/kminchev" class="author">kminchev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-57580136" class="timestamp">
+      <time>2014-10-02 04:00:59</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>My comment stands for Parsedown too :P</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-57697592" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/julianrichen" class="author">julianrichen</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-57697592" class="timestamp">
+      <time>2014-10-02 20:11:40</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Alright, was just checking. Thanks!</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-57761402" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-57761402" class="timestamp">
+      <time>2014-10-03 06:42:14</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>BTW I think this is a valid bug in Parsedown and should be reopened. Just my ¢2.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-57819164" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/julianrichen" class="author">julianrichen</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-57819164" class="timestamp">
+      <time>2014-10-03 16:24:40</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I guess I'll reopen it to encourage discussion. Would be interesting to hear more opinions.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-57899815" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-57899815" class="timestamp">
+      <time>2014-10-04 09:38:24</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/FireDart" target="_blank">@FireDart</a></strong> </p>
+<p>Could you provide both the expected and the actual output?</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-57907251" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/julianrichen" class="author">julianrichen</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-57907251" class="timestamp">
+      <time>2014-10-04 14:31:48</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Expected:</p>
+<pre><code>-A INPUT -p tcp –dport 22 -j ACCEPT
+-A INPUT -p tcp –dport 20:21 -j ACCEPT</code></pre>
+<p>It's outputs nothing but does create a <code>&lt;pre&gt;&lt;code&gt;&lt;/code&gt;&lt;/pre&gt;</code> block.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-57915852" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-57915852" class="timestamp">
+      <time>2014-10-04 19:26:38</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/FireDart" target="_blank">@FireDart</a></strong> </p>
+<p>Is this reproducible on <a href="http://parsedown.org/demo">http://parsedown.org/demo</a>?</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-57921631" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/julianrichen" class="author">julianrichen</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-57921631" class="timestamp">
+      <time>2014-10-04 23:25:43</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>No, I can't reproduce it on the site.</p>
+<p>Also I'm using the latest version from the git, is the <a href="http://parsedown.org/demo">http://parsedown.org/demo</a> running an older version?</p>
+<p>I'm using PHP 5.5.12 on my localhost and also tried PHP 5.5.9-1 on my server. This is the demo code I'm testing with:</p>
+<pre><code>&lt;?php
+include('Parsedown.php');
+$parsedown = new Parsedown();
+echo $parsedown-&gt;parse("
+    -A INPUT -p tcp –dport 22 -j ACCEPT
+    -A INPUT -p tcp –dport 20:21 -j ACCEPT
+");</code></pre>
+<p>It will pass in</p>
+<ul>
+<li>paragraph</li>
+<li>quote</li>
+</ul>
+<p>It fails in</p>
+<ul>
+<li>code block with indent</li>
+<li>code block with tilda</li>
+<li>inline code</li>
+</ul>
+<p>This is what I'm testing with:</p>
+<pre><code>&lt;?php
+include('Parsedown.php');
+$parsedown = new Parsedown();
+echo $parsedown-&gt;parse("
+As paragraph (Passed)
+
+-A INPUT -p tcp –dport 22 -j ACCEPT
+
+-A INPUT -p tcp –dport 20:21 -j ACCEPT
+
+---
+
+Quote (Passed)
+&gt;-A INPUT -p tcp –dport 22 -j ACCEPT
+
+&gt;-A INPUT -p tcp –dport 20:21 -j ACCEPT
+
+---
+
+Code Block using indent (Fail)
+    -A INPUT -p tcp –dport 22 -j ACCEPT
+    -A INPUT -p tcp –dport 20:21 -j ACCEPT
+
+---
+
+Code Block using tilda (Fail)
+These tildas are spaced so github still renders this a as code.
+` ` `
+-A INPUT -p tcp –dport 22 -j ACCEPT
+-A INPUT -p tcp –dport 20:21 -j ACCEPT
+` ` `
+
+---
+
+Inline Block (Failed)
+
+This is an example of inline `-A INPUT -p tcp –dport 22 -j ACCEPT`.
+");</code></pre>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-57921883" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/cebe" class="author">cebe</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-57921883" class="timestamp">
+      <time>2014-10-04 23:39:48</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>htmlspecialchars is called with encoding paramter UTF-8: <a href="https://github.com/erusev/parsedown/search?utf8=%E2%9C%93&q=htmlspecialchars">https://github.com/erusev/parsedown/search?utf8=%E2%9C%93&q=htmlspecialchars</a></p>
+<p>maybe your input is not utf-8 encoded?</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-57923009" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/julianrichen" class="author">julianrichen</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-57923009" class="timestamp">
+      <time>2014-10-05 00:46:08</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/cebe" target="_blank">@cebe</a></strong> I can definitely set the headers to force utf-8 which will return the code block with a missing character symbol (�).</p>
+<pre><code>&lt;?php
+header("Content-Type: text/html; charset=utf-8");
+include('Parsedown.php');
+$parsedown = new Parsedown();
+echo $parsedown-&gt;parse("
+    -A INPUT -p tcp –dport 22 -j ACCEPT
+    -A INPUT -p tcp –dport 20:21 -j ACCEPT
+");
+``
+Output:</code></pre>
+<p>-A INPUT -p tcp �dport 22 -j ACCEPT
+-A INPUT -p tcp �dport 20:21 -j ACCEPT</p>
+<pre><code>
+and I can also `utf8_encode()` the input, which will mark an en-dash as a special character but will also remove it.</code></pre>
+<p>&lt;?php
+header(&quot;Content-Type: text/html; charset=utf-8&quot;);
+include('Parsedown.php');
+$parsedown = new Parsedown();
+echo $parsedown-&gt;parse(utf8_encode(&quot;
+-A INPUT -p tcp –dport 22 -j ACCEPT
+-A INPUT -p tcp –dport 20:21 -j ACCEPT
+&quot;));
+``
+Output:</p>
+<pre><code>-A INPUT -p tcp dport 22 -j ACCEPT
+-A INPUT -p tcp dport 20:21 -j ACCEPT</code></pre>
+<p>So I'm a bit course as to why the <a href="http://parsedown.org/demo">http://parsedown.org/demo</a> seems to handle it just fine. It must be something on my side that I'm missing.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-58545401" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-58545401" class="timestamp">
+      <time>2014-10-09 17:25:27</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I'm closing the issue as I'm unable to reproduce it. I'd be happy to reopen it when I have more info that suggests that it is indeed Parsedown that is causing the issue.</p>
+<p>p.s. The demo uses the latest release of Parsedown.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+</body></html>

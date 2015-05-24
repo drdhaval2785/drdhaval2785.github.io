@@ -1,0 +1,70 @@
+{
+  "url": "https://api.github.com/repos/erusev/parsedown/issues/29",
+  "labels_url": "https://api.github.com/repos/erusev/parsedown/issues/29/labels{/name}",
+  "comments_url": "https://api.github.com/repos/erusev/parsedown/issues/29/comments",
+  "events_url": "https://api.github.com/repos/erusev/parsedown/issues/29/events",
+  "html_url": "https://github.com/erusev/parsedown/pull/29",
+  "id": 22535579,
+  "number": 29,
+  "title": "Allow multi-line emphasis. Fix #28.",
+  "user": {
+    "login": "hkdobrev",
+    "id": 506129,
+    "avatar_url": "https://avatars.githubusercontent.com/u/506129?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/hkdobrev",
+    "html_url": "https://github.com/hkdobrev",
+    "followers_url": "https://api.github.com/users/hkdobrev/followers",
+    "following_url": "https://api.github.com/users/hkdobrev/following{/other_user}",
+    "gists_url": "https://api.github.com/users/hkdobrev/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/hkdobrev/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/hkdobrev/subscriptions",
+    "organizations_url": "https://api.github.com/users/hkdobrev/orgs",
+    "repos_url": "https://api.github.com/users/hkdobrev/repos",
+    "events_url": "https://api.github.com/users/hkdobrev/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/hkdobrev/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2013-11-12T17:23:13Z",
+  "updated_at": "2013-11-12T20:46:05Z",
+  "closed_at": "2013-11-12T20:46:05Z",
+  "pull_request": {
+    "url": "https://api.github.com/repos/erusev/parsedown/pulls/29",
+    "html_url": "https://github.com/erusev/parsedown/pull/29",
+    "diff_url": "https://github.com/erusev/parsedown/pull/29.diff",
+    "patch_url": "https://github.com/erusev/parsedown/pull/29.patch"
+  },
+  "body": "This closes #28.",
+  "closed_by": {
+    "login": "erusev",
+    "id": 184170,
+    "avatar_url": "https://avatars.githubusercontent.com/u/184170?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/erusev",
+    "html_url": "https://github.com/erusev",
+    "followers_url": "https://api.github.com/users/erusev/followers",
+    "following_url": "https://api.github.com/users/erusev/following{/other_user}",
+    "gists_url": "https://api.github.com/users/erusev/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/erusev/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/erusev/subscriptions",
+    "organizations_url": "https://api.github.com/users/erusev/orgs",
+    "repos_url": "https://api.github.com/users/erusev/repos",
+    "events_url": "https://api.github.com/users/erusev/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/erusev/received_events",
+    "type": "User",
+    "site_admin": false
+  }
+}
+BODY STARTS FROM HERE
+[
+
+]

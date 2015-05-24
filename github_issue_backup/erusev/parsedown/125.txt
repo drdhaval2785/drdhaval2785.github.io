@@ -1,0 +1,91 @@
+{
+  "url": "https://api.github.com/repos/erusev/parsedown/issues/125",
+  "labels_url": "https://api.github.com/repos/erusev/parsedown/issues/125/labels{/name}",
+  "comments_url": "https://api.github.com/repos/erusev/parsedown/issues/125/comments",
+  "events_url": "https://api.github.com/repos/erusev/parsedown/issues/125/events",
+  "html_url": "https://github.com/erusev/parsedown/issues/125",
+  "id": 28361960,
+  "number": 125,
+  "title": "Tables are not parsed correctly",
+  "user": {
+    "login": "kminchev",
+    "id": 6413068,
+    "avatar_url": "https://avatars.githubusercontent.com/u/6413068?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kminchev",
+    "html_url": "https://github.com/kminchev",
+    "followers_url": "https://api.github.com/users/kminchev/followers",
+    "following_url": "https://api.github.com/users/kminchev/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kminchev/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kminchev/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kminchev/subscriptions",
+    "organizations_url": "https://api.github.com/users/kminchev/orgs",
+    "repos_url": "https://api.github.com/users/kminchev/repos",
+    "events_url": "https://api.github.com/users/kminchev/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kminchev/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2014-02-26T19:32:13Z",
+  "updated_at": "2014-04-17T14:47:08Z",
+  "closed_at": "2014-02-28T12:05:10Z",
+  "body": "According to [GFM](https://help.github.com/articles/github-flavored-markdown#tables) outer pipes are optional. Currently, Parsedown doesn't render tables if outer pipes are omitted.",
+  "closed_by": {
+    "login": "erusev",
+    "id": 184170,
+    "avatar_url": "https://avatars.githubusercontent.com/u/184170?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/erusev",
+    "html_url": "https://github.com/erusev",
+    "followers_url": "https://api.github.com/users/erusev/followers",
+    "following_url": "https://api.github.com/users/erusev/following{/other_user}",
+    "gists_url": "https://api.github.com/users/erusev/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/erusev/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/erusev/subscriptions",
+    "organizations_url": "https://api.github.com/users/erusev/orgs",
+    "repos_url": "https://api.github.com/users/erusev/repos",
+    "events_url": "https://api.github.com/users/erusev/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/erusev/received_events",
+    "type": "User",
+    "site_admin": false
+  }
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/erusev/parsedown/issues/comments/36215282",
+    "html_url": "https://github.com/erusev/parsedown/issues/125#issuecomment-36215282",
+    "issue_url": "https://api.github.com/repos/erusev/parsedown/issues/125",
+    "id": 36215282,
+    "user": {
+      "login": "wkpark",
+      "id": 232347,
+      "avatar_url": "https://avatars.githubusercontent.com/u/232347?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/wkpark",
+      "html_url": "https://github.com/wkpark",
+      "followers_url": "https://api.github.com/users/wkpark/followers",
+      "following_url": "https://api.github.com/users/wkpark/following{/other_user}",
+      "gists_url": "https://api.github.com/users/wkpark/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/wkpark/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/wkpark/subscriptions",
+      "organizations_url": "https://api.github.com/users/wkpark/orgs",
+      "repos_url": "https://api.github.com/users/wkpark/repos",
+      "events_url": "https://api.github.com/users/wkpark/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/wkpark/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2014-02-27T06:42:04Z",
+    "updated_at": "2014-02-27T13:58:34Z",
+    "body": "There are two `$line[0] === '|'` codes found. I guess something like `strpos($line, '|') !== false` will fix it."
+  }
+]

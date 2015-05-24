@@ -1,0 +1,68 @@
+{
+  "url": "https://api.github.com/repos/erusev/parsedown/issues/136",
+  "labels_url": "https://api.github.com/repos/erusev/parsedown/issues/136/labels{/name}",
+  "comments_url": "https://api.github.com/repos/erusev/parsedown/issues/136/comments",
+  "events_url": "https://api.github.com/repos/erusev/parsedown/issues/136/events",
+  "html_url": "https://github.com/erusev/parsedown/issues/136",
+  "id": 29366945,
+  "number": 136,
+  "title": "\"Lazy\" blockquotes don't convert line breaks to paragraphs as expected",
+  "user": {
+    "login": "adambraimbridge",
+    "id": 224547,
+    "avatar_url": "https://avatars.githubusercontent.com/u/224547?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/adambraimbridge",
+    "html_url": "https://github.com/adambraimbridge",
+    "followers_url": "https://api.github.com/users/adambraimbridge/followers",
+    "following_url": "https://api.github.com/users/adambraimbridge/following{/other_user}",
+    "gists_url": "https://api.github.com/users/adambraimbridge/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/adambraimbridge/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/adambraimbridge/subscriptions",
+    "organizations_url": "https://api.github.com/users/adambraimbridge/orgs",
+    "repos_url": "https://api.github.com/users/adambraimbridge/repos",
+    "events_url": "https://api.github.com/users/adambraimbridge/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/adambraimbridge/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "url": "https://api.github.com/repos/erusev/parsedown/labels/issue",
+      "name": "issue",
+      "color": "f7c6c7"
+    }
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2014-03-13T16:41:45Z",
+  "updated_at": "2014-04-30T23:42:07Z",
+  "closed_at": "2014-04-30T23:42:07Z",
+  "body": "According to the syntax notes at [daringfireball](https://daringfireball.net/projects/markdown/syntax#blockquote), there is a special, lazy style of marking blockquotes. I seems that it's inconsistent with Parsedown. Please see  this screengrab:\r\n\r\n![screen shot 2014-03-13 at 16 16 23](https://f.cloud.github.com/assets/224547/2411859/47844ace-aacc-11e3-9fc3-7c7fe08585f4.png)\r\n\r\nI unfortunately don't know how to patch this, but I thought it can't hurt to raise an issue.\r\n\r\nMany thanks and kind regards, Adam.",
+  "closed_by": {
+    "login": "erusev",
+    "id": 184170,
+    "avatar_url": "https://avatars.githubusercontent.com/u/184170?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/erusev",
+    "html_url": "https://github.com/erusev",
+    "followers_url": "https://api.github.com/users/erusev/followers",
+    "following_url": "https://api.github.com/users/erusev/following{/other_user}",
+    "gists_url": "https://api.github.com/users/erusev/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/erusev/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/erusev/subscriptions",
+    "organizations_url": "https://api.github.com/users/erusev/orgs",
+    "repos_url": "https://api.github.com/users/erusev/repos",
+    "events_url": "https://api.github.com/users/erusev/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/erusev/received_events",
+    "type": "User",
+    "site_admin": false
+  }
+}
+BODY STARTS FROM HERE
+[
+
+]

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html class='' lang='en'>
+<head prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#'>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8'>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta http-equiv='Content-Language' content='en'>
+<title>erusev/parsedown/185</title>
+<link href='github-c486157afcc5f58155a921bc675afb08733fbaa8dcf39ac2104d3.css' media='all' rel='stylesheet'>
+<link href='github2-da2e842cc3f0aaf33b727d0ef034243c12ab008fd09b24868b97.css' media='all' rel='stylesheet'>
+<meta http-equiv='x-pjax-version' content='4426702614c8182f33d1780ad1169662'>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shAutoloader.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAppleScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAS3.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushBash.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushColdFusion.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCpp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCSharp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCss.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDelphi.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDiff.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushErlang.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushGroovy.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJava.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJavaFX.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/syntaxhighlighter/scripts/shBrushJScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPerl.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPhp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPlain.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPowerShell.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPython.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushRuby.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSass.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushScala.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSql.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushVb.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushXml.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shLegacy.js'></script>
+	<link type='text/css' rel='stylesheet' href='syntaxhighlighter/styles/shCoreDefault.css'/>
+	<script type='text/javascript'>SyntaxHighlighter.all();</script>
+</head>
+<body class='logged_in  env-production windows vis-public'>
+<h1 align='center'><a href='https://github.com/erusev/parsedown/issues/185' target='_blank'>Might want to include this example</h1><hr/><div id="#issue-35673089" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/mofosyne" class="author">mofosyne</a>
+    </strong>
+    commented on 
+    <a href="#issue-35673089" class="timestamp">
+      <time>2014-06-13 13:52:13</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>This is an alternative to &quot;include&quot; for those who want a simple way to quickly include text from a file to a page. This would be useful under example pages, if you have any.</p>
+<pre><code>function parsedownInclude($f){
+    require_once 'Parsedown.php';
+    $Parsedown = new Parsedown();
+    echo is_readable($f) ? $Parsedown-&gt;text(file_get_contents($f)) : "File Not Found".htmlspecialchars($f);
+}</code></pre>
+<p>edit: thanks hkdobrev, noted
+2nd edit: Used ternary operators to make it more elegant</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-46017380" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-46017380" class="timestamp">
+      <time>2014-06-13 14:26:44</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>You should check <code>is_readable($filename)</code> as well.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-46085657" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/mofosyne" class="author">mofosyne</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-46085657" class="timestamp">
+      <time>2014-06-14 11:43:13</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Okay, here's another example, this one potentially more useful. Below is a very simple php script that when paired with modification to .htaccess file, will allow for any files ending in .md file to be viewed with a style sheet. I wonder if there is any security problems that I may have forgotten here.</p>
+<pre><code>&lt;?php
+/*
+Coder: Brian Khuu briankhuu.com
+Purpose: To allow for displaying of .md file transparently to visitors via http://parsedown.org and mod_rewrite 
+Usage: Place this file (parsedownRender.php) in your root directory and add these lines below to your .htaccess file
+
+    &lt;IfModule mod_rewrite.c&gt;
+    RewriteEngine On
+    RewriteCond  %{REQUEST_URI} ^(.*)\.md
+    RewriteRule . /parsedownRender.php?css=/css/markdown1.css&amp;file=%{REQUEST_URI} [L]
+    &lt;/IfModule&gt;
+
+    */
+
+$file = "./".$_GET["file"]; // 'file' =&gt; /md/test.md
+$css = ( $_GET['css']!="" ) ? htmlspecialchars($_GET['css']) : "/css/style.css";
+function parsedownInclude($f){
+    require_once 'Parsedown.php';
+    $Parsedown = new Parsedown();
+    echo is_readable($f) ? $Parsedown-&gt;text(file_get_contents($f)) : "File Not Found: ".htmlspecialchars($f);
+}
+?&gt;
+&lt;!DOCTYPE html&gt;
+&lt;head&gt;&lt;link rel="stylesheet" type="text/css" href="&lt;?php echo $css ?&gt;" /&gt;&lt;/head&gt;
+&lt;body&gt;
+&lt;?php parsedownInclude($file) ?&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-70081609" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-70081609" class="timestamp">
+      <time>2015-01-15 12:55:36</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/mofosyne" target="_blank">@mofosyne</a></strong> </p>
+<p>I can see the value in this, but don't think that it solves a popular enough problem for it to be in the documentation. I appreciate the contribution, but I'm going to close the issue.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+</body></html>

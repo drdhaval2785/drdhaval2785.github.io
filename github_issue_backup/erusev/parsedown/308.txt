@@ -1,0 +1,46 @@
+{
+  "url": "https://api.github.com/repos/erusev/parsedown/issues/308",
+  "labels_url": "https://api.github.com/repos/erusev/parsedown/issues/308/labels{/name}",
+  "comments_url": "https://api.github.com/repos/erusev/parsedown/issues/308/comments",
+  "events_url": "https://api.github.com/repos/erusev/parsedown/issues/308/events",
+  "html_url": "https://github.com/erusev/parsedown/issues/308",
+  "id": 68662952,
+  "number": 308,
+  "title": "Add \"Caracal\" as CMS using this parser.",
+  "user": {
+    "login": "MeanEYE",
+    "id": 1911594,
+    "avatar_url": "https://avatars.githubusercontent.com/u/1911594?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/MeanEYE",
+    "html_url": "https://github.com/MeanEYE",
+    "followers_url": "https://api.github.com/users/MeanEYE/followers",
+    "following_url": "https://api.github.com/users/MeanEYE/following{/other_user}",
+    "gists_url": "https://api.github.com/users/MeanEYE/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/MeanEYE/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/MeanEYE/subscriptions",
+    "organizations_url": "https://api.github.com/users/MeanEYE/orgs",
+    "repos_url": "https://api.github.com/users/MeanEYE/repos",
+    "events_url": "https://api.github.com/users/MeanEYE/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/MeanEYE/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2015-04-15T12:02:53Z",
+  "updated_at": "2015-04-15T12:37:40Z",
+  "closed_at": null,
+  "body": "Today I integrated your parser with [Caracal](http://caracal.way2cu.com) and already loving the how extensible it is and speed improvement over old parser. Caracal is also [open source](https://github.com/Way2CU/Caracal) so anyone should be free to take a look what we do with it. Right now I am re-implementing our image specific URL handling, but soon plan on supporting many different extensions.\r\n\r\nEdit: [Example how we are starting to use it.](https://github.com/Way2CU/Caracal/blob/develop/units/markdown.php)",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+
+]

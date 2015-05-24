@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html class='' lang='en'>
+<head prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#'>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8'>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta http-equiv='Content-Language' content='en'>
+<title>erusev/parsedown/266</title>
+<link href='github-c486157afcc5f58155a921bc675afb08733fbaa8dcf39ac2104d3.css' media='all' rel='stylesheet'>
+<link href='github2-da2e842cc3f0aaf33b727d0ef034243c12ab008fd09b24868b97.css' media='all' rel='stylesheet'>
+<meta http-equiv='x-pjax-version' content='4426702614c8182f33d1780ad1169662'>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shAutoloader.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAppleScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAS3.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushBash.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushColdFusion.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCpp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCSharp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCss.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDelphi.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDiff.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushErlang.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushGroovy.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJava.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJavaFX.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/syntaxhighlighter/scripts/shBrushJScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPerl.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPhp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPlain.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPowerShell.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPython.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushRuby.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSass.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushScala.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSql.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushVb.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushXml.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shLegacy.js'></script>
+	<link type='text/css' rel='stylesheet' href='syntaxhighlighter/styles/shCoreDefault.css'/>
+	<script type='text/javascript'>SyntaxHighlighter.all();</script>
+</head>
+<body class='logged_in  env-production windows vis-public'>
+<h1 align='center'><a href='https://github.com/erusev/parsedown/issues/266' target='_blank'>Href attribute not being rendered correctly</h1><hr/><div id="#issue-54506693" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/jackmcdade" class="author">jackmcdade</a>
+    </strong>
+    commented on 
+    <a href="#issue-54506693" class="timestamp">
+      <time>2015-01-15 21:28:22</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>When parsing HTML inside my Markdown string, I've been coming across some issues. Most noticeably any <code>href</code> attributes of those HTML bits.</p>
+<pre><code>&lt;a z='/training/schema' href='/training/schema'&gt;Schema&lt;/a&gt;</code></pre>
+<p>Is rendered as </p>
+<pre><code>&lt;a z="/training/schema" href="%7B%7B%20url%20%7D%7D"&gt;Schema&lt;/a&gt;</code></pre>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-70167562" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/vladdu" class="author">vladdu</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-70167562" class="timestamp">
+      <time>2015-01-15 21:43:16</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I think you mean that
+<code>&lt;a z='{{url}}' href='{{url}}'&gt;Schema&lt;/a&gt;</code>
+is rendered as
+<code>&lt;a z='{{url}}' href='%7B%7Burl%7D%7D'&gt;Schema&lt;/a&gt;</code></p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-70167636" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-70167636" class="timestamp">
+      <time>2015-01-15 21:43:44</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I don't seem to be able to reproduce it. Do you reproduce it in <a href="http://parsedown.org/demo">the demo</a>?</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-70168184" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/vladdu" class="author">vladdu</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-70168184" class="timestamp">
+      <time>2015-01-15 21:46:54</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>In the demo it looks ok. <strong><a href="https://github.com/jackmcdade" target="_blank">@jackmcdade</a></strong> should know more details about how he processes the input before feeding it to the parser.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-70171292" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/jackmcdade" class="author">jackmcdade</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-70171292" class="timestamp">
+      <time>2015-01-15 22:05:27</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Ah i see what it is. We're parsing Markdown before our template language does variable replacement, so it's selectively encoding/stripping/altering the <code>{{ curly }}</code> braces of certain attributes.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-70171652" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-70171652" class="timestamp">
+      <time>2015-01-15 22:07:41</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/jackmcdade" target="_blank">@jackmcdade</a></strong> </p>
+<p>Do you think that this is related to an issue with Parsedown?</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-70171794" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/jackmcdade" class="author">jackmcdade</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-70171794" class="timestamp">
+      <time>2015-01-15 22:08:33</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Yeah definitely. We just upgraded Parsedown and the issue popped up. Rolling back fixes it. As does using other Markdown parsers.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-70171985" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-70171985" class="timestamp">
+      <time>2015-01-15 22:09:47</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Could you help me reproduce it?</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-70172165" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/jackmcdade" class="author">jackmcdade</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-70172165" class="timestamp">
+      <time>2015-01-15 22:10:59</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Sure thing, just drop this in the demo:</p>
+<pre><code>&lt;a href="{{ url }}"&gt;A URL!&lt;/a&gt;</code></pre>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-70172353" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-70172353" class="timestamp">
+      <time>2015-01-15 22:12:13</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I did that. Parsedown seems to produce identical output as Markdown PHP. Am I missing something?</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-70174267" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/jackmcdade" class="author">jackmcdade</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-70174267" class="timestamp">
+      <time>2015-01-15 22:25:20</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I'm not <em>quite</em> sure what to say except that in <a href="http://statamic.com">Statamic</a> that parser doesn't break anything, and Parsedown does. I can set up a sandbox for you if that might help?</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-70174989" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-70174989" class="timestamp">
+      <time>2015-01-15 22:30:23</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>That might help, but before that, could you figure out which is the exact version that introduces the issue?</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-70175102" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/jackmcdade" class="author">jackmcdade</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-70175102" class="timestamp">
+      <time>2015-01-15 22:30:59</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I’ll see what I can do.</p>
+<p>- Jack</p>
+<p>On January 15, 2015 at 5:30:27 PM, Emanuil Rusev (notifications<strong><a href="https://github.com/github" target="_blank">@github</a></strong>.com) wrote:</p>
+<p>That might help, but before that, could you figure out which is the exact version that introduces the issue?</p>
+<p>—
+Reply to this email directly or view it on GitHub.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-70379672" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-70379672" class="timestamp">
+      <time>2015-01-17 19:05:30</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/jackmcdade" target="_blank">@jackmcdade</a></strong> </p>
+<p>Did you get a chance to look into it?</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-70576990" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/rhukster" class="author">rhukster</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-70576990" class="timestamp">
+      <time>2015-01-19 23:06:12</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I'm not sure if this is the same issue, but I have recently noticed that there is a problem when you use curly brackets in a markdown link, it doesn't work. </p>
+<p>Some examples:</p>
+<pre><code>[Some Link]({{url}})</code></pre>
+<p>Renders out of Parsedown as:</p>
+<pre><code>&lt;a href="{{url}}"&gt;Some Link&lt;/a&gt;</code></pre>
+<p>As expected.  However, if you have any spaces between the parens, like:</p>
+<pre><code>[Some Link]({{ url }})</code></pre>
+<p>the indentifyLink() fails on the regex: <a href="https://github.com/erusev/parsedown/blob/master/Parsedown.php#L1202">https://github.com/erusev/parsedown/blob/master/Parsedown.php#L1202</a></p>
+<p>and you basically get your markdown spat back at you unprocessed.  The problem with that appears to be the space before the opening parens in the first negated set.  If you remove that so the resulting regex is:</p>
+<pre><code>'/^[(]((?:[^(]|[(][^ )]+[)])+)(?:[ ]+("[^"]+"|\'[^\']+\'))?[)]/'</code></pre>
+<p>This now works.  However, this is a pretty complex regex and i'm not sure the implications of removing this space for other tags.  Perhaps <strong><a href="https://github.com/erusev" target="_blank">@erusev</a></strong> has some insights as this was changed pretty heavily between 1.14 and current.</p>
+<p>BTW, I have no issue with curly brackets in HTML links themselves, Parsedown just ignores them and it works fine.  eg:</p>
+<pre><code>&lt;a href="{{ site.foo }}"&gt;A URL!&lt;/a&gt;</code></pre>
+<p>Doesn't get any modified at all, works fine.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-70580629" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-70580629" class="timestamp">
+      <time>2015-01-19 23:41:48</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <blockquote>
+<p>the indentifyLink() fails on the regex</p>
+</blockquote>
+<p>This is expected. The regex expects a valid URL.</p>
+<blockquote>
+<p>BTW, I have no issue with curly brackets in HTML links themselves, Parsedown just ignores them and it works fine.</p>
+</blockquote>
+<p>Same here. I'm unable to reproduce the issue. It'd be great if <strong><a href="https://github.com/jackmcdade" target="_blank">@jackmcdade</a></strong> could help us with that.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-70682420" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/rhukster" class="author">rhukster</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-70682420" class="timestamp">
+      <time>2015-01-20 16:23:37</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>FWIW, I got around this in Grav by using on overriden <code>inlineLink()</code> method, detecting Twig syntax in the URL, setting the link to a simple safe URL: <code>/</code>, processing normally, then setting the href back to the original Twig code:</p>
+<pre><code>    protected function inlineLink($excerpt)
+    {
+        // do some trickery to get around Parsedown requirement for valid URL if its Twig in there
+        if (preg_match('/\!*\[(?:.*)\]\(([{{|{%|{#].*[#}|%}|}}])\)/', $excerpt['text'], $matches)) {
+            $excerpt['text'] = str_replace($matches[1], '/', $excerpt['text']);
+            $excerpt = parent::inlineLink($excerpt);
+            $excerpt['element']['attributes']['href'] = $matches[1];
+            $excerpt['extent'] = $excerpt['extent'] + strlen($matches[1]) - 1;
+        } else {
+            $excerpt = parent::inlineLink($excerpt);
+        }
+    return $excerpt;
+    }</code></pre>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-71242940" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-71242940" class="timestamp">
+      <time>2015-01-23 18:46:05</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/jackmcdade" target="_blank">@jackmcdade</a></strong> </p>
+<p>Is this about Parsedown or Parsedown Extra?</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-72977160" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/jasonvarga" class="author">jasonvarga</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-72977160" class="timestamp">
+      <time>2015-02-05 01:23:15</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I'm unable to reproduce it, but I can tell you Statamic is using Parsedown Extra.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-73097504" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/jasonvarga" class="author">jasonvarga</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-73097504" class="timestamp">
+      <time>2015-02-05 18:18:49</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Okay, I can reproduce it. Even in the demo. Parsedown Extra only.</p>
+<pre><code>&lt;li&gt;&lt;a href="{{ url }}" attr="{{ url }}"&gt;Test&lt;/a&gt;&lt;/li&gt;
+Outputs:
+&lt;li&gt;&lt;a href="%7B%7B%20url%20%7D%7D" attr="{{ url }}"&gt;Test&lt;/a&gt;&lt;/li&gt;</code></pre>
+<p>But, without the <code>&lt;li&gt;</code> wrapper:</p>
+<pre><code>&lt;a href="{{ url }}" attr="{{ url }}"&gt;Test&lt;/a&gt;
+Outputs:
+&lt;p&gt;&lt;a href="{{ url }}" attr="{{ url }}"&gt;Test&lt;/a&gt;&lt;/p&gt;</code></pre>
+<p>However, I think it's correct that you are encoding those characters. Is there an option to disable it?</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+</body></html>

@@ -1,0 +1,95 @@
+{
+  "url": "https://api.github.com/repos/erusev/parsedown/issues/182",
+  "labels_url": "https://api.github.com/repos/erusev/parsedown/issues/182/labels{/name}",
+  "comments_url": "https://api.github.com/repos/erusev/parsedown/issues/182/comments",
+  "events_url": "https://api.github.com/repos/erusev/parsedown/issues/182/events",
+  "html_url": "https://github.com/erusev/parsedown/issues/182",
+  "id": 34782573,
+  "number": 182,
+  "title": "Make it possible to submit case studies and money :)",
+  "user": {
+    "login": "bastianallgeier",
+    "id": 24532,
+    "avatar_url": "https://avatars.githubusercontent.com/u/24532?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/bastianallgeier",
+    "html_url": "https://github.com/bastianallgeier",
+    "followers_url": "https://api.github.com/users/bastianallgeier/followers",
+    "following_url": "https://api.github.com/users/bastianallgeier/following{/other_user}",
+    "gists_url": "https://api.github.com/users/bastianallgeier/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/bastianallgeier/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/bastianallgeier/subscriptions",
+    "organizations_url": "https://api.github.com/users/bastianallgeier/orgs",
+    "repos_url": "https://api.github.com/users/bastianallgeier/repos",
+    "events_url": "https://api.github.com/users/bastianallgeier/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/bastianallgeier/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "url": "https://api.github.com/repos/erusev/parsedown/labels/suggestion",
+      "name": "suggestion",
+      "color": "bfd4f2"
+    }
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2014-06-02T15:19:45Z",
+  "updated_at": "2014-12-10T15:22:41Z",
+  "closed_at": "2014-12-10T15:19:06Z",
+  "body": "I'm currently working on [Kirby 2](http://github.com/getkirby). [Kirby](http://getkirby.com) is a file-based CMS which relies heavily on Markdown. I've used PHP Markdown and PHP Markdown Extra for version 1 and switched to Parsedown for Kirby 2, which gives Kirby a massive speed bump and makes it less buggy. \r\n\r\nI'd absolutely love to donate to the project as it helps me to improve my own product. You should really offer a way to send you some money and case studies :)",
+  "closed_by": {
+    "login": "erusev",
+    "id": 184170,
+    "avatar_url": "https://avatars.githubusercontent.com/u/184170?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/erusev",
+    "html_url": "https://github.com/erusev",
+    "followers_url": "https://api.github.com/users/erusev/followers",
+    "following_url": "https://api.github.com/users/erusev/following{/other_user}",
+    "gists_url": "https://api.github.com/users/erusev/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/erusev/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/erusev/subscriptions",
+    "organizations_url": "https://api.github.com/users/erusev/orgs",
+    "repos_url": "https://api.github.com/users/erusev/repos",
+    "events_url": "https://api.github.com/users/erusev/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/erusev/received_events",
+    "type": "User",
+    "site_admin": false
+  }
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/erusev/parsedown/issues/comments/66467168",
+    "html_url": "https://github.com/erusev/parsedown/issues/182#issuecomment-66467168",
+    "issue_url": "https://api.github.com/repos/erusev/parsedown/issues/182",
+    "id": 66467168,
+    "user": {
+      "login": "erusev",
+      "id": 184170,
+      "avatar_url": "https://avatars.githubusercontent.com/u/184170?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/erusev",
+      "html_url": "https://github.com/erusev",
+      "followers_url": "https://api.github.com/users/erusev/followers",
+      "following_url": "https://api.github.com/users/erusev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/erusev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/erusev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/erusev/subscriptions",
+      "organizations_url": "https://api.github.com/users/erusev/orgs",
+      "repos_url": "https://api.github.com/users/erusev/repos",
+      "events_url": "https://api.github.com/users/erusev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/erusev/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2014-12-10T15:22:41Z",
+    "updated_at": "2014-12-10T15:22:41Z",
+    "body": "Thanks!\r\n\r\np.s. I'm working on version 1.2. It should improve compliance with CommonMark, resolve issues and make writing extensions even easier."
+  }
+]

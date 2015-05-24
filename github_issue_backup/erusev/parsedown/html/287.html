@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html class='' lang='en'>
+<head prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#'>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8'>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta http-equiv='Content-Language' content='en'>
+<title>erusev/parsedown/287</title>
+<link href='github-c486157afcc5f58155a921bc675afb08733fbaa8dcf39ac2104d3.css' media='all' rel='stylesheet'>
+<link href='github2-da2e842cc3f0aaf33b727d0ef034243c12ab008fd09b24868b97.css' media='all' rel='stylesheet'>
+<meta http-equiv='x-pjax-version' content='4426702614c8182f33d1780ad1169662'>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shAutoloader.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAppleScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAS3.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushBash.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushColdFusion.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCpp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCSharp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCss.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDelphi.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDiff.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushErlang.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushGroovy.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJava.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJavaFX.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/syntaxhighlighter/scripts/shBrushJScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPerl.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPhp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPlain.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPowerShell.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPython.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushRuby.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSass.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushScala.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSql.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushVb.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushXml.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shLegacy.js'></script>
+	<link type='text/css' rel='stylesheet' href='syntaxhighlighter/styles/shCoreDefault.css'/>
+	<script type='text/javascript'>SyntaxHighlighter.all();</script>
+</head>
+<body class='logged_in  env-production windows vis-public'>
+<h1 align='center'><a href='https://github.com/erusev/parsedown/issues/287' target='_blank'>Converting Straight-Quotes Discourages Future Processing</h1><hr/><div id="#issue-57381324" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/fredleblanc" class="author">fredleblanc</a>
+    </strong>
+    commented on 
+    <a href="#issue-57381324" class="timestamp">
+      <time>2015-02-11 21:38:55</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>The <code>inlineSpecialCharacter</code> method is replacing <code>"</code> characters with <code>&amp;quot;</code> characters, but this is limits how the output is processed through other text modifiers. Mainly, in my case, running the text through SmartyPants. Because straight double-quotes are entities, SmartyPants won't process them into &quot;smart&quot; curly quotes.</p>
+<p>I know that converting <code>"</code> into <code>&amp;quot;</code> isn't really a bug, it's more a feature that's getting in my way for later. I guess my question is — how necessary is this conversion to an entity for the rest of the code? Is other code relying on straight-double-quotes already being escaped?</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-74040475" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-74040475" class="timestamp">
+      <time>2015-02-12 09:22:46</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/fredleblanc" target="_blank">@fredleblanc</a></strong> You could try writing a simple extension which would not do that for you.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-74079232" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/fredleblanc" class="author">fredleblanc</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-74079232" class="timestamp">
+      <time>2015-02-12 14:30:17</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/hkdobrev" target="_blank">@hkdobrev</a></strong> Absolutely! Please don't get me wrong, I'm not saying I don't want to do the work, I was more just hoping for advice about the rest of the internals. From early testing nothing seems to break, but I didn't know if there was a known &quot;oh, that has to be done or else this won't work&quot; thing I wasn't seeing.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-74080231" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-74080231" class="timestamp">
+      <time>2015-02-12 14:36:22</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/fredleblanc" target="_blank">@fredleblanc</a></strong> I don't think there would be a problem. If you make something good and generic you could add it to the wiki to help others! <a href="https://github.com/erusev/parsedown/wiki/Writing-Extensions">https://github.com/erusev/parsedown/wiki/Writing-Extensions</a></p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-76639115" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/robinadr" class="author">robinadr</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-76639115" class="timestamp">
+      <time>2015-03-01 23:48:57</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I ran into this recently while making a Parsedown wrapper for WordPress. WP already does HTML special chars and curly quotes on its own, so Parsedown converting &quot; to &quot; messed this up.</p>
+<p>This is how I disabled this functionality, for anyone interested:</p>
+<pre class="brush: php">class Parsedown_WP_Parser extends ParsedownExtra
+{
+    protected function inlineSpecialCharacter( $excerpt )
+    {
+        // Do nothing. WordPress handles HTML special characters
+        // and curly quotes by default.
+    }
+}</code></pre>
+<p>This is easy to fix on your own, but I wonder if converting &quot; is even a part of what a Markdown processor should do. Thoughts?</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-76649059" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/fredleblanc" class="author">fredleblanc</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-76649059" class="timestamp">
+      <time>2015-03-02 02:14:06</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I ended up doing something similar on my end. Although I share the opinion that I wouldn't have a markdown processor handle this by default, I also understand that this decision certainly lives in the opinion district of opinionated software, and I respect that. (I tend to think that opinionated software is the best software.)</p>
+<p>And as you've pasted, my code being similar, it's easy enough to &quot;undo&quot; if you don't want it.</p>
+<blockquote>
+<p>On Mar 1, 2015, at 6:49 PM, Robin Adrianse <a href="mailto:notifications<strong><a href="https://github.com/github" target="_blank">@github</a></strong>.com">notifications<strong><a href="https://github.com/github" target="_blank">@github</a></strong>.com</a> wrote:</p>
+<p>I ran into this recently while making a Parsedown wrapper for WordPress. WP already does HTML special chars and curly quotes on its own, so Parsedown converting &quot; to &quot; messed this up.</p>
+<p>This is how I disabled this functionality, for anyone interested:</p>
+<p>class Parsedown_WP_Parser extends ParsedownExtra
+{
+protected function inlineSpecialCharacter( $excerpt )
+{
+// Do nothing. WordPress handles HTML special characters
+// and curly quotes by default.
+}
+}
+This is easy to fix on your own, but I wonder if converting &quot; is even a part of what a Markdown processor should do. Thoughts?</p>
+<p>—
+Reply to this email directly or view it on GitHub.</p>
+</blockquote>
+  </div>
+  </div>
+  </div>
+  <br/>
+</body></html>

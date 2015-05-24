@@ -1,0 +1,83 @@
+{
+  "url": "https://api.github.com/repos/erusev/parsedown/issues/79",
+  "labels_url": "https://api.github.com/repos/erusev/parsedown/issues/79/labels{/name}",
+  "comments_url": "https://api.github.com/repos/erusev/parsedown/issues/79/comments",
+  "events_url": "https://api.github.com/repos/erusev/parsedown/issues/79/events",
+  "html_url": "https://github.com/erusev/parsedown/pull/79",
+  "id": 26639943,
+  "number": 79,
+  "title": "Add .editorconfig for cross-editor configuration",
+  "user": {
+    "login": "hkdobrev",
+    "id": 506129,
+    "avatar_url": "https://avatars.githubusercontent.com/u/506129?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/hkdobrev",
+    "html_url": "https://github.com/hkdobrev",
+    "followers_url": "https://api.github.com/users/hkdobrev/followers",
+    "following_url": "https://api.github.com/users/hkdobrev/following{/other_user}",
+    "gists_url": "https://api.github.com/users/hkdobrev/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/hkdobrev/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/hkdobrev/subscriptions",
+    "organizations_url": "https://api.github.com/users/hkdobrev/orgs",
+    "repos_url": "https://api.github.com/users/hkdobrev/repos",
+    "events_url": "https://api.github.com/users/hkdobrev/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/hkdobrev/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "url": "https://api.github.com/repos/erusev/parsedown/labels/suggestion",
+      "name": "suggestion",
+      "color": "bfd4f2"
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2014-01-30T22:21:10Z",
+  "updated_at": "2014-04-17T19:16:04Z",
+  "closed_at": null,
+  "pull_request": {
+    "url": "https://api.github.com/repos/erusev/parsedown/pulls/79",
+    "html_url": "https://github.com/erusev/parsedown/pull/79",
+    "diff_url": "https://github.com/erusev/parsedown/pull/79.diff",
+    "patch_url": "https://github.com/erusev/parsedown/pull/79.patch"
+  },
+  "body": "See http://editorconfig.org/ for more.\r\n\r\nAlso added newline characters at the end of the files.\r\n\r\n---\r\n\r\nEditorConfig is supported on a number of text editors and IDEs. Including, but not limited to:\r\n - Sublime Text\r\n - Vim\r\n - Emacs\r\n - TextMate\r\n - JetBrains IDEs\r\n - Visual Studio IDEs",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/erusev/parsedown/issues/comments/40751752",
+    "html_url": "https://github.com/erusev/parsedown/pull/79#issuecomment-40751752",
+    "issue_url": "https://api.github.com/repos/erusev/parsedown/issues/79",
+    "id": 40751752,
+    "user": {
+      "login": "hkdobrev",
+      "id": 506129,
+      "avatar_url": "https://avatars.githubusercontent.com/u/506129?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/hkdobrev",
+      "html_url": "https://github.com/hkdobrev",
+      "followers_url": "https://api.github.com/users/hkdobrev/followers",
+      "following_url": "https://api.github.com/users/hkdobrev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/hkdobrev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/hkdobrev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/hkdobrev/subscriptions",
+      "organizations_url": "https://api.github.com/users/hkdobrev/orgs",
+      "repos_url": "https://api.github.com/users/hkdobrev/repos",
+      "events_url": "https://api.github.com/users/hkdobrev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/hkdobrev/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2014-04-17T19:16:04Z",
+    "updated_at": "2014-04-17T19:16:04Z",
+    "body": "@erusev ping.\r\n\r\nI've rebased onto latest master.\r\n\r\nThis would have prevented the tabs vs spaces issues in https://github.com/erusev/parsedown/commit/4e670129c8b243dbbf06205a38a0d036154a4d45#commitcomment-6041556"
+  }
+]

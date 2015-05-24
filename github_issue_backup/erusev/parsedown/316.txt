@@ -1,0 +1,52 @@
+{
+  "url": "https://api.github.com/repos/erusev/parsedown/issues/316",
+  "labels_url": "https://api.github.com/repos/erusev/parsedown/issues/316/labels{/name}",
+  "comments_url": "https://api.github.com/repos/erusev/parsedown/issues/316/comments",
+  "events_url": "https://api.github.com/repos/erusev/parsedown/issues/316/events",
+  "html_url": "https://github.com/erusev/parsedown/pull/316",
+  "id": 73831396,
+  "number": 316,
+  "title": "set visibility of function text",
+  "user": {
+    "login": "DQNEO",
+    "id": 188741,
+    "avatar_url": "https://avatars.githubusercontent.com/u/188741?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/DQNEO",
+    "html_url": "https://github.com/DQNEO",
+    "followers_url": "https://api.github.com/users/DQNEO/followers",
+    "following_url": "https://api.github.com/users/DQNEO/following{/other_user}",
+    "gists_url": "https://api.github.com/users/DQNEO/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/DQNEO/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/DQNEO/subscriptions",
+    "organizations_url": "https://api.github.com/users/DQNEO/orgs",
+    "repos_url": "https://api.github.com/users/DQNEO/repos",
+    "events_url": "https://api.github.com/users/DQNEO/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/DQNEO/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2015-05-07T04:11:18Z",
+  "updated_at": "2015-05-07T04:11:18Z",
+  "closed_at": null,
+  "pull_request": {
+    "url": "https://api.github.com/repos/erusev/parsedown/pulls/316",
+    "html_url": "https://github.com/erusev/parsedown/pull/316",
+    "diff_url": "https://github.com/erusev/parsedown/pull/316.diff",
+    "patch_url": "https://github.com/erusev/parsedown/pull/316.patch"
+  },
+  "body": "Thank you for a great tool.\r\n\r\nI hope this fix helps it.\r\n",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+
+]

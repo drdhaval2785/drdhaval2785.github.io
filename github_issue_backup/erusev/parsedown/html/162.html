@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html class='' lang='en'>
+<head prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#'>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8'>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta http-equiv='Content-Language' content='en'>
+<title>erusev/parsedown/162</title>
+<link href='github-c486157afcc5f58155a921bc675afb08733fbaa8dcf39ac2104d3.css' media='all' rel='stylesheet'>
+<link href='github2-da2e842cc3f0aaf33b727d0ef034243c12ab008fd09b24868b97.css' media='all' rel='stylesheet'>
+<meta http-equiv='x-pjax-version' content='4426702614c8182f33d1780ad1169662'>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shAutoloader.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAppleScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAS3.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushBash.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushColdFusion.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCpp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCSharp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCss.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDelphi.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDiff.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushErlang.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushGroovy.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJava.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJavaFX.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/syntaxhighlighter/scripts/shBrushJScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPerl.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPhp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPlain.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPowerShell.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPython.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushRuby.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSass.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushScala.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSql.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushVb.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushXml.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shLegacy.js'></script>
+	<link type='text/css' rel='stylesheet' href='syntaxhighlighter/styles/shCoreDefault.css'/>
+	<script type='text/javascript'>SyntaxHighlighter.all();</script>
+</head>
+<body class='logged_in  env-production windows vis-public'>
+<h1 align='center'><a href='https://github.com/erusev/parsedown/issues/162' target='_blank'>[Proposal] Allow easy extensibility of code block syntax highlighting</h1><hr/><div id="#issue-32488782" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/SammyK" class="author">SammyK</a>
+    </strong>
+    commented on 
+    <a href="#issue-32488782" class="timestamp">
+      <time>2014-04-29 21:52:57</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I've got a nice <a href="http://fshl.kukulich.cz/">syntax highlighter</a> that can highlight many different languages. It'd be nice if the <code>Parsedown</code> class would do a check for a highlighter method instead of just doing a <code>htmlspecialchars()</code> on the code. For example my extended class could have:</p>
+<pre class="brush: php">class MyMarkdownClass extends \Parsedown
+{
+    public function highlightPhpCode($code)
+    {
+        return $this-&gt;php_highlighter-&gt;highlight($code);
+    }
+
+    public function highlightHtmlCode($code)
+    {
+        return $this-&gt;html_highlighter-&gt;highlight($code);
+    }
+}</code></pre>
+<p>I can add this functionality in a PR if you think it would be useful.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-41737589" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-41737589" class="timestamp">
+      <time>2014-04-29 21:58:27</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Parsedown already is extensible enough for this. See <a href="https://github.com/erusev/parsedown/pull/111#issuecomment-41334808">https://github.com/erusev/parsedown/pull/111#issuecomment-41334808</a>.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-41738276" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/SammyK" class="author">SammyK</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-41738276" class="timestamp">
+      <time>2014-04-29 22:06:15</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Yes, but the issue is that by the time <code>$Block['element']['text']['text']</code> gets to <code>completeFencedCode()</code> it has already been <code>htmlspecialchars()</code> encoded. I need the original non-encoded version. :)</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-41738617" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-41738617" class="timestamp">
+      <time>2014-04-29 22:09:58</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Could you elaborate, please? Why is the fact that it's been encoded a problem?</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-41822044" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/SammyK" class="author">SammyK</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-41822044" class="timestamp">
+      <time>2014-04-30 17:05:06</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Sure. Say I have a sub class that handles my <a href="http://fshl.kukulich.cz/">syntax highlighter</a> like so:</p>
+<pre class="brush: php">class Markdown extends \Parsedown
+{
+    protected $highlighter;
+
+    public function __construct()
+    {
+        $this-&gt;highlighter = new \FSHL\Highlighter(new \FSHL\Output\Html());
+        $this-&gt;highlighter-&gt;setLexer(new \FSHL\Lexer\Php());
+    }
+
+    public function completeFencedCode($block)
+    {
+        $block['element']['text']['text'] = $this-&gt;highlighter-&gt;highlight($block['element']['text']['text']);
+
+        return $block;
+    }
+}</code></pre>
+<p>It's important to note that <code>$this-&gt;highlighter-&gt;highlight()</code> expects pure, unescaped php code.</p>
+<p>And say I have the following markdown:</p>
+<pre class="brush: markdown">$foo = $bar-&gt;baz();</code></pre>
+<p>By the time the above markdown reaches <code>completeFencedCode()</code>, the code block will be:</p>
+<pre><code>$foo = $bar-&amp;gt;baz();</code></pre>
+<p>So when I try to send that to my highlighter, it escapes it again and I get this:</p>
+<pre><code>&lt;span class="php-var"&gt;$foo&lt;/span&gt; = &lt;span class="php-var"&gt;$bar&lt;/span&gt;-&amp;amp;gt;baz();</code></pre>
+<p>I hope that makes sense! :)</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-41850246" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-41850246" class="timestamp">
+      <time>2014-04-30 21:03:06</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Thanks. I'll see what I can do.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-41857520" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-41857520" class="timestamp">
+      <time>2014-04-30 22:09:05</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I hope that this resolves it.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-41857610" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/SammyK" class="author">SammyK</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-41857610" class="timestamp">
+      <time>2014-04-30 22:09:52</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Cool - thanks man! I'll check it out. :)</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-41956137" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/SammyK" class="author">SammyK</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-41956137" class="timestamp">
+      <time>2014-05-01 20:58:34</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>:+1: Works great! Thanks!</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+</body></html>

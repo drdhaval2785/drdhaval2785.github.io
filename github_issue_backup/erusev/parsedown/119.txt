@@ -1,0 +1,91 @@
+{
+  "url": "https://api.github.com/repos/erusev/parsedown/issues/119",
+  "labels_url": "https://api.github.com/repos/erusev/parsedown/issues/119/labels{/name}",
+  "comments_url": "https://api.github.com/repos/erusev/parsedown/issues/119/comments",
+  "events_url": "https://api.github.com/repos/erusev/parsedown/issues/119/events",
+  "html_url": "https://github.com/erusev/parsedown/issues/119",
+  "id": 28125386,
+  "number": 119,
+  "title": "Task lists",
+  "user": {
+    "login": "kminchev",
+    "id": 6413068,
+    "avatar_url": "https://avatars.githubusercontent.com/u/6413068?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kminchev",
+    "html_url": "https://github.com/kminchev",
+    "followers_url": "https://api.github.com/users/kminchev/followers",
+    "following_url": "https://api.github.com/users/kminchev/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kminchev/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kminchev/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kminchev/subscriptions",
+    "organizations_url": "https://api.github.com/users/kminchev/orgs",
+    "repos_url": "https://api.github.com/users/kminchev/repos",
+    "events_url": "https://api.github.com/users/kminchev/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kminchev/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2014-02-23T19:44:25Z",
+  "updated_at": "2014-04-24T09:58:43Z",
+  "closed_at": "2014-04-24T09:51:53Z",
+  "body": "Would be nice to have task list support as Parsedown already does GFM - https://github.com/blog/1375-task-lists-in-gfm-issues-pulls-comments",
+  "closed_by": {
+    "login": "erusev",
+    "id": 184170,
+    "avatar_url": "https://avatars.githubusercontent.com/u/184170?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/erusev",
+    "html_url": "https://github.com/erusev",
+    "followers_url": "https://api.github.com/users/erusev/followers",
+    "following_url": "https://api.github.com/users/erusev/following{/other_user}",
+    "gists_url": "https://api.github.com/users/erusev/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/erusev/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/erusev/subscriptions",
+    "organizations_url": "https://api.github.com/users/erusev/orgs",
+    "repos_url": "https://api.github.com/users/erusev/repos",
+    "events_url": "https://api.github.com/users/erusev/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/erusev/received_events",
+    "type": "User",
+    "site_admin": false
+  }
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/erusev/parsedown/issues/comments/41262188",
+    "html_url": "https://github.com/erusev/parsedown/issues/119#issuecomment-41262188",
+    "issue_url": "https://api.github.com/repos/erusev/parsedown/issues/119",
+    "id": 41262188,
+    "user": {
+      "login": "erusev",
+      "id": 184170,
+      "avatar_url": "https://avatars.githubusercontent.com/u/184170?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/erusev",
+      "html_url": "https://github.com/erusev",
+      "followers_url": "https://api.github.com/users/erusev/followers",
+      "following_url": "https://api.github.com/users/erusev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/erusev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/erusev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/erusev/subscriptions",
+      "organizations_url": "https://api.github.com/users/erusev/orgs",
+      "repos_url": "https://api.github.com/users/erusev/repos",
+      "events_url": "https://api.github.com/users/erusev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/erusev/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2014-04-24T09:51:53Z",
+    "updated_at": "2014-04-24T09:58:43Z",
+    "body": "I'd be glad to see this in an extension but I don't think it should be a part of the core Parsedown:\r\n\r\n1. It is not in what I consider to be the [GFM spec](https://help.github.com/articles/github-flavored-markdown).\r\n2. It makes modifications to the source and this seems too different from what Parsedown currently does."
+  }
+]

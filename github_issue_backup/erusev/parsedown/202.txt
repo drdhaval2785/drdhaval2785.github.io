@@ -1,0 +1,95 @@
+{
+  "url": "https://api.github.com/repos/erusev/parsedown/issues/202",
+  "labels_url": "https://api.github.com/repos/erusev/parsedown/issues/202/labels{/name}",
+  "comments_url": "https://api.github.com/repos/erusev/parsedown/issues/202/comments",
+  "events_url": "https://api.github.com/repos/erusev/parsedown/issues/202/events",
+  "html_url": "https://github.com/erusev/parsedown/issues/202",
+  "id": 40266022,
+  "number": 202,
+  "title": "Multiline definitions",
+  "user": {
+    "login": "nwtn",
+    "id": 786799,
+    "avatar_url": "https://avatars.githubusercontent.com/u/786799?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/nwtn",
+    "html_url": "https://github.com/nwtn",
+    "followers_url": "https://api.github.com/users/nwtn/followers",
+    "following_url": "https://api.github.com/users/nwtn/following{/other_user}",
+    "gists_url": "https://api.github.com/users/nwtn/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/nwtn/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/nwtn/subscriptions",
+    "organizations_url": "https://api.github.com/users/nwtn/orgs",
+    "repos_url": "https://api.github.com/users/nwtn/repos",
+    "events_url": "https://api.github.com/users/nwtn/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/nwtn/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "url": "https://api.github.com/repos/erusev/parsedown/labels/issue",
+      "name": "issue",
+      "color": "f7c6c7"
+    }
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2014-08-14T15:26:51Z",
+  "updated_at": "2015-01-15T11:50:32Z",
+  "closed_at": "2015-01-15T11:50:32Z",
+  "body": "Parsedown Extra doesn't seem to handle multiline/multi-paragraph definitions \"properly\" (i.e. in the same way as Markdown Extra).\r\n\r\nGiven:\r\n\r\n````\r\nItem 1\r\n:   paragraph 1\r\n\r\n    paragraph 2\r\n\r\n    paragraph 3\r\n\r\nItem 2\r\n:   paragraph 1\r\n````\r\n\r\nI expect:\r\n\r\n````\r\n<dl>\r\n    <dt>Item 1</dt>\r\n    <dd>\r\n        <p>paragraph 1</p>\r\n        <p>paragraph 2</p>\r\n        <p>paragraph 3</p>\r\n    </dd>\r\n    <dt>Item 2</dt>\r\n    <dd>paragraph 1</dd>\r\n</dl>\r\n````\r\n\r\nInstead I get:\r\n\r\n````\r\n<dl>\r\n    <dt>Item 1</dt>\r\n    <dd>paragraph 1</dd>\r\n</dl>\r\n<pre><code>paragraph 2\r\n\r\nparagraph 3</code></pre>\r\n<dl>\r\n    <dt>Item 2</dt>\r\n    <dd>paragraph 1</dd>\r\n</dl>\r\n````\r\n\r\n![screen shot 2014-08-14 at 11 23 57 am](https://cloud.githubusercontent.com/assets/786799/3922098/61a29cb6-23c7-11e4-9031-d68101581c9c.png)\r\n",
+  "closed_by": {
+    "login": "erusev",
+    "id": 184170,
+    "avatar_url": "https://avatars.githubusercontent.com/u/184170?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/erusev",
+    "html_url": "https://github.com/erusev",
+    "followers_url": "https://api.github.com/users/erusev/followers",
+    "following_url": "https://api.github.com/users/erusev/following{/other_user}",
+    "gists_url": "https://api.github.com/users/erusev/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/erusev/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/erusev/subscriptions",
+    "organizations_url": "https://api.github.com/users/erusev/orgs",
+    "repos_url": "https://api.github.com/users/erusev/repos",
+    "events_url": "https://api.github.com/users/erusev/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/erusev/received_events",
+    "type": "User",
+    "site_admin": false
+  }
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/erusev/parsedown/issues/comments/70075056",
+    "html_url": "https://github.com/erusev/parsedown/issues/202#issuecomment-70075056",
+    "issue_url": "https://api.github.com/repos/erusev/parsedown/issues/202",
+    "id": 70075056,
+    "user": {
+      "login": "erusev",
+      "id": 184170,
+      "avatar_url": "https://avatars.githubusercontent.com/u/184170?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/erusev",
+      "html_url": "https://github.com/erusev",
+      "followers_url": "https://api.github.com/users/erusev/followers",
+      "following_url": "https://api.github.com/users/erusev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/erusev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/erusev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/erusev/subscriptions",
+      "organizations_url": "https://api.github.com/users/erusev/orgs",
+      "repos_url": "https://api.github.com/users/erusev/repos",
+      "events_url": "https://api.github.com/users/erusev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/erusev/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2015-01-15T11:50:32Z",
+    "updated_at": "2015-01-15T11:50:32Z",
+    "body": "This looks like a duplicate of https://github.com/erusev/parsedown-extra/issues/25."
+  }
+]

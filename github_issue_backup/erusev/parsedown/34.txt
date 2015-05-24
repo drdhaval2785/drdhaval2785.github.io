@@ -1,0 +1,97 @@
+{
+  "url": "https://api.github.com/repos/erusev/parsedown/issues/34",
+  "labels_url": "https://api.github.com/repos/erusev/parsedown/issues/34/labels{/name}",
+  "comments_url": "https://api.github.com/repos/erusev/parsedown/issues/34/comments",
+  "events_url": "https://api.github.com/repos/erusev/parsedown/issues/34/events",
+  "html_url": "https://github.com/erusev/parsedown/pull/34",
+  "id": 23097658,
+  "number": 34,
+  "title": "PSR-2 compatible",
+  "user": {
+    "login": "kesar",
+    "id": 1288106,
+    "avatar_url": "https://avatars.githubusercontent.com/u/1288106?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kesar",
+    "html_url": "https://github.com/kesar",
+    "followers_url": "https://api.github.com/users/kesar/followers",
+    "following_url": "https://api.github.com/users/kesar/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kesar/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kesar/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kesar/subscriptions",
+    "organizations_url": "https://api.github.com/users/kesar/orgs",
+    "repos_url": "https://api.github.com/users/kesar/repos",
+    "events_url": "https://api.github.com/users/kesar/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kesar/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2013-11-21T21:07:24Z",
+  "updated_at": "2013-11-23T13:42:38Z",
+  "closed_at": "2013-11-23T13:38:24Z",
+  "pull_request": {
+    "url": "https://api.github.com/repos/erusev/parsedown/pulls/34",
+    "html_url": "https://github.com/erusev/parsedown/pull/34",
+    "diff_url": "https://github.com/erusev/parsedown/pull/34.diff",
+    "patch_url": "https://github.com/erusev/parsedown/pull/34.patch"
+  },
+  "body": "PSR-2 compatible",
+  "closed_by": {
+    "login": "erusev",
+    "id": 184170,
+    "avatar_url": "https://avatars.githubusercontent.com/u/184170?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/erusev",
+    "html_url": "https://github.com/erusev",
+    "followers_url": "https://api.github.com/users/erusev/followers",
+    "following_url": "https://api.github.com/users/erusev/following{/other_user}",
+    "gists_url": "https://api.github.com/users/erusev/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/erusev/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/erusev/subscriptions",
+    "organizations_url": "https://api.github.com/users/erusev/orgs",
+    "repos_url": "https://api.github.com/users/erusev/repos",
+    "events_url": "https://api.github.com/users/erusev/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/erusev/received_events",
+    "type": "User",
+    "site_admin": false
+  }
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/erusev/parsedown/issues/comments/29132506",
+    "html_url": "https://github.com/erusev/parsedown/pull/34#issuecomment-29132506",
+    "issue_url": "https://api.github.com/repos/erusev/parsedown/issues/34",
+    "id": 29132506,
+    "user": {
+      "login": "erusev",
+      "id": 184170,
+      "avatar_url": "https://avatars.githubusercontent.com/u/184170?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/erusev",
+      "html_url": "https://github.com/erusev",
+      "followers_url": "https://api.github.com/users/erusev/followers",
+      "following_url": "https://api.github.com/users/erusev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/erusev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/erusev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/erusev/subscriptions",
+      "organizations_url": "https://api.github.com/users/erusev/orgs",
+      "repos_url": "https://api.github.com/users/erusev/repos",
+      "events_url": "https://api.github.com/users/erusev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/erusev/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2013-11-23T13:38:24Z",
+    "updated_at": "2013-11-23T13:42:38Z",
+    "body": "I appreciate your efforts, but I would not accept this. There are multiple decisions in PSR-2 that I don't understand."
+  }
+]

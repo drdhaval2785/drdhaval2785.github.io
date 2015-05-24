@@ -1,0 +1,64 @@
+{
+  "url": "https://api.github.com/repos/erusev/parsedown/issues/61",
+  "labels_url": "https://api.github.com/repos/erusev/parsedown/issues/61/labels{/name}",
+  "comments_url": "https://api.github.com/repos/erusev/parsedown/issues/61/comments",
+  "events_url": "https://api.github.com/repos/erusev/parsedown/issues/61/events",
+  "html_url": "https://github.com/erusev/parsedown/issues/61",
+  "id": 25942847,
+  "number": 61,
+  "title": "Missing support for image title text",
+  "user": {
+    "login": "Keavon",
+    "id": 4388688,
+    "avatar_url": "https://avatars.githubusercontent.com/u/4388688?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/Keavon",
+    "html_url": "https://github.com/Keavon",
+    "followers_url": "https://api.github.com/users/Keavon/followers",
+    "following_url": "https://api.github.com/users/Keavon/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Keavon/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/Keavon/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Keavon/subscriptions",
+    "organizations_url": "https://api.github.com/users/Keavon/orgs",
+    "repos_url": "https://api.github.com/users/Keavon/repos",
+    "events_url": "https://api.github.com/users/Keavon/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/Keavon/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2014-01-20T20:03:56Z",
+  "updated_at": "2014-01-20T20:19:51Z",
+  "closed_at": "2014-01-20T20:19:51Z",
+  "body": "Markdown is supposed to support adding title text to an image by putting it in quotes after the URL, like the following:\r\n\r\n    ![Alt Text](http://www.google.com/images/srpr/logo9w.png \"Title Text\")\r\n\r\nUse GitHub's markdown, the code above provides both alt text and the Title Text, which Parsedown lacks.\r\n\r\n![Alt Text](http://www.google.com/images/srpr/logo9w.png \"Title Text\")\r\n\r\nParsedown is missing support for the title text. In order to follow the standard and allow users to use Markdown to its fullest potential, support for this should be added.",
+  "closed_by": {
+    "login": "erusev",
+    "id": 184170,
+    "avatar_url": "https://avatars.githubusercontent.com/u/184170?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/erusev",
+    "html_url": "https://github.com/erusev",
+    "followers_url": "https://api.github.com/users/erusev/followers",
+    "following_url": "https://api.github.com/users/erusev/following{/other_user}",
+    "gists_url": "https://api.github.com/users/erusev/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/erusev/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/erusev/subscriptions",
+    "organizations_url": "https://api.github.com/users/erusev/orgs",
+    "repos_url": "https://api.github.com/users/erusev/repos",
+    "events_url": "https://api.github.com/users/erusev/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/erusev/received_events",
+    "type": "User",
+    "site_admin": false
+  }
+}
+BODY STARTS FROM HERE
+[
+
+]

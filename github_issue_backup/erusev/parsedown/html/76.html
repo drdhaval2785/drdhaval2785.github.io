@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html class='' lang='en'>
+<head prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#'>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8'>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta http-equiv='Content-Language' content='en'>
+<title>erusev/parsedown/76</title>
+<link href='github-c486157afcc5f58155a921bc675afb08733fbaa8dcf39ac2104d3.css' media='all' rel='stylesheet'>
+<link href='github2-da2e842cc3f0aaf33b727d0ef034243c12ab008fd09b24868b97.css' media='all' rel='stylesheet'>
+<meta http-equiv='x-pjax-version' content='4426702614c8182f33d1780ad1169662'>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shAutoloader.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAppleScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAS3.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushBash.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushColdFusion.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCpp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCSharp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCss.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDelphi.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDiff.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushErlang.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushGroovy.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJava.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJavaFX.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/syntaxhighlighter/scripts/shBrushJScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPerl.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPhp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPlain.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPowerShell.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPython.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushRuby.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSass.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushScala.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSql.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushVb.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushXml.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shLegacy.js'></script>
+	<link type='text/css' rel='stylesheet' href='syntaxhighlighter/styles/shCoreDefault.css'/>
+	<script type='text/javascript'>SyntaxHighlighter.all();</script>
+</head>
+<body class='logged_in  env-production windows vis-public'>
+<h1 align='center'><a href='https://github.com/erusev/parsedown/pull/76' target='_blank'>Add a CLI mode to allow parsing markdown at the command line</h1><hr/><div id="#issue-26608693" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/scottchiefbaker" class="author">scottchiefbaker</a>
+    </strong>
+    commented on 
+    <a href="#issue-26608693" class="timestamp">
+      <time>2014-01-30 16:03:07</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I was writing a lot of tests, and then copy/pasting the HTML from my browser to the appropriate HTML file, which was very time consuming. Then it occurred to me that we could use Parsedown.php <strong>as</strong> the CLI tool. With this code you can now do:</p>
+<pre><code>php Parsedown.php document.md &gt; document.html</code></pre>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-33704329" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-33704329" class="timestamp">
+      <time>2014-01-30 16:27:18</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>BTW why not create a <code>bin/parsedown</code> executable file with a shebang <code>#!/usr/bin/env php</code>. This way there would be no need of CLI checks and any changes to <code>Parsedown.php</code>.</p>
+<p>Composer supports binary executables. You could select it via <a href="https://getcomposer.org/doc/articles/vendor-binaries.md">Vendor Binaries</a> feature.</p>
+<p>When installing Parsedown with Composer this file would be symlinked in <code>vendor/bin/parsedown</code>.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-33704401" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-33704401" class="timestamp">
+      <time>2014-01-30 16:28:01</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Also there would be no need to use <code>php Parsedown.php</code>. Just <code>./parsedown</code>.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-33704904" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/scottchiefbaker" class="author">scottchiefbaker</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-33704904" class="timestamp">
+      <time>2014-01-30 16:32:33</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>That's not a bad idea. Personally I like the idea of <code>Parsedown.php</code> being the swiss army knife of Markdown parsing. In that it will work in both modes, and it's entirely portable by just moving ONE file.</p>
+<p>Adding a bin/parsedown option is easy enough though.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-33705497" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-33705497" class="timestamp">
+      <time>2014-01-30 16:38:00</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/scottchiefbaker" target="_blank">@scottchiefbaker</a></strong> It's really so useful only with the Composer workflow. Otherwise you need to move two files.</p>
+<p>But Composer now gives you the <code>global</code> command.</p>
+<pre class="brush: bash">    composer global erusev/parsedown
+    export PATH=$PATH:$HOME/.composer/vendor/bin <a href='.html' target='_blank'>#</a> or something like that
+    parsedown document.md &gt; document.html</code></pre>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-33705713" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/scottchiefbaker" class="author">scottchiefbaker</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-33705713" class="timestamp">
+      <time>2014-01-30 16:39:53</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Ah ok... I don't use composer so it'd be <strong>ONE</strong> extra step :)</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-33718801" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/scottchiefbaker" class="author">scottchiefbaker</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-33718801" class="timestamp">
+      <time>2014-01-30 18:42:49</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Trying to capture STDIN with Parsedown.php causes all the PHPUnit tests to timeout. Removing that and sticking with a standalone file in bin/ solves the problem. </p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-33719138" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-33719138" class="timestamp">
+      <time>2014-01-30 18:45:54</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/scottchiefbaker" target="_blank">@scottchiefbaker</a></strong> <code>Parsedown::is_cli()</code> is obsolete in this scenario.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-33719289" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-33719289" class="timestamp">
+      <time>2014-01-30 18:47:25</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Also you could add a <code>bin</code> option to <code>composer.json</code>.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-33724699" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/scottchiefbaker" class="author">scottchiefbaker</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-33724699" class="timestamp">
+      <time>2014-01-30 19:39:36</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Done and done sir!</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-33732182" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/cebe" class="author">cebe</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-33732182" class="timestamp">
+      <time>2014-01-30 20:54:56</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Nice one, was thinking about the same today :)</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-33732419" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-33732419" class="timestamp">
+      <time>2014-01-30 20:57:07</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/cebe" target="_blank">@cebe</a></strong> BTW, could you please specify why do you need it and what is your use case?</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-33736546" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/cebe" class="author">cebe</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-33736546" class="timestamp">
+      <time>2014-01-30 21:38:39</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <ol>
+<li>very nice thing when you need to debug markdown (as already mentioned)</li>
+<li>in general nice to have a command for automating stuff. For example I often use md5sum command for files and play with tools like cat, tail etc... having a markdown command would extend this toolchain</li>
+<li>no need to write any line of code in case you have a markdown file or short piece of markdown and want to read it in html.</li>
+</ol>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-33743194" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-33743194" class="timestamp">
+      <time>2014-01-30 22:47:00</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Another useful use case of this is the cooperation with external binaries like text editors for Markdown preview. You could just shell out to Parsedown in a Sublime plugin for example.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-33969894" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/scottchiefbaker" class="author">scottchiefbaker</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-33969894" class="timestamp">
+      <time>2014-02-03 16:13:17</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Can we land this? It's pretty innocuous. </p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-33992192" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-33992192" class="timestamp">
+      <time>2014-02-03 19:47:09</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I'd love for Parsedown to be available as a command line tool. It should probably be in a separate repository, though. Would anyone of you want to create it?</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-33993061" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-33993061" class="timestamp">
+      <time>2014-02-03 19:55:13</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/erusev" target="_blank">@erusev</a></strong> This repo of Parsedown is a Composer package. Composer has a built-in support for command-line &quot;binaries&quot;. Why would you not want to use it?</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-33993257" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-33993257" class="timestamp">
+      <time>2014-02-03 19:57:08</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/erusev" target="_blank">@erusev</a></strong> A JavaScript port of Parsedown could be used in a JavaScript project, but could also be published to npm as a command-line tool. IMHO the general practice is the command-line tool to be a very thin wrapper around the library and to be in the same repo.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-33993576" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-33993576" class="timestamp">
+      <time>2014-02-03 20:00:20</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/erusev" target="_blank">@erusev</a></strong> A good example in the PHP world is the PHPUnit binary: <a href="https://github.com/sebastianbergmann/phpunit/blob/master/phpunit">./phpunit</a> and <a href="https://github.com/sebastianbergmann/phpunit/blob/3e7c728f68faa8bb3de93f24ddfe891c27dd65fe/composer.json#L47">./composer.json</a>.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-33993825" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-33993825" class="timestamp">
+      <time>2014-02-03 20:02:41</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/erusev" target="_blank">@erusev</a></strong> I'm sorry for the multiple comments, but a Parsedown competitor - Ciconia is doing it in the same way. <a href="https://github.com/kzykhys/Ciconia/blob/master/bin/ciconia">bin/ciconia</a> and <a href="https://github.com/kzykhys/Ciconia/blob/79ec925b52fae8823a80226e1f52078b34608cb1/composer.json#L31">composer.json</a></p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-33993991" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-33993991" class="timestamp">
+      <time>2014-02-03 20:04:17</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/hkdobrev" target="_blank">@hkdobrev</a></strong> These are some good points.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-33994147" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/scottchiefbaker" class="author">scottchiefbaker</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-33994147" class="timestamp">
+      <time>2014-02-03 20:05:50</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I do somehow wish we could have a single binary file that's portable. This method is just a wrapper around the library. We should land this, but I might <em>ALSO</em> make a separate stand alone single script option.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-33994797" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-33994797" class="timestamp">
+      <time>2014-02-03 20:12:56</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <blockquote>
+<p>I might ALSO make a separate stand alone single script option.</p>
+</blockquote>
+<p><strong><a href="https://github.com/scottchiefbaker" target="_blank">@scottchiefbaker</a></strong> There are now some really good projects which pack several PHP files in one <code>.phar</code> script with an auto-update functionality.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-33995250" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-33995250" class="timestamp">
+      <time>2014-02-03 20:18:19</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/scottchiefbaker" target="_blank">@scottchiefbaker</a></strong> Some useful links if you want to follow this direction:</p>
+<ul>
+<li><a href="https://github.com/herrera-io/php-phar-update">https://github.com/herrera-io/php-phar-update</a></li>
+<li><a href="http://moquet.net/blog/distributing-php-cli/">http://moquet.net/blog/distributing-php-cli/</a></li>
+<li><a href="https://github.com/kherge/Box">https://github.com/kherge/Box</a></li>
+</ul>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-34017401" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/cebe" class="author">cebe</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-34017401" class="timestamp">
+      <time>2014-02-04 00:18:27</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/hkdobrev" target="_blank">@hkdobrev</a></strong> I do not see any reason why the binary command should be shipped in separate repository. It would just make things complicated and has no benefit at all.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-34017520" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-34017520" class="timestamp">
+      <time>2014-02-04 00:20:16</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/cebe" target="_blank">@cebe</a></strong> I'd like this PR merged. The thing we've discussed with <strong><a href="https://github.com/scottchiefbaker" target="_blank">@scottchiefbaker</a></strong> is about having a single PHAR package which could be distributed as a stand-alone CLI tool.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-34017704" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/scottchiefbaker" class="author">scottchiefbaker</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-34017704" class="timestamp">
+      <time>2014-02-04 00:22:47</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Just for reference I did implement a .phar based standalone markdown application.</p>
+<p><a href="https://github.com/scottchiefbaker/MarkdownCLI">https://github.com/scottchiefbaker/MarkdownCLI</a></p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-34017724" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/cebe" class="author">cebe</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-34017724" class="timestamp">
+      <time>2014-02-04 00:23:07</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Imo this one is fine for merge. If it is not perfect it can be adjusted in the future.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-40751114" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-40751114" class="timestamp">
+      <time>2014-04-17 19:09:44</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/erusev" target="_blank">@erusev</a></strong> ping. This is looking good to me too!</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-46903432" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/JCMais" class="author">JCMais</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-46903432" class="timestamp">
+      <time>2014-06-23 21:18:08</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/erusev" target="_blank">@erusev</a></strong>  Is this going to be merged?</p>
+<p>I've just started a cli script to add support for parsedown on the <a href="https://github.com/karlcow/markdown-testsuite">markdown-testcase</a> repository, but decided to search if there are any proposals already, and here I'm.</p>
+<p>Related to issue <a href="https://github.com/karlcow/markdown-testsuite/issues/58">https://github.com/karlcow/markdown-testsuite/issues/58</a></p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-46910196" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/cebe" class="author">cebe</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-46910196" class="timestamp">
+      <time>2014-06-23 22:24:17</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>A more complete example of a markdown CLI script: <a href="https://github.com/cebe/markdown/blob/master/bin/markdown">https://github.com/cebe/markdown/blob/master/bin/markdown</a></p>
+  </div>
+  </div>
+  </div>
+  <br/>
+</body></html>

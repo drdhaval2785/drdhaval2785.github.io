@@ -1,0 +1,91 @@
+{
+  "url": "https://api.github.com/repos/erusev/parsedown/issues/315",
+  "labels_url": "https://api.github.com/repos/erusev/parsedown/issues/315/labels{/name}",
+  "comments_url": "https://api.github.com/repos/erusev/parsedown/issues/315/comments",
+  "events_url": "https://api.github.com/repos/erusev/parsedown/issues/315/events",
+  "html_url": "https://github.com/erusev/parsedown/issues/315",
+  "id": 73014665,
+  "number": 315,
+  "title": "[Website] Typo in `Consistency` page",
+  "user": {
+    "login": "1ace",
+    "id": 297576,
+    "avatar_url": "https://avatars.githubusercontent.com/u/297576?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/1ace",
+    "html_url": "https://github.com/1ace",
+    "followers_url": "https://api.github.com/users/1ace/followers",
+    "following_url": "https://api.github.com/users/1ace/following{/other_user}",
+    "gists_url": "https://api.github.com/users/1ace/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/1ace/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/1ace/subscriptions",
+    "organizations_url": "https://api.github.com/users/1ace/orgs",
+    "repos_url": "https://api.github.com/users/1ace/repos",
+    "events_url": "https://api.github.com/users/1ace/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/1ace/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2015-05-04T13:05:33Z",
+  "updated_at": "2015-05-04T15:41:37Z",
+  "closed_at": "2015-05-04T15:41:37Z",
+  "body": "I'm not sure if this is supposed to be there, but the last example of the [consistency](http://parsedown.org/consistency) page reads as follows:\r\n\r\n```\r\n[Link][1] with a title.\r\n\r\n[1]: http:://example.com 'Title'\r\n```\r\n\r\nI think `http:://` is supposed to be `http://`, with a single colon.",
+  "closed_by": {
+    "login": "erusev",
+    "id": 184170,
+    "avatar_url": "https://avatars.githubusercontent.com/u/184170?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/erusev",
+    "html_url": "https://github.com/erusev",
+    "followers_url": "https://api.github.com/users/erusev/followers",
+    "following_url": "https://api.github.com/users/erusev/following{/other_user}",
+    "gists_url": "https://api.github.com/users/erusev/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/erusev/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/erusev/subscriptions",
+    "organizations_url": "https://api.github.com/users/erusev/orgs",
+    "repos_url": "https://api.github.com/users/erusev/repos",
+    "events_url": "https://api.github.com/users/erusev/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/erusev/received_events",
+    "type": "User",
+    "site_admin": false
+  }
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/erusev/parsedown/issues/comments/98758326",
+    "html_url": "https://github.com/erusev/parsedown/issues/315#issuecomment-98758326",
+    "issue_url": "https://api.github.com/repos/erusev/parsedown/issues/315",
+    "id": 98758326,
+    "user": {
+      "login": "erusev",
+      "id": 184170,
+      "avatar_url": "https://avatars.githubusercontent.com/u/184170?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/erusev",
+      "html_url": "https://github.com/erusev",
+      "followers_url": "https://api.github.com/users/erusev/followers",
+      "following_url": "https://api.github.com/users/erusev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/erusev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/erusev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/erusev/subscriptions",
+      "organizations_url": "https://api.github.com/users/erusev/orgs",
+      "repos_url": "https://api.github.com/users/erusev/repos",
+      "events_url": "https://api.github.com/users/erusev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/erusev/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2015-05-04T15:41:37Z",
+    "updated_at": "2015-05-04T15:41:37Z",
+    "body": "Thanks. This is now resolved."
+  }
+]

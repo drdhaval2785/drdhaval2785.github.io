@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html class='' lang='en'>
+<head prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#'>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8'>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta http-equiv='Content-Language' content='en'>
+<title>erusev/parsedown/276</title>
+<link href='github-c486157afcc5f58155a921bc675afb08733fbaa8dcf39ac2104d3.css' media='all' rel='stylesheet'>
+<link href='github2-da2e842cc3f0aaf33b727d0ef034243c12ab008fd09b24868b97.css' media='all' rel='stylesheet'>
+<meta http-equiv='x-pjax-version' content='4426702614c8182f33d1780ad1169662'>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shAutoloader.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAppleScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAS3.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushBash.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushColdFusion.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCpp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCSharp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCss.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDelphi.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDiff.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushErlang.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushGroovy.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJava.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJavaFX.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/syntaxhighlighter/scripts/shBrushJScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPerl.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPhp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPlain.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPowerShell.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPython.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushRuby.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSass.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushScala.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSql.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushVb.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushXml.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shLegacy.js'></script>
+	<link type='text/css' rel='stylesheet' href='syntaxhighlighter/styles/shCoreDefault.css'/>
+	<script type='text/javascript'>SyntaxHighlighter.all();</script>
+</head>
+<body class='logged_in  env-production windows vis-public'>
+<h1 align='center'><a href='https://github.com/erusev/parsedown/pull/276' target='_blank'>Prevent various XSS attacks</h1><hr/><div id="#issue-54971979" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/naNuke" class="author">naNuke</a>
+    </strong>
+    commented on 
+    <a href="#issue-54971979" class="timestamp">
+      <time>2015-01-21 03:05:30</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Hello, I am back with the safe links issue.
+As always this is open to discussion :) but together with already existing markupEscaped setting, this is basically a fix for issues <a href='161.html' target='_blank'>#161</a> and #210, and maybe other im not aware of.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-71329879" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-71329879" class="timestamp">
+      <time>2015-01-24 18:05:46</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>This looks nice. I'd love to hear more opinions about it. I'm no expert on XSS. <strong><a href="https://github.com/hkdobrev" target="_blank">@hkdobrev</a></strong> ?</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-71330329" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/xPaw" class="author">xPaw</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-71330329" class="timestamp">
+      <time>2015-01-24 18:15:03</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I feel like this param should be named as something more generic like <code>safeAttributes</code> and escaping every attribute that user can enter (e.g <code>title</code>). Also I think checking for <code>javascript:</code> in urls seems like a silly idea, and urls should be escaped regardless.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-71330817" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-71330817" class="timestamp">
+      <time>2015-01-24 18:26:18</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/xPaw" target="_blank">@xPaw</a></strong> Thanks for the input! Which characters do u think should be escaped?</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-71330877" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/xPaw" class="author">xPaw</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-71330877" class="timestamp">
+      <time>2015-01-24 18:27:41</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Using <code>htmlspecialchars</code> should do the job just fine.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-71330973" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-71330973" class="timestamp">
+      <time>2015-01-24 18:29:53</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Thanks! </p>
+<blockquote>
+<p>escaping every attribute that user can enter (e.g title)</p>
+</blockquote>
+<p>Is this about attributes of anchor (<code>&lt;a&gt;</code>) tags or all of them?</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-71331235" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/xPaw" class="author">xPaw</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-71331235" class="timestamp">
+      <time>2015-01-24 18:35:49</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Any attribute that user can change should be escaped. I guess in Parsedown that only applies to links really.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-71331724" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-71331724" class="timestamp">
+      <time>2015-01-24 18:47:44</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>What if, instead of having an option, we implement this as a default behaviour? It shouldn't have too much of a performance cost.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-71331835" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/xPaw" class="author">xPaw</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-71331835" class="timestamp">
+      <time>2015-01-24 18:50:01</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>That actually would make more sense.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-71332079" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/naNuke" class="author">naNuke</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-71332079" class="timestamp">
+      <time>2015-01-24 18:55:25</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>We dont need to escape title attribute because of the way how parsedown works, any additional quote simply breaks the regex and link wont render at all.</p>
+<p>thing like <code>[example](www.example.com "&gt;&lt;script&gt;alert('xss')&lt;/script&gt;")</code>
+ends up as <code>&lt;a href="www.example.com" title="&gt;&lt;script&gt;alert('xss')&lt;/script&gt;"&gt;</code> and wont do anything. Script tags broken anywhere outside the link will be escaped if markupEscaped is on.</p>
+<p>But adding escape on title is easy if there is really need for it.</p>
+<p>The check against javascript: in url is to prevent people from writing clickable javascript links which can be used as an XSS attack because you can write full strings in javascript without quotes so even with ENT_QUOTES on htmlspecialchars wont prevent someone from writing malicious code.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-71332418" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-71332418" class="timestamp">
+      <time>2015-01-24 19:02:33</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/xPaw" target="_blank">@xPaw</a></strong> Would <code>htmlspecialchars</code> on attributes protect against things like <code>[link](javascript:alert('xss'))</code>?</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-71332548" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/xPaw" class="author">xPaw</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-71332548" class="timestamp">
+      <time>2015-01-24 19:06:04</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>It won't, but simply checking if the string starts with <code>javascript:</code> won't fix the problem either.</p>
+<p>See <a href="http://security.stackexchange.com/a/73751">http://security.stackexchange.com/a/73751</a> for some examples as to why.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-71335810" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-71335810" class="timestamp">
+      <time>2015-01-24 20:28:55</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I asked SO for advice at <a href="http://security.stackexchange.com/q/80003/15034">http://security.stackexchange.com/q/80003/15034</a></p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-71338681" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/naNuke" class="author">naNuke</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-71338681" class="timestamp">
+      <time>2015-01-24 21:39:28</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Updated with info from <strong><a href="https://github.com/xPaw" target="_blank">@xPaw</a></strong> to whitelist the protocols instead of javascript: check.
+Didn't know the pseudo-protocol can be malformed in some browsers ^^
+Also escaping title just to be 100% sure.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-71381132" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/xPaw" class="author">xPaw</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-71381132" class="timestamp">
+      <time>2015-01-25 17:00:30</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I don't think having hardcoded schema list in the regex is the way to go. For example reddit has a bigger schema whitelist: <a href="https://github.com/reddit/reddit/blob/bb0f5b552c3a52abfac1e2147144eef8f2e7dfab/r2/r2/lib/filters.py#L177">https://github.com/reddit/reddit/blob/bb0f5b552c3a52abfac1e2147144eef8f2e7dfab/r2/r2/lib/filters.py#L177</a></p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-71385737" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/naNuke" class="author">naNuke</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-71385737" class="timestamp">
+      <time>2015-01-25 18:50:02</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Thanks for input :) added customizable whitelist, but since parsedown is parser meant for everyone I am not sure if it should include all possible schemas by default. Thoughts?</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-71436420" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-71436420" class="timestamp">
+      <time>2015-01-26 09:52:26</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Here a few things I think should be done in order Parsedown to be more safe against XSS.</p>
+<h4>HTML</h4>
+<p>Raw HTML should be disabled in Markdown. You could use <code>setMarkupEscaped()</code> in Parsedown.</p>
+<h4>User-generated content</h4>
+<p>If a developer is getting user-generated content and is putting it inside Markdown documents this should be escaped/validated beforehand. You could also use HTML Purifier or a similar library to actually validate/escape content after the HTML is generated.</p>
+<h4>Attributes</h4>
+<p>Every attribute should be escaped for special characters, not only links. In Parsedown this would be the <code>href</code>, <code>title</code>, <code>src</code> and <code>alt</code> attributes.</p>
+<h4>Schemas:</h4>
+<ol>
+<li>There is no definitive list of schemas, because you can create your own.</li>
+<li><a href="https://www.owasp.org/index.php/XSS_(Cross_Site_Scripting)_Prevention_Cheat_Sheet#XSS_Prevention_Rules_Summary">According to OWASP</a> you should whitelist <code>http://</code> and <code>https://</code> only for security purposes.</li>
+</ol>
+<hr />
+<p>Don't take this the wrong way, I think this is a step in the right direction.</p>
+<p>About what <strong><a href="https://github.com/erusev" target="_blank">@erusev</a></strong> suggested that this might be the default:</p>
+<ul>
+<li>Attributes escaping could be done by default.</li>
+<li>HTML escaping is already behind an option and of course should stay that way.</li>
+<li>Schema whitelisting definitely should be optional.</li>
+<li>A note which says Parsedown is not enough for your content to be secure would be good. Users which use Parsedown should be educated to think about their content and which text comes from where.</li>
+</ul>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-71457872" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/naNuke" class="author">naNuke</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-71457872" class="timestamp">
+      <time>2015-01-26 13:08:12</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Is there any other markdown syntax that accepts user content directly for its generated html other than links and images? </p>
+<p>Also note that there is no need atm to escape images because it uses link code directly.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-71506293" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/naNuke" class="author">naNuke</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-71506293" class="timestamp">
+      <time>2015-01-26 18:02:06</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I've just finished reading thru the code and added escaping on <em>hopefully</em> all parsed attributes.</p>
+<p>On another note, at the moment, all of this expects user input to be UTF-8, which may leave some project vulnerable by not catching html entities under different encodings. <a href="http://blog.astrumfutura.com/2012/03/a-hitchhikers-guide-to-cross-site-scripting-xss-in-php-part-1-how-not-to-use-htmlspecialchars-for-output-escaping/">Read here for more info</a></p>
+<p>I am not quite sure how to solve the encoding issue since that might be out of scope of this fix, also the fact that parsedown is supporting php 5.2 is not helping, but my idea of possible solution is:</p>
+<ul>
+<li>text() method would accept encoding parameter, encode from that encoding to utf-8, go through all the lines, then re-encode back to user encoding and return.</li>
+</ul>
+<p>Not aware of any complications this might bring, but I am not that knowledgeable about unicode.</p>
+<p>Let me know what you guys think :)</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-72629102" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-72629102" class="timestamp">
+      <time>2015-02-03 10:38:56</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>:star2:  LGTM :sparkles: :dizzy: </p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-78046302" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-78046302" class="timestamp">
+      <time>2015-03-10 12:48:31</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/erusev" target="_blank">@erusev</a></strong> What's up with this?</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-78047485" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-78047485" class="timestamp">
+      <time>2015-03-10 12:57:46</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/hkdobrev" target="_blank">@hkdobrev</a></strong> I have some thoughts about it. Hopefully, next week I'll have some time that I'll be able to invest in the topic.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-99617635" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/ivantcholakov" class="author">ivantcholakov</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-99617635" class="timestamp">
+      <time>2015-05-06 21:38:48</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Maybe borrowing code from CodeIgniter 3 would be the solution. PHP min = 5.2.4
+<a href="https://github.com/bcit-ci/CodeIgniter/blob/3.0.0/system/core/Security.php#L349">https://github.com/bcit-ci/CodeIgniter/blob/3.0.0/system/core/Security.php#L349</a></p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-104750884" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/adamthehutt" class="author">adamthehutt</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-104750884" class="timestamp">
+      <time>2015-05-22 19:41:18</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Is there any update on this? Anything I can do to help?</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+</body></html>

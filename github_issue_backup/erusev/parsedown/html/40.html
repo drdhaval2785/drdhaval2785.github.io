@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html class='' lang='en'>
+<head prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#'>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8'>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta http-equiv='Content-Language' content='en'>
+<title>erusev/parsedown/40</title>
+<link href='github-c486157afcc5f58155a921bc675afb08733fbaa8dcf39ac2104d3.css' media='all' rel='stylesheet'>
+<link href='github2-da2e842cc3f0aaf33b727d0ef034243c12ab008fd09b24868b97.css' media='all' rel='stylesheet'>
+<meta http-equiv='x-pjax-version' content='4426702614c8182f33d1780ad1169662'>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shAutoloader.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAppleScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAS3.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushBash.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushColdFusion.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCpp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCSharp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCss.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDelphi.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDiff.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushErlang.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushGroovy.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJava.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJavaFX.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/syntaxhighlighter/scripts/shBrushJScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPerl.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPhp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPlain.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPowerShell.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPython.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushRuby.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSass.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushScala.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSql.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushVb.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushXml.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shLegacy.js'></script>
+	<link type='text/css' rel='stylesheet' href='syntaxhighlighter/styles/shCoreDefault.css'/>
+	<script type='text/javascript'>SyntaxHighlighter.all();</script>
+</head>
+<body class='logged_in  env-production windows vis-public'>
+<h1 align='center'><a href='https://github.com/erusev/parsedown/issues/40' target='_blank'>Feature request - Syntax-correct language declarations for fenced code blocks</h1><hr/><div id="#issue-23585054" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/molovo" class="author">molovo</a>
+    </strong>
+    commented on 
+    <a href="#issue-23585054" class="timestamp">
+      <time>2013-12-02 16:48:55</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Would be awesome to have this.</p>
+<p>e.g.</p>
+<pre><code>```ruby
+some.code()
+```</code></pre>
+<p>would become</p>
+<pre><code>&lt;pre&gt;&lt;code class="language-ruby"&gt;some.code()&lt;/code&gt;&lt;/pre&gt;</code></pre>
+<p>in line with the <a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/text-level-semantics.html#the-code-element">WHATWG Spec</a> and allowing parsedown to be paired up with syntax highlighters.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-29635132" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/RexDude" class="author">RexDude</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-29635132" class="timestamp">
+      <time>2013-12-02 16:54:21</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>:+1: </p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-29635639" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-29635639" class="timestamp">
+      <time>2013-12-02 16:59:09</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>:+1: </p>
+<p>I was going to report this as an issue with GFM fenced code blocks. Actually the GFM support is much more than just parsing few additional Markdown syntax additions.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-29636249" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/RexDude" class="author">RexDude</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-29636249" class="timestamp">
+      <time>2013-12-02 17:05:39</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>A user function that gets called for formatting the fenced code block would also be nice too. At the moment I modified the parsedown class for this, like here: <a href="https://github.com/RexDude/magnific_popup/blob/master/classes/class.parsedown.inc.php#L584">https://github.com/RexDude/magnific_popup/blob/master/classes/class.parsedown.inc.php#L584</a></p>
+<p><code>rex_highlight_string</code> is a function from the CMS REDAXO I am using.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-29640718" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-29640718" class="timestamp">
+      <time>2013-12-02 17:53:49</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I'm working on it.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-29640771" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/molovo" class="author">molovo</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-29640771" class="timestamp">
+      <time>2013-12-02 17:54:39</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>:+1: </p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-29641226" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-29641226" class="timestamp">
+      <time>2013-12-02 17:59:17</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/RexDude" target="_blank">@RexDude</a></strong> I'll need to think about this.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-29643866" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/RexDude" class="author">RexDude</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-29643866" class="timestamp">
+      <time>2013-12-02 18:29:39</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/erusev" target="_blank">@erusev</a></strong> Of course :) It's just an idea I had. Something like this:</p>
+<pre class="brush: php">$markup .= call_user_func('parsedown_fenced_code_block', $text, $language);</code></pre>
+<p>and the user function for the example above could look like this:</p>
+<pre class="brush: php">function parsedown_fenced_code_block($text, $language) {
+    return '&lt;div class="language-' . $language . '"&gt;' . $text . '&lt;/div&gt;';
+}</code></pre>
+<p>my usecase would be then:</p>
+<pre class="brush: php">function parsedown_fenced_code_block($text, $language) {
+    return rex_highlight_string($text, true);
+}</code></pre>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-31245123" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/RexDude" class="author">RexDude</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-31245123" class="timestamp">
+      <time>2013-12-27 03:07:38</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/erusev" target="_blank">@erusev</a></strong> I just thought to open up a new issue with the idea I had, because I think it is a common task to add syntax highlighting to code blocks. GitHub is doing it too and also in when using a CMS this can be a issue. Performance of Parsedown class should also no be affected in my opinion. What do you think?</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+</body></html>

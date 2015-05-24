@@ -1,0 +1,68 @@
+{
+  "url": "https://api.github.com/repos/erusev/parsedown/issues/145",
+  "labels_url": "https://api.github.com/repos/erusev/parsedown/issues/145/labels{/name}",
+  "comments_url": "https://api.github.com/repos/erusev/parsedown/issues/145/comments",
+  "events_url": "https://api.github.com/repos/erusev/parsedown/issues/145/events",
+  "html_url": "https://github.com/erusev/parsedown/issues/145",
+  "id": 29998851,
+  "number": 145,
+  "title": "fails to wrap del tags when del is in front",
+  "user": {
+    "login": "ctessmer",
+    "id": 6911399,
+    "avatar_url": "https://avatars.githubusercontent.com/u/6911399?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/ctessmer",
+    "html_url": "https://github.com/ctessmer",
+    "followers_url": "https://api.github.com/users/ctessmer/followers",
+    "following_url": "https://api.github.com/users/ctessmer/following{/other_user}",
+    "gists_url": "https://api.github.com/users/ctessmer/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/ctessmer/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/ctessmer/subscriptions",
+    "organizations_url": "https://api.github.com/users/ctessmer/orgs",
+    "repos_url": "https://api.github.com/users/ctessmer/repos",
+    "events_url": "https://api.github.com/users/ctessmer/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/ctessmer/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "url": "https://api.github.com/repos/erusev/parsedown/labels/issue",
+      "name": "issue",
+      "color": "f7c6c7"
+    }
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2014-03-23T21:35:13Z",
+  "updated_at": "2014-04-30T23:02:29Z",
+  "closed_at": "2014-04-30T23:02:29Z",
+  "body": "Doesn't wrap del tags with p tags when del is used at the front of a paragraph. Works properly with s tags. See screenshot. \r\n![parsedown and del](https://f.cloud.github.com/assets/6911399/2494716/fb438bd4-b2d2-11e3-9acb-30da7118ebd8.png)",
+  "closed_by": {
+    "login": "erusev",
+    "id": 184170,
+    "avatar_url": "https://avatars.githubusercontent.com/u/184170?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/erusev",
+    "html_url": "https://github.com/erusev",
+    "followers_url": "https://api.github.com/users/erusev/followers",
+    "following_url": "https://api.github.com/users/erusev/following{/other_user}",
+    "gists_url": "https://api.github.com/users/erusev/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/erusev/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/erusev/subscriptions",
+    "organizations_url": "https://api.github.com/users/erusev/orgs",
+    "repos_url": "https://api.github.com/users/erusev/repos",
+    "events_url": "https://api.github.com/users/erusev/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/erusev/received_events",
+    "type": "User",
+    "site_admin": false
+  }
+}
+BODY STARTS FROM HERE
+[
+
+]

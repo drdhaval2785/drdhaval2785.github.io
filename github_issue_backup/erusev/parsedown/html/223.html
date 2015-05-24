@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html class='' lang='en'>
+<head prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#'>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8'>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta http-equiv='Content-Language' content='en'>
+<title>erusev/parsedown/223</title>
+<link href='github-c486157afcc5f58155a921bc675afb08733fbaa8dcf39ac2104d3.css' media='all' rel='stylesheet'>
+<link href='github2-da2e842cc3f0aaf33b727d0ef034243c12ab008fd09b24868b97.css' media='all' rel='stylesheet'>
+<meta http-equiv='x-pjax-version' content='4426702614c8182f33d1780ad1169662'>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shAutoloader.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAppleScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAS3.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushBash.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushColdFusion.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCpp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCSharp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCss.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDelphi.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDiff.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushErlang.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushGroovy.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJava.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJavaFX.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/syntaxhighlighter/scripts/shBrushJScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPerl.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPhp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPlain.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPowerShell.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPython.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushRuby.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSass.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushScala.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSql.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushVb.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushXml.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shLegacy.js'></script>
+	<link type='text/css' rel='stylesheet' href='syntaxhighlighter/styles/shCoreDefault.css'/>
+	<script type='text/javascript'>SyntaxHighlighter.all();</script>
+</head>
+<body class='logged_in  env-production windows vis-public'>
+<h1 align='center'><a href='https://github.com/erusev/parsedown/issues/223' target='_blank'>About Recursive Regex</h1><hr/><div id="#issue-43132911" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/joyqi" class="author">joyqi</a>
+    </strong>
+    commented on 
+    <a href="#issue-43132911" class="timestamp">
+      <time>2014-09-18 13:32:52</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Hi, I'm working on a CoffeeScript port of Parsedown (<a href="https://github.com/joyqi/parsedown-coffee">https://github.com/joyqi/parsedown-coffee</a>).
+I migrate the php code to CoffeeScript line by line, so they will render the same HTML code at the end.</p>
+<p>But there is a recursive regex in method <code>identifyLink</code>, and javascript don't support recursive regex. Do you have some suggestions?</p>
+<pre class="brush: php">    protected function identifyLink($Excerpt)
+    {
+        $extent = $Excerpt['text'][0] === '!' ? 1 : 0;
+
+        if (strpos($Excerpt['text'], ']') and preg_match('/\[((?:[^][]|(?R))*)\]/', $Excerpt['text'], $matches))
+        {</code></pre>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-56044140" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-56044140" class="timestamp">
+      <time>2014-09-18 14:15:54</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Hi <strong><a href="https://github.com/joyqi" target="_blank">@joyqi</a></strong>!</p>
+<p>I have been working on a <a href="https://github.com/hkdobrev/parsedown.js/tree/wip">JavaScript port</a> (not so much lately).</p>
+<p>I think I have replaced these regexes with another ones taken from JavaScript libraries.</p>
+<p>How do you workaround the PHP code like <code>break 2;</code> or <code>continue 2;</code>.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-56046436" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/joyqi" class="author">joyqi</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-56046436" class="timestamp">
+      <time>2014-09-18 14:31:00</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/hkdobrev" target="_blank">@hkdobrev</a></strong> Hi, I've seen your project before.</p>
+<p>I just put a temp variable to log the break status, for example</p>
+<pre class="brush: php">// php code
+for ($i = 0; $i &lt; 100; $i ++) {
+    for ($j = 0; $j &lt; 50; $j ++) {
+        if ($i * $j &gt; 100) {
+            break 2;
+        }
+    }
+}</code></pre>
+<pre class="brush: javascript">// javascript code
+pass = false;
+for (i = 0; i &lt; 100; i ++) {
+    for (j = 0; j &lt; 50; j ++) {
+        if (i * j &gt; 100) {
+            // log status and break immediately
+            pass = true;
+            break;
+        }
+    }
+
+    // check the variable and break again
+    if (pass) break;
+}</code></pre>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-56047950" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-56047950" class="timestamp">
+      <time>2014-09-18 14:40:33</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>BTW I think I'd continue my work on it when Parsedown is compatible with CommonMark.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-70073623" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-70073623" class="timestamp">
+      <time>2015-01-15 11:35:50</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/joyqi" target="_blank">@joyqi</a></strong> </p>
+<p>It doesn't have to be recursive. You can have a look at the regex that I added in <a href="https://github.com/erusev/parsedown/commit/9ed72ccd0943436f1c47d6ea6e528857bdc0da3c">https://github.com/erusev/parsedown/commit/9ed72ccd0943436f1c47d6ea6e528857bdc0da3c</a> and use the same principle.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+</body></html>

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html class='' lang='en'>
+<head prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#'>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8'>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta http-equiv='Content-Language' content='en'>
+<title>erusev/parsedown/295</title>
+<link href='github-c486157afcc5f58155a921bc675afb08733fbaa8dcf39ac2104d3.css' media='all' rel='stylesheet'>
+<link href='github2-da2e842cc3f0aaf33b727d0ef034243c12ab008fd09b24868b97.css' media='all' rel='stylesheet'>
+<meta http-equiv='x-pjax-version' content='4426702614c8182f33d1780ad1169662'>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shAutoloader.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAppleScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAS3.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushBash.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushColdFusion.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCpp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCSharp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCss.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDelphi.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDiff.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushErlang.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushGroovy.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJava.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJavaFX.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/syntaxhighlighter/scripts/shBrushJScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPerl.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPhp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPlain.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPowerShell.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPython.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushRuby.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSass.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushScala.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSql.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushVb.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushXml.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shLegacy.js'></script>
+	<link type='text/css' rel='stylesheet' href='syntaxhighlighter/styles/shCoreDefault.css'/>
+	<script type='text/javascript'>SyntaxHighlighter.all();</script>
+</head>
+<body class='logged_in  env-production windows vis-public'>
+<h1 align='center'><a href='https://github.com/erusev/parsedown/pull/295' target='_blank'>Test on nightly releases of PHP (7.0) and HHVM</h1><hr/><div id="#issue-60266039" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issue-60266039" class="timestamp">
+      <time>2015-03-08 17:13:39</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>See <a href="https://github.com/erusev/parsedown/issues/294">https://github.com/erusev/parsedown/issues/294</a></p>
+<p>See <a href="https://github.com/erusev/base/commit/12bf1c6d05e0ec89b1235078c6b5af3094422e0f#commitcomment-10090016">https://github.com/erusev/base/commit/12bf1c6d05e0ec89b1235078c6b5af3094422e0f#commitcomment-10090016</a></p>
+<p>Nightly releases are allowed to fail since they are not stable and could fail in unpredictable ways.</p>
+<p>New versions of PHP could be added as they are released.  I think they should not be in the allowed to fail part of the matrix then.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-77764884" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/fonsecas72" class="author">fonsecas72</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-77764884" class="timestamp">
+      <time>2015-03-08 18:06:26</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>JFTR, This does not closes <a href='294.html' target='_blank'>#294</a> by it self, I just asked for a new tagged version.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-77765049" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-77765049" class="timestamp">
+      <time>2015-03-08 18:09:49</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/fonsecas72" target="_blank">@fonsecas72</a></strong> Well, you're right, <a href="https://github.com/erusev/parsedown/compare/1.5.1...master">there are some changes</a> which are not in a tagged release. But you've asked a version compatible with PHP 7.</p>
+<p><strong><a href="https://github.com/erusev" target="_blank">@erusev</a></strong> You could perhaps tag <code>1.5.2</code> even without merging this.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-77765112" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-77765112" class="timestamp">
+      <time>2015-03-08 18:10:53</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/fonsecas72" target="_blank">@fonsecas72</a></strong> I've amended the commit and PR so it won't close the issue, even if merged.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-77765775" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/fonsecas72" class="author">fonsecas72</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-77765775" class="timestamp">
+      <time>2015-03-08 18:23:00</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/hkdobrev" target="_blank">@hkdobrev</a></strong> I already tried the master version with PHP7 and I realized that the tests were green. That's why I asked for the tagged version. But I think that both this PR and the new tag together makes more sense. Thank you :)</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-77766082" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/GrahamCampbell" class="author">GrahamCampbell</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-77766082" class="timestamp">
+      <time>2015-03-08 18:28:39</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>:-1: for this in it's current state. I see no point in testing on nighties. Seems largely overkill. Adding &quot;7.0&quot; because it's future proof is fine IMO.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-77766841" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/cebe" class="author">cebe</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-77766841" class="timestamp">
+      <time>2015-03-08 18:43:53</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <blockquote>
+<p>:-1: for this in it's current state. I see no point in testing on nighties. Seems largely overkill. Adding &quot;7.0&quot; because it's future proof is fine IMO.</p>
+</blockquote>
+<p><code>nightly</code> is and alias for <code>7.0</code> for php.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-77767095" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/fonsecas72" class="author">fonsecas72</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-77767095" class="timestamp">
+      <time>2015-03-08 18:48:22</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>According to this discussion <code>nightly</code> will be removed as soon as PHP7 is release
+<a href="https://github.com/travis-ci/travis-ci/issues/2480">https://github.com/travis-ci/travis-ci/issues/2480</a>
+So I'd use <code>7.0</code></p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-77814151" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-77814151" class="timestamp">
+      <time>2015-03-09 08:14:15</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/fonsecas72" target="_blank">@fonsecas72</a></strong> Thanks for the link. After reading the thread and few others, I agree that at the moment using <code>7.0</code> is more appropriate. But I don't agree with their decisions. I hope we would have PHP nightly builds just like <code>hhvm-nightly</code>, <code>ruby-head</code> and <code>jruby-head</code> even when PHP 7 is released.</p>
+<p>Will update the PR.</p>
+<p>/cc <strong><a href="https://github.com/GrahamCampbell" target="_blank">@GrahamCampbell</a></strong> </p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-95362361" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-95362361" class="timestamp">
+      <time>2015-04-22 23:07:28</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Any other issues with this?</p>
+<p>/cc <strong><a href="https://github.com/erusev" target="_blank">@erusev</a></strong> <strong><a href="https://github.com/GrahamCampbell" target="_blank">@GrahamCampbell</a></strong> <strong><a href="https://github.com/cebe" target="_blank">@cebe</a></strong> <strong><a href="https://github.com/fonsecas72" target="_blank">@fonsecas72</a></strong> </p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-95369494" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/fonsecas72" class="author">fonsecas72</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-95369494" class="timestamp">
+      <time>2015-04-22 23:49:05</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>fine by me :) :+1: </p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-95632671" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/cebe" class="author">cebe</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-95632671" class="timestamp">
+      <time>2015-04-23 15:57:16</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>looks perfect</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-95632835" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/GrahamCampbell" class="author">GrahamCampbell</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-95632835" class="timestamp">
+      <time>2015-04-23 15:57:59</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>:+1:</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+</body></html>

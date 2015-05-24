@@ -1,0 +1,64 @@
+{
+  "url": "https://api.github.com/repos/erusev/parsedown/issues/54",
+  "labels_url": "https://api.github.com/repos/erusev/parsedown/issues/54/labels{/name}",
+  "comments_url": "https://api.github.com/repos/erusev/parsedown/issues/54/comments",
+  "events_url": "https://api.github.com/repos/erusev/parsedown/issues/54/events",
+  "html_url": "https://github.com/erusev/parsedown/issues/54",
+  "id": 25115692,
+  "number": 54,
+  "title": "GFM with set_breaks_enabled(true) breaks output",
+  "user": {
+    "login": "metude",
+    "id": 305541,
+    "avatar_url": "https://avatars.githubusercontent.com/u/305541?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/metude",
+    "html_url": "https://github.com/metude",
+    "followers_url": "https://api.github.com/users/metude/followers",
+    "following_url": "https://api.github.com/users/metude/following{/other_user}",
+    "gists_url": "https://api.github.com/users/metude/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/metude/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/metude/subscriptions",
+    "organizations_url": "https://api.github.com/users/metude/orgs",
+    "repos_url": "https://api.github.com/users/metude/repos",
+    "events_url": "https://api.github.com/users/metude/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/metude/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2014-01-06T17:23:02Z",
+  "updated_at": "2014-01-18T14:45:43Z",
+  "closed_at": "2014-01-18T14:45:43Z",
+  "body": "I used to [this Markdown source](http://github.github.com/github-flavored-markdown/sample_content.html) to test it.\r\n\r\nWhen breaks enabled Parsedown generates a lot of unnecessary `<br>` tag. I think this is because of \"line by line reading\"\r\n\r\nIf I set_breaks_enabled(false)\r\n==\r\n![alt](http://i.imgur.com/17Ytv2H.png)\r\n\r\nIf I set_breaks_enabled(true)\r\n==\r\n![alt2](http://i.imgur.com/jF5gNAu.png)\r\n![alt3](http://i.imgur.com/dYVPCHj.png)",
+  "closed_by": {
+    "login": "erusev",
+    "id": 184170,
+    "avatar_url": "https://avatars.githubusercontent.com/u/184170?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/erusev",
+    "html_url": "https://github.com/erusev",
+    "followers_url": "https://api.github.com/users/erusev/followers",
+    "following_url": "https://api.github.com/users/erusev/following{/other_user}",
+    "gists_url": "https://api.github.com/users/erusev/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/erusev/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/erusev/subscriptions",
+    "organizations_url": "https://api.github.com/users/erusev/orgs",
+    "repos_url": "https://api.github.com/users/erusev/repos",
+    "events_url": "https://api.github.com/users/erusev/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/erusev/received_events",
+    "type": "User",
+    "site_admin": false
+  }
+}
+BODY STARTS FROM HERE
+[
+
+]

@@ -1,0 +1,91 @@
+{
+  "url": "https://api.github.com/repos/erusev/parsedown/issues/149",
+  "labels_url": "https://api.github.com/repos/erusev/parsedown/issues/149/labels{/name}",
+  "comments_url": "https://api.github.com/repos/erusev/parsedown/issues/149/comments",
+  "events_url": "https://api.github.com/repos/erusev/parsedown/issues/149/events",
+  "html_url": "https://github.com/erusev/parsedown/issues/149",
+  "id": 30300301,
+  "number": 149,
+  "title": "Parsing one line of Markdown",
+  "user": {
+    "login": "lukasbestle",
+    "id": 1595007,
+    "avatar_url": "https://avatars.githubusercontent.com/u/1595007?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/lukasbestle",
+    "html_url": "https://github.com/lukasbestle",
+    "followers_url": "https://api.github.com/users/lukasbestle/followers",
+    "following_url": "https://api.github.com/users/lukasbestle/following{/other_user}",
+    "gists_url": "https://api.github.com/users/lukasbestle/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/lukasbestle/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/lukasbestle/subscriptions",
+    "organizations_url": "https://api.github.com/users/lukasbestle/orgs",
+    "repos_url": "https://api.github.com/users/lukasbestle/repos",
+    "events_url": "https://api.github.com/users/lukasbestle/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/lukasbestle/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2014-03-27T13:37:33Z",
+  "updated_at": "2014-03-27T13:56:19Z",
+  "closed_at": "2014-03-27T13:56:19Z",
+  "body": "As this is a \"feature\", I opened this as an issue and not as a PR according to your guidelines.\r\n\r\n----\r\n\r\nSometimes, you want to have inline Markdown in your template.  \r\nA good example is a heading you have already defined in your markup, which is supposed to contain some dynamic texts including links and emphasis.\r\n\r\nYour code would look like this:\r\n\r\n```phtml\r\n<h2 class=\"something\"><?php echo Parsedown::instance()->parse('This is a **cool** heading!'); ?></h2>\r\n```\r\n\r\nUnfortunately, the resulting HTML would be wrapped in a `<p>` tag, not what we want here:\r\n\r\n```html\r\n<h2 class=\"something\"><p>This is a <strong>cool</strong> heading!</p></h2>\r\n```\r\n\r\nI found out that the `parseLine()` method does exactly what we want, so it needs to be public or have an alias like `parseInline($text)`, which can then be used like this:\r\n\r\n```phtml\r\n<h2 class=\"something\"><?php echo Parsedown::instance()->parseInline('This is a **cool** heading!'); ?></h2>\r\n```\r\n\r\nResult:\r\n\r\n```html\r\n<h2 class=\"something\">This is a <strong>cool</strong> heading!</h2>\r\n```",
+  "closed_by": {
+    "login": "lukasbestle",
+    "id": 1595007,
+    "avatar_url": "https://avatars.githubusercontent.com/u/1595007?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/lukasbestle",
+    "html_url": "https://github.com/lukasbestle",
+    "followers_url": "https://api.github.com/users/lukasbestle/followers",
+    "following_url": "https://api.github.com/users/lukasbestle/following{/other_user}",
+    "gists_url": "https://api.github.com/users/lukasbestle/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/lukasbestle/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/lukasbestle/subscriptions",
+    "organizations_url": "https://api.github.com/users/lukasbestle/orgs",
+    "repos_url": "https://api.github.com/users/lukasbestle/repos",
+    "events_url": "https://api.github.com/users/lukasbestle/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/lukasbestle/received_events",
+    "type": "User",
+    "site_admin": false
+  }
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/erusev/parsedown/issues/comments/38804174",
+    "html_url": "https://github.com/erusev/parsedown/issues/149#issuecomment-38804174",
+    "issue_url": "https://api.github.com/repos/erusev/parsedown/issues/149",
+    "id": 38804174,
+    "user": {
+      "login": "cebe",
+      "id": 189796,
+      "avatar_url": "https://avatars.githubusercontent.com/u/189796?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/cebe",
+      "html_url": "https://github.com/cebe",
+      "followers_url": "https://api.github.com/users/cebe/followers",
+      "following_url": "https://api.github.com/users/cebe/following{/other_user}",
+      "gists_url": "https://api.github.com/users/cebe/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/cebe/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/cebe/subscriptions",
+      "organizations_url": "https://api.github.com/users/cebe/orgs",
+      "repos_url": "https://api.github.com/users/cebe/repos",
+      "events_url": "https://api.github.com/users/cebe/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/cebe/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2014-03-27T13:50:01Z",
+    "updated_at": "2014-03-27T13:50:01Z",
+    "body": "duplicate of #43"
+  }
+]

@@ -1,0 +1,91 @@
+{
+  "url": "https://api.github.com/repos/erusev/parsedown/issues/183",
+  "labels_url": "https://api.github.com/repos/erusev/parsedown/issues/183/labels{/name}",
+  "comments_url": "https://api.github.com/repos/erusev/parsedown/issues/183/comments",
+  "events_url": "https://api.github.com/repos/erusev/parsedown/issues/183/events",
+  "html_url": "https://github.com/erusev/parsedown/issues/183",
+  "id": 34830947,
+  "number": 183,
+  "title": "Links that contain parentheses not parsed correctly ",
+  "user": {
+    "login": "jacroe",
+    "id": 1142635,
+    "avatar_url": "https://avatars.githubusercontent.com/u/1142635?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jacroe",
+    "html_url": "https://github.com/jacroe",
+    "followers_url": "https://api.github.com/users/jacroe/followers",
+    "following_url": "https://api.github.com/users/jacroe/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jacroe/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jacroe/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jacroe/subscriptions",
+    "organizations_url": "https://api.github.com/users/jacroe/orgs",
+    "repos_url": "https://api.github.com/users/jacroe/repos",
+    "events_url": "https://api.github.com/users/jacroe/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jacroe/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2014-06-03T04:15:39Z",
+  "updated_at": "2014-06-03T04:16:44Z",
+  "closed_at": "2014-06-03T04:16:44Z",
+  "body": "I have the following Markdown link\r\n\r\n```\r\n[Non-Stop](https://en.wikipedia.org/wiki/Non-Stop_(film))\r\n```\r\nParsedown parses is like so\r\n\r\n```html\r\n<a href=\"https://en.wikipedia.org/wiki/Non-Stop_(film\">Non-Stop</a>)\r\n```\r\n\r\nThis bug can be reproduced in the demo; Markdown PHP 1.3 does not contain this bug.",
+  "closed_by": {
+    "login": "jacroe",
+    "id": 1142635,
+    "avatar_url": "https://avatars.githubusercontent.com/u/1142635?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/jacroe",
+    "html_url": "https://github.com/jacroe",
+    "followers_url": "https://api.github.com/users/jacroe/followers",
+    "following_url": "https://api.github.com/users/jacroe/following{/other_user}",
+    "gists_url": "https://api.github.com/users/jacroe/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/jacroe/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/jacroe/subscriptions",
+    "organizations_url": "https://api.github.com/users/jacroe/orgs",
+    "repos_url": "https://api.github.com/users/jacroe/repos",
+    "events_url": "https://api.github.com/users/jacroe/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/jacroe/received_events",
+    "type": "User",
+    "site_admin": false
+  }
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/erusev/parsedown/issues/comments/44918380",
+    "html_url": "https://github.com/erusev/parsedown/issues/183#issuecomment-44918380",
+    "issue_url": "https://api.github.com/repos/erusev/parsedown/issues/183",
+    "id": 44918380,
+    "user": {
+      "login": "jacroe",
+      "id": 1142635,
+      "avatar_url": "https://avatars.githubusercontent.com/u/1142635?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jacroe",
+      "html_url": "https://github.com/jacroe",
+      "followers_url": "https://api.github.com/users/jacroe/followers",
+      "following_url": "https://api.github.com/users/jacroe/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jacroe/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jacroe/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jacroe/subscriptions",
+      "organizations_url": "https://api.github.com/users/jacroe/orgs",
+      "repos_url": "https://api.github.com/users/jacroe/repos",
+      "events_url": "https://api.github.com/users/jacroe/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jacroe/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2014-06-03T04:16:44Z",
+    "updated_at": "2014-06-03T04:16:44Z",
+    "body": "Duplicate of #126. Apologies. "
+  }
+]

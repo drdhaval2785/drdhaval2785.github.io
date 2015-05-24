@@ -1,0 +1,64 @@
+{
+  "url": "https://api.github.com/repos/erusev/parsedown/issues/58",
+  "labels_url": "https://api.github.com/repos/erusev/parsedown/issues/58/labels{/name}",
+  "comments_url": "https://api.github.com/repos/erusev/parsedown/issues/58/comments",
+  "events_url": "https://api.github.com/repos/erusev/parsedown/issues/58/events",
+  "html_url": "https://github.com/erusev/parsedown/issues/58",
+  "id": 25683956,
+  "number": 58,
+  "title": "HTML entities parsing",
+  "user": {
+    "login": "kminchev",
+    "id": 6413068,
+    "avatar_url": "https://avatars.githubusercontent.com/u/6413068?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kminchev",
+    "html_url": "https://github.com/kminchev",
+    "followers_url": "https://api.github.com/users/kminchev/followers",
+    "following_url": "https://api.github.com/users/kminchev/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kminchev/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kminchev/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kminchev/subscriptions",
+    "organizations_url": "https://api.github.com/users/kminchev/orgs",
+    "repos_url": "https://api.github.com/users/kminchev/repos",
+    "events_url": "https://api.github.com/users/kminchev/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kminchev/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2014-01-15T21:36:25Z",
+  "updated_at": "2014-01-18T22:52:41Z",
+  "closed_at": "2014-01-18T22:52:41Z",
+  "body": "Apparently 4fecd91f7dbaee67f149e18a7eec4146d9f55a42 commit broke parsing of HTML entities. Now they just show up as &amp;copy; instead &copy;, for example.\r\n\r\nIs this desired behavior or bug?",
+  "closed_by": {
+    "login": "erusev",
+    "id": 184170,
+    "avatar_url": "https://avatars.githubusercontent.com/u/184170?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/erusev",
+    "html_url": "https://github.com/erusev",
+    "followers_url": "https://api.github.com/users/erusev/followers",
+    "following_url": "https://api.github.com/users/erusev/following{/other_user}",
+    "gists_url": "https://api.github.com/users/erusev/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/erusev/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/erusev/subscriptions",
+    "organizations_url": "https://api.github.com/users/erusev/orgs",
+    "repos_url": "https://api.github.com/users/erusev/repos",
+    "events_url": "https://api.github.com/users/erusev/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/erusev/received_events",
+    "type": "User",
+    "site_admin": false
+  }
+}
+BODY STARTS FROM HERE
+[
+
+]

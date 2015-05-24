@@ -1,0 +1,123 @@
+{
+  "url": "https://api.github.com/repos/erusev/parsedown/issues/166",
+  "labels_url": "https://api.github.com/repos/erusev/parsedown/issues/166/labels{/name}",
+  "comments_url": "https://api.github.com/repos/erusev/parsedown/issues/166/comments",
+  "events_url": "https://api.github.com/repos/erusev/parsedown/issues/166/events",
+  "html_url": "https://github.com/erusev/parsedown/issues/166",
+  "id": 32605976,
+  "number": 166,
+  "title": "Laravel component",
+  "user": {
+    "login": "etiennemarais",
+    "id": 4479918,
+    "avatar_url": "https://avatars.githubusercontent.com/u/4479918?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/etiennemarais",
+    "html_url": "https://github.com/etiennemarais",
+    "followers_url": "https://api.github.com/users/etiennemarais/followers",
+    "following_url": "https://api.github.com/users/etiennemarais/following{/other_user}",
+    "gists_url": "https://api.github.com/users/etiennemarais/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/etiennemarais/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/etiennemarais/subscriptions",
+    "organizations_url": "https://api.github.com/users/etiennemarais/orgs",
+    "repos_url": "https://api.github.com/users/etiennemarais/repos",
+    "events_url": "https://api.github.com/users/etiennemarais/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/etiennemarais/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "url": "https://api.github.com/repos/erusev/parsedown/labels/suggestion",
+      "name": "suggestion",
+      "color": "bfd4f2"
+    }
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 2,
+  "created_at": "2014-05-01T10:06:17Z",
+  "updated_at": "2014-05-06T18:47:32Z",
+  "closed_at": "2014-05-06T13:08:45Z",
+  "body": "Hi,\r\n\r\nAny change you could include a laravel Facade and service provider in your library?",
+  "closed_by": {
+    "login": "erusev",
+    "id": 184170,
+    "avatar_url": "https://avatars.githubusercontent.com/u/184170?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/erusev",
+    "html_url": "https://github.com/erusev",
+    "followers_url": "https://api.github.com/users/erusev/followers",
+    "following_url": "https://api.github.com/users/erusev/following{/other_user}",
+    "gists_url": "https://api.github.com/users/erusev/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/erusev/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/erusev/subscriptions",
+    "organizations_url": "https://api.github.com/users/erusev/orgs",
+    "repos_url": "https://api.github.com/users/erusev/repos",
+    "events_url": "https://api.github.com/users/erusev/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/erusev/received_events",
+    "type": "User",
+    "site_admin": false
+  }
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/erusev/parsedown/issues/comments/41897140",
+    "html_url": "https://github.com/erusev/parsedown/issues/166#issuecomment-41897140",
+    "issue_url": "https://api.github.com/repos/erusev/parsedown/issues/166",
+    "id": 41897140,
+    "user": {
+      "login": "erusev",
+      "id": 184170,
+      "avatar_url": "https://avatars.githubusercontent.com/u/184170?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/erusev",
+      "html_url": "https://github.com/erusev",
+      "followers_url": "https://api.github.com/users/erusev/followers",
+      "following_url": "https://api.github.com/users/erusev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/erusev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/erusev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/erusev/subscriptions",
+      "organizations_url": "https://api.github.com/users/erusev/orgs",
+      "repos_url": "https://api.github.com/users/erusev/repos",
+      "events_url": "https://api.github.com/users/erusev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/erusev/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2014-05-01T10:07:48Z",
+    "updated_at": "2014-05-01T10:07:48Z",
+    "body": "Do you mean something like this: https://github.com/maxhoffmann/parsedown-laravel"
+  },
+  {
+    "url": "https://api.github.com/repos/erusev/parsedown/issues/comments/42342737",
+    "html_url": "https://github.com/erusev/parsedown/issues/166#issuecomment-42342737",
+    "issue_url": "https://api.github.com/repos/erusev/parsedown/issues/166",
+    "id": 42342737,
+    "user": {
+      "login": "GrahamCampbell",
+      "id": 2829600,
+      "avatar_url": "https://avatars.githubusercontent.com/u/2829600?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/GrahamCampbell",
+      "html_url": "https://github.com/GrahamCampbell",
+      "followers_url": "https://api.github.com/users/GrahamCampbell/followers",
+      "following_url": "https://api.github.com/users/GrahamCampbell/following{/other_user}",
+      "gists_url": "https://api.github.com/users/GrahamCampbell/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/GrahamCampbell/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/GrahamCampbell/subscriptions",
+      "organizations_url": "https://api.github.com/users/GrahamCampbell/orgs",
+      "repos_url": "https://api.github.com/users/GrahamCampbell/repos",
+      "events_url": "https://api.github.com/users/GrahamCampbell/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/GrahamCampbell/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2014-05-06T18:47:32Z",
+    "updated_at": "2014-05-06T18:47:32Z",
+    "body": "https://github.com/GrahamCampbell/Laravel-Markdown/commits/develop"
+  }
+]

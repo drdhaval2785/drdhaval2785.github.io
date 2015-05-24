@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html class='' lang='en'>
+<head prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#'>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8'>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta http-equiv='Content-Language' content='en'>
+<title>erusev/parsedown/180</title>
+<link href='github-c486157afcc5f58155a921bc675afb08733fbaa8dcf39ac2104d3.css' media='all' rel='stylesheet'>
+<link href='github2-da2e842cc3f0aaf33b727d0ef034243c12ab008fd09b24868b97.css' media='all' rel='stylesheet'>
+<meta http-equiv='x-pjax-version' content='4426702614c8182f33d1780ad1169662'>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shAutoloader.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAppleScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAS3.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushBash.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushColdFusion.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCpp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCSharp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCss.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDelphi.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDiff.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushErlang.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushGroovy.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJava.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJavaFX.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/syntaxhighlighter/scripts/shBrushJScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPerl.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPhp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPlain.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPowerShell.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPython.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushRuby.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSass.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushScala.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSql.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushVb.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushXml.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shLegacy.js'></script>
+	<link type='text/css' rel='stylesheet' href='syntaxhighlighter/styles/shCoreDefault.css'/>
+	<script type='text/javascript'>SyntaxHighlighter.all();</script>
+</head>
+<body class='logged_in  env-production windows vis-public'>
+<h1 align='center'><a href='https://github.com/erusev/parsedown/issues/180' target='_blank'>img wrapped in p</h1><hr/><div id="#issue-34726196" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/fxck" class="author">fxck</a>
+    </strong>
+    commented on 
+    <a href="#issue-34726196" class="timestamp">
+      <time>2014-06-01 10:53:27</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>is there a way of disabling wrapping of certain elements(like images) with paragraph?</p>
+<p><code>![](image.jpg)</code></p>
+<p>ends up as</p>
+<p><code>&lt;p&gt;&lt;img src="image.jpg" /&gt;&lt;/p&gt;</code></p>
+<p>I'd like it to be just </p>
+<p><code>&lt;img src="image.jpg" /&gt;</code></p>
+<p>I tried changing few things around in the code, but without much of a success..</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-44775600" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/kminchev" class="author">kminchev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-44775600" class="timestamp">
+      <time>2014-06-01 11:40:21</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><a href="https://github.com/erusev/parsedown/wiki/Usage">https://github.com/erusev/parsedown/wiki/Usage</a></p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-44775681" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/fxck" class="author">fxck</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-44775681" class="timestamp">
+      <time>2014-06-01 11:44:27</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>..okay?</p>
+<p>suggesting to use <code>-&gt;line()</code> or something? I still want the wrapping to work everywhere, just not on images..</p>
+<p>from</p>
+<pre><code># heading
+
+paragraph 
+
+![](img.jpg)
+
+paragraph
+</code></pre>
+<p>to</p>
+<pre><code>&lt;h1&gt;heading&lt;/h1&gt;
+&lt;p&gt;paragraph&lt;/p&gt;
+&lt;img src="img.jpg" /&gt;
+&lt;p&gt;paragraph&lt;/p&gt;</code></pre>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-44776487" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/kminchev" class="author">kminchev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-44776487" class="timestamp">
+      <time>2014-06-01 12:24:59</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>So use line() everywhere.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-44776942" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/fxck" class="author">fxck</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-44776942" class="timestamp">
+      <time>2014-06-01 12:46:52</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>What do you mean everywhere, like parsing the text myself into lines and then applying parsedown on each one of those lines. Seriously? </p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-44777512" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/kminchev" class="author">kminchev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-44777512" class="timestamp">
+      <time>2014-06-01 13:17:07</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Oh, now I understand what you mean, sorry. It's not possible at the moment and frankly I don't see the need for it. You can parse all of your markup with text() and images with line() or you can use plain HTML inside your markdown.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-44784957" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/fxck" class="author">fxck</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-44784957" class="timestamp">
+      <time>2014-06-01 18:28:50</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Well I do, there's nothing unsemantic about <code>&lt;img&gt;</code> outside of a <code>&lt;p&gt;</code>, last time I checked anyway. And even if it was, the use case is obvious - <a href="http://jsbin.com/civik/1/edit?output">http://jsbin.com/civik/1/edit?output</a>
+With image wrapped with paragraph, image's width's gonna be the width of the paragraph..</p>
+<p>Also what you are suggesting would again mean parsing the text myself, find all the pre-image and post-image parts, apply <code>text()</code> to them, apply <code>line</code> to image parts.. now considering there can be 10s of images in an article, that seems like a lot of unnecessarily hassle.</p>
+<p>There obviously are elements(block ones) that are not getting wrapped with paragraphs, which means there should be a way to get image to parse the same way..</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-44786135" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/apfelbox" class="author">apfelbox</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-44786135" class="timestamp">
+      <time>2014-06-01 19:13:07</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/fxck" target="_blank">@fxck</a></strong> you have a valid use case, but parsedown is just working according to the spec here. I don't think that you can get this change into core.</p>
+<p>You have two options though:</p>
+<ul>
+<li>
+<p><strong>post processing</strong> just transform your text into markdown using the regular <code>-&gt;text()</code> method. Afterwards walk through the generated HTML structure, search for <code>p &gt; img:only-child</code> (or something like that) and replace it with just the <code>&lt;img&gt;</code> tag.</p>
+</li>
+<li><strong>custom extension</strong>: I am not familiar enough with the internals to tell to the line where you have to look, but you can extend parsedown and just overwrite the proper method to replace the structure while doing the parsing / code generation.</li>
+</ul>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-44786386" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/fxck" class="author">fxck</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-44786386" class="timestamp">
+      <time>2014-06-01 19:20:57</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I'm absolutely fine with someone who's familiar with the code just pointing me in the right direction(as of what to change), I tried changing stuff around myself, but without much of a success.</p>
+<p>As for postproccessing, I could probably use <a href="http://css-tricks.com/snippets/wordpress/remove-paragraph-tags-from-around-images/">this</a> but I'd be happier if I could do it with parsedown directly..</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-44786972" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-44786972" class="timestamp">
+      <time>2014-06-01 19:40:52</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <blockquote>
+<p>I'm absolutely fine with someone who's familiar with the code just pointing me in the right direction</p>
+</blockquote>
+<p>You should override (or change) the <code>buildParagraph</code> method to check whether <code>$Line['text']</code> holds an image definition and if it does, return the desired HTML output as a string.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-44787118" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/apfelbox" class="author">apfelbox</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-44787118" class="timestamp">
+      <time>2014-06-01 19:45:18</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/fxck" target="_blank">@fxck</a></strong> <strong><a href="https://github.com/erusev" target="_blank">@erusev</a></strong> simple example code:
+<a href="https://gist.github.com/apfelbox/f6bfcf7fe14ebb5d5171">https://gist.github.com/apfelbox/f6bfcf7fe14ebb5d5171</a></p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-44787154" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-44787154" class="timestamp">
+      <time>2014-06-01 19:46:27</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/apfelbox" target="_blank">@apfelbox</a></strong> Nice!</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-44787293" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/fxck" class="author">fxck</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-44787293" class="timestamp">
+      <time>2014-06-01 19:51:38</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/apfelbox" target="_blank">@apfelbox</a></strong> looks good, thanks for saving me some time!</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-69813426" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/fxck" class="author">fxck</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-69813426" class="timestamp">
+      <time>2015-01-13 20:26:43</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/erusev" target="_blank">@erusev</a></strong> has anything changed in recent versions of parsedown? because what <strong><a href="https://github.com/apfelbox" target="_blank">@apfelbox</a></strong> posted doesn't really work anymore(<code>buildParagraph</code> renamed perhaps)?</p>
+<p>also parsedown is wrapping custom elements, be it angular directives or web components in <code>&lt;p&gt;</code>, which is in most cases undesirable, I still stand by that there could/should be an option to define which elements should be wrapped in paragraph and which should not..</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-69815563" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-69815563" class="timestamp">
+      <time>2015-01-13 20:39:41</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/fxck" target="_blank">@fxck</a></strong> </p>
+<p>Yes, a few things.</p>
+<p>The <code>buildParagraph</code> method is called just <code>paragraph</code> in the latest version.</p>
+<p>In the <strong><a href="https://github.com/apfelbox" target="_blank">@apfelbox</a></strong> post, you should also change <code>$this-&gt;identifyLink($Line);</code> to <code>$this-&gt;inlineLink($Line['text']);</code>.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-69816741" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/fxck" class="author">fxck</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-69816741" class="timestamp">
+      <time>2015-01-13 20:47:11</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><code>Argument 1 passed to Parsedown::element() must be of the type array, null given</code></p>
+<p>when either <code>$this-&gt;inlineLink($Line['text']);</code> or <code>$this-&gt;inlineLink($Line);</code> used</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-69817128" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/fxck" class="author">fxck</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-69817128" class="timestamp">
+      <time>2015-01-13 20:49:36</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><code>$this-&gt;inlineImage()</code> works </p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-69817365" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-69817365" class="timestamp">
+      <time>2015-01-13 20:51:15</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/fxck" target="_blank">@fxck</a></strong> </p>
+<p>Right.</p>
+<p>It'd be great if you could update the gist.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-69817861" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/fxck" class="author">fxck</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-69817861" class="timestamp">
+      <time>2015-01-13 20:54:16</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Can't really, it's <strong><a href="https://github.com/apfelbox" target="_blank">@apfelbox</a></strong>'s here a new one though.</p>
+<p><a href="https://gist.github.com/fxck/d65255218de3611df3cd">https://gist.github.com/fxck/d65255218de3611df3cd</a></p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-69818209" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-69818209" class="timestamp">
+      <time>2015-01-13 20:56:17</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/fxck" target="_blank">@fxck</a></strong> </p>
+<p>Great, thanks.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-70101207" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/apfelbox" class="author">apfelbox</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-70101207" class="timestamp">
+      <time>2015-01-15 15:22:03</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>(I updated my gist to reflect the latest changes)</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+</body></html>

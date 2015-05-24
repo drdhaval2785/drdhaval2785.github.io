@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html class='' lang='en'>
+<head prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#'>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8'>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta http-equiv='Content-Language' content='en'>
+<title>erusev/parsedown/156</title>
+<link href='github-c486157afcc5f58155a921bc675afb08733fbaa8dcf39ac2104d3.css' media='all' rel='stylesheet'>
+<link href='github2-da2e842cc3f0aaf33b727d0ef034243c12ab008fd09b24868b97.css' media='all' rel='stylesheet'>
+<meta http-equiv='x-pjax-version' content='4426702614c8182f33d1780ad1169662'>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shAutoloader.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAppleScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAS3.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushBash.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushColdFusion.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCpp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCSharp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCss.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDelphi.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDiff.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushErlang.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushGroovy.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJava.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJavaFX.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/syntaxhighlighter/scripts/shBrushJScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPerl.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPhp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPlain.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPowerShell.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPython.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushRuby.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSass.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushScala.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSql.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushVb.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushXml.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shLegacy.js'></script>
+	<link type='text/css' rel='stylesheet' href='syntaxhighlighter/styles/shCoreDefault.css'/>
+	<script type='text/javascript'>SyntaxHighlighter.all();</script>
+</head>
+<body class='logged_in  env-production windows vis-public'>
+<h1 align='center'><a href='https://github.com/erusev/parsedown/issues/156' target='_blank'>Align tables with 'style' attribute instead with 'align'</h1><hr/><div id="#issue-31742688" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/kminchev" class="author">kminchev</a>
+    </strong>
+    commented on 
+    <a href="#issue-31742688" class="timestamp">
+      <time>2014-04-17 16:44:51</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>This is how Parsedown parses aligned tables:</p>
+<pre><code>| A1 | B1 | C1 |
+| :- | - | - |
+| a1 | b1 | c1 |</code></pre>
+<p><code>&lt;td align="left"&gt;a1&lt;/td&gt;</code></p>
+<p>Since web and CSS are slowly moving toward HTML5, you should use 'style' attribute:</p>
+<p><code>&lt;td style="text-align: left;"&gt;a1&lt;/td&gt;</code></p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-40739986" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-40739986" class="timestamp">
+      <time>2014-04-17 17:28:44</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>:+1: </p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-40742031" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/kminchev" class="author">kminchev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-40742031" class="timestamp">
+      <time>2014-04-17 17:48:00</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>By the way, I think the header row should always be centered. So, the colon should affect only <code>&lt;td&gt;</code> elements.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-67766049" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/kminchev" class="author">kminchev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-67766049" class="timestamp">
+      <time>2014-12-21 10:32:37</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>&quot;issue 156 talks about using style instead of align for aligning table elements; this is not valid HTML5&quot;</p>
+<p>This is a comment from the referenced repository above. How come <code>&lt;td style=""&gt;</code> is invalid in HTML5, or I'm misunderstanding things?</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-70081221" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-70081221" class="timestamp">
+      <time>2015-01-15 12:51:50</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/kminchev" target="_blank">@kminchev</a></strong> </p>
+<p>Could you do some research and link to or quote official documents on the subject of <code>align</code> vs <code>style</code> for text alignment in table cells?</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-70118984" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/kminchev" class="author">kminchev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-70118984" class="timestamp">
+      <time>2015-01-15 16:58:30</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>This is what I had in mind when I started this issue: <a href="http://www.w3schools.com/tags/tag_td.asp">http://www.w3schools.com/tags/tag_td.asp</a></p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-70310589" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/kminchev" class="author">kminchev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-70310589" class="timestamp">
+      <time>2015-01-16 19:45:11</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Appreciated!</p>
+<p>PS: thoughts on my comment about header row above?</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-70311588" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-70311588" class="timestamp">
+      <time>2015-01-16 19:51:07</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/kminchev" target="_blank">@kminchev</a></strong></p>
+<p>I'm not sure about this. It doesn't seem to be a part of the spec and it might be a bit controversial.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-70324904" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/kminchev" class="author">kminchev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-70324904" class="timestamp">
+      <time>2015-01-16 21:27:08</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Controversial how? I can't imagine someone right-aligning their header row. And tables aren't part of the spec to begin with :P
+Here's something you might want to consider: <a href="http://www.w3schools.com/tags/tag_th.asp">http://www.w3schools.com/tags/tag_th.asp</a>
+Now, I know it says regular cells are left-aligned by default, but that's not always the case. Usually columns with numbers are right-aligned, but I can't think of a reason why header should be anything but centered.
+I'll be happy to see other people's opinions about this.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-70326281" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-70326281" class="timestamp">
+      <time>2015-01-16 21:36:56</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/kminchev" target="_blank">@kminchev</a></strong> </p>
+<p>Parsedown already uses <code>th</code> tags for table headers.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-70327855" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/naNuke" class="author">naNuke</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-70327855" class="timestamp">
+      <time>2015-01-16 21:48:14</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/kminchev" target="_blank">@kminchev</a></strong></p>
+<p>Aligning content with specified user input &quot;inserting colon&quot; is one thing, if user wants to align header rows with colon, it's up to them, but enforcing any kind of style, like aligning headers to center is just plain wrong. I don't see any harm allowing specific alignment of header rows.</p>
+<p>If you want your headers to be centered only, just make a css rule with !important.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-70360051" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-70360051" class="timestamp">
+      <time>2015-01-17 09:05:59</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/kminchev" target="_blank">@kminchev</a></strong> That's just my way of thinking, but table headers in HTML are left-aligned by default. Therefore they should be left-aligned by default in GFM.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-70369178" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/kminchev" class="author">kminchev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-70369178" class="timestamp">
+      <time>2015-01-17 14:37:51</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/hkdobrev" target="_blank">@hkdobrev</a></strong>, according to the link I pasted above, <code>th</code> are centered by default and <code>td</code> are lefted.</p>
+<p><strong><a href="https://github.com/naNuke" target="_blank">@naNuke</a></strong>, I know that, I was just thinking out loud if this approach is good enough to make it hardcoded. Anyway, thanks all for your inputs!</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-70370235" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/naNuke" class="author">naNuke</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-70370235" class="timestamp">
+      <time>2015-01-17 15:08:52</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/kminchev" target="_blank">@kminchev</a></strong> if th are aligned to center by default, why should parsedown do it then.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-70382309" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/kminchev" class="author">kminchev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-70382309" class="timestamp">
+      <time>2015-01-17 20:09:38</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/naNuke" target="_blank">@naNuke</a></strong>, in case the user placed a colon on the left.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-70387994" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/cebe" class="author">cebe</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-70387994" class="timestamp">
+      <time>2015-01-17 22:50:13</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/kminchev" target="_blank">@kminchev</a></strong> in that case the only thing the colon does is changing the alignment to left so it may be used to achieve exactly that. The other columns should not change as <code>&lt;td&gt;</code> is left aligned anyway.</p>
+<p>Btw, w3schools is not a good source for things like this, here is HTML spec:
+<a href="http://www.w3.org/TR/html5/tabular-data.html#the-th-element">http://www.w3.org/TR/html5/tabular-data.html#the-th-element</a>
+<a href="http://www.w3.org/TR/html401/struct/tables.html#h-11.2.6">http://www.w3.org/TR/html401/struct/tables.html#h-11.2.6</a></p>
+<p>Both do not explicitly say to align center but note that it is commonly displayed as such.</p>
+<p>I do not think parsedown should enforce anything by default and just transform markdown to html.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+</body></html>

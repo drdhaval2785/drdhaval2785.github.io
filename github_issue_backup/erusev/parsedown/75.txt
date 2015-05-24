@@ -1,0 +1,105 @@
+{
+  "url": "https://api.github.com/repos/erusev/parsedown/issues/75",
+  "labels_url": "https://api.github.com/repos/erusev/parsedown/issues/75/labels{/name}",
+  "comments_url": "https://api.github.com/repos/erusev/parsedown/issues/75/comments",
+  "events_url": "https://api.github.com/repos/erusev/parsedown/issues/75/events",
+  "html_url": "https://github.com/erusev/parsedown/issues/75",
+  "id": 26552810,
+  "number": 75,
+  "title": "Indentation",
+  "user": {
+    "login": "kminchev",
+    "id": 6413068,
+    "avatar_url": "https://avatars.githubusercontent.com/u/6413068?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kminchev",
+    "html_url": "https://github.com/kminchev",
+    "followers_url": "https://api.github.com/users/kminchev/followers",
+    "following_url": "https://api.github.com/users/kminchev/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kminchev/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kminchev/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kminchev/subscriptions",
+    "organizations_url": "https://api.github.com/users/kminchev/orgs",
+    "repos_url": "https://api.github.com/users/kminchev/repos",
+    "events_url": "https://api.github.com/users/kminchev/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kminchev/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "url": "https://api.github.com/repos/erusev/parsedown/labels/suggestion",
+      "name": "suggestion",
+      "color": "bfd4f2"
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 2,
+  "created_at": "2014-01-29T20:56:28Z",
+  "updated_at": "2014-04-30T23:59:52Z",
+  "closed_at": null,
+  "body": "Continued from #60...\r\n\r\nNote: this issue is not just for lists, everyone is free to suggest which elements and how they should be indented.",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/erusev/parsedown/issues/comments/33630152",
+    "html_url": "https://github.com/erusev/parsedown/issues/75#issuecomment-33630152",
+    "issue_url": "https://api.github.com/repos/erusev/parsedown/issues/75",
+    "id": 33630152,
+    "user": {
+      "login": "hkdobrev",
+      "id": 506129,
+      "avatar_url": "https://avatars.githubusercontent.com/u/506129?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/hkdobrev",
+      "html_url": "https://github.com/hkdobrev",
+      "followers_url": "https://api.github.com/users/hkdobrev/followers",
+      "following_url": "https://api.github.com/users/hkdobrev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/hkdobrev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/hkdobrev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/hkdobrev/subscriptions",
+      "organizations_url": "https://api.github.com/users/hkdobrev/orgs",
+      "repos_url": "https://api.github.com/users/hkdobrev/repos",
+      "events_url": "https://api.github.com/users/hkdobrev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/hkdobrev/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2014-01-29T21:00:58Z",
+    "updated_at": "2014-01-29T21:00:58Z",
+    "body": "@kminchev Do you suggest discussing the Markdown specification or just the implementation in Parsedown?"
+  },
+  {
+    "url": "https://api.github.com/repos/erusev/parsedown/issues/comments/33631200",
+    "html_url": "https://github.com/erusev/parsedown/issues/75#issuecomment-33631200",
+    "issue_url": "https://api.github.com/repos/erusev/parsedown/issues/75",
+    "id": 33631200,
+    "user": {
+      "login": "kminchev",
+      "id": 6413068,
+      "avatar_url": "https://avatars.githubusercontent.com/u/6413068?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/kminchev",
+      "html_url": "https://github.com/kminchev",
+      "followers_url": "https://api.github.com/users/kminchev/followers",
+      "following_url": "https://api.github.com/users/kminchev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/kminchev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/kminchev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/kminchev/subscriptions",
+      "organizations_url": "https://api.github.com/users/kminchev/orgs",
+      "repos_url": "https://api.github.com/users/kminchev/repos",
+      "events_url": "https://api.github.com/users/kminchev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/kminchev/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2014-01-29T21:12:06Z",
+    "updated_at": "2014-01-29T21:12:06Z",
+    "body": "Parsedown implementation. Specs doesn't say anything about that."
+  }
+]

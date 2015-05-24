@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html class='' lang='en'>
+<head prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#'>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8'>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta http-equiv='Content-Language' content='en'>
+<title>erusev/parsedown/64</title>
+<link href='github-c486157afcc5f58155a921bc675afb08733fbaa8dcf39ac2104d3.css' media='all' rel='stylesheet'>
+<link href='github2-da2e842cc3f0aaf33b727d0ef034243c12ab008fd09b24868b97.css' media='all' rel='stylesheet'>
+<meta http-equiv='x-pjax-version' content='4426702614c8182f33d1780ad1169662'>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shAutoloader.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAppleScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAS3.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushBash.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushColdFusion.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCpp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCSharp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCss.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDelphi.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDiff.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushErlang.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushGroovy.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJava.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJavaFX.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/syntaxhighlighter/scripts/shBrushJScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPerl.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPhp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPlain.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPowerShell.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPython.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushRuby.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSass.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushScala.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSql.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushVb.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushXml.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shLegacy.js'></script>
+	<link type='text/css' rel='stylesheet' href='syntaxhighlighter/styles/shCoreDefault.css'/>
+	<script type='text/javascript'>SyntaxHighlighter.all();</script>
+</head>
+<body class='logged_in  env-production windows vis-public'>
+<h1 align='center'><a href='https://github.com/erusev/parsedown/pull/64' target='_blank'>Add namespace, but preserve 5.2 compatibility</h1><hr/><div id="#issue-26131315" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issue-26131315" class="timestamp">
+      <time>2014-01-22 23:08:29</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>This is a very quick implementation of a very rough idea.</p>
+<p>The basic goal is to have the Parsedown class under a Parsedown namespace
+for all of those who really want to use the library with a namespace.
+But in the same time to not break the PHP 5.2 compatibility by just
+adding a <code>namespace</code> line to the top of the file.</p>
+<hr />
+<p>The current implementation consists of two Parsedown classes in separate files.
+Each class extends ParsedownCore where the real code is. One of them have a
+namespace and the other does not.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-33578646" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/cebe" class="author">cebe</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-33578646" class="timestamp">
+      <time>2014-01-29 12:02:50</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>This does not really change anything because you still have a class in the root namespace which you could use directly.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-33581106" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-33581106" class="timestamp">
+      <time>2014-01-29 12:43:35</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/cebe" target="_blank">@cebe</a></strong> What this thing adds is the possibility to use the Parsedown class with a namespace. It is not ideal though.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-33581203" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-33581203" class="timestamp">
+      <time>2014-01-29 12:45:19</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/cebe" target="_blank">@cebe</a></strong> You could write something like this in your codebase:</p>
+<pre class="brush: php">use Parsedown\Parsedown as Markdown;</code></pre>
+<p>Or you could:</p>
+<pre class="brush: php">use Parsedown\Parsedown as DefaultParsedown;
+use MyFork\Parsedown as Parsedown;</code></pre>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-33582514" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/cebe" class="author">cebe</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-33582514" class="timestamp">
+      <time>2014-01-29 13:05:57</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>You can do that already with the current class.</p>
+<pre class="brush: php">namespace mynamespace\subspace;
+
+use Parsedown as Markdown;</code></pre>
+<p>You are not able to use your fork anyway as it will also contain a class in root namespace with the same name. The problem can only be resolved by really using namespaces in the Parsedown class file.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-33584943" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-33584943" class="timestamp">
+      <time>2014-01-29 13:42:12</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/cebe" target="_blank">@cebe</a></strong> OK, I wanted to resolve the problem of people who would not use Parsedown unless it uses namespaces. But adding a namespace to the Parsedown file would break PHP 5.2 compatibility.</p>
+<p>If there are very few people (if any) who use Parsedown with PHP 5.2 we could add a namespace to the class.</p>
+<p>If every problem could be resolved without using a namespace, this PR is definitely obsolete.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-33585732" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/cebe" class="author">cebe</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-33585732" class="timestamp">
+      <time>2014-01-29 13:53:31</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>There is no reason to not use it because of namespaces as it only provides one class which is very unlikely to cause naming conflicts. In general one could argue that PHP 5.2 is obsolete but it is unnecessary break of compatibility in this case imo.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-33586245" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-33586245" class="timestamp">
+      <time>2014-01-29 14:00:44</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>OK, closing it.</p>
+<p><strong><a href="https://github.com/erusev" target="_blank">@erusev</a></strong> If more people complain of the missing namespace, you should probably reopen this PR or open a new issue.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-33586255" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-33586255" class="timestamp">
+      <time>2014-01-29 14:00:51</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Thanks <strong><a href="https://github.com/cebe" target="_blank">@cebe</a></strong> </p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-33598389" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/scottchiefbaker" class="author">scottchiefbaker</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-33598389" class="timestamp">
+      <time>2014-01-29 16:04:48</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I personally don't care about namespaces. I can see why some people would want them. Consider this my vote of &quot;meh&quot; on this. </p>
+<p>If we're going to add namespaces, which is probably a good idea long term we just need to bit the bullet and do it. Is compatibility with PHP &lt;= 5.2 really a concern for us? I wouldn't think so.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-33626296" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-33626296" class="timestamp">
+      <time>2014-01-29 20:20:49</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>According to the following article, up until recently, 5.2 was the most used PHP version.</p>
+<p><a href="http://w3techs.com/blog/entry/php_version_5_3_is_now_the_most_used_version_just_ahead_of_5_2">http://w3techs.com/blog/entry/php_version_5_3_is_now_the_most_used_version_just_ahead_of_5_2</a></p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-33628498" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-33628498" class="timestamp">
+      <time>2014-01-29 20:43:54</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>This is so, because PHP 5.3 has the most breaking changes and a ton of new features. Closures, namespaces, late-static binding, goto and many new parameters and changes to existing built-in functions. I think the initial fear in the developers from the new stuff is going away now.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-33628638" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/ryanve" class="author">ryanve</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-33628638" class="timestamp">
+      <time>2014-01-29 20:45:16</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <ul>
+<li>A namespace does not seem critical b/c only the <code>Parsedown</code> class is exposed. Conflict is unlikely. </li>
+<li>People using Parsedown are developers and therefore more likely to use 5.3+ than the mainstream.</li>
+<li>My favorite <a href="http://www.php.net/manual/en/migration53.new-features.php">5.3 features</a> are <a href="http://www.php.net/manual/en/functions.anonymous.php">closures</a>, <a href="http://php.net/lsb"><code>static</code></a>, <a href="http://www.php.net/manual/en/language.oop5.overloading.php#object.callstatic"><code>__callStatic</code></a> and the <code>?:</code>shorthand.</li>
+</ul>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-33631730" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-33631730" class="timestamp">
+      <time>2014-01-29 21:17:13</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/erusev" target="_blank">@erusev</a></strong> Based on the trend</p>
+<ul>
+<li><a href="http://w3techs.com/blog/entry/php_version_5_3_is_now_the_most_used_version_just_ahead_of_5_2">http://w3techs.com/blog/entry/php_version_5_3_is_now_the_most_used_version_just_ahead_of_5_2</a></li>
+<li><a href="http://w3techs.com/technologies/details/pl-php/5/all">http://w3techs.com/technologies/details/pl-php/5/all</a></li>
+</ul>
+<p>PHP 5.2 would be used by about 25.9% of all PHP websites in a year from now. This doesn't mean it is used by developers. It means some old websites are not updated and mostly probably the development there is frozen. It would be fair to expect new code would be written in 5.3, 5.4, 5.5 and 5.6.</p>
+<p>As a matter of fact official support (even for fixing security bugs) would be dropped for PHP <strong>5.3</strong> this summer when 5.6 is out.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-33632435" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/scottchiefbaker" class="author">scottchiefbaker</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-33632435" class="timestamp">
+      <time>2014-01-29 21:24:30</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>PHP 5.2 isn't supported by PHP any more, and the last release was in 2011. It's not really worth our effort to try and support it.</p>
+<p>I agree with <strong><a href="https://github.com/ryanve" target="_blank">@ryanve</a></strong> that a namespace for a small library like this seems unnecessary, and conflicts are very unlikely.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-33633302" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-33633302" class="timestamp">
+      <time>2014-01-29 21:32:37</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Here is a comment I've just stumbled upon on Stack Overflow about supporting PHP 5.2:</p>
+<blockquote>
+<p>The point is, that I see it kind of critical to support update-lazy people in their attitude. It gives them reason to stick on 5.2 (unsecure and so on), which gives other developers even more reason to develop for 5.2 and so on. There must be an end!!</p>
+</blockquote>
+<p><strong><a href="https://github.com/erusev" target="_blank">@erusev</a></strong> Regarding namespaces and <a href='62.html' target='_blank'>#62</a> you should probably decide if PHP 5.2 should be supported in the future.</p>
+<p>However I think the problems we have with PHP 5.2 are negligible and we still don't have a good reason to drop the support other than we probably don't like developers using old and unmaintained software.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-103013809" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/younishd" class="author">younishd</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-103013809" class="timestamp">
+      <time>2015-05-18 10:45:55</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><img src="http://i.memeful.com/media/post/4RZLWJw_700wa_0.gif" alt="" /></p>
+  </div>
+  </div>
+  </div>
+  <br/>
+</body></html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html class='' lang='en'>
+<head prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#'>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8'>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta http-equiv='Content-Language' content='en'>
+<title>erusev/parsedown/111</title>
+<link href='github-c486157afcc5f58155a921bc675afb08733fbaa8dcf39ac2104d3.css' media='all' rel='stylesheet'>
+<link href='github2-da2e842cc3f0aaf33b727d0ef034243c12ab008fd09b24868b97.css' media='all' rel='stylesheet'>
+<meta http-equiv='x-pjax-version' content='4426702614c8182f33d1780ad1169662'>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shAutoloader.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAppleScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAS3.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushBash.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushColdFusion.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCpp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCSharp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCss.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDelphi.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDiff.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushErlang.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushGroovy.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJava.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJavaFX.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/syntaxhighlighter/scripts/shBrushJScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPerl.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPhp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPlain.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPowerShell.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPython.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushRuby.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSass.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushScala.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSql.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushVb.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushXml.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shLegacy.js'></script>
+	<link type='text/css' rel='stylesheet' href='syntaxhighlighter/styles/shCoreDefault.css'/>
+	<script type='text/javascript'>SyntaxHighlighter.all();</script>
+</head>
+<body class='logged_in  env-production windows vis-public'>
+<h1 align='center'><a href='https://github.com/erusev/parsedown/pull/111' target='_blank'>syntax highlight() method added</h1><hr/><div id="#issue-27726371" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/wkpark" class="author">wkpark</a>
+    </strong>
+    commented on 
+    <a href="#issue-27726371" class="timestamp">
+      <time>2014-02-17 15:29:46</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>simplified parse_block_elements() and a simple highlight() method added to make it extensible.</p>
+<p>See also <a href='74.html' target='_blank'>#74</a> #109 </p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-35316989" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-35316989" class="timestamp">
+      <time>2014-02-17 19:51:46</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/wkpark" target="_blank">@wkpark</a></strong> Why do you think this should be a part of Parsedown? Specifically the <code>php</code> language case in the <code>switch</code> statement.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-35322908" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/wkpark" class="author">wkpark</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-35322908" class="timestamp">
+      <time>2014-02-17 21:07:06</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/hkdobrev" target="_blank">@hkdobrev</a></strong>
+it is just <em>a</em> very simple suggestion and there are many other issue related it.
+i guess who wanted to use the parsedown also want to use  php highlighting feature like as <a href='109.html' target='_blank'>#109</a> issue. this pull request was written after <a href='109.html' target='_blank'>#109</a> issue posted.</p>
+<p>the parsedown source use many other switch statements and it use too.
+someone can easily add few lines to extend it like as following</p>
+<pre class="brush: php">
+&lt;?php
+    function highlight($text, $language = '')
+    {
+        if (is_array($text) and isset($text['text']))
+        {
+            if (isset($text['language']))
+                $language = $text['language'];
+            $text = $text['text'];
+        }
+
+        switch ($language)
+        {
+            case 'php':
+                ....
+
+            case 'c':
+            case 'python':
+            case 'cpp':
+            case 'javascript':
+                 blah blah
+
+            default:
+                 ...</code></pre>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-35929128" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/RexDude" class="author">RexDude</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-35929128" class="timestamp">
+      <time>2014-02-24 20:02:43</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I suggested something like this here too. I think the possibility to plug in in a php syntax highlighter would be a really nice idea!</p>
+<p><a href="https://github.com/erusev/parsedown/issues/40#issuecomment-29643866">https://github.com/erusev/parsedown/issues/40#issuecomment-29643866</a></p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-41334808" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-41334808" class="timestamp">
+      <time>2014-04-24 21:28:23</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I believe that the latest version resolves this.</p>
+<p>In order to process code blocks, you should write an extension that defines <code>completeCodeBlock</code>.</p>
+<p>The following example would convert texts of code blocks to upper case:</p>
+<pre class="brush: php">protected function completeCodeBlock($Block)
+{
+    $Block['element']['text']['text'] = strtoupper($Block['element']['text']['text']);
+
+    return $Block;
+}</code></pre>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-41344960" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/RexDude" class="author">RexDude</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-41344960" class="timestamp">
+      <time>2014-04-24 23:30:15</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Very cool. Thanks a lot!</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-41548540" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/apfelbox" class="author">apfelbox</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-41548540" class="timestamp">
+      <time>2014-04-28 11:38:45</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Just for reference: the easiest way to highlight code (dynamically on the client) is to just use fenced code blocks (already supported) and include <a href="/LeaVerou/prism">prism</a>.
+This method doesn't work for serving statically highlighted code, though.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+</body></html>

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html class='' lang='en'>
+<head prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#'>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8'>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta http-equiv='Content-Language' content='en'>
+<title>erusev/parsedown/60</title>
+<link href='github-c486157afcc5f58155a921bc675afb08733fbaa8dcf39ac2104d3.css' media='all' rel='stylesheet'>
+<link href='github2-da2e842cc3f0aaf33b727d0ef034243c12ab008fd09b24868b97.css' media='all' rel='stylesheet'>
+<meta http-equiv='x-pjax-version' content='4426702614c8182f33d1780ad1169662'>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shAutoloader.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAppleScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAS3.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushBash.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushColdFusion.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCpp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCSharp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCss.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDelphi.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDiff.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushErlang.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushGroovy.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJava.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJavaFX.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/syntaxhighlighter/scripts/shBrushJScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPerl.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPhp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPlain.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPowerShell.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPython.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushRuby.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSass.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushScala.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSql.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushVb.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushXml.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shLegacy.js'></script>
+	<link type='text/css' rel='stylesheet' href='syntaxhighlighter/styles/shCoreDefault.css'/>
+	<script type='text/javascript'>SyntaxHighlighter.all();</script>
+</head>
+<body class='logged_in  env-production windows vis-public'>
+<h1 align='center'><a href='https://github.com/erusev/parsedown/issues/60' target='_blank'>Various list issues</h1><hr/><div id="#issue-25878497" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/kminchev" class="author">kminchev</a>
+    </strong>
+    commented on 
+    <a href="#issue-25878497" class="timestamp">
+      <time>2014-01-19 11:09:21</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I'd like to suggest few cosmetic changes about how Parsedown parses lists:</p>
+<p>In nested lists, subsequent &lt;ul&gt; tags shouldn't be inline. Right now they appear as &lt;/li&gt;&lt;ul&gt;, that &lt;ul&gt; should be on new line.</p>
+<p>Indentation of &lt;li&gt; with two spaces from its parent &lt;ul&gt;. For nested lists, this should increase, i.e. a second level &lt;ul&gt; should be indented with two spaces from its parent &lt;li&gt; and second level &lt;li&gt; should be indented with two spaces from its parent second level &lt;ul&gt;. Example:</p>
+<pre><code>&lt;ul&gt;
+--&lt;li&gt;&lt;/li&gt;
+--&lt;li&gt;
+----&lt;ul&gt;
+------&lt;li&gt;&lt;/li&gt;
+----&lt;/ul&gt;
+--&lt;/li&gt;
+--&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+<p>Note: these changes must apply to &lt;ol&gt; as well.</p>
+<p>When attempting to add &lt;code&gt; block after &lt;li&gt;, the 4 spaces (or 1 tab) indentation characters are removed. Example:</p>
+<pre><code>* this is list
+    this is code</code></pre>
+<p>will parse as:</p>
+<pre><code>&lt;li&gt;this is list
+this is code&lt;/li&gt;</code></pre>
+<p>instead as:</p>
+<pre><code>&lt;li&gt;this is list&lt;/li&gt;
+&lt;pre&gt;&lt;code&gt;
+this is code
+&lt;/code&gt;&lt;/pre&gt;</code></pre>
+<hr />
+<p>Additionally, &lt;pre&gt;&lt;code&gt; and their closing tags shouldn't be inline. The code will look nicer and will have better human readability.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-32706938" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-32706938" class="timestamp">
+      <time>2014-01-19 12:17:50</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/kminchev" target="_blank">@kminchev</a></strong> BTW I don't think human readability of the HTML output should be considered. <strong>Markdown</strong> is for human readability. Better formatting of HTML could mean slower parsing.</p>
+<p>The rest of the issues are valid ones though.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-32709025" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/kminchev" class="author">kminchev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-32709025" class="timestamp">
+      <time>2014-01-19 14:07:32</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>About code/li issue... I'm aware of #2. What I mean here is adding &lt;code&gt; <em>outside</em> &lt;li&gt;, not inside it.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-33062514" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-33062514" class="timestamp">
+      <time>2014-01-22 20:12:39</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <blockquote>
+<p>In nested lists, subsequent &lt;ul&gt; tags shouldn't be inline. Right now they appear as &lt;/li&gt;&lt;ul&gt;, that &lt;ul&gt; should be on new line.</p>
+</blockquote>
+<p>This is resolved in 0.9.0.</p>
+<blockquote>
+<p>When attempting to add &lt;code&gt; block after &lt;li&gt;, the 4 spaces (or 1 tab) indentation characters are removed.</p>
+</blockquote>
+<p>This is expected behaviour.</p>
+<p>Here's what the spec says about it:</p>
+<blockquote>
+<p>To put a code block within a list item, the code block needs to be indented twice — 8 spaces or two tabs.</p>
+</blockquote>
+<p>As to indenting produced HTML, it is something I've been thinking about. I'm closing this issue but I'd welcome opening one that is dedicated to that.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-33100553" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/kminchev" class="author">kminchev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-33100553" class="timestamp">
+      <time>2014-01-23 06:35:01</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <blockquote>
+<p>This is expected behaviour.</p>
+</blockquote>
+<p>I know, please see my comment above.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-33105801" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-33105801" class="timestamp">
+      <time>2014-01-23 08:39:34</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/kminchev" target="_blank">@kminchev</a></strong> I'm sorry, but I don't think this should be implemented.</p>
+<pre class="brush: markdown">* this is list
+    this is code</code></pre>
+<p>Every text nested under a <code>li</code>, should be a part of that <code>li</code>. Anything else would break expectations of how lists are parsed.</p>
+<p>You could see both <a href="http://daringfireball.net/projects/markdown/dingus">http://daringfireball.net/projects/markdown/dingus</a> and <a href="http://parsedown.org/demo">http://parsedown.org/demo</a> parse this markdown the same.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-33116811" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/kminchev" class="author">kminchev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-33116811" class="timestamp">
+      <time>2014-01-23 11:38:18</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I see. Then I guess the current Markdown version is buggy :)</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-33176607" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-33176607" class="timestamp">
+      <time>2014-01-23 22:30:29</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/kminchev" target="_blank">@kminchev</a></strong> </p>
+<p>Consider the following example:</p>
+<pre><code>*   this is a list item that is broken into 
+    lines so that it is easier to read when 
+    not parsed
+*   this is another list item</code></pre>
+<p>How should it be parsed?</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-33198436" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/kminchev" class="author">kminchev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-33198436" class="timestamp">
+      <time>2014-01-24 05:26:30</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <pre><code>&lt;li&gt;this is a list item that is broken into&lt;br /&gt;
+    lines so that it is easier to read when&lt;br /&gt;
+    not parsed&lt;/li&gt;
+&lt;li&gt;this is another list item&lt;/li&gt;</code></pre>
+<p>Perhaps a workaround would be if unindented lines aren't treated as part of &lt;li&gt;. I don't know, I'm just suggesting. I'm fine if you leave it the way it is ;)</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-33694285" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/scottchiefbaker" class="author">scottchiefbaker</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-33694285" class="timestamp">
+      <time>2014-01-30 14:53:46</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Markdown was designed to gracefully handle multi-line content like <strong><a href="https://github.com/erusev" target="_blank">@erusev</a></strong> mentioned two comments above. I think that's the best way (and most spec compliant) moving forward.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+</body></html>

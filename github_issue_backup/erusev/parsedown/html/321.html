@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html class='' lang='en'>
+<head prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#'>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8'>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta http-equiv='Content-Language' content='en'>
+<title>erusev/parsedown/321</title>
+<link href='github-c486157afcc5f58155a921bc675afb08733fbaa8dcf39ac2104d3.css' media='all' rel='stylesheet'>
+<link href='github2-da2e842cc3f0aaf33b727d0ef034243c12ab008fd09b24868b97.css' media='all' rel='stylesheet'>
+<meta http-equiv='x-pjax-version' content='4426702614c8182f33d1780ad1169662'>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shAutoloader.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAppleScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAS3.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushBash.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushColdFusion.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCpp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCSharp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCss.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDelphi.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDiff.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushErlang.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushGroovy.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJava.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJavaFX.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/syntaxhighlighter/scripts/shBrushJScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPerl.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPhp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPlain.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPowerShell.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPython.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushRuby.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSass.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushScala.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSql.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushVb.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushXml.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shLegacy.js'></script>
+	<link type='text/css' rel='stylesheet' href='syntaxhighlighter/styles/shCoreDefault.css'/>
+	<script type='text/javascript'>SyntaxHighlighter.all();</script>
+</head>
+<body class='logged_in  env-production windows vis-public'>
+<h1 align='center'><a href='https://github.com/erusev/parsedown/issues/321' target='_blank'>Github API compatibility of GFM</h1><hr/><div id="#issue-79282490" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/drdhaval2785" class="author">drdhaval2785</a>
+    </strong>
+    commented on 
+    <a href="#issue-79282490" class="timestamp">
+      <time>2015-05-22 04:40:32</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Nowadays I am developing a <a href="https://github.com/drdhaval2785/github_issue_backup/">github_issue_backup</a> utility, which uses parsedown for parsing data.
+For this, I use <a href="https://developer.github.com/v3/issues/">Github Issues API</a> to download data and then parse it with parsedown and present it with the CSS which Github uses, so that the user gets the same feeling as he gets in github issues. e.g. <a href="https://github.com/sanskrit-lexicon/CORRECTIONS/issues/2">original github issue</a> -&gt; <a href="http://drdhaval2785.github.io/github_issue_backup/sanskrit-lexicon/CORRECTIONS/html/2.html">locally backed up github issue</a>.</p>
+<p>While doing so,
+I have come across a limitation of parsedown while handling the data as given by Github API.
+Typical line containing the body of a Github issue looks like the following.</p>
+<pre><code>  "body": "# GitHub Flavored Markdown\r\n\r\nGitHub uses \"GitHub Flavored Markdown,\" or GFM, across the site--in issues, comments, and pull requests. It differs from standard Markdown (SM) in a few significant ways, and adds some additional functionality.\r\n\r\nIf you're not already familiar with Markdown, take a look at Markdown Basics. If you'd like to know more about features that are available in issues, comments, and pull request descriptions, such as task lists, read Writing on GitHub.\r\n\r\n## Differences from traditional Markdown\r\n### Multiple underscores in words\r\n\r\nWhere Markdown transforms underscores (_) into italics, GFM ignores underscores in words, like this:\r\n&gt; wow_great_stuff\r\n&gt; do_this_and_do_that_and_another_thing.\r\n\r\nThis allows code and names with multiple underscores to render properly. To emphasize a portion of a word, use asterisks (`*`).\r\n\r\n### URL autolinking\r\n\r\nGFM will autolink standard URLs, so if you want to link to a URL (instead of setting link text), you can simply enter the URL and it will be turned into a link to that URL.\r\n\r\n`http://example.com`\r\n\r\nbecomes\r\n\r\nhttp://example.com\r\n\r\n### Strikethrough\r\n\r\nGFM adds syntax to create strikethrough text, which is missing from standard Markdown.\r\n\r\n`~~Mistaken text.~~`\r\n\r\nbecomes\r\n\r\n~~Mistaken text~~.\r\n\r\n### Fenced code blocks\r\n\r\nStandard Markdown converts text with four spaces at the beginning of each line into a code block; GFM also supports fenced blocks. Just wrap your code in triple backtics (as shown below) and you won't need to indent it by four spaces. Note that although fenced code blocks don't have to be preceded by a blank line—unlike indented code blocks—we recommend placing a blank line before them to make the raw Markdown easier to read.\r\n\r\nHere's an example:\r\n\r\n```\r\nfunction test() {\r\n  console.log(\"notice the blank line before this function?\");\r\n}\r\n```\r\n\r\nKeep in mind that, within lists, you must indent non-fenced code blocks eight spaces to render them properly.\r\n\r\n### Syntax highlighting\r\n\r\nCode blocks can be taken a step further by adding syntax highlighting. In your fenced block, add an optional language identifier and we'll run it through syntax highlighting. For example, to syntax highlight Ruby code:\r\n\r\n```ruby\r\nrequire 'redcarpet'\r\nmarkdown = Redcarpet.new(\"Hello World!\")\r\nputs markdown.to_html\r\n```\r\n\r\nWe use [Linguist](https://github.com/github/linguist) to perform language detection and syntax highlighting. You can find out which keywords are valid by perusing &lt;a href="https://github.com/github/linguist/blob/master/lib/linguist/languages.yml"&gt;the languages YAML file&lt;/a&gt;.\r\n\r\n### Tables\r\n\r\nYou can create tables by assembling a list of words and dividing them with hyphens `-` (for the first row), and then separating each column with a pipe `|`:\r\n\r\nFirst Header  | Second Header\r\n------------- | -------------\r\nContent Cell  | Content Cell\r\nContent Cell  | Content Cell\r\n\r\nFor aesthetic purposes, you can also add extra pipes on the ends:\r\n\r\n| First Header  | Second Header |\r\n| ------------- | ------------- |\r\n| Content Cell  | Content Cell  |\r\n| Content Cell  | Content Cell  |\r\n\r\nNote that the dashes at the top don't need to match the length of the header text exactly:\r\n\r\n| Name | Description          |\r\n| ------------- | ----------- |\r\n| Help      | Display the help window.|\r\n| Close     | Closes a window     |\r\n\r\nYou can also include inline Markdown such as links, bold, italics, or strikethrough:\r\n\r\n| Name | Description          |\r\n| ------------- | ----------- |\r\n| Help      | ~~Display the~~ help window.|\r\n| Close     | _Closes_ a window     |\r\n\r\nFinally, by including colons `:` within the header row, you can define text to be left-aligned, right-aligned, or center-aligned:\r\n\r\n| Left-Aligned  | Center Aligned  | Right Aligned |\r\n| :------------ |:---------------:| -----:|\r\n| col 3 is      | some wordy text | $1600 |\r\n| col 2 is      | centered        |   $12 |\r\n| zebra stripes | are neat        |    $1 |\r\n\r\nA colon on the **left-most** side indicates a left-aligned column; a colon on the **right-most** side indicates a right-aligned column; a colon on **both sides** indicates a center-aligned column.\r\n\r\n# HTML\r\n\r\nYou can use a subset of HTML within your READMEs, issues, and pull requests.\r\n\r\nA full list of our supported tags and attributes can be found in the [github/markup repository](https://github.com/github/markup).",</code></pre>
+<p>Right now parsedown doesn't parse this data properly. (I will of course remove the <code>"body": "</code> at the start and  <code>",</code> at the end.)</p>
+<p>This is a major problems while using parsedown with data retrieved from github API.</p>
+<ol>
+<li>Parsedown treats this line as a single line, and ignores line breaks <code>\r\n</code>. Therefore it applied h1 tag to the whole chunk, and none of the features applied.</li>
+</ol>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-104507341" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/drdhaval2785" class="author">drdhaval2785</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-104507341" class="timestamp">
+      <time>2015-05-22 04:49:27</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/erusev" target="_blank">@erusev</a></strong>
+To give a visual feel of what I want,
+please see
+<a href="https://github.com/drdhaval2785/github_issue_backup/issues/18">Expected</a> output for GFM
+<a href="http://drdhaval2785.github.io/github_issue_backup/github_issue_backup/html/18.html">Actual</a> output for GFM</p>
+<p>also see the difference between basic markdown
+<a href="https://github.com/drdhaval2785/github_issue_backup/issues/17">Expected</a> output for basic markdown
+<a href="http://drdhaval2785.github.io/github_issue_backup/github_issue_backup/html/17.html">Actual</a> output for basic markdown</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-104507776" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/drdhaval2785" class="author">drdhaval2785</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-104507776" class="timestamp">
+      <time>2015-05-22 04:52:07</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Although it is possible to write a wrapper around parsedown for handling Github API, I think it should be a part of native parsedown.php because GFM would be most probably derived from Github. For most programming purpose fetching data would be via Github API. It would be better if you can provide native support to the data fetched via Github API.</p>
+<p>Please have a look and let me know whether this makes sense.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-104955627" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/cebe" class="author">cebe</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-104955627" class="timestamp">
+      <time>2015-05-23 23:49:19</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>the string you get from github is json encoded, did you call <code>json_decode</code> on it? that should give you proper newlines as far as I see.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-104982005" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/drdhaval2785" class="author">drdhaval2785</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-104982005" class="timestamp">
+      <time>2015-05-24 05:21:08</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Great.
+It helped.
+The json_decode worked like a charm.
+Closing the issue.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+</body></html>

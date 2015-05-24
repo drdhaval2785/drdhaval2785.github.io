@@ -1,0 +1,52 @@
+{
+  "url": "https://api.github.com/repos/erusev/parsedown/issues/205",
+  "labels_url": "https://api.github.com/repos/erusev/parsedown/issues/205/labels{/name}",
+  "comments_url": "https://api.github.com/repos/erusev/parsedown/issues/205/comments",
+  "events_url": "https://api.github.com/repos/erusev/parsedown/issues/205/events",
+  "html_url": "https://github.com/erusev/parsedown/pull/205",
+  "id": 40926919,
+  "number": 205,
+  "title": "fix utf8 string handling",
+  "user": {
+    "login": "kirbach",
+    "id": 8142573,
+    "avatar_url": "https://avatars.githubusercontent.com/u/8142573?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kirbach",
+    "html_url": "https://github.com/kirbach",
+    "followers_url": "https://api.github.com/users/kirbach/followers",
+    "following_url": "https://api.github.com/users/kirbach/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kirbach/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kirbach/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kirbach/subscriptions",
+    "organizations_url": "https://api.github.com/users/kirbach/orgs",
+    "repos_url": "https://api.github.com/users/kirbach/repos",
+    "events_url": "https://api.github.com/users/kirbach/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kirbach/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2014-08-22T16:46:15Z",
+  "updated_at": "2014-08-22T16:46:15Z",
+  "closed_at": null,
+  "pull_request": {
+    "url": "https://api.github.com/repos/erusev/parsedown/pulls/205",
+    "html_url": "https://github.com/erusev/parsedown/pull/205",
+    "diff_url": "https://github.com/erusev/parsedown/pull/205.diff",
+    "patch_url": "https://github.com/erusev/parsedown/pull/205.patch"
+  },
+  "body": "substr_replace() is not multibyte safe. Having utf8 encoded characters in the markup, breaks the html output.",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+
+]

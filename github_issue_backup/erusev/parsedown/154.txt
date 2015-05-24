@@ -1,0 +1,64 @@
+{
+  "url": "https://api.github.com/repos/erusev/parsedown/issues/154",
+  "labels_url": "https://api.github.com/repos/erusev/parsedown/issues/154/labels{/name}",
+  "comments_url": "https://api.github.com/repos/erusev/parsedown/issues/154/comments",
+  "events_url": "https://api.github.com/repos/erusev/parsedown/issues/154/events",
+  "html_url": "https://github.com/erusev/parsedown/issues/154",
+  "id": 31732800,
+  "number": 154,
+  "title": "Replica of #125",
+  "user": {
+    "login": "kminchev",
+    "id": 6413068,
+    "avatar_url": "https://avatars.githubusercontent.com/u/6413068?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/kminchev",
+    "html_url": "https://github.com/kminchev",
+    "followers_url": "https://api.github.com/users/kminchev/followers",
+    "following_url": "https://api.github.com/users/kminchev/following{/other_user}",
+    "gists_url": "https://api.github.com/users/kminchev/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/kminchev/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/kminchev/subscriptions",
+    "organizations_url": "https://api.github.com/users/kminchev/orgs",
+    "repos_url": "https://api.github.com/users/kminchev/repos",
+    "events_url": "https://api.github.com/users/kminchev/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/kminchev/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2014-04-17T14:47:08Z",
+  "updated_at": "2014-04-17T21:19:47Z",
+  "closed_at": "2014-04-17T21:19:47Z",
+  "body": "Since I'm not able to reopen #125, I made new one.\r\n\r\n5be449194308a66676cc1323dc9c2d1b770dbc9e commit slightly broke how tables are parsed. This time, tables aren't parsed if outer pipes are ommited AND colons are used to align columns.",
+  "closed_by": {
+    "login": "erusev",
+    "id": 184170,
+    "avatar_url": "https://avatars.githubusercontent.com/u/184170?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/erusev",
+    "html_url": "https://github.com/erusev",
+    "followers_url": "https://api.github.com/users/erusev/followers",
+    "following_url": "https://api.github.com/users/erusev/following{/other_user}",
+    "gists_url": "https://api.github.com/users/erusev/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/erusev/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/erusev/subscriptions",
+    "organizations_url": "https://api.github.com/users/erusev/orgs",
+    "repos_url": "https://api.github.com/users/erusev/repos",
+    "events_url": "https://api.github.com/users/erusev/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/erusev/received_events",
+    "type": "User",
+    "site_admin": false
+  }
+}
+BODY STARTS FROM HERE
+[
+
+]

@@ -1,0 +1,68 @@
+{
+  "url": "https://api.github.com/repos/erusev/parsedown/issues/164",
+  "labels_url": "https://api.github.com/repos/erusev/parsedown/issues/164/labels{/name}",
+  "comments_url": "https://api.github.com/repos/erusev/parsedown/issues/164/comments",
+  "events_url": "https://api.github.com/repos/erusev/parsedown/issues/164/events",
+  "html_url": "https://github.com/erusev/parsedown/issues/164",
+  "id": 32538259,
+  "number": 164,
+  "title": "Nested list issue",
+  "user": {
+    "login": "cebe",
+    "id": 189796,
+    "avatar_url": "https://avatars.githubusercontent.com/u/189796?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/cebe",
+    "html_url": "https://github.com/cebe",
+    "followers_url": "https://api.github.com/users/cebe/followers",
+    "following_url": "https://api.github.com/users/cebe/following{/other_user}",
+    "gists_url": "https://api.github.com/users/cebe/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/cebe/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/cebe/subscriptions",
+    "organizations_url": "https://api.github.com/users/cebe/orgs",
+    "repos_url": "https://api.github.com/users/cebe/repos",
+    "events_url": "https://api.github.com/users/cebe/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/cebe/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "url": "https://api.github.com/repos/erusev/parsedown/labels/issue",
+      "name": "issue",
+      "color": "f7c6c7"
+    }
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2014-04-30T14:14:55Z",
+  "updated_at": "2014-04-30T21:30:16Z",
+  "closed_at": "2014-04-30T21:30:16Z",
+  "body": "See [edge cases](http://parsedown.org/consistency) on the homepage:\r\n\r\n```\r\n1. li\r\n\r\n2. li\r\n\r\n   - li\r\n   - li\r\n\r\n3. li\r\n```\r\nShould result in this:\r\n\r\n1. li\r\n\r\n2. li\r\n\r\n   - li\r\n   - li\r\n\r\n3. li",
+  "closed_by": {
+    "login": "erusev",
+    "id": 184170,
+    "avatar_url": "https://avatars.githubusercontent.com/u/184170?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/erusev",
+    "html_url": "https://github.com/erusev",
+    "followers_url": "https://api.github.com/users/erusev/followers",
+    "following_url": "https://api.github.com/users/erusev/following{/other_user}",
+    "gists_url": "https://api.github.com/users/erusev/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/erusev/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/erusev/subscriptions",
+    "organizations_url": "https://api.github.com/users/erusev/orgs",
+    "repos_url": "https://api.github.com/users/erusev/repos",
+    "events_url": "https://api.github.com/users/erusev/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/erusev/received_events",
+    "type": "User",
+    "site_admin": false
+  }
+}
+BODY STARTS FROM HERE
+[
+
+]

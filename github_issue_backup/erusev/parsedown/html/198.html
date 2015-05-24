@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html class='' lang='en'>
+<head prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#'>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8'>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta http-equiv='Content-Language' content='en'>
+<title>erusev/parsedown/198</title>
+<link href='github-c486157afcc5f58155a921bc675afb08733fbaa8dcf39ac2104d3.css' media='all' rel='stylesheet'>
+<link href='github2-da2e842cc3f0aaf33b727d0ef034243c12ab008fd09b24868b97.css' media='all' rel='stylesheet'>
+<meta http-equiv='x-pjax-version' content='4426702614c8182f33d1780ad1169662'>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shAutoloader.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAppleScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAS3.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushBash.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushColdFusion.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCpp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCSharp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCss.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDelphi.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDiff.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushErlang.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushGroovy.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJava.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJavaFX.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/syntaxhighlighter/scripts/shBrushJScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPerl.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPhp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPlain.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPowerShell.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPython.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushRuby.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSass.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushScala.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSql.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushVb.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushXml.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shLegacy.js'></script>
+	<link type='text/css' rel='stylesheet' href='syntaxhighlighter/styles/shCoreDefault.css'/>
+	<script type='text/javascript'>SyntaxHighlighter.all();</script>
+</head>
+<body class='logged_in  env-production windows vis-public'>
+<h1 align='center'><a href='https://github.com/erusev/parsedown/issues/198' target='_blank'>Emphasis management error</h1><hr/><div id="#issue-39093182" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/jdecool" class="author">jdecool</a>
+    </strong>
+    commented on 
+    <a href="#issue-39093182" class="timestamp">
+      <time>2014-07-30 13:47:04</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>In a document, I have this markdown :</p>
+<pre><code>this_text_is_normal 
+_this text_is italic_</code></pre>
+<p>I expect something like :</p>
+<pre><code>&lt;p&gt;this_text_is_normal 
+&lt;em&gt;this text_is italic&lt;/em&gt;&lt;/p&gt;</code></pre>
+<p>But parsedown generate :</p>
+<pre><code>&lt;p&gt;this_text_is_normal
+_this text&lt;em&gt;is italic&lt;/em&gt;&lt;/p&gt;</code></pre>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-50634725" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/kminchev" class="author">kminchev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-50634725" class="timestamp">
+      <time>2014-07-30 15:52:24</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>And what is the logic behind your expectations?</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-50638521" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/jdecool" class="author">jdecool</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-50638521" class="timestamp">
+      <time>2014-07-30 16:18:28</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><code>text_is</code> is a word, there's no separator. It's the same logic as <code>this_text_is_normal</code>.</p>
+<p>Try to enter the example in Github and look the result.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-50657395" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/kminchev" class="author">kminchev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-50657395" class="timestamp">
+      <time>2014-07-30 18:18:18</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <pre><code>
+this_text_is_normal 
+*this text_is italic*</code></pre>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-50717631" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/jdecool" class="author">jdecool</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-50717631" class="timestamp">
+      <time>2014-07-31 06:24:17</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/kminchev" target="_blank">@kminchev</a></strong> Your solution works, I'm going to work with at the moment.</p>
+<p>But there is still a bug with this input :</p>
+<pre><code>this_text_is_normal 
+_this text_is italic_</code></pre>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-50868022" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/piouPiouM" class="author">piouPiouM</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-50868022" class="timestamp">
+      <time>2014-08-01 09:57:47</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Same issue with <code>__foo_bar__</code>:</p>
+<ul>
+<li>expected: <code>&lt;strong&gt;foo_bar&lt;/strong&gt;</code></li>
+<li>actual: <code>__foo_bar__</code></li>
+</ul>
+<p>Note that all markdown parsers supports this syntax (proof here: __foo_bar__).</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-75859716" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/meitar" class="author">meitar</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-75859716" class="timestamp">
+      <time>2015-02-24 22:21:47</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I just ran into a similar issue to this where words have control characters in them. For example, the decentralized social network Diaspora<em> is formally written with an asterisk in the name (i.e., the correct typographical representation of the project is `Diaspora</em><code>with an asterisk, not</code>Diaspora<code>with no asterisk). The same is true for some renderings of words in sociology (like</code>trans*`) and, of course, other areas of more technical specializations, such as those discussed above.</p>
+<p>If I have two paragraphs of text that includes such a phrase, like this:</p>
+<pre>Let's query the Diaspora* pod to see what happens.
+
+Note that Diaspora* has no formal API to speak of, but this query does work, so *shrug*.</pre>
+<p>My expectation is that only the final word in the second paragraph (<code>*shrug*</code>) will be italicized. However, using Parsedown, what actually gets italicized is the text <code>* has no formal API to speak of, but this query does work, so *</code>.</p>
+<p>Basically this is just…well, incorrect, it seems to me.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+</body></html>

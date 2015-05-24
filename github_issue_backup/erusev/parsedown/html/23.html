@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html class='' lang='en'>
+<head prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#'>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8'>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta http-equiv='Content-Language' content='en'>
+<title>erusev/parsedown/23</title>
+<link href='github-c486157afcc5f58155a921bc675afb08733fbaa8dcf39ac2104d3.css' media='all' rel='stylesheet'>
+<link href='github2-da2e842cc3f0aaf33b727d0ef034243c12ab008fd09b24868b97.css' media='all' rel='stylesheet'>
+<meta http-equiv='x-pjax-version' content='4426702614c8182f33d1780ad1169662'>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shAutoloader.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAppleScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAS3.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushBash.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushColdFusion.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCpp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCSharp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCss.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDelphi.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDiff.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushErlang.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushGroovy.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJava.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJavaFX.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/syntaxhighlighter/scripts/shBrushJScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPerl.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPhp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPlain.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPowerShell.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPython.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushRuby.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSass.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushScala.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSql.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushVb.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushXml.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shLegacy.js'></script>
+	<link type='text/css' rel='stylesheet' href='syntaxhighlighter/styles/shCoreDefault.css'/>
+	<script type='text/javascript'>SyntaxHighlighter.all();</script>
+</head>
+<body class='logged_in  env-production windows vis-public'>
+<h1 align='center'><a href='https://github.com/erusev/parsedown/issues/23' target='_blank'>Links won't get converted</h1><hr/><div id="#issue-20380111" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/RexDude" class="author">RexDude</a>
+    </strong>
+    commented on 
+    <a href="#issue-20380111" class="timestamp">
+      <time>2013-10-02 08:17:18</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Hi,</p>
+<p>thanks for this great and fast MD parser :) When i used it on this MD-File: <a href="https://github.com/RexDude/seo42/blob/master/README.md">https://github.com/RexDude/seo42/blob/master/README.md</a></p>
+<p>I get 6-times (EDIT: due to a REDAME.md update there are now 10) the following PHP-Warning and also all the Links won't get converted.</p>
+<pre><code>Warning: preg_match_all(): Compilation failed: internal error: previously-checked referenced subpattern not found at offset 37 in /home/dude/Projekte/Web/AddonFactory/htdocs/redaxo/include/addons/seo42/classes/class.parsedown.inc.php on line 494</code></pre>
+<p>Is this something with my MD-File or with the Parser?</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-26224394" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-26224394" class="timestamp">
+      <time>2013-10-13 19:04:35</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Which version of Parsedown do you use? It seems to work alright with the latest one.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-26245695" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/RexDude" class="author">RexDude</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-26245695" class="timestamp">
+      <time>2013-10-14 09:49:40</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I just checkt it with the newst version of Parsedown from GitHub (via Download Zip Button). Still same Problem. Here is my PHP-Test-File:</p>
+<pre><code>&lt;?php
+require_once('Parsedown.php');
+
+$md = file_get_contents('https://raw.github.com/RexDude/seo42/master/README.md');
+echo Parsedown::instance()-&gt;parse($md);
+?&gt;</code></pre>
+<p>PHP Version: 5.4.7</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-26378760" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-26378760" class="timestamp">
+      <time>2013-10-15 22:37:08</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I'm unable to reproduce the issue. I tested with three different PHP versions: 5.5.3, 5.4.19 and 5.3.27. I found a related thread at <a href="https://drupal.org/node/1286046">https://drupal.org/node/1286046</a>. The issue seems to have something to do with PCRE.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-26380791" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/RexDude" class="author">RexDude</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-26380791" class="timestamp">
+      <time>2013-10-15 23:13:56</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Hmm, strange. I am using XAMPP for Linux 1.8.1.
+PCRE version is 8.12 2011-01-15.
+...if this somehow helps.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-26458107" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-26458107" class="timestamp">
+      <time>2013-10-16 21:04:10</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Do you have an idea as to why it is exactly 6 times that the error appears? The inline links in the document seem to be more than 6.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-26486756" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/RexDude" class="author">RexDude</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-26486756" class="timestamp">
+      <time>2013-10-17 08:25:37</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>The thing is that i have change the README.md over the last few days and added also some more links. So I just investigated the current REDAME.md version again.</p>
+<ul>
+<li>There are currently 12 inline links like <code>[foo](bar)</code> and 3 normal links like <code>&lt;bar&gt;</code> inside the md file</li>
+<li>Only the 3 normal ones get converted to html links. All 12 inline links won't get converted.</li>
+<li>I get 10 (!) warnings at the beginning of the document (before output starts) exactly like the one in my first post in this issue</li>
+</ul>
+<p>So why 10? It seems like if an inline link is more than 2 times in a sentence (like in 2 sentences in the credits section of the README.md) there is only one warning appearing for such a sentence. </p>
+<p>I also checked utf-8/iso files and windows/mac os/linux linefeeds. Still same problem.</p>
+<p>Hope this helps somehow...</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-26488206" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/RexDude" class="author">RexDude</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-26488206" class="timestamp">
+      <time>2013-10-17 08:53:17</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I have just checked the document also on my webspace. No warnings and and all links get converted. So it's maybe really a stupid combination of some factors in my local XAMPP or a bug in the PCRE lib etc. But still: PHP Markdown is working without a problem with this combination.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-26575987" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-26575987" class="timestamp">
+      <time>2013-10-18 07:10:26</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Thanks! This makes it much clearer.</p>
+<p>I wonder if the same issue would occur with reference style links like:</p>
+<pre><code>Here's a [link].
+
+[link]: http://example.com</code></pre>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-26576166" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/RexDude" class="author">RexDude</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-26576166" class="timestamp">
+      <time>2013-10-18 07:15:28</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>just tested: reference style links are working without a problem :) hope thats the answer you want to hear ;)</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-26616091" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-26616091" class="timestamp">
+      <time>2013-10-18 17:56:40</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Thank! That's very helpful.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-26796882" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/RexDude" class="author">RexDude</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-26796882" class="timestamp">
+      <time>2013-10-22 12:02:07</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Your welcome. Please consider that in the meantime I have updated the Readme.md again...</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-28013033" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-28013033" class="timestamp">
+      <time>2013-11-07 22:26:58</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I think this was just closed accidentally due to the wide range of words GitHub supports for closing issues from commit messages <a href="https://help.github.com/articles/closing-issues-via-commit-messages">https://help.github.com/articles/closing-issues-via-commit-messages</a>.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-28013118" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-28013118" class="timestamp">
+      <time>2013-11-07 22:28:00</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/RexDude" target="_blank">@RexDude</a></strong>, could you check if the latest release fixes the issue?</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-28013222" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-28013222" class="timestamp">
+      <time>2013-11-07 22:29:40</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/hkdobrev" target="_blank">@hkdobrev</a></strong> You are right.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-28013463" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/RexDude" class="author">RexDude</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-28013463" class="timestamp">
+      <time>2013-11-07 22:32:43</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I am sorry. Problem still exists. Just the codeline of warning has changed:</p>
+<pre><code>Warning: preg_match_all(): Compilation failed: internal error: previously-checked referenced subpattern not found at offset 38 in .../htdocs/Parsedown.php on line 563</code></pre>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-28013591" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-28013591" class="timestamp">
+      <time>2013-11-07 22:34:15</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Thanks. Hopefully, I'll figure something else out.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-28013807" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/RexDude" class="author">RexDude</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-28013807" class="timestamp">
+      <time>2013-11-07 22:36:56</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Maybe its really just a stupid combination or bug in php version / webserver components etc. ...as I am the only one right now reporting this problem, right?</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-28013908" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-28013908" class="timestamp">
+      <time>2013-11-07 22:38:05</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>According to the discussion here: <a href="https://github.com/swiftmailer/swiftmailer/issues/259">https://github.com/swiftmailer/swiftmailer/issues/259</a> updating the PCRE library should fix the problem.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-28014838" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-28014838" class="timestamp">
+      <time>2013-11-07 22:49:12</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/erusev" target="_blank">@erusev</a></strong> I think the issue is here: <code>(.*?)</code>: </p>
+<p><code>*?</code> look for
+<code>.</code> any character
+<code>)</code> until you find a <code>)</code></p>
+<p>But the <code>)</code> is not escaped, so some engines might be confused. Perhaps the updated PCRE library would know that a special character as <code>)</code> cannot exist after <code>*?</code> so it is taking it literally. A more stupider engine would close the group after seeing a <code>)</code>. The group would then end with a <code>*?</code> which is meaningless.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-28014903" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-28014903" class="timestamp">
+      <time>2013-11-07 22:49:58</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Also <code>(.*?)</code> is just before offset 38 in the way I count it.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-28719317" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/RexDude" class="author">RexDude</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-28719317" class="timestamp">
+      <time>2013-11-18 17:33:13</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I really don*t know much about RegEx but I just played around a bit, as I really want to use this cool parser. I changed this:</p>
+<pre><code>if (strpos($text, '](') !== FALSE and preg_match_all('/(!?)(\[((?:[^\[\]]|(?2))*)\])\((.*?)\)/', $text, $matches, PREG_SET_ORDER)) <a href='.html' target='_blank'>#</a> inline</code></pre>
+<p>into this:</p>
+<pre><code>if (strpos($text, '](') !== FALSE and preg_match_all('/(!?)(\[((?:[^\[\]]|(?))*)\])\((.*?)\)/', $text, $matches, PREG_SET_ORDER)) <a href='.html' target='_blank'>#</a> inline</code></pre>
+<p>...and warning is gone :) Links get all converted. As you see i just removed the <code>2</code> in <code>(?2)</code></p>
+<p>Is this the fix, or does it help you to find the prob?</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-28725164" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-28725164" class="timestamp">
+      <time>2013-11-18 18:40:55</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/RexDude" target="_blank">@RexDude</a></strong> This would stop the warning, but, unfortunately, it would also break labels that contain other brackets (see the second element at <a href="http://parsedown.org/tests/inline_link/">http://parsedown.org/tests/inline_link/</a>).</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-28725541" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/RexDude" class="author">RexDude</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-28725541" class="timestamp">
+      <time>2013-11-18 18:45:22</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>As I never yous brackets inside brackets this is ok for me.  But I was hoping you can now find a better solution to this as now we know where the warning exactly comes from.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-28726235" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/RexDude" class="author">RexDude</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-28726235" class="timestamp">
+      <time>2013-11-18 18:53:03</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Isn't there an alternative RegEx Syntax for this?</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-28728641" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-28728641" class="timestamp">
+      <time>2013-11-18 19:20:33</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I'm looking into it. I appreciate your efforts.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-30596571" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-30596571" class="timestamp">
+      <time>2013-12-15 02:23:41</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/RexDude" target="_blank">@RexDude</a></strong> Could you check if the following method call would produce the same error:</p>
+<pre class="brush: php">preg_match('/[[]((?:[^][]|(?R))*)[]]/', "sth [brackets] sth", $matches);</code></pre>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-30600746" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/RexDude" class="author">RexDude</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-30600746" class="timestamp">
+      <time>2013-12-15 09:00:40</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Everything ok with this. I also checked the return value. It's: <code>1</code></p>
+<p>What I also noticed: the newest version of phpmarkdown class ist still producing the warnings, but this time the links do get converted.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-30601150" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-30601150" class="timestamp">
+      <time>2013-12-15 09:38:16</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>How about these:</p>
+<pre class="brush: php">preg_match('/[[]((?:[^][]|(?R))*)[]][(].*?[)]/', "sth [text](/sth) sth", $matches);
+preg_match('/^([[]((?:[^][]|(?1))*)[]])[(].*?[)]/', "[text](/sth) sth", $matches);</code></pre>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-30601409" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/RexDude" class="author">RexDude</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-30601409" class="timestamp">
+      <time>2013-12-15 09:58:56</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>first one: :+1:<br />
+second one: :-1: </p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-30601450" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-30601450" class="timestamp">
+      <time>2013-12-15 10:01:58</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Thanks!</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-30601721" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/RexDude" class="author">RexDude</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-30601721" class="timestamp">
+      <time>2013-12-15 10:22:18</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>You're welcome :)</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-31238371" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-31238371" class="timestamp">
+      <time>2013-12-26 22:23:03</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Could you check if the issue is still present in the latest version (0.8). I have a good reason to think it wouldn't be.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-31244385" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/RexDude" class="author">RexDude</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-31244385" class="timestamp">
+      <time>2013-12-27 02:35:40</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Great stuff! Problem is gone :) Thanks a lot!</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+</body></html>

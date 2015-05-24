@@ -1,0 +1,105 @@
+{
+  "url": "https://api.github.com/repos/erusev/parsedown/issues/99",
+  "labels_url": "https://api.github.com/repos/erusev/parsedown/issues/99/labels{/name}",
+  "comments_url": "https://api.github.com/repos/erusev/parsedown/issues/99/comments",
+  "events_url": "https://api.github.com/repos/erusev/parsedown/issues/99/events",
+  "html_url": "https://github.com/erusev/parsedown/issues/99",
+  "id": 27487714,
+  "number": 99,
+  "title": "John Gruber's test suite",
+  "user": {
+    "login": "wkpark",
+    "id": 232347,
+    "avatar_url": "https://avatars.githubusercontent.com/u/232347?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/wkpark",
+    "html_url": "https://github.com/wkpark",
+    "followers_url": "https://api.github.com/users/wkpark/followers",
+    "following_url": "https://api.github.com/users/wkpark/following{/other_user}",
+    "gists_url": "https://api.github.com/users/wkpark/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/wkpark/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/wkpark/subscriptions",
+    "organizations_url": "https://api.github.com/users/wkpark/orgs",
+    "repos_url": "https://api.github.com/users/wkpark/repos",
+    "events_url": "https://api.github.com/users/wkpark/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/wkpark/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "url": "https://api.github.com/repos/erusev/parsedown/labels/suggestion",
+      "name": "suggestion",
+      "color": "bfd4f2"
+    }
+  ],
+  "state": "open",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 2,
+  "created_at": "2014-02-13T01:38:29Z",
+  "updated_at": "2014-04-19T02:07:29Z",
+  "closed_at": null,
+  "body": "This is a John Gruber's test suite\r\nhttp://daringfireball.net/projects/downloads/MarkdownTest_1.0.zip\r\n\r\nand the following example rendered incorrectly by the parsedown.\r\n~~~\r\nIn Markdown 1.0.0 and earlier. Version\r\n8. This line turns into a list item.\r\nBecause a hard-wrapped line in the\r\nmiddle of a paragraph looked like a\r\nlist item.\r\n\r\nHere's one with a bullet.\r\n* criminey.\r\n~~~\r\nIn Markdown 1.0.0 and earlier. Version\r\n8. This line turns into a list item.\r\nBecause a hard-wrapped line in the\r\nmiddle of a paragraph looked like a\r\nlist item.\r\n\r\nHere's one with a bullet.\r\n* criminey.\r\n\r\n\r\nbabelmark2 result:\r\nhttp://johnmacfarlane.net/babelmark2/?text=In+Markdown+1.0.0+and+earlier.+Version%0A8.+This+line+turns+into+a+list+item.%0ABecause+a+hard-wrapped+line+in+the%0Amiddle+of+a+paragraph+looked+like+a%0Alist+item.%0A%0AHere%27s+one+with+a+bullet.%0A*+criminey.\r\n",
+  "closed_by": null
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/erusev/parsedown/issues/comments/34960921",
+    "html_url": "https://github.com/erusev/parsedown/issues/99#issuecomment-34960921",
+    "issue_url": "https://api.github.com/repos/erusev/parsedown/issues/99",
+    "id": 34960921,
+    "user": {
+      "login": "hkdobrev",
+      "id": 506129,
+      "avatar_url": "https://avatars.githubusercontent.com/u/506129?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/hkdobrev",
+      "html_url": "https://github.com/hkdobrev",
+      "followers_url": "https://api.github.com/users/hkdobrev/followers",
+      "following_url": "https://api.github.com/users/hkdobrev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/hkdobrev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/hkdobrev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/hkdobrev/subscriptions",
+      "organizations_url": "https://api.github.com/users/hkdobrev/orgs",
+      "repos_url": "https://api.github.com/users/hkdobrev/repos",
+      "events_url": "https://api.github.com/users/hkdobrev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/hkdobrev/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2014-02-13T09:23:03Z",
+    "updated_at": "2014-02-13T09:23:03Z",
+    "body": "@wkpark Great catch!\r\n\r\nI saw a separate and not so important issue about ordered lists in your example. Parsedown should use the [`start` attribute on `ol` elements](http://www.w3.org/TR/html5/grouping-content.html#attr-ol-start). I'll submit another issue for that."
+  },
+  {
+    "url": "https://api.github.com/repos/erusev/parsedown/issues/comments/35293740",
+    "html_url": "https://github.com/erusev/parsedown/issues/99#issuecomment-35293740",
+    "issue_url": "https://api.github.com/repos/erusev/parsedown/issues/99",
+    "id": 35293740,
+    "user": {
+      "login": "wkpark",
+      "id": 232347,
+      "avatar_url": "https://avatars.githubusercontent.com/u/232347?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/wkpark",
+      "html_url": "https://github.com/wkpark",
+      "followers_url": "https://api.github.com/users/wkpark/followers",
+      "following_url": "https://api.github.com/users/wkpark/following{/other_user}",
+      "gists_url": "https://api.github.com/users/wkpark/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/wkpark/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/wkpark/subscriptions",
+      "organizations_url": "https://api.github.com/users/wkpark/orgs",
+      "repos_url": "https://api.github.com/users/wkpark/repos",
+      "events_url": "https://api.github.com/users/wkpark/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/wkpark/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2014-02-17T15:36:55Z",
+    "updated_at": "2014-02-17T15:36:55Z",
+    "body": "This is the Markdown testsuite by John Gruber and the Markdown 1.0.2b8\r\n\r\nhttps://github.com/wkpark/markdown-testsuite"
+  }
+]

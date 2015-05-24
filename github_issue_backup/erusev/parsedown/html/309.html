@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html class='' lang='en'>
+<head prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#'>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8'>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta http-equiv='Content-Language' content='en'>
+<title>erusev/parsedown/309</title>
+<link href='github-c486157afcc5f58155a921bc675afb08733fbaa8dcf39ac2104d3.css' media='all' rel='stylesheet'>
+<link href='github2-da2e842cc3f0aaf33b727d0ef034243c12ab008fd09b24868b97.css' media='all' rel='stylesheet'>
+<meta http-equiv='x-pjax-version' content='4426702614c8182f33d1780ad1169662'>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shAutoloader.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAppleScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAS3.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushBash.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushColdFusion.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCpp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCSharp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCss.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDelphi.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDiff.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushErlang.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushGroovy.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJava.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJavaFX.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/syntaxhighlighter/scripts/shBrushJScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPerl.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPhp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPlain.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPowerShell.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPython.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushRuby.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSass.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushScala.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSql.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushVb.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushXml.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shLegacy.js'></script>
+	<link type='text/css' rel='stylesheet' href='syntaxhighlighter/styles/shCoreDefault.css'/>
+	<script type='text/javascript'>SyntaxHighlighter.all();</script>
+</head>
+<body class='logged_in  env-production windows vis-public'>
+<h1 align='center'><a href='https://github.com/erusev/parsedown/pull/309' target='_blank'>Add support for omitting line breaks.</h1><hr/><div id="#issue-68737853" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/MeanEYE" class="author">MeanEYE</a>
+    </strong>
+    commented on 
+    <a href="#issue-68737853" class="timestamp">
+      <time>2015-04-15 17:12:20</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Omitting line breaks has no effect on browsers, and helps save precious few bytes where possible. This pull request adds <code>setLineBreaks</code> function which allows developers to specify whether they want line breaks included or not. By default line breaks <em>are</em> included, which is current behavior of the parser.</p>
+<p>Line breaks are removed only after closing tags and in few other place where they shouldn't create any problem. <code>pre</code>, <code>tt</code> and <code>code</code> tags and their content are unaffected.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-93583177" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/cebe" class="author">cebe</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-93583177" class="timestamp">
+      <time>2015-04-15 22:09:28</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I do not see any value in this. Saving &quot;precious few bytes&quot; is micro optimization which is unneeded. It also adds an ambigous method to the class as it can be easily confused with <code>setBreaksEnabled</code>.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-93587533" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/MeanEYE" class="author">MeanEYE</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-93587533" class="timestamp">
+      <time>2015-04-15 22:31:23</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Function name can easily be changed. Micro-optimization argument is however inaccurate. While for a single parsing one might save few to a hundred bytes, on pages which are viewed thousands of times this quickly amounts to much larger values. It might be negligible and a non-issue, saying there's no benefit is not true. Any decent server hosting hundreds of sites with a fairly average view count will have significant increase in bandwidth use which could be used in a smarter way.</p>
+<p>With availability of developer tools in all major browsers, reading page source is impractical. Adding line breaks for readability from page source not only wastes bandwidth but valuable CPU time as well. Not to mention use of double quotes in PHP is significantly slower due to parsing support. </p>
+<p>Besides, am not arguing for the change of default behavior, rather having ability to optimize should one desire to do so. For my company, time-to-first-byte is important and considering page speed still affects ranking in Google I very much care for every millisecond I can save.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-93590133" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/cebe" class="author">cebe</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-93590133" class="timestamp">
+      <time>2015-04-15 22:47:51</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <blockquote>
+<p>For my company, time-to-first-byte is important and considering page speed still affects ranking in Google I very much care for every millisecond I can save.</p>
+</blockquote>
+<p>This actually argues against your implementation as you add an additional check that is run each time an element or block occurs in the markdown...</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-93590900" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/MeanEYE" class="author">MeanEYE</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-93590900" class="timestamp">
+      <time>2015-04-15 22:52:05</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Which would be true if I didn't cache the output. Which I do. This parser adds code which slows down generation of output. In interest of not breaking expected behavior I added those checks and plan on relying on cache to solve problem I added. Ideally those new line characters should be removed as, in my opinion, they have no purpose unless code is using output in some editor.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-93593554" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/smz" class="author">smz</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-93593554" class="timestamp">
+      <time>2015-04-15 23:09:25</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>IMHO this (HTML optimization/minification) is a concern better addressed at a next level of the page creation process, globally. Applying it for each HTML generation step (i.e. each component) is absolutely inneficient.</p>
+<p>EDIT: I've not looked at the PR, but if generating a better (more minified) HTML code comes at no CPU cycle expenses, go for it, otherwise let it be handled at a next level.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-93594799" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/MeanEYE" class="author">MeanEYE</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-93594799" class="timestamp">
+      <time>2015-04-15 23:15:42</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>In my opinion <strong><a href="https://github.com/smz" target="_blank">@smz</a></strong> that makes little sense. Parsedown adds characters, which I would need to parse again and clean up in order to get better optimized page. At this point, I see that argument about having optimized code is waste of my time. I'll leave this pull request open for owner of this project to decide. If nothing else, I'll just have to maintain my own fork. All the best gentlemen.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-93595270" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/smz" class="author">smz</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-93595270" class="timestamp">
+      <time>2015-04-15 23:18:53</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Sorry, as I've said in the &quot;edit&quot; to my previous post, it very much boils down to weather you'll be using CPU cycles for that or not. If yes, then you must consider if this represent a good &quot;investment&quot;  for subsequent steps.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-93595748" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/MeanEYE" class="author">MeanEYE</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-93595748" class="timestamp">
+      <time>2015-04-15 23:21:25</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Well <strong><a href="https://github.com/smz" target="_blank">@smz</a></strong> it comes with extra CPU cost because I added checks if option for making smaller code is enabled. Those checks are there purely for backwards compatibility. And that extra CPU time can be negated by caching output. Oh well. We'll see.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-93596575" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/smz" class="author">smz</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-93596575" class="timestamp">
+      <time>2015-04-15 23:26:46</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Thats, probably negligible: what matters are the CPU cycles used if/when your proposed option is active.</p>
+<p>As an exemple, if you wish, look at one of my sites page: <a href="http://nuovaicona.org/">http://nuovaicona.org/</a></p>
+<p>As you will see the genarted HTML is just on &quot;line&quot; of HTML code. This is a result you cannot achieve at the &quot;component&quot; level, but only through an optimizer for the &quot;whole&quot; HTML (and CSS, and Javascript) code.</p>
+<p>If you use such an optimizer any previous partial optimization is worthless.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-93597432" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/MeanEYE" class="author">MeanEYE</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-93597432" class="timestamp">
+      <time>2015-04-15 23:32:23</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Well <strong><a href="https://github.com/smz" target="_blank">@smz</a></strong> I do that as well, my sites don't have any line breaks anywhere. But I don't wish to parse HTML code produced by <em>parsedown</em> and remove extra stuff. That's just waste of resources. Instead it should be generated without newlines. I would be happy to modify my pull request which removes all the new line characters added to output code. That would be ideal solution as less operations would be needed and produced code would be smaller.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-93598993" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/smz" class="author">smz</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-93598993" class="timestamp">
+      <time>2015-04-15 23:41:58</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Sorry, I've just looked at your code and I agree: <strong>adding</strong>  '\n's to the generated markup is worthless and <em>it does consumes</em> CPU cycles. If simply removing them (as the default beheavior, without introducing any option) is accepatable, I will go for it: you have my vote. If instead a new option for the new behaviour is <em>politically needed</em>, then I'm unsure...</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-93599340" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/MeanEYE" class="author">MeanEYE</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-93599340" class="timestamp">
+      <time>2015-04-15 23:44:21</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Thanks <strong><a href="https://github.com/smz" target="_blank">@smz</a></strong>. That was my initial thought, but it's not up to me to decide whether removing code is acceptable. That's something lead developer will have to decide on. I created PR with backwards compatibility, but it's easily transformed into version without option and without new line characters.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-93599508" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/smz" class="author">smz</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-93599508" class="timestamp">
+      <time>2015-04-15 23:45:39</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>let's see...   :smile: </p>
+  </div>
+  </div>
+  </div>
+  <br/>
+</body></html>

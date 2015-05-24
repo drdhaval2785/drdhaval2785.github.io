@@ -1,0 +1,101 @@
+{
+  "url": "https://api.github.com/repos/erusev/parsedown/issues/120",
+  "labels_url": "https://api.github.com/repos/erusev/parsedown/issues/120/labels{/name}",
+  "comments_url": "https://api.github.com/repos/erusev/parsedown/issues/120/comments",
+  "events_url": "https://api.github.com/repos/erusev/parsedown/issues/120/events",
+  "html_url": "https://github.com/erusev/parsedown/pull/120",
+  "id": 28135901,
+  "number": 120,
+  "title": "improve fenced_code_block test for checking indentation",
+  "user": {
+    "login": "zither",
+    "id": 1003179,
+    "avatar_url": "https://avatars.githubusercontent.com/u/1003179?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/zither",
+    "html_url": "https://github.com/zither",
+    "followers_url": "https://api.github.com/users/zither/followers",
+    "following_url": "https://api.github.com/users/zither/following{/other_user}",
+    "gists_url": "https://api.github.com/users/zither/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/zither/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/zither/subscriptions",
+    "organizations_url": "https://api.github.com/users/zither/orgs",
+    "repos_url": "https://api.github.com/users/zither/repos",
+    "events_url": "https://api.github.com/users/zither/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/zither/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "url": "https://api.github.com/repos/erusev/parsedown/labels/suggestion",
+      "name": "suggestion",
+      "color": "bfd4f2"
+    }
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2014-02-24T03:09:02Z",
+  "updated_at": "2015-04-11T04:39:17Z",
+  "closed_at": "2015-04-11T04:39:17Z",
+  "pull_request": {
+    "url": "https://api.github.com/repos/erusev/parsedown/pulls/120",
+    "html_url": "https://github.com/erusev/parsedown/pull/120",
+    "diff_url": "https://github.com/erusev/parsedown/pull/120.diff",
+    "patch_url": "https://github.com/erusev/parsedown/pull/120.patch"
+  },
+  "body": "add Indented code block in fenced_code_block test.",
+  "closed_by": {
+    "login": "zither",
+    "id": 1003179,
+    "avatar_url": "https://avatars.githubusercontent.com/u/1003179?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/zither",
+    "html_url": "https://github.com/zither",
+    "followers_url": "https://api.github.com/users/zither/followers",
+    "following_url": "https://api.github.com/users/zither/following{/other_user}",
+    "gists_url": "https://api.github.com/users/zither/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/zither/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/zither/subscriptions",
+    "organizations_url": "https://api.github.com/users/zither/orgs",
+    "repos_url": "https://api.github.com/users/zither/repos",
+    "events_url": "https://api.github.com/users/zither/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/zither/received_events",
+    "type": "User",
+    "site_admin": false
+  }
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/erusev/parsedown/issues/comments/41259223",
+    "html_url": "https://github.com/erusev/parsedown/pull/120#issuecomment-41259223",
+    "issue_url": "https://api.github.com/repos/erusev/parsedown/issues/120",
+    "id": 41259223,
+    "user": {
+      "login": "erusev",
+      "id": 184170,
+      "avatar_url": "https://avatars.githubusercontent.com/u/184170?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/erusev",
+      "html_url": "https://github.com/erusev",
+      "followers_url": "https://api.github.com/users/erusev/followers",
+      "following_url": "https://api.github.com/users/erusev/following{/other_user}",
+      "gists_url": "https://api.github.com/users/erusev/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/erusev/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/erusev/subscriptions",
+      "organizations_url": "https://api.github.com/users/erusev/orgs",
+      "repos_url": "https://api.github.com/users/erusev/repos",
+      "events_url": "https://api.github.com/users/erusev/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/erusev/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2014-04-24T09:14:19Z",
+    "updated_at": "2014-04-24T09:14:19Z",
+    "body": "@zither Could you rebase this for the latest version?"
+  }
+]

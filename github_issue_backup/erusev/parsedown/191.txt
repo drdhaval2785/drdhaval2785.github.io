@@ -1,0 +1,97 @@
+{
+  "url": "https://api.github.com/repos/erusev/parsedown/issues/191",
+  "labels_url": "https://api.github.com/repos/erusev/parsedown/issues/191/labels{/name}",
+  "comments_url": "https://api.github.com/repos/erusev/parsedown/issues/191/comments",
+  "events_url": "https://api.github.com/repos/erusev/parsedown/issues/191/events",
+  "html_url": "https://github.com/erusev/parsedown/pull/191",
+  "id": 36668857,
+  "number": 191,
+  "title": "Fix for parsedown extra",
+  "user": {
+    "login": "GrahamCampbell",
+    "id": 2829600,
+    "avatar_url": "https://avatars.githubusercontent.com/u/2829600?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/GrahamCampbell",
+    "html_url": "https://github.com/GrahamCampbell",
+    "followers_url": "https://api.github.com/users/GrahamCampbell/followers",
+    "following_url": "https://api.github.com/users/GrahamCampbell/following{/other_user}",
+    "gists_url": "https://api.github.com/users/GrahamCampbell/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/GrahamCampbell/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/GrahamCampbell/subscriptions",
+    "organizations_url": "https://api.github.com/users/GrahamCampbell/orgs",
+    "repos_url": "https://api.github.com/users/GrahamCampbell/repos",
+    "events_url": "https://api.github.com/users/GrahamCampbell/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/GrahamCampbell/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 1,
+  "created_at": "2014-06-27T14:30:17Z",
+  "updated_at": "2014-07-12T10:10:48Z",
+  "closed_at": "2014-07-12T10:10:48Z",
+  "pull_request": {
+    "url": "https://api.github.com/repos/erusev/parsedown/pulls/191",
+    "html_url": "https://github.com/erusev/parsedown/pull/191",
+    "diff_url": "https://github.com/erusev/parsedown/pull/191.diff",
+    "patch_url": "https://github.com/erusev/parsedown/pull/191.patch"
+  },
+  "body": "Urget fix here. Could you tag a 1.0.2 release?",
+  "closed_by": {
+    "login": "GrahamCampbell",
+    "id": 2829600,
+    "avatar_url": "https://avatars.githubusercontent.com/u/2829600?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/GrahamCampbell",
+    "html_url": "https://github.com/GrahamCampbell",
+    "followers_url": "https://api.github.com/users/GrahamCampbell/followers",
+    "following_url": "https://api.github.com/users/GrahamCampbell/following{/other_user}",
+    "gists_url": "https://api.github.com/users/GrahamCampbell/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/GrahamCampbell/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/GrahamCampbell/subscriptions",
+    "organizations_url": "https://api.github.com/users/GrahamCampbell/orgs",
+    "repos_url": "https://api.github.com/users/GrahamCampbell/repos",
+    "events_url": "https://api.github.com/users/GrahamCampbell/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/GrahamCampbell/received_events",
+    "type": "User",
+    "site_admin": false
+  }
+}
+BODY STARTS FROM HERE
+[
+  {
+    "url": "https://api.github.com/repos/erusev/parsedown/issues/comments/47351902",
+    "html_url": "https://github.com/erusev/parsedown/pull/191#issuecomment-47351902",
+    "issue_url": "https://api.github.com/repos/erusev/parsedown/issues/191",
+    "id": 47351902,
+    "user": {
+      "login": "GrahamCampbell",
+      "id": 2829600,
+      "avatar_url": "https://avatars.githubusercontent.com/u/2829600?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/GrahamCampbell",
+      "html_url": "https://github.com/GrahamCampbell",
+      "followers_url": "https://api.github.com/users/GrahamCampbell/followers",
+      "following_url": "https://api.github.com/users/GrahamCampbell/following{/other_user}",
+      "gists_url": "https://api.github.com/users/GrahamCampbell/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/GrahamCampbell/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/GrahamCampbell/subscriptions",
+      "organizations_url": "https://api.github.com/users/GrahamCampbell/orgs",
+      "repos_url": "https://api.github.com/users/GrahamCampbell/repos",
+      "events_url": "https://api.github.com/users/GrahamCampbell/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/GrahamCampbell/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "created_at": "2014-06-27T14:32:44Z",
+    "updated_at": "2014-06-27T14:32:44Z",
+    "body": "Grrr. This requires php 5.3+."
+  }
+]

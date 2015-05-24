@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html class='' lang='en'>
+<head prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#'>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8'>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta http-equiv='Content-Language' content='en'>
+<title>erusev/parsedown/216</title>
+<link href='github-c486157afcc5f58155a921bc675afb08733fbaa8dcf39ac2104d3.css' media='all' rel='stylesheet'>
+<link href='github2-da2e842cc3f0aaf33b727d0ef034243c12ab008fd09b24868b97.css' media='all' rel='stylesheet'>
+<meta http-equiv='x-pjax-version' content='4426702614c8182f33d1780ad1169662'>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shAutoloader.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAppleScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAS3.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushBash.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushColdFusion.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCpp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCSharp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCss.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDelphi.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDiff.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushErlang.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushGroovy.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJava.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJavaFX.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/syntaxhighlighter/scripts/shBrushJScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPerl.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPhp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPlain.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPowerShell.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPython.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushRuby.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSass.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushScala.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSql.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushVb.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushXml.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shLegacy.js'></script>
+	<link type='text/css' rel='stylesheet' href='syntaxhighlighter/styles/shCoreDefault.css'/>
+	<script type='text/javascript'>SyntaxHighlighter.all();</script>
+</head>
+<body class='logged_in  env-production windows vis-public'>
+<h1 align='center'><a href='https://github.com/erusev/parsedown/pull/216' target='_blank'>Fixed closing of tables if there is a table following a table with only ...</h1><hr/><div id="#issue-42061871" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/ifpingram" class="author">ifpingram</a>
+    </strong>
+    commented on 
+    <a href="#issue-42061871" class="timestamp">
+      <time>2014-09-05 16:04:22</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>...a new line between them.</p>
+<p>if you had 2 tables following each other with just a new line between, like:</p>
+<table>
+<thead>
+<tr>
+<th>test1a</th>
+<th>test1a</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>test1b</td>
+<td>test1b</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>test2a</th>
+<th>test2a</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>test2b</td>
+<td>test2b</td>
+</tr>
+</tbody>
+</table>
+<p>It produced one joined up table, as opposed to two tables:</p>
+<table>
+<thead>
+<tr>
+<th>test1a</th>
+<th>test1a</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>test1b</td>
+<td>test1b</td>
+</tr>
+<tr>
+<th>test2a</th>
+<th>test2a</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>test2b</td>
+<td>test2b</td>
+</tr>
+</tbody>
+</table>
+<p>Now it produces:</p>
+<table>
+<thead>
+<tr>
+<th>test1a</th>
+<th>test1a</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>test1b</td>
+<td>test1b</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>test2a</th>
+<th>test2a</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>test2b</td>
+<td>test2b</td>
+</tr>
+</tbody>
+</table>
+<p>--</p>
+<p>I've not tested it for anything else, it probably breaks more than it fixes :o </p>
+<p>Something screwey with the indentation in my commit - apologies!</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-54665605" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-54665605" class="timestamp">
+      <time>2014-09-05 18:48:42</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/ifpingram" target="_blank">@ifpingram</a></strong> Your pull request <a href="https://travis-ci.org/erusev/parsedown/builds/34510657">brakes a lot of tests</a>, because the opening <code>&lt;p&gt;</code> is on a new line.</p>
+<p>Also you should probably include the examples you've provided in the test files.</p>
+<p>I hope I am helpful and you'd accept my review as constructive.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-54800676" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/ifpingram" class="author">ifpingram</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-54800676" class="timestamp">
+      <time>2014-09-08 10:31:58</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Apologies, I rushed out the PR without giving it the necessary work to test
+it etc. I'll sort it all out over the next couple of days and update the PR.</p>
+<p>On Fri, Sep 5, 2014 at 7:48 PM, Haralan Dobrev <a href="mailto:notifications<strong><a href="https://github.com/github" target="_blank">@github</a></strong>.com">notifications<strong><a href="https://github.com/github" target="_blank">@github</a></strong>.com</a>
+wrote:</p>
+<blockquote>
+<p><strong><a href="https://github.com/ifpingram" target="_blank">@ifpingram</a></strong> <a href="https://github.com/ifpingram">https://github.com/ifpingram</a> Your pull request brakes a lot
+of tests, because the opening <p> is on a new line.</p>
+<p>Also you should probably include the examples you've provided in the test
+files.</p>
+<p>—
+Reply to this email directly or view it on GitHub
+<a href="https://github.com/erusev/parsedown/pull/216#issuecomment-54665605">https://github.com/erusev/parsedown/pull/216#issuecomment-54665605</a>.</p>
+</blockquote>
+  </div>
+  </div>
+  </div>
+  <br/>
+</body></html>

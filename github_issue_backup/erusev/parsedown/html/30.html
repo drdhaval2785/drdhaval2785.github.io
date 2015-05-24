@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html class='' lang='en'>
+<head prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#'>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8'>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta http-equiv='Content-Language' content='en'>
+<title>erusev/parsedown/30</title>
+<link href='github-c486157afcc5f58155a921bc675afb08733fbaa8dcf39ac2104d3.css' media='all' rel='stylesheet'>
+<link href='github2-da2e842cc3f0aaf33b727d0ef034243c12ab008fd09b24868b97.css' media='all' rel='stylesheet'>
+<meta http-equiv='x-pjax-version' content='4426702614c8182f33d1780ad1169662'>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shAutoloader.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAppleScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAS3.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushBash.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushColdFusion.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCpp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCSharp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCss.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDelphi.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDiff.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushErlang.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushGroovy.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJava.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJavaFX.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/syntaxhighlighter/scripts/shBrushJScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPerl.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPhp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPlain.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPowerShell.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPython.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushRuby.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSass.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushScala.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSql.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushVb.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushXml.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shLegacy.js'></script>
+	<link type='text/css' rel='stylesheet' href='syntaxhighlighter/styles/shCoreDefault.css'/>
+	<script type='text/javascript'>SyntaxHighlighter.all();</script>
+</head>
+<body class='logged_in  env-production windows vis-public'>
+<h1 align='center'><a href='https://github.com/erusev/parsedown/pull/30' target='_blank'>Add PHPUnit as a dev dependency in Composer</h1><hr/><div id="#issue-22544393" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issue-22544393" class="timestamp">
+      <time>2013-11-12 19:37:31</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>We may have previously discussed this, but there is still no strong argument against having PHPUnit as a dev dependency.</p>
+<p><a href="http://getcomposer.org/doc/04-schema.md#require-dev">The relevant documentation</a></p>
+<ul>
+<li>PHPUnit is required to run the tests, so according to the Composer documentation it should be there.</li>
+<li>It will be installed only when running <code>composer install</code> in the Parsedown folder and not for users installing Parsedown as a dependency.</li>
+<li>It won't slow down the Travis CI build, because it is not running <code>composer install</code> ATM.</li>
+</ul>
+<p>I have commited the <code>composer.lock</code> as well, but <a href="http://getcomposer.org/doc/02-libraries.md#lock-file">it is optional for libraries</a>.
+It is just my preference, so I could amend my commit if you prefer the opposite.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-28913514" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-28913514" class="timestamp">
+      <time>2013-11-20 18:10:07</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Is there a problem that this would solve?</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-29105213" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-29105213" class="timestamp">
+      <time>2013-11-22 20:10:55</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I have PHP installed on my OS X using <code>brew</code>. I don't want PHPUnit installed globally. Using Composer I can just <code>composer install</code> any dependencies for Parsedown. In this case I will install only dev dependencies needed to run the tests.</p>
+<p>Another reason is you don't need to specify in your <a href="https://github.com/blog/1184-contributing-guidelines">CONTRIBUTING file</a> to install PHPUnit in order to run the tests. You just need to mention <code>composer install</code> and <code>vendor/bin/phpunit</code>.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-29105298" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-29105298" class="timestamp">
+      <time>2013-11-22 20:12:05</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Right now I have a <code>vendor</code> folder I don't commit in my own local fork of Parsedown. I just think if you are using Composer, use it all the way.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-29108420" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-29108420" class="timestamp">
+      <time>2013-11-22 20:54:26</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I feel like for every user that would benefit from this there would be a hundred that would feel confused about it.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-29110040" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-29110040" class="timestamp">
+      <time>2013-11-22 21:17:23</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/erusev" target="_blank">@erusev</a></strong> As I have noted the <code>composer.lock</code> file could be ignored for libraries.</p>
+<p>Also this change would not impact users who would not clone the repo and run <code>composer install</code> in the cloned directory.</p>
+<p>This change would also help users who ask questions like: &quot;What does Parsedown use for unit tests?&quot;, &quot;What are the dev requirements?&quot;, &quot;What should I do before submitting a pull request?&quot;.</p>
+<p>I don't see how this would hurt users who do not intend to contribute to Parsedown.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-29133129" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-29133129" class="timestamp">
+      <time>2013-11-23 14:17:00</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>The word <em>require</em> is a scary word when you don't know these things and I believe many people don't and what if users want to test using a different version of PHPUnit?</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-29181377" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-29181377" class="timestamp">
+      <time>2013-11-25 07:08:06</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <blockquote>
+<p>what if users want to test using a different version of PHPUnit?</p>
+</blockquote>
+<p>The required version of PHPUnit depends on the things you use from PHPUnit. For example data providers are introduced in version <code>3.2</code>. However <code>3.7.*</code> is the only stable version available in Packagist <a href="https://packagist.org/packages/phpunit/phpunit">https://packagist.org/packages/phpunit/phpunit</a> for the moment.</p>
+<p>You could specify a wide range of versions like: <code>&gt;=3.7.0</code> and ignore <code>composer.lock</code>. In this case Composer would install the latest stable version of PHPUnit corresponding to the version constraint.</p>
+<blockquote>
+<p>The word require is a scary word when you don't know these things</p>
+</blockquote>
+<p>IMHO <code>composer.json</code> matters only to people using Composer and/or Packagist.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-29183901" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-29183901" class="timestamp">
+      <time>2013-11-25 08:20:07</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I've just found this one: <a href="http://getcomposer.org/doc/03-cli.md#global">http://getcomposer.org/doc/03-cli.md#global</a>
+It is not directly related, but I could do something like:</p>
+<p><code>composer global require phpunit/phpunit:3.7.*</code></p>
+<p>and add <code>$COMPOSER_HOME/vendor/bin</code> to my <code>$PATH</code>.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-29977618" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-29977618" class="timestamp">
+      <time>2013-12-06 10:17:49</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Here are two related pull requests for the popular Facebook PHP SDK:
+<a href="https://github.com/facebook/facebook-php-sdk/pull/61">https://github.com/facebook/facebook-php-sdk/pull/61</a>
+<a href="https://github.com/facebook/facebook-php-sdk/pull/86">https://github.com/facebook/facebook-php-sdk/pull/86</a></p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-30056534" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-30056534" class="timestamp">
+      <time>2013-12-07 14:59:36</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>PHPUnit could be beneficial to developers of the library but it is not required and developers that already have it would probably prefer to not have a duplicate at another location.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-34817058" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-34817058" class="timestamp">
+      <time>2014-02-11 22:36:39</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Check out this conversation on Twitter: <a href="https://twitter.com/padraicb/status/433333260991467520">https://twitter.com/padraicb/status/433333260991467520</a></p>
+  </div>
+  </div>
+  </div>
+  <br/>
+</body></html>

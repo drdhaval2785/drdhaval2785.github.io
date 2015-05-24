@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html class='' lang='en'>
+<head prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#'>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8'>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta http-equiv='Content-Language' content='en'>
+<title>erusev/parsedown/106</title>
+<link href='github-c486157afcc5f58155a921bc675afb08733fbaa8dcf39ac2104d3.css' media='all' rel='stylesheet'>
+<link href='github2-da2e842cc3f0aaf33b727d0ef034243c12ab008fd09b24868b97.css' media='all' rel='stylesheet'>
+<meta http-equiv='x-pjax-version' content='4426702614c8182f33d1780ad1169662'>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shAutoloader.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAppleScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAS3.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushBash.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushColdFusion.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCpp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCSharp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCss.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDelphi.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDiff.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushErlang.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushGroovy.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJava.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJavaFX.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/syntaxhighlighter/scripts/shBrushJScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPerl.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPhp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPlain.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPowerShell.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPython.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushRuby.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSass.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushScala.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSql.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushVb.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushXml.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shLegacy.js'></script>
+	<link type='text/css' rel='stylesheet' href='syntaxhighlighter/styles/shCoreDefault.css'/>
+	<script type='text/javascript'>SyntaxHighlighter.all();</script>
+</head>
+<body class='logged_in  env-production windows vis-public'>
+<h1 align='center'><a href='https://github.com/erusev/parsedown/issues/106' target='_blank'>Parse all html tags as normal strings</h1><hr/><div id="#issue-27646839" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/abdmaster" class="author">abdmaster</a>
+    </strong>
+    commented on 
+    <a href="#issue-27646839" class="timestamp">
+      <time>2014-02-15 10:55:31</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I need some help on parsing html tags.</p>
+<p>I'm trying to parse all html tags as normal strings but cannot seems to do it. Only Parsedown converted html will work, any user input html will not work and would need to show as simple strings.</p>
+<p>In Micheal Fortins parser, they have this no_markup property which i can set to true and will print as strings. However i cant find this option in here. If there is one, please mention it how I enable it. If not, then wish if it is implemented.</p>
+<pre><code>$text = "#XSS Test \n\n"
+        ." This &lt;div&gt; should print out \n\n"
+        ." This ``&lt;div&gt;`` should print out \n\n"
+        ." \tThis is a precode block \n"
+        ." \tvar \$foo = 'bar'; \n"
+        ." \techo \$foo \n"
+        ." Lets try XSS &lt;a href='javascript:alert(\"Virus\")'&gt;XSS&lt;/a&gt; \n\n"
+        ." This just a link &lt;a href='http://google.com'&gt;G&lt;/a&gt;. Should not work \n\n"
+        ." This just md link [Goo](http://www.google.com) should work \n\n"
+    ;</code></pre>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-35630788" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/wkpark" class="author">wkpark</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-35630788" class="timestamp">
+      <time>2014-02-20 15:11:23</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Cut &amp; paste from the original example.</p>
+<pre><code># XSS Test
+This &lt;div&gt; should print out
+
+This ``&lt;div&gt;`` should print out 
+
+    This is a precode block 
+    var $foo = 'bar'; 
+    echo $foo
+
+Lets try XSS &lt;a href='javascript:alert(\"Virus\")'&gt;XSS&lt;/a&gt;
+
+This just a link &lt;a href='http://google.com'&gt;G&lt;/a&gt;. Should not work
+
+This just md link [Goo](http://www.google.com) should work</code></pre>
+<p>And the output result of GFM</p>
+<h1>XSS Test</h1>
+<p>This <div> should print out</p>
+<p>This <code>&lt;div&gt;</code> should print out </p>
+<pre><code>This is a precode block 
+var $foo = 'bar'; 
+echo $foo</code></pre>
+<p>Lets try XSS <a href='javascript:alert(\"Virus\")'>XSS</a></p>
+<p>This just a link <a href='http://google.com'>G</a>. Should not work</p>
+<p>This just md link <a href="http://www.google.com">Goo</a> should work</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-35631833" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-35631833" class="timestamp">
+      <time>2014-02-20 15:20:20</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/wkpark" target="_blank">@wkpark</a></strong> Why do you say this should not work?</p>
+<blockquote>
+<p><code>This just a link &lt;a href='http://google.com'&gt;G&lt;/a&gt;. Should not work</code></p>
+</blockquote>
+<p>It is valid HTML link with no XSS. There is no reason for GitHub to escape it.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-35632897" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/wkpark" class="author">wkpark</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-35632897" class="timestamp">
+      <time>2014-02-20 15:28:30</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/hkdobrev" target="_blank">@hkdobrev</a></strong> just cut and pasted from the original post. And that's not my idea</p>
+<p>And this is the result of the babelmark2
+<a href="http://johnmacfarlane.net/babelmark2/?text=%23+XSS+Test%0AThis+%3Cdiv%3E+should+print+out%0A%0AThis+%60%60%3Cdiv%3E%60%60+should+print+out+%0A%0A++++This+is+a+precode+block+%0A++++var+%24foo+%3D+'bar'%3B+%0A++++echo+%24foo%0A%0ALets+try+XSS+%3Ca+href%3D'javascript%3Aalert(%5C%22Virus%5C%22)'%3EXSS%3C%2Fa%3E%0A%0AThis+just+a+link+%3Ca+href%3D'http%3A%2F%2Fgoogle.com'%3EG%3C%2Fa%3E.+Should+not+work%0A%0AThis+just+md+link+%5BGoo%5D(http%3A%2F%2Fwww.google.com)+should+work%0A++++Aaaa+aaa%0A++++Bbbb+bbb">http://johnmacfarlane.net/babelmark2/?text=%23+XSS+Test%0AThis+%3Cdiv%3E+should+print+out%0A%0AThis+%60%60%3Cdiv%3E%60%60+should+print+out+%0A%0A++++This+is+a+precode+block+%0A++++var+%24foo+%3D+'bar'%3B+%0A++++echo+%24foo%0A%0ALets+try+XSS+%3Ca+href%3D'javascript%3Aalert(%5C%22Virus%5C%22)'%3EXSS%3C%2Fa%3E%0A%0AThis+just+a+link+%3Ca+href%3D'http%3A%2F%2Fgoogle.com'%3EG%3C%2Fa%3E.+Should+not+work%0A%0AThis+just+md+link+%5BGoo%5D(http%3A%2F%2Fwww.google.com)+should+work%0A++++Aaaa+aaa%0A++++Bbbb+bbb</a></p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-35633926" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/wkpark" class="author">wkpark</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-35633926" class="timestamp">
+      <time>2014-02-20 15:37:52</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>Strange; the first embeded <code>&lt;div&gt;</code> tag is not correctly paired and not a inline tag but a few Markdown dialect correctly render it to &lt;div&gt;</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-35860335" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/abdmaster" class="author">abdmaster</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-35860335" class="timestamp">
+      <time>2014-02-24 06:17:54</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/hkdobrev" target="_blank">@hkdobrev</a></strong> I was looking for way so that any user given html tags will render just as normal string. Doesn't matter if its valid or not. And only markdown/parsedown syntax will be parsed and render to actual html.</p>
+<p>As in my given example at top, if someone writes <code>&lt;div&gt;</code>, it should not render as <div> tag, rather it should display as normal string &lt;div&gt; . Same for the <code>&lt;a&gt;</code> link. it should print as normal string. Only the parsedown syntax based link will be rendered as html link.</p>
+<p>Hope i get you what I want.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-41336641" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-41336641" class="timestamp">
+      <time>2014-04-24 21:46:35</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <blockquote>
+<p>In Micheal Fortins parser, they have this no_markup property which i can set to true and will print as strings.</p>
+</blockquote>
+<p>There's a good chance that future versions of Parsedown will support this.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-46225029" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-46225029" class="timestamp">
+      <time>2014-06-16 19:41:13</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>BTW I've found the library GitHub uses for sanitization of readmes on github.com for a number of formats.</p>
+<p>Here it is: <a href="https://github.com/github/markup">https://github.com/github/markup</a></p>
+<p>As you can see they perform sanitization on various markup languages: Markdown, Textile, plain text and others. So they do not expect the parser to sanitize its input/output.</p>
+<p>Markdown in particular is allowing HTML so this makes sense.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-56263625" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/javiereguiluz" class="author">javiereguiluz</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-56263625" class="timestamp">
+      <time>2014-09-20 10:06:12</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I would also love to see the <code>no_markup</code> feature from PHP Markdown ported to Parsedown. In fact, this is the only issue that prevents me to switch all my projects to Parsedown.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-56266190" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-56266190" class="timestamp">
+      <time>2014-09-20 12:11:23</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>I have implemented a no-markup option in #224. Please take a look! Any suggestions are welcome :smile: </p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-56268657" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/javiereguiluz" class="author">javiereguiluz</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-56268657" class="timestamp">
+      <time>2014-09-20 14:01:04</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/hkdobrev" target="_blank">@hkdobrev</a></strong> thanks for your fast response! I've just tested your pull request in my application and it works exactly as expected. I get the same output as PHP Markdown library. Thanks!</p>
+<p>By the way, if your PR is finally accepted and merged, what is the policy to release new versions of the Parsedown library? Do you use a time-based model or a feature-based model?</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-56269185" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-56269185" class="timestamp">
+      <time>2014-09-20 14:20:53</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/javiereguiluz" target="_blank">@javiereguiluz</a></strong> I'm glad it works for you!</p>
+<blockquote>
+<p>By the way, if your PR is finally accepted and merged, what is the policy to release new versions of the Parsedown library? Do you use a time-based model or a feature-based model?</p>
+</blockquote>
+<p>The author and maintainer of Parsedown <strong><a href="https://github.com/erusev" target="_blank">@erusev</a></strong> normally releases a patch or minor version after such changes. Based on the number of people requesting something like that I think releasing a new version if this is merged would come sooner rather than later.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-57068231" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-57068231" class="timestamp">
+      <time>2014-09-27 22:43:36</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/javiereguiluz" target="_blank">@javiereguiluz</a></strong> The latest release includes the feature.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-57079189" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/javiereguiluz" class="author">javiereguiluz</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-57079189" class="timestamp">
+      <time>2014-09-28 08:47:07</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/erusev" target="_blank">@erusev</a></strong> thanks for your quick response, for adding this feature and for this excellent project!</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-57080653" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-57080653" class="timestamp">
+      <time>2014-09-28 09:55:09</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/javiereguiluz" target="_blank">@javiereguiluz</a></strong> Thanks! Let me know if you encounter any further issues.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+</body></html>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html class='' lang='en'>
+<head prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#'>
+<meta http-equiv='content-type' content='text/html; charset=UTF-8'>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta http-equiv='Content-Language' content='en'>
+<title>erusev/parsedown/81</title>
+<link href='github-c486157afcc5f58155a921bc675afb08733fbaa8dcf39ac2104d3.css' media='all' rel='stylesheet'>
+<link href='github2-da2e842cc3f0aaf33b727d0ef034243c12ab008fd09b24868b97.css' media='all' rel='stylesheet'>
+<meta http-equiv='x-pjax-version' content='4426702614c8182f33d1780ad1169662'>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shAutoloader.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAppleScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushAS3.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushBash.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushColdFusion.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCpp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCSharp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushCss.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDelphi.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushDiff.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushErlang.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushGroovy.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJava.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushJavaFX.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/syntaxhighlighter/scripts/shBrushJScript.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPerl.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPhp.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPlain.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPowerShell.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushPython.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushRuby.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSass.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushScala.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushSql.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushVb.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shBrushXml.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shCore.js'></script>
+	<script type='text/javascript' src='syntaxhighlighter/scripts/shLegacy.js'></script>
+	<link type='text/css' rel='stylesheet' href='syntaxhighlighter/styles/shCoreDefault.css'/>
+	<script type='text/javascript'>SyntaxHighlighter.all();</script>
+</head>
+<body class='logged_in  env-production windows vis-public'>
+<h1 align='center'><a href='https://github.com/erusev/parsedown/issues/81' target='_blank'>Parts of list item missing in parsed output</h1><hr/><div id="#issue-26743409" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/cebe" class="author">cebe</a>
+    </strong>
+    commented on 
+    <a href="#issue-26743409" class="timestamp">
+      <time>2014-02-01 17:49:10</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>The following markdown:</p>
+<pre class="brush: markdown">* [[\yii\caching\ApcCache]]: uses PHP [APC](http://php.net/manual/en/book.apc.php) extension. This option can be
+  considered as the fastest one when dealing with cache for a centralized thick application (e.g. one
+  server, no dedicated load balancers, etc.).
+
+* [[\yii\caching\DbCache]]: uses a database table to store cached data. By default, it will create and use a
+  [SQLite3](http://sqlite.org/) database under the runtime directory. You can explicitly specify a database for
+  it to use by setting its `db` property.</code></pre>
+<p>Renders like this in GFM:</p>
+<hr />
+<ul>
+<li>
+<p>[[\yii\caching\ApcCache]]: uses PHP <a href="http://php.net/manual/en/book.apc.php">APC</a> extension. This option can be
+considered as the fastest one when dealing with cache for a centralized thick application (e.g. one
+server, no dedicated load balancers, etc.).</p>
+</li>
+<li>[[\yii\caching\DbCache]]: uses a database table to store cached data. By default, it will create and use a
+<a href="http://sqlite.org/">SQLite3</a> database under the runtime directory. You can explicitly specify a database for
+it to use by setting its <code>db</code> property.</li>
+</ul>
+<hr />
+<p>but in parsedown output there are parts missing from the list item text.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-33909946" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-33909946" class="timestamp">
+      <time>2014-02-02 19:37:53</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>It's worth noting the original Markdown parser renders it as:</p>
+<pre class="brush: html">&lt;ul&gt;
+&lt;li&gt;[[\yii&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+<p>Source: <a href="http://daringfireball.net/projects/markdown/dingus">http://daringfireball.net/projects/markdown/dingus</a></p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-33911352" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-33911352" class="timestamp">
+      <time>2014-02-02 20:23:59</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>The current rendering of Parsedown is like that because it thinks the first line of each list item is the URL definition of an implicit reference link.</p>
+<p>So if you escape the <code>[</code> and <code>]</code> like so:</p>
+<pre class="brush: md">* \[\[\yii\caching\ApcCache\]\]: uses PHP [APC](http://php.net/manual/en/book.apc.php) extension. This option can be
+  considered as the fastest one when dealing with cache for a centralized thick application (e.g. one
+  server, no dedicated load balancers, etc.).
+
+* \[\[\yii\caching\DbCache\]\]: uses a database table to store cached data. By default, it will create and use a
+  [SQLite3](http://sqlite.org/) database under the runtime directory. You can explicitly specify a database for
+  it to use by setting its `db` property.</code></pre>
+<p>You would get:</p>
+<pre class="brush: html">&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;[[\yii\caching\ApcCache]]: uses PHP &lt;a href="http://php.net/manual/en/book.apc.php"&gt;APC&lt;/a&gt; extension. This option can be
+considered as the fastest one when dealing with cache for a centralized thick application (e.g. one
+server, no dedicated load balancers, etc.).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;[[\yii\caching\DbCache]]: uses a database table to store cached data. By default, it will create and use a&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://sqlite.org/"&gt;SQLite3&lt;/a&gt; database under the runtime directory. You can explicitly specify a database for
+it to use by setting its &lt;code&gt;db&lt;/code&gt; property.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+<p>There are several problems I see here:</p>
+<ul>
+<li>The most important is this is recognized as a reference. According to the spec there should be an URL after the colon.</li>
+<li>The second list item is split in paragraphs, because of the link. As you can see the third line of the second list item is not in a different paragraph.</li>
+<li>When there are no matching reference link and a reference URL definition, the Markdown should be rendered as-is and not missing. I know this would not be a valid Markdown, but there could be a simple graceful fallback instead of missing content.</li>
+</ul>
+<p>Example for the last problem:</p>
+<pre><code>[another]: http://example.com</code></pre>
+<p>Parsedown just skips it.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-33913895" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-33913895" class="timestamp">
+      <time>2014-02-02 21:44:30</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/cebe" target="_blank">@cebe</a></strong> </p>
+<p>Thanks!</p>
+<p><strong><a href="https://github.com/hkdobrev" target="_blank">@hkdobrev</a></strong> </p>
+<blockquote>
+<p>The most important is this is recognized as a reference.</p>
+</blockquote>
+<p>You are correct.</p>
+<blockquote>
+<p>The second list item is split in paragraphs, because of the link. As you can see the third line of the second list item is not in a different paragraph.</p>
+</blockquote>
+<p>I'm not sure I understand this.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-33916459" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/hkdobrev" class="author">hkdobrev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-33916459" class="timestamp">
+      <time>2014-02-02 23:08:26</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/erusev" target="_blank">@erusev</a></strong> See the rendered HTML I've posted when you escape the brackets. The second list item is inconsistently split into paragraphs.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-33916505" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/erusev" class="author">erusev</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-33916505" class="timestamp">
+      <time>2014-02-02 23:10:42</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p><strong><a href="https://github.com/hkdobrev" target="_blank">@hkdobrev</a></strong> </p>
+<p>I'm unable to reproduce it.</p>
+<p>I could have been specific to the previous version.</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+<div id="#issuecomment-33960373" class="comment previewable-edit timeline-comment js-comment js-task-list-container owner-comment current-user" data-body-version="3d69eb2502aec4738da37c0867d635da">
+  <div class="timeline-comment-header ">
+  <div class="timeline-comment-header-text">
+    <strong>
+      <a href="https://github.com/wkpark" class="author">wkpark</a>
+    </strong>
+    commented on 
+    <a href="#issuecomment-33960373" class="timestamp">
+      <time>2014-02-03 14:47:00</time>
+    </a>
+  </div>
+</div><div class="edit-comment-hide">
+      <div class="comment-body markdown-body markdown-format js-comment-body">
+          <p>the parsedown recursively call block elements again and again so the following examples also have the same problem</p>
+<pre><code>[foobar]: http://foobar.com
+
+&gt; [foobar]: http://foobar.com
+&gt;
+&gt; &gt; [foobar2]: http://foobar.com foobar
+&gt;
+
+----
+* [fubar]: http://fubar.com</code></pre>
+<p>how about to check recursion depth ?</p>
+<p>and it might be helpful to restrict recursion depth to protect recursion attacks with nested markup</p>
+  </div>
+  </div>
+  </div>
+  <br/>
+</body></html>

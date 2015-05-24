@@ -1,0 +1,68 @@
+{
+  "url": "https://api.github.com/repos/erusev/parsedown/issues/135",
+  "labels_url": "https://api.github.com/repos/erusev/parsedown/issues/135/labels{/name}",
+  "comments_url": "https://api.github.com/repos/erusev/parsedown/issues/135/comments",
+  "events_url": "https://api.github.com/repos/erusev/parsedown/issues/135/events",
+  "html_url": "https://github.com/erusev/parsedown/issues/135",
+  "id": 28980082,
+  "number": 135,
+  "title": "Fenced code language no-highlight breaks",
+  "user": {
+    "login": "scottchiefbaker",
+    "id": 3429760,
+    "avatar_url": "https://avatars.githubusercontent.com/u/3429760?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/scottchiefbaker",
+    "html_url": "https://github.com/scottchiefbaker",
+    "followers_url": "https://api.github.com/users/scottchiefbaker/followers",
+    "following_url": "https://api.github.com/users/scottchiefbaker/following{/other_user}",
+    "gists_url": "https://api.github.com/users/scottchiefbaker/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/scottchiefbaker/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/scottchiefbaker/subscriptions",
+    "organizations_url": "https://api.github.com/users/scottchiefbaker/orgs",
+    "repos_url": "https://api.github.com/users/scottchiefbaker/repos",
+    "events_url": "https://api.github.com/users/scottchiefbaker/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/scottchiefbaker/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "labels": [
+    {
+      "url": "https://api.github.com/repos/erusev/parsedown/labels/issue",
+      "name": "issue",
+      "color": "f7c6c7"
+    }
+  ],
+  "state": "closed",
+  "locked": false,
+  "assignee": null,
+  "milestone": null,
+  "comments": 0,
+  "created_at": "2014-03-07T16:51:29Z",
+  "updated_at": "2014-04-30T23:44:53Z",
+  "closed_at": "2014-04-30T23:44:53Z",
+  "body": "The syntax highlighter I use uses \"no-highlight\" as the class name to skip syntax highlighting. This used to work, but sometime recently it broke. The following fenced code block does not render properly in Parsedown\r\n\r\n```\r\n```no-highlight\r\n```\r\n\r\nOriginal Markdown highlights this correctly.",
+  "closed_by": {
+    "login": "erusev",
+    "id": 184170,
+    "avatar_url": "https://avatars.githubusercontent.com/u/184170?v=3",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/erusev",
+    "html_url": "https://github.com/erusev",
+    "followers_url": "https://api.github.com/users/erusev/followers",
+    "following_url": "https://api.github.com/users/erusev/following{/other_user}",
+    "gists_url": "https://api.github.com/users/erusev/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/erusev/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/erusev/subscriptions",
+    "organizations_url": "https://api.github.com/users/erusev/orgs",
+    "repos_url": "https://api.github.com/users/erusev/repos",
+    "events_url": "https://api.github.com/users/erusev/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/erusev/received_events",
+    "type": "User",
+    "site_admin": false
+  }
+}
+BODY STARTS FROM HERE
+[
+
+]
