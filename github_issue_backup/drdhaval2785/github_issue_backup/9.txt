@@ -41,6 +41,3 @@
   "closed_by": null
 }
 BODY STARTS FROM HERE
-[
-
-]
